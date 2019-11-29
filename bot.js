@@ -515,9 +515,9 @@ const admin = [ '174307382296313857', '212232190358978560', '297448131698753538'
 if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
 let MENTION = message.mentions.members.first();
-let modRole = message.guild.roles.find(role => role.name === "test");
-let creatorRole = message.guild.roles.find(role => role.name === "test2");
-let roleToAdd = message.guild.roles.find(role => role.name === "test3");
+let modRole = message.guild.roles.find("name", "test");
+let creatorRole = message.guild.roles.find("name", "test2");
+let roleToAdd = message.guild.roles.find("name", "test3");
 if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
@@ -526,6 +526,7 @@ return message.reply("User had teams 1&2, now granted 3")
 return message.reply("user does not have roles test 1&2")
 }
 }}});
+
 
 
 
