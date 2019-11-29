@@ -514,15 +514,14 @@ client.on('message', (message) => {
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
+let MENTIONED = message.mentions.members.first();
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
 if(message.member.roles.has(modRole.id) || message.member.roles.has(creatorRole.id)) {
-let MENTIONED = message.mentions.members.first();
 let TB2TEAM3ROLE = message.guild.roles.get("486675606021341204");
 MENTIONED.addRole(TB2TEAM3ROLE).catch(console.error);
 }
 else{	
-message.channel.send("has t1&2 already not t3");
 }
 }
 }});
