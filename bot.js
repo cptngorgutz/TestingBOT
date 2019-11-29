@@ -520,7 +520,7 @@ let roleToAdd = message.guild.roles.find("name", "test3");
 if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
-message.author.send("User has roles test1&2")
+return message.reply("User had teams 1&2, now granted 3")
 } else {
 return message.reply("user does not have roles test 1&2")
 }
