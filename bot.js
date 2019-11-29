@@ -517,9 +517,9 @@ if(message.content.startsWith('!test')) {
 let MENTION = message.mentions.members.first(); 
 let modRole = message.guild.roles.get("649763083052384260"); //test
 let creatorRole = message.guild.roles.get("649763104057720853"); //test2
-let roleToAdd = message.guild.roles.get("649763122688688129"); //test3
 if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let MENTION = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("649763122688688129"); //test3
 MENTION.addRole(roleToAdd).catch(console.error);
 return message.reply("User had teams 1&2, now granted 3")
 } else {
