@@ -516,12 +516,14 @@ if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
-if(message.member.roles.has(modRole.id) || message.member.roles.has(creatorRole.id)) {
+if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 message.author.send("User has roles test1&2")
 } else {
 return message.reply("user does not have roles test 1&2")
 }
 }}});
+
+
 
 	
 
