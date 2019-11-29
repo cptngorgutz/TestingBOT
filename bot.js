@@ -521,7 +521,7 @@ message.author.send("User has roles test1&2")
 } else {
 return message.reply("user does not have roles test 1&2")
 }
-};
+}}});
 
 	
 
