@@ -515,9 +515,10 @@ const admin = [ '174307382296313857', '212232190358978560', '297448131698753538'
 if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
 let MENTION = message.mentions.members.first();
+let mentionsmember = message.mentions.members.first();
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
-if(mentions.member.roles.has(modRole.id) && mentions.member.roles.has(creatorRole.id)) {
+if(mentionsmember.member.roles.has(modRole.id) && mentionsmember.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find("name", "test3");
 MENTION.addRole(roleToAdd).catch(console.error);
 return message.reply("User had test 1&2, now granted 3")
