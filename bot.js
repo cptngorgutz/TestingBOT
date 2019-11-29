@@ -514,11 +514,11 @@ client.on('message', (message) => {
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
-const MENTION = message.mentions.members.first();
 const modRole = message.guild.roles.find(role => role.name === 'test');
 const creatorRole = message.guild.roles.find(role => role.name === 'test2');
 if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find(role => role.name === 'test3');
+const MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
 return message.reply("User had test 1&2, now granted 3")
 } else {
