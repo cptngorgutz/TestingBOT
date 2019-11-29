@@ -516,7 +516,7 @@ if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
-if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
+if(message.mentions.member.roles.has(modRole.id) && message.mentions.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find("name", "test3");
 let MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
