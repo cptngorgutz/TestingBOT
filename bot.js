@@ -517,12 +517,12 @@ if(message.content.startsWith('!test')) {
 let MENTION = message.mentions.members.first();
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
-if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
+if(MENTION.member.roles.has(modRole.id) && MENTION.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find("name", "test3");
 MENTION.addRole(roleToAdd).catch(console.error);
-return message.reply("User had teams 1&2, now granted 3")
+return message.reply("User had test 1&2, now granted 3")
 } else {
-return message.reply("user does not have roles test 1&2")
+return message.reply("user does not have test 1&2")
 }
 }}});
 
