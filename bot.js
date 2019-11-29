@@ -348,13 +348,13 @@ userToModify.removeRole(roleToAdd).catch(console.error);
 message.guild.channels.find("name", "leader-logs").sendMessage("tb2recruit Role was REMOVED by " + userToModify + " by " + message.author);
 message.channel.bulkDelete(1)
 } //**************************************************************************//	
-if(message.content.startsWith('!add TB2')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("433654137486573569");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB2 Role was GIVEN by " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
+//if(message.content.startsWith('!add TB2')) {
+//let userToModify = message.mentions.members.first();
+//let roleToAdd = message.guild.roles.get("433654137486573569");
+//userToModify.addRole(roleToAdd).catch(console.error);
+//message.guild.channels.find("name", "leader-logs").sendMessage("TB2 Role was GIVEN by " + userToModify + " by " + message.author);
+//message.channel.bulkDelete(1)
+//}
 if(message.content.startsWith('!remove TB2')) {
 let userToModify = message.mentions.members.first();
 let roleToAdd = message.guild.roles.get("433654137486573569"); 
@@ -513,20 +513,19 @@ client.on('message', (message) => {
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
-let TB2team1 = message.guild.roles.find("name", "TB2team1");
-let TB2team2 = message.guild.roles.find("name", "TB2team2");
-let TB2team3 = message.guild.roles.find("name", "TB2team3");
+if(message.content.startsWith('!test')) {
 let MENTIONED = message.mentions.members.first();
-if(message.content.startsWith('!add TB2team33')) {
-if(message.member.roles.has(TB2team1.id) || message.member.roles.has(TB2team2.id)) {
-message.channel.send("This user has both team 1&2 roles, team 3 given");
+let modRole = message.guild.roles.find("name", "test");
+let creatorRole = message.guild.roles.find("name", "test2");
+if(message.member.roles.has(modRole.id) || message.member.roles.has(creatorRole.id)) {
 let TB2TEAM3ROLE = message.guild.roles.get("486675606021341204");
 MENTIONED.addRole(TB2TEAM3ROLE).catch(console.error);
 }
-}}
-else{
-//message.channel.send("This user does not have roles for teams 1&2.");
-}}); 
+else{	
+}
+}
+}});
+	
 
 
 
