@@ -514,9 +514,9 @@ client.on('message', (message) => {
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
 if(message.content.startsWith('!test')) {
-if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
+if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find("name", "test3");
 let MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
