@@ -517,7 +517,7 @@ if(message.content.startsWith('!test')) {
 let MENTION = message.mentions.members.first();
 let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
-if(MENTION.member.roles.has(modRole.id) && MENTION.member.roles.has(creatorRole.id)) {
+if(mentions.member.roles.has(modRole.id) && mentions.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find("name", "test3");
 MENTION.addRole(roleToAdd).catch(console.error);
 return message.reply("User had test 1&2, now granted 3")
