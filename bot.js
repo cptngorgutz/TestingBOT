@@ -519,6 +519,7 @@ let modRole = message.guild.roles.find("name", "test");
 let creatorRole = message.guild.roles.find("name", "test2");
 let roleToAdd = message.guild.roles.find("name", "test3");
 if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
+let roleToAdd = message.guild.roles.find("name", "test3");
 let MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
 return message.reply("User had teams 1&2, now granted 3")
