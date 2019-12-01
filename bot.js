@@ -556,6 +556,7 @@ const MENTION = message.mentions.members.first();
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
 const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
+const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
 MENTION.addRole(team2).catch(console.error);
 MENTION.removeRole(team3).catch(console.error);
@@ -564,7 +565,7 @@ message.channel.send("Team3 Removed from " + MENTION + " + Team2 Added")
 }
 //GIVE TEAM 2 REMOVE TEAM 1
 if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
-const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
+const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team1.id)) {
 MENTION.addRole(team2).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
