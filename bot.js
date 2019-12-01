@@ -522,9 +522,11 @@ let roleToAdd = message.guild.roles.find(role => role.name === 'test3');
 MENTION.addRole(roleToAdd).catch(console.error);
 MENTION.removeRole(modRole).catch(console.error);
 MENTION.removeRole(creatorRole).catch(console.error);
-return message.reply("" + MENTION + "had roles 1&2, 1-2removed. now added 3")
+message.channel.send("" + MENTION + "had roles 1&2, 1-2removed. now added 3")
+//return message.reply("" + MENTION + "had roles 1&2, 1-2removed. now added 3")
 } else {
-return message.reply("does not have test 1&2")
+message.channel.send("" + MENTION + "does not have test 1&2")
+///return message.reply("does not have test 1&2")
 }
 }}});
 
