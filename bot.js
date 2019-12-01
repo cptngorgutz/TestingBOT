@@ -513,14 +513,16 @@ client.on('message', (message) => {
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
-const MENTION = message.mentions.members.first();
 if(message.content.startsWith('!test')) {
+const MENTION = message.mentions.members.first();
 const modRole = message.guild.roles.find(role => role.name === 'test');
 const creatorRole = message.guild.roles.find(role => role.name === 'test2');
-if(message.MENTION.roles.has(modRole.id) && message.MENTION.roles.has(creatorRole.id)) {
+if(MENTION.roles.has(modRole.id) && MENTION.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find(role => role.name === 'test3');
 MENTION.addRole(roleToAdd).catch(console.error);
-return message.reply("has test 1&2, now granted 3")
+MENTION.removeRole(modRole).catch(console.error);
+MENTION.removeRole(creatorRole).catch(console.error);
+return message.reply("had roles 1&2, 1-2removed. now added 3")
 } else {
 return message.reply("does not have test 1&2")
 }
