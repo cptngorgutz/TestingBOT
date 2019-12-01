@@ -536,8 +536,7 @@ message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
 } else {
 message.channel.send("Error")
 }
-
-}}});
+}}}});
 
 
 
