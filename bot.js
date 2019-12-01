@@ -546,6 +546,7 @@ message.channel.send("" + MENTION + "Is already in TB2team1")
 //GIVE Team 2 Remove Team 1
 if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
 const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
+const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team1.id)) {
 MENTION.addRole(team2).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
