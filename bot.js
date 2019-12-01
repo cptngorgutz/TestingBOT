@@ -513,11 +513,13 @@ client.on('message', (message) => {
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
+	//GIVE TEAM 1 REMOVE TEAM 2
 if(message.content.startsWith('!give TB2team1')) {
 const MENTION = message.mentions.members.first();
+const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
 const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-if(MENTION.roles.has(team2.id){
+if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team2.id)) {
 let team3 = message.guild.roles.find(role => role.name === 'TB2team3');
 MENTION.addRole(team1).catch(console.error);
 MENTION.removeRole(team2).catch(console.error);
@@ -525,6 +527,16 @@ message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
 } else {
 message.channel.send("Error")
 }
+//GIVE TEAM 1 REMOVE TEAM 3
+if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
+let team3 = message.guild.roles.find(role => role.name === 'TB2team3');
+MENTION.addRole(team1).catch(console.error);
+MENTION.removeRole(team3).catch(console.error);
+message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
+} else {
+message.channel.send("Error")
+}
+
 }}});
 
 
