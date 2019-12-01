@@ -543,7 +543,6 @@ message.channel.send("" + MENTION + " Is already in TB2team1")
 }}
 //************************************TEAM 2***************************
 	//GIVE TEAM 2 REMOVE TEAM 1
-const MENTION = message.mentions.members.first();
 if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
 const MENTION = message.mentions.members.first();
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
@@ -573,7 +572,6 @@ message.channel.send("" + MENTION + " Is already in TB2team2")
 
 //************************************TEAM 3***************************
 	//GIVE TEAM 3 REMOVE TEAM 1
-const MENTION = message.mentions.members.first();
 if(message.content.startsWith('!give TB2team3') && message.content.includes(MENTION)) {
 const MENTION = message.mentions.members.first();
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
