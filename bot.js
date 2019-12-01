@@ -515,7 +515,7 @@ const admin = [ '174307382296313857', '212232190358978560', '297448131698753538'
 if(admin.includes(message.author.id)){
 	//GIVE TEAM 1 REMOVE TEAM 2
 const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB2team1') && message.content.contains(MENTION)) {
+if(message.content.startsWith('!give TB2team1') && message.content.includes(MENTION)) {
 const MENTION = message.mentions.members.first();
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
@@ -527,7 +527,7 @@ message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
 } else {
 }
 //GIVE TEAM 1 REMOVE TEAM 3
-if(message.content.startsWith('!give TB2team1') && message.content.contains(MENTION)) {
+if(message.content.startsWith('!give TB2team1') && message.content.includes(MENTION)) {
 const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
 MENTION.addRole(team1).catch(console.error);
