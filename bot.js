@@ -513,20 +513,18 @@ client.on('message', (message) => {
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
+const MENTION = message.mentions.members.first();
 if(message.content.startsWith('!test')) {
 const modRole = message.guild.roles.find(role => role.name === 'test');
 const creatorRole = message.guild.roles.find(role => role.name === 'test2');
 if(message.member.roles.has(modRole.id) && message.member.roles.has(creatorRole.id)) {
 let roleToAdd = message.guild.roles.find(role => role.name === 'test3');
-const MENTION = message.mentions.members.first();
 MENTION.addRole(roleToAdd).catch(console.error);
 return message.reply("User had test 1&2, now granted 3")
 } else {
 return message.reply("user does not have test 1&2")
 }
 }}});
-
-
 
 
 
