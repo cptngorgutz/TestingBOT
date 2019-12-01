@@ -513,20 +513,17 @@ client.on('message', (message) => {
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id)){
-if(message.content.startsWith('!test')) {
+if(message.content.startsWith('!give TB2team1')) {
 const MENTION = message.mentions.members.first();
-const modRole = message.guild.roles.find(role => role.name === 'test');
-const creatorRole = message.guild.roles.find(role => role.name === 'test2');
-if(MENTION.roles.has(modRole.id) && MENTION.roles.has(creatorRole.id)) {
-let roleToAdd = message.guild.roles.find(role => role.name === 'test3');
-MENTION.addRole(roleToAdd).catch(console.error);
-MENTION.removeRole(modRole).catch(console.error);
-MENTION.removeRole(creatorRole).catch(console.error);
-message.channel.send("" + MENTION + "had roles 1&2, 1-2removed. now added 3")
-//return message.reply("" + MENTION + "had roles 1&2, 1-2removed. now added 3")
+const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
+const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
+if(MENTION.roles.has(team2.id){
+let team3 = message.guild.roles.find(role => role.name === 'TB2team3');
+MENTION.addRole(team1).catch(console.error);
+MENTION.removeRole(team2).catch(console.error);
+message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
 } else {
-message.channel.send("" + MENTION + "does not have test 1&2")
-///return message.reply("does not have test 1&2")
+message.channel.send("Error")
 }
 }}});
 
