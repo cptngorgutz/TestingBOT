@@ -527,6 +527,7 @@ message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
 message.channel.send("Error")
 }
 //GIVE TEAM 1 REMOVE TEAM 3
+if(message.content.startsWith('!give TB2team1')) {
 const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
 MENTION.addRole(team1).catch(console.error);
