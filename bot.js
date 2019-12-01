@@ -600,7 +600,7 @@ message.channel.send("" + MENTION + " Is already in TB2team3")
 }}
 
 //can edit here
-}}});
+}}}}});
 
 
 
