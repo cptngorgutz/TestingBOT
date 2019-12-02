@@ -84,10 +84,10 @@ client.on('message', message =>{
 			let msgArgs = args.slice(1).join(" ");
 			
 			message.channel.send(msgArgs).then(messageReaction => {
-				messageReaction.react("1️");
-				messageReaction.react("2️");
-				messageReaction.react("3️");
-				messageReaction.react("4️");
+				messageReaction.react("651124121005981722");
+				messageReaction.react("651124121119359006");
+				messageReaction.react("651124121371017266");
+				messageReaction.react("651124120913838121");
 			});
 			
 		break;
