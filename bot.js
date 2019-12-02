@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const PREFIX = "p!";
 // const config = require('./config.json');
 
 //client.on('ready', () => {
