@@ -35,7 +35,7 @@ client.on('message', message =>{
 	
 	switch(args[0]){
 		
-		case "poll";
+		case "poll":
 		const Embed = new RichEmbed()
 		.setColor(0xFFC300)
 		.setTitle("Initiate Poll")
