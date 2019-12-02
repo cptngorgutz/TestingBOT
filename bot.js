@@ -63,7 +63,7 @@ client.on('message', message =>{
 	}
 });
 //4 responce poll 1-4
-client.on('message', message =>{
+client.on('message', async message =>{
 	let args = message.content.substring(PREFIX2.length).split(" ");
 	
 	switch(args[0]){
@@ -84,10 +84,10 @@ client.on('message', message =>{
 			let msgArgs = args.slice(1).join(" ");
 			
 			message.channel.send(msgArgs).then(messageReaction => {
-				messageReaction.react("651124121005981722");
-				messageReaction.react("651124121119359006");
-				messageReaction.react("651124121371017266");
-				messageReaction.react("651124120913838121");
+				await messageReaction.react("651124121005981722");
+				await messageReaction.react("651124121119359006");
+				await messageReaction.react("651124121371017266");
+				await messageReaction.react("651124120913838121");
 			});
 			
 		break;
