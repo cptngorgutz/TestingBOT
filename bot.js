@@ -83,15 +83,13 @@ client.on('message', async message =>{
 			
 			let msgArgs = args.slice(1).join(" ");
 			
-			message.channel.send(msgArgs).then(messageReaction => {
-				messageReaction.react("651124121005981722");
-				messageReaction.react("651124121119359006");
-				messageReaction.react("651124121371017266");
-				messageReaction.react("651124120913838121");
-			});
-			
+			message.channel.send(msgArgs).then(async messageReaction => {
+				await messageReaction.react("651124121005981722");
+				await messageReaction.react("651124121119359006");
+				await messageReaction.react("651124121371017266");
+				await messageReaction.react("651124120913838121");
+			});	
 		break;
-		
 	}
 });
 
