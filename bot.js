@@ -37,14 +37,15 @@ client.on('message', message =>{
 	switch(args[0]){
 		
 		case "poll":
-		const EMBEDPOLL = new RichEmbed()
+	//	const EMBEDPOLL = new RichEmbed()
+		let Embed = new Discord.RichEmbed()
 		.setColor(0xFFC300)
 		.setTitle("Initiate Poll")
 		.setDescription("p!poll to ininiate a simple yes or no poll");
 		
 		
 			if(!args[1]){
-				message.channel.send(EMBEDPOLL);
+				message.channel.send(Embed);
 				break;
 			}
 			
