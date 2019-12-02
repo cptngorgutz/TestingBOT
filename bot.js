@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const PREFIX = "p!";
+const PREFIX2 = "p1-4!";
 // const config = require('./config.json');
 
 //client.on('ready', () => {
@@ -31,6 +32,7 @@ client.on('guildMemberAdd', function(member)
 });	 
 
 //********************** POLLS?***************
+//simple 2 responce poll yes or no
 client.on('message', message =>{
 	let args = message.content.substring(PREFIX.length).split(" ");
 	
@@ -60,6 +62,39 @@ client.on('message', message =>{
 		
 	}
 });
+//4 responce poll 1-4
+client.on('message', message =>{
+	let args = message.content.substring(PREFIX2.length).split(" ");
+	
+	switch(args[0]){
+		
+		case "poll":
+	//	const EMBEDPOLL = new RichEmbed()
+		let Embed = new Discord.RichEmbed()
+		.setColor(0xFFC300)
+		.setTitle("Initiate Poll")
+		.setDescription("p1-4!poll to ininiate a number 1-4 poll");
+		
+		
+			if(!args[1]){
+				message.channel.send(Embed);
+				break;
+			}
+			
+			let msgArgs = args.slice(1).join(" ");
+			
+			message.channel.send(msgArgs).then(messageReaction => {
+				messageReaction.react("1️");
+				messageReaction.react("2️");
+				messageReaction.react("3️");
+				messageReaction.react("4️");
+			});
+			
+		break;
+		
+	}
+});
+
 
 
 	
