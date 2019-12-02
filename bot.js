@@ -37,14 +37,14 @@ client.on('message', message =>{
 	switch(args[0]){
 		
 		case "poll":
-		const Embed = new embed()
+		const EMBEDPOLL = new RichEmbed()
 		.setColor(0xFFC300)
 		.setTitle("Initiate Poll")
 		.setDescription("p!poll to ininiate a simple yes or no poll");
 		
 		
 			if(!args[1]){
-				message.channel.send(Embed);
+				message.channel.send(EMBEDPOLL);
 				break;
 			}
 			
