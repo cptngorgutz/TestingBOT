@@ -347,17 +347,17 @@ let roleToAdd = message.guild.roles.get("575668979008405504");
 userToModify.removeRole(roleToAdd).catch(console.error);
 message.guild.channels.find("name", "leader-logs").sendMessage("tb2recruit Role was REMOVED by " + userToModify + " by " + message.author);
 message.channel.bulkDelete(1)
-} //**************************************************************************//	
-//if(message.content.startsWith('!add TB2')) {
-//let userToModify = message.mentions.members.first();
-//let roleToAdd = message.guild.roles.get("433654137486573569");
-//userToModify.addRole(roleToAdd).catch(console.error);
-//message.guild.channels.find("name", "leader-logs").sendMessage("TB2 Role was GIVEN by " + userToModify + " by " + message.author);
-//message.channel.bulkDelete(1)
-//}
+} //**************************************************************************//	role here boy
+if(message.content.startsWith('!give TB2')) {
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("650511206947225641");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find("name", "leader-logs").sendMessage("TB2 Role was GIVEN by " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
 if(message.content.startsWith('!remove TB2')) {
 let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("433654137486573569"); 
+let roleToAdd = message.guild.roles.get("650511206947225641"); 
 userToModify.removeRole(roleToAdd).catch(console.error);
 message.guild.channels.find("name", "leader-logs").sendMessage("TB2 Role was REMOVED by " + userToModify + " by " + message.author);
 message.channel.bulkDelete(1)
