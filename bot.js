@@ -9,9 +9,6 @@ const PREFIX2 = "p1-4!";
 //});
 
 // THIS IS FOR GIVEAWAYS
-const { Client } = require('discord.js');
-const client = new Client();
-
 const g_channel_id = '651246159356231680'; // This should be a String and the channel ID of the giveaways channel
 const g_message_id = '651246450134482944'; // This should be a String and the message ID of the givaway message
 const winner_amount = '1'; // This should be a Number and it represents how many winners you wish to choose
