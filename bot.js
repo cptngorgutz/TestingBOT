@@ -10,8 +10,8 @@ const PREFIX2 = "p1-4!";
 
 client.on('guildMemberAdd', function(member)
 {
-	let memberRole = member.guild.roles.find("name", "recruit");
-	member.addRole(memberRole);
+//	let memberRole = member.guild.roles.find("name", "recruit");
+//	member.addRole(memberRole);
 // 	member.guild.channels.get('551566689620197376').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
 	member.guild.channels.get('652123405990232066').send({embed: {
@@ -36,8 +36,7 @@ client.on('guildMemberAdd', function(member)
 client.on('messageReactionAdd', (messageReaction, user) => {
 if(user.bot)  return;
 const { message, emoji } = messageReaction;
-
-if(emoji.name === ":thumbsup:") {
+if (reaction.emoji.name === '👍') {
 if(message.id === "652128693656879154") {
 let tb1recruitrole = member.guild.roles.find("name", "recruit");
 member.addRole(tb1recruitrole);
