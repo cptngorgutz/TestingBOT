@@ -12,10 +12,13 @@ client.on('guildMemberAdd', function(member)
 {
 	let memberRole = member.guild.roles.find("name", "recruit");
 	member.addRole(memberRole);
- 	member.guild.channels.get('651893277825564692').send(`Welcome to The Test Server! ${member}. \nPlease react below to join either The Beyonders 1, 2 or 3. \n(👍 For TB1) (👎 For TB2) (🖐️ For TB3) \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
+ 	member.guild.channels.get('651893277825564692') {
+	message.channel.send(`Welcome to The Test Server! ${member}. \nPlease react below to join either The Beyonders 1, 2 or 3. \n(👍 For TB1) (👎 For TB2) (🖐️ For TB3) \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	messageReaction.react("👍");
 	messageReaction.react("👎"); 
 	messageReaction.react("🖐️"); 
+	}
+	
 	//NEW USERS JOIN
 	member.guild.channels.get('652123405990232066').send({embed: {
 	color: 0x00ff00, 
