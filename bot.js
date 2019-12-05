@@ -34,13 +34,13 @@ client.on('guildMemberAdd', function(member)
 //**pre recruitment
 //** PRE-RECRUITMENT**
 client.on('messageReactionAdd', (messageReaction, user) => {
-if(user.bot)  return;
+//if(message.author.bot) return;
 const { message, emoji } = messageReaction;
 if (reaction.emoji.name === '👍') {
 if(message.id === "652128693656879154") {
 let tb1recruitrole = member.guild.roles.find("name", "recruit");
 member.addRole(tb1recruitrole);
-message.guild.channels.find("name", "recruitment").sendMessage("" + member + " is interested in joining TB1");
+message.guild.channels.find("name", "recruitment").sendMessage("user is interested in joining TB1");
   }
  } 
 });
