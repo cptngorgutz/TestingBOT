@@ -31,6 +31,23 @@ client.on('guildMemberAdd', function(member)
 	}})
 });	 
 
+//**pre recruitment
+//** PRE-RECRUITMENT**
+client.on('messageReactionAdd', (messageReaction, user) => {
+if(user.bot)  return;
+const { message, emoji } = messageReaction;
+
+if(emoji.name === ":thumbsup:") {
+if(message.id === "652128693656879154") {
+let tb1recruitrole = member.guild.roles.find("name", "recruit");
+member.addRole(tb1recruitrole);
+message.guild.channels.find("name", "recruitment").sendMessage("" + member + " is interested in joining TB1");
+  }
+ } 
+});
+
+//end of pre recruitment
+
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
 client.on('message', message =>{
