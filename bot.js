@@ -12,18 +12,12 @@ client.on('guildMemberAdd', function(member)
 {
 	let memberRole = member.guild.roles.find("name", "recruit");
 	member.addRole(memberRole);
- 	member.guild.channels.get('651893277825564692');
-	message.channel.send(`Welcome to The Test Server! ${member}. \nPlease react below to join either The Beyonders 1, 2 or 3. \n(👍 For TB1) (👎 For TB2) (🖐️ For TB3) \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
-	messageReaction.react("👍");
-	messageReaction.react("👎"); 
-	messageReaction.react("🖐️"); 
-	
-	
+ 	member.guild.channels.get('551566689620197376').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
-	member.guild.channels.get('652123405990232066').send({embed: {
+	member.guild.channels.get('428968153800900608').send({embed: {
 	color: 0x00ff00, 
 	title: "**MEMBER JOINED! ** ",
-	description: member + " has joined **The Test ** discord server!",
+	description: member + " has joined **The Beyonders ** discord server!",
 	author: "Member Joined",
 	thumbnail: { url: member.user.displayAvatarURL },
 	fields: [{
