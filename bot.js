@@ -12,9 +12,9 @@ client.on('guildMemberAdd', function(member)
 {
 	let memberRole = member.guild.roles.find("name", "recruit");
 	member.addRole(memberRole);
- 	member.guild.channels.get('551566689620197376').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
+ 	member.guild.channels.get('617707484626288672').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
-	member.guild.channels.get('428968153800900608').send({embed: {
+	member.guild.channels.get('617707484626288672').send({embed: {
 	color: 0x00ff00, 
 	title: "**MEMBER JOINED! ** ",
 	description: member + " has joined **The Beyonders ** discord server!",
@@ -913,7 +913,7 @@ message.channel.bulkDelete(1)
 //USERS LEAVING
 client.on('guildMemberRemove', function(member)
 {
-	member.guild.channels.get('428968153800900608').send({embed: {
+	member.guild.channels.get('617707484626288672').send({embed: {
 	color: 0xff0000,
 	title: "**MEMBER LEFT! ** ",
 	description: member + " has left **The Beyonders ** discord server!",
