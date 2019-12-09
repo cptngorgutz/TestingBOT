@@ -484,14 +484,14 @@ MENTION.addRole(team1).catch(console.error);
 MENTION.removeRole(team3).catch(console.error);
 message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
 } else {
-}
+}}
 // GIVE TEAM 1 WHILST HAVING TEAM 1
 if(message.content.startsWith('!give TB1team1') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
 message.channel.send("" + MENTION + " Is already in TB1team1")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //////////////////////////////////////////////TESTING TB1 TEAM 2//////////////////////////////////////
 client.on('message', (message) => {
@@ -520,13 +520,14 @@ MENTION.addRole(team2).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
 message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
 } else {
-}
+}}
 // GIVE TEAM 2 WHILST HAVING TEAM 2
 if(message.content.startsWith('!give TB1team2') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
 message.channel.send("" + MENTION + " Is already in TB2team2")
 } else {
-}}}}}});
+}}
+}}});
 
 //////////////////////////////////////////////TESTING TB1 TEAM 3//////////////////////////////////////
 client.on('message', (message) => {
@@ -555,14 +556,14 @@ MENTION.addRole(team3).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
 message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
 } else {
-}
+}}
 // GIVE TEAM 3 WHILST HAVING TEAM 3
 if(message.content.startsWith('!give TB1team3') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
 message.channel.send("" + MENTION + " Is already in TB2team3")
 } else {
-}
-}}}}});
+}}
+}}});
 //***************************************************************END
 
 //////////////////////////////////////////////TESTING TB2 TEAM 1//////////////////////////////////////
@@ -591,14 +592,14 @@ MENTION.addRole(team1).catch(console.error);
 MENTION.removeRole(team3).catch(console.error);
 message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
 } else {
-}
+}}
 // GIVE TEAM 1 WHILST HAVING TEAM 1
 if(message.content.startsWith('!give TB2team1') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team1.id)) {
 message.channel.send("" + MENTION + " Is already in TB2team1")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //////////////////////////////////////////////TESTING TB2 TEAM 2//////////////////////////////////////
 client.on('message', (message) => {
@@ -627,14 +628,14 @@ MENTION.addRole(team2).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
 message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
 } else {
-}
+}}
 // GIVE TEAM 2 WHILST HAVING TEAM 2
 if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team2.id)) {
 message.channel.send("" + MENTION + " Is already in TB2team2")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //////////////////////////////////////////////TESTING TB2 TEAM 3//////////////////////////////////////
 client.on('message', (message) => {
@@ -663,14 +664,14 @@ MENTION.addRole(team3).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
 message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
 } else {
-}
+}}
 // GIVE TEAM 3 WHILST HAVING TEAM 3
 if(message.content.startsWith('!give TB2team3') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
 message.channel.send("" + MENTION + " Is already in TB2team3")
 } else {
-}
-}}}}});
+}}
+}}});
 
 
 //***************************************************************START
@@ -700,14 +701,14 @@ MENTION.addRole(team1).catch(console.error);
 MENTION.removeRole(team3).catch(console.error);
 message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
 } else {
-}
+}}
 // GIVE TEAM 1 WHILST HAVING TEAM 1
 if(message.content.startsWith('!give TB3team1') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team1.id)) {
 message.channel.send("" + MENTION + " Is already in TB3team1")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //////////////////////////////////////////////TESTING TB3 TEAM 2//////////////////////////////////////
 client.on('message', (message) => {
@@ -736,14 +737,14 @@ MENTION.addRole(team2).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
 message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
 } else {
-}
+}}
 // GIVE TEAM 2 WHILST HAVING TEAM 2
 if(message.content.startsWith('!give TB3team2') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team2.id)) {
 message.channel.send("" + MENTION + " Is already in TB3team2")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //////////////////////////////////////////////TESTING TB3 TEAM 3//////////////////////////////////////
 client.on('message', (message) => {
@@ -772,14 +773,14 @@ MENTION.addRole(team3).catch(console.error);
 MENTION.removeRole(team1).catch(console.error);
 message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
 } else {
-}
+}}
 // GIVE TEAM 3 WHILST HAVING TEAM 3
 if(message.content.startsWith('!give TB3team3') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team3.id)) {
 message.channel.send("" + MENTION + " Is already in TB3team3")
 } else {
-}
-}}}}});
+}}
+}}});
 //***************************************************************END
 
 //GIVING TB3
@@ -807,14 +808,14 @@ MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
 message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added")
 } else {
-}
+}}
 // GIVE TB3 WHILST HAVING TB3
 if(message.content.startsWith('!give TB3') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB3.id)) {
 message.channel.send("" + MENTION + " Is already in TB3")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //GIVING TB2
 client.on('message', (message) => {
@@ -841,14 +842,14 @@ MENTION.addRole(TB2).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
 message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added")
 } else {
-}
+}}
 // GIVE TB2 WHILST HAVING TB2
 if(message.content.startsWith('!give TB2') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB2.id)) {
 message.channel.send("" + MENTION + " Is already in TB2")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //GIVING TB1
 client.on('message', (message) => {
@@ -875,14 +876,14 @@ MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
 message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added")
 } else {
-}
+}}
 // GIVE TB1 WHILST HAVING TB1
 if(message.content.startsWith('!give TB1') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB1.id)) {
 message.channel.send("" + MENTION + " Is already in TB1")
 } else {
-}
-}}}}});
+}}
+}}});
 
 //*****************************************************************************************************//
 //**********************************SELF ASSIGNED ROLES***********************************************//
