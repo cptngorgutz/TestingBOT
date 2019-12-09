@@ -811,8 +811,8 @@ message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added")
 }}
 // GIVE TB3 WHILST HAVING TB3
 if(message.content.startsWith('!give TB3') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB1.id)) {
-message.channel.send("" + MENTION + " Is already in TB1")
+if(MENTION.roles.has(TB3.id)) {
+message.channel.send("" + MENTION + " Is already in TB3")
 } else {
 }}
 }}});
