@@ -10,7 +10,7 @@ const PREFIX2 = "p1-4!";
 
 client.on('guildMemberAdd', function(member)
 {
-	let memberRole = member.guild.roles.find("name", "recruit");
+	let memberRole = member.guild.roles.find("name", "general");
 	member.addRole(memberRole);
  	member.guild.channels.get('617707484626288672').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
