@@ -8,28 +8,28 @@ const PREFIX2 = "p1-4!";
 //    console.log(`Logged in as ${client.user.tag}!`);
 //});
 
-//client.on('guildMemberAdd', function(member)
-//{
-//	let memberRole = member.guild.roles.find("name", "recruit");
-//	member.addRole(memberRole);
- //	member.guild.channels.get('646374038444179483').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
+client.on('guildMemberAdd', function(member)
+{
+	let memberRole = member.guild.roles.find("name", "recruit");
+	member.addRole(memberRole);
+	member.guild.channels.get('646374038444179483').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
-//	member.guild.channels.get('646374038444179483').send({embed: {
-//	color: 0x00ff00, 
-//	title: "**MEMBER JOINED! ** ",
-//	description: member + " has joined **The Beyonders ** discord server!",
-///	author: "Member Joined",
-//	thumbnail: { url: member.user.displayAvatarURL },
-//	fields: [{
- ///   name: member.user.username + "#" + member.user.discriminator,   
-   // value: "ID# " + member.id + "",
-//	}
-//	],
-//	timestamp: new Date(),
-//	footer: {
-//	}
-//	}})
-//});	 
+	member.guild.channels.get('646374038444179483').send({embed: {
+	color: 0x00ff00, 
+	title: "**MEMBER JOINED! ** ",
+	description: member + " has joined **The Beyonders ** discord server!",
+	author: "Member Joined",
+	thumbnail: { url: member.user.displayAvatarURL },
+	fields: [{
+   name: member.user.username + "#" + member.user.discriminator,   
+ value: "ID# " + member.id + "",
+	}
+	],
+	timestamp: new Date(),
+	footer: {
+	}
+	}})
+});	 
 
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
@@ -808,14 +808,14 @@ MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
 message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added")
 } else {
-}}
+}
 // GIVE TB3 WHILST HAVING TB3
 if(message.content.startsWith('!give TB3') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB3.id)) {
 message.channel.send("" + MENTION + " Is already in TB3")
 } else {
-}}
-}}});
+}
+}}}}});
 
 //GIVING TB2
 client.on('message', (message) => {
@@ -842,14 +842,14 @@ MENTION.addRole(TB2).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
 message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added")
 } else {
-}}
+}
 // GIVE TB2 WHILST HAVING TB2
 if(message.content.startsWith('!give TB2') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB2.id)) {
 message.channel.send("" + MENTION + " Is already in TB2")
 } else {
-}}
-}}});
+}
+}}}}});
 
 //GIVING TB1
 client.on('message', (message) => {
@@ -876,15 +876,14 @@ MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
 message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added")
 } else {
-}}
+}
 // GIVE TB1 WHILST HAVING TB1
 if(message.content.startsWith('!give TB1') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB1.id)) {
 message.channel.send("" + MENTION + " Is already in TB1")
 } else {
-}}
-}}});
-	
+}
+}}}}});
 
 //*****************************************************************************************************//
 //**********************************SELF ASSIGNED ROLES***********************************************//
