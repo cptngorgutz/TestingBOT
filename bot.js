@@ -454,7 +454,7 @@ userToModify.removeRole(roleToAdd).catch(console.error);
 message.guild.channels.find("name", "leader-logs").sendMessage("tb3recruit Role was REMOVED by " + userToModify + " by " + message.author);
 message.channel.bulkDelete(1)
 } //**************************************************************************//	
-
+}});
 
 //**************************GIVING ROLES TO TB1*************************
 //***************************************************************START
