@@ -8,28 +8,28 @@ const PREFIX2 = "p1-4!";
 //    console.log(`Logged in as ${client.user.tag}!`);
 //});
 
-client.on('guildMemberAdd', function(member)
-{
-	let memberRole = member.guild.roles.find("name", "general");
-	member.addRole(memberRole);
- 	member.guild.channels.get('617707484626288672').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
+//client.on('guildMemberAdd', function(member)
+//{
+//	let memberRole = member.guild.roles.find("name", "recruit");
+//	member.addRole(memberRole);
+ //	member.guild.channels.get('646374038444179483').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
-	member.guild.channels.get('617707484626288672').send({embed: {
-	color: 0x00ff00, 
-	title: "**MEMBER JOINED! ** ",
-	description: member + " has joined **The Beyonders ** discord server!",
-	author: "Member Joined",
-	thumbnail: { url: member.user.displayAvatarURL },
-	fields: [{
-    name: member.user.username + "#" + member.user.discriminator,   
-    value: "ID# " + member.id + "",
-	}
-	],
-	timestamp: new Date(),
-	footer: {
-	}-
-	}})
-});	 
+//	member.guild.channels.get('646374038444179483').send({embed: {
+//	color: 0x00ff00, 
+//	title: "**MEMBER JOINED! ** ",
+//	description: member + " has joined **The Beyonders ** discord server!",
+///	author: "Member Joined",
+//	thumbnail: { url: member.user.displayAvatarURL },
+//	fields: [{
+ ///   name: member.user.username + "#" + member.user.discriminator,   
+   // value: "ID# " + member.id + "",
+//	}
+//	],
+//	timestamp: new Date(),
+//	footer: {
+//	}
+//	}})
+//});	 
 
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
