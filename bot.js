@@ -906,14 +906,13 @@ MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Random Team Assigned.")
-} else {
+}} else {
 }}
 // GIVE TB1 WHILST HAVING TB1
 if(MENTION.roles.has(TB1.id)) {
 message.channel.send("" + MENTION + " Is already in TB1")
 } else {
-}}
-});
+}});
 
 //*****************************************************************************************************//
 //**********************************SELF ASSIGNED ROLES***********************************************//
