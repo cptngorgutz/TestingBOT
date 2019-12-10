@@ -814,7 +814,9 @@ message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added")
 //if(message.content.startsWith('!give TB3') && message.content.includes(MENTION)) {
 //if(message.content.includes('!give TB3') && message.content.includes(MENTION)) {
 if(message.content === ('!give TB3') && message.content.includes(MENTION)) {
+console.log("Reached command");
 if(MENTION.roles.has(TB3.id)) {
+console.log("Reached has role");
 message.channel.send("" + MENTION + " Is already in TB3")
 } else {
 }}
