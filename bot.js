@@ -819,7 +819,7 @@ message.channel.send("" + MENTION + " Is already in TB3")
 } else {
 	console.log("ERROR REACHING HERE");
 }}
-}}});
+}});
 
 //GIVING TB2
 client.on('message', (message) => {
