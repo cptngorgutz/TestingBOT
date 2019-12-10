@@ -899,6 +899,7 @@ message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Random Team 
 }} else {
 }
 //GIVE TB1 REMOVE TB3
+const MENTION = message.mentions.members.first();
 if(message.content.startsWith('!give TB1 ') && message.content.includes(MENTION)) {
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 if(MENTION.roles.has(TB3.id)) {
