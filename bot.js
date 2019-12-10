@@ -560,7 +560,7 @@ message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
 // GIVE TEAM 3 WHILST HAVING TEAM 3
 if(message.content.startsWith('!give TB1team3') && message.content.includes(MENTION)) {
 if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
-message.channel.send("" + MENTION + " Is already in TB2team3")
+message.channel.send("" + MENTION + " Is already in TB1team3")
 } else {
 }}
 }}});
@@ -704,7 +704,7 @@ message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
 }}
 // GIVE Team1 WHILST HAVING team1
 if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team1.id)) {
-console.log("Reached has role");
+//console.log("Reached has role");
 message.channel.send("" + MENTION + " Is already in TB3team1")
 } else {
 	console.log("ERROR REACHING HERE");
@@ -796,10 +796,12 @@ if(message.content.startsWith('!give TB3 ') && message.content.includes(MENTION)
 const MENTION = message.mentions.members.first();
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB3team1');
 if(MENTION.roles.has(TB2.id)) {
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB2).catch(console.error);
-message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added")
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Random Team Assigned.")
 
 } else {
 }
@@ -809,13 +811,14 @@ const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 if(MENTION.roles.has(TB1.id)) {
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
-message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added")
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Random Team Assigned.")
 
 } else {
 }}
 // GIVE TB3 WHILST HAVING TB3
 if(MENTION.roles.has(TB3.id)) {
-console.log("Reached has role");
+//console.log("Reached has role");
 message.channel.send("" + MENTION + " Is already in TB3")  //if(message.content && message.content.toLowerCase() === 'xd') { 
 } else {
 	console.log("ERROR REACHING HERE");
@@ -833,10 +836,12 @@ if(message.content.startsWith('!give TB2 ') && message.content.includes(MENTION)
 const MENTION = message.mentions.members.first();
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB2team1');
 if(MENTION.roles.has(TB1.id)) {
 MENTION.addRole(TB2).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
-message.channel.send("TB1 Removed from " + MENTION + " + TB2 Added")
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB1 Removed from " + MENTION + " + TB2 Added, Random Team Assigned.")
 } else {
 }
 //GIVE TB2 REMOVE TB3
@@ -845,7 +850,8 @@ const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 if(MENTION.roles.has(TB3.id)) {
 MENTION.addRole(TB2).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
-message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added")
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added, Random Team Assigned.")
 } else {
 }}
 // GIVE TB2 WHILST HAVING TB2
@@ -866,10 +872,12 @@ if(message.content.startsWith('!give TB1 ') && message.content.includes(MENTION)
 const MENTION = message.mentions.members.first();
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB1team1');
 if(MENTION.roles.has(TB2.id)) {
 MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB2).catch(console.error);
-message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added")
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Random Team Assigned.")
 } else {
 }
 //GIVE TB1 REMOVE TB3
@@ -878,7 +886,8 @@ const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 if(MENTION.roles.has(TB3.id)) {
 MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
-message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added")
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Random Team Assigned.")
 } else {
 }}
 // GIVE TB1 WHILST HAVING TB1
