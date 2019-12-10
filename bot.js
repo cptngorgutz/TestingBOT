@@ -819,6 +819,7 @@ if(MENTION.roles.has(TB3.id)) {
 console.log("Reached has role");
 message.channel.send("" + MENTION + " Is already in TB3")
 } else {
+	console.log("ERROR REACHING HERE");
 }}
 }}});
 
