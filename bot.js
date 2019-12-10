@@ -705,7 +705,7 @@ message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
 }}
 // GIVE Team1 WHILST HAVING team1
 if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team1.id)) {
-console.log("Reached has role");
+console.log("ALREADY IN TEAM 1 WORKING");
 message.channel.send("" + MENTION + " Is already in TB3team1")
 } else {
 	console.log("ERROR REACHING HERE");
@@ -793,7 +793,7 @@ if(admin.includes(message.author.id)){
 	//GIVE TB3 REMOVE TB2
 const MENTION = message.mentions.members.first();
 //if(message.content.startsWith('!give TB3') && message.content.includes(MENTION)) {
-if (message.content === '!give TB3' && message.content.includes(MENTION)) {
+if (message.content === "!give TB3" && message.content.includes(MENTION)) {
 const MENTION = message.mentions.members.first();
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
@@ -806,7 +806,7 @@ message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added")
 }
 //GIVE TB3 REMOVE TB1
 //if(message.content.startsWith('!give TB3') && message.content.includes(MENTION)) {
-if (message.content === '!give TB3' && message.content.includes(MENTION)) {
+if (message.content === "!give TB3" && message.content.includes(MENTION)) {
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 if(MENTION.roles.has(TB1.id)) {
 MENTION.addRole(TB3).catch(console.error);
