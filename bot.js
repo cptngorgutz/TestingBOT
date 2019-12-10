@@ -799,6 +799,7 @@ if(MENTION.roles.has(TB2.id)) {
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB2).catch(console.error);
 message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added")
+break;
 } else {
 }
 //GIVE TB3 REMOVE TB1
@@ -808,6 +809,7 @@ if(MENTION.roles.has(TB1.id)) {
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
 message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added")
+break;
 } else {
 }}
 // GIVE TB3 WHILST HAVING TB3
@@ -818,6 +820,7 @@ console.log("Reached command");
 if(MENTION.roles.has(TB3.id)) {
 console.log("Reached has role");
 message.channel.send("" + MENTION + " Is already in TB3")
+break;
 } else {
 	console.log("ERROR REACHING HERE");
 }}
