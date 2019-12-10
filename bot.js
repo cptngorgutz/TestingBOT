@@ -913,6 +913,7 @@ message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Random Team 
 }}
 // GIVE TB1 WHILST HAVING TB1
 if(MENTION.roles.has(TB1.id)) {
+const MENTION = message.mentions.members.first();
 message.channel.send("" + MENTION + " Is already in TB1")
 } else {
 }});
