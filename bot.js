@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const PREFIX = "p!";
 const PREFIX2 = "p1-4!";
 // const config = require('./config.json');
-
+client.setMaxListeners(20);
 //client.on('ready', () => {
 //    console.log(`Logged in as ${client.user.tag}!`);
 //});
