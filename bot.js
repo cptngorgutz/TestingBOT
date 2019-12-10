@@ -682,7 +682,8 @@ const admin = [ '174307382296313857', '212232190358978560', '297448131698753538'
 if(admin.includes(message.author.id)){
 	//GIVE TEAM 1 REMOVE TEAM 2
 const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB3team1') && message.content.includes(MENTION)) {
+//if(message.content.startsWith('!give TB3team1') && message.content.includes(MENTION)) {
+if(message.content.includes('!give TB3team1') && message.content.includes(MENTION)) {
 const MENTION = message.mentions.members.first();
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const team1 = message.guild.roles.find(role => role.name === 'TB3team1');
