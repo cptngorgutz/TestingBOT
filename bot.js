@@ -896,7 +896,7 @@ MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB2).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Random Team Assigned.")
-}} else {
+} else {
 }
 //GIVE TB1 REMOVE TB3
 if(message.content.startsWith('!give TB1 ') && message.content.includes(MENTION)) {
@@ -912,7 +912,7 @@ message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Random Team 
 if(MENTION.roles.has(TB1.id)) {
 message.channel.send("" + MENTION + " Is already in TB1")
 } else {
-}}
+} 
 }});
 
 //*****************************************************************************************************//
