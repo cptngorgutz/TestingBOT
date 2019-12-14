@@ -1023,9 +1023,9 @@ client.on('guildMemberRemove', function(member)
 
 	client.on('message', async msg =>  {
 	if(msg.author.bot) return;
-	if (msg.content === '!restore' || msg.content === '!Restore')	{
+	if (msg.content === '!refresh' || msg.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
-	if (msg.channel.id === '655548294306463764' || msg.channel.id === '635982614053912627' || msg.channel.id === '643229492650704973') {
+	if (msg.channel.id === '655548294306463764' || msg.channel.id === '599413567459950603' || msg.channel.id === '618244130325266496') {
 	const messages = await msg.channel.fetchMessages({ limit: 100}) // Fetch last 100 messages
     .then(msgs => msgs.first(msgs.size - 0)) // Remove the last 3 messages out of the collection to delete
 	msg.channel.bulkDelete(messages, true);
