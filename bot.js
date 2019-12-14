@@ -1028,7 +1028,7 @@ client.on('guildMemberRemove', function(member)
 	if (msg.channel.id === '655548294306463764' || msg.channel.id === '599413567459950603' || msg.channel.id === '618244130325266496') {
 	const messages = await msg.channel.fetchMessages({ limit: 100}) // Fetch last 100 messages
     .then(msgs => msgs.first(msgs.size - 0)) // Remove the last 3 messages out of the collection to delete
-	msg.channel.Delete(messages, true);
+	msg.channel.delete(messages, true);
 }}});
 
 client.on('message', async msg =>  {
