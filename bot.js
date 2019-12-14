@@ -785,7 +785,7 @@ message.channel.send("" + MENTION + " Is already in TB3team3")
 }}});
 //***************************************************************END
 
-//GIVING TB3
+//GIVING TB3 hereboy
 client.on('message', (message) => {
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
@@ -819,7 +819,7 @@ MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Random Team Assigned.")
+message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
 
 } else {
 }
@@ -839,7 +839,7 @@ MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Random Team Assigned.")
+message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
 
 } else {
 }}
@@ -886,7 +886,7 @@ MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB1 Removed from " + MENTION + " + TB2 Added, Random Team Assigned.")
+message.channel.send("TB1 Removed from " + MENTION + " + TB2 Added, Team1 Assigned.")
 } else {
 }
 //GIVE TB2 REMOVE TB3
@@ -905,7 +905,7 @@ MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added, Random Team Assigned.")
+message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added, Team1 Assigned.")
 } else {
 }}
 // GIVE TB2 WHILST HAVING TB2
@@ -949,7 +949,7 @@ MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Random Team Assigned.")
+message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
 } else {
 }
 //GIVE TB1 REMOVE TB3
@@ -968,7 +968,7 @@ MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Random Team Assigned.")
+message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
 } else {
 }}
 // GIVE TB1 WHILST HAVING TB1
@@ -1020,6 +1020,16 @@ client.on('guildMemberRemove', function(member)
 	footer: {
 	}
 	}}); });	
+
+	client.on('message', async msg =>  {
+	if(msg.author.bot) return;
+	if (msg.content === '!restore' || msg.content === '!Restore')	{
+//                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
+	if (msg.channel.id === '655548294306463764' || msg.channel.id === '635982614053912627' || msg.channel.id === '643229492650704973') {
+	const messages = await msg.channel.fetchMessages({ limit: 100}) // Fetch last 100 messages
+    .then(msgs => msgs.first(msgs.size - 40)) // Remove the last 3 messages out of the collection to delete
+	msg.channel.bulkDelete(messages, true);
+}}});
 
 client.on('message', async msg =>  {
 	if(msg.author.bot) return;
