@@ -1027,7 +1027,7 @@ client.on('guildMemberRemove', function(member)
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
 	if (msg.channel.id === '655548294306463764' || msg.channel.id === '635982614053912627' || msg.channel.id === '643229492650704973') {
 	const messages = await msg.channel.fetchMessages({ limit: 100}) // Fetch last 100 messages
-    .then(msgs => msgs.first(msgs.size - 90)) // Remove the last 3 messages out of the collection to delete
+    .then(msgs => msgs.first(msgs.size - 1)) // Remove the last 3 messages out of the collection to delete
 	msg.channel.bulkDelete(messages, true);
 }}});
 
