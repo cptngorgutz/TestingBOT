@@ -1082,7 +1082,6 @@ client.on('guildMemberRemove', function(member)
 }}});
 
 client.on('message', async msg =>  {
-	if(msg.author.bot) return;
 if (msg.content === '!raid ultimus 6' || msg.content === '!raid Ultimus 6')	{
 	if (msg.channel.id === '600378414897168386' || msg.channel.id === '655570619760377858' || msg.channel.id === '643229492650704973') {
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
