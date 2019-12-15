@@ -1026,14 +1026,11 @@ client.on('guildMemberRemove', function(member)
 	if (msg.content === '!refresh' || msg.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
 	if (msg.channel.id === '655548294306463764' || msg.channel.id === '617707484626288672' || msg.channel.id === '655556582930776075') {
-	msg.channel.fetchMessages({limit: 100}).then(collected => { //collected is a Collection
+	msg.channel.fetchMessages({limit: 10}).then(collected => { //collected is a Collection
 	collected.forEach(msg => {
-	if (msg.content.startsWith('!a ')) msg.delete();
-	if (msg.content.startsWith('!b ')) msg.delete();
-	if (msg.content.startsWith('!c ')) msg.delete();
-	if (msg.content.startsWith('!d ')) msg.delete();
-	if (msg.content.startsWith('!e ')) msg.delete();
-	if (msg.content.startsWith('!pyro ')) msg.delete();
+	if (msg.content.startsWith('apple')) msg.delete();
+	if (msg.content.startsWith('testing')) msg.delete();
+	if (msg.content.startsWith('working')) msg.delete();
 	  })});
 }}});
 	
