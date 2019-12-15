@@ -84,7 +84,7 @@ client.on('message', async message =>{
 			let msgArgs = args.slice(1).join(" ");
 			
 			message.channel.send(msgArgs).then(async messageReaction => {
-				await messageReaction.react("651124121005981722"); 
+				await messageReaction.react("651124121005981722");
 				await messageReaction.react("651124121119359006");
 				await messageReaction.react("651124121371017266");
 				await messageReaction.react("651124120913838121");
@@ -1075,9 +1075,8 @@ client.on('guildMemberRemove', function(member)
 	message.delete(30000).catch(err => console.log(err));
 	};
 	if (message.content.includes('To claim a lane:'))  {
-	message.delete(540000).catch(err => console.log(err)).then(async messageRAID => {
-	await message.delete.then(message.channel.send("!raid ultimus 6"))
-	})};
+	message.delete(5000).catch.(err => console.log(err)then(() => message.channel.send("!raid ultimus 6")) };
+	
 	if (message.attachments.size > 0) message.delete(5000);
 	  })});
 }}});
