@@ -1030,7 +1030,7 @@ client.on('guildMemberRemove', function(member)
 	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
 	collected.forEach(message => {
 	if (message.content.includes('Lane')) {
-	message.reply("").then(function(message) {
+	.then(function(message) {
     message.delete(5000);
 	}).catch(function(err) {
     throw err;
