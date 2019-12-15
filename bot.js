@@ -1026,7 +1026,7 @@ client.on('guildMemberRemove', function(member)
 	if (msg.content === '!refresh' || msg.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
 	if (msg.channel.id === '655548294306463764' || msg.channel.id === '617707484626288672' || msg.channel.id === '655556582930776075') {
-	channel.fetchMessages({limit: 100}).then(collected => { //collected is a Collection
+	msg.channel.fetchMessages({limit: 100}).then(collected => { //collected is a Collection
 	collected.forEach(msg => {
 	if (msg.content.startsWith('!a ')) msg.delete();
 	if (msg.content.startsWith('!b ')) msg.delete();
