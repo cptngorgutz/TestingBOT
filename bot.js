@@ -1029,7 +1029,7 @@ client.on('message', function(message) {
             // use the message's channel (TextChannel) to send a new message
              message.delete();
             .catch(console.error); // 
-        }, 1 * 100); 
+        }, 1 * 1000); 
     }
 }
 });	
