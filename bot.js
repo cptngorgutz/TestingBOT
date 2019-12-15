@@ -1076,7 +1076,7 @@ client.on('guildMemberRemove', function(member)
 	};
 	if (message.content.includes('To claim a lane:'))  {
 	message.delete(540000).catch(err => console.log(err)).then(async messageRAID => {
-	await messageRAID(54000).then(message.channel.send("!raid ultimus 6"))
+	await message.delete.then(message.channel.send("!raid ultimus 6"))
 	})};
 	if (message.attachments.size > 0) message.delete(5000);
 	  })});
