@@ -1028,7 +1028,7 @@ client.on('message', function(message) {
         var interval = setInterval (function () {
             // use the message's channel (TextChannel) to send a new message
              message.delete();
-            .catch(console.error); // 
+            //.catch(console.error); // 
         }, 1 * 100); 
     }
 }
