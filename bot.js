@@ -1021,7 +1021,7 @@ client.on('guildMemberRemove', function(member)
 	}
 	}}); });	
 
-	client.on('message', function(message) => { //hereboy2
+	client.on('message', function(message) { //hereboy2
 	if(message.author.bot) return;
 	if (message.content === '!refresh' || message.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
