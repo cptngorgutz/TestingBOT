@@ -1035,7 +1035,7 @@ client.on('guildMemberRemove', function(member)
 	if (msg.content.startsWith('!e ')) msg.delete();
 	if (msg.content.startsWith('!pyro ')) msg.delete();
   });
-)};
+});
 }}});
 
 client.on('message', async msg =>  {
