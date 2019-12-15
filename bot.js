@@ -1020,6 +1020,24 @@ client.on('guildMemberRemove', function(member)
 	footer: {
 	}
 	}}); });	
+	
+	
+	client.on('message', (message) => { //hereboy2
+	if (message.content === '!test' || message.content === '!Test')	{
+//                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
+	message.channel.bulkDelete(1)
+	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
+	message.channel.send("!raid ultimus 6")
+	}}});	
+
+	
+	
+	
+	
+	
+	
+	
+	
 
 	client.on('message', (message) => { //hereboy2
 	if(message.author.bot) return;
