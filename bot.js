@@ -1036,33 +1036,33 @@ client.on('guildMemberRemove', function(member)
 	message.delete(5000).catch(err => console.log(err));
 	};
 	if (message.content.includes('2'))  {
-	message.delete(10000).catch(err => console.log(err));
-	};
-	if (message.content.includes('3'))  {
-	message.delete(15000).catch(err => console.log(err));
-	};
-	if (message.content.includes('4'))  {
-	message.delete(18000).catch(err => console.log(err));
-	};
-	if (message.content.includes('5'))  {
 	message.delete(20000).catch(err => console.log(err));
 	};
+	if (message.content.includes('3'))  {
+	message.delete(35000).catch(err => console.log(err));
+	};
+	if (message.content.includes('4'))  {
+	message.delete(50000).catch(err => console.log(err));
+	};
+	if (message.content.includes('5'))  {
+	message.delete(65000).catch(err => console.log(err));
+	};
 	if (message.content.includes('6'))  {
-	message.delete(22000).catch(err => console.log(err));
+	message.delete(80000).catch(err => console.log(err));
 	};
 	if (message.content.includes('7'))  {
-	message.delete(24000).catch(err => console.log(err));
+	message.delete(95000).catch(err => console.log(err));
 	};
 	if (message.content.includes('8'))  {
-	message.delete(25000).catch(err => console.log(err));
+	message.delete(110000).catch(err => console.log(err));
 	};
 	if (message.content.includes('╚'))  {
-	message.delete(30000).catch(err => console.log(err));
+	message.delete(125000).catch(err => console.log(err));
 	};
 	if (message.content.includes('To claim a lane:'))  {
-	message.delete(34000).catch(err => console.log(err));
+	message.delete(140000).catch(err => console.log(err));
 	};
-	if (message.attachments.size > 0) message.delete(35000);
+	if (message.attachments.size > 0) message.delete(150000);
 	  })});
 }}});
 
