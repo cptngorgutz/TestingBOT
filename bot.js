@@ -1020,39 +1020,25 @@ client.on('guildMemberRemove', function(member)
 	footer: {
 	}
 	}}); });	
-	
-client.on('message', function(message) {
-    // Now, you can use the message variable inside
-	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
-    if (message.content.includes('Lane') || message.content.includes('╔') || message.content.includes('1') || message.content.includes('2') || message.content.includes('3') || message.content.includes('╚') || message.content.includes('To claim a lane:')) {
-        var interval = setInterval (function () {
-            // use the message's channel (TextChannel) to send a new message
-             message.delete();
-            .catch(console.error); // 
-        }, 1 * 1000); 
-    }
-}
-});	
-	
-//	client.on('message', function(message) {
-//	if(message.author.bot) return;
-//	if (message.content === '!refresh' || message.content === '!Refresh')	{
+
+	client.on('message', (message) => { //hereboy2
+	if(message.author.bot) return;
+	if (message.content === '!refresh' || message.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
-//	message.channel.bulkDelete(1)
-//	var interval = setInterval (function () {
-//	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
-//	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
-//	collected.forEach(message => {
-//	if (message.content.includes('Lane') || message.content.includes('╔') || message.content.includes('1') || message.content.includes('2') || message.content.includes('3') || message.content.includes('╚') || message.content.includes('To claim a lane:')) message.delete();
-//	if (message.attachments.size > 0) message.delete();
-//	})})}
-//	.catch(console.error);
-//	 }, 1 * 1000); 
-//	}
-//});
-
-	
-
+	message.channel.bulkDelete(1)
+	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('Lane')) message.delete(10);
+	if (message.content.includes('╔')) message.delete();
+	if (message.content.includes('1')) message.delete(5);
+	if (message.content.includes('2')) message.delete(100);
+	if (message.content.includes('3')) message.delete();	
+	if (message.content.includes('╚')) message.delete();
+	if (message.content.includes('To claim a lane:')) message.delete();
+	if (message.attachments.size > 0) message.delete();
+	  })});
+}}});
 
 client.on('message', async msg =>  {
 	if(msg.author.bot) return;
