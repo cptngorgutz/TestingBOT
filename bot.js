@@ -1036,8 +1036,10 @@ client.on('guildMemberRemove', function(member)
 	if (msg.content.includes('3')) msg.delete();	
 	if (msg.content.includes('╚')) msg.delete();
 	if (msg.content.includes('To claim a lane:')) msg.delete();
-	if (msg.attachments.first('./images/Ultimus6.png')) msg.delete();
-	
+//	if (msg.attachments.first('./images/Ultimus6.png')) msg.delete();
+	if (msg.content === ({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus6.png')] })) {
+	msg.delete();
+	}
 
 	  })});
 }}});
