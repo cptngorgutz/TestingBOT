@@ -1061,7 +1061,7 @@ client.on('guildMemberRemove', function(member)
 	};
 	if (message.attachments.size > 0) message.delete(5000);
 	  })});
-}});
+}}});
 
 client.on('message', async msg =>  {
 	if(msg.author.bot) return;
