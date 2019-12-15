@@ -1021,7 +1021,7 @@ client.on('guildMemberRemove', function(member)
 	}
 	}}); });	
 
-	client.on('message', (message) => { //hereboy2
+	client.on('message', function(message) => { //hereboy2
 	if(message.author.bot) return;
 	if (message.content === '!refresh' || message.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
@@ -1037,7 +1037,12 @@ client.on('guildMemberRemove', function(member)
 	if (message.content.includes('╚')) message.delete();
 	if (message.content.includes('To claim a lane:')) message.delete();
 	if (message.attachments.size > 0) message.delete();
-	  })});
+	  }
+	  else {
+		  console.log('Else log.');
+	  }
+	  .catch(function () {
+	  )});
 }}});
 
 client.on('message', async msg =>  {
