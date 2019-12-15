@@ -1043,7 +1043,7 @@ client.on('guildMemberRemove', function(member)
 	  }
 	  .catch(function () {
 	  )});
-}}});
+	}}}}));
 
 client.on('message', async msg =>  {
 	if(msg.author.bot) return;
