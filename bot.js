@@ -1029,11 +1029,9 @@ client.on('guildMemberRemove', function(member)
 	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
 	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
 	collected.forEach(message => {
-	if (message.content.includes('Lane')).then(function(message) {
-    message.delete(5000);
-	}).catch(function(err) {
-    throw err;
-	})};
+	if (message.content.includes('Lane')) {
+	msg.delete(6000).catch(err => console.log(err));
+	};
 	if (message.content.includes('╔')) message.delete(27000);
 	if (message.content.includes('1')) message.delete(5000);
 	if (message.content.includes('2')) message.delete(10000);
