@@ -1021,23 +1021,22 @@ client.on('guildMemberRemove', function(member)
 	}
 	}}); });	
 
-	client.on('message', async msg =>  {  //hereboy2
-	if(msg.author.bot) return;
-	if (msg.content === '!refresh' || msg.content === '!Refresh')	{
+	client.on('message', (message) => { //hereboy2
+	if(message.author.bot) return;
+	if (message.content === '!refresh' || message.content === '!Refresh')	{
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
-	msg.channel.bulkDelete(1)
-	if (msg.channel.id === '655570619760377858' || msg.channel.id === '617707484626288672' || msg.channel.id === '655556582930776075') {
-	msg.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
-	collected.forEach(msg => {
-	if (msg.content.includes('Lane')) msg.delete();
-	if (msg.content.includes('╔')) msg.delete();
-	if (msg.content.includes('1')) msg.delete();
-	if (msg.content.includes('2')) msg.delete();
-	if (msg.content.includes('3')) msg.delete();	
-	if (msg.content.includes('╚')) msg.delete();
-	if (msg.content.includes('To claim a lane:')) msg.delete();
-//	if (msg.attachments.first('./images/Ultimus6.png')) msg.delete();
-	if (msg.attachments.size > 0) msg.delete();
+	message.channel.bulkDelete(1)
+	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('Lane')) message.delete();
+	if (message.content.includes('╔')) message.delete();
+	if (message.content.includes('1')) message.delete();
+	if (message.content.includes('2')) message.delete();
+	if (message.content.includes('3')) message.delete();	
+	if (message.content.includes('╚')) message.delete();
+	if (message.content.includes('To claim a lane:')) message.delete();
+	if (message.attachments.size > 0) message.delete();
 	  })});
 }}});
 
