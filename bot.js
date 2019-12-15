@@ -1032,10 +1032,12 @@ client.on('guildMemberRemove', function(member)
 	if (msg.content.includes('Lane')) msg.delete();
 	if (msg.content.includes('╔═══════════════╗')) msg.delete();
 	if (msg.content.includes('║ Strike Team 1 ║')) msg.delete();
-	if (msg.content.includes('║ Strike Team 1 ║')) msg.delete();
+	if (msg.content.includes('║ Strike Team 2 ║')) msg.delete();
 	if (msg.content.includes('║ Strike Team 3 ║')) msg.delete();	
 	if (msg.content.includes('╚═══════════════╝')) msg.delete();
-	if (msg.content.includes('	Ultimus6.png')) msg.delete();
+	if (msg.content.includes('To claim a lane:')) msg.delete();
+	if (msg.content.includes('./images/Ultimus6.png')) msg.delete();
+	
 
 	  })});
 }}});
