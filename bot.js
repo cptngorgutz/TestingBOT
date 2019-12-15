@@ -1027,12 +1027,16 @@ client.on('guildMemberRemove', function(member)
 //                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
 	msg.channel.bulkDelete(1)
 	if (msg.channel.id === '655570619760377858' || msg.channel.id === '617707484626288672' || msg.channel.id === '655556582930776075') {
-	msg.channel.fetchMessages({limit: 10}).then(collected => { //collected is a Collection
+	msg.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
 	collected.forEach(msg => {
-	if (msg.content.startsWith('Lane')) msg.delete();
-	if (msg.content.startsWith('yeah')) msg.delete();
-	if (msg.content.startsWith('A fun')) msg.delete();
-	if (msg.content.startsWith('Of course')) msg.delete();
+	if (msg.content.includes('Lane')) msg.delete();
+	if (msg.content.includes('╔═══════════════╗')) msg.delete();
+	if (msg.content.includes('║ Strike Team 1 ║')) msg.delete();
+	if (msg.content.includes('║ Strike Team 1 ║')) msg.delete();
+	if (msg.content.includes('║ Strike Team 3 ║')) msg.delete();	
+	if (msg.content.includes('╚═══════════════╝')) msg.delete();
+	if (msg.content.includes('	Ultimus6.png')) msg.delete();
+
 	  })});
 }}});
 	
