@@ -1048,21 +1048,21 @@ client.on('guildMemberRemove', function(member)
 	message.delete(65000).catch(err => console.log(err));
 	};
 	if (message.content.includes('6'))  {
-	message.delete(80000).catch(err => console.log(err));
+	message.delete(70000).catch(err => console.log(err));
 	};
 	if (message.content.includes('7'))  {
-	message.delete(95000).catch(err => console.log(err));
+	message.delete(53000).catch(err => console.log(err));
 	};
 	if (message.content.includes('8'))  {
-	message.delete(110000).catch(err => console.log(err));
+	message.delete(75000).catch(err => console.log(err));
 	};
 	if (message.content.includes('╚'))  {
-	message.delete(125000).catch(err => console.log(err));
+	message.delete(80000).catch(err => console.log(err));
 	};
 	if (message.content.includes('To claim a lane:'))  {
-	message.delete(140000).catch(err => console.log(err));
+	message.delete(23000).catch(err => console.log(err));
 	};
-	if (message.attachments.size > 0) message.delete(150000);
+	if (message.attachments.size > 0) message.delete(7000);
 	  })});
 }}});
 
