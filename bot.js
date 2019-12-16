@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const PREFIX = "p!";
 const PREFIX2 = "p1-4!";
 // const config = require('./config.json');
-client.setMaxListeners(20);
+client.setMaxListeners(40);
 //client.on('ready', () => {
 //    console.log(`Logged in as ${client.user.tag}!`);
 //});
@@ -1022,23 +1022,6 @@ client.on('guildMemberRemove', function(member)
 	}}); });	
 	
 	
-	client.on('message', (message) => { //hereboy2
-	if (message.content === '!test' || message.content === '!Test')	{
-//                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
-	message.channel.bulkDelete(1)
-	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
-	message.channel.send("!raid ultimus 6")
-	}}});	
-
-	
-	
-	
-	
-	
-	
-	
-	
-
 	client.on('message', (message) => { //hereboy2
 	if(message.author.bot) return;
 	if (message.content === '!refresh' || message.content === '!Refresh')	{
