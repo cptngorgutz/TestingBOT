@@ -7,29 +7,41 @@ client.setMaxListeners(40);
 //client.on('ready', () => {
 //    console.log(`Logged in as ${client.user.tag}!`);
 //});
+//@@@@@@@@@@@@@@@NEED FOR CATCHING INVITES@@@@@@@@@@@@@@@@@
+// Initialize the invite cache
+const invites = {};
 
-client.on('guildMemberAdd', function(member)
-{
-	let memberRole = member.guild.roles.find("name", "recruit");
-	member.addRole(memberRole);
-	member.guild.channels.get('646374038444179483').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
-	//NEW USERS JOIN
-	member.guild.channels.get('646374038444179483').send({embed: {
-	color: 0x00ff00, 
-	title: "**MEMBER JOINED! ** ",
-	description: member + " has joined **The Beyonders ** discord server!",
-	author: "Member Joined",
-	thumbnail: { url: member.user.displayAvatarURL },
-	fields: [{
-   name: member.user.username + "#" + member.user.discriminator,   
- value: "ID# " + member.id + "",
-	}
-	],
-	timestamp: new Date(),
-	footer: {
-	}
-	}})
-});	 
+// A pretty useful method to create a delay without blocking the whole script.
+const wait = require('util').promisify(setTimeout);
+
+client.on('ready', () => {
+  // "ready" isn't really ready. We need to wait a spell.
+  wait(1000);
+  
+client.guilds.forEach(g => {
+g.fetchInvites().then(guildInvites => {
+invites[g.id] = guildInvites;
+});
+});
+});
+
+client.on('guildMemberAdd', member => {
+  // To compare, we need to load the current invite list.
+  member.guild.fetchInvites().then(guildInvites => {
+    // This is the *existing* invites for the guild.
+    const ei = invites[member.guild.id];
+    // Update the cached invites for the guild.
+    invites[member.guild.id] = guildInvites;
+    // Look through the invites, find the one for which the uses went up.
+    const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
+    // This is just to simplify the message being sent below (inviter doesn't have a tag property)
+    const inviter = client.users.get(invite.inviter.id);
+    // Get the log channel (change to your liking)
+    const logChannel = member.guild.channels.find(c => c.name === 'actual-logs');
+    // A real basic message with the information we need. 
+    logChannel.send(`${member.user.tag} joined using invite code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
+  });
+}); 
 
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
