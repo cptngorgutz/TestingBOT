@@ -25,8 +25,25 @@ invites[g.id] = guildInvites;
 });
 });
 
-client.on('guildMemberAdd', member => {
-  // To compare, we need to load the current invite list.
+client.on('guildMemberAdd', function(member) {
+ 	member.guild.channels.get('660119480675860480').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
+	//NEW USERS JOIN
+	member.guild.channels.get('658313611109990430').send({embed: {
+	color: 0x00ff00, 
+	title: "**MEMBER JOINED! ** ",
+	description: member + " has joined **The Beyonders ** discord server!",
+	author: "Member Joined",
+	thumbnail: { url: member.user.displayAvatarURL },
+	fields: [{
+    name: member.user.username + "#" + member.user.discriminator,   
+    value: "ID# " + member.id + "",
+	}
+	],
+	timestamp: new Date(),
+	footer: {
+	}
+	}})
+	  // To compare, we need to load the current invite list.
   member.guild.fetchInvites().then(guildInvites => {
     // This is the *existing* invites for the guild.
     const ei = invites[member.guild.id];
@@ -40,7 +57,7 @@ client.on('guildMemberAdd', member => {
     const logChannel = member.guild.channels.find(c => c.name === 'actual-logs');
     // A real basic message with the information we need. 
 //    logChannel.send(`${member.user.tag} joined using  code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
-	let memberRole = member.guild.roles.find(r => r.name === "recruit");
+let memberRole = member.guild.roles.find(r => r.name === "recruit");
 if (invite.code === "wgcNhDk") {
 member.addRole(memberRole);
 logChannel.send("" + member + "is looking to join TB1");
@@ -54,7 +71,8 @@ logChannel.send("" + member + "is looking to join TB3");
 member.addRole(memberRole);
 }
 });
-}); 
+	
+});	 
 
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
