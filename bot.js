@@ -40,17 +40,20 @@ client.on('guildMemberAdd', member => {
     const logChannel = member.guild.channels.find(c => c.name === 'actual-logs');
     // A real basic message with the information we need. 
 //    logChannel.send(`${member.user.tag} joined using  code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
+	let memberRole = message.guild.roles.find(r => r.name === "recruit");
 if (invite.code === "wgcNhDk") {
+member.addRole(recruit);
 logChannel.send("" + member + "is looking to join TB1");
 }
 if (invite.code === "bC4dBS3") {
 logChannel.send("" + member + "is looking to join TB2");
+member.addRole(recruit);
 }
 if (invite.code === "qAmtPAZ") {
 logChannel.send("" + member + "is looking to join TB3");
+member.addRole(recruit);
 }
 });
-
 }); 
 
 //********************** POLLS?***************
