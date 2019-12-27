@@ -58,16 +58,19 @@ client.on('guildMemberAdd', function(member) {
     // A real basic message with the information we need. 
 //    logChannel.send(`${member.user.tag} joined using  code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
 let memberRole = member.guild.roles.find(r => r.name === "recruit");
+let TB1object = member.guild.roles.find(r => r.name === "tb1captains");
+let TB2object = member.guild.roles.find(r => r.name === "tb2captains");
+let TB3object = member.guild.roles.find(r => r.name === "tb3captains");
 if (invite.code === "wgcNhDk") {
 member.addRole(memberRole);
-logChannel.send("" + member + "is looking to join TB1");
+logChannel.send(`${TB1object} ` + member + "is looking to join TB1");
 }
 if (invite.code === "bC4dBS3") {
-logChannel.send("" + member + "is looking to join TB2");
+logChannel.send(`${TB2object} ` + member + "is looking to join TB2");
 member.addRole(memberRole);
 }
 if (invite.code === "qAmtPAZ") {
-logChannel.send("" + member + "is looking to join TB3");
+logChannel.send(`${TB3object} ` + member + "is looking to join TB3");
 member.addRole(memberRole);
 }
 });
