@@ -26,9 +26,9 @@ invites[g.id] = guildInvites;
 });
 
 client.on('guildMemberAdd', function(member) {
- 	member.guild.channels.get('660119480675860480').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
+ 	member.guild.channels.get('551566689620197376').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
-	member.guild.channels.get('658313611109990430').send({embed: {
+	member.guild.channels.get('428968153800900608').send({embed: {
 	color: 0x00ff00, 
 	title: "**MEMBER JOINED! ** ",
 	description: member + " has joined **The Beyonders ** discord server!",
@@ -58,24 +58,43 @@ client.on('guildMemberAdd', function(member) {
     // A real basic message with the information we need. 
 //    logChannel.send(`${member.user.tag} joined using  code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
 let memberRole = member.guild.roles.find(r => r.name === "recruit");
-let TB1object = member.guild.roles.find(r => r.name === "tb1captains");
-let TB2object = member.guild.roles.find(r => r.name === "tb2captains");
-let TB3object = member.guild.roles.find(r => r.name === "tb3captains");
-if (invite.code === "wgcNhDk") {
+let TB1object = member.guild.roles.find(r => r.name === "TB1 Captain");
+let TB2object = member.guild.roles.find(r => r.name === "TB2 Captain");
+let TB3object = member.guild.roles.find(r => r.name === "TB3 Captain");
+if (invite.code === "3YYSWYP") { //TB1 INVITE CODE
 member.addRole(memberRole);
-logChannel.send(`${TB1object} ` + member + "is looking to join TB1");
+logChannel.send(`${TB1object} ` + member + " is looking to join TB1");
 }
-if (invite.code === "bC4dBS3") {
-logChannel.send(`${TB2object} ` + member + "is looking to join TB2");
+if (invite.code === "bC4dBS3") { //TB2 INVITE CODE
+logChannel.send(`${TB2object} ` + member + " is looking to join TB2");
 member.addRole(memberRole);
 }
-if (invite.code === "qAmtPAZ") {
-logChannel.send(`${TB3object} ` + member + "is looking to join TB3");
+if (invite.code === "qAmtPAZ") { //TB3 INVITE CODE
+logChannel.send(`${TB3object} ` + member + " is looking to join TB3");
 member.addRole(memberRole);
 }
 });
 	
 });	 
+
+
+//@@@@@@@BLITZ PREDICTIONS@@@@@@@@@@@@
+client.on('message', (message) => { //test blitz
+	if(message.author.bot) return;
+	if (message.content === '!blitz' || message.content === '!Blitz')	{
+//                           BLITZ ROOM
+	message.channel.bulkDelete(1)
+	if (message.channel.id === '660994643214991390') {
+    const general = member.guild.channels.find(c => c.name === 'general');
+	message.channel.fetchMessages({limit: 1}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	general.send.catch(err => console.log(err));
+})});
+}}});
+
+
+
+
 
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
@@ -1325,12 +1344,6 @@ if (msg.content === '!raid champion 4' || msg.content === '!raid Champion 4')	{
 	msg.channel.send("Lane 8 - Orange")	  		
 }}
 
-//Blitz Predictions 
-	if (msg.content === '!blitz') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send("``Current Blitz Predictions``")
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Blitz/Blitz.png')] });
-	}
 	
 //MEMES----------------------------------------------------------------------------------------------------------
 if (msg.content === '!sad') {
