@@ -100,10 +100,9 @@ client.on('message', message => {
     }
   }
 });
-
 client.on('message', (message) => {
   const MENTION = message.mentions.members.first();
-  if(message.content.startsWith('!xyz ') && message.content.includes(MENTION)) {
+  if(message.content.startsWith('!test') && message.content.includes(MENTION)) {
   if(MENTION.roles.some(r=>["LEADER","TESTING"].includes(r.name)) )
   MENTION.member.removeRoles(['661352807647150080', '661352317643390976'])
   .then(console.log)
