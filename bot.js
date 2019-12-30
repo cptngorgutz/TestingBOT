@@ -77,14 +77,12 @@ member.addRole(memberRole);
 	
 });	 
 
-
 //@@@@@@@BLITZ PREDICTIONS@@@@@@@@@@@@
 client.on('message', message => {
 
   // Check if the message was sent in the channel with the specified id.
   if(message.channel.id === '660994643214991390'){
     if(message.content.startsWith('!blitz')) {
-
 
       // Get the channel to fetch the message from.
       const channelToCheck = message.guild.channels.get('617707484626288672')
