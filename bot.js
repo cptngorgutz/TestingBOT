@@ -95,7 +95,6 @@ client.on('message', message => {
 			var imagefile = (message.attachments)
 			if (imagefile){
 			console.log( imagefile.array()[0] )
-			console.log( imagefile.array()[0].url )
   }
       }).catch(err => {
         console.error(err)
