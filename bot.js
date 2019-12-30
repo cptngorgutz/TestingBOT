@@ -88,15 +88,15 @@ client.on('message', message => {
       const channelToCheck = message.guild.channels.get('617707484626288672')
 
       // Fetch the last message from the mentioned channel.
-      channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-        const lastMessage = messages.first()
-		message.channel.send(lastMessage.content)
-		const imageUrl = message.content.split(' ').slice(1);
-		const embed = new Discord.RichEmbed().setImage(imageUrl)
-		message.channel.send(embed)
-      }).catch(err => {
-        console.error(err)
-      })
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first()
+	message.channel.send(lastMessage.content)
+//	const imageUrl = message.content.split(' ').slice(1);
+//	const embed = new Discord.RichEmbed().setImage(imageUrl)
+//	message.channel.send(embed)
+    }).catch(err => {
+    console.error(err)
+    })
     }
   }
 });
