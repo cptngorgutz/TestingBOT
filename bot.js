@@ -79,20 +79,25 @@ member.addRole(memberRole);
 
 
 //@@@@@@@BLITZ PREDICTIONS@@@@@@@@@@@@
-client.on('message', (message) => { //test blitz
-	if(message.author.bot) return;
-	if (message.content === '!blitz' || message.content === '!Blitz')	{
-//                           BLITZ ROOM
-	message.channel.bulkDelete(1)
-	if (message.channel.id === '660994643214991390') {
-    const general = message.guild.channels.find(c => c.name === 'general');
-	message.channel.fetchMessages({limit: 1}).then(collected => { //collected is a Collection
-	collected.forEach(message => {
-	general.send.catch(err => console.log(err));
-})});
-}}});
+client.on('message', message => {
 
+  // Check if the message was sent in the channel with the specified id.
+  if(message.channel.id === '660994643214991390'){
+    if(message.content.startsWith('!blitz')) {
 
+      // Get the channel to fetch the message from.
+      const channelToCheck = message.guild.channels.get('617707484626288672')
+
+      // Fetch the last message from the mentioned channel.
+      channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+        const lastMessage = messages.first()
+        console.log(lastMessage.content)
+      }).catch(err => {
+        console.error(err)
+      })
+    }
+  }
+})
 
 
 
