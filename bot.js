@@ -90,18 +90,14 @@ client.on('message', message => {
 
       // Fetch the last message from the mentioned channel.
 		channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-        const lastMessage = messages.first()
-		message.channel.send(lastMessage.content)
-		const abc123 = message.attachment()
-		Attachment.forEach(function(abc123) {
-		console.log(attachment.url);
+		const lastImage = message.attachments.first()
+		message.channel.send(lastImage)
 		})
-      }).catch(err => {
+      }.catch(err => {
         console.error(err)
       })
     }
-  }
-});
+  });
 
 
 
