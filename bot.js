@@ -87,12 +87,11 @@ client.on('message', message => {
 
       // Get the channel to fetch the message from.
       const channelToCheck = message.guild.channels.get('617707484626288672')
-	  let blitzchannel = message.guild.channels.find(c => c.name === 'blitzchannel');
 
       // Fetch the last message from the mentioned channel.
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
         const lastMessage = messages.first()
-       blitzchannel.send(lastMessage.content)
+        message.channel.send(lastMessage.content)
       }).catch(err => {
         console.error(err)
       })
