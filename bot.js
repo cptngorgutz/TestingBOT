@@ -82,11 +82,11 @@ member.addRole(memberRole);
 client.on('message', message => {
 
   // Check if the message was sent in the channel with the specified id.
-  if(message.channel.id === '123'){
-    if(message.content.startsWith('abc')) {
+  if(message.channel.id === '660994643214991390'){
+    if(message.content.startsWith('!blitz')) {
 
       // Get the channel to fetch the message from.
-      const channelToCheck = message.guild.channels.get('123')
+      const channelToCheck = message.guild.channels.get('617707484626288672')
 
       // Fetch the last message from the mentioned channel.
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
@@ -100,6 +100,7 @@ client.on('message', message => {
     }
   }
 })
+
 
 
 
