@@ -93,7 +93,7 @@ client.on('message', message => {
 		message.channel.send(lastMessage.content)
 		const imageUrl = message.content.split(' ').slice(1);
 		const embed = new Discord.RichEmbed().setImage(imageUrl)
-		message.channel.send{ embed }
+		message.channel.send(embed)
       }).catch(err => {
         console.error(err)
       })
