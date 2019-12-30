@@ -89,23 +89,19 @@ client.on('message', message => {
       const channelToCheck = message.guild.channels.get('617707484626288672')
 
       // Fetch the last message from the mentioned channel.
-      channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-		  
-	let filter = m => m.author == message.author; //use that message only if the author is the same
-	message.channel.awaitMessages(filter, {max: 1}).then(message => {
-	let file = message.attachments.first().file;
-	fs.readFile(file, (err, data) => {
-    message.channel.send("Read the file! Fetching data...");
-    message.channel.send(data);
-	 });
-	});
-		
-	}).catch(err => {
+		channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+		const lastImage = message.attachments.first()
+		message.channel.send(lastImage.content)
+		const imageUrl = message.content.split(' ').slice(1);
+		const embed = new Discord.RichEmbed().setImage(imageUrl)
+		message.channel.send{ embed }
+		})
+      }.catch(err => {
         console.error(err)
       })
     }
-  }
-});
+  });
+  
 
 
 
