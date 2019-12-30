@@ -92,11 +92,11 @@ client.on('message', message => {
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
 		  
 	let filter = m => m.author == message.author; //use that message only if the author is the same
-	message.channel.awaitMessages(filter, {max: 1}).then(msg => {
-	let file = msg.attachments.first().file;
+	message.channel.awaitMessages(filter, {max: 1}).then(message => {
+	let file = message.attachments.first().file;
 	fs.readFile(file, (err, data) => {
-    msg.channel.send("Read the file! Fetching data...");
-    msg.channel.send(data);
+    message.channel.send("Read the file! Fetching data...");
+    message.channel.send(data);
 	 });
 	});
 		
