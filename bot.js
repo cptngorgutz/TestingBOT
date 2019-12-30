@@ -95,7 +95,7 @@ client.on('message', message => {
 		Attachment[0].url
 		Attachment.forEach(function(attachment) {
 		console.log(attachment.url);
-}
+		})
       }).catch(err => {
         console.error(err)
       })
