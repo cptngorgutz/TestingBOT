@@ -85,6 +85,7 @@ client.on('message', message => {
   if(message.channel.id === '660994643214991390'){
     if(message.content.startsWith('!blitz')) {
 
+
       // Get the channel to fetch the message from.
       const channelToCheck = message.guild.channels.get('617707484626288672')
 
@@ -92,17 +93,17 @@ client.on('message', message => {
 		channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
 		const lastImage = message.attachments.first()
 		message.channel.send(lastImage.content)
-		const imageUrl = message.content.split(' ').slice(1);
-		const embed = new Discord.RichEmbed().setImage(imageUrl)
-		message.channel.send(embed)
 		})
-      .catch(err => {
+      }.catch(err => {
         console.error(err)
       })
-  }
     }
   });
   
+//	const imageUrl = message.content.split(' ').slice(1);
+//	const embed = new Discord.RichEmbed().setImage(imageUrl)
+//	message.channel.send{ embed }
+	
 
 
 
