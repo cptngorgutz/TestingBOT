@@ -93,7 +93,7 @@ client.on('message', message => {
         const lastMessage = messages.first()
 		var blitzimage = (message.attachments)
 		if (message.attachments.size > 0) {
-		message.channel.send(blitzimage);}
+		message.channel.send(lastMessage);}
 		else {
 		message.channel.send(lastMessage.content)
 		}
