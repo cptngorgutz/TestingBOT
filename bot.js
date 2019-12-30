@@ -85,7 +85,7 @@ client.on('message', (message) => { //test blitz
 //                           BLITZ ROOM
 	message.channel.bulkDelete(1)
 	if (message.channel.id === '660994643214991390') {
-    const general = member.guild.channels.find(c => c.name === 'general');
+    const general = message.guild.channels.find(c => c.name === 'general');
 	message.channel.fetchMessages({limit: 1}).then(collected => { //collected is a Collection
 	collected.forEach(message => {
 	general.send.catch(err => console.log(err));
