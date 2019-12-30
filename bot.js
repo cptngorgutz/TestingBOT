@@ -92,7 +92,6 @@ client.on('message', message => {
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
         const lastMessage = messages.first()
 		const picture = message.attachments.first(); //this is the attchment you choose to use
-		const data = fs.readFileSync(file.attachment); //this reads the attachment & returns the data
 		if (message.attachments) {
 		message.channel.send(picture)
 		} else {
