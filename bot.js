@@ -99,7 +99,7 @@ client.on('message', message => {
       })
     }
   }
-})
+});
 
 
 
