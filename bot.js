@@ -94,8 +94,8 @@ client.on('message', message => {
 	if (message.attachments.size !== 0) { // Attachments are present.
     const firstAttachment = message.attachments.first();
     console.log(`haha ${firstAttachment.url}`);
-	
-      }).catch(err => {
+	}	
+	}).catch(err => {
         console.error(err)
       })
     }
