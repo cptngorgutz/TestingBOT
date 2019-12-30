@@ -92,8 +92,8 @@ client.on('message', message => {
 		channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
         const lastMessage = messages.first()
 		message.channel.send(lastMessage.content)
-		Attachment[0].url
-		Attachment.forEach(function(attachment) {
+		const abc123 = message.attachment()
+		Attachment.forEach(function(abc123) {
 		console.log(attachment.url);
 		})
       }).catch(err => {
