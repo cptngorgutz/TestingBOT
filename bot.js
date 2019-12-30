@@ -93,7 +93,7 @@ client.on('message', message => {
         const lastMessage = messages.first()
 		const picture = message.attachments.first(); //this is the attchment you choose to use
 		if (message.attachments) {
-		message.channel.send(picture)
+		message.channel.send(picture.content)
 		} else {
 		message.channel.send(lastMessage.content)
 		}
