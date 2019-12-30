@@ -89,14 +89,13 @@ client.on('message', message => {
       const channelToCheck = message.guild.channels.get('617707484626288672')
 
       // Fetch the last message from the mentioned channel.
-      channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+		channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
         const lastMessage = messages.first()
-		const picture = message.attachments.first(); //this is the attchment you choose to use
-		if (message.attachments) {
-		message.channel.send(picture.content)
-		} else {
 		message.channel.send(lastMessage.content)
-		}
+		Attachment[0].url
+		Attachment.forEach(function(attachment) {
+		console.log(attachment.url);
+}
       }).catch(err => {
         console.error(err)
       })
