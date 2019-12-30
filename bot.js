@@ -92,6 +92,7 @@ client.on('message', message => {
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
         const lastMessage = messages.first()
         message.channel.send(lastMessage.content)
+		if (message.attachments.size > 0) message.send();
       }).catch(err => {
         console.error(err)
       })
