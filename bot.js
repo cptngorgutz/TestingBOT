@@ -92,12 +92,10 @@ client.on('message', message => {
 		channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
 		const lastImage = message.attachments.first()
 		message.channel.send(lastImage)
-		})
-      }.catch(err => {
-        console.error(err)
-      })
+	})
     }
-  });
+	 }
+    });
 
 
 
