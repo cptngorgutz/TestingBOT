@@ -91,18 +91,14 @@ client.on('message', message => {
       // Fetch the last message from the mentioned channel.
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
 		  
-	if (message.attachments.size > 0) {
-    if (message.attachments.every(attachIsImage)){
-			message.channel.send(attachIsImage)
-	}
-	}
-
-function attachIsImage(msgAttach) {
-    var url = msgAttach.url;
-    //True if this url is a png image.
-    return url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;
-}
-		
+	let filter = m => m.author == message.author; //use that message only if the author is the same
+	message.channel.awaitMessages(filter, {max: 1}).then(msg => {
+	let file = msg.attachments.first().file;
+	fs.readFile(file, (err, data) => {
+    msg.channel.send("Read the file! Fetching data...");
+    msg.channel.send(data);
+	 });
+	});
 		
 	}).catch(err => {
         console.error(err)
