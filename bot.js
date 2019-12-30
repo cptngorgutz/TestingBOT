@@ -92,10 +92,10 @@ client.on('message', message => {
       channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
         const lastMessage = messages.first()
 		var blitzimage = (message.attachments)
-        message.channel.send(lastMessage.content)
 		if (message.attachments.size > 0) {
 		message.channel.send(blitzimage);}
-		message.channel.send(lastMessage)
+		else {
+		message.channel.send(lastMessage.content)
 		}
       }).catch(err => {
         console.error(err)
