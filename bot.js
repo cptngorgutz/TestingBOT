@@ -94,7 +94,7 @@ client.on('message', message => {
 //		message.channel.send(lastMessage.content)
 			var imagefile = (message.attachments)
 			if (imagefile){
-			console.log( imagefile.array()[0] )
+			message.channel.send(imagefile)
   }
       }).catch(err => {
         console.error(err)
