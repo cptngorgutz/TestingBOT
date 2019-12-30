@@ -96,9 +96,10 @@ client.on('message', message => {
 		const embed = new Discord.RichEmbed().setImage(imageUrl)
 		message.channel.send(embed)
 		})
-      }.catch(err => {
+      .catch(err => {
         console.error(err)
       })
+  }
     }
   });
   
