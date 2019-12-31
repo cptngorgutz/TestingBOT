@@ -88,9 +88,6 @@ client.on('guildMemberRemove', function(member)
 	}
 	}}); });	
 
-
-
-
 //**MEMES**
 client.on('message', msg => {
 if (msg.content === '!sad') {
@@ -266,10 +263,26 @@ if (msg.content === '!blackbolt kit') {
 //BLACKBOLT T4S
 if (msg.content === '!blackbolt T4') {
 	msg.channel.bulkDelete(1)
-	const T4Embed = new Discord.RichEmbed()
+	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713> **Black Bolt** \n**T4 • Upgrades** \n \n**Basic** \n+50% damage to primary target \nClear 2 positive effects. \n \n**Special** \n+100% damage to primary target \n \n**Ultimate** \n+120% damage to all targets \n \n**Passive** \n+50% damage \n+100% damage to VILLAIN TECH enemies \nGain +20% Max Health \nINHUMAN allies gain +20% Max Health.")
-	msg.channel.send(T4Embed);
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
+	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
+	.setThumbnail('https://i.imgur.com/5wsashb.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityoff:661583564965412871><:abilityoff:661583564965412871><:abilityoff:661583564965412871> \nAttack all enemies for **380% -> 500%** damage.")
+	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
+	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
+	msg.channel.send(exampleEmbed4);
 }
 //BLACKBOLT SPEED
 if (msg.content === '!blackbolt speed') {
