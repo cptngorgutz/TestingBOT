@@ -238,7 +238,7 @@ if (msg.content === '!Ultron Basic Code') {
 }
 });
 
-//BLACK BOLT KIT
+//BLACK BOLT
 client.on('message', msg => {
 if (msg.content === '!blackbolt kit') {
 	msg.channel.bulkDelete(1)
@@ -262,7 +262,17 @@ if (msg.content === '!blackbolt kit') {
 	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • Level 5** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n200%damage. If that enemy is VILLAIN TECH, attack that enemy \nfor 400% damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain +50% Max Health. INHUMAN allies gain +50% Max Health.")
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
 	msg.channel.send(exampleEmbed4);
-}});
+}
+//BLACKBOLT T4S
+if (msg.content === '!blackbolt T4') {
+	msg.channel.bulkDelete(1)
+	const T4Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>> **Black Bolt** \nT4 • Upgrades \n \n**T4 • Upgrades** \n \nBasic • +50% damage to primary target \nClear 2 positive effects. \n \nSpecial • +100% damage to primary target \n \nUltimate • +120% damage to all targets \n \nPassive • +50% damage \n+100% damage to VILLAIN TECH enemies \nGain +20% Max Health \nINHUMAN allies gain +20% Max Health.")
+	msg.channel.send(T4Embed);
+}
+
+});
 
 
 
