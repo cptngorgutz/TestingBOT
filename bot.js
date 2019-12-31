@@ -111,18 +111,18 @@ client.on('message', (message) => {
 	
 ///////
 client.on('message', message => {
-if (msg.content === '!asgardians') {
+if (msg.content === '!Ultron Basic 7') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setAuthor('Heimdall', 'https://i.imgur.com/EO6C7M6.png', 'https://msf.gg/characters/Heimdall')
-	.addField("Heimdall's speed is: 100", '⠀')
-	.icon_url: client.user.avatarURL
-	.icon_url: client.user.avatarURL
-	.icon_url: client.user.avatarURL
-	.icon_url: client.user.avatarURL
-	.icon_url: client.user.avatarURL
-	.icon_url: client.user.avatarURL
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField("661370019325935666" + "Heimdall's speed is: 100", '⠀')
+	.addField("661370019317284880" + "Hela's speed is: 100", '⠀')
+	.addField("661370019300638737" + "Sif's speed is: 100", '⠀')
+	.addField("661370019145449473" + "Loki's speed is: 100", '⠀')
+	.addField("661370019279667248" + "Thor's speed is: 100", '⠀')
 	msg.channel.send(exampleEmbed);
 }});
 
