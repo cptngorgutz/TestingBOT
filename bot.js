@@ -271,6 +271,14 @@ if (msg.content === '!blackbolt T4') {
 	.setDescription("<:blackbolt:661586769342365713> **Black Bolt** \n**T4 • Upgrades** \n \n**Basic** \n+50% damage to primary target \nClear 2 positive effects. \n \n**Special** \n+100% damage to primary target \n \n**Ultimate** \n+120% damage to all targets \n \n**Passive** \n+50% damage \n+100% damage to VILLAIN TECH enemies \nGain +20% Max Health \nINHUMAN allies gain +20% Max Health.")
 	msg.channel.send(T4Embed);
 }
+//BLACKBOLT SPEED
+if (msg.content === '!blackbolt speed') {
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713> **Black Bolt** \nBlack Bolt's speed is: 100")
+	msg.channel.send(speedEmbed);
+}
 
 });
 
