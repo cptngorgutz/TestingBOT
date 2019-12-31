@@ -110,16 +110,19 @@ client.on('message', (message) => {
 }});
 	
 ///////
-client.on('message', msg => {
-if (msg.content === '!Ultron Basic 7') {
+client.on('message', message => {
+if (msg.content === '!asgardians') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 7**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 340% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 65', '⠀')
+	.setAuthor('Heimdall', 'https://i.imgur.com/EO6C7M6.png', 'https://msf.gg/characters/Heimdall')
+	.addField("Heimdall's speed is: 100", '⠀')
+	.icon_url: client.user.avatarURL
+	.icon_url: client.user.avatarURL
+	.icon_url: client.user.avatarURL
+	.icon_url: client.user.avatarURL
+	.icon_url: client.user.avatarURL
+	.icon_url: client.user.avatarURL
 	msg.channel.send(exampleEmbed);
 }});
 
