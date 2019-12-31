@@ -280,7 +280,7 @@ if (msg.content === '!blackbolt T4') {
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \n*When an enemy drops below 25% Health:* \nAttack that enemy for: **150% -> 200%** damage. \n*If the enemy is VILLAIN TECH:* \nAttack that enemy for **300% -> 400%** damage instead. \n \n*On enemy summon:* \nApply Disrupted + clear 3 positive effects on the summoner. \n \n*Stats:* \nGain +40% Resistance. \nINHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. \nINHUMAN allies gain **+30% -> +50%** Max Health.")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \nCharacters killed by Black Bolt cannot be revived. \n*When an enemy drops below 25% Health:* \nAttack that enemy for: **150% -> 200%** damage. \n*If the enemy is VILLAIN TECH:* \nAttack that enemy for **300% -> 400%** damage instead. \n \n**On enemy summon:** \nApply Disrupted + clear 3 positive effects on the summoner. \n \n**Stats:** \nGain +40% Resistance. \nINHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. \nINHUMAN allies gain **+30% -> +50%** Max Health.")
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
 	msg.channel.send(exampleEmbed4);
 }
