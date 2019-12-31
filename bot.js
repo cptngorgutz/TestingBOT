@@ -111,18 +111,15 @@ client.on('message', (message) => {
 	
 ///////
 client.on('message', msg => {
-if (msg.content === '!Ultron Basic 7') {
+if (msg.content === '!Asgardians') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-//	.setAuthor('Heimdall', 'https://i.imgur.com/EO6C7M6.png', 'https://msf.gg/characters/Heimdall')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField("<:heimdall:661370019325935666>" + "Heimdall", '⠀')
-	.addField("<:hela:661370019317284880>" + "Hela", '⠀')
-	.addField("<:sif:661370019300638737>" + "Sif", '⠀')
-	.addField("<:loki:661370019145449473>" + "Loki", '⠀')
-	.addField("<:thor:661370019279667248>" + "Thor", '⠀')
+	.addField("<:heimdall:661370019325935666>" + "**Heimdall**", 'https://msf.gg/characters/Heimdall')
+	.addField("<:hela:661370019317284880>" + "**Hela**", '⠀')
+	.addField("<:sif:661370019300638737>" + "**Sif**", '⠀')
+	.addField("<:loki:661370019145449473>" + "**Loki**", '⠀')
+	.addField("<:thor:661370019279667248>" + "**Thor**", '⠀')
 	msg.channel.send(exampleEmbed);
 }});
 
