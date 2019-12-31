@@ -256,7 +256,7 @@ if (msg.content === '!blackbolt kit') {
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • Level 5** \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health: \nAttack that enemy for **200%** damage. \nIf the enemy is VILLAIN TECH: \nAttack that enemy for **400%** damage instead. \n**On enemy summon:** \nApply Disrupted + clear 3 positive effects on\nthe summoner. \n \n**Stats** \nGain +40% Resistance. \nINHUMAN allies gain +40% Resistance. \nGain +50% Max Health. \nINHUMAN allies gain +50% Max Health.")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • Level 5** \nCharacters killed by Black Bolt cannot be revived. \n \nWhen an enemy drops below 25% Health: \nAttack that enemy for **200%** damage. \nIf the enemy is VILLAIN TECH: \nAttack that enemy for **400%** damage instead. \n \n**On enemy summon:** \nApply Disrupted + clear 3 positive effects on\nthe summoner. \n \n**Stats** \nGain +40% Resistance. \nINHUMAN allies gain +40% Resistance. \nGain +50% Max Health. \nINHUMAN allies gain +50% Max Health.")
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
 	msg.channel.send(exampleEmbed4);
 }
