@@ -92,7 +92,7 @@ client.on('guildMemberRemove', function(member)
 
 
 //**MEMES**
-client.on('message', message => {
+client.on('message', msg => {
 if (msg.content === '!sad') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
@@ -114,7 +114,9 @@ if (msg.content === '!happy') {
 }
 });
 
-//**DELETE TEXT**          GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE
+//**DELETE TEXT**         
+client.on('message', msg => {
+//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE
 	const admins = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
 	if(admins.includes(msg.author.id)){
 	if (msg.content === '!delete 5') {
@@ -122,6 +124,7 @@ if (msg.content === '!happy') {
 	} else{
 		//do nothing
 	}}
+	});
 
 /////////////////////////////////////////////////////////**CHARACTERS**
 //ASGARDIANS
