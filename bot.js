@@ -244,7 +244,7 @@ if (msg.content === '!blackbolt kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Basic)** \n \nRoyal Strike • Level 7 \n \nIf the primary target has slow, flip 2 negative effects on self. \nAttack primary target for 400% damaage + clear 2 positive effects")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Basic)** \n \n**Royal Strike • Level 7** \n \nIf the primary target has slow, flip 2 negative effects on self. \nAttack primary target for 400% damaage + clear 2 positive effects")
 	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
 	msg.channel.send(exampleEmbed);
 }});
