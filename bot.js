@@ -115,7 +115,7 @@ if (msg.content === '!Asgardians') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: 100 \n \n<:hela:661370019317284880> **Hela** \nHela's speed is: 110 \n \n<:loki:661370019145449473> **Loki** \nLoki's speed is: 115 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: 108 \n \n<:thor:661370019279667248> **Thor** \nThor's speed is: 90")
+	.setDescription("<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: 100 \n \n<:hela:661370019317284880> **Hela** \nHela's speed is: 110 \n \n<:loki:661370019145449473> **Loki** \nLoki's speed is: 115 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: 108 \n \n<:thor:661370019279667248> **Thor** \nThor's speed is: 90 \n \n<:greg:661392103900839936> **Undead Asgardian** \nUndead Asgardian's speed is: 105")
 	msg.channel.send(exampleEmbed);
 }});
 
