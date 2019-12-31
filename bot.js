@@ -268,7 +268,7 @@ if (msg.content === '!blackbolt T4') {
 	msg.channel.bulkDelete(1)
 	const T4Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>> **Black Bolt** \nT4 • Upgrades \n \n**T4 • Upgrades** \n \nBasic • +50% damage to primary target \nClear 2 positive effects. \n \nSpecial • +100% damage to primary target \n \nUltimate • +120% damage to all targets \n \nPassive • +50% damage \n+100% damage to VILLAIN TECH enemies \nGain +20% Max Health \nINHUMAN allies gain +20% Max Health.")
+	.setDescription("<:blackbolt:661586769342365713> **Black Bolt** \n**T4 • Upgrades** \n \n**Basic** \n+50% damage to primary target \nClear 2 positive effects. \n \n**Special** \n+100% damage to primary target \n \n**Ultimate** \n+120% damage to all targets \n \n**Passive** \n+50% damage \n+100% damage to VILLAIN TECH enemies \nGain +20% Max Health \nINHUMAN allies gain +20% Max Health.")
 	msg.channel.send(T4Embed);
 }
 
