@@ -119,7 +119,7 @@ if (msg.content === '!Asgardians') {
 	//.addField("<:sif:661370019300638737>" + "** Sif** \nSif's Speed is: 108", '⠀')
 	//.addField("<:loki:661370019145449473>" + "** Loki** \nLoki's Speed is: 115", '⠀')
 	//.addField("<:thor:661370019279667248>" + "** Thor** \nThor's Speed is: 90", '⠀')
-	.addField('<:thor:661370019279667248> **Thor**', "\nThor's Speed is: 90")
+	 .addField("<:thor:661370019279667248> **Thor**", "Thor's Speed is: 90")
 	msg.channel.send(exampleEmbed);
 }});
 
