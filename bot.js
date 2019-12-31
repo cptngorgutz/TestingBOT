@@ -1,14 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const PREFIX = "p!";
-const PREFIX2 = "p1-4!";
-// const config = require('./config.json');
 client.setMaxListeners(40);
-//client.on('ready', () => {
-//    console.log(`Logged in as ${client.user.tag}!`);
-//});
-//@@@@@@@@@@@@@@@NEED FOR CATCHING INVITES@@@@@@@@@@@@@@@@@
-// Initialize the invite cache
 const invites = {};
 
 // A pretty useful method to create a delay without blocking the whole script.
@@ -24,7 +16,7 @@ invites[g.id] = guildInvites;
 });
 });
 });
-
+//USERS JOINING
 client.on('guildMemberAdd', function(member) {
  	member.guild.channels.get('551566689620197376').send(`Welcome to The Beyonders! ${member}. \nOne of the captains will be with you shortly. \nWe hope you enjoy your stay here. \nPlease post a profile picture in the #profile-images channel. Thankyou.`);
 	//NEW USERS JOIN
@@ -77,1021 +69,6 @@ member.addRole(memberRole);
 	
 });	 
 
-//@@@@@@@BLITZ PREDICTIONS@@@@@@@@@@@@
-client.on('message', message => {
-
-  // Check if the message was sent in the channel with the specified id.
-  if(message.channel.id === '660994643214991390'){
-    if(message.content.startsWith('!blitz')) {
-
-      // Get the channel to fetch the message from.
-      const channelToCheck = message.guild.channels.get('617707484626288672')
-
-      // Fetch the last message from the mentioned channel.
-    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-    const lastMessage = messages.first()
-	message.channel.send(lastMessage.content)
-//	const imageUrl = message.content.split(' ').slice(1);
-//	const embed = new Discord.RichEmbed().setImage(imageUrl)
-//	message.channel.send(embed)
-    }).catch(err => {
-    console.error(err)
-    })
-    }
-  }
-});
-client.on('message', (message) => {
-  const MENTION = message.mentions.members.first();
-  if(message.content.startsWith('!test') && message.content.includes(MENTION)) {
-  if(MENTION.roles.some(r=>["LEADER","TESTING"].includes(r.name)) )
-  MENTION.member.removeRoles(['661352807647150080', '661352317643390976'])
-  .then(console.log)
-  .catch(console.error);
-}});
-
-
-client.on('message', msg => {
-if (msg.content === '!Asgardians') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: 100 \n \n<:hela:661370019317284880> **Hela** \nHela's speed is: 110 \n \n<:loki:661370019145449473> **Loki** \nLoki's speed is: 115 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: 108 \n \n<:thor:661370019279667248> **Thor** \nThor's speed is: 90 \n \n<:greg:661392103900839936> **Undead Asgardian** \nUndead Asgardian's speed is: 105")
-	msg.channel.send(exampleEmbed);
-}});
-
-///////
-
-//********************** POLLS?***************
-//simple 2 responce poll yes or no
-client.on('message', message =>{
-	let args = message.content.substring(PREFIX.length).split(" ");
-	
-	switch(args[0]){
-		
-		case "poll":
-	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
-		.setColor(0xFFC300)
-		.setTitle("Initiate Poll")
-		.setDescription("p!poll to ininiate a simple yes or no poll");
-		
-		
-			if(!args[1]){
-				message.channel.send(Embed);
-				break;
-			}
-			
-			let msgArgs = args.slice(1).join(" ");
-			
-			message.channel.send(msgArgs).then(messageReaction => {
-				messageReaction.react("👍");
-				messageReaction.react("👎");
-			});
-			
-		break;
-		
-	}
-});
-//4 responce poll 1-4
-client.on('message', async message =>{
-	let args = message.content.substring(PREFIX2.length).split(" ");
-	
-	switch(args[0]){
-		
-		case "poll":
-	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
-		.setColor(0xFFC300)
-		.setTitle("Initiate Poll")
-		.setDescription("p1-4!poll to ininiate a number 1-4 poll");
-		
-		
-			if(!args[1]){
-				message.channel.send(Embed);
-				break;
-			}
-			
-			let msgArgs = args.slice(1).join(" ");
-			
-			message.channel.send(msgArgs).then(async messageReaction => {
-				await messageReaction.react("651124121005981722");
-				await messageReaction.react("651124121119359006");
-				await messageReaction.react("651124121371017266");
-				await messageReaction.react("651124120913838121");
-			});	
-		break;
-	}
-});
-
-
-
-	
-//**********************TB1 ROLES***************************THIS IS FOR LEADERS**********************//
-client.on('message', (message) => {
-//                        GADD               BOB                   RAIN                VAYGRANT               BUSTA               CLEAVELANDS              AZYREL           LYLE
-const admin = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '344950903910170655', '330052499442499585', '222324', '252627', '282930', ]
-if(admin.includes(message.author.id)){	
-if(message.content.startsWith('!add TB1')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("428986352546349057");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1 Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove TB1')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("428986352546349057");
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1 Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}  //******************************************
-if(message.content.startsWith('!add recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("476045239719821324");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("RECRUIT Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("476045239719821324"); 
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("RECRUIT Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} //**********************************************************************************************************
-if(message.content.startsWith('!add tb1recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("575668741770182677");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("tb1recruit Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove tb1recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("575668741770182677"); 
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("tb1recruit Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} 
-//************************************************************************************************************************************
-if(message.content.startsWith('!add TB1team1')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("431511357540532244");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1team1 Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove TB1team1')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("431511357540532244");
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1team1 Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} //************************************************************************************************************************************
-if(message.content.startsWith('!add TB1team2')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("431511377824448512");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1team2 Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove TB1team2')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("431511377824448512");
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1team2 Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} //************************************************************************************************************************************
-if(message.content.startsWith('!add TB1team3')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("431511398057771029");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1team3 Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove TB1team3')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("431511398057771029");
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("TB1team3 Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} 
-//launch raids
-if(message.content.startsWith('!u6')) {
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Ultimus 6 Launched")  
-}
-
-if(message.content.startsWith('!u7')) {
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Ultimus 7 Launched")  
-}
-
-if(message.content.startsWith('!a4')) {
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Alpha 4 Launched")  
-}
-
-if(message.content.startsWith('!b4')) {
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Beta 4 Launched")  
-}
-
-if(message.content.startsWith('!g4')) {
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Gamma 4 Launched")  
-}
-
-//WAR COMMANDS
-if (message.content === '!fd1 l' || message.content === '!FD1 L' || message.content === '!fd1 L' || message.content === '!FD1 l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 1 - Left Side")  
-}
-if (message.content === '!fd1 r' || message.content === '!FD1 R' || message.content === '!fd1 R' || message.content === '!FD1 r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 1 - Right Side")  
-}
-if (message.content === '!fd1 f' || message.content === '!FD1 F' || message.content === '!fd1 F' || message.content === '!FD1 f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 1 - Full Clear")  
-}
-if (message.content === '!fd2 l' || message.content === '!FD2 L' || message.content === '!fd2 L' || message.content === '!FD2 l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 2 - Left Side")  
-}
-if (message.content === '!fd2 r' || message.content === '!FD2 R' || message.content === '!fd2 R' || message.content === '!FD2 r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 2 - Right Side")  
-}
-if (message.content === '!fd2 f' || message.content === '!FD2 F' || message.content === '!fd2 F' || message.content === '!FD2 f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 2 - Full Clear")  
-}
-if (message.content === '!fd3 l' || message.content === '!FD3 L' || message.content === '!fd3 L' || message.content === '!FD3 l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 3 - Left Side")  
-}
-if (message.content === '!fd3 r' || message.content === '!FD3 R' || message.content === '!fd3 R' || message.content === '!FD3 r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 3 - Right Side")  
-}
-if (message.content === '!fd3 f' || message.content === '!FD3 F' || message.content === '!fd3 F' || message.content === '!FD3 f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Flight Deck 3 - Full Clear")  
-}
-
-if (message.content === '!han l' || message.content === '!HAN L' || message.content === '!han L' || message.content === '!HAN l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Hangar - Left Side")  
-}
-if (message.content === '!han r' || message.content === '!HAN R' || message.content === '!han R' || message.content === '!HAN r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Hangar - Right Side")  
-}
-if (message.content === '!han f' || message.content === '!HAN F' || message.content === '!han F' || message.content === '!HAN f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Hangar - Full Clear")  
-}
-
-if (message.content === '!eng l' || message.content === '!ENG L' || message.content === '!eng L' || message.content === '!ENG l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Engineering - Left Side")  
-}
-if (message.content === '!eng r' || message.content === '!ENG R' || message.content === '!eng R' || message.content === '!ENG r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Engineering - Right Side")  
-}
-if (message.content === '!eng f' || message.content === '!ENG F' || message.content === '!eng F' || message.content === '!ENG f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Engineering - Full Clear")  
-}
-
-if (message.content === '!bar l' || message.content === '!BAR L' || message.content === '!bar L' || message.content === '!BAR l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Barracks - Left Side")  
-}
-if (message.content === '!bar r' || message.content === '!BAR R' || message.content === '!bar R' || message.content === '!BAR r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Barracks - Right Side")  
-}
-if (message.content === '!bar f' || message.content === '!BAR F' || message.content === '!bar F' || message.content === '!BAR f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Barracks - Full Clear")  
-}
-
-if (message.content === '!rea l' || message.content === '!REA L' || message.content === '!rea L' || message.content === '!REA l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Reactor - Left Side")  
-}
-if (message.content === '!rea r' || message.content === '!REA R' || message.content === '!rea R' || message.content === '!REA r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Reactor - Right Side")  
-}
-if (message.content === '!rea f' || message.content === '!REA F' || message.content === '!rea F' || message.content === '!REA f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Reactor - Full Clear")  
-}
-
-
-if (message.content === '!arm l' || message.content === '!ARM L' || message.content === '!arm L' || message.content === '!ARM l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Armory - Left Side")  
-}
-if (message.content === '!arm r' || message.content === '!ARM R' || message.content === '!arm R' || message.content === '!ARM r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Armory - Right Side")  
-}
-if (message.content === '!arm f' || message.content === '!ARM F' || message.content === '!arm F' || message.content === '!ARM f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Armory - Full Clear")  
-}
-
-
-if (message.content === '!bri l' || message.content === '!BRI L' || message.content === '!bri L' || message.content === '!BRI l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Bridge - Left Side")  
-}
-if (message.content === '!bri r' || message.content === '!BRI R' || message.content === '!bri R' || message.content === '!BRI r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Bridge - Right Side")  
-}
-if (message.content === '!bri f' || message.content === '!BRI F' || message.content === '!bri F' || message.content === '!BRI f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Bridge - Full Clear")  
-}
-
-if (message.content === '!car l' || message.content === '!CAR L' || message.content === '!car L' || message.content === '!CAR l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Cargo - Left Side")  
-}
-if (message.content === '!car r' || message.content === '!CAR R' || message.content === '!car R' || message.content === '!CAR r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Cargo - Right Side")  
-}
-if (message.content === '!car f' || message.content === '!CAR F' || message.content === '!car F' || message.content === '!CAR f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Cargo - Full Clear")  
-}
-
-if (message.content === '!sec l' || message.content === '!SEC L' || message.content === '!sec L' || message.content === '!SEC l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Security - Left Side")  
-}
-if (message.content === '!sec r' || message.content === '!SEC R' || message.content === '!sec R' || message.content === '!SEC r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Security - Right Side")  
-}
-if (message.content === '!sec f' || message.content === '!SEC F' || message.content === '!sec F' || message.content === '!SEC f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Security - Full Clear")  
-}
-
-
-if (message.content === '!med l' || message.content === '!MED L' || message.content === '!med L' || message.content === '!MED l')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Medbay - Left Side")  
-}
-if (message.content === '!med r' || message.content === '!MED R' || message.content === '!med R' || message.content === '!MED r')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Medbay - Right Side")  
-}
-if (message.content === '!med f' || message.content === '!MED F' || message.content === '!med F' || message.content === '!MED f')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone Medbay - Full Clear")  
-}
-
-if (message.content === '!ffa' || message.content === '!FFA' || message.content === '!Ffa' || message.content === '!ffA')	{
-message.channel.bulkDelete(1)
-message.channel.send("@everyone - Free For All")  
-}
-
-else {
-//do nothing
-}
-}
-});
-//*****************************************************************************************************//
-//*******************************************TB2 ROLES*******************************************//
-//*****************************************************************************************************//
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-if(message.content.startsWith('!add recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("476045239719821324");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("RECRUIT Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("476045239719821324"); 
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("RECRUIT Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} //**************************************************************************//	
-if(message.content.startsWith('!add tb2recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("575668979008405504");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("tb2recruit Role was GIVEN by " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove tb2recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("575668979008405504"); 
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("tb2recruit Role was REMOVED by " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} //**************************************************************************//	role here boy
-}});
-
-
-//*****************************************************************************************************//
-//*******************************************TB3 ROLES*******************************************//
-//*****************************************************************************************************//
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-if(message.content.startsWith('!add recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("476045239719821324");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("RECRUIT Role was GIVEN to " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("476045239719821324"); 
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("RECRUIT Role was REMOVED from " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} 
-
-if(message.content.startsWith('!add tb3recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("575668979008405504");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("tb2recruit Role was GIVEN by " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-}
-if(message.content.startsWith('!remove tb3recruit')) {
-let userToModify = message.mentions.members.first();
-let roleToAdd = message.guild.roles.get("643128934187139072"); 
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.guild.channels.find("name", "leader-logs").sendMessage("tb3recruit Role was REMOVED by " + userToModify + " by " + message.author);
-message.channel.bulkDelete(1)
-} //**************************************************************************//	
-}});
-
-//**************************GIVING ROLES TO TB1*************************
-//***************************************************************START
-//////////////////////////////////////////////TESTING TB1 TEAM 1//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 1 REMOVE TEAM 2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB1team1') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB1team2');
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
-MENTION.addRole(team1).catch(console.error);
-MENTION.removeRole(team2).catch(console.error);
-message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
-} else {
-}
-//GIVE TEAM 1 REMOVE TEAM 3
-if(message.content.startsWith('!give TB1team1') && message.content.includes(MENTION)) {
-const team3 = message.guild.roles.find(role => role.name === 'TB1team3');
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
-MENTION.addRole(team1).catch(console.error);
-MENTION.removeRole(team3).catch(console.error);
-message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
-} else {
-}}
-// GIVE TEAM 1 WHILST HAVING TEAM 1
-if(message.content.startsWith('!give TB1team1') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
-message.channel.send("" + MENTION + " Is already in TB1team1")
-} else {
-}}
-}}});
-
-//////////////////////////////////////////////TESTING TB1 TEAM 2//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 2 REMOVE TEAM 3
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB1team2');
-const team3 = message.guild.roles.find(role => role.name === 'TB1team3');
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
-MENTION.addRole(team2).catch(console.error);
-MENTION.removeRole(team3).catch(console.error);
-message.channel.send("Team3 Removed from " + MENTION + " + Team2 Added")
-} else {
-}
-//GIVE TEAM 2 REMOVE TEAM 1
-if(message.content.startsWith('!give TB1team2') && message.content.includes(MENTION)) {
-const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
-MENTION.addRole(team2).catch(console.error);
-MENTION.removeRole(team1).catch(console.error);
-message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
-} else {
-}}
-// GIVE TEAM 2 WHILST HAVING TEAM 2
-if(message.content.startsWith('!give TB1team2') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
-message.channel.send("" + MENTION + " Is already in TB2team2")
-} else {
-}}
-}}});
-
-//////////////////////////////////////////////TESTING TB1 TEAM 3//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 3 REMOVE TEAM 2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB1team3') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB1team2');
-const team3 = message.guild.roles.find(role => role.name === 'TB1team3');
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
-MENTION.addRole(team3).catch(console.error);
-MENTION.removeRole(team2).catch(console.error);
-message.channel.send("Team2 Removed from " + MENTION + " + Team3 Added")
-} else {
-}
-//GIVE TEAM 3 REMOVE TEAM 1
-if(message.content.startsWith('!give TB1team3') && message.content.includes(MENTION)) {
-const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
-MENTION.addRole(team3).catch(console.error);
-MENTION.removeRole(team1).catch(console.error);
-message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
-} else {
-}}
-// GIVE TEAM 3 WHILST HAVING TEAM 3
-if(message.content.startsWith('!give TB1team3') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
-message.channel.send("" + MENTION + " Is already in TB1team3")
-} else {
-}}
-}}});
-//***************************************************************END
-
-//////////////////////////////////////////////TESTING TB2 TEAM 1//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 1 REMOVE TEAM 2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB2team1') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team2.id)) {
-MENTION.addRole(team1).catch(console.error);
-MENTION.removeRole(team2).catch(console.error);
-message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
-} else {
-}
-//GIVE TEAM 1 REMOVE TEAM 3
-if(message.content.startsWith('!give TB2team1') && message.content.includes(MENTION)) {
-const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
-MENTION.addRole(team1).catch(console.error);
-MENTION.removeRole(team3).catch(console.error);
-message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
-} else {
-}}
-// GIVE TEAM 1 WHILST HAVING TEAM 1
-if(message.content.startsWith('!give TB2team1') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team1.id)) {
-message.channel.send("" + MENTION + " Is already in TB2team1")
-} else {
-}}
-}}});
-
-//////////////////////////////////////////////TESTING TB2 TEAM 2//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 2 REMOVE TEAM 3
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
-MENTION.addRole(team2).catch(console.error);
-MENTION.removeRole(team3).catch(console.error);
-message.channel.send("Team3 Removed from " + MENTION + " + Team2 Added")
-} else {
-}
-//GIVE TEAM 2 REMOVE TEAM 1
-if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
-const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team1.id)) {
-MENTION.addRole(team2).catch(console.error);
-MENTION.removeRole(team1).catch(console.error);
-message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
-} else {
-}}
-// GIVE TEAM 2 WHILST HAVING TEAM 2
-if(message.content.startsWith('!give TB2team2') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team2.id)) {
-message.channel.send("" + MENTION + " Is already in TB2team2")
-} else {
-}}
-}}});
-
-//////////////////////////////////////////////TESTING TB2 TEAM 3//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 3 REMOVE TEAM 2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB2team3') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-const team3 = message.guild.roles.find(role => role.name === 'TB2team3');
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team2.id)) {
-MENTION.addRole(team3).catch(console.error);
-MENTION.removeRole(team2).catch(console.error);
-message.channel.send("Team2 Removed from " + MENTION + " + Team3 Added")
-} else {
-}
-//GIVE TEAM 3 REMOVE TEAM 1
-if(message.content.startsWith('!give TB2team3') && message.content.includes(MENTION)) {
-const team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team1.id)) {
-MENTION.addRole(team3).catch(console.error);
-MENTION.removeRole(team1).catch(console.error);
-message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
-} else {
-}}
-// GIVE TEAM 3 WHILST HAVING TEAM 3
-if(message.content.startsWith('!give TB2team3') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB2.id) && MENTION.roles.has(team3.id)) {
-message.channel.send("" + MENTION + " Is already in TB2team3")
-} else {
-}}
-}}});
-
-
-//***************************************************************START
-//////////////////////////////////////////////TESTING TB3 TEAM 1//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 1 REMOVE TEAM 2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB3team1') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-const team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB3team2');
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team2.id)) {
-MENTION.addRole(team1).catch(console.error);
-MENTION.removeRole(team2).catch(console.error);
-message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
-} else {
-}
-//GIVE TEAM 1 REMOVE TEAM 3
-if(message.content.startsWith('!give TB3team1') && message.content.includes(MENTION)) {
-const team3 = message.guild.roles.find(role => role.name === 'TB3team3');
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team3.id)) {
-MENTION.addRole(team1).catch(console.error);
-MENTION.removeRole(team3).catch(console.error);
-message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
-} else {
-}}
-// GIVE Team1 WHILST HAVING team1
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team1.id)) {
-//console.log("Reached has role");
-message.channel.send("" + MENTION + " Is already in TB3team1")
-} else {
-	console.log("ERROR REACHING HERE");
-}}
-}});
-
-
-//////////////////////////////////////////////TESTING TB3 TEAM 2//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 2 REMOVE TEAM 3
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB3team2') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-const team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB3team2');
-const team3 = message.guild.roles.find(role => role.name === 'TB3team3');
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team3.id)) {
-MENTION.addRole(team2).catch(console.error);
-MENTION.removeRole(team3).catch(console.error);
-message.channel.send("Team3 Removed from " + MENTION + " + Team2 Added")
-} else {
-}
-//GIVE TEAM 2 REMOVE TEAM 1
-if(message.content.startsWith('!give TB3team2') && message.content.includes(MENTION)) {
-const team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team1.id)) {
-MENTION.addRole(team2).catch(console.error);
-MENTION.removeRole(team1).catch(console.error);
-message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
-} else {
-}}
-// GIVE TEAM 2 WHILST HAVING TEAM 2
-if(message.content.startsWith('!give TB3team2') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team2.id)) {
-message.channel.send("" + MENTION + " Is already in TB3team2")
-} else {
-}}
-}}});
-
-//////////////////////////////////////////////TESTING TB3 TEAM 3//////////////////////////////////////
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TEAM 3 REMOVE TEAM 2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB3team3') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-const team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-const team2 = message.guild.roles.find(role => role.name === 'TB3team2');
-const team3 = message.guild.roles.find(role => role.name === 'TB3team3');
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team2.id)) {
-MENTION.addRole(team3).catch(console.error);
-MENTION.removeRole(team2).catch(console.error);
-message.channel.send("Team2 Removed from " + MENTION + " + Team3 Added")
-} else {
-}
-//GIVE TEAM 3 REMOVE TEAM 1
-if(message.content.startsWith('!give TB3team3') && message.content.includes(MENTION)) {
-const team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team1.id)) {
-MENTION.addRole(team3).catch(console.error);
-MENTION.removeRole(team1).catch(console.error);
-message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
-} else {
-}}
-// GIVE TEAM 3 WHILST HAVING TEAM 3
-if(message.content.startsWith('!give TB3team3') && message.content.includes(MENTION)) {
-if(MENTION.roles.has(TB3.id) && MENTION.roles.has(team3.id)) {
-message.channel.send("" + MENTION + " Is already in TB3team3")
-} else {
-}}
-}}});
-//***************************************************************END
-
-//GIVING TB3 hereboy
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TB3 REMOVE TB2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB3 ') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB3team1');
-const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
-const aTB1team3 = message.guild.roles.find(role => role.name === 'TB1team3');
-const aTB2team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-const aTB2team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-const aTB2team3 = message.guild.roles.find(role => role.name === 'TB2team3');
-const aTB3team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-const aTB3team2 = message.guild.roles.find(role => role.name === 'TB3team2');
-const aTB3team3 = message.guild.roles.find(role => role.name === 'TB3team3');
-if(MENTION.roles.has(TB2.id)) {
-MENTION.addRole(TB3).catch(console.error);
-MENTION.removeRole(TB2).catch(console.error);
-MENTION.removeRole(aTB1team1).catch(console.error);
-MENTION.removeRole(aTB1team2).catch(console.error);
-MENTION.removeRole(aTB1team3).catch(console.error);
-MENTION.removeRole(aTB2team1).catch(console.error);
-MENTION.removeRole(aTB2team2).catch(console.error);
-MENTION.removeRole(aTB2team3).catch(console.error);
-MENTION.removeRole(aTB3team1).catch(console.error);
-MENTION.removeRole(aTB3team2).catch(console.error);
-MENTION.removeRole(aTB3team3).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
-
-} else {
-}
-//GIVE TB3 REMOVE TB1
-if(message.content.startsWith('!give TB3 ') && message.content.includes(MENTION)) {
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-if(MENTION.roles.has(TB1.id)) {
-MENTION.addRole(TB3).catch(console.error);
-MENTION.removeRole(TB1).catch(console.error);
-MENTION.removeRole(aTB1team1).catch(console.error);
-MENTION.removeRole(aTB1team2).catch(console.error);
-MENTION.removeRole(aTB1team3).catch(console.error);
-MENTION.removeRole(aTB2team1).catch(console.error);
-MENTION.removeRole(aTB2team2).catch(console.error);
-MENTION.removeRole(aTB2team3).catch(console.error);
-MENTION.removeRole(aTB3team1).catch(console.error);
-MENTION.removeRole(aTB3team2).catch(console.error);
-MENTION.removeRole(aTB3team3).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
-
-} else {
-}}
-// GIVE TB3 WHILST HAVING TB3
-if(MENTION.roles.has(TB3.id)) {
-//console.log("Reached has role");
-message.channel.send("" + MENTION + " Is already in TB3")  //if(message.content && message.content.toLowerCase() === 'xd') { 
-} else {
-	console.log("ERROR REACHING HERE");
-}}
-}});
-
-//GIVING TB2
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TB2 REMOVE TB1
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB2 ') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB2team1');
-const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
-const aTB1team3 = message.guild.roles.find(role => role.name === 'TB1team3');
-const aTB2team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-const aTB2team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-const aTB2team3 = message.guild.roles.find(role => role.name === 'TB2team3');
-const aTB3team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-const aTB3team2 = message.guild.roles.find(role => role.name === 'TB3team2');
-const aTB3team3 = message.guild.roles.find(role => role.name === 'TB3team3');
-if(MENTION.roles.has(TB1.id)) {
-MENTION.addRole(TB2).catch(console.error);
-MENTION.removeRole(TB1).catch(console.error);
-MENTION.removeRole(aTB1team1).catch(console.error);
-MENTION.removeRole(aTB1team2).catch(console.error);
-MENTION.removeRole(aTB1team3).catch(console.error);
-MENTION.removeRole(aTB2team1).catch(console.error);
-MENTION.removeRole(aTB2team2).catch(console.error);
-MENTION.removeRole(aTB2team3).catch(console.error);
-MENTION.removeRole(aTB3team1).catch(console.error);
-MENTION.removeRole(aTB3team2).catch(console.error);
-MENTION.removeRole(aTB3team3).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB1 Removed from " + MENTION + " + TB2 Added, Team1 Assigned.")
-} else {
-}
-//GIVE TB2 REMOVE TB3
-if(message.content.startsWith('!give TB2 ') && message.content.includes(MENTION)) {
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-if(MENTION.roles.has(TB3.id)) {
-MENTION.addRole(TB2).catch(console.error);
-MENTION.removeRole(TB3).catch(console.error);
-MENTION.removeRole(aTB1team1).catch(console.error);
-MENTION.removeRole(aTB1team2).catch(console.error);
-MENTION.removeRole(aTB1team3).catch(console.error);
-MENTION.removeRole(aTB2team1).catch(console.error);
-MENTION.removeRole(aTB2team2).catch(console.error);
-MENTION.removeRole(aTB2team3).catch(console.error);
-MENTION.removeRole(aTB3team1).catch(console.error);
-MENTION.removeRole(aTB3team2).catch(console.error);
-MENTION.removeRole(aTB3team3).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added, Team1 Assigned.")
-} else {
-}}
-// GIVE TB2 WHILST HAVING TB2
-if(MENTION.roles.has(TB2.id)) {
-message.channel.send("" + MENTION + " Is already in TB2")
-} else {
-}}
-}});
-
-//GIVING TB1
-client.on('message', (message) => {
-//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id)){
-	//GIVE TB1 REMOVE TB2
-const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB1 ') && message.content.includes(MENTION)) {
-const MENTION = message.mentions.members.first();
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
-const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
-const aTB1team3 = message.guild.roles.find(role => role.name === 'TB1team3');
-const aTB2team1 = message.guild.roles.find(role => role.name === 'TB2team1');
-const aTB2team2 = message.guild.roles.find(role => role.name === 'TB2team2');
-const aTB2team3 = message.guild.roles.find(role => role.name === 'TB2team3');
-const aTB3team1 = message.guild.roles.find(role => role.name === 'TB3team1');
-const aTB3team2 = message.guild.roles.find(role => role.name === 'TB3team2');
-const aTB3team3 = message.guild.roles.find(role => role.name === 'TB3team3');
-const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB1team1');
-if(MENTION.roles.has(TB2.id)) {
-MENTION.addRole(TB1).catch(console.error);
-MENTION.removeRole(TB2).catch(console.error);
-MENTION.removeRole(aTB1team1).catch(console.error);
-MENTION.removeRole(aTB1team2).catch(console.error);
-MENTION.removeRole(aTB1team3).catch(console.error);
-MENTION.removeRole(aTB2team1).catch(console.error);
-MENTION.removeRole(aTB2team2).catch(console.error);
-MENTION.removeRole(aTB2team3).catch(console.error);
-MENTION.removeRole(aTB3team1).catch(console.error);
-MENTION.removeRole(aTB3team2).catch(console.error);
-MENTION.removeRole(aTB3team3).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
-} else {
-}
-//GIVE TB1 REMOVE TB3
-if(message.content.startsWith('!give TB1 ') && message.content.includes(MENTION)) {
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-if(MENTION.roles.has(TB3.id)) {
-MENTION.addRole(TB1).catch(console.error);
-MENTION.removeRole(TB3).catch(console.error);
-MENTION.removeRole(aTB1team1).catch(console.error);
-MENTION.removeRole(aTB1team2).catch(console.error);
-MENTION.removeRole(aTB1team3).catch(console.error);
-MENTION.removeRole(aTB2team1).catch(console.error);
-MENTION.removeRole(aTB2team2).catch(console.error);
-MENTION.removeRole(aTB2team3).catch(console.error);
-MENTION.removeRole(aTB3team1).catch(console.error);
-MENTION.removeRole(aTB3team2).catch(console.error);
-MENTION.removeRole(aTB3team3).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
-} else {
-}}
-// GIVE TB1 WHILST HAVING TB1
-if(MENTION.roles.has(TB1.id)) {
-message.channel.send("" + MENTION + " Is already in TB1")
-} else {
-} 
-}}});
-
-//*****************************************************************************************************//
-//**********************************SELF ASSIGNED ROLES***********************************************//
-client.on('message', (message) => {
-if(message.content.startsWith('!join spoilers')) {
-let userToModify = message.member;
-let roleToAdd = message.guild.roles.get("554379014433669131");
-userToModify.addRole(roleToAdd).catch(console.error);
-message.channel.bulkDelete(1)
-}
-
-if(message.content.startsWith('!leave spoilers')) {
-let userToModify = message.member;
-let roleToAdd = message.guild.roles.get("554379014433669131");
-userToModify.removeRole(roleToAdd).catch(console.error);
-message.channel.bulkDelete(1)
-}
-
-
-//everything above is useful
-});
-
-
-	
-
 //USERS LEAVING
 client.on('guildMemberRemove', function(member)
 {
@@ -1110,267 +87,12 @@ client.on('guildMemberRemove', function(member)
 	footer: {
 	}
 	}}); });	
-	
-	
-	client.on('message', (message) => { //hereboy2
-	if(message.author.bot) return;
-	if (message.content === '!refresh' || message.content === '!Refresh')	{
-//                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
-	message.channel.bulkDelete(1)
-	if (message.channel.id === '655570619760377858' || message.channel.id === '617707484626288672' || message.channel.id === '655556582930776075') {
-	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
-	collected.forEach(message => {
-	if (message.content.includes('╔'))  {
-	message.delete(480000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 1 '))  {
-	message.delete(420000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 2 '))  {
-	message.delete(360000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 3 '))  {
-	message.delete(320000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 4 '))  {
-	message.delete(240000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 5 '))  {
-	message.delete(180000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 6 '))  {
-	message.delete(120000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 7 '))  {
-	message.delete(60000).catch(err => console.log(err));
-	};
-	if (message.content.includes('Lane 8 '))  {
-	message.delete(30000).catch(err => console.log(err));
-	};
-	if (message.content.includes('To claim a lane:'))  {												   
-	message.delete(510000).then(() => message.channel.send('!raid ultimus 6'));
-	};
-	
-	if (message.attachments.size > 0) message.delete(5000);
-	  })});
-}}});
 
-client.on('message', async msg =>  {
-if (msg.content === '!raid ultimus 6' || msg.content === '!raid Ultimus 6')	{
-	if (msg.channel.id === '600378414897168386' || msg.channel.id === '655570619760377858' || msg.channel.id === '643229492650704973') {
-//                           TB1 ULT 6 ROOM                             TB2 ULT 6 ROOM                              TB3 ULT 6 ROOM 
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus6.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
-	}}
 
-	if (msg.content === '!raid ultimus 7' || msg.content === '!raid Ultimus 7')	{
-	if (msg.channel.id === '634155222490415104' || msg.channel.id === '634155347736526848' || msg.channel.id === '646322699869880340') {
-//                           TB1 ULT 7 ROOM                             TB2 ULT 7 ROOM                              TB3 ULT 7 ROOM
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus7.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
-}
-	}
 
-	if (msg.content === '!raid alpha 4' || msg.content === '!raid Alpha 4')	{
-	if (msg.channel.id === '646191164885827584' || msg.channel.id === '646191247534456853' || msg.channel.id === '643229344793231370') {
-//                           TB1 EVENT ROOM                             TB2 EVENT ROOM                              TB3 EVENT ROOM
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Alpha4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
-}
-}
 
-if (msg.content === '!raid beta 4' || msg.content === '!raid Beta 4')	{
-	if (msg.channel.id === '635982341701107761' || msg.channel.id === '635981718142058506' || msg.channel.id === '00000000000000000') {
-//                           TB1 EVENT ROOM                             TB2 EVENT ROOM                              TB3 EVENT ROOM
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Beta4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
-}}
-
-	if (msg.content === '!raid gamma 4' || msg.content === '!raid Gamma 4')	{
-	if (msg.channel.id === '610454201058983956' || msg.channel.id === '610454143907397642' || msg.channel.id === '643229344793231370') {
-//                           TB1 EVENT ROOM                             TB2 EVENT ROOM                              TB3 EVENT ROOM 
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Gamma4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
-}}
-
-//Champions raid
-if (msg.content === '!raid champion 4' || msg.content === '!raid Champion 4')	{
-	if (msg.channel.id === '641065837335281710' || msg.channel.id === '641065258861068306' || msg.channel.id === '000000000000000000') {
-//                           TB1 EVENT ROOM                             TB2 EVENT ROOM                               TB3 EVENT ROOM
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Gamma4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
-}}
-
-	
-//MEMES----------------------------------------------------------------------------------------------------------
+//**MEMES**
+client.on('message', message => {
 if (msg.content === '!sad') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
@@ -1390,178 +112,9 @@ if (msg.content === '!happy') {
 	.setImage('attachment://happygif.gif')
 	msg.channel.send(exampleEmbed);
 }
+});
 
-if (msg.content === '!nevermisses') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription('**You forgot one thing, he never misses**')
-	.attachFiles(['./Misc/nevermissgif.gif'])
-	.setImage('attachment://nevermissgif.gif')
-	msg.channel.send(exampleEmbed);
-}
-
-if (msg.content === '!spideydance') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription('**When the camera keeps on rolling...**')
-	.attachFiles(['./Misc/spideygif.gif'])
-	.setImage('attachment://spideygif.gif')
-	msg.channel.send(exampleEmbed);
-}
-
-if (msg.content === '!dafuq') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-//	.setDescription('?????????????????????')
-	.attachFiles(['./Misc/dafuq.gif'])
-	.setImage('attachment://dafuq.gif')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!dafuq1') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-//	.setDescription('?????????????????????')
-	.attachFiles(['./Misc/dafuq1.jpg'])
-	.setImage('attachment://dafuq1.jpg')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!dafuq2') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-//	.setDescription('?????????????????????')
-	.attachFiles(['./Misc/dafuq2.jpg'])
-	.setImage('attachment://dafuq2.jpg')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!dafuq3') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-//	.setDescription('?????????????????????')
-	.attachFiles(['./Misc/dafuq3.jpg'])
-	.setImage('attachment://dafuq3.jpg')
-	msg.channel.send(exampleEmbed);
-}
-
-//--------------------------------------------------------------------------------------------------------------
-
-//EVENTS
-	if (msg.content === '!event fury') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
-	msg.channel.bulkDelete(1)
-}
-	if (msg.content === '!event ironman') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/ironmanevent.png')] });
-	msg.channel.bulkDelete(1)
-}
-
-	if (msg.content === '!event magneto') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/magnetoevent.png')] });	
-	msg.channel.bulkDelete(1)
-}
-
-	if (msg.content === '!event shuri') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/shurievent.png')] });
-	msg.channel.bulkDelete(1)
-}
-
-	if (msg.content === '!event starlord') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/starlordevent.png')] });  	
-	msg.channel.bulkDelete(1)
-}
-
-	if (msg.content === '!event phoenix') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] }); 
-	msg.channel.bulkDelete(1)
-}
-	if (msg.content === '!event iw' || msg.content === '!event invisiblewoman' || msg.content === '!event invisible woman' || msg.content === '!event suestorm' || msg.content === '!event sue storm') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
-	msg.channel.bulkDelete(1)
-}
-
-//event requirements
-	if (msg.content === '!events') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/eventrequirements.png')] });
-	msg.channel.bulkDelete(1)
-}
-//UNIQUE GEAR
-	if (msg.content === '!uniques') {
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/uniques.png')] });
-	msg.channel.bulkDelete(1)
-	}
-	
-//------------------------------------------------//
-//Character Tiers
-//------------------------------------------------//
-	if (msg.content === '!ultron' || msg.content === '!Ultron') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\User\discord-greeter-bot', './Character Tiers/Ultron.png')] });
-	}
-	
-	if (msg.content === '!ultron2') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\User\discord-greeter-bot', './Character Tiers/Ultron.png')] });
-	}
-	
-	if (msg.content === '!juggernaut' || msg.content === '!Juggernaut') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Character Tiers/Juggernaut.png')] });
-	}
-	
-	if (msg.content === '!phoenix' || msg.content === '!Phoenix') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Character Tiers/Phoenix.png')] });
-	}
-
-	if (msg.content === '!magneto' || msg.content === '!Magneto') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Character Tiers/Magneto.png')] });
-	}
-	
-	if (msg.content === '!pyro' || msg.content === '!Pyro') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Character Tiers/Pyro.png')] });
-	}
-	
-	if (msg.content === '!starlord' || msg.content === '!Starlord') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Character Tiers/Starlord.png')] });
-	}
-	
-	if (msg.content === '!minnerva' || msg.content === '!Minnerva') {
-	msg.channel.bulkDelete(1)
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Character Tiers/MinnErva.png')] });
-	}
-	
-/////////////
-	
-//Output commands
-	if (msg.content === '!commands2') {
-	// inside a command, event listener, etc.
-	const testing = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('The Beyonder', 'https://i.imgur.com/KIfYXR4.jpg', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Commands List**')
-	.setThumbnail('https://i.imgur.com/KIfYXR4.jpg') //./Character Tiers/Ultron.png 
-	.addField('``![characterName]``', 'Info sheet on chosen character (ex. !ultron) \n ')
-	.addField('``!event [characterName]``', 'Lowest required team for chosen legendary event (ex. !event starlord) \n ', true)
-	.addField('``!events``', 'Requirements for all legendary events \n ', true)
-	.addField('``!uniques``', ' List of unique gear needed for all characters \n ', true)
-	msg.channel.send(testing);
-}
-	
-	
-	
-	
-	
-///////////////////////////////////////////////////delete lines////////////////////////////////////////////////////   
-//*****************************************************************************************************************
-//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE
+//**DELETE TEXT**          GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE
 	const admins = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
 	if(admins.includes(msg.author.id)){
 	if (msg.content === '!delete 5') {
@@ -1570,42 +123,129 @@ if (msg.content === '!dafuq3') {
 		//do nothing
 	}}
 
-//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE 
-	const admins1 = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
-	if(admins1.includes(msg.author.id)){
-	if (msg.content === '!delete 10') {
-    msg.channel.bulkDelete(10)
-	} else{
-		//do nothing
-	}}
+/////////////////////////////////////////////////////////**CHARACTERS**
+//ASGARDIANS
+client.on('message', msg => {
+if (msg.content === '!Asgardians') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: 100 \n \n<:hela:661370019317284880> **Hela** \nHela's speed is: 110 \n \n<:loki:661370019145449473> **Loki** \nLoki's speed is: 115 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: 108 \n \n<:thor:661370019279667248> **Thor** \nThor's speed is: 90 \n \n<:greg:661392103900839936> **Undead Asgardian** \nUndead Asgardian's speed is: 105")
+	msg.channel.send(exampleEmbed);
+}});
 
-//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE 
-	const admins2 = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
-	if(admins2.includes(msg.author.id)){
-	if (msg.content === '!delete 20') {
-    msg.channel.bulkDelete(20)
-	} else{
-		//do nothing
-	}}
-
-//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE 
-	const admins3 = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
-	if(admins3.includes(msg.author.id)){
-	if (msg.content === '!delete 50') {
-    msg.channel.bulkDelete(50)
-	} else{
-		//do nothing
-	}}
-
-//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE 
-	const admins4 = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
-	if(admins4.includes(msg.author.id)){
-	if (msg.content === '!delete 100') {
-    msg.channel.bulkDelete(100)
-	} else{
-		//do nothing
-	}}
-
+//ULTRON
+client.on('message', msg => {	
+if (msg.content === '!Ultron Basic 7') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 7**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 340% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 65', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic 6') {
+	// inside a command, event listener, etc.
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 6**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 270% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 55', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic 5') {
+	// inside a command, event listener, etc.
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 5**')
+	.setThumbnail('https://i.imgur.com/MvOD9QI.png')
+	.addField('Attack primary target for 230% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 45', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic 4') {
+	// inside a command, event listener, etc.
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 4**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 230% damage + 75% chance to copy 2 positive effects. \nLevel Required: 35', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic 3') {
+	// inside a command, event listener, etc.
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 3**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 180% damage + 75% chance to copy 2 positive effects. \nLevel Required: 25', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic 2') {
+	// inside a command, event listener, etc.
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 2**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 140% damage + 50% chance to copy 2 positive effects. \nLevel Required: 15', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic 1') {
+	// inside a command, event listener, etc.
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 1**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 100% damage + 50% chance to copy 2 positive effects. \nLevel Required: 1', '⠀')
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Ultron Basic Code') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Ultron Basic**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Basic Ability:', 'Target = Crosshair Selection. \nOwn Ability Damage +100% for next (Action).\n(Action) Attack each Target. (Then remove dead units from Target pool.) \nSKIP: \n(Action) 1 time(s) for each Target: Remove Taunt. \nRecipient = Self. \n(Action) 2 time(s) for each Target: Choose a new one of its Buffs (except Taunt): 50% chance to copy it to Recipient. For each successful copy, 0% chance to remove the original. \nProcess on-attack assists. \nProcess Counterattacks.')
+	.addBlankField()
+	.addField('Assist:', 'Target = Crosshair Selection. Own Ability Damage +61% for next (Action). Own Piercing +5% for next (Action). (Action) Attack each Target. (Then remove dead units from Target pool.) SKIP:  (Action) 1 time(s) for each Target: Remove Taunt. ', true)
+	.addBlankField()
+	.addField('Counter:', 'Target = Attacker. Own Ability Damage +61% for next (Action). Own Piercing +5% for next (Action). (Action) Attack each Target. (Then remove dead units from Target pool.) SKIP: (Action) 1 time(s) for each Target: Remove Taunt.', true)
+	msg.channel.send(exampleEmbed);
+}
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.login(process.env.TOKEN);
