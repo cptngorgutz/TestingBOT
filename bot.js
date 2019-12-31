@@ -109,8 +109,21 @@ client.on('message', (message) => {
   .catch(console.error);
 }});
 	
+///////
+client.on('message', msg => {
+if (msg.content === '!Ultron Basic 7') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
+	.setDescription('**Disintegration Beam • Level 7**')
+	.attachFiles(['./Misc/UltronBasic.png'])
+	.setThumbnail('attachment://UltronBasic.png')
+	.addField('Attack primary target for 340% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 65', '⠀')
+	msg.channel.send(exampleEmbed);
+}});
 
-
+///////
 
 //********************** POLLS?***************
 //simple 2 responce poll yes or no
