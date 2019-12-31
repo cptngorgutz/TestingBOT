@@ -108,7 +108,6 @@ client.on('message', (message) => {
   .then(console.log)
   .catch(console.error);
 }});
-	
 client.on('message', msg => {
 if (msg.content === '!Asgardians') {
 	msg.channel.bulkDelete(1)
@@ -116,7 +115,7 @@ if (msg.content === '!Asgardians') {
 	.setColor('#0099ff')
 	.addField("<:heimdall:661370019325935666> Heimdall", "Heimdall's Speed is: 100")
 	.addField("<:hela:661370019317284880> Hela", "Hela's Speed is: 110")
-	.addField("<:sif:661370019300638737> Sif", "Sif's Speed is: 108")
+	.addField("<:sif:661370019300638737> **Sif**", "Sif's Speed is: 108")
 	.addField("<:loki:661370019145449473> Loki", "Loki's Speed is: 115")
 	.addField("<:thor:661370019279667248> Thor", "Thor's Speed is: 90")
 	msg.channel.send(exampleEmbed);
