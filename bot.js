@@ -110,7 +110,7 @@ client.on('message', (message) => {
 }});
 	
 ///////
-client.on('message', message => {
+client.on('message', msg => {
 if (msg.content === '!Ultron Basic 7') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
