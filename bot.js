@@ -247,6 +247,21 @@ if (msg.content === '!blackbolt kit') {
 	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Basic)** \n \n**Royal Strike • Level 7** \n \nIf the primary target has slow, flip 2 negative effects on self. \nAttack primary target for 400% damaage + clear 2 positive effects")
 	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
 	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for 600% damage. \nThis attack is unavoidable.")
+	.setThumbnail('https://i.imgur.com/5wsashb.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • Level 7** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityoff:661583564965412871><:abilityoff:661583564965412871><:abilityoff:661583564965412871> \nAttack all enemies for 500% damage.")
+	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Passive)** \n \n**King Of Attilan • Level 5** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n200%damage. If that enemy is VILLAIN TECH, attack that enemy \nfor 400% damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain +50% Max Health. INHUMAN allies gain +50% Max Health.")
+	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
+	msg.channel.send(exampleEmbed4);
 }});
 
 
