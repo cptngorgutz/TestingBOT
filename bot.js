@@ -305,12 +305,12 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Basic)** \n \n**Rapid Strikes • T4 Upgrade** \n \nAttack primary target for: \n**200% -> 230%** damage + clear counter. \n**70% -> 100%** chance to gain an assist from a random INHUMAN ally. \nThis attack cannot be counterattacked.")
+	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Basic)** \n \n**Rapid Strikes • T4 Upgrade** \n \nAttack primary target for: \n**200% -> 230%** damage + clear counter. \n**70% -> 100%** chance for an assist from a random INHUMAN ally. \nThis attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/6qzPGoI.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for **150% -> 170%** damage + \nBonus attack 2 times for **150% -> 170% damage. \nRepeat this attack on **2 -> 3** additional random targets. \nThis attack cannot be counterattacked.")
+	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for **150% -> 170%** damage + \nBonus attack 2 times for **150% -> 170%** damage. \nRepeat this attack on **2 -> 3** additional random targets. \nThis attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/XSiALFR.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -320,7 +320,7 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, \napply Offence Down to that enemy. This cannot be dodged. \n \nOn ally non-MINION S.H.I.E.L.D or INHUMANturn, 50% chance \nto apply Evade to that ally. \n**On Spawn:** \nApply Defence Up to self and all non-MINION S.H.I.E.L.D or INHUMAN allies. \nWhena  non-MINION S.H.I.E.L.D or INHUMAN ally drops below \n50% Health, apply Defence up to that ally. \n \n**Stats** \nGain **20% -> 25%** Dodge chance. \n**Gain 10% Focuse per non-MINION S.H.I.E.L.D and INHUMAN ally.            Characters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
+	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, \napply Offence Down to that enemy. This cannot be dodged. \n \nOn ally non-MINION S.H.I.E.L.D or INHUMANturn, 50% chance \nto apply Evade to that ally. \n**On Spawn:** \nApply Defence Up to self and all non-MINION S.H.I.E.L.D or INHUMAN allies. \nWhena  non-MINION S.H.I.E.L.D or INHUMAN ally drops below \n50% Health, apply Defence up to that ally. \n \n**Stats** \nGain **20% -> 25%** Dodge chance. \n**Gain 10% Focuse per non-MINION S.H.I.E.L.D and INHUMAN ally.**")
 	.setThumbnail('https://i.imgur.com/hCaEsPN.png') 
 	msg.channel.send(exampleEmbed4);
 }});
