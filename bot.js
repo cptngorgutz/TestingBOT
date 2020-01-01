@@ -320,7 +320,7 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, \napply Offence Down to that enemy. This cannot be dodged. \n \nOn ally non-MINION S.H.I.E.L.D or INHUMANturn, 50% chance \nto apply Evade to that ally. \n**On Spawn:** \nApply Defence Up to self and all non-MINION S.H.I.E.L.D or INHUMAN allies. \nWhena  non-MINION S.H.I.E.L.D or INHUMAN ally drops below \n50% Health, apply Defence up to that ally. \n \n**Stats** \nGain **20% -> 25%** Dodge chance. \n**Gain 10% Focuse per non-MINION S.H.I.E.L.D and INHUMAN ally.**")
+	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, \napply Offence Down to that enemy. This cannot be dodged. \nOn ally non-MINION S.H.I.E.L.D or INHUMAN turn, 50% chance \nto apply Evade to that ally. \n \n**On Spawn:** \nApply Defence Up to self and all non-MINION S.H.I.E.L.D or INHUMAN allies. \nWhena  non-MINION S.H.I.E.L.D or INHUMAN ally drops below \n50% Health, apply Defence up to that ally. \n \n**Stats:** \nGain **20% -> 25%** Dodge chance. \n**Gain 10% Focus per non-MINION S.H.I.E.L.D & INHUMAN ally.**")
 	.setThumbnail('https://i.imgur.com/hCaEsPN.png') 
 	msg.channel.send(exampleEmbed4);
 }});
