@@ -299,7 +299,7 @@ if (msg.content === '!unlock blackbolt') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("__**Blackbolt Unlock**__ \n<:staron:662793575225884672><:staron:662793575225884672><:staron:662793575225884672><:staron:662793575225884672><:staron:662793575225884672><:staroff:662795044599627810><:staroff:662795044599627810> \n<:heimdall:661370019325935666> **Heimdall** \n<:hela:661370019317284880> **Hela** \n<:loki:661370019145449473> **Loki** \n<:sif:661370019300638737> **Sif** \n<:thor:661370019279667248> **Thor**")
+	.setDescription("__**Blackbolt Unlock**__ \n<:staron:662796067846488065><:staron:662796067846488065><:staron:662796067846488065><:staron:662796067846488065><:staron:662796067846488065><:staroff:662796067607412736><:staroff:662796067607412736> \n<:heimdall:661370019325935666> **Heimdall** \n<:hela:661370019317284880> **Hela** \n<:loki:661370019145449473> **Loki** \n<:sif:661370019300638737> **Sif** \n<:thor:661370019279667248> **Thor**")
 	msg.channel.send(exampleEmbed);
 }});
 
