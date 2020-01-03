@@ -304,9 +304,6 @@ if (msg.content === '!unlock blackbolt') {
 }});
 
 
-<:staron:662793575225884672>
-<:staroff:662793574164987914>
-
 //YO-YO
 client.on('message', msg => {
 	
