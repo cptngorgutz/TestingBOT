@@ -336,11 +336,17 @@ if (msg.content === '!yo-yo T4') {
 
 client.on('message', msg => {
 if (msg.content === '!status') {
-if (msg.author.presence.clientStatus = 'desktop') {
-console.log("using computer")
+if (msg.author.presence.clientStatus ==== 'desktop') {
+{ desktop: 'online' }
+console.log("using desktop")
 }
-if (msg.author.presence.clientStatus = 'mobile') {
+if (msg.author.presence.clientStatus === 'mobile') {
+{ mobile: 'online' }
 console.log("using mobile")
+}
+if (msg.author.presence.clientStatus === 'web') {
+{ web: 'online' }
+console.log("using web")
 }
 }
 });
