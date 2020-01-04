@@ -336,18 +336,19 @@ if (msg.content === '!yo-yo T4') {
 
 client.on('message', msg => {
 if (msg.content === '!status') {
-if (msg.author.presence.clientStatus === 'desktop') {
-//console.log("{ desktop: 'online' }")
+if (msg.author.presence.clientStatus !== { desktop: 'online' }) return;
 console.log("using computer")
-}
-if (msg.author.presence.clientStatus === 'mobile') {
-//console.log("{ mobile: 'online' }")
-}
-if (msg.author.presence.clientStatus === 'web') {
-//console.log("{ web: 'online' }")
-}
+
+if (msg.author.presence.clientStatus !== { mobile: 'online' }) return;
+{ mobile: 'online' }
+console.log("using mobile")
+
+if (msg.author.presence.clientStatus !== { web: 'online' }) return;
+{ web: 'online' }
+console.log("using web")
 }
 });
+
 
 
 
