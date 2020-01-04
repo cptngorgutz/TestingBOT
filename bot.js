@@ -336,10 +336,10 @@ if (msg.content === '!yo-yo T4') {
 
 client.on('message', msg => {
 if (msg.content === '!status') {
-if (message.author.presence.clientStatus = 'desktop') {
+if (msg.author.presence.clientStatus = 'desktop') {
 console.log("using computer")
 }
-if (message.author.presence.clientStatus = 'mobile') {
+if (msg.author.presence.clientStatus = 'mobile') {
 console.log("using mobile")
 }
 }
