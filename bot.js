@@ -340,12 +340,10 @@ if (msg.author.presence.clientStatus === 'desktop') {
 console.log("{ desktop: 'online' }")
 }
 if (msg.author.presence.clientStatus === 'mobile') {
-{ mobile: 'online' }
-console.log("using mobile")
+console.log("{ mobile: 'online' }")
 }
 if (msg.author.presence.clientStatus === 'web') {
-{ web: 'online' }
-console.log("using web")
+console.log("{ web: 'online' }")
 }
 }
 });
