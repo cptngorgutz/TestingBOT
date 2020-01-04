@@ -336,7 +336,7 @@ if (msg.content === '!yo-yo T4') {
 
 client.on('message', msg => {
 if (msg.content === '!status') {
-if (msg.author.presence.clientStatus ==== 'desktop') {
+if (msg.author.presence.clientStatus === 'desktop') {
 { desktop: 'online' }
 console.log("using desktop")
 }
