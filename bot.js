@@ -337,13 +337,14 @@ if (msg.content === '!yo-yo T4') {
 client.on('message', msg => {
 if (msg.content === '!status') {
 if (msg.author.presence.clientStatus === 'desktop') {
-console.log("{ desktop: 'online' }")
+//console.log("{ desktop: 'online' }")
+console.log("using computer")
 }
 if (msg.author.presence.clientStatus === 'mobile') {
-console.log("{ mobile: 'online' }")
+//console.log("{ mobile: 'online' }")
 }
 if (msg.author.presence.clientStatus === 'web') {
-console.log("{ web: 'online' }")
+//console.log("{ web: 'online' }")
 }
 }
 });
