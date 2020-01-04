@@ -340,11 +340,9 @@ if (msg.author.presence.clientStatus !== { desktop: 'online' }) return;
 console.log("using computer")
 
 if (msg.author.presence.clientStatus !== { mobile: 'online' }) return;
-{ mobile: 'online' }
 console.log("using mobile")
 
 if (msg.author.presence.clientStatus !== { web: 'online' }) return;
-{ web: 'online' }
 console.log("using web")
 }
 });
