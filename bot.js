@@ -346,7 +346,7 @@ client.on('message', message => {
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
     var attach = message.attachments.first()
 	var attachurl = message.attachments.url
-	message.channel.send(attach.url)
+	message.channel.send(attach.attachurl)
     }).catch(err => {
     console.error(err)
     })
