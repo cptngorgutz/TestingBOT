@@ -344,12 +344,12 @@ client.on('message', message => {
       // Get the channel to fetch the message from.
       const channelToCheck = client.channels.get('661661368943902720')
 
+
+
       // Fetch the last message from the mentioned channel.
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
     const lastMessage = messages.first()
-	if (message.content.includes(message.attachments)) {
 	message.channel.send(lastMessage.attachments)
-	}
     }).catch(err => {
     console.error(err)
     })
