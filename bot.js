@@ -344,10 +344,10 @@ client.on('message', message => {
     const channelToCheck = client.channels.get('661661368943902720')
 
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+	Attachment.forEach(function(attachment) {
     var attach = message.attachments.first()
-	var attachurl = message.attachments.url
-	message.channel.send(attach.attachurl)
-    }).catch(err => {
+	message.channel.send(attach.url)
+    })}.catch(err => {
     console.error(err)
     })
     }
