@@ -335,6 +335,7 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed4);
 }});
 
+
 client.on('message', message => {
 
   // Check if the message was sent in the channel with the specified id.
@@ -346,18 +347,22 @@ client.on('message', message => {
 
       // Fetch the last message from the mentioned channel.
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-  //  const lastMessage = messages.first()
-//	message.channel.send(lastMessage.content)
-	var Attachment = (message.attachments)
-	Attachment.forEach(function(attachment) {
-	message.channel.send(attachment.url);
-	})
+    const lastMessage = messages.first()
+	message.channel.send(lastMessage.url)
     }).catch(err => {
     console.error(err)
     })
     }
   }
 });
+
+
+
+
+
+
+
+
 
 
 
