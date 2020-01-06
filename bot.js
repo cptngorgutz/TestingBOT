@@ -339,18 +339,18 @@ client.on('message', message => {
 
   // Check if the message was sent in the channel with the specified id.
   if(message.channel.id === '617707484626288672'){
-    if(message.content.startsWith('!test1')) {
+    if(message.content.startsWith('!testing')) {
 
-      // Get the channel to fetch the message from.
-      const channelToCheck = client.channels.get('661661368943902720')
+    const channelToCheck = client.channels.get('661661368943902720')
 
-      // Fetch the last message from the mentioned channel.
-	if (message.attachments.size !== 0) { // Attachments are present.
-    const firstAttachment = message.attachments.first();
-    message.channel.send(firstAttachment.url);
-	}
-}
-}
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    var attach = message.attachments.first()
+	message.channel.send(attach.url)
+    }).catch(err => {
+    console.error(err)
+    })
+    }
+  }
 });
 
 
