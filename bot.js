@@ -335,26 +335,27 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed4);
 }});
 
+
+//blitz predictions
 client.on('message', message => {
 
   // Check if the message was sent in the channel with the specified id.
   if(message.channel.id === '617707484626288672'){
     if(message.content.startsWith('!testing')) {
 
-    const channelToCheck = client.channels.get('661661368943902720')
+      // Get the channel to fetch the message from.
+      const channelToCheck = client.channels.get('661661368943902720')
 
+      // Fetch the last message from the mentioned channel.
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-	var Attachment = (message.attachments.first)
-	Attachment.forEach(function(attachment) {
-	Attachment[0].url
-	message.channel.send(Attachment.url)
-    })}).catch(err => {
+    const lastMessage = messages.first()
+	message.channel.send(lastMessage.url)
+    }).catch(err => {
     console.error(err)
     })
     }
   }
 });
-
 
 
 
