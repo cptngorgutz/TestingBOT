@@ -347,7 +347,7 @@ client.on('message', message => {
 	Attachment.forEach(function(attachment) {
     var attach = message.attachments.first()
 	message.channel.send(attach.url)
-    })}.catch(err => {
+    })}).catch(err => {
     console.error(err)
     })
     }
