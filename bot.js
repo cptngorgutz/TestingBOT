@@ -350,6 +350,7 @@ client.on('message', message => {
 //    const lastMessage = messages.first()
 	const test = message.attachments.first()
 	const url = attachment.url;
+	const attachment = message.attachments;
 	message.channel.send(test.url)
     }).catch(err => {
     console.error(err)
