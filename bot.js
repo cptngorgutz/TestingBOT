@@ -123,7 +123,8 @@ client.on('message', msg => {
 	}}
 	});
 
-/////////////////////////////////////////////////////////**CHARACTERS**
+//***************************************************************************************CHARACTER TEAMS
+
 //ASGARDIANS
 client.on('message', msg => {
 if (msg.content === '!Asgardians') {
@@ -134,6 +135,11 @@ if (msg.content === '!Asgardians') {
 	msg.channel.send(exampleEmbed);
 }});
 
+
+
+
+//********************************************************************************************************
+//***************************************************************************************SINGLE CHARACTERS
 //ULTRON
 client.on('message', msg => {	
 if (msg.content === '!Ultron Basic 7') {
@@ -260,8 +266,7 @@ if (msg.content === '!blackbolt kit') {
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
 	msg.channel.send(exampleEmbed4);
 }
-//BLACKBOLT T4S
-if (msg.content === '!blackbolt T4') {
+if (msg.content === '!blackbolt T4') { //BLACKBOLT T4S
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -284,25 +289,21 @@ if (msg.content === '!blackbolt T4') {
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
 	msg.channel.send(exampleEmbed4);
 }
-//BLACKBOLT SPEED
-if (msg.content === '!blackbolt speed') {
+if (msg.content === '!blackbolt speed') { //BLACKBOLT SPEED
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:661586769342365713> **Black Bolt** \nBlack Bolt's speed is: 100")
 	msg.channel.send(speedEmbed);
 }
-
-});
-client.on('message', msg => {
-if (msg.content === '!unlock blackbolt') {
+if (msg.content === '!unlock blackbolt') { //UNLOCK 
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("__**Blackbolt Unlock**__ \n<:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staroff:662797308835921935><:staroff:662797308835921935> \n<:heimdall:661370019325935666> **Heimdall** \n<:hela:661370019317284880> **Hela** \n<:loki:661370019145449473> **Loki** \n<:sif:661370019300638737> **Sif** \n<:thor:661370019279667248> **Thor**")
 	msg.channel.send(exampleEmbed);
-}});
-
+}
+});
 
 //YO-YO
 client.on('message', msg => {
@@ -334,18 +335,28 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed4);
 }});
 
-client.on('message', msg => {
-if (msg.content === '!status') {
-if (msg.author.presence.clientStatus === 'desktop') {
-console.log({ desktop: 'online' })
-}
-if (msg.author.presence.clientStatus === 'mobile') {
-console.log({ mobile: 'online' })
-}
-if (msg.author.presence.clientStatus === 'web') {
-console.log({ web: 'online' })
-}
-}
+client.on('message', message => {
+
+  // Check if the message was sent in the channel with the specified id.
+  if(message.channel.id === '617707484626288672'){
+    if(message.content.startsWith('!test1')) {
+
+      // Get the channel to fetch the message from.
+      const channelToCheck = client.channels.get('661661368943902720')
+
+      // Fetch the last message from the mentioned channel.
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+  //  const lastMessage = messages.first()
+//	message.channel.send(lastMessage.content)
+	message.attachments.forEach(attachment => {
+  message.channel.send(url)
+  const url = attachment.url;
+	})
+    }).catch(err => {
+    console.error(err)
+    })
+    }
+  }
 });
 
 
