@@ -344,7 +344,7 @@ client.on("message", message => {
 	channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
 	if (message.attachments.size !== 0) { // Attachments are present.
     const firstAttachment = message.attachments.first();
-    message.channel.send({firstAttachment.url});
+    message.channel.send(firstAttachment.url);
 	}
 })
 }
