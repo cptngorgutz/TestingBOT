@@ -336,9 +336,8 @@ if (msg.content === '!yo-yo T4') {
 }});
 
 
-
 client.on("message", message => {
-	if (message.channel.id !== "595178696118108190") {
+	if (message.channel.id !== "617707484626288672") {
 	if(message.content.startsWith('!test2')) {
 
 	if (message.attachments.size !== 0) { // Attachments are present.
