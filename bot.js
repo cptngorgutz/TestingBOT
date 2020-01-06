@@ -339,7 +339,7 @@ client.on('message', message => {
 
   // Check if the message was sent in the channel with the specified id.
   if(message.channel.id === '617707484626288672'){
-    if(message.content.startsWith('!blitz')) {
+    if(message.content.startsWith('!test1')) {
 
       // Get the channel to fetch the message from.
       const channelToCheck = client.channels.get('661661368943902720')
@@ -347,8 +347,9 @@ client.on('message', message => {
       // Fetch the last message from the mentioned channel.
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
     const lastMessage = messages.first()
-	message.channel.send(lastMessage.message.attachments)
-	
+	if (message.content.includes(message.attachments)) {
+	message.channel.send(lastMessage.attachments)
+	}
     }).catch(err => {
     console.error(err)
     })
