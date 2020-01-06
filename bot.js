@@ -348,10 +348,9 @@ client.on('message', message => {
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
   //  const lastMessage = messages.first()
 //	message.channel.send(lastMessage.content)
-	message.attachments.forEach(attachment => {
-  message.channel.send(url)
   const url = attachment.url;
-	})
+  message.channel.send(url)
+	
     }).catch(err => {
     console.error(err)
     })
