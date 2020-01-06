@@ -335,21 +335,21 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed4);
 }});
 
+
+
 client.on("message", message => {
 	if (message.channel.id !== "595178696118108190") {
 	if(message.content.startsWith('!test2')) {
-		
-	const channelToCheck = client.channels.get('661661368943902720')
 
-	channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
 	if (message.attachments.size !== 0) { // Attachments are present.
     const firstAttachment = message.attachments.first();
-    message.channel.send(firstAttachment.url);
+    console.log(`haha ${firstAttachment.url}`);
 	}
-})
-}
-}
+	}
+	}
 });
+
+
 
 
 
