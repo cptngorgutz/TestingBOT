@@ -341,18 +341,22 @@ client.on('message', message => {
   if(message.channel.id === '617707484626288672'){
     if(message.content.startsWith('!test1')) {
 
-     
-    const channelToCheck = client.channels.get('661661368943902720')
+      // Get the channel to fetch the message from.
+      const channelToCheck = client.channels.get('661661368943902720')
+
+      // Fetch the last message from the mentioned channel.
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-    const firstAttachment = message.attachments.first()
-    message.channel.send(firstAttachment.url)
- 
+    const lastMessage = messages.first()
+	const url = attachment.url;
+	message.channel.send(lastMessage(url))
+	
     }).catch(err => {
     console.error(err)
     })
     }
   }
 });
+
 
 
 
