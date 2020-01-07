@@ -136,12 +136,10 @@ if (msg.content === '!Asgardians') {
 }});
 
 
-
-
 //********************************************************************************************************
 //***************************************************************************************SINGLE CHARACTERS
-//ULTRON
 client.on('message', msg => {	
+//ULTRON
 if (msg.content === '!Ultron Basic 7') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
@@ -239,10 +237,9 @@ if (msg.content === '!Ultron Basic Code') {
 	.addField('Counter:', 'Target = Attacker. Own Ability Damage +61% for next (Action). Own Piercing +5% for next (Action). (Action) Attack each Target. (Then remove dead units from Target pool.) SKIP: (Action) 1 time(s) for each Target: Remove Taunt.', true)
 	msg.channel.send(exampleEmbed);
 }
-});
+
 
 //BLACK BOLT
-client.on('message', msg => {
 if (msg.content === '!blackbolt kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
@@ -303,15 +300,12 @@ if (msg.content === '!unlock blackbolt') { //UNLOCK
 	.setDescription("__**Blackbolt Unlock**__ \n<:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staroff:662797308835921935><:staroff:662797308835921935> \n<:heimdall:661370019325935666> **Heimdall** \n<:hela:661370019317284880> **Hela** \n<:loki:661370019145449473> **Loki** \n<:sif:661370019300638737> **Sif** \n<:thor:661370019279667248> **Thor**")
 	msg.channel.send(exampleEmbed);
 }
-});
+
 
 //YO-YO
-client.on('message', msg => {
-	
-	
-	
-//YOYO T4S	
-if (msg.content === '!yo-yo T4') {
+if (msg.content === '!yo-yo kit') {
+}	
+if (msg.content === '!yo-yo T4') { //YOYO T4S	
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -335,29 +329,23 @@ if (msg.content === '!yo-yo T4') {
 	msg.channel.send(exampleEmbed4);
 }});
 
-
-
-//blitz predictions
-client.on('message', message => {
-
-  // Check if the message was sent in the channel with the specified id.
-  if(message.channel.id === '617707484626288672'){
-    if(message.content.startsWith('!testing')) {
-
-    const channelToCheck = client.channels.get('661661368943902720')
-    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-    const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-	//message.channel.send(lastMessage.url)
-    }).catch(err => {
-    console.error(err)
-    })
+//COMMANDS
+let commands = [
+    {
+        aliases:["!abc","!def","!ghi","!jkl",],
+        run:function(msg){
+            msg.send("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable on: \n**Heroes Campaign, node 5-3.**");
+        }
     }
-  }
+]
+//later
+client.on(`message`,function(msg){
+    for(let i =0;i<commands;i++){
+        if(commands[i].includes(msg.content.toLowerCase())){
+            commands[i].run();
+        }
+    }
 });
-
 
 
 
