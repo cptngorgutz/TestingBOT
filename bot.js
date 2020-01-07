@@ -346,8 +346,8 @@ client.on('message', message => {
     const channelToCheck = client.channels.get('661661368943902720')
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
     const lastMessage = messages.first().attachments.first()
-	const attachment = new MessageAttachment(lastMessage);
-	message.channel.send(attachment);
+	const Attachment = require('discord.js').Attachment;
+	message.channel.send(lastMessage.Attachment);
 	//message.channel.send(lastMessage.url)
     }).catch(err => {
     console.error(err)
