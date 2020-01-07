@@ -344,10 +344,11 @@ client.on('message', message => {
     if(message.content.startsWith('!testing')) {
 
     const channelToCheck = client.channels.get('661661368943902720')
-
     channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
     const lastMessage = messages.first().attachments.first()
-	message.channel.send(lastMessage.image)
+	const attachment = new MessageAttachment(lastMessage);
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
     }).catch(err => {
     console.error(err)
     })
