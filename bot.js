@@ -349,7 +349,7 @@ client.on('message', message => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage)
-	message.channel.send(attachment);
+	message.channel.sendFile('attachment', '', '');
 	//message.channel.send(lastMessage.url)
     }).catch(err => {
     console.error(err)
