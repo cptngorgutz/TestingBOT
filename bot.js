@@ -349,7 +349,7 @@ client.on('message', message => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage)
-	message.channel.send('I am Damabot, developed by Damadion!' + attachment)
+	message.channel.send('Image is here:' + (attachment))
 	//message.channel.send(lastMessage.url)
     }).catch(err => {
     console.error(err)
@@ -357,21 +357,6 @@ client.on('message', message => {
     }
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
