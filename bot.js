@@ -380,9 +380,57 @@ if (msg.content === '!aimassault unlock' || msg.content === '!aimassaulter unloc
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
 	msg.channel.send(speedEmbed); 
 }
-
-
-
+//AIM INFECTOR
+if (msg.content === '!aiminfector kit' || msg.content === '!aiminfectorer kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • Level 7** \n \nAttack primary target for 270% damage. Transfer all negative \n effects on this character to the primary target + \napply a random negative effect.")
+	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Special)** \n \n**Biohazard • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nChange Speed Bar by +75%. \nHeal self for 10000 Health + 20% of Max Health. \nGain 2 Counter. Apply 2 Counter to adjacent A.I.M. allies.")
+	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • Level 5** \n \nOn Turn, gain 2 random negative effects for 2 turns. \nGain +10% Speed.\nGain +15% Max Health. \n \n**On Turn:** \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
+	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aiminfector T4' || msg.content === '!aiminfectorer T4') { //AIMINFECTOR T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
+	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Special)** \n \n**Biohazard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
+	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
+	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aiminfector speed' || msg.content === '!aiminfectorer speed') { //AIMINFECTOR SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector's speed is: 104")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!aiminfector unlock' || msg.content === '!aiminfectorer unlock' || msg.content === '!aiminfector farm' || msg.content === '!aiminfectorer farm') { //AIM ASSAULY UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
