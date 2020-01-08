@@ -334,17 +334,17 @@ if (msg.content === '!aimassault kit' || msg.content === '!aimassaulter kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • Level 7** \n \nAttack primary target for 160% damage + apply Bleed for 2 turns.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n**Submachine Gun • Level 7** \n \nAttack primary target for 160% damage + apply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdoes • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 250% damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for 125% per negative effect on the target. \nGain speed up for 4 turns.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n**Hyperdoes • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 250% damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for 125% per negative effect on the target. \nGain speed up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • Level 5** \nOn Turn, change Speed Bar by +20% for self + \nadjacent A.I.M. allies. \nGain +15% Damage and +10% Max Health.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n**Juicer • Level 5** \n \nOn Turn, change Speed Bar by +20% for self + \nadjacent A.I.M. allies. \nGain +15% Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	msg.channel.send(exampleEmbed4);
 }
