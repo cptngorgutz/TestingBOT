@@ -249,12 +249,12 @@ if (msg.content === '!blackbolt kit') {
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for 600% damage. \nThis attack is unavoidable.")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for 600% damage. \nThis attack is unavoidable.")
 	.setThumbnail('https://i.imgur.com/5wsashb.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • Level 7** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityoff:661583564965412871><:abilityoff:661583564965412871><:abilityoff:661583564965412871> \nAttack all enemies for 500% damage.")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for 500% damage.")
 	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -272,12 +272,12 @@ if (msg.content === '!blackbolt T4') { //BLACKBOLT T4S
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
 	.setThumbnail('https://i.imgur.com/5wsashb.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityoff:661583564965412871><:abilityoff:661583564965412871><:abilityoff:661583564965412871> \nAttack all enemies for **380% -> 500%** damage.")
+	.setDescription("<:blackbolt:661586769342365713>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **380% -> 500%** damage.")
 	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -314,12 +314,12 @@ if (msg.content === '!yo-yo T4') { //YOYO T4S
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack Primary target for **150% -> 170%** damage + \nBonus attack 2 times for **150% -> 170%** damage. \nRepeat this attack on **2 -> 3** additional random targets. \nThis attack cannot be counterattacked.")
+	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **150% -> 170%** damage + \nBonus attack 2 times for **150% -> 170%** damage. \nRepeat this attack on **2 -> 3** additional random targets. \nThis attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/XSiALFR.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Ultimate)** \n \n**Run the Gauntlet • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityoff:661583564965412871><:abilityoff:661583564965412871> \nAttack all enemies for **220% -> 270%** damage. \nGrant 1 ability energy to all INHUMAN allies.")
+	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Ultimate)** \n \n**Run the Gauntlet • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **220% -> 270%** damage. \nGrant 1 ability energy to all INHUMAN allies.")
 	.setThumbnail('https://i.imgur.com/FW7RfYR.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -334,17 +334,17 @@ if (msg.content === '!aimassault kit' || msg.content === '!aimassaulter kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Royal Strike • Level 7** \n \nAttack primary target for 160% damage + apply Bleed for 2 turns.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • Level 7** \n \nAttack primary target for 160% damage + apply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack primary target for 250% damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for 125% per negative effect on the target. \nGain speed up for 4 turns.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdoes • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 250% damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for 125% per negative effect on the target. \nGain speed up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**King Of Attilan • Level 5** \nOn Turn, change Speed Bar by +20% for self and adjacent A.I.M. allies. \nGain +15% Damage and +10% Max Health.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • Level 5** \nOn Turn, change Speed Bar by +20% for self + \nadjacent A.I.M. allies. \nGain +15% Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	msg.channel.send(exampleEmbed4);
 }
@@ -357,7 +357,7 @@ if (msg.content === '!aimassault T4' || msg.content === '!aimassaulter T4') { //
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -377,10 +377,9 @@ if (msg.content === '!aimassault unlock' || msg.content === '!aimassaulter unloc
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable on: \n**Heroes Campaign, node 5-3.**")
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
 	msg.channel.send(speedEmbed); 
 }
-
 
 
 
