@@ -327,29 +327,70 @@ if (msg.content === '!yo-yo T4') { //YOYO T4S
 	.setDescription("<:YOYO:662003531145805844>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, \napply Offence Down to that enemy. This cannot be dodged. \nOn ally non-MINION S.H.I.E.L.D or INHUMAN turn, 50% chance \nto apply Evade to that ally. \n \n**On Spawn:** \nApply Defence Up to self and all non-MINION S.H.I.E.L.D or INHUMAN allies. \nWhena  non-MINION S.H.I.E.L.D or INHUMAN ally drops below \n50% Health, apply Defence up to that ally. \n \n**Stats:** \nGain **20% -> 25%** Dodge chance. \n**Gain 10% Focus per non-MINION S.H.I.E.L.D & INHUMAN ally.**")
 	.setThumbnail('https://i.imgur.com/hCaEsPN.png') 
 	msg.channel.send(exampleEmbed4);
-}});
+}
 
-//COMMANDS
-let commands = [
-    {
-        aliases:["!abc","!def","!ghi","!jkl",],
-        run:function(msg){
-            msg.send("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable on: \n**Heroes Campaign, node 5-3.**");
-        }
-    }
-]
-//later
-client.on(`message`,function(msg){
-    for(let i =0;i<commands;i++){
-        if(commands[i].includes(msg.content.toLowerCase())){
-            commands[i].run();
-        }
-    }
+//AIM ASSAULTER
+if (msg.content === '!aimassault kit' || msg.content === '!aimassaulter kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Royal Strike • Level 7** \n \nAttack primary target for 160% damage + apply Bleed for 2 turns.")
+	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack primary target for 250% damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for 125% per negative effect on the target. \nGain speed up for 4 turns.")
+	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**King Of Attilan • Level 5** \nOn Turn, change Speed Bar by +20% for self and adjacent A.I.M. allies. \nGain +15% Damage and +10% Max Health.")
+	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimassault T4' || msg.content === '!aimassaulter T4') { //AIMASSAULT T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
+	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:661581893325815819><:abilityon:661581893325815819><:abilityon:661581893325815819> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
+	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
+	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimassault speed' || msg.content === '!aimassaulter speed') { //AIMASSAULT SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter's speed is: 118")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!aimassault unlock' || msg.content === '!aimassaulter unlock' || msg.content === '!aimassault farm' || msg.content === '!aimassaulter farm') { //AIM ASSAULY UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable on: \n**Heroes Campaign, node 5-3.**")
+	msg.channel.send(speedEmbed); 
+}
+
+
+
+
+
+
+
+
+
+
+
 });
-
-
-
-
-
 
 client.login(process.env.TOKEN);
