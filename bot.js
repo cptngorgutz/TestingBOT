@@ -238,7 +238,6 @@ if (msg.content === '!Ultron Basic Code') {
 	msg.channel.send(exampleEmbed);
 }
 
-
 //BLACK BOLT
 if (msg.content === '!blackbolt kit') {
 	msg.channel.bulkDelete(1)
@@ -301,7 +300,6 @@ if (msg.content === '!unlock blackbolt') { //UNLOCK
 	msg.channel.send(exampleEmbed);
 }
 
-
 //YO-YO
 if (msg.content === '!yo-yo kit') {
 }	
@@ -329,6 +327,7 @@ if (msg.content === '!yo-yo T4') { //YOYO T4S
 	msg.channel.send(exampleEmbed4);
 }
 
+//---------------------------------------
 //AIM ASSAULTER
 if (msg.content === '!aimassault kit' || msg.content === '!aimassaulter kit') {
 	msg.channel.bulkDelete(1)
@@ -381,11 +380,11 @@ if (msg.content === '!aimassault unlock' || msg.content === '!aimassaulter unloc
 	msg.channel.send(speedEmbed); 
 }
 //AIM INFECTOR
-if (msg.content === '!aiminfector kit' || msg.content === '!aiminfectorer kit') {
+if (msg.content === '!aiminfect kit' || msg.content === '!aiminfector kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • Level 7** \n \nAttack primary target for 270% damage. Transfer all negative \n effects on this character to the primary target + \napply a random negative effect.")
+	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • Level 7** \n \nAttack primary target for 270% damage. \n Transfer all negative effects on this character to the primary target + apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
@@ -399,7 +398,7 @@ if (msg.content === '!aiminfector kit' || msg.content === '!aiminfectorer kit') 
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!aiminfector T4' || msg.content === '!aiminfectorer T4') { //AIMINFECTOR T4S
+if (msg.content === '!aiminfect T4' || msg.content === '!aiminfector T4') { //AIMINFECTOR T4S
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -417,22 +416,71 @@ if (msg.content === '!aiminfector T4' || msg.content === '!aiminfectorer T4') { 
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!aiminfector speed' || msg.content === '!aiminfectorer speed') { //AIMINFECTOR SPEED
+if (msg.content === '!aiminfect speed' || msg.content === '!aiminfector speed') { //AIMINFECTOR SPEED
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector's speed is: 104")
 	msg.channel.send(speedEmbed);
 }
-if (msg.content === '!aiminfector unlock' || msg.content === '!aiminfectorer unlock' || msg.content === '!aiminfector farm' || msg.content === '!aiminfectorer farm') { //AIM ASSAULY UNLOCK
+if (msg.content === '!aiminfect unlock' || msg.content === '!aiminfector unlock' || msg.content === '!aiminfect farm' || msg.content === '!aiminfector farm') { //AIM ASSAULY UNLOCK
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
 	msg.channel.send(speedEmbed); 
 }
-
-
+//AIM RESEARCHER
+if (msg.content === '!aimrea kit' || msg.content === '!!aimresearcher kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • Level 7** \n \nAttack primary target for 280% damage + apply Offense Down for 1 turn.")
+	.setThumbnail('https://i.imgur.com/qThfwy9.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Special)** \n \n**Surgery Drone • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nHeal lowest Health ally and adjacent allies for 7000 Health + \n15% of this character's Max Health + \nflip Bleed on lowest Health ally and adjacent allies.")
+	.setThumbnail('https://i.imgur.com/Y2X5nS8.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • Level 5** \n \nOn Turn, choose 1 random ally to apply 1 random positive effect from this list: \nOffense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by +20%.")
+	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimrea T4' || msg.content === '!!aimresearcher T4') { //AIMRESEARCHER T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
+	.setThumbnail('https://i.imgur.com/qThfwy9.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Special)** \n \n**Surgery Drone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nHeal lowest Health ally and their adjacent allies for \n**6000 -> 7000** Health + 15% of this character's Max Health + \n**75% -> 100%** chance to flip Bleed on lowest Health ally and their adjacent allies.")
+	.setThumbnail('https://i.imgur.com/Y2X5nS8.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • T4 Upgrade** \n \n**On Turn** \n**75% -> 100%** chance to choose 1 random ally to apply 1 random positive effect from this list: Offense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \n \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by **+10% -> +20%**.")
+	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimrea speed' || msg.content === '!!aimresearcher speed') { //AIMRESEARCHER SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher's speed is: 81")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!aimrea unlock' || msg.content === '!!aimresearcher unlock' || msg.content === '!aimrea farm' || msg.content === '!!aimresearcher farm') { //AIMRESEARCHER UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
