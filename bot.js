@@ -534,6 +534,24 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 }
 
 
+//testing
+if (msg.content === '!quote') {
+message.channel.fetchMessage(messageID).then(messagea => {
+	let messagea = message.channel.fetchMessages(messageID);
+    let reportEmbed = new Discord.RichEmbed()
+        .setTitle("Reports")
+        .setColor("#F7E533")
+        .addField("Message", messagea.content)
+        .addField("Reported User", `@${messagea.author}`)
+        .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
+        .addField("Time", message.createdAt)
+    message.delete().catch(O_o => {});
+    message.channel.send(reportEmbed);
+    message.delete();
+    return;
+})
+}
+
 
 });
 
