@@ -535,7 +535,7 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 
 //testing
 if (msg.content === '!quote') {
-msg.channel.fetchMessage(msgID).then(messagea => {
+msg.channel.fetchMessage(messageID).then(messagea => {
     let reportEmbed = new Discord.RichEmbed()
         .setTitle("Reports")
         .setColor("#F7E533")
