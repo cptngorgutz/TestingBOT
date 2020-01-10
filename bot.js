@@ -537,15 +537,8 @@ if (msg.content === '!counter aim') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)**")
-	.setImage('https://i.ibb.co/zX8ShhJ/brawlers.png')
+	.setImage('https://i.ibb.co/L0Qs49T/testingssss.png')
 	msg.channel.send(exampleEmbed);
-	
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Punfenders (20K punchup)**")
-	.setImage('https://i.ibb.co/8DdL9QC/punfenders.png')
-	msg.channel.send(exampleEmbed2);
 }
 
 
