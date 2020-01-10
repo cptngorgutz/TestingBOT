@@ -538,7 +538,8 @@ if (msg.content === '!counter aim') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)** \n<:americachavez:663749979394801686> <:captainmarvel:663749985459896340> <:deadpool:663749981705994251> <:gamora:663749983815860234> <:msmarvel:663750496355483679> \n \n**Punfenders (20K punchup)** \n<:daredevil:663749979994587156> <:ironfist:663751749454004254> <:jessicajones:663750493540974612> <:lukecage:663750493172006936> <:punisher:663750495982190620>")
+	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)**")
+	.setImage('https://i.imgur.com/WlCh5pn.png')
 	msg.channel.send(exampleEmbed);
 }
 
