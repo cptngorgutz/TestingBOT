@@ -533,13 +533,12 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 	msg.channel.send(speedEmbed); 
 }
 
-
 if (msg.content === '!counter aim') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)** <:chavez:665291419275231244> <:chavez:665291419275231244> <:chavez:665291419275231244>")
-	.setImage('https://i.imgur.com/WlCh5pn.png')
+	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)**")
+	.setImage('https://i.ibb.co/QKNVZ58/brawlers.png')
 	msg.channel.send(exampleEmbed);
 }
 
