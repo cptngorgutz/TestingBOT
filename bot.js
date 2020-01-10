@@ -546,8 +546,7 @@ client.on('message', message => {
     console.error(err)
     })
     }
-  }
-});
+  });
 
 
 
