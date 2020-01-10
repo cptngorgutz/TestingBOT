@@ -435,7 +435,7 @@ if (msg.content === '!aimrea kit' || msg.content === '!!aimresearcher kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • Level 7** \n \nAttack primary target for 280% damage + apply Offense Down for 1 turn.")
+	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • Level 7** \n \nAttack primary target for 280% damage + \napply Offense Down for 1 turn.")
 	.setThumbnail('https://i.imgur.com/qThfwy9.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
@@ -481,7 +481,57 @@ if (msg.content === '!aimrea unlock' || msg.content === '!!aimresearcher unlock'
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	msg.channel.send(speedEmbed); 
 }
-
+//AIM SECURITY
+if (msg.content === '!aimsec kit' || msg.content === '!!aimsecurity kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • Level 7** \n \nAttack primary target for 270% damage. \nIf Ability Blocked, attack primary target for 470% damage instead. \nApply Slow.")
+	.setThumbnail('https://i.imgur.com/S00SWQw.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Special)** \n \n**Charge Capacitor • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt for 1 turn + Slow for 2 turns. \nHeal self and adjacent A.I.M. allies for 10000 Health + 10% of Max Health. \nClear Speed Up on self.")
+	.setThumbnail('https://i.imgur.com/Ted3CoX.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • Level 5** \n \nOn attacked, if Scientist Supreme is an ally, when above 75% Health, \ntransfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. \nGain +10% Max Health and +15% Resistance.")
+	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimsec T4' || msg.content === '!!aimsecurity T4') { //AIMSECURITY T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
+	.setThumbnail('https://i.imgur.com/S00SWQw.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Special)** \n \n**Charge Capacitor • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt for 1 turn + Slow for 2 turns. Heal self and adjacent A.I.M. allies for **7000 -> 10000** Health + 10% of Max Health. Clear Speed Up on self.")
+	.setThumbnail('https://i.imgur.com/Ted3CoX.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • T4 Upgrade** \n \nAfter attacked, if Scientist Supreme is an ally, if still above 75% Health, transfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. Gain +10% Max Health and **+10% -> +15%** Resistance.")
+	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimsec speed' || msg.content === '!!aimsecurity speed') { //AIMSECURITY SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security's speed is: 76")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' || msg.content === '!aimsec farm' || msg.content === '!!aimsecurity farm') { //AIMSECURITY UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
