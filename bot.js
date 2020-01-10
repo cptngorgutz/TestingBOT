@@ -539,9 +539,7 @@ client.on('message', message => {
     if(message.content.startsWith('!quote')) {
     message.channel.fetchMessages({ limit: 1 }).then(messages => {
     const lastMessage = message.id
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.content)
-	message.channel.send(attachment);
+	message.channel.send(lastMessage.content);
     }).catch(err => {
     console.error(err)
     })
