@@ -537,9 +537,16 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 
 client.on('message', message => {
     if(message.content.startsWith('!quote')) {
-    message.channel.fetchMessages({ limit: 1 }).then(messages => {
-    const lastMessage = message.id
-	message.channel.send(lastMessage);
+	let messageID = args[0];
+    if (isNaN(messageID)) {
+        message.author.send("Not an ID")
+        return;
+    }
+    let messagea = message.channel.fetchMessages(messageID);
+	message.channel.fetchMessage(messageID).then(messagea => {
+	let reportEmbed = new Discord.RichEmbed()
+	.addField("Message", messagea.content)
+	message.channel.send(reportEmbed);
     }).catch(err => {
     console.error(err)
     })
