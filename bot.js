@@ -533,11 +533,9 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 	msg.channel.send(speedEmbed); 
 }
 
-
 //testing
 if (msg.content === '!quote') {
 message.channel.fetchMessage(messageID).then(messagea => {
-	let messagea = message.channel.fetchMessages(messageID);
     let reportEmbed = new Discord.RichEmbed()
         .setTitle("Reports")
         .setColor("#F7E533")
@@ -551,6 +549,11 @@ message.channel.fetchMessage(messageID).then(messagea => {
     return;
 })
 }
+
+
+
+
+
 
 
 });
