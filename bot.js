@@ -533,29 +533,31 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 	msg.channel.send(speedEmbed); 
 }
 
-//testing
-if (msg.content === '!quote') {
-msg.channel.fetchMessage(messageID).then(messagea => {
+});
+
+client.on('message', message => {
+let messageID = args[0];
+let messagea = message.channel.fetchMessages(messageID);
+if (message.content === '!!quote') {
+message.channel.fetchMessage(messageID).then(messagea => {
     let reportEmbed = new Discord.RichEmbed()
         .setTitle("Reports")
         .setColor("#F7E533")
         .addField("Message", messagea.content)
         .addField("Reported User", `@${messagea.author}`)
-        .addField("Reported By", `${msg.author} with ID: ${msg.author.id}`)
-        .addField("Time", msg.createdAt)
-    msg.delete().catch(O_o => {});
-    msg.channel.send(reportEmbed);
-    msg.delete();
+        .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
+        .addField("Time", message.createdAt)
+    message.delete().catch(O_o => {});
+    message.channel.send(reportEmbed);
+    message.delete();
     return;
 })
 }
-
-
-
-
-
-
-
 });
+
+
+
+
+
 
 client.login(process.env.TOKEN);
