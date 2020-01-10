@@ -538,8 +538,14 @@ if (msg.content === '!counter aim') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)**")
-	.setImage('https://i.ibb.co/zX8ShhJ/brawlers.png')
+	.setImage('https://i.ibb.co/QKNVZ58/brawlers.png')
 	msg.channel.send(exampleEmbed);
+	
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Punfenders (20K punchup)**")
+	.setImage('https://i.ibb.co/8DdL9QC/punfenders.png')
+	msg.channel.send(exampleEmbed2);
 }
 
 
