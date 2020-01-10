@@ -534,14 +534,13 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 }
 
 
-if (msg.content === '!!counter aim') {
+if (msg.content === '!counter aim') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup):** \n<:americachavez:663749979394801686> America Chavez \n<:captainmarvel:663749985459896340> Captain Marvel \n<:deadpool:663749981705994251> Deadpool \n<:gamora:663749983815860234> Gamora \n<:msmarvel:663750496355483679> Ms.Marvel")
+	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)** \n<:americachavez:663749979394801686> America Chavez \n<:captainmarvel:663749985459896340> Captain Marvel \n<:deadpool:663749981705994251> Deadpool \n<:gamora:663749983815860234> Gamora \n<:msmarvel:663750496355483679> Ms.Marvel \n \n\n**Punfenders (20K punchup)** \n<:daredevil:663749979994587156> Daredevil \n<:ironfist:663751749454004254> Iron Fist \n<:jessicajones:663750493540974612> Jessica Jones \n<:lukecage:663750493172006936> Luke Cage \n<:punisher:663750495982190620> Punisher")
 	msg.channel.send(exampleEmbed);
 }
-
 
 
 
