@@ -539,7 +539,7 @@ client.on('message', message => {
     if(message.content.startsWith('!quote')) {
     message.channel.fetchMessages({ limit: 1 }).then(messages => {
     const lastMessage = message.id
-	message.channel.send(lastMessage.content);
+	message.channel.send(lastMessage);
     }).catch(err => {
     console.error(err)
     })
