@@ -538,8 +538,8 @@ if (msg.content === '!counter aim') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)**")
-	.setImage('https://i.imgur.com/txnbNdK.png')
+	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)** <:chavez:665291419275231244> <:chavez:665291419275231244> <:chavez:665291419275231244>")
+	.setImage('https://i.imgur.com/WlCh5pn.png')
 	msg.channel.send(exampleEmbed);
 }
 
