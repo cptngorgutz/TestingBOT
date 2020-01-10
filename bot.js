@@ -536,23 +536,17 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 });
 
 client.on('message', message => {
-let messageID = args[0];
-let messagea = message.channel.fetchMessages(messageID);
-if (message.content === '!!quote') {
-message.channel.fetchMessage(messageID).then(messagea => {
-    let reportEmbed = new Discord.RichEmbed()
-        .setTitle("Reports")
-        .setColor("#F7E533")
-        .addField("Message", messagea.content)
-        .addField("Reported User", `@${messagea.author}`)
-        .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
-        .addField("Time", message.createdAt)
-    message.delete().catch(O_o => {});
-    message.channel.send(reportEmbed);
-    message.delete();
-    return;
-})
-}
+    if(message.content.startsWith('!quote')) {
+    message.channel.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = message.id
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.content)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+    }
+  }
 });
 
 
