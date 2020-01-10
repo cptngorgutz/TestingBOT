@@ -538,7 +538,7 @@ if (msg.content === '!counter aim') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**AIM COUNTERS** \n**Brawlers (10K punchup)**")
-	.setImage('https://i.ibb.co/5Gv0bKf/brawlers.png')
+	.setImage('https://i.ibb.co/zX8ShhJ/brawlers.png')
 	msg.channel.send(exampleEmbed);
 }
 
