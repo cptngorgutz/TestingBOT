@@ -873,10 +873,10 @@ client.on('message', message => {
 	const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	lastMessage.forEach(messages => {
+	Attachment.forEach(function(attachment) {
 	message.channel.send(attachment);
-	});
 	})
+	});
     .catch(err => {
     console.error(err)
     })
