@@ -768,7 +768,67 @@ if (msg.content === '!bp unlock' || msg.content === '!blackpanther unlock' || ms
 	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \nBlack Panther is farmable in:**")
 	msg.channel.send(speedEmbed); 
 }
-
+//BLACK WIDOW
+if (msg.content === '!bw kit' || msg.content === '!blackwidow kit' || msg.content === '!widow kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • Level 7** \n \nAttack primary target for 250% damage. \nDuring Stealth, copy and clear all positive effects on primary target.")
+	.setThumbnail('https://i.imgur.com/Adce8ne.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> /nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self and all S.H.I.E.L.D. and AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
+	.setThumbnail('https://i.imgur.com/l51dzex.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • Level 7** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 290% damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for 220% damage + \napply 2 Bleed for 2 turns. Counterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/A2R5zPl.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • Level 5** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. On Kill, fill Speed Bar by 100%.")
+	.setThumbnail('https://i.imgur.com/ExIr73Q.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!bw T4' || msg.content === '!widow T4' || msg.content === '!widow T4') { //BLACKWIDOW T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • T4 Upgrade** \n \nAttack primary target for **190% -> 250%** damage. \nDuring Stealth, copy & clear all positive effects on primary target.")
+	.setThumbnail('https://i.imgur.com/Adce8ne.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
+	.setThumbnail('https://i.imgur.com/l51dzex.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **230% -> 290%** damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for \n**170% -> 220%** damage + apply 2 Bleed for 2 turns. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/A2R5zPl.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • T4 Upgrade** \n \nGain **+10% -> +15%** Speed. \nThis is applied after any character has taken a turn. \nWhen in Stealth, gain Offense Up.")
+	.setThumbnail('https://i.imgur.com/ExIr73Q.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!bw speed' || msg.content === '!widow speed' || msg.content === '!widow speed') { //BLACKWIDOW SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \nBlack Widow's base speed is 135, \nbut she gains +5%, +10%, or +15% speed bar \ndepending on her passive level after any character's first turn. \nThat makes her speed after turn one 141.75, 148.5, or 155.25 depending on her passive level.")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!bw unlock' || msg.content === '!widow unlock' || msg.content === '!widow farm' || msg.content === '!blackwidow farm' || msg.content === '!widow unlock' || msg.content === '!widow farm') { //BLACKWIDOW UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \nBlack Widow is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
