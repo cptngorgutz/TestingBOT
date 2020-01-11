@@ -849,6 +849,7 @@ if (msg.content === '!test') {
 
 });
 
+
 //blitz predictions
 client.on('message', message => {
     if(message.content.startsWith('!testing')) {
@@ -868,16 +869,22 @@ client.on('message', message => {
 	}).catch(err => {
     console.error(err)
     })
-    channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
-	const lastMessage = messages.attachments();
+  let test = channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
+	test.forEach(messages => {
 	message.channel.send(attachment);
+	});
     }).catch(err => {
     console.error(err)
     })
     }
 });
+
+
+
+
 
 
 
