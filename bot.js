@@ -722,12 +722,12 @@ if (msg.content === '!bp kit' || msg.content === '!blackpanther kit' || msg.cont
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Ultimate)** \n \n**Panther Rush • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 280% damage. \nChain to 1-3 adjacent targets for 200% damage. \nCounterattack breaks this Chain. While in Charged, \ninstead attack all enemies for 250% damage, then lose all Charged. \nThis attack gains +20% Damage per Charged. \nAll attacks have +30% Piercing and +20% Extra Crit Chance.")
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Ultimate)** \n \n**Panther Rush • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 280% damage. \nChain to 1-3 adjacent targets for 200% damage. \nCounterattack breaks this Chain. \nWhile in Charged, attack all enemies for 250% damage, \nthen lose all Charged. \nThis attack gains +20% Damage per Charged. All attacks have +30% Piercing and \n+20% Extra Crit Chance.")
 	.setThumbnail('https://i.imgur.com/WNirdk2.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • Level 5** \n \nOn dropping below 50% of Max Health, gain +1 Charged, up to a maximum of 5. \nOn Kill, fill Speed Bar by 100%.")
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • Level 5** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. On Kill, fill Speed Bar by 100%.")
 	.setThumbnail('https://i.imgur.com/VP20XOH.png') 
 	msg.channel.send(exampleEmbed4);
 }
