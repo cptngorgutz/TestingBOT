@@ -649,22 +649,22 @@ if (msg.content === '!ant kit' || msg.content === '!antman kit' || msg.content =
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Basic)** \n \n**Scrappy Fighter • Level 7** \n \nAttack primary target for 270% damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • Level 7** \n \nAttack primary target for 270% damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
 	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Special)** \n \n**Gum Up the Works • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 220% damage + \nalways apply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Special)** \n \n**Gum Up the Works • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 220% damage + \nalways apply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
 	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Ultimate)** \n \n**Stomp • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for 140% damage + \nApply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Ultimate)** \n \n**Stomp • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for 140% damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets")
 	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Passive)** \n \n**Escape Plan • Level 5** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \n \nOn Turn, 15% chance to gain Evade + \n15% chance to gain Assist Now.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • Level 5** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \n \nOn Turn, 15% chance to gain Evade + 15% chance to gain Assist Now.")
 	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
 	msg.channel.send(exampleEmbed4);
 }
@@ -672,22 +672,22 @@ if (msg.content === '!ant T4' || msg.content === '!antman T4' || msg.content ===
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
 	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
 	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Ultimate)** \n \n**Stomp • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for **130% -> 140%** damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Ultimate)** \n \n**Stomp • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for **130% -> 140%** damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets.")
 	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
+	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
 	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
 	msg.channel.send(exampleEmbed4);
 }
@@ -695,23 +695,35 @@ if (msg.content === '!ant speed' || msg.content === '!antman speed' || msg.conte
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **Ant Man** \nAnt Man's speed is: 100")
+	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man's speed is: 100")
 	msg.channel.send(speedEmbed);
 }
 if (msg.content === '!ant unlock' || msg.content === '!antman unlock' || msg.content === '!ant farm' || msg.content === '!antman farm' || msg.content === '!man unlock' || msg.content === '!man farm') { //ANTMAN UNLOCK
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **Ant Man** \nAnt Man is farmable in:**")
+	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable in:**")
 	msg.channel.send(speedEmbed); 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
-
-
-
 
 
 
