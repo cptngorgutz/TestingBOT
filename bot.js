@@ -483,7 +483,7 @@ if (msg.content === '!aimmon unlock' || msg.content === '!aimmonstrosity unlock'
 }
 
 //AIM RESEARCHER
-if (msg.content === '!aimrea kit' || msg.content === '!!aimresearcher kit') {
+if (msg.content === '!aimrea kit' || msg.content === '!aimresearcher kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -501,7 +501,7 @@ if (msg.content === '!aimrea kit' || msg.content === '!!aimresearcher kit') {
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!aimrea T4' || msg.content === '!!aimresearcher T4') { //AIMRESEARCHER T4S
+if (msg.content === '!aimrea T4' || msg.content === '!aimresearcher T4') { //AIMRESEARCHER T4S
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -519,14 +519,14 @@ if (msg.content === '!aimrea T4' || msg.content === '!!aimresearcher T4') { //AI
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!aimrea speed' || msg.content === '!!aimresearcher speed') { //AIMRESEARCHER SPEED
+if (msg.content === '!aimrea speed' || msg.content === '!aimresearcher speed') { //AIMRESEARCHER SPEED
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher's speed is: 81")
 	msg.channel.send(speedEmbed);
 }
-if (msg.content === '!aimrea unlock' || msg.content === '!!aimresearcher unlock' || msg.content === '!aimrea farm' || msg.content === '!!aimresearcher farm') { //AIMRESEARCHER UNLOCK
+if (msg.content === '!aimrea unlock' || msg.content === '!aimresearcher unlock' || msg.content === '!aimrea farm' || msg.content === '!aimresearcher farm') { //AIMRESEARCHER UNLOCK
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -534,7 +534,7 @@ if (msg.content === '!aimrea unlock' || msg.content === '!!aimresearcher unlock'
 	msg.channel.send(speedEmbed); 
 }
 //AIM SECURITY
-if (msg.content === '!aimsec kit' || msg.content === '!!aimsecurity kit') {
+if (msg.content === '!aimsec kit' || msg.content === '!aimsecurity kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -552,7 +552,7 @@ if (msg.content === '!aimsec kit' || msg.content === '!!aimsecurity kit') {
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!aimsec T4' || msg.content === '!!aimsecurity T4') { //AIMSECURITY T4S
+if (msg.content === '!aimsec T4' || msg.content === '!aimsecurity T4') { //AIMSECURITY T4S
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -570,14 +570,14 @@ if (msg.content === '!aimsec T4' || msg.content === '!!aimsecurity T4') { //AIMS
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!aimsec speed' || msg.content === '!!aimsecurity speed') { //AIMSECURITY SPEED
+if (msg.content === '!aimsec speed' || msg.content === '!aimsecurity speed') { //AIMSECURITY SPEED
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security's speed is: 76")
 	msg.channel.send(speedEmbed);
 }
-if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' || msg.content === '!aimsec farm' || msg.content === '!!aimsecurity farm') { //AIMSECURITY UNLOCK
+if (msg.content === '!aimsec unlock' || msg.content === '!aimsecurity unlock' || msg.content === '!aimsec farm' || msg.content === '!aimsecurity farm') { //AIMSECURITY UNLOCK
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -587,7 +587,7 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 //----------------------------------------------
 
 //AMERICA CHAVEZ
-if (msg.content === '!america kit' || msg.content === '!!americachavez kit' || msg.content === '!!chavez kit') {
+if (msg.content === '!america kit' || msg.content === '!americachavez kit' || msg.content === '!chavez kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -610,7 +610,7 @@ if (msg.content === '!america kit' || msg.content === '!!americachavez kit' || m
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!america T4' || msg.content === '!!americachavez T4' || msg.content === '!!chavez T4') { //AMERICACHAVEZ T4S
+if (msg.content === '!america T4' || msg.content === '!americachavez T4' || msg.content === '!chavez T4') { //AMERICACHAVEZ T4S
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -633,14 +633,14 @@ if (msg.content === '!america T4' || msg.content === '!!americachavez T4' || msg
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!america speed' || msg.content === '!!americachavez speed' || msg.content === '!!chavez speed') { //AMERICACHAVEZ SPEED
+if (msg.content === '!america speed' || msg.content === '!americachavez speed' || msg.content === '!chavez speed') { //AMERICACHAVEZ SPEED
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez's speed is: 115")
 	msg.channel.send(speedEmbed);
 }
-if (msg.content === '!america unlock' || msg.content === '!!americachavez unlock' || msg.content === '!america farm' || msg.content === '!!americachavez farm' || msg.content === '!!chavez unlock' || msg.content === '!!chavez farm') { //AMERICACHAVEZ UNLOCK
+if (msg.content === '!america unlock' || msg.content === '!americachavez unlock' || msg.content === '!america farm' || msg.content === '!americachavez farm' || msg.content === '!chavez unlock' || msg.content === '!chavez farm') { //AMERICACHAVEZ UNLOCK
 	msg.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
