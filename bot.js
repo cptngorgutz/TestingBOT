@@ -869,7 +869,7 @@ client.on('message', message => {
     console.error(err)
     })
     channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
-	const lastMessage = message.attachments.first();
+	const lastMessage = messages.attachments();
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
 	message.channel.send(attachment);
