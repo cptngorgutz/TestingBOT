@@ -778,7 +778,7 @@ if (msg.content === '!bw kit' || msg.content === '!blackwidow kit' || msg.conten
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self and all S.H.I.E.L.D. and AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
 	.setThumbnail('https://i.imgur.com/l51dzex.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -829,6 +829,10 @@ if (msg.content === '!bw unlock' || msg.content === '!widow unlock' || msg.conte
 	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \nBlack Widow is farmable in:**")
 	msg.channel.send(speedEmbed); 
 }
+
+
+
+
 
 
 
