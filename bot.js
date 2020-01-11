@@ -430,6 +430,58 @@ if (msg.content === '!aiminfect unlock' || msg.content === '!aiminfector unlock'
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
 	msg.channel.send(speedEmbed); 
 }
+//AIM MONSTROSITY//
+if (msg.content === '!aimmon kit' || msg.content === '!aimmonstrosity kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • Level 7** \n \nAttack primary target for 280% damage + apply Defense Down.")
+	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Offense Up + apply Offense Up to adjacent A.I.M. allies for 3 turns. \nAttack primary target for 300% damage. \nThis attack cannot miss.")
+	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • Level 5** \n \nOn Spawn, gain Defense Down. \nOn Turn, Heal for 20% of Max Health.")
+	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimmon T4' || msg.content === '!aimmonstrosity T4') { //AIMMONSTROSITY T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
+	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
+	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
+	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!aimmon speed' || msg.content === '!aimmonstrosity speed') { //AIMMONSTROSITY SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity's speed is: 77")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!aimmon unlock' || msg.content === '!aimmonstrosity unlock' || msg.content === '!aimmon farm' || msg.content === '!aimmonstrosity farm') { //AIMMONSTROSITY UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
+	msg.channel.send(speedEmbed); 
+}
+
 //AIM RESEARCHER
 if (msg.content === '!aimrea kit' || msg.content === '!!aimresearcher kit') {
 	msg.channel.bulkDelete(1)
@@ -532,16 +584,69 @@ if (msg.content === '!aimsec unlock' || msg.content === '!!aimsecurity unlock' |
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
 	msg.channel.send(speedEmbed); 
 }
+//----------------------------------------------
 
-if (msg.content === '!counter aim') {
+//AMERICA CHAVEZ
+if (msg.content === '!america kit' || msg.content === '!!americachavez kit' || msg.content === '!!chavez kit') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**AIM COUNTERS**")
-	.setImage('https://i.ibb.co/fVJK2NW/testingssss.png')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • Level 7** \n \nAttack primary target for 290% damage + apply Defense Down.")
+	.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
 	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 300% damage + 75% damage per HERO BRAWLER ally.")
+	.setThumbnail('https://i.imgur.com/0V2pdTr.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Ultimate)** \n \n**America's Starling • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nClear 3 positive effects. Attack primary target for 430% damage.")
+	.setThumbnail('https://i.imgur.com/hdqNsvC.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • Level 5** \n \nGain +20% Max Health. HERO BRAWLER allies gain +20% Max Health.")
+	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
+	msg.channel.send(exampleEmbed4);
 }
-
+if (msg.content === '!america T4' || msg.content === '!!americachavez T4' || msg.content === '!!chavez T4') { //AMERICACHAVEZ T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
+	.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **250% -> 300%** damage + \n**50% -> 75%** damage per HERO BRAWLER ally.")
+	.setThumbnail('https://i.imgur.com/0V2pdTr.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Ultimate)** \n \n**America's Starling • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nClear 3 positive effects. \nAttack primary target for **350% -> 430%** damage.")
+	.setThumbnail('https://i.imgur.com/hdqNsvC.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. \nHERO BRAWLER allies gain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!america speed' || msg.content === '!!americachavez speed' || msg.content === '!!chavez speed') { //AMERICACHAVEZ SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez's speed is: 115")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!america unlock' || msg.content === '!!americachavez unlock' || msg.content === '!america farm' || msg.content === '!!americachavez farm' || msg.content === '!!chavez unlock' || msg.content === '!!chavez farm') { //AMERICACHAVEZ UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
