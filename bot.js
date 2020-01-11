@@ -852,30 +852,7 @@ if (msg.content === '!test') {
 });
 
 
-//blitz predictions
-client.on('message', message => {
-    if(message.content.startsWith('!testing')) {
 
-    const channelToCheck = client.channels.get('665671842094120987')
-	const channelToCheckText = client.channels.get('665671446026125312')
-	const channelToCheckYT = client.channels.get('665671786159013909')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const textattachment = (message.content)
-	message.channel.send(textattachment);
-	})
-	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
-	const YTattachment = (message.content)
-	message.channel.send(YTattachment);
-	})
-    channelToCheck.fetchMessages({ limit: 6 }).then(messages => {
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(Attachment.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-    }
-});
 
 
 
