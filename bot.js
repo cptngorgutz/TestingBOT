@@ -778,12 +778,12 @@ if (msg.content === '!bw kit' || msg.content === '!blackwidow kit' || msg.conten
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> /nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self and all S.H.I.E.L.D. and AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self and all S.H.I.E.L.D. and AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
 	.setThumbnail('https://i.imgur.com/l51dzex.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • Level 7** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 290% damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for 220% damage + \napply 2 Bleed for 2 turns. Counterattack breaks this Chain.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • Level 7** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 290% damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for 220% damage + apply 2 Bleed for 2 turns. Counterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/A2R5zPl.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -829,7 +829,6 @@ if (msg.content === '!bw unlock' || msg.content === '!widow unlock' || msg.conte
 	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \nBlack Widow is farmable in:**")
 	msg.channel.send(speedEmbed); 
 }
-
 
 
 
