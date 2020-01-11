@@ -440,7 +440,7 @@ if (msg.content === '!aimmon kit' || msg.content === '!aimmonstrosity kit') {
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Offense Up + apply Offense Up to adjacent A.I.M. allies for 3 turns. \nAttack primary target for 300% damage. \nThis attack cannot miss.")
+	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Offense Up + \napply Offense Up to adjacent A.I.M. allies for 3 turns. \nAttack primary target for 300% damage. \nThis attack cannot miss.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -481,7 +481,6 @@ if (msg.content === '!aimmon unlock' || msg.content === '!aimmonstrosity unlock'
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	msg.channel.send(speedEmbed); 
 }
-
 //AIM RESEARCHER
 if (msg.content === '!aimrea kit' || msg.content === '!aimresearcher kit') {
 	msg.channel.bulkDelete(1)
@@ -584,8 +583,6 @@ if (msg.content === '!aimsec unlock' || msg.content === '!aimsecurity unlock' ||
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
 	msg.channel.send(speedEmbed); 
 }
-//----------------------------------------------
-
 //AMERICA CHAVEZ
 if (msg.content === '!america kit' || msg.content === '!americachavez kit' || msg.content === '!chavez kit') {
 	msg.channel.bulkDelete(1)
@@ -596,7 +593,7 @@ if (msg.content === '!america kit' || msg.content === '!americachavez kit' || ms
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 300% damage + 75% damage per HERO BRAWLER ally.")
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 300% damage + \n75% damage per HERO BRAWLER ally.")
 	.setThumbnail('https://i.imgur.com/0V2pdTr.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -606,7 +603,7 @@ if (msg.content === '!america kit' || msg.content === '!americachavez kit' || ms
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • Level 5** \n \nGain +20% Max Health. HERO BRAWLER allies gain +20% Max Health.")
+	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • Level 5** \n \nGain +20% Max Health. \nHERO BRAWLER allies gain +20% Max Health.")
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
 	msg.channel.send(exampleEmbed4);
 }
@@ -647,7 +644,67 @@ if (msg.content === '!america unlock' || msg.content === '!americachavez unlock'
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in:**")
 	msg.channel.send(speedEmbed); 
 }
-
+//ANT MAN
+if (msg.content === '!ant kit' || msg.content === '!antman kit' || msg.content === '!man kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Basic)** \n \n**Scrappy Fighter • Level 7** \n \nAttack primary target for 270% damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
+	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Special)** \n \n**Gum Up the Works • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 220% damage + \nalways apply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
+	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Ultimate)** \n \n**Stomp • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for 140% damage + \nApply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets")
+	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Passive)** \n \n**Escape Plan • Level 5** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \n \nOn Turn, 15% chance to gain Evade + \n15% chance to gain Assist Now.")
+	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!ant T4' || msg.content === '!antman T4' || msg.content === '!man T4') { //ANTMAN T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
+	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
+	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Ultimate)** \n \n**Stomp • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for **130% -> 140%** damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets.")
+	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
+	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!ant speed' || msg.content === '!antman speed' || msg.content === '!man speed') { //ANTMAN SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686> **Ant Man** \nAnt Man's speed is: 100")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!ant unlock' || msg.content === '!antman unlock' || msg.content === '!ant farm' || msg.content === '!antman farm' || msg.content === '!man unlock' || msg.content === '!man farm') { //ANTMAN UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686> **Ant Man** \nAnt Man is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
