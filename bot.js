@@ -774,6 +774,13 @@ if (msg.content === '!bp unlock' || msg.content === '!blackpanther unlock' || ms
 
 
 
+if (msg.content === '!test') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setImage('https://i.ibb.co/GFRFYyR/size.png')
+	msg.channel.send(exampleEmbed);
+}
 
 
 
