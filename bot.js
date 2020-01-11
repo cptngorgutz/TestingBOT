@@ -876,9 +876,6 @@ client.on('message', message => {
 	Attachment.forEach(function(attachment) {
 	message.channel.send(attachment);
 	})
-	});
-    .catch(err => {
-    console.error(err)
     })
     }
 });
