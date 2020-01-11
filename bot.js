@@ -773,22 +773,22 @@ if (msg.content === '!bw kit' || msg.content === '!blackwidow kit' || msg.conten
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • Level 7** \n \nAttack primary target for 250% damage. \nDuring Stealth, copy and clear all positive effects on primary target.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • Level 6** \n \nAttack primary target for 190% damage. \nDuring Stealth, copy and clear all positive effects on primary target.")
 	.setThumbnail('https://i.imgur.com/Adce8ne.png') 
 	msg.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • Level 6** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
 	.setThumbnail('https://i.imgur.com/l51dzex.png') 
 	msg.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • Level 7** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 290% damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for 220% damage + apply 2 Bleed for 2 turns. Counterattack breaks this Chain.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • Level 6** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 230% damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for 170% damage + apply 2 Bleed for 2 turns. Counterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/A2R5zPl.png') 
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • Level 5** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. On Kill, fill Speed Bar by 100%.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • Level 4** \n \nGain +10% Speed. This is applied after any character has taken an action. \nWhen in Stealth, gain Offense Up.")
 	.setThumbnail('https://i.imgur.com/ExIr73Q.png') 
 	msg.channel.send(exampleEmbed4);
 }
