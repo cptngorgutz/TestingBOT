@@ -238,68 +238,6 @@ if (msg.content === '!Ultron Basic Code') {
 	msg.channel.send(exampleEmbed);
 }
 
-//BLACK BOLT
-if (msg.content === '!blackbolt kit') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • Level 7** \n \nIf the primary target has slow, flip 2 negative effects on self. \nAttack primary target for 400% damaage + clear 2 positive effects")
-	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
-	msg.channel.send(exampleEmbed);
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for 600% damage. \nThis attack is unavoidable.")
-	.setThumbnail('https://i.imgur.com/5wsashb.png') 
-	msg.channel.send(exampleEmbed2);
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for 500% damage.")
-	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
-	msg.channel.send(exampleEmbed3);
-	const exampleEmbed4 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • Level 5** \nCharacters killed by Black Bolt cannot be revived. \n \nWhen an enemy drops below 25% Health: \nAttack that enemy for **200%** damage. \nIf the enemy is VILLAIN TECH: \nAttack that enemy for **400%** damage instead. \n \n**On enemy summon:** \nApply Disrupted + clear 3 positive effects on\nthe summoner. \n \n**Stats** \nGain +40% Resistance. \nINHUMAN allies gain +40% Resistance. \nGain +50% Max Health. \nINHUMAN allies gain +50% Max Health.")
-	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
-	msg.channel.send(exampleEmbed4);
-}
-if (msg.content === '!blackbolt T4') { //BLACKBOLT T4S
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
-	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
-	msg.channel.send(exampleEmbed);
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
-	.setThumbnail('https://i.imgur.com/5wsashb.png') 
-	msg.channel.send(exampleEmbed2);
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **380% -> 500%** damage.")
-	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
-	msg.channel.send(exampleEmbed3);
-	const exampleEmbed4 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
-	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
-	msg.channel.send(exampleEmbed4);
-}
-if (msg.content === '!blackbolt speed') { //BLACKBOLT SPEED
-	msg.channel.bulkDelete(1)
-	const speedEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack Bolt's speed is: 100")
-	msg.channel.send(speedEmbed);
-}
-if (msg.content === '!unlock blackbolt') { //UNLOCK 
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("__**Blackbolt Unlock**__ \n<:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staroff:662797308835921935><:staroff:662797308835921935> \n<:heimdall:661370019325935666> **Heimdall** \n<:hela:661370019317284880> **Hela** \n<:loki:661370019145449473> **Loki** \n<:sif:661370019300638737> **Sif** \n<:thor:661370019279667248> **Thor**")
-	msg.channel.send(exampleEmbed);
-}
-
 //YO-YO
 if (msg.content === '!yo-yo kit') {
 }	
@@ -706,6 +644,130 @@ if (msg.content === '!ant unlock' || msg.content === '!antman unlock' || msg.con
 	msg.channel.send(speedEmbed); 
 }
 
+//BEAST????
+
+//BLACK BOLT
+if (msg.content === '!blackbolt kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • Level 7** \n \nIf the primary target has slow, flip 2 negative effects on self. \nAttack primary target for 400% damaage + clear 2 positive effects")
+	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for 600% damage. \nThis attack is unavoidable.")
+	.setThumbnail('https://i.imgur.com/5wsashb.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for 500% damage.")
+	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • Level 5** \nCharacters killed by Black Bolt cannot be revived. \n \nWhen an enemy drops below 25% Health: \nAttack that enemy for **200%** damage. \nIf the enemy is VILLAIN TECH: \nAttack that enemy for **400%** damage instead. \n \n**On enemy summon:** \nApply Disrupted + clear 3 positive effects on\nthe summoner. \n \n**Stats** \nGain +40% Resistance. \nINHUMAN allies gain +40% Resistance. \nGain +50% Max Health. \nINHUMAN allies gain +50% Max Health.")
+	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!blackbolt T4') { //BLACKBOLT T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
+	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
+	.setThumbnail('https://i.imgur.com/5wsashb.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **380% -> 500%** damage.")
+	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
+	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!blackbolt speed') { //BLACKBOLT SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack Bolt's speed is: 100")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!unlock blackbolt') { //UNLOCK 
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("__**Blackbolt Unlock**__ \n<:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staron:662797309205151744><:staroff:662797308835921935><:staroff:662797308835921935> \n<:heimdall:661370019325935666> **Heimdall** \n<:hela:661370019317284880> **Hela** \n<:loki:661370019145449473> **Loki** \n<:sif:661370019300638737> **Sif** \n<:thor:661370019279667248> **Thor**")
+	msg.channel.send(exampleEmbed);
+}
+//BLACK PANTHER
+if (msg.content === '!bp kit' || msg.content === '!blackpanther kit' || msg.content === '!panther kit') {
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Basic)** \n \n**Claw Slash • Level 7** \n \nAttack primary target for 210% damage + 30% Piercing. \nApply Slow.")
+	.setThumbnail('https://i.imgur.com/CBg3Fze.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Special)** \n \n**Hunter's Spirit • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for 230% damage + 30% Piercing. \nGain Offense Up for 2 turns. On Crit, gain Counter")
+	.setThumbnail('https://i.imgur.com/mkWgTWh.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Ultimate)** \n \n**Panther Rush • Level 7** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for 280% damage. \nChain to 1-3 adjacent targets for 200% damage. \nCounterattack breaks this Chain. While in Charged, \ninstead attack all enemies for 250% damage, then lose all Charged. \nThis attack gains +20% Damage per Charged. \nAll attacks have +30% Piercing and +20% Extra Crit Chance.")
+	.setThumbnail('https://i.imgur.com/WNirdk2.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • Level 5** \n \nOn dropping below 50% of Max Health, gain +1 Charged, up to a maximum of 5. \nOn Kill, fill Speed Bar by 100%.")
+	.setThumbnail('https://i.imgur.com/VP20XOH.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!bp T4' || msg.content === '!blackpanther T4' || msg.content === '!panther T4') { //BLACKPANTHER T4S
+	msg.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Basic)** \n \n**Claw Slash • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + \n30% Piercing. **90% -> 100%** chance to apply Slow.")
+	.setThumbnail('https://i.imgur.com/CBg3Fze.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Special)** \n \n**Hunter's Spirit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **190% -> 230%** damage + \n30% Piercing. Gain Offense Up for 2 turns. \nOn Crit, gain Counter.")
+	.setThumbnail('https://i.imgur.com/mkWgTWh.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Ultimate)** \n \n**Panther Rush • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **250% -> 280%** damage. \nChain to 1-3 adjacent targets for **170% -> 200%** damage. \nCounterattack breaks this Chain. \nWhile in Charged, attack all enemies for **220% -> 250%** damage, \nthen lose all Charged. This attack gains +20% Damage per Charged. \nAll attacks have +30% Piercing and **+15% -> +20%** \nExtra Crit Chance.")
+	.setThumbnail('https://i.imgur.com/WNirdk2.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • T4 Upgrade** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. \nOn Kill, fill Speed Bar by **80% -> 100%**. \nOn Defense Up, gain Deflect.")
+	.setThumbnail('https://i.imgur.com/VP20XOH.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!bp speed' || msg.content === '!blackpanther speed' || msg.content === '!panther speed') { //BLACKPANTHER SPEED
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \nBlack Panther's speed is: 125 \nHis effective turn 1 speed is 187.5 with Shuri. \nWith Black Widow using her turn 1 special, his effective speed is still 125.")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!bp unlock' || msg.content === '!blackpanther unlock' || msg.content === '!black farm' || msg.content === '!blackpanther farm' || msg.content === '!panther unlock' || msg.content === '!panther farm') { //BLACKPANTHER UNLOCK
+	msg.channel.bulkDelete(1)
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \nBlack Panther is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
 
 
 
