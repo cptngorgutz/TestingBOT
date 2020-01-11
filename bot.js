@@ -788,7 +788,7 @@ if (msg.content === '!bw kit' || msg.content === '!blackwidow kit' || msg.conten
 	msg.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • Level 4** \n \nGain +10% Speed. This is applied after any character has taken an action. \nWhen in Stealth, gain Offense Up.")
+	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • Level 4** \n \nGain +10% Speed. This is applied after any character has taken an action. When in Stealth, gain Offense Up.")
 	.setThumbnail('https://i.imgur.com/ExIr73Q.png') 
 	msg.channel.send(exampleEmbed4);
 }
