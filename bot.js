@@ -882,6 +882,27 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if(message.content.startsWith('!testing2')) {
+let x = 6, // x should be form 0 to 25
+  embed = new Discord.RichEmbed();
+const channelToCheckImages = client.channels.get('665671842094120987')
+channelToCheckImages.fetchMessages({ limit: x }).then(messages => {
+  let arr = messages.array(); // you get the array of messages
+
+  for (let i = 0; i < arr.length; i++) { // you loop through them
+    let curr = arr[i],
+      str = curr.content.trim();
+    if (str.length > 2048) str = str.substring(0, 2045) + '...';
+    // if the content is over the limit, you cut it
+
+    embed.addField(curr.author, str); // then you add it to the embed
+  }
+
+}).catch(console.error);
+	}
+});
+
 
 
 
