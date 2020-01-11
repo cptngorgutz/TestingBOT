@@ -778,7 +778,7 @@ if (msg.content === '!test') {
 	msg.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setImage('https://i.ibb.co/fCzkvjv/size.png')
+	.setImage('https://i.imgur.com/o3dYCf8.png')
 	msg.channel.send(exampleEmbed);
 }
 
