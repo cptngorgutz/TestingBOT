@@ -869,11 +869,11 @@ client.on('message', message => {
 	}).catch(err => {
     console.error(err)
     })
-  let test = channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
+    channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
 	const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	test.forEach(messages => {
+	fetchMessages.forEach(messages => {
 	message.channel.send(attachment);
 	});
     }).catch(err => {
