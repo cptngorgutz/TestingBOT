@@ -984,6 +984,14 @@ client.on('message', message => {
 	}).catch(err => {
     console.error(err)
     })
+    channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
 	
 	
     }
