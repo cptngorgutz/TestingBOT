@@ -958,6 +958,9 @@ client.on('message', message => {
 //EDIT THIS
 client.on('message', async message => {
 if(message.content === ('!testing11')) {
+const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
+const channelToCheckText = client.channels.get('665671446026125312')
+const channelToCheckYT = client.channels.get('665671786159013909')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const messages3 = await channelToCheckYT.fetchMessages({ limit: 1 });
