@@ -964,7 +964,7 @@ const channelToCheckYT = client.channels.get('665671786159013909')
 const embed = new Discord.RichEmbed()
 channelToCheckText.fetchMessages({limit: 1})
 .then( messages => {
-const LastText = messages.first();
+const LastText = messages.first()
 .setColor('#0099ff')
 .setDescription(LastText.content)
 })
@@ -978,7 +978,7 @@ const attachment = new Attachment(lastMessage.url)
 })
 .then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
 .then( messages => {
-const LastYT = messages.first();
+const LastYT = messages.first()
 .setColor('#0099ff')
 .setDescription(LastYT.content)
 embed.description += LastText.content
