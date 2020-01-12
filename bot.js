@@ -963,10 +963,6 @@ if(message.content === ('!testing11')) {
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const channelToCheckYT = client.channels.get('665671786159013909')
-const embed = new Discord.RichEmbed()
-.setDescription(exampleEmbed1)
-.setImage(exampleEmbed2)
-.addField(exampleEmbed3)
 channelToCheckText.fetchMessages({limit: 1})
 .then( messages => {
 const LastText = messages.first();
@@ -992,6 +988,12 @@ const exampleEmbed3 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastYT.content)
 //return message.channel.send(exampleEmbed3);
+
+const embed = new Discord.RichEmbed()
+.setDescription(exampleEmbed1)
+.setImage(exampleEmbed2)
+.addField(exampleEmbed3)
+message.channel.send(embed);
 });
 }
 });
