@@ -990,7 +990,7 @@ client.on('message', message => {
 	const attachment = new Attachment(lastMessage.url)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setImage(attachment)
+	.setDescription(attachment)
 	message.channel.send(exampleEmbed);
     }).catch(err => {
     console.error(err)
