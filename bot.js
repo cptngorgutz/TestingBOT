@@ -892,7 +892,6 @@ client.on('message', message => {
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
 	message.channel.send(attachment);
-	})
     }).catch(err => {
     console.error(err)
     })
