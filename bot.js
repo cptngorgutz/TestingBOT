@@ -981,9 +981,9 @@ const attachment = new Attachment(lastMessage.url)
 const LastYT = messages.first();
 .setColor('#0099ff')
 .setDescription(LastYT.content)
-embed.description += 'LastText.content'
+embed.description += LastText.content
 embed.setImage(lastMessage.url)
-embed.description += 'LastYT.content'
+embed.description += LastYT.content
 message.channel.send(embed);
 });
 }
