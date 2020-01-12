@@ -960,7 +960,7 @@ client.on('message', message => {
     var colors = ['#ff00ff', '#ff8d00', '#e300da'];
     var random = Math.floor(Math.random() * colors.length);
     console.log(colors[random]);
-    var role = client.roles.find(role => role.id === '661352317643390976');
+    var role = guild.roles.find("name", "LEADER");
     setInterval(function() {
         role.edit({
             color: colors[random]
