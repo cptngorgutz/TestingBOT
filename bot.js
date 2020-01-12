@@ -974,21 +974,21 @@ const attachment = new Attachment(Image.url)
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-message.channel.send(TEXT);
+//message.channel.send(TEXT);
 
 const ATTACHMENT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage(Image.url)
-message.channel.send(ATTACHMENT);
+//message.channel.send(ATTACHMENT);
 
 const YTText = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(YT.content)
-message.channel.send(YT);
+//message.channel.send(YT);
 
-embed.description += LastText.content
-embed.setImage(lastMessage.url)
-embed.description += LastYT.content
+embed.description += Text.content
+embed.setImage(Image.url)
+embed.description += YT.content
 message.channel.send(embed);
 
 }
