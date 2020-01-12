@@ -882,9 +882,21 @@ client.on('message', message => {
 });
 
 
+//blitz predictions
+client.on('message', message => {
+    if(message.content.startsWith('!testing22')) {
 
-
-
+    const channelToCheck = client.channels.get('665671842094120987')
+    channelToCheck.fetchMessages({ limit: 6 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+    }
+});
 
 
 
