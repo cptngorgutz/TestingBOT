@@ -983,7 +983,7 @@ console.log('2nd part');
 const LastYT = messages.first()
 embed.setColor('#0099ff')
 .setDescription(LastYT.content)
-embed.description += LastText.content
+//embed.description += LastText.content
 embed.setImage(lastMessage.url)
 embed.description += LastYT.content
 message.channel.send(embed);
