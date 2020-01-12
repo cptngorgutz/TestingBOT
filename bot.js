@@ -958,9 +958,9 @@ client.on('message', message => {
 //EDIT THIS
 client.on('message', message => {
 if(message.content === ('!testing11')) {
-const messages1 = await (channelToCheckText.fetchMessages{ limit: 1 });
-const messages2 = await (channelToCheckImagesallin1.fetchMessages{ limit: 1 });
-const messages3 = await (channelToCheckYT.fetchMessages{ limit: 1 });
+const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
+const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const messages3 = await channelToCheckYT.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = = messages2.first().attachments.first()
