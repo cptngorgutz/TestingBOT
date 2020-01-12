@@ -958,37 +958,36 @@ client.on('message', message => {
 //EDIT THIS
 client.on('message', message => {
 if(message.content === ('!testing11')) {
-const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-const channelToCheckText = client.channels.get('665671446026125312')
-const channelToCheckYT = client.channels.get('665671786159013909')
+const messages1 = await (channelToCheckText.fetchMessages{ limit: 1 });
+const messages2 = await (channelToCheckImagesallin1.fetchMessages{ limit: 1 });
+const messages3 = await (channelToCheckYT.fetchMessages{ limit: 1 });
 const embed = new Discord.RichEmbed()
-channelToCheckText.fetchMessages({limit: 1})
-.then( messages => {
-const LastText = messages.first();
-embed.setColor('#0099ff')
-.setDescription(LastText.content)
-console.log('1st part');
-})
-.then( embed1 => channelToCheckImagesallin1.fetchMessages({limit: 1}))
-.then( messages => {
-const lastMessage = messages.first().attachments.first()
+const Text = messages1.first().content;
+const Image = = messages2.first().attachments.first()
+const YT = messages3.first().content;
+const attachment = new Attachment(Image.url)
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(lastMessage.url)
-embed.setColor('#0099ff')
-.setImage(lastMessage.url)
-console.log('2nd part'); 
-})
-.then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
-.then( messages => {
-const LastYT = messages.first()
-embed.setColor('#0099ff')
-.setDescription(LastYT.content)
-//embed.description += LastText.content
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.send(TEXT);
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url) 
+message.channel.send(ATTACHMENT);
+
+const YTText = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(YT.content)
+message.channel.send(YT);
+
+embed.description += LastText.content
 embed.setImage(lastMessage.url)
 embed.description += LastYT.content
 message.channel.send(embed);
-console.log('final part');
-});
+
 }
 });
 
