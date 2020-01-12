@@ -968,9 +968,7 @@ client.on('message', message => {
 	const exampleEmbed1 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastText.content)
-	//message.channel.send(exampleEmbed1);
-	message.channel.send(exampleEmbed1).then(async embedMessage => {
-    await (exampleEmbed2);
+	message.channel.send(exampleEmbed1)
 	});
 	}).catch(err => {
     console.error(err)
@@ -982,9 +980,8 @@ client.on('message', message => {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setImage(lastMessage.url)
-	//message.channel.send(exampleEmbed2);
-	message.channel.send(exampleEmbed2).then(async embedMessage => {
-	await (exampleEmbed3);
+	await channel.send(exampleEmbed1)
+	await channel.send(exampleEmbed2)
 	});
     }).catch(err => {
     console.error(err)
@@ -994,14 +991,12 @@ client.on('message', message => {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastYT.content)
-	//message.channel.send(exampleEmbed3);
-	message.channel.send(exampleEmbed3).then(async embedMessage => {
-    await ("");
+	await channel.send(exampleEmbed2)
+	await channel.send(exampleEmbed3)
 	});
 	}).catch(err => {
     console.error(err)
     })
-	
     }
 });
 
