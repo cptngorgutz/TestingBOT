@@ -968,19 +968,19 @@ client.on('message', message => {
 	const channelToCheckYT = client.channels.get('665671786159013909')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	const exampleEmbed = new Discord.RichEmbed()
+	const exampleEmbed1 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastText.content)
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed1);
 	}).catch(err => {
     console.error(err)
     })
 	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
 	const LastYT = messages.first();
-	const exampleEmbed = new Discord.RichEmbed()
+	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastYT.content)
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed2);
 	}).catch(err => {
     console.error(err)
     })
@@ -988,10 +988,10 @@ client.on('message', message => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	const exampleEmbed = new Discord.RichEmbed()
+	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(attachment)
-	message.channel.send(exampleEmbed);
+	.setImage(lastMessage.url)
+	message.channel.send(exampleEmbed3);
     }).catch(err => {
     console.error(err)
     })
