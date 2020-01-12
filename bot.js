@@ -972,7 +972,7 @@ embed.setColor('#0099ff')
 .then( messages => {
 const lastMessage = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(lastMessage.url);
+const attachment = new Attachment(lastMessage.url)
 embed.setColor('#0099ff')
 .setImage(lastMessage.url) 
 })
