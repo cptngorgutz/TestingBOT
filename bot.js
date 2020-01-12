@@ -955,7 +955,19 @@ client.on('message', message => {
 });
 
 
-
+client.on('message', message => {
+	if (message.content === "!change") {
+    var colors = ['#ff00ff', '#ff8d00', '#e300da'];
+    var random = Math.floor(Math.random() * colors.length);
+    console.log(colors[random]);
+    var role = client.guild.roles.find(role => role.id === '661352317643390976');
+    setInterval(function() {
+        role.edit({
+            color: colors[random]
+        })
+    }, 5000);
+}
+});
 
 
 client.on('message', message => {
@@ -988,12 +1000,6 @@ const exampleEmbed3 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastYT.content)
 //return message.channel.send(exampleEmbed3);
-
-const embed = new Discord.RichEmbed()
-.setDescription(exampleEmbed1)
-.setImage(exampleEmbed2)
-.addField(exampleEmbed3)
-message.channel.send(embed);
 });
 }
 });
