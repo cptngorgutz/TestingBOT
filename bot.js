@@ -968,8 +968,8 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const YT = messages3.first().content;
-const attachment = new Attachment(Image.url)
 const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
@@ -978,7 +978,7 @@ message.channel.send(TEXT);
 
 const ATTACHMENT = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setImage(attachment.url) 
+.setImage(Image.url)
 message.channel.send(ATTACHMENT);
 
 const YTText = new Discord.RichEmbed()
