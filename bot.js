@@ -992,8 +992,8 @@ client.on('message', message => {
 	.setImage(lastMessage.url)
 	//message.channel.send(exampleEmbed3);
 	message.channel.send(exampleEmbed1).then(async embedMessage => {
-    await (exampleEmbed3);
-    await (exampleEmbed2);
+    message.channel.send(exampleEmbed3);
+    message.channel.send(exampleEmbed2);
 	});
     }).catch(err => {
     console.error(err)
