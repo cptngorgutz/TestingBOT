@@ -891,7 +891,8 @@ client.on('message', message => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	attachments.forEach(function(attachment) {
+	const test = new Attachment(lastMessage.url)
+	test.forEach(function(attachment) {
 	message.channel.send(attachment);
 	})
     }).catch(err => {
