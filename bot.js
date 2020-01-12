@@ -960,19 +960,11 @@ client.on('message', message => {
 
 
 
-//blitz predictions
 client.on('message', message => {
     if(message.content === ('!testing11')) {
     const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 	const channelToCheckText = client.channels.get('665671446026125312')
 	const channelToCheckYT = client.channels.get('665671786159013909')
-	const TESTING = new Discord.RichEmbed();
-	message.channel.send(TESTING)
-	.then{
-		message.channel.send(exampleEmbed1)
-		message.channel.send(exampleEmbed2)
-		message.channel.send(exampleEmbed3)
-	}
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
 	const exampleEmbed1 = new Discord.RichEmbed()
