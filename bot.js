@@ -852,7 +852,7 @@ if (msg.content === '!test') {
 
 //blitz predictions
 client.on('message', message => {
-    if(message.content.startsWith('!testing')) {
+    if(message.content.startsWith('!fish')) {
 
     const channelToCheckImages = client.channels.get('665671842094120987')
 	const channelToCheckText = client.channels.get('665671446026125312')
@@ -884,19 +884,16 @@ client.on('message', message => {
 
 //blitz predictions
 client.on('message', message => {
-    if(message.content.startsWith('!testing22')) {
+    if(message.content.startsWith('!testing')) {
 
     const channelToCheck = client.channels.get('665671842094120987')
     channelToCheck.fetchMessages({ limit: 6 }).then(messages => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
+	Attachment.forEach(function(attachment) {
 	message.channel.send(attachment);
-	message.channel.send(attachment);
-	message.channel.send(attachment);
-	message.channel.send(attachment);
-	message.channel.send(attachment);
-	message.channel.send(attachment);
+	})
     }).catch(err => {
     console.error(err)
     })
