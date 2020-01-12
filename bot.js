@@ -960,45 +960,37 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === ('!testing11')) {
-    const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-	const channelToCheckText = client.channels.get('665671446026125312')
-	const channelToCheckYT = client.channels.get('665671786159013909')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const LastText = messages.first();
-	const exampleEmbed1 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(LastText.content)
-	message.channel.send(exampleEmbed1).then(async embedMessage => {
-    await message.channel.send(exampleEmbed2);
-	});
-	}).catch(err => {
-    console.error(err)
-    })
-    channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
-    const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setImage(lastMessage.url)
-	message.channel.send(exampleEmbed2).then(async embedMessage => {
-	await message.channel.send(exampleEmbed3);
-	});
-    }).catch(err => {
-    console.error(err)
-    })
-	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
-	const LastYT = messages.first();
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(LastYT.content)
-	message.channel.send(exampleEmbed3).then(async embedMessage => {
-    await ("");
-	});
-	}).catch(err => {
-    console.error(err)
-    })
-    }
+const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
+const channelToCheckText = client.channels.get('665671446026125312')
+const channelToCheckYT = client.channels.get('665671786159013909')
+
+channelToCheckText.fetchMessages({limit: 1})
+.then( messages => {
+const LastText = messages.first();
+const exampleEmbed1 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(LastText.content)
+  return channel.send(exampleEmbed1);
+})
+.then( embed1 => channelToCheckImagesallin1.fetchMessages({limit: 1}))
+.then( messages => {
+const lastMessage = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(lastMessage.url)
+const exampleEmbed2 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(lastMessage.url) 
+return channel.send(exampleEmbed2);
+})
+.then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
+.then( messages => {
+const LastYT = messages.first();
+const exampleEmbed3 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(LastYT.content)
+return channel.send(exampleEmbed3);
+});
+}
 });
 
 
