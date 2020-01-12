@@ -958,9 +958,7 @@ client.on('message', message => {
 
 
 
-
-
-client.on('message', async message => {
+client.on('message', message => {
     if(message.content === ('!testing11')) {
     const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 	const channelToCheckText = client.channels.get('665671446026125312')
@@ -970,7 +968,7 @@ client.on('message', async message => {
 	const exampleEmbed1 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastText.content)
-	message.channel.send(exampleEmbed1);
+	//message.channel.send(exampleEmbed1);
 	}).catch(err => {
     console.error(err)
     })
@@ -979,7 +977,7 @@ client.on('message', async message => {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastYT.content)
-	await message.channel.send(exampleEmbed2);
+	//message.channel.send(exampleEmbed2);
 	}).catch(err => {
     console.error(err)
     })
@@ -990,7 +988,11 @@ client.on('message', async message => {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setImage(lastMessage.url)
-	await message.channel.send(exampleEmbed3);
+	//message.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed1).then(async embedMessage => {
+    await (exampleEmbed3);
+    await (exampleEmbed2);
+	});
     }).catch(err => {
     console.error(err)
     })
