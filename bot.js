@@ -970,7 +970,7 @@ client.on('message', message => {
 	.setDescription(LastText.content)
 	//message.channel.send(exampleEmbed1);
 	message.channel.send(exampleEmbed1).then(async embedMessage => {
-    await ("");
+    await (exampleEmbed2);
 	});
 	}).catch(err => {
     console.error(err)
@@ -984,7 +984,7 @@ client.on('message', message => {
 	.setImage(lastMessage.url)
 	//message.channel.send(exampleEmbed2);
 	message.channel.send(exampleEmbed2).then(async embedMessage => {
-	await ("");
+	await (exampleEmbed3);
 	});
     }).catch(err => {
     console.error(err)
