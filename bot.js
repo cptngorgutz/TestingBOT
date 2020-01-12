@@ -975,22 +975,25 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 //message.channel.send(TEXT);
+console.log(Text working?)
 
 const ATTACHMENT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage(Image.url)
 //message.channel.send(ATTACHMENT);
+console.log(ATTACHMENT working?)
 
 const YTText = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(YT.content)
 //message.channel.send(YT);
+console.log(YT Working?)
 
 embed.description += Text.content
 embed.setImage(Image.url)
 embed.description += YT.content
 message.channel.send(embed);
-
+console.log(Embed working?)
 }
 });
 
