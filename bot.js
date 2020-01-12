@@ -983,6 +983,7 @@ client.on('message', message => {
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
 	const exampleEmbed1 = new Discord.RichEmbed()
+	const LastText = messages.first();
 	.setColor('#0099ff')
 	.setDescription(LastText.content) 
 	.setImage(attachment)
