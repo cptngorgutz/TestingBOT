@@ -970,7 +970,7 @@ const LastText = messages.first();
 const exampleEmbed1 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastText.content)
-return message.channel.send(exampleEmbed1);
+message.channel.send(exampleEmbed1);
 
 channelToCheckImagesallin1.fetchMessages({limit: 1})
 const lastMessage = messages.first().attachments.first()
@@ -979,14 +979,14 @@ const attachment = new Attachment(lastMessage.url)
 const exampleEmbed2 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage(lastMessage.url) 
-return message.channel.send(exampleEmbed2);
+message.channel.send(exampleEmbed2);
 
 channelToCheckYT.fetchMessages({limit: 1})
 const LastYT = messages.first();
 const exampleEmbed3 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastYT.content)
-return message.channel.send(exampleEmbed3);
+message.channel.send(exampleEmbed3);
 })
 }
 });
