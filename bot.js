@@ -968,7 +968,7 @@ client.on('message', message => {
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
 	let embed1 = new Discord.RichEmbed({
-    .description:(LastText.content)
+    description:(LastText.content)
     });
 	}).catch(err => {
     console.error(err)
@@ -978,7 +978,7 @@ client.on('message', message => {
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
 	let embed2 = new Discord.RichEmbed({
-	.setImage:(lastMessage.url)
+	setImage:(lastMessage.url)
     });
     }).catch(err => {
     console.error(err)
@@ -986,7 +986,7 @@ client.on('message', message => {
 	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
 	const LastYT = messages.first();
 	let embed3 = new Discord.RichEmbed({
-    .description:(LastYT.content)
+    description:(LastYT.content)
     });
 	}).catch(err => {
     console.error(err)
