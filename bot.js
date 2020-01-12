@@ -960,6 +960,7 @@ client.on('message', message => {
 
 
 
+//blitz predictions
 client.on('message', message => {
     if(message.content === ('!testing11')) {
 	const channelToCheckText = client.channels.get('665671446026125312')
@@ -970,6 +971,7 @@ client.on('message', message => {
 	const exampleEmbed1 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastText.content)
+//	message.channel.send(exampleEmbed1);
 	}).catch(err => {
     console.error(err)
     })
@@ -980,6 +982,7 @@ client.on('message', message => {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setImage(lastMessage.url)
+//	message.channel.send(exampleEmbed3);
     }).catch(err => {
     console.error(err)
     })
@@ -988,12 +991,16 @@ client.on('message', message => {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastYT.content)
+//	message.channel.send(exampleEmbed2);
 	}).catch(err => {
     console.error(err)
     })
-    new Discord.RichEmbed(exampleEmbed1) 
-	new Discord.RichEmbed(exampleEmbed2) 
-	new Discord.RichEmbed(exampleEmbed3) 
+    const exampleEmbed1 = new Discord.RichEmbed(embed) 
+	const exampleEmbed2 = new Discord.RichEmbed(embed) 
+	const exampleEmbed3 = new Discord.RichEmbed(embed)
+	message.channel.sendEmbed(exampleEmbed1)
+	message.channel.sendEmbed(exampleEmbed2)
+	message.channel.sendEmbed(exampleEmbed3)
     }
 });
 
