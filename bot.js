@@ -850,9 +850,9 @@ if (msg.content === '!test') {
 });
 
 
-//blitz predictions
+//TESTING YOUTUBE ETC
 client.on('message', message => {
-    if(message.content.startsWith('!testing')) {
+    if(message.content === ('!testing1')) {
 
     const channelToCheckImages1 = client.channels.get('665671842094120987')
 	const channelToCheckImages2 = client.channels.get('665755746247507980')
@@ -924,7 +924,35 @@ client.on('message', message => {
     })
     }
 });
+//blitz predictions
+client.on('message', message => {
+    if(message.content === ('!testing2')) {
 
+    const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
+	const channelToCheckText = client.channels.get('665671446026125312')
+	const channelToCheckYT = client.channels.get('665671786159013909')
+	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
+	const LastText = messages.first();
+	message.channel.send(LastText.content);
+	}).catch(err => {
+    console.error(err)
+    })
+	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
+	const LastYT = messages.first();
+	message.channel.send(LastYT.content);
+	}).catch(err => {
+    console.error(err)
+    })
+    channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+    }
+});
 
 
 
