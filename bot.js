@@ -960,7 +960,6 @@ client.on('message', message => {
 
 
 
-//blitz predictions
 client.on('message', message => {
     if(message.content === ('!testing11')) {
 	const channelToCheckText = client.channels.get('665671446026125312')
@@ -968,10 +967,9 @@ client.on('message', message => {
 	const channelToCheckYT = client.channels.get('665671786159013909')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	const exampleEmbed1 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(LastText.content)
-//	message.channel.send(exampleEmbed1);
+	let embed1 = new Discord.RichEmbed({
+    .description:(LastText.content)
+    });
 	}).catch(err => {
     console.error(err)
     })
@@ -979,32 +977,27 @@ client.on('message', message => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setImage(lastMessage.url)
-//	message.channel.send(exampleEmbed3);
+	let embed2 = new Discord.RichEmbed({
+	.setImage:(lastMessage.url)
+    });
     }).catch(err => {
     console.error(err)
     })
 	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
 	const LastYT = messages.first();
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(LastYT.content)
-//	message.channel.send(exampleEmbed2);
+	let embed3 = new Discord.RichEmbed({
+    .description:(LastYT.content)
+    });
 	}).catch(err => {
     console.error(err)
     })
-	const test = new Discord.RichEmbed(exampleEmbed1)
-	const test2 = new Discord.RichEmbed(exampleEmbed2)
-	const test3 = new Discord.RichEmbed(exampleEmbed3)
-	const exampleEmbedtest = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(test1)
-	.setImage(test3)
-	.addField(test2)
-	message.channel.send(exampleEmbedtest);
-    }
+    message.channel.send(embed1)
+    .then(msg => {
+        message.channel.send(embed2)
+		.then(msg => {
+		message.channel.send(embed3);
+	})});
+}
 });
 
 
