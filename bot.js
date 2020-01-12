@@ -872,7 +872,9 @@ client.on('message', message => {
     channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(Attachment.url)
-	messages.first().attachments.forEach(a => message.channel.send(attachment));
+	message.attachments.forEach(attachment => {
+	message.channel.send(attachment)
+	});
     }).catch(err => {
     console.error(err)
     })
