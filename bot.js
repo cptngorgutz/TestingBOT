@@ -964,22 +964,22 @@ const channelToCheckYT = client.channels.get('665671786159013909')
 const embed = new Discord.RichEmbed()
 channelToCheckText.fetchMessages({limit: 1})
 .then( messages => {
-const LastText = messages.first()
-.setColor('#0099ff')
+const LastText = messages.first();
+embed.setColor('#0099ff')
 .setDescription(LastText.content)
 })
 .then( embed1 => channelToCheckImagesallin1.fetchMessages({limit: 1}))
 .then( messages => {
 const lastMessage = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(lastMessage.url)
-.setColor('#0099ff')
+const attachment = new Attachment(lastMessage.url);
+embed.setColor('#0099ff')
 .setImage(lastMessage.url) 
 })
 .then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
 .then( messages => {
 const LastYT = messages.first()
-.setColor('#0099ff')
+embed.setColor('#0099ff')
 .setDescription(LastYT.content)
 embed.description += LastText.content
 embed.setImage(lastMessage.url)
