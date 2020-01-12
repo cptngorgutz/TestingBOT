@@ -963,31 +963,33 @@ if(message.content === ('!testing11')) {
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const channelToCheckYT = client.channels.get('665671786159013909')
-
+const embed = new Discord.RichEmbed()
 channelToCheckText.fetchMessages({limit: 1})
 .then( messages => {
 const LastText = messages.first();
 const exampleEmbed1 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastText.content)
-message.channel.send(exampleEmbed1);
-
-channelToCheckImagesallin1.fetchMessages({limit: 1})
+  return message.channel.send(embed);
+})
+.then( embed1 => channelToCheckImagesallin1.fetchMessages({limit: 1}))
+.then( messages => {
 const lastMessage = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(lastMessage.url)
 const exampleEmbed2 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage(lastMessage.url) 
-message.channel.send(exampleEmbed2);
-
-channelToCheckYT.fetchMessages({limit: 1})
+return message.channel.send(embed);
+})
+.then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
+.then( messages => {
 const LastYT = messages.first();
 const exampleEmbed3 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastYT.content)
-message.channel.send(exampleEmbed3);
-})
+return message.channel.send(embed);
+});
 }
 });
 
