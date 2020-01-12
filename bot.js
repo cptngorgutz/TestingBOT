@@ -854,7 +854,12 @@ if (msg.content === '!test') {
 client.on('message', message => {
     if(message.content.startsWith('!testing')) {
 
-    const channelToCheckImages = client.channels.get('665671842094120987')
+    const channelToCheckImages1 = client.channels.get('665671842094120987')
+	const channelToCheckImages2 = client.channels.get('665755746247507980')
+	const channelToCheckImages3 = client.channels.get('665755775934660668')
+	const channelToCheckImages4 = client.channels.get('665755794402181121')
+	const channelToCheckImages5 = client.channels.get('665755820063195188')
+	const channelToCheckImages6 = client.channels.get('665755839474171909')
 	const channelToCheckText = client.channels.get('665671446026125312')
 	const channelToCheckYT = client.channels.get('665671786159013909')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
@@ -869,12 +874,51 @@ client.on('message', message => {
 	}).catch(err => {
     console.error(err)
     })
-    channelToCheckImages.fetchMessages({ limit: 6 }).then(messages => {
+    channelToCheckImages1.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(Attachment.url)
-	messages.first().attachments.forEach(attachment => {
+	const attachment = new Attachment(lastMessage.url)
 	message.channel.send(attachment);
-	});
+    }).catch(err => {
+    console.error(err)
+    })
+	 channelToCheckImages2.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+	channelToCheckImages3.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+	 channelToCheckImages4.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+	 channelToCheckImages5.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+	 channelToCheckImages6.fetchMessages({ limit: 1 }).then(messages => {
+	const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
     }).catch(err => {
     console.error(err)
     })
