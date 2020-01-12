@@ -967,6 +967,7 @@ channelToCheckText.fetchMessages({limit: 1})
 const LastText = messages.first();
 embed.setColor('#0099ff')
 .setDescription(LastText.content)
+console.log('1st part');
 })
 .then( embed1 => channelToCheckImagesallin1.fetchMessages({limit: 1}))
 .then( messages => {
@@ -974,7 +975,8 @@ const lastMessage = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(lastMessage.url)
 embed.setColor('#0099ff')
-.setImage(lastMessage.url) 
+.setImage(lastMessage.url)
+console.log('2nd part'); 
 })
 .then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
 .then( messages => {
@@ -985,6 +987,7 @@ embed.description += LastText.content
 embed.setImage(lastMessage.url)
 embed.description += LastYT.content
 message.channel.send(embed);
+console.log('final part');
 });
 }
 });
