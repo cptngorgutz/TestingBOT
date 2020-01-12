@@ -963,36 +963,23 @@ client.on('message', message => {
 //blitz predictions
 client.on('message', message => {
     if(message.content === ('!testing11')) {
-
     const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 	const channelToCheckText = client.channels.get('665671446026125312')
 	const channelToCheckYT = client.channels.get('665671786159013909')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	}).catch(err => {
-    console.error(err)
-    })
-	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
-	const LastYT = messages.first();
-	message.channel.send(LastYT.content);
-	}).catch(err => {
-    console.error(err)
-    })
-    channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	const exampleEmbed1 = new Discord.RichEmbed()
-	const LastText = messages.first();
+	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(LastText.content) 
-	.setImage(attachment)
-	msg.channel.send(exampleEmbed1);
-    }).catch(err => {
+	.setDescription(LastText.content)
+	message.channel.send(exampleEmbed);
+	}).catch(err => {
     console.error(err)
     })
+	
     }
 });
+
+
 
 
 
