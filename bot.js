@@ -979,7 +979,7 @@ client.on('message', async message => {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(LastYT.content)
-	message.channel.send(exampleEmbed2);
+	await message.channel.send(exampleEmbed2);
 	}).catch(err => {
     console.error(err)
     })
@@ -990,7 +990,7 @@ client.on('message', async message => {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setImage(lastMessage.url)
-	message.channel.send(exampleEmbed3);
+	await message.channel.send(exampleEmbed3);
     }).catch(err => {
     console.error(err)
     })
