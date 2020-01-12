@@ -955,33 +955,20 @@ client.on('message', message => {
 });
 
 
-client.on('message', message => {
-	if (message.content === "!change") {
-    var colors = ['#ff00ff', '#ff8d00', '#e300da'];
-    var random = Math.floor(Math.random() * colors.length);
-    console.log(colors[random]);
-    var role = client.guild.roles.find("name", "LEADER");
-    setInterval(function() {
-        role.edit({
-            color: colors[random]
-        })
-    }, 5000);
-}
-});
-
-
+//EDIT THIS
 client.on('message', message => {
 if(message.content === ('!testing11')) {
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const channelToCheckYT = client.channels.get('665671786159013909')
+
 channelToCheckText.fetchMessages({limit: 1})
 .then( messages => {
 const LastText = messages.first();
 const exampleEmbed1 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastText.content)
-//  return message.channel.send(exampleEmbed1);
+  return message.channel.send(exampleEmbed1);
 })
 .then( embed1 => channelToCheckImagesallin1.fetchMessages({limit: 1}))
 .then( messages => {
@@ -991,7 +978,7 @@ const attachment = new Attachment(lastMessage.url)
 const exampleEmbed2 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage(lastMessage.url) 
-//return message.channel.send(exampleEmbed2);
+return message.channel.send(exampleEmbed2);
 })
 .then( embed2 => channelToCheckYT.fetchMessages({limit: 1}))
 .then( messages => {
@@ -999,7 +986,7 @@ const LastYT = messages.first();
 const exampleEmbed3 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(LastYT.content)
-//return message.channel.send(exampleEmbed3);
+return message.channel.send(exampleEmbed3);
 });
 }
 });
