@@ -963,7 +963,7 @@ const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const messages3 = await channelToCheckYT.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = = messages2.first().attachments.first()
+const Image = messages2.first().attachments.first()
 const YT = messages3.first().content;
 const attachment = new Attachment(Image.url)
 const Attachment = require('discord.js').Attachment;
