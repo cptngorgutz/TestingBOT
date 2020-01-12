@@ -995,12 +995,15 @@ client.on('message', message => {
 	}).catch(err => {
     console.error(err)
     })
-    const exampleEmbed1 = new Discord.RichEmbed(embed) 
-	const exampleEmbed2 = new Discord.RichEmbed(embed) 
-	const exampleEmbed3 = new Discord.RichEmbed(embed)
-	message.channel.sendEmbed(exampleEmbed1)
-	message.channel.sendEmbed(exampleEmbed2)
-	message.channel.sendEmbed(exampleEmbed3)
+	const test = new Discord.RichEmbed(exampleEmbed1)
+	const test2 = new Discord.RichEmbed(exampleEmbed2)
+	const test3 = new Discord.RichEmbed(exampleEmbed3)
+	const exampleEmbedtest = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(test1)
+	.setImage(test3)
+	.addField(test2)
+	message.channel.send(exampleEmbedtest);
     }
 });
 
