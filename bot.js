@@ -956,8 +956,8 @@ client.on('message', message => {
 
 
 //EDIT THIS
-client.on('message', message => {
-if(message.content === ('!testing11')) {
+client.on('message', async message => {
+if(message.content === ('!test')) {
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const messages3 = await channelToCheckYT.fetchMessages({ limit: 1 });
