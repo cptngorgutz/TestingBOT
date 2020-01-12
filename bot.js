@@ -978,7 +978,7 @@ message.channel.send(TEXT);
 
 const ATTACHMENT = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setImage(Image.url) 
+.setImage(attachment.url) 
 message.channel.send(ATTACHMENT);
 
 const YTText = new Discord.RichEmbed()
