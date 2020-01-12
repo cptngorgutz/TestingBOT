@@ -988,7 +988,10 @@ client.on('message', message => {
     const lastMessage = messages.first().attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setImage(attachment)
+	message.channel.send(exampleEmbed);
     }).catch(err => {
     console.error(err)
     })
