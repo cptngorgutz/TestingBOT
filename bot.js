@@ -975,10 +975,19 @@ client.on('message', message => {
 	}).catch(err => {
     console.error(err)
     })
+	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
+	const LastYT = messages.first();
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(LastYT.content)
+	message.channel.send(exampleEmbed);
+	}).catch(err => {
+    console.error(err)
+    })
+	
 	
     }
 });
-
 
 
 
