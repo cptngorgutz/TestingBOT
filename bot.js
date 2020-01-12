@@ -888,11 +888,9 @@ client.on('message', message => {
 
     const channelToCheck = client.channels.get('665671842094120987')
     channelToCheck.fetchMessages({ limit: 6 }).then(messages => {
-    const lastMessage = messages.first().attachments.first()
+    const lastMessage = attachments.first()
 	const Attachment = require('discord.js').Attachment;
 	const attachment = new Attachment(lastMessage.url)
-	const test = new Attachment(lastMessage.url)
-	test.forEach(function(attachment) {
 	message.channel.send(attachment);
 	})
     }).catch(err => {
