@@ -960,44 +960,42 @@ client.on('message', message => {
 
 
 
+//blitz predictions
 client.on('message', message => {
     if(message.content === ('!testing11')) {
-	const channelToCheckText = client.channels.get('665671446026125312')
     const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
+	const channelToCheckText = client.channels.get('665671446026125312')
 	const channelToCheckYT = client.channels.get('665671786159013909')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	let embed1 = new Discord.RichEmbed({
-    description:(LastText.content)
-    });
+	const exampleEmbed1 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(LastText.content)
+	message.channel.send(exampleEmbed1);
 	}).catch(err => {
-    console.error(err)
-    })
-	channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
-    const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	let embed2 = new Discord.RichEmbed({
-	setImage:(lastMessage.url)
-    });
-    }).catch(err => {
     console.error(err)
     })
 	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
 	const LastYT = messages.first();
-	let embed3 = new Discord.RichEmbed({
-    description:(LastYT.content)
-    });
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(LastYT.content)
+	message.channel.send(exampleEmbed2);
 	}).catch(err => {
     console.error(err)
     })
-    message.channel.send(embed1)
-    .then(msg => {
-        message.channel.send(embed2)
-		.then(msg => {
-		message.channel.send(embed3);
-	})});
-}
+    channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setImage(lastMessage.url)
+	message.channel.send(exampleEmbed3);
+    }).catch(err => {
+    console.error(err)
+    })
+    }
 });
 
 
