@@ -865,7 +865,10 @@ client.on('message', async message => {
 if(message.content === '!counter aim+info' || message.content === '!counter AIM+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else {
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -900,7 +903,10 @@ message.channel.send(counteraim);
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else {
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -940,7 +946,10 @@ message.channel.send(counterasgard);
 if(message.content === '!counter brawlers+info' || message.content === '!counter brawlers+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else {
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
 const channelToCheckText = client.channels.get('666317820656615435')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -975,7 +984,10 @@ message.channel.send(counterasgard);
 if(message.content === '!counter shield+info' || message.content === '!counter Shield+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else {
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -1010,7 +1022,10 @@ message.channel.send(counterasgard);
 if(message.content === '!counter s6+info' || message.content === '!counter s6+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else {
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
 const channelToCheckText = client.channels.get('666319009465237524')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
