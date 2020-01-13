@@ -830,134 +830,11 @@ if (msg.content === '!bw unlock' || msg.content === '!widow unlock' || msg.conte
 	msg.channel.send(speedEmbed); 
 }
 
-
-
-
-
-
-
-
-if (msg.content === '!test') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setImage('https://i.ibb.co/mCRV1wG/size12.png')
-	msg.channel.send(exampleEmbed);
-}
-
-
-
 });
 
-
-//TESTING YOUTUBE ETC
-client.on('message', message => {
-    if(message.content === ('!testing1')) {
-
-    const channelToCheckImages1 = client.channels.get('665671842094120987')
-	const channelToCheckImages2 = client.channels.get('665755746247507980')
-	const channelToCheckImages3 = client.channels.get('665755775934660668')
-	const channelToCheckImages4 = client.channels.get('665755794402181121')
-	const channelToCheckImages5 = client.channels.get('665755820063195188')
-	const channelToCheckImages6 = client.channels.get('665755839474171909')
-	const channelToCheckText = client.channels.get('665671446026125312')
-	const channelToCheckYT = client.channels.get('665671786159013909')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const LastText = messages.first();
-	message.channel.send(LastText.content);
-	}).catch(err => {
-    console.error(err)
-    })
-	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
-	const LastYT = messages.first();
-	message.channel.send(LastYT.content);
-	}).catch(err => {
-    console.error(err)
-    })
-    channelToCheckImages1.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-	 channelToCheckImages2.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-	channelToCheckImages3.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-	 channelToCheckImages4.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-	 channelToCheckImages5.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-	 channelToCheckImages6.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-    }
-});
-//blitz predictions
-client.on('message', message => {
-    if(message.content === ('!testing2')) {
-
-    const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-	const channelToCheckText = client.channels.get('665671446026125312')
-	const channelToCheckYT = client.channels.get('665671786159013909')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const LastText = messages.first();
-	message.channel.send(LastText.content);
-	}).catch(err => {
-    console.error(err)
-    })
-	channelToCheckYT.fetchMessages({ limit: 1 }).then(messages => {
-	const LastYT = messages.first();
-	message.channel.send(LastYT.content);
-	}).catch(err => {
-    console.error(err)
-    })
-    channelToCheckImagesallin1.fetchMessages({ limit: 1 }).then(messages => {
-	const lastMessage = messages.first().attachments.first()
-	const Attachment = require('discord.js').Attachment;
-	const attachment = new Attachment(lastMessage.url)
-	message.channel.send(attachment);
-    }).catch(err => {
-    console.error(err)
-    })
-    }
-});
-
-
-//EDIT THIS
+//WAR COUNTERS
 client.on('message', async message => {
-if(message.content === ('!testing11')) {
+if(message.content === ('!counter aim')) {
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const channelToCheckYT = client.channels.get('665671786159013909')
@@ -992,7 +869,7 @@ console.log("YT Working?")
 embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
-embed.addField(YT, "\u200b")
+//embed.addField(YT, "\u200b")
 message.channel.send(embed);
 console.log("Embed working?")
 }
