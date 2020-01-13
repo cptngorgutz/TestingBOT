@@ -990,8 +990,7 @@ console.log("YT Working?")
 
 const embed = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setDescription(‘whatever’)
-.addField(Text.content)
+.setDescription(Text.content)
 .setImage(Image.url)
 .addField(YT.content)
 message.channel.send(embed);
