@@ -870,12 +870,20 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 
 if(message.content === '!counter aim' || message.content === '!counter Aim') {
 const aimcounterimage = client.channels.get('666332891730673668')
-aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
-const counteraim = messages.first().attachments.first()
+const messages2 = await aimcounterimage.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(counteraim.url)
-message.channel.send(counteraim);
-})}
+const attachment = new Attachment(Image.url)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setImage(Image.url)
+message.channel.send(embed);
+}
 
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
 if (message.channel.id === '666305824813219870') { //bot spam channel
