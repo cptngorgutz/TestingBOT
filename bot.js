@@ -835,11 +835,6 @@ if (msg.content === '!bw unlock' || msg.content === '!widow unlock' || msg.conte
 //WAR COUNTERS
 client.on('message', async message => {
 if(message.content === '!counter aim+info' || message.content === '!counter AIM+info') {
-if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
@@ -868,7 +863,10 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}}
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+}
 
 if(message.content === '!counter aim' || message.content === '!counter Aim') {
 const counteraim = new Discord.RichEmbed()
@@ -878,11 +876,6 @@ message.channel.send(counteraim);
 }
 
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
-if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
@@ -911,7 +904,10 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}}
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+}
 
 if(message.content === '!counter asgard' || message.content === '!counter asgardians') {
 const counterasgard = new Discord.RichEmbed()
@@ -921,11 +917,6 @@ message.channel.send(counterasgard);
 }
 
 if(message.content === '!counter brawlers+info' || message.content === '!counter brawlers+info') {
-if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
 const channelToCheckText = client.channels.get('666317820656615435')
@@ -954,7 +945,10 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}}
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+}
 
 if(message.content === '!counter brawlers' || message.content === '!counter Brawlers') {
 const counterbrawlers = new Discord.RichEmbed()
@@ -964,11 +958,6 @@ message.channel.send(counterbrawlers);
 }
 
 if(message.content === '!counter shield+info' || message.content === '!counter Shield+info') {
-if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
@@ -997,7 +986,10 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}}
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+}
 
 if(message.content === '!counter shield' || message.content === '!counter Shield') {
 const countershield = new Discord.RichEmbed()
@@ -1007,11 +999,6 @@ message.channel.send(countershield);
 }
 
 if(message.content === '!counter s6+info' || message.content === '!counter s6+info') {
-if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
 const channelToCheckText = client.channels.get('666319009465237524')
@@ -1040,7 +1027,10 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}}
+} else{
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
+}
 
 if(message.content === '!counter s6' || message.content === '!counter S6') {
 const counters6 = new Discord.RichEmbed()
@@ -1050,8 +1040,6 @@ message.channel.send(counters6);
 }
 
 });
-
-
 
 
 
