@@ -860,6 +860,7 @@ message.channel.send(embed);
 }
 });
 
+//COUNTERS
 client.on('message', async message => {
 if(message.content === '!counter aim+info' || message.content === '!counter AIM+info') {
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
@@ -908,7 +909,6 @@ const ATTACHMENT = new Discord.RichEmbed()
 embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
-embed.addField(YT, "\u200b")
 message.channel.send(embed);
 
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
