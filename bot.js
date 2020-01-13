@@ -1057,7 +1057,36 @@ message.channel.send(attachment);
 });
 
 
+client.on('message', async message => {
+if(message.content === '!submit warcounter aim' || message.content === '!submit Warcounter aim') {
+if (message.channel.id === '666305824813219870') { //bot spam channel
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
+const AimSubmission = client.channels.get('666370149766529054')
+const messages1 = await CheckText.fetchMessages({ limit: 1 });
+const messages2 = await CheckImage.fetchMessages({ limit: 1 });
 
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+AimSubmission.send(embed);
+CheckText.send("War Counter Submission Received.");
+}
+);
 
 
 
