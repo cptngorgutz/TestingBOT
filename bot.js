@@ -989,9 +989,9 @@ const YTText = new Discord.RichEmbed()
 //message.channel.send(YT);
 console.log("YT Working?")
 
-embed.setDescription += Text.content
+embed.setDescription(Text)
 embed.setImage(Image.url)
-embed.setFooter(YT.content)
+embed.setFooter(YT)
 message.channel.send(embed);
 console.log("Embed working?")
 }
