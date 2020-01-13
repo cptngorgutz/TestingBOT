@@ -1086,7 +1086,8 @@ embed.setImage(Image.url)
 AimSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
-);
+}
+});
 
 
 
