@@ -1063,8 +1063,8 @@ if (message.channel.id === '666305824813219870') { //bot spam channel
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const AimSubmission = client.channels.get('666370149766529054')
-const messages1 = await CheckText.fetchMessages({ limit: 1 });
-const messages2 = await CheckImage.fetchMessages({ limit: 1 });
+const messages1 = await CheckText.fetchMessages({ limit: 2 });
+const messages2 = await CheckImage.fetchMessages({ limit: 2 });
 
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
