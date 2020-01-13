@@ -851,6 +851,11 @@ const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
+const counteraim = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage('https://i.ibb.co/vjkFbPM/AIM-Counters.png') 
+message.channel.send(counteraim);
+
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -932,6 +937,11 @@ const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
+const counterbrawlers = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage('https://i.ibb.co/0jsbMQ4/Brawlers-Counters.png') 
+message.channel.send(counterbrawlers);
+
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -947,10 +957,10 @@ message.channel.send(embed);
 }}
 
 if(message.content === '!counter brawlers' || message.content === '!counter Brawlers') {
-const counterasgard = new Discord.RichEmbed()
+const counterbrawlers = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage('https://i.ibb.co/0jsbMQ4/Brawlers-Counters.png') 
-message.channel.send(counterasgard);
+message.channel.send(counterbrawlers);
 }
 
 if(message.content === '!counter shield+info' || message.content === '!counter Shield+info') {
@@ -970,6 +980,11 @@ const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
+const countershield = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage('https://i.ibb.co/ByJTvwh/Coulson-Counters.png') 
+message.channel.send(countershield);
+
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -985,10 +1000,10 @@ message.channel.send(embed);
 }}
 
 if(message.content === '!counter shield' || message.content === '!counter Shield') {
-const counterasgard = new Discord.RichEmbed()
+const countershield = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage('https://i.ibb.co/ByJTvwh/Coulson-Counters.png') 
-message.channel.send(counterasgard);
+message.channel.send(countershield);
 }
 
 if(message.content === '!counter s6+info' || message.content === '!counter s6+info') {
@@ -1008,6 +1023,11 @@ const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
+const counters6 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage('https://i.ibb.co/YZGN5JP/S6-Counters.png') 
+message.channel.send(counters6);
+
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -1023,10 +1043,10 @@ message.channel.send(embed);
 }}
 
 if(message.content === '!counter s6' || message.content === '!counter S6') {
-const counterasgard = new Discord.RichEmbed()
+const counters6 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage('https://i.ibb.co/YZGN5JP/S6-Counters.png') 
-message.channel.send(counterasgard);
+message.channel.send(counters6);
 }
 
 });
