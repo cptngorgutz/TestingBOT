@@ -910,11 +910,11 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-
+}
+if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to #bot-spam and try again.")
-}
-}
+}}
 
 if(message.content === '!counter asgard' || message.content === '!counter asgardians') {
 const counterasgard = new Discord.RichEmbed()
