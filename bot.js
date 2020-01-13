@@ -985,13 +985,13 @@ console.log("ATTACHMENT working?")
 
 const YTText = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setDescription(YT.content)
+.setFooter(YT.content)
 //message.channel.send(YT);
 console.log("YT Working?")
 
-embed.description += Text.content
+embed.setDescription += Text.content
 embed.setImage(Image.url)
-embed.footer += YT.content
+embed.setFooter += YT.content
 message.channel.send(embed);
 console.log("Embed working?")
 }
