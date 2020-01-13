@@ -913,10 +913,13 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 }
 
 if(message.content === '!counter asgard' || message.content === '!counter asgardians') {
-const counterasgard = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/6WghFCz/Asgardians-Counters.png') 
-message.channel.send(counterasgard);
+const asgardcounterimage = client.channels.get('666340204872990730')
+asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counterasgard = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(counterasgard.url)
+message.channel.send(attachment);
+})
 }
 
 if(message.content === '!counter brawlers+info' || message.content === '!counter brawlers+info') {
@@ -954,10 +957,13 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 }
 
 if(message.content === '!counter brawlers' || message.content === '!counter Brawlers') {
-const counterbrawlers = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/0jsbMQ4/Brawlers-Counters.png') 
-message.channel.send(counterbrawlers);
+const brawlerscounterimage = client.channels.get('666340239903686659')
+brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counterbrawlers = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(counterbrawlers.url)
+message.channel.send(attachment);
+})
 }
 
 if(message.content === '!counter shield+info' || message.content === '!counter Shield+info') {
@@ -995,10 +1001,13 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 }
 
 if(message.content === '!counter shield' || message.content === '!counter Shield' || message.content === '!counter coulson' || message.content === '!counter Coulson') {
-const countershield = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/ByJTvwh/Coulson-Counters.png') 
-message.channel.send(countershield);
+const shieldcounterimage = client.channels.get('666340284962963524')
+shieldcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const countershield = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(countershield.url)
+message.channel.send(attachment);
+})
 }
 
 if(message.content === '!counter s6+info' || message.content === '!counter s6+info') {
@@ -1036,10 +1045,13 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 }
 
 if(message.content === '!counter s6' || message.content === '!counter S6') {
-const counters6 = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/YZGN5JP/S6-Counters.png') 
-message.channel.send(counters6);
+const s6counterimage = client.channels.get('666340284962963524')
+s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counters6 = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(counters6.url)
+message.channel.send(attachment);
+})
 }
 
 });
