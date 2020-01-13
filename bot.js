@@ -991,7 +991,7 @@ console.log("YT Working?")
 
 embed.setDescription(Text)
 embed.setImage(Image.url)
-embed.addField(YT)
+embed.addField(YT, "\u200b")
 message.channel.send(embed);
 console.log("Embed working?")
 }
