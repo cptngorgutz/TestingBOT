@@ -834,34 +834,6 @@ if (msg.content === '!bw unlock' || msg.content === '!widow unlock' || msg.conte
 
 //WAR COUNTERS
 client.on('message', async message => {
-if(message.content === ('!counter aim')) {
-const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-const channelToCheckText = client.channels.get('665671446026125312')
-const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-message.channel.send(embed);
-}
-});
-
-//COUNTERS
-client.on('message', async message => {
 if(message.content === '!counter aim+info' || message.content === '!counter AIM+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
