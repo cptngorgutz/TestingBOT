@@ -869,11 +869,13 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 }
 
 if(message.content === '!counter aim' || message.content === '!counter Aim') {
-const counteraim = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/vjkFbPM/AIM-Counters.png') 
-message.channel.send(counteraim);
-}
+const aimcounterimage = client.channels.get('666332891730673668')
+aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counteraim = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(counteraim.url)
+message.channel.send(attachment);
+})}
 
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
 if (message.channel.id === '666305824813219870') { //bot spam channel
@@ -957,7 +959,7 @@ const counterbrawlers = new Discord.RichEmbed()
 message.channel.send(counterbrawlers);
 }
 
-if(message.content === '!counter shield+info' || message.content === '!counter Shield+info' || message.content === '!counter coulson+info' || message.content === '!counter Coulson+info') {
+if(message.content === '!counter shield+info' || message.content === '!counter Shield+info') {
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
@@ -1040,7 +1042,6 @@ message.channel.send(counters6);
 }
 
 });
-
 
 
 
