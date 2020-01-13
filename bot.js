@@ -964,7 +964,7 @@ const channelToCheckYT = client.channels.get('665671786159013909')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const messages3 = await channelToCheckYT.fetchMessages({ limit: 1 });
-const embed = new Discord.RichEmbed()
+const MessageEmbed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const YT = messages3.first().content;
@@ -992,7 +992,7 @@ console.log("YT Working?")
 MessageEmbed.description += Text.content
 MessageEmbed.setImage(Image.url)
 MessageEmbed.description += YT.content
-message.channel.send(embed);
+message.channel.send(MessageEmbed);
 console.log("Embed working?")
 }
 });
