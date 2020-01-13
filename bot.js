@@ -919,7 +919,7 @@ message.channel.send("Sorry, this doesn't work here. Head to #bot-spam and try a
 if(message.content === '!counter asgard' || message.content === '!counter asgardians') {
 const counterasgard = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setThumbnail('https://ibb.co/QKrBMwL') 
+.setImage('https://ibb.co/QKrBMwL') 
 message.channel.send(counterasgard);
 }
 
