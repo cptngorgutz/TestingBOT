@@ -889,7 +889,7 @@ message.channel.send(embed);
 
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
 if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to #bot-spam and try again.")
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 } else {
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
