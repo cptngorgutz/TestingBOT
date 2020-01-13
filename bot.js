@@ -874,7 +874,7 @@ aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counteraim = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim.url)
-message.channel.send(attachment);
+message.channel.send(counteraim);
 })}
 
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
