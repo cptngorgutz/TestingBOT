@@ -957,7 +957,7 @@ const counterbrawlers = new Discord.RichEmbed()
 message.channel.send(counterbrawlers);
 }
 
-if(message.content === '!counter shield+info' || message.content === '!counter Shield+info') {
+if(message.content === '!counter shield+info' || message.content === '!counter Shield+info' || message.content === '!counter coulson+info' || message.content === '!counter Coulson+info') {
 if (message.channel.id === '666305824813219870') { //bot spam channel
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
@@ -991,7 +991,7 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 }
 }
 
-if(message.content === '!counter shield' || message.content === '!counter Shield') {
+if(message.content === '!counter shield' || message.content === '!counter Shield' || message.content === '!counter coulson' || message.content === '!counter Coulson') {
 const countershield = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setImage('https://i.ibb.co/ByJTvwh/Coulson-Counters.png') 
