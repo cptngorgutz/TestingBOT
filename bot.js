@@ -991,7 +991,7 @@ console.log("YT Working?")
 
 embed.setDescription += Text.content
 embed.setImage(Image.url)
-embed.setFooter += YT.content
+embed.setFooter(YT.content)
 message.channel.send(embed);
 console.log("Embed working?")
 }
