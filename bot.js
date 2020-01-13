@@ -888,6 +888,9 @@ message.channel.send(embed);
 }
 
 if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
+if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
+message.channel.send("Sorry, this doesn't work here. Head to #bot-spam and try again.")
+} else {
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -897,6 +900,11 @@ const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
+
+const counterasgard = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage('https://i.ibb.co/6WghFCz/Asgardians-Counters.png') 
+message.channel.send(counterasgard);
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
@@ -910,10 +918,6 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if(message.content === '!counter asgard+info' || message.content === '!counter asgardians+info') {
-if (message.channel.id === '665215273778937876' || message.channel.id === '665215304699346955' || message.channel.id === '665215315961184296') {
-message.channel.send("Sorry, this doesn't work here. Head to #bot-spam and try again.")
 }}
 
 if(message.content === '!counter asgard' || message.content === '!counter asgardians') {
@@ -922,8 +926,6 @@ const counterasgard = new Discord.RichEmbed()
 .setImage('https://i.ibb.co/6WghFCz/Asgardians-Counters.png') 
 message.channel.send(counterasgard);
 }
-
-
 
 });
 
