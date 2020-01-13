@@ -989,6 +989,7 @@ const YTText = new Discord.RichEmbed()
 //message.channel.send(YT);
 console.log("YT Working?")
 
+embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 embed.addField(YT, "\u200b")
