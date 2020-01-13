@@ -860,7 +860,6 @@ message.channel.send(embed);
 }
 });
 
-
 client.on('message', async message => {
 if(message.content === '!counter aim+info' || message.content === '!counter AIM+info') {
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
@@ -926,7 +925,6 @@ message.channel.send(counterasgard);
 
 
 
-}
 });
 
 
