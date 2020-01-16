@@ -1346,11 +1346,11 @@ if (msg.content === '!Coulson unlock' || msg.content === '!coulson unlock' || ms
 
 
 if (msg.content === '!kit') {
-	let url = "https://i.imgur.com/8stPjD7.png"
+	let url = "https://cdn.discordapp.com/attachments/657543925141078048/667433017647562803/images_12.png"
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setThumbnail(url)
-	msg.channel.send(Embed); 
+	msg.channel.send(Embed);  
 }
 
 
