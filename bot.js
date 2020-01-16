@@ -1346,8 +1346,8 @@ if (msg.content === '!Coulson unlock' || msg.content === '!coulson unlock' || ms
 
 
 if (msg.content === '!kit') {
-	const Embed = new Discord.RichEmbed()
 	let url = "https://imgur.com/a/MXoog7I"
+	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setThumbnail(url)
 	msg.channel.send(Embed); 
