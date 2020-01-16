@@ -1345,38 +1345,13 @@ if (msg.content === '!Coulson unlock' || msg.content === '!coulson unlock' || ms
 }
 
 
-if (msg.content.startsWith("!kit"){ //Coulson 
-	const speedEmbed = new Discord.RichEmbed()
+if (msg.content === '!kit') {
+	const Embed = new Discord.RichEmbed()
 	let url = 'https://imgur.com/a/MXoog7I'
 	.setColor('#0099ff')
 	.setThumbnail(url)
-	msg.channel.send(speedEmbed); 
+	msg.channel.send(Embed); 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });
