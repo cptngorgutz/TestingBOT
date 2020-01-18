@@ -1927,13 +1927,13 @@ CheckText.send("War Counter Submission Received.");
 
 });
 
- 
-client.on("message", (message) => {
-  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+
+ client.on("message", message => {
+
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
-  if (message.content.startsWith(config.prefix + "daredevil unlock")) {
+ 
+	if(command === 'daredevil unlock') {
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
