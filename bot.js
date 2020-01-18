@@ -1930,17 +1930,15 @@ CheckText.send("War Counter Submission Received.");
  
 client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;
-  if (message.content.indexOf(config.prefix) !== 0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
   if (message.content.startsWith(config.prefix + "daredevil unlock")) {
-   if(command === 'unlock') {
   const Embed = new Discord.RichEmbed()
   .setColor('#0099ff')
   .setDescription("")
   message.channel.send(Embed); 
-  }}
+  }
 });
 
 
