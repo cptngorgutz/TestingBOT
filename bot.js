@@ -1493,46 +1493,6 @@ if (msg.content === '!34' || msg.content === '!6464' || msg.content === '!64678'
 	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
 	msg.channel.send(exampleEmbed4);
 }
-if (msg.content === '!86686' || msg.content === '!86868' || msg.content === '!868686') { //Daredevil 
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
-	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Daredevil special' || msg.content === '!daredevil special' || msg.content === '!dd special') { //Daredevil 
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Special)** \n \n**Throw Baton • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage + \nChain to **1-2 -> 2** targets within 2 spaces of \nprevious target for **130% -> 150%** damage. \nDodge breaks this Chain. \nApply 2 Counter to self and all DEFENDER allies.")
-	.setThumbnail('https://i.imgur.com/N1gdtlW.png') 
-	msg.channel.send(exampleEmbed2);
-}
-if (msg.content === '!Daredevil ultimate' || msg.content === '!daredevil ultimate' || msg.content === '!dd ultimate') { //Daredevil 
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Ultimate)** \n \n**Brawl • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **370% -> 400%** damage + \nChain to **3-4 -> 4-6** adjacent targets for 240% damage. \nCounterattack breaks this Chain.")
-	.setThumbnail('https://i.imgur.com/hV0vTQY.png') 
-	msg.channel.send(exampleEmbed3);
-}
-if (msg.content === '!Daredevil passive' || msg.content === '!daredevil passive' || msg.content === '!dd passive') { //Daredevil 
-	const exampleEmbed4 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Passive)** \n \n**Enhance Senses • T4 Upgrade** \n \nSelf and DEFENDER allies gain **+5% -> +10%** Speed. \nGain +5% Dodge chance. \nGain +5% Dodge chance per DEFENDER ally. \nGain +10% Damage.")
-	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
-	msg.channel.send(exampleEmbed4);
-}
-if (msg.content === '!Daredevil speed' || msg.content === '!daredevil speed' || msg.content === '!dd speed') { //Daredevil SPEED
-	const speedEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil's base speed is 119, but he gains +5% to +10% Speed with \nlevel 1 or 5 of his passive, respectively.\nThat makes his speed \n124.95 or 130.9 depending on his passive level. \nUnlike what the description in-game says, this is applied on spawn.")
-	msg.channel.send(speedEmbed);
-}
-//if (msg.content === '!Daredevil unlock' || msg.content === '!daredevil unlock' || msg.content === '!dd farm' || msg.content === '!dd farm') { //Daredevil UNLOCK
-//	const speedEmbed = new Discord.RichEmbed()
-//	.setColor('#0099ff')
-//	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
-//	msg.channel.send(speedEmbed); 
-//}
 
 
 
@@ -1927,58 +1887,6 @@ CheckText.send("War Counter Submission Received.");
 
 });
 
- 
- client.on("message", message => {
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  let kit = args[0]; // Remember arrays are 0-based!.
-  let basic = args[1];
-  let special = args[2];
-  let ultimate = args[3];
-  let passive = args[4];
-  let speed = args[5];
-  let unlock = args[6];
- 
-	if(command === 'daredevil') {
-		
-	if (args[6] === "unlock") {
-	const speedEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
-	message.channel.send(speedEmbed); 
-	}
-	  if (args[0] === "kit") {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
-	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
-	message.channel.send(exampleEmbed);
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Special)** \n \n**Throw Baton • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **180% -> 200%** damage + \nChain to **1-2 -> 2** targets within 2 spaces of \nprevious target for **130% -> 150%** damage. \nDodge breaks this Chain. \nApply 2 Counter to self and all DEFENDER allies.")
-	.setThumbnail('https://i.imgur.com/N1gdtlW.png') 
-	message.channel.send(exampleEmbed2);
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Ultimate)** \n \n**Brawl • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **370% -> 400%** damage + \nChain to **3-4 -> 4-6** adjacent targets for 240% damage. \nCounterattack breaks this Chain.")
-	.setThumbnail('https://i.imgur.com/hV0vTQY.png') 
-	message.channel.send(exampleEmbed3);
-	const exampleEmbed4 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Passive)** \n \n**Enhance Senses • T4 Upgrade** \n \nSelf and DEFENDER allies gain **+5% -> +10%** Speed. \nGain +5% Dodge chance. \nGain +5% Dodge chance per DEFENDER ally. \nGain +10% Damage.")
-	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
-	message.channel.send(exampleEmbed4);
-  }
-  if (args[1] === "basic") {
-	 const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
-	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
-	message.channel.send(exampleEmbed);
-  }
-}
-});
-
 
 client.on("message", message => {
   const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -1987,7 +1895,7 @@ client.on("message", message => {
   let kit = args[1];
   let speed = args[2];
 
-	if(command === '!') {
+	if(command === 'daredevil') {
 		
 	if (args[0] === "daredevil") {
 	const Embed = new Discord.RichEmbed()
