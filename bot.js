@@ -1981,7 +1981,7 @@ CheckText.send("War Counter Submission Received.");
 
 
 client.on("message", message => {
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g).toLowerCase();
   const command = args.shift().toLowerCase();
   let alpha = args[0]; 
   let bravo = args[1];
