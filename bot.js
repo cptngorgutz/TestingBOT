@@ -1987,7 +1987,7 @@ client.on("message", message => {
   let bravo = args[1];
   let charlie = args[2];
 
-	if(command === 'test') {
+	if(command === (prefix)) {
 		
 	if (args[0] === "alpha") {
 	const Embed = new Discord.RichEmbed()
@@ -2007,9 +2007,9 @@ client.on("message", message => {
 	.setDescription("CHARLIE ONLY")
 	message.channel.send(Embed);
   }
-
 }
 });
-
+//Can someone explain why !command charlie bravo alpha sends embed>BRAVO ONLY ?
+//Because args[0] is alpha and you only send the embed if it's alpha
 
 client.login(process.env.TOKEN);
