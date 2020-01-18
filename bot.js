@@ -1987,24 +1987,24 @@ client.on("message", message => {
   let bravo = args[1];
   let charlie = args[2];
 
-	if (message.content.startsWith(config.prefix)){
+	if(command === '!') {
 		
-	if (args[0] === "alpha") {
+	if (args[0] === "daredevil") {
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("ALPHA ONLY")
+	.setDescription("daredevil command ONLY")
 	message.channel.send(Embed); 
 	}
-  if (args[1] === "bravo"){
+  if (args[1] === "kit"){
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("BRAVO ONLY")
+	.setDescription("KIT ONLY")
 	message.channel.send(Embed);
   }
-  if (args[2] === "charlie"){
+  if (args[2] === "speed"){
 	 const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("CHARLIE ONLY")
+	.setDescription("SPEED ONLY")
 	message.channel.send(Embed);
   }
 }
