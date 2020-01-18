@@ -1891,9 +1891,9 @@ CheckText.send("War Counter Submission Received.");
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let kit = args[1]; 
+let kit = args[0]; 
 let speed = args[1];
-let unlock = args[1];
+let unlock = args[2];
 
 if (message.content.startsWith(config.prefix + "daredevil")) {
 if (args[1] === "kit") {
@@ -1910,7 +1910,7 @@ const Embed = new Discord.RichEmbed()
 message.channel.send(Embed);
 }
 
-if (args[1] === "unlock"){
+if (args[2] === "unlock"){
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("unlock")
