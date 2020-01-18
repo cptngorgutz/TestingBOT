@@ -1989,19 +1989,19 @@ client.on("message", message => {
 
 	if(command === 'test') {
 		
-	if (!args[0]) {	
+	if (args[0]) {	
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("ALPHA ONLY")
 	message.channel.send(Embed); 
 	}
-  if (!args[1]) {
+  if (args[1]) {
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("BRAVO ONLY")
 	message.channel.send(Embed);
   }
-  if (!args[2]) {
+  if (args[2]) {
 	 const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("CHARLIE ONLY")
