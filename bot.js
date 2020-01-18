@@ -1889,32 +1889,34 @@ CheckText.send("War Counter Submission Received.");
 
 
 client.on("message", message => {
-  const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  let kit = args[0]; 
-  let speed = args[1];
-  let unlock = args[2];
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+let kit = args[0]; 
+const speed = args.slice(1).join(' ')
+const unlock = args.slice(1).join(' ')
 
-	if (message.content.startsWith(config.prefix + "daredevil")) {
+if (message.content.startsWith(config.prefix + "daredevil")) {
+if (args[0] === "kit") {
+const Embed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("kit")
+message.channel.send(Embed);
+}
 
-	if (args[0] === "kit") {
-	const Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("kit")
-	message.channel.send(Embed);
-	}
-  if (args[1] === "speed"){
-	const Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("speed")
-	message.channel.send(Embed);
-  }
-  if (args[2] === "unlock"){
-	 const Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("unlock")
-	message.channel.send(Embed);
-  }
+if (args[1] === "speed"){
+const Embed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("speed")
+message.channel.send(Embed);
+}
+
+if (args[2] === "unlock"){
+const Embed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("unlock")
+message.channel.send(Embed);
+}
+
 }
 });
 //Can someone explain why !command charlie bravo alpha sends embed>BRAVO ONLY ?
