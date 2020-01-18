@@ -1995,13 +1995,13 @@ client.on("message", message => {
 	.setDescription("ALPHA ONLY")
 	message.channel.send(Embed); 
 	}
-  if (args[1] === "bravo")
+  if (args[1] === "bravo"){
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("BRAVO ONLY")
 	message.channel.send(Embed);
   }
-  if (args[2] === "charlie")
+  if (args[2] === "charlie"){
 	 const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("CHARLIE ONLY")
