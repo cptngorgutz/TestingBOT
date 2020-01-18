@@ -1948,7 +1948,7 @@ CheckText.send("War Counter Submission Received.");
 	message.channel.send(speedEmbed); 
 	}
 	  if (args[0] === "kit") {
-	  const exampleEmbed = new Discord.RichEmbed()
+	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
 	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
@@ -1976,7 +1976,7 @@ CheckText.send("War Counter Submission Received.");
 	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
 	message.channel.send(exampleEmbed);
   }
-	}
+}
 });
 
 
@@ -2009,8 +2009,6 @@ client.on("message", message => {
   }
 
 }
-	
-});
 
 
 client.login(process.env.TOKEN);
