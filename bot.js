@@ -1897,24 +1897,40 @@ let unlock = args[0];
 
 if(command === 'daredevil') {
 if(kit === "kit"){
-const Embed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("kit")
-message.channel.send(Embed);
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
+	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Special)** \n \n**Throw Baton • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **180% -> 200%** damage + \nChain to **1-2 -> 2** targets within 2 spaces of \nprevious target for **130% -> 150%** damage. \nDodge breaks this Chain. \nApply 2 Counter to self and all DEFENDER allies.")
+	.setThumbnail('https://i.imgur.com/N1gdtlW.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Ultimate)** \n \n**Brawl • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **370% -> 400%** damage + \nChain to **3-4 -> 4-6** adjacent targets for 240% damage. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/hV0vTQY.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Passive)** \n \n**Enhance Senses • T4 Upgrade** \n \nSelf and DEFENDER allies gain **+5% -> +10%** Speed. \nGain +5% Dodge chance. \nGain +5% Dodge chance per DEFENDER ally. \nGain +10% Damage.")
+	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
+	msg.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
-const Embed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("speed")
-message.channel.send(Embed);
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Dardevil** \nDaredevil's speed is: **")
+	msg.channel.send(speedEmbed);
 }
 
-if(unlock === "unlock") {
-const Embed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("unlock")
-message.channel.send(Embed);
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Dardevil** \nDaredevil is farmable in:**")
+	msg.channel.send(speedEmbed); 
 }
 
 }
