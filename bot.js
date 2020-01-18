@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require("config.json");
+const config = require('./config.json');
 client.setMaxListeners(40);
 const invites = {};
 
