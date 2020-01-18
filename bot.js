@@ -1527,11 +1527,11 @@ if (msg.content === '!Daredevil speed' || msg.content === '!daredevil speed' || 
 	msg.channel.send(speedEmbed);
 }
 //if (msg.content === '!Daredevil unlock' || msg.content === '!daredevil unlock' || msg.content === '!dd farm' || msg.content === '!dd farm') { //Daredevil UNLOCK
-	const speedEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
-	msg.channel.send(speedEmbed); 
-}
+//	const speedEmbed = new Discord.RichEmbed()
+//	.setColor('#0099ff')
+//	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
+//	msg.channel.send(speedEmbed); 
+//}
 
 
 
