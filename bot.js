@@ -1934,10 +1934,10 @@ client.on("message", (message) => {
   const command = args.shift().toLowerCase();
 
   if (message.content.startsWith(config.prefix + "daredevil unlock")) {
-  const Embed = new Discord.RichEmbed()
-  .setColor('#0099ff')
-  .setDescription("")
-  message.channel.send(Embed); 
+	const Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
+	msg.channel.send(Embed); 
   }
 });
 
