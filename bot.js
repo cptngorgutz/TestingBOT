@@ -1892,25 +1892,25 @@ client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let kit = args[0]; 
-let speed = args[1];
-let unlock = args[2];
+let speed = args[0];
+let unlock = args[0];
 
 if (message.content.startsWith(config.prefix + "daredevil")) {
-if (args[1] === "kit") {
+if (args[0] === "kit") {
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("kit")
 message.channel.send(Embed);
 }
 
-if (args[1] === "speed"){
+if (args[0] === "speed"){
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("speed")
 message.channel.send(Embed);
 }
 
-if (args[2] === "unlock"){
+if (args[0] === "unlock"){
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("unlock")
