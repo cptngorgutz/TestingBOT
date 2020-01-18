@@ -1896,7 +1896,7 @@ let speed = args[1];
 let unlock = args[2];
 
 if (message.content.startsWith(config.prefix + "daredevil")) {
-if (args[0] === "kit") {
+if (args[1] === "kit") {
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("kit")
@@ -1910,7 +1910,7 @@ const Embed = new Discord.RichEmbed()
 message.channel.send(Embed);
 }
 
-if (args[2] === "unlock"){
+if (args[1] === "unlock"){
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("unlock")
