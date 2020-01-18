@@ -1947,7 +1947,7 @@ CheckText.send("War Counter Submission Received.");
 	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
 	message.channel.send(speedEmbed); 
 	}
-  if (args[0]) {
+  if (!args[0]) {
 	  const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
@@ -1969,7 +1969,7 @@ CheckText.send("War Counter Submission Received.");
 	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
 	message.channel.send(exampleEmbed4);
   }
-  if (args[1]) {
+  if (!args[1]) {
 	 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
@@ -1979,6 +1979,38 @@ CheckText.send("War Counter Submission Received.");
 	}
 });
 
+
+client.on("message", message => {
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  let alpha = args[0]; 
+  let bravo = args[1];
+  let charlie = args[2];
+
+	if(command === 'test') {
+		
+	if (!args[0]) {	
+	const Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("ALPHA ONLY")
+	message.channel.send(Embed); 
+	}
+  if (!args[1]) {
+	const Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("BRAVO ONLY")
+	message.channel.send(Embed);
+  }
+  if (!args[2]) {
+	 const Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("CHARLIE ONLY")
+	message.channel.send(Embed);
+  }
+
+}
+	
+});
 
 
 client.login(process.env.TOKEN);
