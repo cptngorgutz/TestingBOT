@@ -1852,7 +1852,7 @@ let unlock = args[0];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672') { //bot spam channel
-if(command.startsWith === 'cyclops') {
+if(command === 'cyclops') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
