@@ -1983,25 +1983,25 @@ CheckText.send("War Counter Submission Received.");
 client.on("message", message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  let alpha = args[1]; 
-  let bravo = args[2];
-  let charlie = args[3];
+  let alpha = args[0]; 
+  let bravo = args[1];
+  let charlie = args[2];
 
 	if(command === 'test') {
 		
-	if (args[1] === "alpha") {
+	if (args[0] === "alpha") {
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("ALPHA ONLY")
 	message.channel.send(Embed); 
 	}
-  if (args[2] === "bravo"){
+  if (args[1] === "bravo"){
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("BRAVO ONLY")
 	message.channel.send(Embed);
   }
-  if (args[3] === "charlie"){
+  if (args[2] === "charlie"){
 	 const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("CHARLIE ONLY")
