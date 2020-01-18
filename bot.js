@@ -1895,7 +1895,7 @@ client.on("message", message => {
   let speed = args[1];
   let unlock = args[2];
 
-	if (message.content.startsWith(prefix + "daredevil")) {
+	if (message.content.startsWith(config.prefix + "daredevil")) {
 
 	if (args[0] === "kit") {
 	const Embed = new Discord.RichEmbed()
