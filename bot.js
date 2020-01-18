@@ -1926,12 +1926,11 @@ CheckText.send("War Counter Submission Received.");
 
 });
 
+const prefix = "!";
 client.on("message", message => {
-  if (message.author.bot) return;
+ if (!message.content.startsWith(prefix) || message.author.bot) return;
   // This is where we'll put our code.
-  const PREFIX = "!";
-  if (message.content.indexOf(PREFIX) !== 0) return;
-  const args = message.content.slice(PREFIX.length).trim().split(/ +/g);
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
 	if(command === 'daredevil unlock') {
