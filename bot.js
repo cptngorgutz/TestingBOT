@@ -1343,6 +1343,198 @@ if (msg.content === '!Coulson unlock' || msg.content === '!coulson unlock' || ms
 	.setDescription("<:coulson:663749981605199912> **Coulson** \nCoulson is farmable in:**")
 	msg.channel.send(speedEmbed); 
 }
+//CROSSBONES
+if (msg.content === '!Crossbones kit' || msg.content === '!crossbones kit' || msg.content === '!xb kit') { //Crossbones 
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Basic)** \n \n**Piston Punch • T4 Upgrade** \n \nAttack primary target for **175% -> 200%** damage. \n75% chance of a Bonus attack for **125% -> 150%** damage and apply Offense Down.")
+	.setThumbnail('https://i.imgur.com/Z4eF8IS.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Special)** \n \n**Wrath • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt + **2 -> 2-3** Counter. \nHeal self for 15% of Max Health.")
+	.setThumbnail('https://i.imgur.com/2lsqAdz.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Ultimate)** \n \n**Detonate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nGain 2 Deathproof, then explode for **440% -> 480%** damage \n to self and all enemies. \nThis attack cannot miss **though it can be dodged**.")
+	.setThumbnail('https://i.imgur.com/fYlrlDB.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Passive)** \n \n**Vengeance • T4 Upgrade** \n \n**+15% -> +20%** Max Health. HYDRA allies gain +5% Armor.")
+	.setThumbnail('https://i.imgur.com/vtQvQxC.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!Crossbones basic' || msg.content === '!crossbones basic' || msg.content === '!xb basic') { //Crossbones 
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Basic)** \n \n**Piston Punch • T4 Upgrade** \n \nAttack primary target for **175% -> 200%** damage. \n75% chance of a Bonus attack for **125% -> 150%** damage and apply Offense Down.")
+	.setThumbnail('https://i.imgur.com/Z4eF8IS.png') 
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Crossbones special' || msg.content === '!crossbones special' || msg.content === '!xb special') { //Crossbones 
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Special)** \n \n**Wrath • T4 Upgrade** \n \nGain Taunt + **2 -> 2-3** Counter. \nHeal self for 15% of Max Health.")
+	.setThumbnail('https://i.imgur.com/2lsqAdz.png') 
+	msg.channel.send(exampleEmbed2);
+}
+if (msg.content === '!Crossbones ultimate' || msg.content === '!crossbones ultimate' || msg.content === '!xb ultimate') { //Crossbones 
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Ultimate)** \n \n**Detonate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nGain 2 Deathproof, then explode for **440% -> 480%** damage \n to self and all enemies. \nThis attack cannot miss **though it can be dodged**.")
+	.setThumbnail('https://i.imgur.com/fYlrlDB.png') 
+	msg.channel.send(exampleEmbed3);
+}
+if (msg.content === '!Crossbones passive' || msg.content === '!crossbones passive' || msg.content === '!xb passive') { //Crossbones 
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Passive)** \n \n**Vengeance • T4 Upgrade** \n \n**+15% -> +20%** Max Health. HYDRA allies gain +5% Armor.")
+	.setThumbnail('https://i.imgur.com/vtQvQxC.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!Crossbones speed' || msg.content === '!crossbones speed' || msg.content === '!xb speed') { //Crossbones SPEED
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \nCrossbones's speed is: 99")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!Crossbones unlock' || msg.content === '!crossbones unlock' || msg.content === '!xb farm' || msg.content === '!xb farm') { //Crossbones UNLOCK
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \nCrossbones is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
+//CYCLOPS
+if (msg.content === '!Cyclops kit' || msg.content === '!cyclops kit' || msg.content === '!cyclop kit') { //Cyclops 
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Basic)** \n \n**Optic Blast • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage + \n50% chance to apply Defense Down. \nIf Psylocke is an ally, always apply Defense Down.")
+	.setThumbnail('https://i.imgur.com/S663f9U.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Special)** \n \n**To Me! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nApply Taunt to the 2 most injured non-summoned \nnon-primary target enemies. \nCall an ally Wolverine to attack the most injured \nof those previous enemies. \n**75% -> 100%** chance to call an ally to attack the second most injured of those previous enemies. \nAttack primary target for **300% -> 350%** damage.")
+	.setThumbnail('https://i.imgur.com/lfQC1y7.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Ultimate)** \n \n**Optic Devastation • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **200% -> 250%** damage + \napply Slow for **1 -> 2** turns. \nDamage is increased by 25% per Charged. \nThen lose all Charged.")
+	.setThumbnail('https://i.imgur.com/Phpta6j.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Passive)** \n \n**Team Synergy • T4 Upgrade** \n \nOn Turn and on X-Men ally turn, gain **+1 -> +2** Charged,\n up to a maximum of **10 -> 20**. \nWhen an enemy attacks an ally Phoenix or Dark Phoenix, \n50% chance to attack that enemy for 200% damage. \nIf this character does not attack, \ncall an assist from an ally Wolverine to attack that enemy. \nWolverine gains +80% Damage for the assist. \nOn ally Phoenix death, gain Offense Up + \nchange an ally Wolverine Speed Bar by +100%.")
+	.setThumbnail('https://i.imgur.com/qwD4QRu.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!Cyclops basic' || msg.content === '!cyclops basic' || msg.content === '!cyclop basic') { //Cyclops 
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Basic)** \n \n**Optic Blast • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage + \n50% chance to apply Defense Down. \nIf Psylocke is an ally, always apply Defense Down.")
+	.setThumbnail('https://i.imgur.com/S663f9U.png') 
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Cyclops special' || msg.content === '!cyclops special' || msg.content === '!cyclop special') { //Cyclops 
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Special)** \n \n**To Me! • T4 Upgrade** \n \nApply Taunt to the 2 most injured non-summoned \nnon-primary target enemies. \nCall an ally Wolverine to attack the most injured \nof those previous enemies. \n**75% -> 100%** chance to call an ally to attack the second most injured of those previous enemies. \nAttack primary target for **300% -> 350%** damage.")
+	.setThumbnail('https://i.imgur.com/lfQC1y7.png') 
+	msg.channel.send(exampleEmbed2);
+}
+if (msg.content === '!Cyclops ultimate' || msg.content === '!cyclops ultimate' || msg.content === '!cyclop ultimate') { //Cyclops 
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Ultimate)** \n \n**Optic Devastation • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **200% -> 250%** damage + \napply Slow for **1 -> 2** turns. \nDamage is increased by 25% per Charged. \nThen lose all Charged.")
+	.setThumbnail('https://i.imgur.com/Phpta6j.png') 
+	msg.channel.send(exampleEmbed3);
+}
+if (msg.content === '!Cyclops passive' || msg.content === '!cyclops passive' || msg.content === '!cyclop passive') { //Cyclops 
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Passive)** \n \n**Team Synergy • T4 Upgrade** \n \nOn Turn and on X-Men ally turn, gain **+1 -> +2** Charged,\n up to a maximum of **10 -> 20**. \nWhen an enemy attacks an ally Phoenix or Dark Phoenix, \n50% chance to attack that enemy for 200% damage. \nIf this character does not attack, \ncall an assist from an ally Wolverine to attack that enemy. \nWolverine gains +80% Damage for the assist. \nOn ally Phoenix death, gain Offense Up + \nchange an ally Wolverine Speed Bar by +100%.")
+	.setThumbnail('https://i.imgur.com/qwD4QRu.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!Cyclops speed' || msg.content === '!cyclops speed' || msg.content === '!cyclop speed') { //Cyclops SPEED
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \n:Cyclops: Cyclops's speed is: 108")
+	msg.channel.send(speedEmbed);
+}
+if (msg.content === '!Cyclops unlock' || msg.content === '!cyclops unlock' || msg.content === '!cyclop farm' || msg.content === '!cyclop farm') { //Cyclops UNLOCK
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \nCyclops is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
+//DAREDEVIL
+if (msg.content === '!Daredevil kit' || msg.content === '!daredevil kit' || msg.content === '!dd kit') { //Daredevil 
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
+	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
+	msg.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Special)** \n \n**Throw Baton • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **180% -> 200%** damage + \nChain to **1-2 -> 2** targets within 2 spaces of \nprevious target for **130% -> 150%** damage. \nDodge breaks this Chain. \nApply 2 Counter to self and all DEFENDER allies.")
+	.setThumbnail('https://i.imgur.com/N1gdtlW.png') 
+	msg.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Ultimate)** \n \n**Brawl • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **370% -> 400%** damage + \nChain to **3-4 -> 4-6** adjacent targets for 240% damage. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/hV0vTQY.png') 
+	msg.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Passive)** \n \n**Enhance Senses • T4 Upgrade** \n \nSelf and DEFENDER allies gain **+5% -> +10%** Speed. \nGain +5% Dodge chance. \nGain +5% Dodge chance per DEFENDER ally. \nGain +10% Damage.")
+	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!Daredevil basic' || msg.content === '!daredevil basic' || msg.content === '!dd basic') { //Daredevil 
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
+	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
+	msg.channel.send(exampleEmbed);
+}
+if (msg.content === '!Daredevil special' || msg.content === '!daredevil special' || msg.content === '!dd special') { //Daredevil 
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Special)** \n \n**Throw Baton • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage + \nChain to **1-2 -> 2** targets within 2 spaces of \nprevious target for **130% -> 150%** damage. \nDodge breaks this Chain. \nApply 2 Counter to self and all DEFENDER allies.")
+	.setThumbnail('https://i.imgur.com/N1gdtlW.png') 
+	msg.channel.send(exampleEmbed2);
+}
+if (msg.content === '!Daredevil ultimate' || msg.content === '!daredevil ultimate' || msg.content === '!dd ultimate') { //Daredevil 
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Ultimate)** \n \n**Brawl • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **370% -> 400%** damage + \nChain to **3-4 -> 4-6** adjacent targets for 240% damage. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/hV0vTQY.png') 
+	msg.channel.send(exampleEmbed3);
+}
+if (msg.content === '!Daredevil passive' || msg.content === '!daredevil passive' || msg.content === '!dd passive') { //Daredevil 
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Passive)** \n \n**Enhance Senses • T4 Upgrade** \n \nSelf and DEFENDER allies gain **+5% -> +10%** Speed. \nGain +5% Dodge chance. \nGain +5% Dodge chance per DEFENDER ally. \nGain +10% Damage.")
+	.setThumbnail('https://i.imgur.com/UgnuwNE.png') 
+	msg.channel.send(exampleEmbed4);
+}
+if (msg.content === '!Daredevil speed' || msg.content === '!daredevil speed' || msg.content === '!dd speed') { //Daredevil SPEED
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil's base speed is 119, but he gains +5% to +10% Speed with \nlevel 1 or 5 of his passive, respectively.\nThat makes his speed \n124.95 or 130.9 depending on his passive level. \nUnlike what the description in-game says, this is applied on spawn.")
+	msg.channel.send(speedEmbed);
+}
+//if (msg.content === '!Daredevil unlock' || msg.content === '!daredevil unlock' || msg.content === '!dd farm' || msg.content === '!dd farm') { //Daredevil UNLOCK
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
+	msg.channel.send(speedEmbed); 
+}
+
+
+
 
 
 if (msg.content === '!kit') {
@@ -1733,6 +1925,24 @@ CheckText.send("War Counter Submission Received.");
 }
 
 });
+
+client.on("message", message => {
+  if (message.author.bot) return;
+  // This is where we'll put our code.
+  if (message.content.indexOf(config.prefix) !== 0) return;
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+	if(command === 'daredevil unlock') {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
+	msg.channel.send(speedEmbed); 
+	}
+
+
+});
+
 
 
 
