@@ -1891,25 +1891,22 @@ CheckText.send("War Counter Submission Received.");
 client.on("message", message => {
   const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  let unlock = args[1]; 
-  let kit = args[2];
-  let speed = args[3];
+  let daredevil = args[0]; 
+  let kit = args[1];
+  let speed = args[2];
 
-	if(command === 'daredevil') {
+	if(command === 'pp') {
 		
-	if (args[1] === "unlock") {
-	const Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("UNLOCK ONLY")
-	message.channel.send(Embed); 
+	if (args[0] === "daredevil") {
+
 	}
-  if (args[2] === "kit"){
+  if (args[1] === "kit"){
 	const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("KIT ONLY")
 	message.channel.send(Embed);
   }
-  if (args[3] === "speed"){
+  if (args[2] === "speed"){
 	 const Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("SPEED ONLY")
