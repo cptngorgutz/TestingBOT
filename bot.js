@@ -1891,6 +1891,9 @@ CheckText.send("War Counter Submission Received.");
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
+let kit = args[0]; 
+let speed = args[0];
+let unlock = args[0];
 
 if(command === 'daredevil') {
 if(kit === "kit"){
