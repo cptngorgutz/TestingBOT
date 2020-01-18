@@ -1937,7 +1937,7 @@ client.on("message", message => {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 	}
 
 
