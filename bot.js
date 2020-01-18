@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const config = require("./config.json");
 client.setMaxListeners(40);
 const invites = {};
 
@@ -1926,23 +1927,23 @@ CheckText.send("War Counter Submission Received.");
 
 });
 
-const prefix = "!";
+
+
 client.on("message", message => {
- if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (message.author.bot) return;
   // This is where we'll put our code.
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  if (message.content.indexOf(config.prefix) !== 0) return;
+ 
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
-	if(command === 'daredevil unlock') {
-	const speedEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
-	message.channel.send(speedEmbed); 
-	}
-
-
+ 
+  if(command === 'daredevil unlock') {
+  const speedEmbed = new Discord.RichEmbed()
+  .setColor('#0099ff')
+  .setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
+  message.channel.send(speedEmbed); 
+  }
 });
-
 
 
 
