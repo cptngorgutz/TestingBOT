@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require("./config.json");
+const config = require("config.json");
 client.setMaxListeners(40);
 const invites = {};
 
@@ -1930,7 +1930,6 @@ CheckText.send("War Counter Submission Received.");
 
 
 client.on("message", message => {
-  if (message.author.bot) return;
   // This is where we'll put our code.
   if (message.content.indexOf(config.prefix) !== 0) return;
  
