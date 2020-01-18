@@ -1987,7 +1987,7 @@ client.on("message", message => {
   let bravo = args[1];
   let charlie = args[2];
 
-	if (content.startsWith(config.prefix)){
+	if (message.content.startsWith(config.prefix)){
 		
 	if (args[0] === "alpha") {
 	const Embed = new Discord.RichEmbed()
