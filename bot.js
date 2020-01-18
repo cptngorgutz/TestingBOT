@@ -1940,13 +1940,14 @@ CheckText.send("War Counter Submission Received.");
   let unlock = args[6];
  
 	if(command === 'daredevil') {
+		
+	if (!args[6]) {	
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
 	message.channel.send(speedEmbed); 
-  
+	}
   if (!args[0]) {
-	  
 	  const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
@@ -1975,8 +1976,7 @@ CheckText.send("War Counter Submission Received.");
 	.setThumbnail('https://i.imgur.com/lI26m6t.png') 
 	message.channel.send(exampleEmbed);
   }
-  }
-  
+	}
 });
 
 
