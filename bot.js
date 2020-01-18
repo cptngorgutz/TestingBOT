@@ -1983,9 +1983,9 @@ CheckText.send("War Counter Submission Received.");
 client.on("message", message => {
   const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  let alpha = args[0]; 
-  let bravo = args[1];
-  let charlie = args[2];
+  let daredevil = args[0]; 
+  let kit = args[1];
+  let speed = args[2];
 
 	if(command === '!') {
 		
