@@ -528,7 +528,6 @@ message.channel.send("This is s6 warcounter submission.")
 }//warcounter
 }//submit
 
-} //channel ID
 }); //Top of client
 
 
