@@ -502,41 +502,29 @@ let shield = args[2];
 let s6 = args[2];
 
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'submit' ) {
-if(warcounter === "warcounter"){
+if(command === 'submit') {
 if (args[1]){	
 message.channel.send("Do nothing.")
 }
-if(aim === "aim"){
 if (args[2]){	
 message.channel.send("This is aim warcounter submission.")
 }
-}//if aim
 
-if(asgardians === "asgardians"){
 if (args[2]){	
 message.channel.send("This is asgardian warcounter submission.")
 }
-}//if asgardian
 
-if(brawlers === "brawlers"){
 if (args[2]){	
 message.channel.send("This is brawlers warcounter submission.")
 }
-}//if brawlers
 
-if(shield === "shield"){
 if (args[2]){	
 message.channel.send("This is shield warcounter submission.")
 }
-}//if shield
 
-if(s6 === "s6"){
 if (args[2]){	
 message.channel.send("This is s6 warcounter submission.")
 }
-}//if s6
-
 }//warcounter
 }//submit
 
