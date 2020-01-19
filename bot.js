@@ -124,21 +124,9 @@ client.on('message', msg => {
 	}}
 	});
 
-//***************************************************************************************CHARACTER TEAMS
-
-//ASGARDIANS
-client.on('message', msg => {
-if (msg.content === '!Asgardians') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**ASGARDIANS** \n<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: 100 \n \n<:hela:661370019317284880> **Hela** \nHela's base speed is: 110, but her effective turn 1 speed is \n121.11 with Loki. \n \n<:loki:661370019145449473> **Loki** \nLoki's base speed is: 115, but his effective turn 1 speed is \n133.75 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: 108 \n \n<:thor:661370019279667248> **Thor** \nThor's base speed is: 90, but with Black Widow using her \nturn 1 special, his effective turn 1 speed is 102.27. \n \n<:greg:661392103900839936> **Undead Asgardian** \nUndead Asgardian's base speed is: 105, but his effective \nturn 1 speed is 130.")
-	msg.channel.send(exampleEmbed);
-}});
-
 
 //********************************************************************************************************
-//***************************************************************************************SINGLE CHARACTERS
+
 client.on('message', msg => {	
 //ULTRON
 if (msg.content === '!Ultron Basic 7') {
@@ -503,161 +491,62 @@ message.channel.send(attachment);
 
 });
 
-//SUBMIT WAR COUNTERS
-client.on('message', async message => {
-if(message.content === '!submit warcounter aim' || message.content === '!Submit Warcounter Aim' || message.content === '!Submit warcounter aim' || message.content === '!submit Warcounter aim' || message.content === '!submit warcounter Aim' || message.content === '!Submit Warcounter aim' || message.content === '!submit Warcounter Aim' || message.content === '!Submit warcounter Aim') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
-const CheckImage = client.channels.get('666305824813219870')
-const CheckText = client.channels.get('666305824813219870')
-const AimSubmission = client.channels.get('666370149766529054')
-const messages1 = await CheckText.fetchMessages({ limit: 2 });
-const messages2 = await CheckImage.fetchMessages({ limit: 2 });
+client.on("message", message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+let warcounter = args[1]; 
+let aim = args[2];
+let asgardians = args[2];
+let brawlers = args[2];
+let shield = args[2];
+let s6 = args[2];
 
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-AimSubmission.send(embed);
-CheckText.send("War Counter Submission Received.");
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
+if(command === 'submit' ) {
+if(warcounter === "warcounter"){
+if (args[1]){	
+message.channel.send("Do nothing.")
 }
+if(aim === "aim"){
+if (args[2]){	
+message.channel.send("This is aim warcounter submission.")
 }
+}//if aim
 
-if(message.content === '!submit warcounter asgardians' || message.content === '!Submit Warcounter Asgardians' || message.content === '!Submit warcounter asgardians' || message.content === '!submit Warcounter asgardians' || message.content === '!submit warcounter Asgardians' || message.content === '!Submit Warcounter asgardians' || message.content === '!submit Warcounter Asgardians' || message.content === '!Submit warcounter Asgardians') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
-const CheckImage = client.channels.get('666305824813219870')
-const CheckText = client.channels.get('666305824813219870')
-const AsgardianSubmission = client.channels.get('666384999246725150')
-const messages1 = await CheckText.fetchMessages({ limit: 2 });
-const messages2 = await CheckImage.fetchMessages({ limit: 2 });
-
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-AsgardianSubmission.send(embed);
-CheckText.send("War Counter Submission Received.");
+if(asgardians === "asgardians"){
+if (args[2]){	
+message.channel.send("This is asgardian warcounter submission.")
 }
+}//if asgardian
+
+if(brawlers === "brawlers"){
+if (args[2]){	
+message.channel.send("This is brawlers warcounter submission.")
 }
+}//if brawlers
 
-if(message.content === '!submit warcounter brawlers' || message.content === '!Submit Warcounter Brawlers' || message.content === '!Submit warcounter brawlers' || message.content === '!submit Warcounter brawlers' || message.content === '!submit warcounter Brawlers' || message.content === '!Submit Warcounter brawlers' || message.content === '!submit Warcounter Brawlers' || message.content === '!Submit warcounter Brawlers') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
-const CheckImage = client.channels.get('666305824813219870')
-const CheckText = client.channels.get('666305824813219870')
-const BrawlerSubmission = client.channels.get('666385224174927873')
-const messages1 = await CheckText.fetchMessages({ limit: 2 });
-const messages2 = await CheckImage.fetchMessages({ limit: 2 });
-
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-BrawlerSubmission.send(embed);
-CheckText.send("War Counter Submission Received.");
+if(shield === "shield"){
+if (args[2]){	
+message.channel.send("This is shield warcounter submission.")
 }
+}//if shield
+
+if(s6 === "s6"){
+if (args[2]){	
+message.channel.send("This is s6 warcounter submission.")
 }
+}//if s6
 
-if(message.content === '!submit warcounter shield' || message.content === '!Submit Warcounter Shield' || message.content === '!Submit warcounter shield' || message.content === '!submit Warcounter shield' || message.content === '!submit warcounter Shield' || message.content === '!Submit Warcounter shield' || message.content === '!submit Warcounter Shield' || message.content === '!Submit warcounter Shield') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
-const CheckImage = client.channels.get('666305824813219870')
-const CheckText = client.channels.get('666305824813219870')
-const ShieldSubmission = client.channels.get('666385470514790440')
-const messages1 = await CheckText.fetchMessages({ limit: 2 });
-const messages2 = await CheckImage.fetchMessages({ limit: 2 });
+}//warcounter
+}//submit
 
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+} //channel ID
+}); //Top of client
 
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
 
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
 
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-ShieldSubmission.send(embed);
-CheckText.send("War Counter Submission Received.");
-}
-}
-
-if(message.content === '!submit warcounter s6' || message.content === '!Submit Warcounter S6' || message.content === '!Submit warcounter s6' || message.content === '!submit Warcounter s6' || message.content === '!submit warcounter S6' || message.content === '!Submit Warcounter s6' || message.content === '!submit Warcounter S6' || message.content === '!Submit warcounter S6') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
-const CheckImage = client.channels.get('666305824813219870')
-const CheckText = client.channels.get('666305824813219870')
-const S6Submission = client.channels.get('666385715566739467')
-const messages1 = await CheckText.fetchMessages({ limit: 2 });
-const messages2 = await CheckImage.fetchMessages({ limit: 2 });
-
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-S6Submission.send(embed);
-CheckText.send("War Counter Submission Received.");
-}
-}
-
-});
-
-//CHARACTERS NEW
+//*********CHARACTERS + TEAMS***********
+//example: !ironman speed || !asgardians)
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
@@ -2099,9 +1988,16 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 
-
-
+//TEAMS
+if (message.content === '!Asgardians') {
+	message.channel.bulkDelete(1)
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**ASGARDIANS** \n<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: 100 \n \n<:hela:661370019317284880> **Hela** \nHela's base speed is: 110, but her effective turn 1 speed is \n121.11 with Loki. \n \n<:loki:661370019145449473> **Loki** \nLoki's base speed is: 115, but his effective turn 1 speed is \n133.75 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: 108 \n \n<:thor:661370019279667248> **Thor** \nThor's base speed is: 90, but with Black Widow using her \nturn 1 special, his effective turn 1 speed is 102.27. \n \n<:greg:661392103900839936> **Undead Asgardian** \nUndead Asgardian's base speed is: 105, but his effective \nturn 1 speed is 130.")
+	message.channel.send(exampleEmbed);
 }
-
+}
 });
+
+
 client.login(process.env.TOKEN);
