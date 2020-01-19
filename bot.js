@@ -1231,7 +1231,6 @@ if(passive === "passive") {
 }
 
 if(speed === "speed") {
-	message.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack Bolt's speed is: 100")
