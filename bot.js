@@ -677,17 +677,17 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -695,7 +695,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -703,7 +703,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(passive === "passive") {
@@ -711,21 +711,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter's speed is: 118")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 } 
@@ -735,17 +735,17 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Special)** \n \n**Biohazard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -753,7 +753,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -761,7 +761,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Special)** \n \n**Biohazard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(passive === "passive") {
@@ -769,21 +769,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nA.I.M. Infector's base speed is **104**, but he gains: \n+5% to +%10 Speed after any character's first turn. \nWith level 4 passive, that makes his speed after turn one **114.4**. \nWith level 4 passive, **Scientist Supreme**, and 3 other AIM characters: \nHis effective turn 1 speed is **108.16**. \nWith an adjacent **A.I.M. Assaulter** with level 4 passive and no **Scientist Supreme**, **A.I.M. Infector's** effective turn 1 speed is usually **115.11**. /nWith **Assaulter** and his level 5 passive or level 4 passive along with \n**Scientist Supreme**, his effective turn 1 speed is **118**.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 } 
@@ -793,17 +793,17 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -811,7 +811,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -819,7 +819,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(passive === "passive") {
@@ -827,21 +827,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nA.I.M. Monstrosity's base speed is 77, but his effective turn 1 speed with an adjacent A.I.M. Assaulter is 85.33 with their level 4 passive, \nor 95.18 with their level 5 passive.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 } 
@@ -851,17 +851,17 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
 	.setThumbnail('https://i.imgur.com/qThfwy9.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Special)** \n \n**Surgery Drone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nHeal lowest Health ally and their adjacent allies for \n**6000 -> 7000** Health + 15% of this character's Max Health + \n**75% -> 100%** chance to flip Bleed on lowest Health ally and their adjacent allies.")
 	.setThumbnail('https://i.imgur.com/Y2X5nS8.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • T4 Upgrade** \n \n**On Turn** \n**75% -> 100%** chance to choose 1 random ally to apply 1 random positive effect from this list: Offense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \n \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by **+10% -> +20%**.")
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -869,7 +869,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
 	.setThumbnail('https://i.imgur.com/qThfwy9.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -877,7 +877,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Special)** \n \n**Surgery Drone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nHeal lowest Health ally and their adjacent allies for \n**6000 -> 7000** Health + 15% of this character's Max Health + \n**75% -> 100%** chance to flip Bleed on lowest Health ally and their adjacent allies.")
 	.setThumbnail('https://i.imgur.com/Y2X5nS8.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(passive === "passive") {
@@ -885,21 +885,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • T4 Upgrade** \n \n**On Turn** \n**75% -> 100%** chance to choose 1 random ally to apply 1 random positive effect from this list: Offense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \n \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by **+10% -> +20%**.")
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nA.I.M. Researcher's base speed is 81, but she can gain 10% to 20% speed bar multiple times from her and A.I.M. Assaulter's passive. \nHer possible effective turn 1 speed can be as follows: \n+10% Speed Bar: **89.33**, +20%: **101**, +30%: **114.33**, 40%: **131**, 50%: **152.43**.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 } 
@@ -909,17 +909,17 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
 	.setThumbnail('https://i.imgur.com/S00SWQw.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Special)** \n \n**Charge Capacitor • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt for 1 turn + Slow for 2 turns. Heal self and adjacent A.I.M. allies for **7000 -> 10000** Health + 10% of Max Health. Clear Speed Up on self.")
 	.setThumbnail('https://i.imgur.com/Ted3CoX.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • T4 Upgrade** \n \nAfter attacked, if Scientist Supreme is an ally, if still above 75% Health, transfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. \nGain +10% Max Health and **+10% -> +15%** Resistance.")
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -927,7 +927,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
 	.setThumbnail('https://i.imgur.com/S00SWQw.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -935,7 +935,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Special)** \n \n**Charge Capacitor • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt for 1 turn + Slow for 2 turns. Heal self and adjacent A.I.M. allies for **7000 -> 10000** Health + 10% of Max Health. Clear Speed Up on self.")
 	.setThumbnail('https://i.imgur.com/Ted3CoX.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(passive === "passive") {
@@ -943,21 +943,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • T4 Upgrade** \n \nAfter attacked, if Scientist Supreme is an ally, if still above 75% Health, transfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. \nGain +10% Max Health and **+10% -> +15%** Resistance.")
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nA.I.M. Security's base speed is 76, but her effective turn 1 speed with an adjacent A.I.M. Assaulter is 84.33 with their level 4 passive, \nor 94.18 with their level 5 passive.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -967,22 +967,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
 	.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **250% -> 300%** damage + \n**50% -> 75%** damage per HERO BRAWLER ally.")
 	.setThumbnail('https://i.imgur.com/0V2pdTr.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Ultimate)** \n \n**America's Starling • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nClear 3 positive effects. \nAttack primary target for **350% -> 430%** damage.")
 	.setThumbnail('https://i.imgur.com/hdqNsvC.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. \nHERO BRAWLER allies gain **+10% -> +20%** Max Health.")
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -990,7 +990,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
 	.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -998,7 +998,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **250% -> 300%** damage + \n**50% -> 75%** damage per HERO BRAWLER ally.")
 	.setThumbnail('https://i.imgur.com/0V2pdTr.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1006,7 +1006,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Ultimate)** \n \n**America's Starling • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nClear 3 positive effects. \nAttack primary target for **350% -> 430%** damage.")
 	.setThumbnail('https://i.imgur.com/hdqNsvC.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1014,21 +1014,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. \nHERO BRAWLER allies gain **+10% -> +20%** Max Health.")
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez's speed is: 115")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1038,22 +1038,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
 	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
 	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Ultimate)** \n \n**Stomp • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for **130% -> 140%** damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets.")
 	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
 	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1061,7 +1061,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
 	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1069,7 +1069,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
 	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1077,7 +1077,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Ultimate)** \n \n**Stomp • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for **130% -> 140%** damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets.")
 	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1085,21 +1085,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
 	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273> **Ant Man** \n**Ant-Man**'s base speed is 100, but with **Black Widow** \nusing her turn 1 special, his effective turn 1 speed is 110.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1109,22 +1109,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Basic)** \n \n**Beast • T4 Upgrade** \n \nBeast is a beast")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Special)** \n \n**Beast • T4 Upgrade** \n<:abilityon:663751832690229278> \nBeast is a beast.")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Ultimate)** \n \n**Beast • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184> \nBeast is a beast.")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Passive)** \n \n**Beast • T4 Upgrade** \n \nBeast is a beast.")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1132,7 +1132,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Basic)** \n \n**Beast • T4 Upgrade** \n \nBeast is a beast")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1140,7 +1140,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Special)** \n \n**Beast • T4 Upgrade** \n<:abilityon:663751832690229278> \nBeast is a beast.")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1148,7 +1148,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Ultimate)** \n \n**Beast • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184> \nBeast is a beast.")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1156,21 +1156,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076>	**Beast (Passive)** \n \n**Beast • T4 Upgrade** \n \nBeast is a beast.")
 	.setThumbnail('https://i.imgur.com/Q0V3pXn.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076> **Beast** \nBeast's speed is: oo. Hes such a beast, he has infinity speed.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:beast:663749980434989076> **Beast** \nBeast is not unlockable yet, jokes on you!**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1180,22 +1180,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
 	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
 	.setThumbnail('https://i.imgur.com/5wsashb.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **380% -> 500%** damage.")
 	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1203,7 +1203,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
 	.setThumbnail('https://i.imgur.com/qdQRIfE.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1211,7 +1211,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
 	.setThumbnail('https://i.imgur.com/5wsashb.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1219,7 +1219,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Ultimate)** \n \n**Sonic Scream • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **380% -> 500%** damage.")
 	.setThumbnail('https://i.imgur.com/IiJQ57n.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1227,22 +1227,22 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
 	.setThumbnail('https://i.imgur.com/JthP6vO.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack Bolt's speed is: 100")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack bolt is a legendary event.**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1252,22 +1252,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Basic)** \n \n**Claw Slash • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + \n30% Piercing. **90% -> 100%** chance to apply Slow.")
 	.setThumbnail('https://i.imgur.com/CBg3Fze.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Special)** \n \n**Hunter's Spirit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **190% -> 230%** damage + \n30% Piercing. Gain Offense Up for 2 turns. \nOn Crit, gain Counter.")
 	.setThumbnail('https://i.imgur.com/mkWgTWh.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Ultimate)** \n \n**Panther Rush • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **250% -> 280%** damage. \nChain to 1-3 adjacent targets for **170% -> 200%** damage. \nCounterattack breaks this Chain. \nWhile in Charged, attack all enemies for **220% -> 250%** damage, \nthen lose all Charged. This attack gains +20% Damage per Charged. \nAll attacks have +30% Piercing and **+15% -> +20%** \nExtra Crit Chance.")
 	.setThumbnail('https://i.imgur.com/WNirdk2.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • T4 Upgrade** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. \nOn Kill, fill Speed Bar by **80% -> 100%**. \nOn Defense Up, gain Deflect.")
 	.setThumbnail('https://i.imgur.com/VP20XOH.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1275,7 +1275,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Basic)** \n \n**Claw Slash • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + \n30% Piercing. **90% -> 100%** chance to apply Slow.")
 	.setThumbnail('https://i.imgur.com/CBg3Fze.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1283,7 +1283,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Special)** \n \n**Hunter's Spirit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **190% -> 230%** damage + \n30% Piercing. Gain Offense Up for 2 turns. \nOn Crit, gain Counter.")
 	.setThumbnail('https://i.imgur.com/mkWgTWh.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1291,7 +1291,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Ultimate)** \n \n**Panther Rush • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **250% -> 280%** damage. \nChain to 1-3 adjacent targets for **170% -> 200%** damage. \nCounterattack breaks this Chain. \nWhile in Charged, attack all enemies for **220% -> 250%** damage, \nthen lose all Charged. This attack gains +20% Damage per Charged. \nAll attacks have +30% Piercing and **+15% -> +20%** \nExtra Crit Chance.")
 	.setThumbnail('https://i.imgur.com/WNirdk2.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1299,21 +1299,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • T4 Upgrade** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. \nOn Kill, fill Speed Bar by **80% -> 100%**. \nOn Defense Up, gain Deflect.")
 	.setThumbnail('https://i.imgur.com/VP20XOH.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \nBlack Panther's speed is: 125 \nHis effective turn 1 speed is 187.5 with Shuri. \nWith Black Widow using her turn 1 special, his effective speed is still 125.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \nBlack Panther is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1323,22 +1323,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • T4 Upgrade** \n \nAttack primary target for **190% -> 250%** damage. \nDuring Stealth, copy & clear all positive effects on primary target.")
 	.setThumbnail('https://i.imgur.com/Adce8ne.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
 	.setThumbnail('https://i.imgur.com/l51dzex.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **230% -> 290%** damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for \n**170% -> 220%** damage + apply 2 Bleed for 2 turns. \nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/A2R5zPl.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • T4 Upgrade** \n \nGain **+10% -> +15%** Speed. \nThis is applied after any character has taken a turn. \nWhen in Stealth, gain Offense Up.")
 	.setThumbnail('https://i.imgur.com/ExIr73Q.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1346,7 +1346,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • T4 Upgrade** \n \nAttack primary target for **190% -> 250%** damage. \nDuring Stealth, copy & clear all positive effects on primary target.")
 	.setThumbnail('https://i.imgur.com/Adce8ne.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1354,7 +1354,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
 	.setThumbnail('https://i.imgur.com/l51dzex.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1362,7 +1362,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Ultimate)** \n \n**Widow's Bite • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **230% -> 290%** damage + apply Stun. \n60% chance to Chain up to 3 adjacent targets for \n**170% -> 220%** damage + apply 2 Bleed for 2 turns. \nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/A2R5zPl.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1370,21 +1370,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • T4 Upgrade** \n \nGain **+10% -> +15%** Speed. \nThis is applied after any character has taken a turn. \nWhen in Stealth, gain Offense Up.")
 	.setThumbnail('https://i.imgur.com/ExIr73Q.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \nBlack Widow's base speed is 135, \nbut she gains +5%, +10%, or +15% speed bar \ndepending on her passive level after any character's first turn. \nThat makes her speed after turn one 141.75, 148.5, or 155.25 depending on her passive level.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \nBlack Widow is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1394,22 +1394,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Basic)** \n \n**Throwing Knife • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \nThis attack cannot miss **though it can be dodged**. \nGain **+15% -> +20%** Crit chance for this attack.")
 	.setThumbnail('https://i.imgur.com/WSaVkNn.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Special)** \n \n**Card Trick • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 230%** damage and **+20% -> +25%** Crit chance. 80% chance to gain a Bonus attack for 190% damage and +40% Crit chance.")
 	.setThumbnail('https://i.imgur.com/qydaGnn.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Ultimate)** \n \n**Kill Shot • T4 Upgrade** \n<:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **500% -> 550%** damage. Gain +30% Crit chance and +20% Crit damage for this attack.")
 	.setThumbnail('https://i.imgur.com/Q2cxNpU.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Passive)** \n \n**Never Miss • T4 Upgrade** \n \nGain +10% Accuracy. All allies gain **+5% -> +10%** Accuracy. \nMERCENARY allies gain +10% Crit damage.")
 	.setThumbnail('https://i.imgur.com/3P6OIZC.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1417,7 +1417,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Basic)** \n \n**Throwing Knife • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \nThis attack cannot miss **though it can be dodged**. \nGain **+15% -> +20%** Crit chance for this attack.")
 	.setThumbnail('https://i.imgur.com/WSaVkNn.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1425,7 +1425,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Special)** \n \n**Card Trick • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 230%** damage and **+20% -> +25%** Crit chance. 80% chance to gain a Bonus attack for 190% damage and +40% Crit chance.")
 	.setThumbnail('https://i.imgur.com/qydaGnn.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1433,7 +1433,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Ultimate)** \n \n**Kill Shot • T4 Upgrade** \n<:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **500% -> 550%** damage. Gain +30% Crit chance and +20% Crit damage for this attack.")
 	.setThumbnail('https://i.imgur.com/Q2cxNpU.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1441,21 +1441,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Passive)** \n \n**Never Miss • T4 Upgrade** \n \nGain +10% Accuracy. All allies gain **+5% -> +10%** Accuracy. \nMERCENARY allies gain +10% Crit damage.")
 	.setThumbnail('https://i.imgur.com/3P6OIZC.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828> **Bullseye** \nBullseye's speed is: 110.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828> **Bullseye** \nBullseye is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1465,22 +1465,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Basic)** \n \n**Plasma Rifle • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + \ngain Charged.")
 	.setThumbnail('https://i.imgur.com/B953HdD.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Special)** \n \n**Overload • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \nchange Speed Bar by -50%. Attack adjacent targets for: \n**150% -> 170%** damage + change Speed Bar by -10%. \n \nIf Charged, in addition, attack targets 2 spaces from primary for **150% -> 170%** damage and change Speed Bar by -10%, then lose Charged.")
 	.setThumbnail('https://i.imgur.com/uc6jIiV.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Ultimate)** \n \n**Psychic Surge • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **470% -> 530%** Unavoidable damage. \nIf Deadpool is an ally, gain assist from Deadpool. \nOn Kill, fill Cable and Deadpool's Speed Bars by 70%.")
 	.setThumbnail('https://i.imgur.com/MfPeGOZ.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Passive)** \n \n**Time Sense • T4 Upgrade** \n \nOn Spawn, Self and all allies gain 5% Speed Bar. \nOn Turn, **20% -> 30%** chance to apply Counter to a random \nMUTANT ally, and 20% chance to apply Counter to another random ally.")
 	.setThumbnail('https://i.imgur.com/JBgSQPz.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1488,7 +1488,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Basic)** \n \n**Plasma Rifle • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + \ngain Charged.")
 	.setThumbnail('https://i.imgur.com/B953HdD.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1496,7 +1496,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Special)** \n \n**Overload • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \nchange Speed Bar by -50%. Attack adjacent targets for: \n**150% -> 170%** damage + change Speed Bar by -10%. \n \nIf Charged, in addition, attack targets 2 spaces from primary for **150% -> 170%** damage and change Speed Bar by -10%, then lose Charged.")
 	.setThumbnail('https://i.imgur.com/uc6jIiV.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1504,7 +1504,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Ultimate)** \n \n**Psychic Surge • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **470% -> 530%** Unavoidable damage. \nIf Deadpool is an ally, gain assist from Deadpool. \nOn Kill, fill Cable and Deadpool's Speed Bars by 70%.")
 	.setThumbnail('https://i.imgur.com/MfPeGOZ.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1512,21 +1512,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Passive)** \n \n**Time Sense • T4 Upgrade** \n \nOn Spawn, Self and all allies gain 5% Speed Bar. \nOn Turn, **20% -> 30%** chance to apply Counter to a random \nMUTANT ally, and 20% chance to apply Counter to another random ally.")
 	.setThumbnail('https://i.imgur.com/JBgSQPz.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154> **Cable** \nCable's base speed is 91, but his effective turn 1 speed is 95.54.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154> **Cable** \nCable is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1536,22 +1536,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Basic)** \n \n**Shield Bash • T4 Upgrade** \n \nAttack primary target for **200% -> 220%** damage. \n30% chance to Chain to up to 2 adjacent targets for 170% damage. \n**50% -> 100%** chance to gain Defense Up for 1 turn. \nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/FPGV5SJ.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Special)** \n \n**Inspire • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt and Defense Up on self. \nApply Defense Up to all allies. \nGrant 1 Ability Energy to 1-2 AVENGER allies. \nGrant 1 Ability Energy to **1-2 -> 1-3** random allies.")
 	.setThumbnail('https://i.imgur.com/rWpO013.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Ultimate)** \n \n**Shield Throw • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **280% -> 300%** damage, \nclearing 2 positive effects. \nChain to 1-2 additional targets for **210% -> 230%** damage, \nclearing 2 positive effects. Dodge breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/TsGHh0g.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Passive)** \n \n**!Assemble • T4 Upgrade** \n \n+25% Block chance. **+5% -> +10%** Block Amount. \n+10% Max Health. +5% Block chance per AVENGER ally.")
 	.setThumbnail('https://i.imgur.com/JiJhO67.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1559,7 +1559,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Basic)** \n \n**Shield Bash • T4 Upgrade** \n \nAttack primary target for **200% -> 220%** damage. \n30% chance to Chain to up to 2 adjacent targets for 170% damage. \n**50% -> 100%** chance to gain Defense Up for 1 turn. \nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/FPGV5SJ.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1567,7 +1567,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Special)** \n \n**Inspire • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt and Defense Up on self. \nApply Defense Up to all allies. \nGrant 1 Ability Energy to 1-2 AVENGER allies. \nGrant 1 Ability Energy to **1-2 -> 1-3** random allies.")
 	.setThumbnail('https://i.imgur.com/rWpO013.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1575,7 +1575,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Ultimate)** \n \n**Shield Throw • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **280% -> 300%** damage, \nclearing 2 positive effects. \nChain to 1-2 additional targets for **210% -> 230%** damage, \nclearing 2 positive effects. Dodge breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/TsGHh0g.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1583,21 +1583,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Passive)** \n \n**!Assemble • T4 Upgrade** \n \n+25% Block chance. **+5% -> +10%** Block Amount. \n+10% Max Health. +5% Block chance per AVENGER ally.")
 	.setThumbnail('https://i.imgur.com/JiJhO67.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701> **Captain America** \nCaptain America's base speed is 114, but with Black Widow using her turn 1 special, his effective turn 1 speed is 120.33.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701> **Captain America** \nCaptain America is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1607,22 +1607,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Basic)** \n \n**Princess Sparkle Fist • T4 Upgrade** \n \nAttack primary target for **280% -> 320%** damage. \n50% chance to Chain to 1 adjacent target for **180% -> 220%** damage. \nIf not in Binary, gain +1 Charged, up to a maximum of 5 If in Binary, lose 1 Charged. On losing all Charged, end Binary. \nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/gAN4p41.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Special)** \n \n**Warbird • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **360% -> 450%** damage + \nclear all positive effects. \nIf not in Binary, gain +1 Charged, up to a maximum of 5. \nIf in Binary, lose 1 Charged. On losing all Charged, end Binary.")
 	.setThumbnail('https://i.imgur.com/M1CQNl8.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Ultimate)** \n \n**Binary • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nGain Binary. Clear all negative effects from self. \nAttack primary target for **540% -> 640%** damage. \nThis attack cannot be dodged and cannot crit.")
 	.setThumbnail('https://i.imgur.com/DFTzcpK.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Passive)** \n \n**Higher. Further. Faster. • T4 Upgrade** \n \nWhile in Binary gain: 25% Damage, 25% Armor, 100% Focus, and 100% Resistance. While in Binary, on End of Turn, attack all enemies for **120% -> 150%** damage. \nOn Spawn: \n Clear all Charged. If any Charged were cleared, gain Regeneration. \nGain Charged, If at least one ally is MILITARY, gain an additional Charge. \nMILITARY allies gain +15% Max Health. \nMILITARY allies gain +10% Damage. \nIf not in Binary, when this character gains Ability Energy, \ngain +1 Charged, up to a maximum of 5. \nOn Turn, heal self for **10% -> 20%** of Max Health.")
 	.setThumbnail('https://i.imgur.com/Tnz6HZT.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1630,7 +1630,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Basic)** \n \n**Princess Sparkle Fist • T4 Upgrade** \n \nAttack primary target for **280% -> 320%** damage. \n50% chance to Chain to 1 adjacent target for **180% -> 220%** damage. \nIf not in Binary, gain +1 Charged, up to a maximum of 5 If in Binary, lose 1 Charged. On losing all Charged, end Binary. \nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/gAN4p41.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1638,7 +1638,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Special)** \n \n**Warbird • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **360% -> 450%** damage + \nclear all positive effects. \nIf not in Binary, gain +1 Charged, up to a maximum of 5. \nIf in Binary, lose 1 Charged. On losing all Charged, end Binary.")
 	.setThumbnail('https://i.imgur.com/M1CQNl8.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1646,7 +1646,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Ultimate)** \n \n**Binary • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nGain Binary. Clear all negative effects from self. \nAttack primary target for **540% -> 640%** damage. \nThis attack cannot be dodged and cannot crit.")
 	.setThumbnail('https://i.imgur.com/DFTzcpK.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1654,21 +1654,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Passive)** \n \n**Higher. Further. Faster. • T4 Upgrade** \n \nWhile in Binary gain: 25% Damage, 25% Armor, 100% Focus, and 100% Resistance. While in Binary, on End of Turn, attack all enemies for **120% -> 150%** damage. \nOn Spawn: \n Clear all Charged. If any Charged were cleared, gain Regeneration. \nGain Charged, If at least one ally is MILITARY, gain an additional Charge. \nMILITARY allies gain +15% Max Health. \nMILITARY allies gain +10% Damage. \nIf not in Binary, when this character gains Ability Energy, \ngain +1 Charged, up to a maximum of 5. \nOn Turn, heal self for **10% -> 20%** of Max Health.")
 	.setThumbnail('https://i.imgur.com/Tnz6HZT.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \nCaptain Marvel's speed is: 127")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \nCaptain Marvel is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1678,22 +1678,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Basic)** \n \n**Cleave • T4 Upgrade** \n \nAttack primary target for **230% -> 280%** damage. \nIf the primary target has a negative effect, \nChain to 1-2 adjacent targets for 90% damage + \nspread 2 negative effects from the primary target to secondary targets. \nThis will not spread Stun. Counterattack breaks this Chain.")
 	.setThumbnail('hhttps://i.imgur.com/4ZYwBP6.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Special)** \n \n**Slaughter • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **350% -> 420%** damage + \n100% additional damage per negative effect. \nRemove all negative effects from the primary target. \nAttack all adjacent targets for **180% -> 250%** damage.")
 	.setThumbnail('https://i.imgur.com/1qWwq9c.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Ultimate)** \n \n**Absolute Carnage • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **420% -> 500%** Piercing + \napply 2 Bleed for 2 turns. If the primary target is above 50% Health, \napply an additional Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/xdp5RKK.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Passive)** \n \n**Frenzied Fury • T4 Upgrade** \n \nWhen an enemy drops below 25% Health, change Speed Bar of self and all SYMBIOTE allies by **+20% -> +30%** + heal them for 10% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/n2opSAu.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1701,7 +1701,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Basic)** \n \n**Cleave • T4 Upgrade** \n \nAttack primary target for **230% -> 280%** damage. \nIf the primary target has a negative effect, \nChain to 1-2 adjacent targets for 90% damage + \nspread 2 negative effects from the primary target to secondary targets. \nThis will not spread Stun. Counterattack breaks this Chain.")
 	.setThumbnail('hhttps://i.imgur.com/4ZYwBP6.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1709,7 +1709,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Special)** \n \n**Slaughter • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **350% -> 420%** damage + \n100% additional damage per negative effect. \nRemove all negative effects from the primary target. \nAttack all adjacent targets for **180% -> 250%** damage.")
 	.setThumbnail('https://i.imgur.com/1qWwq9c.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1717,7 +1717,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Ultimate)** \n \n**Absolute Carnage • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack primary target for **420% -> 500%** Piercing + \napply 2 Bleed for 2 turns. If the primary target is above 50% Health, \napply an additional Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/xdp5RKK.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1725,21 +1725,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Passive)** \n \n**Frenzied Fury • T4 Upgrade** \n \nWhen an enemy drops below 25% Health, change Speed Bar of self and all SYMBIOTE allies by **+20% -> +30%** + heal them for 10% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/n2opSAu.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570> **Carnage** \nCarnage's speed is: 126.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570> **Carnage** \nCarnage is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
@@ -1749,22 +1749,22 @@ if(kit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Basic)** \n \n**Ringdinger • T4 Upgrade** \n \nAttack primary target for **290% -> 340%** damage + \napply Offense Down for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/6jkNvF4.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Special)** \n \n**Altruism • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt. Gain **1 -> 2** Counter. \nApply 2 Deflect to Self and X-MEN Allies. \nApply Deflect to all other allies. \nIf Phoenix is an ally, gain Taunt for 2 turns.")
 	.setThumbnail('https://i.imgur.com/jYII4lt.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Ultimate)** \n \n**Enduring Protection • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nIncrease duration of positive effects on self by **+2 -> +3**, \nup to a maximum of 5. Gain 2 Deathproof. \nGain +2 Charged, up to a maximum of 5.")
 	.setThumbnail('https://i.imgur.com/MBeRT0x.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Passive)** \n \n**Steel Form • T4 Upgrade** \n \nOn Spawn, if Charged, generate 1 Ability Energy for self. \nThen clear Charged. \nOn Spawn, if Phoenix is an ally: \nGain Defense Up for **1 -> 2** turns. \nApply Defense Up to all X-MEN allies. \nWhen a negative effect is applied to an X-MEN ally, gain +1 Charged, up to a maximum of 5. \nWhile Charged, when attacked, attack that enemy for \n**75% -> 100%** damage +10% damage per Charged. \nWhen an X-MEN ally drops below 50% Max Health, \ngain +1 Taunt, up to a maximum of 2. \nWhile in Defense Up, gain +1000% Resistance. \nGain +15% Max Health. X-MEN allies gain +15% Max Health.")
 	.setThumbnail('https://i.imgur.com/CgRxvbF.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(basic === "basic") {
@@ -1772,7 +1772,7 @@ if(basic === "basic") {
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Basic)** \n \n**Ringdinger • T4 Upgrade** \n \nAttack primary target for **290% -> 340%** damage + \napply Offense Down for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/6jkNvF4.png') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 if(special === "special") {
@@ -1780,7 +1780,7 @@ if(special === "special") {
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Special)** \n \n**Altruism • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt. Gain **1 -> 2** Counter. \nApply 2 Deflect to Self and X-MEN Allies. \nApply Deflect to all other allies. \nIf Phoenix is an ally, gain Taunt for 2 turns.")
 	.setThumbnail('https://i.imgur.com/jYII4lt.png') 
-	msg.channel.send(exampleEmbed2);
+	message.channel.send(exampleEmbed2);
 }
 
 if(ultimate === "ultimate") {
@@ -1788,7 +1788,7 @@ if(ultimate === "ultimate") {
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Ultimate)** \n \n**Enduring Protection • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nIncrease duration of positive effects on self by **+2 -> +3**, \nup to a maximum of 5. Gain 2 Deathproof. \nGain +2 Charged, up to a maximum of 5.")
 	.setThumbnail('https://i.imgur.com/MBeRT0x.png') 
-	msg.channel.send(exampleEmbed3);
+	message.channel.send(exampleEmbed3);
 }
 
 if(passive === "passive") {
@@ -1796,21 +1796,21 @@ if(passive === "passive") {
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Passive)** \n \n**Steel Form • T4 Upgrade** \n \nOn Spawn, if Charged, generate 1 Ability Energy for self. \nThen clear Charged. \nOn Spawn, if Phoenix is an ally: \nGain Defense Up for **1 -> 2** turns. \nApply Defense Up to all X-MEN allies. \nWhen a negative effect is applied to an X-MEN ally, gain +1 Charged, up to a maximum of 5. \nWhile Charged, when attacked, attack that enemy for \n**75% -> 100%** damage +10% damage per Charged. \nWhen an X-MEN ally drops below 50% Max Health, \ngain +1 Taunt, up to a maximum of 2. \nWhile in Defense Up, gain +1000% Resistance. \nGain +15% Max Health. X-MEN allies gain +15% Max Health.")
 	.setThumbnail('https://i.imgur.com/CgRxvbF.png') 
-	msg.channel.send(exampleEmbed4);
+	message.channel.send(exampleEmbed4);
 }
 
 if(speed === "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528> **Colossus** \nColossus's speed is: 88.")
-	msg.channel.send(speedEmbed);
+	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528> **Colossus** \nColossus is farmable in:**")
-	msg.channel.send(speedEmbed); 
+	message.channel.send(speedEmbed); 
 }
 
 }
