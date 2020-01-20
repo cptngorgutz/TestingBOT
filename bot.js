@@ -486,9 +486,9 @@ message.channel.send(embed);
 
 
 if(command === 'submit') {
-if (warcounter === "warcounter"){	
+if (args[1] === "warcounter"){	
 }
-if (aim === "aim"){	
+if (args[1] === "aim"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const AimSubmission = client.channels.get('666370149766529054')
@@ -517,7 +517,7 @@ CheckText.send("War Counter Submission Received.");
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
-if (asgardians === "asgardians"){	
+if (args[1] === "asgardians"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const AsgardianSubmission = client.channels.get('666384999246725150')
@@ -546,7 +546,7 @@ CheckText.send("War Counter Submission Received.");
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
-if (brawlers === "brawlers"){	
+if (args[1] === "brawlers"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const BrawlerSubmission = client.channels.get('666385224174927873')
@@ -575,7 +575,7 @@ CheckText.send("War Counter Submission Received.");
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
-if (shield === "shield"){	
+if (args[1] === "shield"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const ShieldSubmission = client.channels.get('666385470514790440')
@@ -604,7 +604,7 @@ CheckText.send("War Counter Submission Received.");
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
-if (s6 === "s6"){	
+if (args[1] === "s6"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const S6Submission = client.channels.get('666385715566739467')
