@@ -631,7 +631,6 @@ CheckText.send("War Counter Submission Received.");
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
 }
-}
 } 
 });
 
