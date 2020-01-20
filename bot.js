@@ -273,16 +273,16 @@ if (msg.content === '!kit') {
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let ABaimcounter = args[0];
-let CDaimcounterinfo = args[0];
-let EFasgardianscounter = args[0];
-let GHasgardianscounterinfo = args[0];
-let IJbrawlerscounter = args[0];
-let KLbrawlerscounterinfo = args[0];
-let MNshieldcounter = args[0];
-let OPshieldcounterinfo = args[0];
-let QRs6counter = args[0];
-let STs6counterinfo = args[0];
+let aimcounter = args[0];
+let aimcounterinfo = args[0];
+let asgardianscounter = args[0];
+let asgardianscounterinfo = args[0];
+let brawlerscounter = args[0];
+let brawlerscounterinfo = args[0];
+let shieldcounter = args[0];
+let shieldcounterinfo = args[0];
+let s6counter = args[0];
+let s6counterinfo = args[0];
 //Submit war counters below
 let warcounter = args[0]; 
 let aim = args[1];
