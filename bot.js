@@ -514,6 +514,8 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 AimSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
 if (args[1] === "asgardians"){	
 const CheckImage = client.channels.get('666305824813219870')
@@ -541,6 +543,8 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 AsgardianSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
 if (args[1] === "brawlers"){	
 const CheckImage = client.channels.get('666305824813219870')
@@ -568,6 +572,8 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 BrawlerSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
 if (args[1] === "shield"){	
 const CheckImage = client.channels.get('666305824813219870')
@@ -595,6 +601,8 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 ShieldSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
 if (args[1] === "s6"){	
 const CheckImage = client.channels.get('666305824813219870')
@@ -622,6 +630,8 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 S6Submission.send(embed);
 CheckText.send("War Counter Submission Received.");
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
 }
 }
 } else {
