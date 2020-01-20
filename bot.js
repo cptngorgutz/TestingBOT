@@ -506,7 +506,7 @@ if(command === 'submit') {
 if (args[0]){	
 message.channel.send("Do nothing.")
 }
-if (args[1]){	
+if (args[1] === aim){	
 message.channel.send("This is aim warcounter submission.")
 }
 
