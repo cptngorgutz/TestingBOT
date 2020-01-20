@@ -276,12 +276,15 @@ client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let aim = args[0];
-let aim+info = args[0];
+let aiminfo = args[0];
 let asgardians = args[0];
-let asgardians+info = args[0];
+let asgardiansinfo = args[0];
 let brawlers = args[0];
+let brawlersinfo = args[0];
 let shield = args[0];
+let shieldinfo = args[0];
 let s6 = args[0];
+let s6info = args[0];
 //Submit war counters below
 let warcounter = args[0]; 
 let aim = args[1];
