@@ -492,7 +492,7 @@ embed.setImage(Image.url)
 message.channel.send(embed);
 } else{
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}sage.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
+}
 }
 
 if(command === 'submit') {
