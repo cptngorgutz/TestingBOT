@@ -504,31 +504,150 @@ let s6 = args[1];
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'submit') {
 if (args[0] === "warcounter"){	
-message.channel.send("Do nothing.")
 }
 if (args[1] === "aim"){	
-message.channel.send("This is aim warcounter submission.")
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
+const AimSubmission = client.channels.get('666370149766529054')
+const messages1 = await CheckText.fetchMessages({ limit: 2 });
+const messages2 = await CheckImage.fetchMessages({ limit: 2 });
+
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+AimSubmission.send(embed);
+CheckText.send("War Counter Submission Received.");
 }
 
 if (args[1] === "asgardians"){	
-message.channel.send("This is asgardian warcounter submission.")
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
+const AsgardianSubmission = client.channels.get('666384999246725150')
+const messages1 = await CheckText.fetchMessages({ limit: 2 });
+const messages2 = await CheckImage.fetchMessages({ limit: 2 });
+
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+AsgardianSubmission.send(embed);
+CheckText.send("War Counter Submission Received.");
 }
 
 if (args[1] === "brawlers"){	
-message.channel.send("This is brawlers warcounter submission.")
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
+const BrawlerSubmission = client.channels.get('666385224174927873')
+const messages1 = await CheckText.fetchMessages({ limit: 2 });
+const messages2 = await CheckImage.fetchMessages({ limit: 2 });
+
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+BrawlerSubmission.send(embed);
+CheckText.send("War Counter Submission Received.");
 }
 
 if (args[1] === "shield"){	
-message.channel.send("This is shield warcounter submission.")
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
+const ShieldSubmission = client.channels.get('666385470514790440')
+const messages1 = await CheckText.fetchMessages({ limit: 2 });
+const messages2 = await CheckImage.fetchMessages({ limit: 2 });
+
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+ShieldSubmission.send(embed);
+CheckText.send("War Counter Submission Received.");
 }
 
 if (args[1] === "s6"){	
-message.channel.send("This is s6 warcounter submission.")
-}
-}//warcounter
-}//submit
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
+const S6Submission = client.channels.get('666385715566739467')
+const messages1 = await CheckText.fetchMessages({ limit: 2 });
+const messages2 = await CheckImage.fetchMessages({ limit: 2 });
 
-}); //Top of client
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+S6Submission.send(embed);
+CheckText.send("War Counter Submission Received.");
+}
+}
+}
+
+});
 
 
 
