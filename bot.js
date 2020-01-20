@@ -124,9 +124,6 @@ client.on('message', msg => {
 	}}
 	});
 
-
-//********************************************************************************************************
-
 client.on('message', msg => {	
 //ULTRON
 if (msg.content === '!Ultron Basic 7') {
@@ -267,10 +264,44 @@ if (msg.content === '!kit') {
 
 });
 
-//WAR COUNTERS
-client.on('message', async message => {
-if(message.content === '!counter aim+info' || message.content === '!Counter Aim+Info' || message.content === '!Counter aim+info' || message.content === '!counter Aim+info' || message.content === '!counter aim+Info' || message.content === '!Counter Aim+info' || message.content === '!counter Aim+Info' || message.content === '!Counter aim+Info') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
+
+
+
+
+//*********WAR COUNTERS + SUBMIT WAR COUNTERS***********
+//example: !counter aim/+info || !submit warcounter aim)      //NEED TO COMBINE BOTH OF THESE
+
+//SUBMIT WAR COUNTERS
+client.on("message", async message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+let aim = args[0];
+let aim+info = args[0];
+let asgardians = args[0];
+let asgardians+info = args[0];
+let brawlers = args[0];
+let shield = args[0];
+let s6 = args[0];
+//Submit war counters below
+let warcounter = args[0]; 
+let aim = args[1];
+let asgardians = args[1];
+let brawlers = args[1];
+let shield = args[1];
+let s6 = args[1];
+
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
+if(command === 'counter') {
+if (args[0] === "aim"){	
+const aimcounterimage = client.channels.get('666332891730673668')
+aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counteraim = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(counteraim.url)
+message.channel.send(attachment);
+})
+}
+if (args[0] === "aim+info"){	
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -301,20 +332,16 @@ message.channel.send(embed);
 } else{
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
-}
-
-if(message.content === '!counter aim' || message.content === '!Counter Aim' || message.content === '!Counter aim' || message.content === '!counter Aim') {
-const aimcounterimage = client.channels.get('666332891730673668')
-aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
-const counteraim = messages.first().attachments.first()
+if (args[0] === "asgardians"){	
+const asgardcounterimage = client.channels.get('666340204872990730')
+asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counterasgard = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(counteraim.url)
+const attachment = new Attachment(counterasgard.url)
 message.channel.send(attachment);
 })
 }
-
-if(message.content === '!counter asgardians+info' || message.content === '!Counter Asgardians+Info' || message.content === '!Counter asgardians+info' || message.content === '!counter Asgardians+info' || message.content === '!counter asgardians+Info' || message.content === '!Counter Asgardians+info' || message.content === '!counter Asgardians+Info' || message.content === '!Counter asgardians+Info') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
+if (args[0] === "asgardians+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -345,20 +372,16 @@ message.channel.send(embed);
 } else{
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
-}
-
-if(message.content === '!counter asgardians' || message.content === '!Counter Asgardians' || message.content === '!Counter asgardians' || message.content === '!counter Asgardians') {
-const asgardcounterimage = client.channels.get('666340204872990730')
-asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
-const counterasgard = messages.first().attachments.first()
+if (args[0] === "brawlers"){	
+const brawlerscounterimage = client.channels.get('666340239903686659')
+brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counterbrawlers = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(counterasgard.url)
+const attachment = new Attachment(counterbrawlers.url)
 message.channel.send(attachment);
 })
 }
-
-if(message.content === '!counter brawlers+info' || message.content === '!Counter Brawlers+Info' || message.content === '!Counter brawlers+info' || message.content === '!counter Brawlers+info' || message.content === '!counter brawlers+Info' || message.content === '!Counter Brawlers+info' || message.content === '!counter Brawlers+Info' || message.content === '!Counter brawlers+Info') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
+if (args[0] === "brawlers+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
 const channelToCheckText = client.channels.get('666317820656615435')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -389,20 +412,16 @@ message.channel.send(embed);
 } else{
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
-}
-
-if(message.content === '!counter brawlers' || message.content === '!Counter Brawlers' || message.content === '!Counter brawlers' || message.content === '!counter Brawlers') {
-const brawlerscounterimage = client.channels.get('666340239903686659')
-brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
-const counterbrawlers = messages.first().attachments.first()
+if (args[0] === "shield"){	
+const shieldcounterimage = client.channels.get('666340284962963524')
+shieldcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+const countershield = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(counterbrawlers.url)
+const attachment = new Attachment(countershield.url)
 message.channel.send(attachment);
 })
 }
-
-if(message.content === '!counter shield+info' || message.content === '!Counter Shield+Info' || message.content === '!Counter shield+info' || message.content === '!counter Shield+info' || message.content === '!counter shield+Info' || message.content === '!Counter Shield+info' || message.content === '!counter Shield+Info' || message.content === '!Counter shield+Info') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
+if (args[0] === "shield+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -433,20 +452,16 @@ message.channel.send(embed);
 } else{
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
-}
-
-if(message.content === '!counter shield' || message.content === '!Counter Shield' || message.content === '!Counter shield' || message.content === '!counter Shield' || message.content === '!counter coulson' || message.content === '!Counter Coulson' || message.content === '!Counter coulson' || message.content === '!counter Coulson') {
-const shieldcounterimage = client.channels.get('666340284962963524')
-shieldcounterimage.fetchMessages({ limit: 1 }).then(messages => {
-const countershield = messages.first().attachments.first()
+if (args[0] === "s6"){	
+const s6counterimage = client.channels.get('666340284962963524')
+s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
+const counters6 = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(countershield.url)
+const attachment = new Attachment(counters6.url)
 message.channel.send(attachment);
 })
 }
-
-if(message.content === '!counter s6+info' || message.content === '!Counter S6+Info' || message.content === '!Counter s6+info' || message.content === '!counter S6+info' || message.content === '!counter s6+Info' || message.content === '!Counter S6+info' || message.content === '!counter S6+Info' || message.content === '!Counter s6+Info') {
-if (message.channel.id === '666305824813219870') { //bot spam channel
+if (args[0] === "s6+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
 const channelToCheckText = client.channels.get('666319009465237524')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -476,38 +491,15 @@ embed.setImage(Image.url)
 message.channel.send(embed);
 } else{
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
-}
-}
-
-if(message.content === '!counter s6' || message.content === '!Counter S6' || message.content === '!Counter s6' || message.content === '!counter S6') {
-const s6counterimage = client.channels.get('666340284962963524')
-s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
-const counters6 = messages.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(counters6.url)
-message.channel.send(attachment);
-})
+}sage.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
 
-});
-
-client.on("message", async message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-let warcounter = args[0]; 
-let aim = args[1];
-let asgardians = args[1];
-let brawlers = args[1];
-let shield = args[1];
-let s6 = args[1];
-
-if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'submit') {
 if (args[0] === "warcounter"){	
 }
 if (args[1] === "aim"){	
-const CheckImage = client.channels.get('617707484626288672')
-const CheckText = client.channels.get('617707484626288672')
+const CheckImage = client.channels.get('666305824813219870')
+const CheckText = client.channels.get('666305824813219870')
 const AimSubmission = client.channels.get('666370149766529054')
 const messages1 = await CheckText.fetchMessages({ limit: 2 });
 const messages2 = await CheckImage.fetchMessages({ limit: 2 });
@@ -532,7 +524,6 @@ embed.setImage(Image.url)
 AimSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
-
 if (args[1] === "asgardians"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
@@ -560,7 +551,6 @@ embed.setImage(Image.url)
 AsgardianSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
-
 if (args[1] === "brawlers"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
@@ -588,7 +578,6 @@ embed.setImage(Image.url)
 BrawlerSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
-
 if (args[1] === "shield"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
@@ -616,7 +605,6 @@ embed.setImage(Image.url)
 ShieldSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
-
 if (args[1] === "s6"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
@@ -645,10 +633,11 @@ S6Submission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
 }
+
+
+
 }
-
 });
-
 
 
 //*********CHARACTERS + TEAMS***********
