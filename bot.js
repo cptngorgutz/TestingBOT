@@ -291,8 +291,8 @@ let brawlers = args[1];
 let shield = args[1];
 let s6 = args[1];
 
-if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'counter') {
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if (aimcounter === "aim"){	
 const aimcounterimage = client.channels.get('666332891730673668')
 aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -330,8 +330,6 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
 if (asgardianscounter === "asgardians"){	
 const asgardcounterimage = client.channels.get('666340204872990730')
@@ -370,8 +368,6 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
 if (brawlerscounter === "brawlers"){	
 const brawlerscounterimage = client.channels.get('666340239903686659')
@@ -410,8 +406,6 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
 if (shieldcounter === "shield"){	
 const shieldcounterimage = client.channels.get('666340284962963524')
@@ -450,8 +444,6 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
 if (s6counter === "s6"){	
 const s6counterimage = client.channels.get('666340284962963524')
@@ -490,10 +482,8 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-} else{
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")
 }
-}
+
 
 if(command === 'submit') {
 if (args[0] === "warcounter"){	
@@ -634,9 +624,9 @@ S6Submission.send(embed);
 CheckText.send("War Counter Submission Received.");
 }
 }
-
-
-
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.")	
+}
 }
 });
 
