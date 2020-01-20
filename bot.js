@@ -494,35 +494,35 @@ message.channel.send(attachment);
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let warcounter = args[1]; 
-let aim = args[2];
-let asgardians = args[2];
-let brawlers = args[2];
-let shield = args[2];
-let s6 = args[2];
+let warcounter = args[0]; 
+let aim = args[1];
+let asgardians = args[1];
+let brawlers = args[1];
+let shield = args[1];
+let s6 = args[1];
 
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'submit') {
-if (args[1]){	
+if (args[0]){	
 message.channel.send("Do nothing.")
 }
-if (args[2]){	
+if (args[1]){	
 message.channel.send("This is aim warcounter submission.")
 }
 
-if (args[2]){	
+if (args[1]){	
 message.channel.send("This is asgardian warcounter submission.")
 }
 
-if (args[2]){	
+if (args[1]){	
 message.channel.send("This is brawlers warcounter submission.")
 }
 
-if (args[2]){	
+if (args[1]){	
 message.channel.send("This is shield warcounter submission.")
 }
 
-if (args[2]){	
+if (args[1]){	
 message.channel.send("This is s6 warcounter submission.")
 }
 }//warcounter
