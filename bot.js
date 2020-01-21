@@ -2098,7 +2098,7 @@ let minion = args[0];
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'trait') {
-if(aimcontrollerminion === "aim controller minion"){
+if(aimcontrollerminion === 'aim controller minion'){
 message.channel.send("Aim/Controller/Minion/ Characters: Aim Infector");
 }
 if(aim === "aim") {
