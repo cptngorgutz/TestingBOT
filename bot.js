@@ -2095,26 +2095,95 @@ if (message.content === '!Asgardians') {
 
 
 //*********TESTING TRAITS***********
-client.on("message", message => {
-if (message.content.toLowerCase() === '!trait aim') {
-  	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assault \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n <:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-	message.channel.send(exampleEmbed);
+client.on("message", async message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+let aim = args[0];
+let asgardian = args[0];
+let avenger = args[0];
+let bio = args[0];
+let blaster = args[0];
+let brawler = args[0];
+----------------------
+let aaim = args[1];
+let aasgardian = args[1];
+let aavenger = args[1];
+let abio = args[1];
+let ablaster = args[1];
+let abrawler = args[1];
+----------------------
+let baim = args[2];
+let basgardian = args[2];
+let bavenger = args[2];
+let bbio = args[2];
+let bblaster = args[2];
+let bbrawler = args[2];
+
+
+if(command === 'trait') {
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
+	
+if (aim === "aim"){	
+message.channel.send("aim team")
 }
-if (message.content.toLowerCase() === '!trait aim bio' || message.content.toLowerCase() === '!trait bio aim') {
-    const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-	message.channel.send(exampleEmbed);
+if (asgardian === "asgardian"){	
+message.channel.send("asgardian team")
 }
-if (message.content.toLowerCase() === '!trait aim bio brawler' || message.content.toLowerCase() === '!trait bio aim brawler' || message.content.toLowerCase() === '!trait brawler bio aim' || message.content.toLowerCase() === '!trait bio brawler aim' || message.content.toLowerCase() === '!trait brawler aim bio') {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Aim, Bio, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-	message.channel.send(exampleEmbed);
+if (avenger === "avenger"){	
+message.channel.send("avenger team")
+}
+if (bio === "bio"){	
+message.channel.send("bio team")
+}
+if (blaster === "blaster"){	
+message.channel.send("blaster team")
+}
+if (brawler === "brawler"){	
+message.channel.send("brawler team")
+}
+//--------------------------------------------------------------
+if (aaim === "aim"){	
+message.channel.send("aim team team")
+}
+if (aasgardian === "asgardian"){	
+message.channel.send("asgardian team team")
+}
+if (aavenger === "avenger"){	
+message.channel.send("avenger team team")
+}
+if (abio === "bio"){	
+message.channel.send("bio team team")
+}
+if (bblaster === "blaster"){	
+message.channel.send("blaster team team")
+}
+if (bbrawler === "brawler"){	
+message.channel.send("brawler team team")
+}
+//----------------------------------------------------------------
+if (baim === "aim"){	
+message.channel.send("aim team team team")
+}
+if (basgardian === "asgardian"){	
+message.channel.send("asgardian team team team")
+}
+if (bavenger === "avenger"){	
+message.channel.send("avenger team team team")
+}
+if (bbio === "bio"){	
+message.channel.send("bio team team team")
+}
+if (bblaster === "blaster"){	
+message.channel.send("blaster team team team")
+}
+if (bbrawler === "brawler"){	
+message.channel.send("brawler team team team")
 }
 
+} //ID
+} //Command TRAIT
 });
+
+
 
 client.login(process.env.TOKEN);
