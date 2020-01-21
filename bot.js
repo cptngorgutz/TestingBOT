@@ -2102,14 +2102,14 @@ switch (args[0]) {
     break;
   }
 }
-switch (args[1]) {  
+switch (args[0]) {  
   case 'aim controller': {
     // This will send in the channel that the command was run in.
     message.channel.send('Aim controller characters are:   ...........');
     break;
   }
 }
-switch (args[2]) {  
+switch (args[0]) {  
   case 'aim controller minion': {
     // This will send in the channel that the command was run in.
     message.channel.send('Aim controller minion characters are:   ...........');
