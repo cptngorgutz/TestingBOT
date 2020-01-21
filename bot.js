@@ -2105,65 +2105,51 @@ let bio = args[0];
 let blaster = args[0];
 let brawler = args[0];
 
-let aaim = args[0];
-let aasgardian = args[0];
-let aavenger = args[0];
-let abio = args[0];
-let ablaster = args[0];
-let abrawler = args[0];
+let aasgardian = args[1];
+let aavenger = args[1];
+let abio = args[1];
+let ablaster = args[1];
+let abrawler = args[1];
 
-let baim = args[0];
-let basgardian = args[0];
-let bavenger = args[0];
-let bbio = args[0];
-let bblaster = args[0];
-let bbrawler = args[0];
+let basgardian = args[2];
+let bavenger = args[2];
+let bbio = args[2];
+let bblaster = args[2];
+let bbrawler = args[2];
 
 
 if(command === 'trait') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 	
 if (aim === "aim"){	
-message.channel.send("aim team")
 }
 if (asgardian === "asgardian"){	
-message.channel.send("asgardian team")
 }
 if (avenger === "avenger"){	
-message.channel.send("avenger team")
 }
 if (bio === "bio"){	
-message.channel.send("bio team")
 }
 if (blaster === "blaster"){	
-message.channel.send("blaster team")
 }
 if (brawler === "brawler"){	
-message.channel.send("brawler team")
 }
 //--------------------------------------------------------------
-if (aaim === "aim"){	
-message.channel.send("aim team team")
-}
 if (aasgardian === "asgardian"){	
-message.channel.send("asgardian team team")
+message.channel.send("Aim + Asgardian traits")
 }
 if (aavenger === "avenger"){	
-message.channel.send("avenger team team")
+message.channel.send("aim + avengers trait")
 }
 if (abio === "bio"){	
-message.channel.send("bio team team")
+message.channel.send("aim + bio trait")
 }
 if (bblaster === "blaster"){	
-message.channel.send("blaster team team")
+message.channel.send("aim + blaster trait")
 }
 if (bbrawler === "brawler"){	
-message.channel.send("brawler team team")
+message.channel.send("aim + brawler trait")
 }
 //----------------------------------------------------------------
-if (baim === "aim"){	
-message.channel.send("aim team team team")
-}
 if (basgardian === "asgardian"){	
 message.channel.send("asgardian team team team")
 }
