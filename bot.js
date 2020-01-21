@@ -2108,7 +2108,7 @@ if (message.content.toLowerCase() === '!trait aim bio' || message.content.toLowe
 	.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
 	message.channel.send(exampleEmbed);
 }
-if (message.content.toLowerCase() === '!trait aim bio brawler' || message.content.toLowerCase() === '!trait bio aim brawler' || message.content.toLowerCase() === '!trait brawler bio aim' || message.content.toLowerCase() === '!trait brawler aim bio') {
+if (message.content.toLowerCase() === '!trait aim bio brawler' || message.content.toLowerCase() === '!trait bio aim brawler' || message.content.toLowerCase() === '!trait brawler bio aim' || message.content.toLowerCase() === '!trait bio brawler aim' || message.content.toLowerCase() === '!trait brawler aim bio') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Bio, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
