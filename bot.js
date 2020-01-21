@@ -2105,19 +2105,19 @@ let bio = args[0];
 let blaster = args[0];
 let brawler = args[0];
 
-let aaim = args[1];
-let aasgardian = args[1];
-let aavenger = args[1];
-let abio = args[1];
-let ablaster = args[1];
-let abrawler = args[1];
+let aaim = args[0];
+let aasgardian = args[0];
+let aavenger = args[0];
+let abio = args[0];
+let ablaster = args[0];
+let abrawler = args[0];
 
-let baim = args[2];
-let basgardian = args[2];
-let bavenger = args[2];
-let bbio = args[2];
-let bblaster = args[2];
-let bbrawler = args[2];
+let baim = args[0];
+let basgardian = args[0];
+let bavenger = args[0];
+let bbio = args[0];
+let bblaster = args[0];
+let bbrawler = args[0];
 
 
 if(command === 'trait') {
