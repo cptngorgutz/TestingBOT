@@ -2092,8 +2092,8 @@ client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let aim = args[0]; 
-let controller = args[1];
-let minion = args[2];
+let controller = args[0];
+let minion = args[0];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
@@ -2101,10 +2101,10 @@ if(command === 'trait') {
 if(args[0] === "aim"){
 message.channel.send("aim characters: assaulter, infector, monstoristy, researcher, security, graviton, scientist supreme");
 }
-if(args[1] === "controller") {
+if(args[0] === "controller") {
 	message.channel.send("controller characters: infector, graviton");
 }
-if(args[2] === "minion") {
+if(args[0] === "minion") {
 message.channel.send("minion characters: infector");
 }
 
