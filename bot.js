@@ -265,9 +265,6 @@ if (msg.content === '!kit') {
 });
 
 
-
-
-
 //*********WAR COUNTERS + SUBMIT WAR COUNTERS***********
 //example: !counter aim/+info || !submit warcounter aim)     
 client.on("message", async message => {
@@ -2088,6 +2085,39 @@ if (message.content === '!Asgardians') {
 }
 }
 });
+
+
+
+//*********TESTING TRAITS***********
+client.on("message", message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+let soloaim = args[0];
+let aim = args[0]; 
+let controller = args[1];
+let minion = args[2];
+
+//EVERY CHARACTER
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
+if(command === 'trait') {
+if(aim === "aim"){
+message.channel.send("aim characters: assaulter, infector, monstoristy, researcher, security, graviton, scientist supreme");
+}
+if(controller === "controller") {
+	message.channel.send("controller characters: infector, graviton");
+}
+if(minion === "minion") {
+message.channel.send("minion characters: infector");
+}
+if(soloaim === "aim") {
+message.channel.send("aim characters: assaulter, infector, monstoristy, researcher, security, graviton, scientist supreme");
+}
+
+
+
+}
+}
+}); 
 
 
 client.login(process.env.TOKEN);
