@@ -2097,14 +2097,33 @@ if (message.content === '!Asgardians') {
 //*********TESTING TRAITS***********
 client.on("message", message => {
 if (message.content.toLowerCase() === '!trait aim') {
-  message.channel.send("aim characters are.....");
+  	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assault \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n <:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme.")
+	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
+	message.channel.send(exampleEmbed);
 }
-if (message.content.toLowerCase() === '!trait aim controller') {
-  message.channel.send("aim/controller characters are.....");
+if (message.content.toLowerCase() === '!trait aim bio') {
+    const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton.")
+	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
+	message.channel.send(exampleEmbed);
 }
-if (message.content.toLowerCase() === '!trait aim controller minion') {
-  message.channel.send("aim/controller/minion characters are.....");
+if (message.content.toLowerCase() === '!trait aim bio brawler') {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Aim, Bio, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity.")
+	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
+	message.channel.send(exampleEmbed);
 }
+if (message.content.toLowerCase() === '!trait aim bio controller') {
+  message.channel.send("aim/bio/controller characters are graviton, infector");
+}
+if (message.content.toLowerCase() === '!trait aim bio controller minion') {
+  message.channel.send("aim/bio/controller characters are infector");
+}
+
 });
 
 client.login(process.env.TOKEN);
