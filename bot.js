@@ -2091,19 +2091,30 @@ if (message.content === '!Asgardians') {
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let aim = args[0];
-let minion = args[0];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'trait') {
-if(aim === "aim") {
-	message.channel.send("Aim Characters: Assulter, Infector, Monstrosity, Researcher, Security, Graviton and Scientist Supreme");
-} else if(aim === 'aim controller minion'){
-message.channel.send("Aim/Controller/Minion/ Characters: Aim Infector");
+switch (args[0]) {  
+  case 'aim': {
+    // This will send in the channel that the command was run in.
+    message.channel.send('Aim characters are:   ...........');
+    break;
+  }
 }
-if(minion === "minion") {
-message.channel.send("minion characters: Infector");
+switch (args[1]) {  
+  case 'aim controller': {
+    // This will send in the channel that the command was run in.
+    message.channel.send('Aim controller characters are:   ...........');
+    break;
+  }
+}
+switch (args[2]) {  
+  case 'aim controller minion': {
+    // This will send in the channel that the command was run in.
+    message.channel.send('Aim controller minion characters are:   ...........');
+    break;
+  }
 }
 
 }
