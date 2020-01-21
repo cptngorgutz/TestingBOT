@@ -644,6 +644,7 @@ let ultimate = args[0];
 let passive = args[0];
 let speed = args[0];
 let unlock = args[0];
+let trait = args[0];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
@@ -704,7 +705,13 @@ if(unlock === "unlock" || unlock === "farm") {
 	message.channel.send(speedEmbed); 
 }
 
-} 
+if(trait === "trait" || unlock === "traits") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nA.I.M., Blaster, Global, Minion, Tech, Villain.")  
+	message.channel.send(speedEmbed); 
+}
+}
 if(command === 'aiminfector' || command === 'aiminfect' || command === 'infector') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
@@ -2089,35 +2096,14 @@ if (message.content === '!Asgardians') {
 
 //*********TESTING TRAITS***********
 client.on("message", message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-
-//EVERY CHARACTER
-if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'trait') {
-switch (args[0]) {  
-  case 'aim': {
-    // This will send in the channel that the command was run in.
-    message.channel.send('Aim characters are:   ...........');
-    break;
-  }
+if (message.content.toLowerCase() === '!trait aim') {
+  message.channel.send("aim characters are.....");
 }
-switch (args[0]) {  
-  case 'aim controller': {
-    // This will send in the channel that the command was run in.
-    message.channel.send('Aim controller characters are:   ...........');
-    break;
-  }
+if (message.content.toLowerCase() === '!trait aim controller') {
+  message.channel.send("aim/controller characters are.....");
 }
-switch (args[0]) {  
-  case 'aim controller minion': {
-    // This will send in the channel that the command was run in.
-    message.channel.send('Aim controller minion characters are:   ...........');
-    break;
-  }
-}
-
-}
+if (message.content.toLowerCase() === '!trait aim controller minion') {
+  message.channel.send("aim/controller/minion characters are.....");
 }
 });
 
