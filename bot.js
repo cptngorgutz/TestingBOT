@@ -2134,7 +2134,6 @@ const awaynoteschannel = client.channels.get('666305824813219870')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const MENTION = message.author();
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
@@ -2143,21 +2142,21 @@ const TEXT = new Discord.RichEmbed()
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-if(MENTION.roles.has(TB1.id)){
+if (message.member.roles.find(role => role.name === 'TB1')) {
 embed.setColor('#0099ff')
 embed.setDescription(message.author + " " + TB1 + " " + Text)
 embed.setTimestamp()
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
 }
-if(MENTION.roles.has(TB2.id)){
+if (message.member.roles.find(role => role.name === 'TB2')) {
 embed.setColor('#0099ff')
 embed.setDescription(message.author + " " + TB2 + " " + Text)
 embed.setTimestamp()
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
 }
-if(MENTION.roles.has(TB3.id)){
+if (message.member.roles.find(role => role.name === 'TB3')) {
 embed.setColor('#0099ff')
 embed.setDescription(message.author + " " + TB3 + " " + Text)
 embed.setTimestamp()
