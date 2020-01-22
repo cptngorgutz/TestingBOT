@@ -2104,8 +2104,6 @@ if(command === 'trait') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 let [aim, asgardian, avenger, bio, blaster, brawler ] = args;
 
-const aim = message.channel.send("SENDING AIM ONLY");
-
 if (args[0] === aim && args[1] === "asgardian"){	
 message.channel.send("aim and asgardian")
 } else if (args[0] === "aim" && args[1] === "avenger"){	
