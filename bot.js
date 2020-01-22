@@ -2144,21 +2144,21 @@ const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 if (message.member.roles.find(role => role.name === 'TB1')) {
 embed.setColor('#0099ff')
-embed.setDescription(message.author + " " + TB1 + " " + Text)
+embed.setDescription("**The Beyonders**" \n + message.author + " " + TB1 + " " + Text)
 embed.setTimestamp()
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
 }
 if (message.member.roles.find(role => role.name === 'TB2')) {
 embed.setColor('#0099ff')
-embed.setDescription(message.author + " " + TB2 + " " + Text)
+embed.setDescription("**The Beyonders II**" \n + message.author + " " + TB2 + " " + Text)
 embed.setTimestamp()
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
 }
 if (message.member.roles.find(role => role.name === 'TB3')) {
 embed.setColor('#0099ff')
-embed.setDescription(message.author + " " + TB3 + " " + Text)
+embed.setDescription("**The Beyonders III**" \n + message.author + " " + TB3 + " " + Text)
 embed.setTimestamp()
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
