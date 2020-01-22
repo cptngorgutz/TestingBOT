@@ -2117,9 +2117,9 @@ message.channel.send("aim and asgardian")
 message.channel.send("aim and avenger")
 } else if (args[0] === "aim" && args[1] === "bio"){	
 message.channel.send("aim and bio")
-} else if (args[0] === "aim" && args[1]  "blaster"){	
+} else if (args[0] === "aim" && args[1] === "blaster"){	
 message.channel.send("aim and blaster")
-} else if (args[0] === "aim" && args[1]  "brawler"){	
+} else if (args[0] === "aim" && args[1] === "brawler"){	
 message.channel.send("aim and brawler")
 }
 
