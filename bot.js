@@ -2111,17 +2111,27 @@ if (message.channel.id === '666305824813219870' || message.channel.id === '61770
 if (args[0] === "aim"){	
 message.channel.send("aim only")
 }
-if (args[1] === "asgardian"){	
+if (args[0] === "aim" && args[1] === "asgardian"){	
 message.channel.send("aim and asgardian")
-} else if (args[1] === "avenger"){	
+} else if (args[0] === "aim" && args[1] === "avenger"){	
 message.channel.send("aim and avenger")
-} else if (args[1] === "bio"){	
+} else if (args[0] === "aim" && args[1] === "bio"){	
 message.channel.send("aim and bio")
-} else if (args[1] === "blaster"){	
+} else if (args[0] === "aim" && args[1]  "blaster"){	
 message.channel.send("aim and blaster")
-} else if (args[1] === "brawler"){	
+} else if (args[0] === "aim" && args[1]  "brawler"){	
 message.channel.send("aim and brawler")
 }
+
+if (args[0] === "asgardian"){	
+message.channel.send("asgardian only")
+}
+if (args[0] === "asgardian" && args[1] === "aim"){	
+message.channel.send("asgardian and aim")
+} else if (args[0] === "asgardian" && args[1] === "avenger"){	
+message.channel.send("asgardian and avenger")
+} 
+
 
 } //ID
 } //Command TRAIT
