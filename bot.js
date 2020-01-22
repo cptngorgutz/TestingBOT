@@ -2140,7 +2140,7 @@ const TEXT = new Discord.RichEmbed()
 .setDescription(Text.content)
 
 embed.setColor('#0099ff')
-embed.setDescription(message.author + Text)
+embed.setDescription(message.author + " " + Text)
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
 }
