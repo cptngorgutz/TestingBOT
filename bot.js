@@ -2098,72 +2098,29 @@ if (message.content === '!Asgardians') {
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let aim = args[0];
-let asgardian = args[0];
-let avenger = args[0];
-let bio = args[0];
-let blaster = args[0];
-let brawler = args[0];
-
-let aasgardian = args[1];
-let aavenger = args[1];
-let abio = args[1];
-let ablaster = args[1];
-let abrawler = args[1];
-
-let basgardian = args[2];
-let bavenger = args[2];
-let bbio = args[2];
-let bblaster = args[2];
-let bbrawler = args[2];
+let aimasgard = args[1];
+let aimavenger = args[1];
+let aimbio = args[1];
+let aimblaster = args[1];
+let aimbrawler = args[1];
 
 
 if(command === 'trait') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 	
-if (aim === "aim"){	
+if (args[0] === "aim"){	
+message.channel.send("aim only")
 }
-if (asgardian === "asgardian"){	
-}
-if (avenger === "avenger"){	
-}
-if (bio === "bio"){	
-}
-if (blaster === "blaster"){	
-}
-if (brawler === "brawler"){	
-}
-//--------------------------------------------------------------
-if (aasgardian === "asgardian"){	
-message.channel.send("Aim + Asgardian traits")
-}
-if (aavenger === "avenger"){	
-message.channel.send("aim + avengers trait")
-}
-if (abio === "bio"){	
-message.channel.send("aim + bio trait")
-}
-if (bblaster === "blaster"){	
-message.channel.send("aim + blaster trait")
-}
-if (bbrawler === "brawler"){	
-message.channel.send("aim + brawler trait")
-}
-//----------------------------------------------------------------
-if (basgardian === "asgardian"){	
-message.channel.send("asgardian team team team")
-}
-if (bavenger === "avenger"){	
-message.channel.send("avenger team team team")
-}
-if (bbio === "bio"){	
-message.channel.send("bio team team team")
-}
-if (bblaster === "blaster"){	
-message.channel.send("blaster team team team")
-}
-if (bbrawler === "brawler"){	
-message.channel.send("brawler team team team")
+if (args[1] === "asgardian"){	
+message.channel.send("aim and asgardian")
+} else if (args[1] === "avenger"){	
+message.channel.send("aim and avenger")
+} else if (args[1] === "bio"){	
+message.channel.send("aim and bio")
+} else if (args[1] === "blaster"){	
+message.channel.send("aim and blaster")
+} else if (args[1] === "brawler"){	
+message.channel.send("aim and brawler")
 }
 
 } //ID
