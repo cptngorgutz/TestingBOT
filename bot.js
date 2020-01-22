@@ -2142,6 +2142,7 @@ const TEXT = new Discord.RichEmbed()
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
+message.channel.bulkDelete(1)
 if (message.member.roles.find(role => role.name === 'TB1')) {
 embed.setColor('#0099ff')
 embed.setDescription("**The Beyonders \n**"  + message.author + " " + Text)
