@@ -2134,14 +2134,14 @@ const awaynoteschannel = client.channels.get('666305824813219870')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
+let user = message.author;
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setDescription(Text.content)
+.setDescription(user + Text.content)
 
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 awaynoteschannel.send(embed);
 message.channel.send("Away-note Received.");
 }
