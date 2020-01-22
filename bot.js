@@ -2134,11 +2134,10 @@ const awaynoteschannel = client.channels.get('666305824813219870')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-let user = message.author;
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setDescription(user + Text.content)
+.setDescription(message.author + Text.content)
 
 embed.setColor('#0099ff')
 embed.setDescription(Text)
