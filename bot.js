@@ -2128,7 +2128,7 @@ message.channel.send("asgardian and avenger")
 });
 
 //AWAY NOTES
-client.on("message", message => {
+client.on("message", async message => {
 if(message.content.startswith('!away')) {
 const awaynoteschannel = client.channels.get('666305824813219870')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
