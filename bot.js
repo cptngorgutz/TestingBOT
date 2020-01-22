@@ -2098,20 +2098,15 @@ if (message.content === '!Asgardians') {
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let aimasgard = args[1];
-let aimavenger = args[1];
-let aimbio = args[1];
-let aimblaster = args[1];
-let aimbrawler = args[1];
 
 
 if(command === 'trait') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
-	
-if (args[0] === "aim"){	
-message.channel.send("aim only")
-}
-if (args[0] === "aim" && args[1] === "asgardian"){	
+let [aim, asgardian, avenger, bio, blaster, brawler ] = args;
+
+const aim = message.channel.send("SENDING AIM ONLY");
+
+if (args[0] === aim && args[1] === "asgardian"){	
 message.channel.send("aim and asgardian")
 } else if (args[0] === "aim" && args[1] === "avenger"){	
 message.channel.send("aim and avenger")
@@ -2123,9 +2118,6 @@ message.channel.send("aim and blaster")
 message.channel.send("aim and brawler")
 }
 
-if (args[0] === "asgardian"){	
-message.channel.send("asgardian only")
-}
 if (args[0] === "asgardian" && args[1] === "aim"){	
 message.channel.send("asgardian and aim")
 } else if (args[0] === "asgardian" && args[1] === "avenger"){	
@@ -2137,6 +2129,24 @@ message.channel.send("asgardian and avenger")
 } //Command TRAIT
 });
 
+//AWAY NOTES
+client.on("message", message => {
+if(message.content.startswith('!away')) {
+const awaynoteschannel = client.channels.get('666305824813219870')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
 
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+awaynoteschannel.send(embed);
+message.channel.send("Away-note Received.");
+}
+});
 
 client.login(process.env.TOKEN);
