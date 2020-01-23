@@ -2189,18 +2189,18 @@ const command = args.shift().toLowerCase();
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'testing') {
-if(args[0] === "alpha"){
-	const Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("Alpha")
+if(args[0] === "alpha" && args[1] === "bravo" || args[0] === "bravo" && args[1] === "alpha"){
+const Embed1 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("Alpha + Bravo")
+message.channel.send(Embed1);
+} else if(args[0] === "alpha"){
+const Embed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("Alpha")
 	message.channel.send(Embed);
-	return;
-} else if(args[0] === "alpha" && args[1] === "bravo" || args[0] === "bravo" && args[1] === "alpha"){
-	const Embed1 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("Alpha + Bravo")
-	message.channel.send(Embed1);
-}
+}	
+
 }
 }
 });
