@@ -2114,7 +2114,6 @@ message.channel.send("aim asgardian team")
 
 
 } //ID
-} //Command TRAIT
 });
 
 
