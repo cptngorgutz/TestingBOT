@@ -2194,6 +2194,7 @@ if(args[0] === "alpha"){
 	.setColor('#0099ff')
 	.setDescription("Alpha")
 	message.channel.send(Embed);
+	return;
 } else if(args[0] === "alpha" && args[1] === "bravo" || args[0] === "bravo" && args[1] === "alpha"){
 	const Embed1 = new Discord.RichEmbed()
 	.setColor('#0099ff')
