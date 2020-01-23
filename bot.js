@@ -2095,77 +2095,29 @@ if (message.content === '!Asgardians') {
 
 
 //*********TESTING TRAITS***********
-client.on("message", async message => {
+client.on("message",  message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-
-if(command === 'trait') {
+if(message.content.startsWith(prefix + 'trait')) {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
-let [aim, asgardian, avenger, bio, blaster, brawler ] = args;
-
-if (args[0] === aim && args[1] === "asgardian"){	
-message.channel.send("aim and asgardian")
-} else if (args[0] === "aim" && args[1] === "avenger"){	
-message.channel.send("aim and avenger")
-} else if (args[0] === "aim" && args[1] === "bio"){	
-message.channel.send("aim and bio")
-} else if (args[0] === "aim" && args[1] === "blaster"){	
-message.channel.send("aim and blaster")
-} else if (args[0] === "aim" && args[1] === "brawler"){	
-message.channel.send("aim and brawler")
+	
+if(message.content === 'aim') {
+message.channel.send("aim team")
 }
 
-if (args[0] === "asgardian" && args[1] === "aim"){	
-message.channel.send("asgardian and aim")
-} else if (args[0] === "asgardian" && args[1] === "avenger"){	
-message.channel.send("asgardian and avenger")
-} 
+if(message.content === 'aim avenger') {
+message.channel.send("aim team")
+}
+
+if(message.content === '!trait aim asgardian') {
+message.channel.send("aim team")
+}
 
 
 } //ID
 } //Command TRAIT
 });
 
-//AWAY NOTES
-client.on("message", async message => {
-if(message.content.startsWith('!away')) {
-const awaynoteschannel = client.channels.get('666305824813219870')
-const messages1 = await message.channel.fetchMessages({ limit: 1 });
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-message.channel.bulkDelete(1)
-if (message.member.roles.find(role => role.name === 'TB1')) {
-embed.setColor('#0099ff')
-embed.setDescription("**The Beyonders \n**"  + message.author + " " + Text)
-embed.setTimestamp()
-awaynoteschannel.send(embed);
-message.channel.send("Away-note Received.");
-}
-if (message.member.roles.find(role => role.name === 'TB2')) {
-embed.setColor('#0099ff')
-embed.setDescription("**The Beyonders II \n**" + message.author + " " + Text)
-embed.setTimestamp()
-awaynoteschannel.send(embed);
-message.channel.send("Away-note Received.");
-}
-if (message.member.roles.find(role => role.name === 'TB3')) {
-embed.setColor('#0099ff')
-embed.setDescription("**The Beyonders III \n**" + message.author + " " + Text)
-embed.setTimestamp()
-awaynoteschannel.send(embed);
-message.channel.send("Away-note Received.");
-}
-
-}
-});
 
 client.login(process.env.TOKEN);
