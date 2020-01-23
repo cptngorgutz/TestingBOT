@@ -2194,12 +2194,17 @@ const Embed1 = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("Alpha + Bravo")
 message.channel.send(Embed1);
+} else if(args[0] === "alpha" && args[1] === "bravo1" || args[0] === "bravo1" && args[1] === "alpha"){
+const Embed1 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("Alpha + Bravo")
+message.channel.send(Embed1);
 } else if(args[0] === "alpha"){
 const Embed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("Alpha")
 	message.channel.send(Embed);
-}	
+} 	
 
 }
 }
