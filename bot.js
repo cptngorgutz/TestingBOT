@@ -2108,10 +2108,10 @@ if(args[0] === "aim"){
 	.setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
 	message.channel.send(exampleEmbed);
 } else if(args[0] === "aim" && args[1] === "bio" || args[0] === "bio" && args[1] === "aim"){
-	const exampleEmbed = new Discord.RichEmbed()
+	const exampleEmbed1 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed1);
 	return;
 } else if(args[0] === "aim" && args[1] === "blaster"){
 	const exampleEmbed = new Discord.RichEmbed()
