@@ -2106,84 +2106,72 @@ if(args[0] === "aim"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "bio"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "blaster"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Blaster** \n \n<:aimassault:663749974869147648> Aim Assaulter")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "brawler"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "controller"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Controller** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "global"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Global** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "minion"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "protector"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Protector** \n \n<:aimsecurity:663749977071157283> Aim Security")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "skill"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Skill** \n \n<:aimresearcher:663749975200759829> Aim Researcher")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "support"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Support** \n \n<:aimresearcher:663749975200759829> Aim Researcher \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "tech"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Tech** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aimsecurity:663749977071157283> Aim Security \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 if(args[0] === "aim" && args[1] === "villain"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Aim, Villain** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
 }
 
