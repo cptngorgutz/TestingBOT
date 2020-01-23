@@ -2099,19 +2099,17 @@ client.on("message",  message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-if(message.content.startsWith(prefix + 'trait')) {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
-	
-if(message.content === 'aim') {
+if(message.content === '!trait aim') {
 message.channel.send("aim team")
 }
 
-if(message.content === 'aim avenger') {
-message.channel.send("aim team")
+if(message.content === '!trait aim avenger') {
+message.channel.send("aim avenger team")
 }
 
 if(message.content === '!trait aim asgardian') {
-message.channel.send("aim team")
+message.channel.send("aim asgardian team")
 }
 
 
