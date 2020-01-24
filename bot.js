@@ -2102,14 +2102,8 @@ const command = args.shift().toLowerCase();
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'trait') {
-//aim bio - //bio aim
-if(args[0] === "aim" && args[1] === "bio" || args[0] === "bio" && args[1] === "aim"){
-const exampleEmbed1 = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed1);
 //aim blaster - //blaster aim
-} else if(args[0] === "aim" && args[1] === "blaster" || args[0] === "blaster" && args[1] === "aim"){
+if(args[0] === "aim" && args[1] === "blaster" || args[0] === "blaster" && args[1] === "aim"){
 const exampleEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("**Aim, Blaster** \n \n<:aimassault:663749974869147648> Aim Assaulter")
@@ -2198,12 +2192,19 @@ const exampleEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("**Aim, Bio, Villain** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
 message.channel.send(exampleEmbed);
+//aim bio - //bio aim
+} else if(args[0] === "aim" && args[1] === "bio" || args[0] === "bio" && args[1] === "aim"){
+const exampleEmbed1 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed1);
 } else if(args[0] === "aim"){
 const exampleEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
 message.channel.send(exampleEmbed);
 }
+
 
 }//command
 }//channel ID
