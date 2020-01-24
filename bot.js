@@ -2114,6 +2114,8 @@ const exampleEmbed = new Discord.RichEmbed()
 .setDescription("**Aim, Global, Protector** \n \n<:aimsecurity:663749977071157283> Aim Security ")
 message.channel.send(exampleEmbed);
 //aim global minion - //aim minion global //global aim minion  //global minion aim   //minion aim global   //minion global aim
+} else {
+message.channel.send("No Matches Found.");
 } else if(args[0] === "aim" && args[1] === "global" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "global" || args[0] === "global" && args[1] === "aim" & args[2] === "minion" || args[0] === "global" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "global" || args[0] === "minion" && args[1] === "global" & args[2] === "aim"){
 const exampleEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
