@@ -3476,11 +3476,11 @@ if (message.content === '!commands') {
 	.setColor('#0099ff')
 	.setDescription("**Commands List**")
 	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
-	.addField('!away', 'Sends away note to captains \n[!away travelling for x days] (Removes away message for privacy and informs captains of your circumstances)')
-	.addField('\n!uniques', 'Sends an infographic of uniques tied to characters')
-	.addField('\n!blitz', 'Shows current blitz predictions, (!blitz2 for orb assault blitz)')
-	.addField('\n!event[charactername]', 'Sends an infographic of lowest reported requirements to beat the legendary event 5/6/7*')
-	.addField('\n![charactername]', 'Sends an infographic of required gear levels for the character GearTier 10/11/12 + 1-13 + T4 recommendations')
+	.addField('!away', 'Sends away note to captains \n[!away travelling for x days] (Removes away message for privacy and informs captains of your circumstances) \n ')
+	.addField('!uniques', 'Sends an infographic of uniques tied to characters \n ')
+	.addField('!blitz', 'Shows current blitz predictions, (!blitz2 for orb assault blitz) \n ')
+	.addField('!event[charactername]', 'Sends an infographic of lowest reported requirements to beat the legendary event 5/6/7* \n ')
+	.addField('![charactername]', 'Sends an infographic of required gear levels for the character GearTier 10/11/12 + 1-13 + T4 recommendations \n ')
 	message.channel.send(exampleEmbed);
 }
 });
