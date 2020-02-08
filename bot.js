@@ -289,7 +289,7 @@ let shield = args[1];
 let s6 = args[1];
 
  //bot spam channel
-if(command === 'counter' && args[1] === aim || args[1] === asgardians || args[1] === brawlers || args[1] === shield || args[1] === s6) {
+if(command === 'counter') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 if (aimcounter === "aim"){	
 const aimcounterimage = client.channels.get('666332891730673668')
@@ -484,8 +484,6 @@ message.channel.send(embed);
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
 }
-} else {
-message.channel.send("Team Unavailible").catch(console.error);	
 }
 
 if(command === 'submit') {
