@@ -3474,18 +3474,13 @@ client.on('message', message => {
 if (message.content === '!commands') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**Commands List* **                     ** ```![charactername]``` ")
-	.setThumbnail('https://i.imgur.com/e9DIB8e.png') 
+	.setDescription("**Commands List**")
+	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 	.addField('!away', 'Sends away note to captains [!away travelling for x days] (Removes away message for privacy and informs captains of your circumstances)')
-	.addBlankField()
 	.addField('!uniques', 'Sends an infographic of uniques tied to characters')
-	.addBlankField()
 	.addField('!blitz', 'Shows current blitz predictions, (!blitz2 for orb assault blitz)')
-	.addBlankField()
 	.addField('!event[charactername]', 'Sends an infographic of lowest reported requirements to beat the legendary event 5/6/7*')
-	.addBlankField()
 	.addField('![charactername]', 'Sends an infographic of required gear levels for the character GearTier 10/11/12 1-13 + T4 recommendations')
-	.addBlankField()
 	message.channel.send(exampleEmbed);
 }
 });
