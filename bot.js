@@ -2068,18 +2068,1197 @@ if(passive === "passive") {
 if(speed === "speed") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Dardevil** \nDaredevil's speed is: **")
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil's speed is: **")
 	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Dardevil** \nDaredevil is farmable in:**")
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
 	message.channel.send(speedEmbed); 
 }
 
 }
+if(command === 'deadpool' || command === 'dp' || command === 'dead' || command === 'pool') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Basic)** \n \n**Dual Pistols • T4 Upgrade** \n \nAttack primary target for **190% -> 220%** damage + \n80% chance to Bonus attack for **140% -> 170%** damage. \nBonus attack always Crits if the target is a MINION.")
+	.setThumbnail('https://i.imgur.com/EO9r38O.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Special)** \n \n**Bounty Hunter • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack the most injured target for **490% -> 550%** damage, \nignoring Taunt. On Kill, gain Regeneration.")
+	.setThumbnail('https://i.imgur.com/FlCE0BS.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Ultimate)** \n \n**Hack 'n' Slash • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **230% -> 260%** damage + \nRebound Chain 3-4 additional targets for \n**160% -> 200%** damage. Apply Bleed to MINION targets. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/IjD2h1e.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Passive)** \n \n**Merc With A Mouth • T4 Upgrade** \n \nOn Turn, clear all negative effects from Self + \nHeal **10% -> 15%** of Max Health per negative effect removed. \n5% chance to Revive for 10% of Max Health.")
+	.setThumbnail('https://i.imgur.com/1B8Xoik.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Basic)** \n \n**Dual Pistols • T4 Upgrade** \n \nAttack primary target for **190% -> 220%** damage + \n80% chance to Bonus attack for **140% -> 170%** damage. \nBonus attack always Crits if the target is a MINION.")
+	.setThumbnail('https://i.imgur.com/EO9r38O.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Special)** \n \n**Bounty Hunter • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack the most injured target for **490% -> 550%** damage, \nignoring Taunt. On Kill, gain Regeneration.")
+	.setThumbnail('https://i.imgur.com/FlCE0BS.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Ultimate)** \n \n**Hack 'n' Slash • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **230% -> 260%** damage + \nRebound Chain 3-4 additional targets for \n**160% -> 200%** damage. Apply Bleed to MINION targets. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/IjD2h1e.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Passive)** \n \n**Merc With A Mouth • T4 Upgrade** \n \nOn Turn, clear all negative effects from Self + \nHeal **10% -> 15%** of Max Health per negative effect removed. \n5% chance to Revive for 10% of Max Health.")
+	.setThumbnail('https://i.imgur.com/1B8Xoik.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'drax' || command === 'draxthedestroyer') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Basic)** \n \n**Knife Slash • T4 Upgrade** \n \nAttack primary target for **220% -> 250%** damage + 30% Drain.")
+	.setThumbnail('https://i.imgur.com/zzqAaT9.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Special)** \n \n**Fast Reflexes • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain Taunt + **1-2 -> 2** Counter. \nGain Defense Up for 1-2 turns.")
+	.setThumbnail('https://i.imgur.com/EJOcgHO.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Ultimate)** \n \n**Good Fighting • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **270% -> 300%** damage + **40% -> 50%** Drain. \nChain to 3-5 adjacent targets for **210% -> 240%** damage + \n**40% -> 50%** Drain. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/pXaX50Q.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Passive)** \n \n**Destroyer • T4 Upgrade** \n \nOn Spawn, gain Taunt. **+15% -> +20%** increase to Drain.")
+	.setThumbnail('https://i.imgur.com/u45pYuj.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Basic)** \n \n**Knife Slash • T4 Upgrade** \n \nAttack primary target for **220% -> 250%** damage + 30% Drain.")
+	.setThumbnail('https://i.imgur.com/zzqAaT9.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Special)** \n \n**Fast Reflexes • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain Taunt + **1-2 -> 2** Counter. \nGain Defense Up for 1-2 turns.")
+	.setThumbnail('https://i.imgur.com/EJOcgHO.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Ultimate)** \n \n**Good Fighting • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **270% -> 300%** damage + **40% -> 50%** Drain. \nChain to 3-5 adjacent targets for **210% -> 240%** damage + \n**40% -> 50%** Drain. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/pXaX50Q.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062>	**Drax (Passive)** \n \n**Destroyer • T4 Upgrade** \n \nOn Spawn, gain Taunt. **+15% -> +20%** increase to Drain.")
+	.setThumbnail('https://i.imgur.com/u45pYuj.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062> **Drax** \nDrax's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062> **Drax** \nDrax is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'doctor' || command === 'ds' || command === 'strange' || command === 'mrdoctor') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Basic)** \n \n**Bolt of Balthak • T4 Upgrade** \n \nAttack primary target for **150% -> 170%** Piercing \n+ apply Offense Down for **1 -> 1-2** turns. \nThis is Unavoidable.")
+	.setThumbnail('111') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Special)** \n \n**Winds of Watoomb • T4 Upgrade** \n<:abilityon:663751832690229278> \nApply 2 random negative effects against primary target + \n**90% -> 100%** chance to flip all positive effects on each enemy to negative effects. \nIf positive effects are not flipped, they are removed instead.")
+	.setThumbnail('222') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Ultimate)** \n \n**Book of the Vishanti • T4 Upgrade** \n<:abilityoff:663751832413405184> \nRevive a dead SUPERNATURAL ally with 65% Health. \nRevive a dead ally with **40% -> 50%** Health. \nHeal all allies for **5000 -> 8000** Health + 10% of this character's Max Health.")
+	.setThumbnail('333') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Passive)** \n \n**Master of the Arcane Arts • T4 Upgrade** \n \nOn Turn, **20% -> 30%** chance to Fill lowest Speed Bar by 30%. \nIf this character has 3 or more SUPERNATURAL allies, \nwhen a positive effect is applied to an enemy, \nheal for 5% of this character's Max Health + \ngain 1 Deflect, up to a maximum of 5.")
+	.setThumbnail('444') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Basic)** \n \n**Bolt of Balthak • T4 Upgrade** \n \nAttack primary target for **150% -> 170%** Piercing \n+ apply Offense Down for **1 -> 1-2** turns. \nThis is Unavoidable.")
+	.setThumbnail('111') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Special)** \n \n**Winds of Watoomb • T4 Upgrade** \n<:abilityon:663751832690229278> \nApply 2 random negative effects against primary target + \n**90% -> 100%** chance to flip all positive effects on each enemy to negative effects. \nIf positive effects are not flipped, they are removed instead.")
+	.setThumbnail('222') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Ultimate)** \n \n**Book of the Vishanti • T4 Upgrade** \n<:abilityoff:663751832413405184> \nRevive a dead SUPERNATURAL ally with 65% Health. \nRevive a dead ally with **40% -> 50%** Health. \nHeal all allies for **5000 -> 8000** Health + 10% of this character's Max Health.")
+	.setThumbnail('333') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Passive)** \n \n**Master of the Arcane Arts • T4 Upgrade** \n \nOn Turn, **20% -> 30%** chance to Fill lowest Speed Bar by 30%. \nIf this character has 3 or more SUPERNATURAL allies, \nwhen a positive effect is applied to an enemy, \nheal for 5% of this character's Max Health + \ngain 1 Deflect, up to a maximum of 5.")
+	.setThumbnail('444') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \nDoctor Strange's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \nDoctor Strange is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'elektra' || command === 'elek' || command === 'electra' || command === 'elec') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Basic)** \n \n**Sneak Attack • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** damage + \n**70% -> 100%** chance to apply Bleed. If target is a DEFENDER, \napply 3 Bleed and gain +1,000% Extra Focus for this attack.")
+	.setThumbnail('https://i.imgur.com/8uUMlme.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Special)** \n \n**Into Shadow • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **150% -> 160%** damage + \nclear **1-2 -> 2** positive effects. Gain Stealth.")
+	.setThumbnail('https://i.imgur.com/Is7c5kJ.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Ultimate)** \n \n**Vital Strike • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **530% -> 600%** damage.")
+	.setThumbnail('https://i.imgur.com/mt97ASL.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Passive)** \n \n**Death's Grace • T4 Upgrade** \n \nOn Spawn, a random HAND ally gains Evade. \n**10% -> 15%** chance to Revive on Death with 20% of Max Health.")
+	.setThumbnail('https://i.imgur.com/P9572yf.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Basic)** \n \n**Sneak Attack • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** damage + \n**70% -> 100%** chance to apply Bleed. If target is a DEFENDER, \napply 3 Bleed and gain +1,000% Extra Focus for this attack.")
+	.setThumbnail('https://i.imgur.com/8uUMlme.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Special)** \n \n**Into Shadow • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **150% -> 160%** damage + \nclear **1-2 -> 2** positive effects. Gain Stealth.")
+	.setThumbnail('https://i.imgur.com/Is7c5kJ.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Ultimate)** \n \n**Vital Strike • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **530% -> 600%** damage.")
+	.setThumbnail('https://i.imgur.com/mt97ASL.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Elektra (Passive)** \n \n**Death's Grace • T4 Upgrade** \n \nOn Spawn, a random HAND ally gains Evade. \n**10% -> 15%** chance to Revive on Death with 20% of Max Health.")
+	.setThumbnail('https://i.imgur.com/P9572yf.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **Elektra** \nElektra's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **Elektra** \nElektra is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'elsa' || command === 'blood' || command === 'stone' || command === 'bloodstone') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Basic)** \n \n**Bloody Good Guns • T4 Upgrade** \n \nAttack primary target for **35% -> 45%** Piercing + \nBonus Attack 5 times for **35% -> 45%** Piercing.")
+	.setThumbnail('https://i.imgur.com/zWopFWi.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Special)** \n \n**Trick Shot • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **240% -> 300%** damage. \nAttack the most injured enemy for **290% -> 350%** damage, ignoring Taunt and Stealth.")
+	.setThumbnail('https://i.imgur.com/datIsFj.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Ultimate)** \n \n**Scatterguns • T4 Upgrade** \n<:abilityoff:663751832413405184> \nGain Offense Up for 2 turns. \nAttack primary target and adjacent targets for **220% -> 250%** damage, **+15% -> +25%** per SUPERNATURAL ally.")
+	.setThumbnail('https://i.imgur.com/L0hG2hU.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Passive)** \n \n**#%@$! • T4 Upgrade** \n \nOn Miss or on ally miss, if this character has 3 or more \nSUPERNATURAL allies, attack that target for **220% -> 270%** damage. \nOn enemy dodge, attack that enemy for **220% -> 270%** damage. \nGain +10% Crit Chance. MYSTIC allies gain +10% Crit Chance. \nGain **+10% -> +20%** Accuracy per SUPERNATURAL ally.")
+	.setThumbnail('https://i.imgur.com/CDJ8voS.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Basic)** \n \n**Bloody Good Guns • T4 Upgrade** \n \nAttack primary target for **35% -> 45%** Piercing + \nBonus Attack 5 times for **35% -> 45%** Piercing.")
+	.setThumbnail('https://i.imgur.com/zWopFWi.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Special)** \n \n**Trick Shot • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **240% -> 300%** damage. \nAttack the most injured enemy for **290% -> 350%** damage, ignoring Taunt and Stealth.")
+	.setThumbnail('https://i.imgur.com/datIsFj.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Ultimate)** \n \n**Scatterguns • T4 Upgrade** \n<:abilityoff:663751832413405184> \nGain Offense Up for 2 turns. \nAttack primary target and adjacent targets for **220% -> 250%** damage, **+15% -> +25%** per SUPERNATURAL ally.")
+	.setThumbnail('https://i.imgur.com/L0hG2hU.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402>	**Elsa (Passive)** \n \n**#%@$! • T4 Upgrade** \n \nOn Miss or on ally miss, if this character has 3 or more \nSUPERNATURAL allies, attack that target for **220% -> 270%** damage. \nOn enemy dodge, attack that enemy for **220% -> 270%** damage. \nGain +10% Crit Chance. MYSTIC allies gain +10% Crit Chance. \nGain **+10% -> +20%** Accuracy per SUPERNATURAL ally.")
+	.setThumbnail('https://i.imgur.com/CDJ8voS.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402> **Elsa** \nElsa's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402> **Elsa** \nElsa is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'falcon' || command === 'fal' || command === 'falc' || command === 'redwing') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Basic)** \n \n**Dual SMGs • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage. \nIf primary target has any positive effects, \nBonus Attack for **110% -> 120%** damage. \nIn WAR, if target has any positive effects, \nBonus Attack again for **110% -> 120%** damage.")
+	.setThumbnail('https://i.imgur.com/mZLJK8p.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Special)** \n \n**Redwing • T4 Upgrade** \n<:abilityon:663751832690229278> \nChange Speed Bar for self and all allies by **25% -> 30%** + \n10% for each enemy with a positive effect. \nClear Stealth from all enemies.")
+	.setThumbnail('https://i.imgur.com/o6GRP9c.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Ultimate)** \n \n**Strafing Run • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack all enemies for **160% -> 190%** damage + 50% Piercing.  \nFor each positive effect on an enemy, \nBonus Attack that enemy for 80% damage + 50% Piercing. \nOn WAR OFFENSE, **+30% -> +50%** Piercing to primary and secondary attacks.")
+	.setThumbnail('https://i.imgur.com/IQrr9kt.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Passive)** \n \n**EXO-7 Wingsuit • T4 Upgrade** \n \nGain +25% Block Chance. \nGain +5% Block Chance per POWER ARMOR ally. \nGain +10% Max Health. \nGain **+5% -> +10%** Block Amount.")
+	.setThumbnail('https://i.imgur.com/LbGkeDk.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Basic)** \n \n**Dual SMGs • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage. \nIf primary target has any positive effects, \nBonus Attack for **110% -> 120%** damage. \nIn WAR, if target has any positive effects, \nBonus Attack again for **110% -> 120%** damage.")
+	.setThumbnail('https://i.imgur.com/mZLJK8p.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Special)** \n \n**Redwing • T4 Upgrade** \n<:abilityon:663751832690229278> \nChange Speed Bar for self and all allies by **25% -> 30%** + \n10% for each enemy with a positive effect. \nClear Stealth from all enemies.")
+	.setThumbnail('https://i.imgur.com/o6GRP9c.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Ultimate)** \n \n**Strafing Run • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack all enemies for **160% -> 190%** damage + 50% Piercing.  \nFor each positive effect on an enemy, \nBonus Attack that enemy for 80% damage + 50% Piercing. \nOn WAR OFFENSE, **+30% -> +50%** Piercing to primary and secondary attacks.")
+	.setThumbnail('https://i.imgur.com/IQrr9kt.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Falcon (Passive)** \n \n**EXO-7 Wingsuit • T4 Upgrade** \n \nGain +25% Block Chance. \nGain +5% Block Chance per POWER ARMOR ally. \nGain +10% Max Health. \nGain **+5% -> +10%** Block Amount.")
+	.setThumbnail('https://i.imgur.com/LbGkeDk.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **Falcon** \nFalcon's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **Falcon** \nFalcon is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'gamora' || command === 'daughterofthanos' || command === 'gam' || command === 'gamor') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Basic)** \n \n**Assassin's Strike • T4 Upgrade** \n \nAttack primary target for 250% damage + \n**40% -> 50%** chance to Bonus attack up to 2 times for 200% damage.")
+	.setThumbnail('https://i.imgur.com/ZipNAx6.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Special)** \n \n**Ruthless Blade • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **230% -> 270%** damage. \nChain to 1-2 adjacent targets for **180% -> 200%** damage. \nOn Kill, fill Speed Bar by 100%. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/MVpJ1LM.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Ultimate)** \n \n**Flying Slash • T4 Upgrade** \n<:abilityoff:663751832413405184> \nGain Offense Up for 2 turns. \nAttack primary target for **370% -> 420%** damage. \nOn Kill, fill Speed Bar by 100%.")
+	.setThumbnail('https://i.imgur.com/XPkQAtm.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Passive)** \n \n**Deadly Methods • T4 Upgrade** \n \nGain **+5% -> +10%** Crit Chance. \nApply +10% Crit Chance to GUARDIAN allies. \nApply +5% Crit Chance to additional allies.")
+	.setThumbnail('https://i.imgur.com/iW861pc.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Basic)** \n \n**Assassin's Strike • T4 Upgrade** \n \nAttack primary target for 250% damage + \n**40% -> 50%** chance to Bonus attack up to 2 times for 200% damage.")
+	.setThumbnail('https://i.imgur.com/ZipNAx6.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Special)** \n \n**Ruthless Blade • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **230% -> 270%** damage. \nChain to 1-2 adjacent targets for **180% -> 200%** damage. \nOn Kill, fill Speed Bar by 100%. \nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/MVpJ1LM.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Ultimate)** \n \n**Flying Slash • T4 Upgrade** \n<:abilityoff:663751832413405184> \nGain Offense Up for 2 turns. \nAttack primary target for **370% -> 420%** damage. \nOn Kill, fill Speed Bar by 100%.")
+	.setThumbnail('https://i.imgur.com/XPkQAtm.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234>	**Gamora (Passive)** \n \n**Deadly Methods • T4 Upgrade** \n \nGain **+5% -> +10%** Crit Chance. \nApply +10% Crit Chance to GUARDIAN allies. \nApply +5% Crit Chance to additional allies.")
+	.setThumbnail('https://i.imgur.com/iW861pc.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'ghostrider' || command === 'ghost' || command === 'rider' || command === 'gr') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Basic)** \n \n**Hellfire • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \napply Bleed for 2 turns.")
+	.setThumbnail('https://i.imgur.com/lgEhRB2.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Special)** \n \n**Hell Cycle • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **260% -> 290%** damage + \napply 2 Bleed for **1 -> 2** turns. \nAttack all adjacent targets for **240% -> 270%** damage + \napply 2 Bleed. This attack cannot be blocked and cannot miss.")
+	.setThumbnail('https://i.imgur.com/6yqn9PM.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Ultimate)** \n \n**Penance Stare • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **430% -> 500%** Piercing + \napply Offense Down and Defense Down. \nIf Charged, this attack gains 200% Drain and lose 1 Charged.")
+	.setThumbnail('https://i.imgur.com/41vRORY.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Passive)** \n \n**Spirit of Vengeance • T4 Upgrade** \n \nOn Death, grant 2 Ability Energy to all SUPERNATURAL allies. \nOn non-summoned ally Death, attack the enemy that killed the \ntarget for **400% -> 500%** damage and gain +1 Charged, up to a maximum of 5. \nGenerate **2 -> 3** Ability Energy for self. \nWhen a negative effect is applied to an enemy, \nchange Speed Bar of self and all SUPERNATURAL allies by 3%. \nGain **+20% -> +40%** Max Health. \nSUPERNATURAL allies gain **+20% -> +40%** Max Health. \nGain +30% Focus. MYSTIC allies gain +30% Focus.")
+	.setThumbnail('https://i.imgur.com/4BqPBWT.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Basic)** \n \n**Hellfire • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \napply Bleed for 2 turns.")
+	.setThumbnail('https://i.imgur.com/lgEhRB2.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Special)** \n \n**Hell Cycle • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **260% -> 290%** damage + \napply 2 Bleed for **1 -> 2** turns. \nAttack all adjacent targets for **240% -> 270%** damage + \napply 2 Bleed. This attack cannot be blocked and cannot miss.")
+	.setThumbnail('https://i.imgur.com/6yqn9PM.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Ultimate)** \n \n**Penance Stare • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **430% -> 500%** Piercing + \napply Offense Down and Defense Down. \nIf Charged, this attack gains 200% Drain and lose 1 Charged.")
+	.setThumbnail('https://i.imgur.com/41vRORY.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Passive)** \n \n**Spirit of Vengeance • T4 Upgrade** \n \nOn Death, grant 2 Ability Energy to all SUPERNATURAL allies. \nOn non-summoned ally Death, attack the enemy that killed the \ntarget for **400% -> 500%** damage and gain +1 Charged, up to a maximum of 5. \nGenerate **2 -> 3** Ability Energy for self. \nWhen a negative effect is applied to an enemy, \nchange Speed Bar of self and all SUPERNATURAL allies by 3%. \nGain **+20% -> +40%** Max Health. \nSUPERNATURAL allies gain **+20% -> +40%** Max Health. \nGain +30% Focus. MYSTIC allies gain +30% Focus.")
+	.setThumbnail('https://i.imgur.com/4BqPBWT.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \nGhost Rider's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \nGhost Rider is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'greengoblin' || command === 'green' || command === 'goblin' || command === 'gg') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Basic)** \n \n**Goblin Strike • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage. \n25% chance to attack adjacent targets for **220% -> 260%** damage.")
+	.setThumbnail('https://i.imgur.com/nyBz8Ft.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Special)** \n \n**Burning Rage • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack a random target with Stealth for **380% -> 450%** damage. \nIf no targets have Stealth, attack primary target instead. \nDeal 50% additional damage per positive effect on the target.")
+	.setThumbnail('https://i.imgur.com/fGvMb0I.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Ultimate)** \n \n**Fire and Brimstone • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **240% -> 290%** damage. \nAttack 3-4 random targets for **240% -> 290%** damage.")
+	.setThumbnail('https://i.imgur.com/2NhIaAn.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Passive)** \n \n**Cauterize • T4 Upgrade** \n \nOn any SPIDER-VERSE ally's turn, choose 2 random enemies. \nIf they have a positive effect, remove 1. \nOn Spawn, apply Defense Down to the enemy with the most Resistance. \nIf that enemy is S.H.I.E.L.D., apply Defense Down for 2 turns. \nThis attack cannot be resisted. \nGain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/X2c7WOF.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Basic)** \n \n**Goblin Strike • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage. \n25% chance to attack adjacent targets for **220% -> 260%** damage.")
+	.setThumbnail('https://i.imgur.com/nyBz8Ft.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Special)** \n \n**Burning Rage • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack a random target with Stealth for **380% -> 450%** damage. \nIf no targets have Stealth, attack primary target instead. \nDeal 50% additional damage per positive effect on the target.")
+	.setThumbnail('https://i.imgur.com/fGvMb0I.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Ultimate)** \n \n**Fire and Brimstone • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **240% -> 290%** damage. \nAttack 3-4 random targets for **240% -> 290%** damage.")
+	.setThumbnail('https://i.imgur.com/2NhIaAn.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Passive)** \n \n**Cauterize • T4 Upgrade** \n \nOn any SPIDER-VERSE ally's turn, choose 2 random enemies. \nIf they have a positive effect, remove 1. \nOn Spawn, apply Defense Down to the enemy with the most Resistance. \nIf that enemy is S.H.I.E.L.D., apply Defense Down for 2 turns. \nThis attack cannot be resisted. \nGain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/X2c7WOF.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \nGreen Goblin's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \nGreen Goblin is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'graviton' || command === 'grav' || command === 'gravi' || command === 'gra') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Basic)** \n \n**Gravity Wall • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \nBonus attack for **75% -> 100%** damage per negative effect on the target.")
+	.setThumbnail('https://i.imgur.com/NeScjyY.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Special)** \n \n**Crushing Force • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target and adjacent targets for \n**240% -> 300%** damage. \nApply +2 Slow, up to a maximum of 5 to primary target and adjacent targets. \nIf Scientist Supreme is an ally, \napply Bleed to primary target and adjacent targets.")
+	.setThumbnail('https://i.imgur.com/ub0g00N.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Ultimate)** \n \n**Singularity • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **250% -> 300%** damage + \n100% additional damage per negative effect + apply Stun.")
+	.setThumbnail('https://i.imgur.com/LeQQHk1.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Passive)** \n \n**Weight of the World • T4 Upgrade** \n \nWhen an enemy drops below 50% health, \nincrease the duration of their negative effects by +1, \nup to a maximum of 5. \nA.I.M. MINION allies gain **+10% -> +20%** Damage. \nA.I.M. MINION allies gain +20% Max Health. \nIn WAR, on Turn, change Speed Bar of the enemy with the highest Speed by -25%. \nIn WAR, when an enemy drops below 75% health, apply Disrupted.")
+	.setThumbnail('https://i.imgur.com/JR7a2DW.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Basic)** \n \n**Gravity Wall • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \nBonus attack for **75% -> 100%** damage per negative effect on the target.")
+	.setThumbnail('https://i.imgur.com/NeScjyY.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Special)** \n \n**Crushing Force • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target and adjacent targets for \n**240% -> 300%** damage. \nApply +2 Slow, up to a maximum of 5 to primary target and adjacent targets. \nIf Scientist Supreme is an ally, \napply Bleed to primary target and adjacent targets.")
+	.setThumbnail('https://i.imgur.com/ub0g00N.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Ultimate)** \n \n**Singularity • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **250% -> 300%** damage + \n100% additional damage per negative effect + apply Stun.")
+	.setThumbnail('https://i.imgur.com/LeQQHk1.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300>	**Graviton (Passive)** \n \n**Weight of the World • T4 Upgrade** \n \nWhen an enemy drops below 50% health, \nincrease the duration of their negative effects by +1, \nup to a maximum of 5. \nA.I.M. MINION allies gain **+10% -> +20%** Damage. \nA.I.M. MINION allies gain +20% Max Health. \nIn WAR, on Turn, change Speed Bar of the enemy with the highest Speed by -25%. \nIn WAR, when an enemy drops below 75% health, apply Disrupted.")
+	.setThumbnail('https://i.imgur.com/JR7a2DW.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'greg' || command === 'undead' || command === 'undeadasgardian') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Basic)** \n \n**Heavy Slash • T4 Upgrade** \n \nAttack primary target for **210% -> 260%** Piercing + \napply Heal Block.")
+	.setThumbnail('111') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Special)** \n \n**Dark Sacrifice • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **340% -> 400%** Piercing + \napply 2 Bleed for 2 turns. \nAttack self for 2000% Piercing damage. \nThis attack cannot miss **though it can be dodged**.")
+	.setThumbnail('222') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Passive)** \n \n**Undeath • T4 Upgrade** \n \nOn Death, Heal most injured, non-summoned ASGARDIAN \nally for **140% -> 180%** of this character's Max Health. \nOn Death, change Speed Bar of all enemies by -10%.")
+	.setThumbnail('444') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Basic)** \n \n**Heavy Slash • T4 Upgrade** \n \nAttack primary target for **210% -> 260%** Piercing + \napply Heal Block.")
+	.setThumbnail('111') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Special)** \n \n**Dark Sacrifice • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **340% -> 400%** Piercing + \napply 2 Bleed for 2 turns. \nAttack self for 2000% Piercing damage. \nThis attack cannot miss **though it can be dodged**.")
+	.setThumbnail('222') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Passive)** \n \n**Undeath • T4 Upgrade** \n \nOn Death, Heal most injured, non-summoned ASGARDIAN \nally for **140% -> 180%** of this character's Max Health. \nOn Death, change Speed Bar of all enemies by -10%.")
+	.setThumbnail('444') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \nUndead Asgardian's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \nUndead Asgardian is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'groot' || command === 'tree') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Basic)** \n \n**Crushing Blow • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
+	.setThumbnail('https://i.imgur.com/HD4UZMG.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Special)** \n \n**Overgrowth • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain **1 -> 2** Deathproof. \nApply Deathproof + Defense Up to all allies.")
+	.setThumbnail('https://i.imgur.com/dkRv09G.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Ultimate)** \n \n**Life Spores • T4 Upgrade** \n<:abilityoff:663751832413405184> \nHeal all allies for **3000 -> 6000** Health + \n5% of this character's Max Health. Clear 2 negative effects from all allies. \nApply Immunity to Lowest Health GUARDIAN ally for 2 turns.")
+	.setThumbnail('https://i.imgur.com/aR8npPS.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Passive)** \n \n**I am Groot • T4 Upgrade** \n \nWhen Groot is attacked, **50% -> 100%** chance to apply \nSlow to attacker for 1 turns. \nOn Death: \n20% chance to Revive with 25% of this character's Max Health. \nApply Deathproof to Rocket Raccoon. \nApply Defense Up to all allies. \nApply Speed Up + Offense Up + Counter to GUARDIAN allies")
+	.setThumbnail('https://i.imgur.com/oZwLFbH.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Basic)** \n \n**Crushing Blow • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
+	.setThumbnail('https://i.imgur.com/HD4UZMG.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Special)** \n \n**Overgrowth • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain **1 -> 2** Deathproof. \nApply Deathproof + Defense Up to all allies.")
+	.setThumbnail('https://i.imgur.com/dkRv09G.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Ultimate)** \n \n**Life Spores • T4 Upgrade** \n<:abilityoff:663751832413405184> \nHeal all allies for **3000 -> 6000** Health + \n5% of this character's Max Health. Clear 2 negative effects from all allies. \nApply Immunity to Lowest Health GUARDIAN ally for 2 turns.")
+	.setThumbnail('https://i.imgur.com/aR8npPS.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**groot (Passive)** \n \n**I am Groot • T4 Upgrade** \n \nWhen Groot is attacked, **50% -> 100%** chance to apply \nSlow to attacker for 1 turns. \nOn Death: \n20% chance to Revive with 25% of this character's Max Health. \nApply Deathproof to Rocket Raccoon. \nApply Defense Up to all allies. \nApply Speed Up + Offense Up + Counter to GUARDIAN allies")
+	.setThumbnail('https://i.imgur.com/oZwLFbH.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **groot** \ngroot's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **groot** \ngroot is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+
+//<:handarcher:663749985258569769>
+//<:handassassin:663749983413075969>
+//<:handblademaster:663749983945752586>
+//<:handsentry:663749985027883019>
+//<:handsorceress:663749985094991915>
+
+if(command === 'hawkeye' || command === 'hawk' || command === 'eye' || command === 'ronin'|| command === 'clint' || command === 'barton') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Basic)** \n \n**Deadeye • T4 Upgrade** \n \nAttack primary target for 250% damage. \nGain **+10% -> +15%** Crit chance and deal \n+20% Piercing with this attack. \nAttack is Unavoidable.")
+	.setThumbnail('https://i.imgur.com/CdMzOFW.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Special)** \n \n**Concussion Arrow • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **140% -> 150%** damage + \nchange Speed Bar by -20%. Clear **3 -> all** positive \neffects from primary and adjacent targets. \nThis attack cannot miss and cannot be dodged.")
+	.setThumbnail('https://i.imgur.com/qJ67nw4.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Ultimate)** \n \n**Airburst • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack all enemies for **140% -> 190%** damage. \nApply Blind to primary target + 50% \nchance to apply Blind to all remaining targets. \nThis attack is Unavoidable.")
+	.setThumbnail('https://i.imgur.com/D1CooD8.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Passive)** \n \n**Shot in the Dark • T4 Upgrade** \n \nOn turn, 50% chance to attack an enemy with Stealth \nfor **170% -> 200%** Unavoidable damage. \nClear Stealth from that enemy.")
+	.setThumbnail('https://i.imgur.com/UHRR6vU.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Basic)** \n \n**Deadeye • T4 Upgrade** \n \nAttack primary target for 250% damage. \nGain **+10% -> +15%** Crit chance and deal \n+20% Piercing with this attack. \nAttack is Unavoidable.")
+	.setThumbnail('https://i.imgur.com/CdMzOFW.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Special)** \n \n**Concussion Arrow • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **140% -> 150%** damage + \nchange Speed Bar by -20%. Clear **3 -> all** positive \neffects from primary and adjacent targets. \nThis attack cannot miss and cannot be dodged.")
+	.setThumbnail('https://i.imgur.com/qJ67nw4.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Ultimate)** \n \n**Airburst • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack all enemies for **140% -> 190%** damage. \nApply Blind to primary target + 50% \nchance to apply Blind to all remaining targets. \nThis attack is Unavoidable.")
+	.setThumbnail('https://i.imgur.com/D1CooD8.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Passive)** \n \n**Shot in the Dark • T4 Upgrade** \n \nOn turn, 50% chance to attack an enemy with Stealth \nfor **170% -> 200%** Unavoidable damage. \nClear Stealth from that enemy.")
+	.setThumbnail('https://i.imgur.com/UHRR6vU.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \nHawkeye's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \nHawkeye is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'heimdall') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Basic)** \n \n**Hofund Slash • T4 Upgrade** \n \nAttack primary target for **260% -> 310%** damage to primary target. \nGain an assist from a random ASGARDIAN ally.")
+	.setThumbnail('https://i.imgur.com/VMPQ2dZ.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Special)** \n \n**Divine Foresight • T4 Upgrade** \n<:abilityon:663751832690229278> \nFlip Stealth on each enemy. \nAttack all enemies for **280% -> 330%** damage. \n**75% -> 100%** chance to clear Heal Block from self and all ASGARDIAN allies.")
+	.setThumbnail('https://i.imgur.com/215OPOm.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Ultimate)** \n \n**Sworn Oath • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **310% -> 360%** damage. \nAttack all adjacent targets for **280% -> 330%** damage. \nApply Heal Block to primary and secondary targets.")
+	.setThumbnail('https://i.imgur.com/ZKul340.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Passive)** \n \n**The All-Seeing • T4 Upgrade** \n \nGain +10000% Resistance against Blind. \nASGARDIAN allies gain +10000% Resistance against Blind. \nGain **+20% -> +30%** Focus. \nASGARDIAN allies gain **+20% -> +30%** Focus. \nOn Turn, heal self for 5% of Max Health + \n5% of Max Health per non-minion ASGARDIAN ally. \nOn WAR DEFENSE, on Spawn, apply Defense Up to \n**3 -> all** ASGARDIAN allies for 2 turns.")
+	.setThumbnail('https://i.imgur.com/AS0RQr3.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Basic)** \n \n**Hofund Slash • T4 Upgrade** \n \nAttack primary target for **260% -> 310%** damage to primary target. \nGain an assist from a random ASGARDIAN ally.")
+	.setThumbnail('https://i.imgur.com/VMPQ2dZ.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Special)** \n \n**Divine Foresight • T4 Upgrade** \n<:abilityon:663751832690229278> \nFlip Stealth on each enemy. \nAttack all enemies for **280% -> 330%** damage. \n**75% -> 100%** chance to clear Heal Block from self and all ASGARDIAN allies.")
+	.setThumbnail('https://i.imgur.com/215OPOm.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Ultimate)** \n \n**Sworn Oath • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **310% -> 360%** damage. \nAttack all adjacent targets for **280% -> 330%** damage. \nApply Heal Block to primary and secondary targets.")
+	.setThumbnail('https://i.imgur.com/ZKul340.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Passive)** \n \n**The All-Seeing • T4 Upgrade** \n \nGain +10000% Resistance against Blind. \nASGARDIAN allies gain +10000% Resistance against Blind. \nGain **+20% -> +30%** Focus. \nASGARDIAN allies gain **+20% -> +30%** Focus. \nOn Turn, heal self for 5% of Max Health + \n5% of Max Health per non-minion ASGARDIAN ally. \nOn WAR DEFENSE, on Spawn, apply Defense Up to \n**3 -> all** ASGARDIAN allies for 2 turns.")
+	.setThumbnail('https://i.imgur.com/AS0RQr3.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'hela' || command === 'goddess' || command === 'godessofdeath') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Basic)** \n \n**Black Blade • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + \nflip 1 Deathproof on target. Attack the most injured enemy for \n**90% -> 100%** Piercing, ignoring Taunt.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089534094639104/Icon_Ability_Hela_Basic-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-347047578593136189.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Special)** \n \n**Command Undead • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **290% -> 350%** damage + \napply Disrupted for **1 -> 2** turns. Gain an Assist from Undead Asgardian.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089544295186452/Icon_Ability_Hela_Special-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-14908862531093919536-1.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Ultimate)** \n \n**Death Knives • T4 Upgrade** \n<:abilityoff:663751832413405184> \nClear 3 Deathproof from all enemies. \nGain +5000% Extra Focus for this action. \nAttack all enemies for **300% -> 350%** damage. \nSpread **2 -> 4** negative effects from the primary target to all secondary targets. \nThis will not spread Stun. \nApply 2 Regeneration to all non-summoned ASGARDIAN allies.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089553376116736/Icon_Ability_Hela_Ultimate-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-16661626197445216232.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Passive)** \n \n**Goddess of Death • T4 Upgrade** \n \nOn Spawn, summon an Undead Asgardian. \nOn an Undead Asgardian's Death, summon an Undead Asgardian. \nOn Turn, heal self for 5% of Max Health + \n5% of Max Health per non-summoned ASGARDIAN ally. \nGain **+10% -> +15%** Max Health. \nGain **+10% -> +15%** Max Health per non-summoned ASGARDIAN ally. \nOn WAR DEFENSE: \nOn non-summoned ASGARDIAN ally's Death, summon an Undead Asgardian. \nGain **+20% -> +25%** Damage. \nASGARDIAN allies gain **+20% -> +25%** Damage.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089576109244436/Icon_Ability_Hela_Passive-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-12955924800836498730.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Basic)** \n \n**Black Blade • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + \nflip 1 Deathproof on target. Attack the most injured enemy for \n**90% -> 100%** Piercing, ignoring Taunt.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089534094639104/Icon_Ability_Hela_Basic-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-347047578593136189.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Special)** \n \n**Command Undead • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **290% -> 350%** damage + \napply Disrupted for **1 -> 2** turns. Gain an Assist from Undead Asgardian.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089544295186452/Icon_Ability_Hela_Special-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-14908862531093919536-1.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Ultimate)** \n \n**Death Knives • T4 Upgrade** \n<:abilityoff:663751832413405184> \nClear 3 Deathproof from all enemies. \nGain +5000% Extra Focus for this action. \nAttack all enemies for **300% -> 350%** damage. \nSpread **2 -> 4** negative effects from the primary target to all secondary targets. \nThis will not spread Stun. \nApply 2 Regeneration to all non-summoned ASGARDIAN allies.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089553376116736/Icon_Ability_Hela_Ultimate-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-16661626197445216232.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512>	**Hela (Passive)** \n \n**Goddess of Death • T4 Upgrade** \n \nOn Spawn, summon an Undead Asgardian. \nOn an Undead Asgardian's Death, summon an Undead Asgardian. \nOn Turn, heal self for 5% of Max Health + \n5% of Max Health per non-summoned ASGARDIAN ally. \nGain **+10% -> +15%** Max Health. \nGain **+10% -> +15%** Max Health per non-summoned ASGARDIAN ally. \nOn WAR DEFENSE: \nOn non-summoned ASGARDIAN ally's Death, summon an Undead Asgardian. \nGain **+20% -> +25%** Damage. \nASGARDIAN allies gain **+20% -> +25%** Damage.")
+	.setThumbnail('https://cdn.discordapp.com/attachments/480441624606801921/624089576109244436/Icon_Ability_Hela_Passive-CAB-2e5e3344582a4ca6dcde2b3b1806d1e0-12955924800836498730.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512> **Hela** \nHela's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512> **Hela** \nHela is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+
+
+
+
+
+//<:hulk:663749985594245130>
+
+//<:hydragrenadier:663749985669611540>
+//<:hydraguard:663749985321353218>
+//<:hydrascientist:663749986013413386>
+//<:hydrasniper:663749986336374811>
+//<:hydratrooper:663752253215342603>
+
+
+//<:invisiblewoman:663752234126934016>
+//<:ironfist:663751749454004254>
+//<:ironman:663751735591960577>
+//<:jessicajones:663750493540974612>
+//<:johnnystorm:663750493478322186>
+//<:juggernaut:663750495558696970>
+//<:killmonger:663750495608897566>
+//<:kingpin:663750493612539904>
+//<:korath:663750493331521547>
+
+
+//<:kreecyborg:663750490512687116>
+//<:kreeguard:663750493398368276>
+//<:kreenoble:663750496569524255>
+//<:kreeoracle:663750494795202562>
+//<:kreereaper:663750487346118676>
+
+
+
+//<:loki:663750495139266591>
+//<:lukecage:663750493172006936>
+//<:magneto:663750493419339810>
+//<:mantis:663750493583179808>
+//<:mbaku:663750495621480449>
+
+
+//<:mercleuitenant:663750495462227978>
+//<:mercriotguard:663750491431370776>
+//<:mercsniper:663750493750820864>
+
+
+//<:miles:663750496015876096>
+//<:minnerva:663750495751634954>
+//<:mordo:663750495562629161>
+//<:mrfantastic:663750493746495488>
+//<:mrsinister:663750495839453185>
+//<:msmarvel:663750496355483679>
+//<:mysterio:663750495734726656>
+//<:mystique:663750495697109002>
+//<:namor:663750493709008919>
+//<:nebula:663750493033594890>
+//<:nickfury:663750493687775236>
+//<:nightnurse:663750495873007627>
+//<:okeye:663750495860686848>
+//<:phoenix:663750496829308958>
+//<:psylocke:663750496837828608>
+//<:punisher:663750495982190620>
+//<:pyro:663750496346963968>
+//<:quake:663750496024133632>
+
+
+//<:ravagerboomer:663750496099500032>
+//<:ravagerbruiser:663750495839584267>
+//<:ravagerstitcher:663750496338837504>
+
+
+//<:redskull:663750496959594531>
+//<:rescue:663750496057819147>
+//<:rhino:663750497328693261>
+//<:rocketraccoon:663750494908579851>
+//<:ronan:663752093135274014>
+//<:sabretooth:663752081659789312>
+//<:scarletwitch:663751626665885707>
+//<:scientistsupreme:663751613256826910>
+
+
+//<:shieldassault:663750496670187521>
+//<:shieldmedic:663750794700390421>
+//<:shieldoperative:663750789021564938>
+//<:shieldsecurity:663750788891541504>
+//<:shieldtrooper:663750790791561219>
+
+
+
+//<:shocker:663750794142679041>
+//<:shuri:663750793765060629>
+//<:sif:663750798311948299>
+//<:spiderman:663750794092216361>
+//<:starlord:663750797447921705>
+//<:storm:663750791110197249>
+//<:stryfe:663750797871546368>
+//<:thanos:663750798324400128>
+//<:thing:663750797791592478>
+//<:thor:663750798014021632>
+//<:ultimus:663750798039056384>
+//<:ultron:663750798202634250>
+
+
+//<:ultronaccelerator:663753510210240525>
+//<:ultronfabricator:663753510268960788>
+//<:ultronincinerator:663753510080217119>
+
+
+//<:venom:663750908668018710>
+//<:vision:663750896835887110>
+//<:vulture:663750909653811221>
+//<:warmachine:663750909146300441>
+//<:wasp:663750911088394280>
+//<:wintersoldier:663750908940779560>
+//<:wolverine:663750909062414356>
+//<:yondu:663750908957556785>
+//<:YOYO:663750909582508053>
+
+
+
+
 
 
 //TEAMS
@@ -2290,6 +3469,25 @@ message.channel.send(exampleEmbed);
 });
 
 
-
+//COMMANDS
+client.on('message', message => {	
+if (message.content === '!commands') {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Commands List* **                     ** ```![charactername]``` ")
+	.setThumbnail('https://i.imgur.com/e9DIB8e.png') 
+	.addField('!away', 'Sends away note to captains [!away travelling for x days] (Removes away message for privacy and informs captains of your circumstances)')
+	.addBlankField()
+	.addField('!uniques', 'Sends an infographic of uniques tied to characters')
+	.addBlankField()
+	.addField('!blitz', 'Shows current blitz predictions, (!blitz2 for orb assault blitz)')
+	.addBlankField()
+	.addField('!event[charactername]', 'Sends an infographic of lowest reported requirements to beat the legendary event 5/6/7*')
+	.addBlankField()
+	.addField('![charactername]', 'Sends an infographic of required gear levels for the character GearTier 10/11/12 1-13 + T4 recommendations')
+	.addBlankField()
+	message.channel.send(exampleEmbed);
+}
+});
 
 client.login(process.env.TOKEN);
