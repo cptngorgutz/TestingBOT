@@ -289,7 +289,7 @@ let shield = args[1];
 let s6 = args[1];
 
  //bot spam channel
-if(command === 'counter') {
+if(command === 'counter' && args[1] === aim || args[1] === asgardians || args[1] === brawlers || args[1] === shield || args[1] === s6) {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 if (aimcounter === "aim"){	
 const aimcounterimage = client.channels.get('666332891730673668')
@@ -484,6 +484,8 @@ message.channel.send(embed);
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
 }
+} else {
+message.channel.send("Team Unavailible").catch(console.error);	
 }
 
 if(command === 'submit') {
@@ -3474,7 +3476,7 @@ client.on('message', message => {
 if (message.content === '!comm') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**Commands List** \n \n**!away** \nSends away note to captains \n[!away travelling for 2 days] \n(It will remove your message for privacy and inform captains of your circumstances) \n \n**!uniques** \nSends an infographic of uniques tied to characters. \n \n**!blitz** \nShows current blitz predictions, (!blitz2 for orb assault blitz) \n \n**!event [charactername]** \nSends an infographic of lowest reported requirements to beat the legendary event 5/6/7* \n \n**![charactername]** \nSends an infographic of required gear levels for the character GearTier 10/11/12 + 1-13 + T4 recommendations \n \n**-------------CHARACTERS-------------** \n**![charactername] basic** \nSends characters basic information \n**![charactername] special** \nSends characters special information \n**![charactername] ultimate** \nSends characters ultimate information \n**![charactername] passive** \nSends characters passive information \n**![charactername] speed** \nSends characters speed \n**![charactername] unlock** \n Sends characters unlock/farming location \n**![charactername] trait** \nSends characters traits \n**![charactername] kit** \nSends characters full kit \n \n**---------------WAR---------------** \n **!counter [teamname]** \nSends an infographic of war counters \n[!counter aim] \n \n** !counter [teamname+info]** \nSends a detailed guide including text,youtube videos, and winning matchups. \n \n**!submit warcounter aim** \nSends your text&image to be reviewed by captains. If approved they will be added to the counter infographics. \n**(Image + command must be sent in the same message)** \n \n")
+	.setDescription("**Commands List** \n \n**!away** \nSends away note to captains \n[!away travelling for 2 days] \n(It will remove your message for privacy and inform captains of your circumstances) \n \n**!uniques** \nSends an infographic of uniques tied to characters. \n \n**!blitz** \nShows current blitz predictions, (!blitz2 for orb assault blitz) \n \n**!event [charactername]** \nSends an infographic of lowest reported requirements to beat the legendary event 5/6/7* \n \n**![charactername]** \nSends an infographic of required gear levels for the character GearTier 10/11/12 + 1-13 + T4 recommendations \n \n**-------------CHARACTERS-------------** \n**![charactername] basic** \nSends characters basic information \n**![charactername] special** \nSends characters special information \n**![charactername] ultimate** \nSends characters ultimate information \n**![charactername] passive** \nSends characters passive information \n**![charactername] speed** \nSends characters speed \n**![charactername] unlock** \n Sends characters unlock/farming location \n**![charactername] trait** \nSends characters traits \n**![charactername] kit** \nSends characters full kit \n \n**---------------WAR---------------** \n **!counter [teamname]** \nSends an infographic of war counters \nexample:[!counter aim] \n \n** !counter [teamname+info]** \nSends a detailed guide including text,youtube videos, and winning matchups. \n \n**!submit warcounter aim** \nSends your text&image to be reviewed by captains. If approved they will be added to the counter infographics. \n**(Image + command must be sent in the same message)** \n \n")
 	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 	message.channel.send(exampleEmbed);
 }
