@@ -3482,7 +3482,7 @@ if (message.content === '!comm') {
 }
 });
 
-//testing raids
+
 
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -3496,6 +3496,10 @@ let ultimus = args[0];
 //ULTIMUS & EVENT RAIDS
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'raid') {
+const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
+const TB2captains = message.guild.roles.find(role => role.name === 'TB2 Captain');
+const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain');
+if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 if(alpha === "alpha" && args[1] === "4"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -3526,11 +3530,9 @@ if(ultimus === "ultimus" && args[1] === "7"){
 	.setDescription("**Ultimus 7 would have launched**.")
 	message.channel.send(exampleEmbed);
 }
-
 }
 }
 });
-
 
 
 
