@@ -3485,52 +3485,7 @@ if (message.content === '!comm') {
 
 //testing raids
 
-client.on("message", message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-let alpha = args[0];
-let beta = args[0];
-let gamma = args[0];
-let ultimus = args[0]; 
 
-
-//ULTIMUS & EVENT RAIDS
-if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'raid') {
-if(alpha === "alpha" && args[1] === "4"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Alpha 4 would have launched**.")
-	message.channel.send(exampleEmbed);
-}
-if(beta === "beta" && args[1] === "4"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Beta 4 would have launched**.")
-	message.channel.send(exampleEmbed);
-}
-if(gamma === "gamma" && args[1] === "4"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Gamma 4 would have launched**.")
-	message.channel.send(exampleEmbed);
-}
-if(ultimus === "ultimus" && args[1] === "6"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Ultimus 6 would have launched**.")
-	message.channel.send(exampleEmbed);
-}
-if(ultimus === "ultimus" && args[1] === "7"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Ultimus 7 would have launched**.")
-	message.channel.send(exampleEmbed);
-}
-
-}
-}
-});
 
 
 
