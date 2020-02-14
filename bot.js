@@ -4774,6 +4774,7 @@ message.channel.send("@everyone Free For All")
 
 
 //remove messages
+client.on("message", async message => {
 const args = message.content.split(' ').slice(1); // All arguments behind the command name with the prefix
 const amount = args.join(' '); // Amount of messages which should be deleted
 
@@ -4786,6 +4787,6 @@ if (amount < 1) return msg.reply('You have to delete at least 1 message!'); // C
 await msg.channel.messages.fetch({ limit: amount }).then(messages => { // Fetches the messages
     msg.channel.bulkDelete(messages // Bulk deletes all messages that have been fetched and are not older than 14 days (due to the Discord API)
 )});
-
+});
 
 client.login(process.env.TOKEN);
