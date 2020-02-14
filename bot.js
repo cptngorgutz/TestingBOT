@@ -485,7 +485,6 @@ message.channel.send(embed);
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
 }
 } else {
-message.channel.send("Team unavailible").catch(console.error);	
 }  
 //if (condition1 && [1, 2].some(r => r == 2))
 
