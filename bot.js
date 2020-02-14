@@ -3492,7 +3492,6 @@ let beta = args[0];
 let gamma = args[0];
 let ultimus = args[0]; 
 
-
 //ULTIMUS & EVENT RAIDS
 const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
 const TB2captains = message.guild.roles.find(role => role.name === 'TB2 Captain');
@@ -3501,37 +3500,1072 @@ if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2capta
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //BOT SPAM CHANNEL
 if(command === 'raid') {
 if(alpha === "alpha" && args[1] === "4"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Alpha 4 would have launched**.")
-	message.channel.send(exampleEmbed).catch(err => console.log(err));
+if (msg.channel.id === '656230420265828363' || msg.channel.id === '656230665221701682' || msg.channel.id === '656207417033359371' || msg.channel.id === '656216714723459116' || msg.channel.id === '656232194137784333' || msg.channel.id === '656232345371672577' || msg.channel.id === '643229344793231370') {
+//                       TB1 EVENT ROOM#1                           TB1 EVENT ROOM#2                           TB2 EVENT ROOM#1                           TB2 EVENT ROOM#2                           TB3 EVENT ROOM#1                           TB3 EVENT ROOM#2                           TB3 ALPHA ROOM 
+	msg.channel.bulkDelete(100)
+    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Alpha4.png')] });
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  	
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  	
+}
 }
 if(beta === "beta" && args[1] === "4"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Beta 4 would have launched**.")
-	message.channel.send(exampleEmbed).catch(err => console.log(err));
+if (msg.channel.id === '656230420265828363' || msg.channel.id === '656230665221701682' || msg.channel.id === '656207417033359371' || msg.channel.id === '656216714723459116' || msg.channel.id === '656232194137784333' || msg.channel.id === '656232345371672577' || msg.channel.id === '651159388685336587') {
+//                       TB1 EVENT ROOM#1                           TB1 EVENT ROOM#2                           TB2 EVENT ROOM#1                           TB2 EVENT ROOM#2                           TB3 EVENT ROOM#1                           TB3 EVENT ROOM#2 TB3 room 
+	msg.channel.bulkDelete(100)
+    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Beta4.png')] });
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  	
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  		
+}
 }
 if(gamma === "gamma" && args[1] === "4"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Gamma 4 would have launched**.")
-	message.channel.send(exampleEmbed).catch(err => console.log(err));
+if (msg.channel.id === '656230420265828363' || msg.channel.id === '656230665221701682' || msg.channel.id === '656207417033359371' || msg.channel.id === '656216714723459116' || msg.channel.id === '656232194137784333' || msg.channel.id === '656232345371672577' || msg.channel.id === '655246084418830346') {
+//                       TB1 EVENT ROOM#1                           TB1 EVENT ROOM#2                           TB2 EVENT ROOM#1                           TB2 EVENT ROOM#2                           TB3 EVENT ROOM#1                           TB3 EVENT ROOM#2                            TB3 GAMMA ROOM :/
+	msg.channel.bulkDelete(100)
+    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Gamma4.png')] });
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  	
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  		
+}
 }
 if(ultimus === "ultimus" && args[1] === "6"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Ultimus 6 would have launched**.")
-	message.channel.send(exampleEmbed).catch(err => console.log(err));
+if (message.channel.id === '656244057244303361' || message.channel.id === '643229492650704973') {
+//                        TB2 ULT 6 ROOM                             TB3 ULT 6 ROOM                       
+	message.channel.bulkDelete(100)
+    message.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus6.png')] });
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  	
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  		
+}
 }
 if(ultimus === "ultimus" && args[1] === "7"){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Ultimus 7 would have launched**.")
-	message.channel.send(exampleEmbed).catch(err => console.log(err));
+if (msg.channel.id === '634155222490415104' || msg.channel.id === '634155347736526848' || msg.channel.id === '646322699869880340') {
+//                       TB1 ULT 7 ROOM                             TB2 ULT 7 ROOM                              TB3 ULT 7 ROOM
+	msg.channel.bulkDelete(100)
+    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus7.png')] });
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  	
+	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    msg.channel.send("Lane 1 - Blue")
+	msg.channel.send("Lane 2 - Yellow") 
+	msg.channel.send("Lane 3 - Red")  
+	msg.channel.send("Lane 4 - Green")  
+	msg.channel.send("Lane 5 - Purple")  
+	msg.channel.send("Lane 6 - White")  
+	msg.channel.send("Lane 7 - Teal")
+	msg.channel.send("Lane 8 - Orange")	  		
+}
 }
 }//END OF RAID COMMAND
-}//IF USER IS IN BOT SPAM CHANNELS
+}
+//***************************EVENT REFRESH ROOMS*************************
+//***********************************************************************
+if(command === 'refresh') {
+if(alpha === "alpha" && args[1] === "4"){
+if (message.channel.id === '656230420265828363') { // TB1 EVENT ROOM #1
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-alpha")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid alpha 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+	
+}
+if (message.channel.id === '656230665221701682') { // TB1 EVENT ROOM #2
+message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-alpha")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid alpha 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656207417033359371') { // TB2 EVENT ROOM #1
+message.channel.bulkDelete(1)
+// TB2 EVENT ROOM #1
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-alpha")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid alpha 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656216714723459116') { // TB2 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-alpha")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid alpha 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+
+}
+if (message.channel.id === '656232194137784333') { // TB3 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+// TB3 EVENT ROOM #1
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-alpha")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid alpha 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656232345371672577') { // TB3 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-alpha")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid alpha 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+}//END OF ALPHA 4
+if(beta === "beta" && args[1] === "4"){
+if (message.channel.id === '656230420265828363') { //TB1 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-beta")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid beta 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+	}
+if (message.channel.id === '656230665221701682') { //TB1 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-beta")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid beta 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656207417033359371') { //TB2 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-beta")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid beta 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656216714723459116') { //TB2 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-beta")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid beta 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656232194137784333') { //TB3 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-beta")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid beta 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656232345371672577') { //TB3 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-beta")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid beta 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+}//END OF BETA 4
+if(gamma === "gamma" && args[1] === "4"){
+if (message.channel.id === '656230420265828363') { //TB1 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-gamma")).catch();
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid gamma 4')).catch();;
+	};
+	if (message.attachments.size > 0) message.delete(5000).catch();;
+	  })});
+}
+if (message.channel.id === '656230665221701682') { //TB1 EVENT ROOM #2
+	if (message.content === '!refresh gamma 4' || message.content === '!Refresh gamma 4' || message.content === '!Refresh Gamma 4' || message.content === '!refresh Gamma 4'){
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-gamma")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid gamma 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+}	
+if (message.channel.id === '656207417033359371') { //TB2 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-gamma")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid gamma 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656216714723459116') { //TB2 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-gamma")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid gamma 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656232194137784333') { //TB3 EVENT ROOM #1
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-gamma")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid gamma 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '656232345371672577') { //TB3 EVENT ROOM #2
+	message.channel.bulkDelete(1)
+	message.channel.setName('awaiting-rename').then(() => message.guild.channels.find(c => c.name === 'awaiting-rename').setName("raid-claim-gamma")).catch(console.error);
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid gamma 4'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+}//END OF GAMMA 4
+if(ultimus === "ultimus" && args[1] === "6"){
+if (message.channel.id === '656244057244303361'){ //TB2 ULTIMUS 6 ROOM
+	message.channel.bulkDelete(1)
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid ultimus 6')).catch(err => console.log(err));;
+	};
+	if (message.attachments.size > 0) message.delete(5000).catch(err => console.log(err));;
+	  })});
+}
+if (message.channel.id === '643229492650704973'){ //TB3 ULTIMUS 6 ROOM
+	message.channel.bulkDelete(1)
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid ultimus 6'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+}//END OF ULTIMUS 6
+if(ultimus === "ultimus" && args[1] === "7"){
+if (message.channel.id === '634155222490415104') { //TB1 U7 ROOM
+	message.channel.bulkDelete(1)
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid ultimus 7'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '634155347736526848') { //TB2 U7 ROOM
+	message.channel.bulkDelete(1)
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid ultimus 7'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+if (message.channel.id === '646322699869880340') { //TB3 U7 ROOM
+	message.channel.bulkDelete(1)
+	message.channel.fetchMessages({limit: 45}).then(collected => { //collected is a Collection
+	collected.forEach(message => {
+	if (message.content.includes('╔'))  {
+	message.delete(480000).catch();
+	};
+	if (message.content.includes('Lane 1 '))  {
+	message.delete(420000).catch();
+	};
+	if (message.content.includes('Lane 2 '))  {
+	message.delete(360000).catch();
+	};
+	if (message.content.includes('Lane 3 '))  {
+	message.delete(320000).catch();
+	};
+	if (message.content.includes('Lane 4 '))  {
+	message.delete(240000).catch();
+	};
+	if (message.content.includes('Lane 5 '))  {
+	message.delete(180000).catch();
+	};
+	if (message.content.includes('Lane 6 '))  {
+	message.delete(120000).catch();
+	};
+	if (message.content.includes('Lane 7 '))  {
+	message.delete(60000).catch();
+	};
+	if (message.content.includes('Lane 8 '))  {
+	message.delete(30000).catch();
+	};
+	if (message.content.includes('To claim a lane:'))  {												   
+	message.delete(510000).then(() => message.channel.send('!raid ultimus 7'));
+	};
+	if (message.attachments.size > 0) message.delete(5000);
+	  })});
+}
+}//END OF ULTIMUS 7
+}//END OF REFRESH COMMAND
+
+//RAID LAUNCHES
 if(command === 'u6') {
 message.channel.bulkDelete(1)
 message.channel.send("@everyone Ultimus 6 Launched")  
@@ -3732,12 +4766,26 @@ message.channel.bulkDelete(1)
 message.channel.send("@everyone Free For All")  
 }
 }//IF USER IS IN WAR CHANNELS
+
+
+
 }//IF USER HAS ROLES TB1/2/3 CAPTAIN
 }); //END OF CLIENT
 
 
+//remove messages
+const args = message.content.split(' ').slice(1); // All arguments behind the command name with the prefix
+const amount = args.join(' '); // Amount of messages which should be deleted
 
+if (!amount) return msg.reply('You haven\'t given an amount of messages which should be deleted!'); // Checks if the `amount` parameter is given
+if (isNaN(amount)) return msg.reply('The amount parameter isn`t a number!'); // Checks if the `amount` parameter is a number. If not, the command throws an error
 
+if (amount > 100) return msg.reply('You can`t delete more than 100 messages at once!'); // Checks if the `amount` integer is bigger than 100
+if (amount < 1) return msg.reply('You have to delete at least 1 message!'); // Checks if the `amount` integer is smaller than 1
+
+await msg.channel.messages.fetch({ limit: amount }).then(messages => { // Fetches the messages
+    msg.channel.bulkDelete(messages // Bulk deletes all messages that have been fetched and are not older than 14 days (due to the Discord API)
+)});
 
 
 client.login(process.env.TOKEN);
