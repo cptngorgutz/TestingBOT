@@ -3484,7 +3484,7 @@ if (message.content === '!comm') {
 
 
 //RAIDS AND WAR COMMANDS
-client.on("message", message => {
+client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let alpha = args[0];
@@ -3531,7 +3531,7 @@ if(ultimus === "ultimus" && args[1] === "7"){
 	message.channel.send(exampleEmbed);
 }
 }//END OF RAID COMMAND
-}//IF USER IS IN BOT CHANNELS
+}//IF USER IS IN BOT SPAM CHANNELS
 if(command === 'u6') {
 message.channel.bulkDelete(1)
 message.channel.send("@everyone Ultimus 6 Launched")  
