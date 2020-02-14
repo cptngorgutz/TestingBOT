@@ -3504,31 +3504,31 @@ if(alpha === "alpha" && args[1] === "4"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Alpha 4 would have launched**.")
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 if(beta === "beta" && args[1] === "4"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Beta 4 would have launched**.")
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 if(gamma === "gamma" && args[1] === "4"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Gamma 4 would have launched**.")
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 if(ultimus === "ultimus" && args[1] === "6"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Ultimus 6 would have launched**.")
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 if(ultimus === "ultimus" && args[1] === "7"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Ultimus 7 would have launched**.")
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 }//END OF RAID COMMAND
 }//IF USER IS IN BOT SPAM CHANNELS
