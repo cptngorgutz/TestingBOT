@@ -3484,7 +3484,7 @@ if (message.content === '!comm') {
 
 
 //RAIDS AND WAR COMMANDS
-client.on("message", async message => {
+client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let alpha = args[0];
