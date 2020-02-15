@@ -4938,7 +4938,7 @@ MENTION.addRole(RANDOMTEAM).catch(console.error);
 message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
 
 } else {
-}}
+}
 // GIVE TB3 WHILST HAVING TB3
 if(MENTION.roles.has(TB3.id)) {
 //console.log("Reached has role");
