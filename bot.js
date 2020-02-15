@@ -4690,7 +4690,7 @@ if(command === "purge") {
 });
 
 //ADD & REMOVE ROLES (FINISHED)
-client.on("message", message => {
+client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
