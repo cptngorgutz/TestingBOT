@@ -4728,9 +4728,6 @@ message.channel.bulkDelete(1)
 //TB1 ROLES
 if(tb1 === "tb1"){
 const MENTION = message.mentions.members.first();
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
-MENTION.addRole(TB1).catch(console.error);
-message.channel.send("TB1 added to " + MENTION );
 	//GIVE TB1 REMOVE TB2
 if(MENTION){
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
@@ -4761,6 +4758,8 @@ MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
 } else {
+MENTION.addRole(TB1).catch(console.error);
+message.channel.send("TB1 added to " + MENTION );
 }
 //GIVE TB1 REMOVE TB3
 if(MENTION.roles.has(TB3.id)) {
@@ -4778,6 +4777,8 @@ MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
 } else {
+MENTION.addRole(TB1).catch(console.error);
+message.channel.send("TB1 added to " + MENTION );
 }
 // GIVE TB1 WHILST HAVING TB1
 if(MENTION.roles.has(TB1.id)) {
