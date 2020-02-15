@@ -4792,7 +4792,7 @@ message.channel.bulkDelete(1)
 }
 if(tb1team1 === "tb1team1"){
 const MENTION = message.mentions.members.first();
-if(message.content.startsWith('!give TB1team1') && message.content.includes(MENTION)) {
+if(MENTION){
 const MENTION = message.mentions.members.first();
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
@@ -4815,6 +4815,59 @@ message.channel.send("" + MENTION + " Is already in TB1team1")
 } else {
 }}
 }
+if(tb1team2 === "tb1team2"){
+const MENTION = message.mentions.members.first();
+if(MENTION){
+const MENTION = message.mentions.members.first();
+const TB1 = message.guild.roles.find(role => role.name === 'TB1');
+const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
+const team2 = message.guild.roles.find(role => role.name === 'TB1team2');
+const team3 = message.guild.roles.find(role => role.name === 'TB1team3');
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
+MENTION.addRole(team2).catch(console.error);
+MENTION.removeRole(team3).catch(console.error);
+message.channel.send("Team3 Removed from " + MENTION + " + Team2 Added")
+}
+//GIVE TEAM 2 REMOVE TEAM 1
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
+MENTION.addRole(team2).catch(console.error);
+MENTION.removeRole(team1).catch(console.error);
+message.channel.send("Team1 Removed from " + MENTION + " + Team2 Added")
+} 
+// GIVE TEAM 2 WHILST HAVING TEAM 2
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
+message.channel.send("" + MENTION + " Is already in TB2team2")
+}  else {
+}
+}
+}
+if(tb1team3 === "tb1team3"){
+const MENTION = message.mentions.members.first();
+if(MENTION){
+const MENTION = message.mentions.members.first();
+const TB1 = message.guild.roles.find(role => role.name === 'TB1');
+const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
+const team2 = message.guild.roles.find(role => role.name === 'TB1team2');
+const team3 = message.guild.roles.find(role => role.name === 'TB1team3');
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
+MENTION.addRole(team3).catch(console.error);
+MENTION.removeRole(team2).catch(console.error);
+message.channel.send("Team2 Removed from " + MENTION + " + Team3 Added")
+} 
+//GIVE TEAM 3 REMOVE TEAM 1
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
+MENTION.addRole(team3).catch(console.error);
+MENTION.removeRole(team1).catch(console.error);
+message.channel.send("Team1 Removed from " + MENTION + " + Team3 Added")
+}
+// GIVE TEAM 3 WHILST HAVING TEAM 3
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
+message.channel.send("" + MENTION + " Is already in TB1team3")
+} else {
+}
+}
+}
+
 if(tb2 === "tb2"){
 	//GIVE TB2 REMOVE TB1
 const MENTION = message.mentions.members.first();
