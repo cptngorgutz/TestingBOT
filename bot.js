@@ -112,160 +112,8 @@ if (msg.content === '!happy') {
 }
 });
 
-//**DELETE TEXT**         
-client.on('message', msg => {
-//                        GADD                     BOB                    RAIN                VAYGRANT               BUSTA                SIREN                CLEAVELANDS           GMONKEY                  AZRYEL               LYLE
-	const admins = [ '174307382296313857', '212232190358978560', '416730768388390912', '159953251691790336', '354421064815607808', '297448131698753538', '344950903910170655', '205608603074297866', '330052499442499585', '312361420547162123', ]
-	if(admins.includes(msg.author.id)){
-	if (msg.content === '!delete 5') {
-    msg.channel.bulkDelete(5)
-	} else{
-		//do nothing
-	}}
-	});
 
-client.on('message', msg => {	
-//ULTRON
-if (msg.content === '!Ultron Basic 7') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 7**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 340% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 65', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic 6') {
-	// inside a command, event listener, etc.
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 6**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 270% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 55', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic 5') {
-	// inside a command, event listener, etc.
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 5**')
-	.setThumbnail('https://i.imgur.com/MvOD9QI.png')
-	.addField('Attack primary target for 230% damage + steal 2 positive effects + clear Taunt. \nLevel Required: 45', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic 4') {
-	// inside a command, event listener, etc.
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 4**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 230% damage + 75% chance to copy 2 positive effects. \nLevel Required: 35', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic 3') {
-	// inside a command, event listener, etc.
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 3**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 180% damage + 75% chance to copy 2 positive effects. \nLevel Required: 25', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic 2') {
-	// inside a command, event listener, etc.
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 2**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 140% damage + 50% chance to copy 2 positive effects. \nLevel Required: 15', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic 1') {
-	// inside a command, event listener, etc.
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Disintegration Beam • Level 1**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Attack primary target for 100% damage + 50% chance to copy 2 positive effects. \nLevel Required: 1', '⠀')
-	msg.channel.send(exampleEmbed);
-}
-if (msg.content === '!Ultron Basic Code') {
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setAuthor('Ultron', 'https://i.imgur.com/GMx4onc.png', 'https://msf.gg/characters/Ultron')
-	.setDescription('**Ultron Basic**')
-	.attachFiles(['./Misc/UltronBasic.png'])
-	.setThumbnail('attachment://UltronBasic.png')
-	.addField('Basic Ability:', 'Target = Crosshair Selection. \nOwn Ability Damage +100% for next (Action).\n(Action) Attack each Target. (Then remove dead units from Target pool.) \nSKIP: \n(Action) 1 time(s) for each Target: Remove Taunt. \nRecipient = Self. \n(Action) 2 time(s) for each Target: Choose a new one of its Buffs (except Taunt): 50% chance to copy it to Recipient. For each successful copy, 0% chance to remove the original. \nProcess on-attack assists. \nProcess Counterattacks.')
-	.addBlankField()
-	.addField('Assist:', 'Target = Crosshair Selection. Own Ability Damage +61% for next (Action). Own Piercing +5% for next (Action). (Action) Attack each Target. (Then remove dead units from Target pool.) SKIP:  (Action) 1 time(s) for each Target: Remove Taunt. ', true)
-	.addBlankField()
-	.addField('Counter:', 'Target = Attacker. Own Ability Damage +61% for next (Action). Own Piercing +5% for next (Action). (Action) Attack each Target. (Then remove dead units from Target pool.) SKIP: (Action) 1 time(s) for each Target: Remove Taunt.', true)
-	msg.channel.send(exampleEmbed);
-}
-
-//YO-YO
-if (msg.content === '!yo-yo kit') {
-}	
-if (msg.content === '!yo-yo T4') { //YOYO T4S	
-	msg.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Basic)** \n \n**Rapid Strikes • T4 Upgrade** \n \nAttack primary target for: \n**200% -> 230%** damage + clear counter. \n**70% -> 100%** chance for an assist from a random INHUMAN ally. \nThis attack cannot be counterattacked.")
-	.setThumbnail('https://i.imgur.com/6qzPGoI.png') 
-	msg.channel.send(exampleEmbed);
-	const exampleEmbed2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **150% -> 170%** damage + \nBonus attack 2 times for **150% -> 170%** damage. \nRepeat this attack on **2 -> 3** additional random targets. \nThis attack cannot be counterattacked.")
-	.setThumbnail('https://i.imgur.com/XSiALFR.png') 
-	msg.channel.send(exampleEmbed2);
-	const exampleEmbed3 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Ultimate)** \n \n**Run the Gauntlet • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184> \nAttack all enemies for **220% -> 270%** damage. \nGrant 1 ability energy to all INHUMAN allies.")
-	.setThumbnail('https://i.imgur.com/FW7RfYR.png') 
-	msg.channel.send(exampleEmbed3);
-	const exampleEmbed4 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, \napply Offence Down to that enemy. This cannot be dodged. \nOn ally non-MINION S.H.I.E.L.D or INHUMAN turn, 50% chance \nto apply Evade to that ally. \n \n**On Spawn:** \nApply Defence Up to self and all non-MINION S.H.I.E.L.D or INHUMAN allies. \nWhena  non-MINION S.H.I.E.L.D or INHUMAN ally drops below \n50% Health, apply Defence up to that ally. \n \n**Stats:** \nGain **20% -> 25%** Dodge chance. \n**Gain 10% Focus per non-MINION S.H.I.E.L.D & INHUMAN ally.**")
-	.setThumbnail('https://i.imgur.com/hCaEsPN.png') 
-	msg.channel.send(exampleEmbed4);
-}
-
-//---------------------------------------
-
-if (msg.content === '!kit') {
-	let url = "https://cdn.discordapp.com/attachments/657543925141078048/667433017647562803/images_12.png"
-	const Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setThumbnail(url)
-	msg.channel.send(Embed);  
-}
-
-
-});
-
-
-//*********WAR COUNTERS + SUBMIT WAR COUNTERS***********
+//*********WAR COUNTERS + SUBMIT WAR COUNTERS*********** (FINISHED)
 //example: !counter aim/+info || !submit warcounter aim)     
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -634,7 +482,7 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 });
 
 
-//*********CHARACTERS + TEAMS***********
+//*********CHARACTERS + TEAMS*********** (FINISHED)
 //example: !ironman speed || !asgardians)
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -3471,7 +3319,7 @@ message.channel.send(exampleEmbed);
 });
 
 
-//COMMANDS
+//COMMANDS LIST
 client.on('message', message => {	
 if (message.content === '!comm') {
 	const exampleEmbed = new Discord.RichEmbed()
@@ -3482,9 +3330,53 @@ if (message.content === '!comm') {
 }
 });
 
-
-//RAIDS AND WAR COMMANDS
+//BLITZ PREDICTIONS & UNIQUES (FINISHED)
 client.on("message", message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+if(command === 'blitz') {
+if(message.channel.id === '428968670908383242'){
+	const channelToCheck = client.channels.get('599409850031669267')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
+}
+}
+if(command === 'blitz2') {
+if(message.channel.id === '428968670908383242'){
+    const channelToCheck = client.channels.get('663350094309097472')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
+}
+}
+if(command === 'uniques') {
+    const channelToCheck = client.channels.get('662765504041058320')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+    }).catch(err => {
+    console.error(err)
+    })
+}
+});
+
+//RAIDS AND WAR COMMANDS (FINISHED)
+client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let alpha = args[0];
@@ -4768,12 +4660,11 @@ message.channel.send("@everyone Free For All")
 }//IF USER IS IN WAR CHANNELS
 
 
-//IF USER HAS ROLES TB1/2/3 CAPTAIN
-}
+
+}//IF USER HAS ROLES TB1/2/3 CAPTAIN
 }); //END OF CLIENT
 
-
-//remove messages
+//PURGE MESSAGES (FINISHED)
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
@@ -4797,5 +4688,220 @@ if(command === "purge") {
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
 }}
 });
+
+//ADD & REMOVE ROLES
+client.on("message", message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
+const TB2captains = message.guild.roles.find(role => role.name === 'TB2 Captain');
+const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain');
+let recruit = args[0]; 
+let tb1 = args[0];
+let tb1recruit = args[0];
+let tb1recruiter = args[0];
+let tb1team1 = args[0];
+let tb2recruit = args[0];
+let tb2recruiter = args[0];
+let tb3recruit = args[0];
+let tb3recruiter = args[0];
+
+
+
+if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
+if(command === "add") {
+if(recruit === "recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("476045239719821324");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("RECRUIT Role was GIVEN to " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb1 === "tb1"){
+	//GIVE TB1 REMOVE TB2
+const MENTION = message.mentions.members.first();
+if(MENTION){
+const TB1 = message.guild.roles.find(role => role.name === 'TB1');
+const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
+const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
+const aTB1team3 = message.guild.roles.find(role => role.name === 'TB1team3');
+const aTB2team1 = message.guild.roles.find(role => role.name === 'TB2team1');
+const aTB2team2 = message.guild.roles.find(role => role.name === 'TB2team2');
+const aTB2team3 = message.guild.roles.find(role => role.name === 'TB2team3');
+const aTB3team1 = message.guild.roles.find(role => role.name === 'TB3team1');
+const aTB3team2 = message.guild.roles.find(role => role.name === 'TB3team2');
+const aTB3team3 = message.guild.roles.find(role => role.name === 'TB3team3');
+const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB1team1');
+if(MENTION.roles.has(TB2.id)) {
+MENTION.addRole(TB1).catch(console.error);
+MENTION.removeRole(TB2).catch(console.error);
+MENTION.removeRole(aTB1team1).catch(console.error);
+MENTION.removeRole(aTB1team2).catch(console.error);
+MENTION.removeRole(aTB1team3).catch(console.error);
+MENTION.removeRole(aTB2team1).catch(console.error);
+MENTION.removeRole(aTB2team2).catch(console.error);
+MENTION.removeRole(aTB2team3).catch(console.error);
+MENTION.removeRole(aTB3team1).catch(console.error);
+MENTION.removeRole(aTB3team2).catch(console.error);
+MENTION.removeRole(aTB3team3).catch(console.error);
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
+} else {
+}
+//GIVE TB1 REMOVE TB3
+if(MENTION.roles.has(TB3.id)) {
+MENTION.addRole(TB1).catch(console.error);
+MENTION.removeRole(TB3).catch(console.error);
+MENTION.removeRole(aTB1team1).catch(console.error);
+MENTION.removeRole(aTB1team2).catch(console.error);
+MENTION.removeRole(aTB1team3).catch(console.error);
+MENTION.removeRole(aTB2team1).catch(console.error);
+MENTION.removeRole(aTB2team2).catch(console.error);
+MENTION.removeRole(aTB2team3).catch(console.error);
+MENTION.removeRole(aTB3team1).catch(console.error);
+MENTION.removeRole(aTB3team2).catch(console.error);
+MENTION.removeRole(aTB3team3).catch(console.error);
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
+} else {
+}
+// GIVE TB1 WHILST HAVING TB1
+if(MENTION.roles.has(TB1.id)) {
+message.channel.send("" + MENTION + " Is already in TB1")
+} else {
+} 
+}
+}
+
+if(tb1recruit === "tb1recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("575668741770182677");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb1recruit Role was GIVEN to " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb1recruiter === "tb1recruiter"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("580453797554552832");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb1recruiter Role was GIVEN to " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb1team1 === "tb1team1"){
+const MENTION = message.mentions.members.first();
+if(message.content.startsWith('!give TB1team1') && message.content.includes(MENTION)) {
+const MENTION = message.mentions.members.first();
+const TB1 = message.guild.roles.find(role => role.name === 'TB1');
+const team1 = message.guild.roles.find(role => role.name === 'TB1team1');
+const team2 = message.guild.roles.find(role => role.name === 'TB1team2');
+const team3 = message.guild.roles.find(role => role.name === 'TB1team3');
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team2.id)) {
+MENTION.addRole(team1).catch(console.error);
+MENTION.removeRole(team2).catch(console.error);
+message.channel.send("Team2 Removed from " + MENTION + " + Team1 Added")
+}
+//GIVE TEAM 1 REMOVE TEAM 3
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team3.id)) {
+MENTION.addRole(team1).catch(console.error);
+MENTION.removeRole(team3).catch(console.error);
+message.channel.send("Team3 Removed from " + MENTION + " + Team1 Added")
+}
+// GIVE TEAM 1 WHILST HAVING TEAM 1
+if(MENTION.roles.has(TB1.id) && MENTION.roles.has(team1.id)) {
+message.channel.send("" + MENTION + " Is already in TB1team1")
+} else {
+}}
+}
+
+if(tb2recruit === "tb2recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("575668979008405504");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb2recruit Role was GIVEN by " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb2recruiter === "tb2recruiter"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("580453859650961408");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb2recruiter Role was GIVEN to " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb3recruit === "tb3recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("575668979008405504");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb2recruit Role was GIVEN by " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb3recruiter === "tb3recruiter"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("643176503542022212");
+userToModify.addRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb3recruiter Role was GIVEN to " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+
+
+}//END OF ADD COMMAND
+
+
+if(command === "remove") {
+if(recruit === "recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("476045239719821324"); 
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("RECRUIT Role was REMOVED from " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb1recruit === "tb1recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("575668741770182677"); 
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb1recruit Role was REMOVED from " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+} 
+if(tb1recruiter === "tb1recruiter"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("580453797554552832");
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb1recruiter Role was REMOVED from " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb2recruit === "tb2recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("575668979008405504"); 
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb2recruit Role was REMOVED by " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb2recruiter === "tb2recruiter"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("580453859650961408");
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb2recruiter Role was REMOVED from " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb3recruit === "tb3recruit"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("643128934187139072"); 
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb3recruit Role was REMOVED by " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+if(tb3recruiter === "tb3recruiter"){
+let userToModify = message.mentions.members.first();
+let roleToAdd = message.guild.roles.get("643176503542022212");
+userToModify.removeRole(roleToAdd).catch(console.error);
+message.guild.channels.find(c => c.name === 'leader-logs').send("tb3recruiter Role was REMOVED from " + userToModify + " by " + message.author);
+message.channel.bulkDelete(1)
+}
+
+
+}//END OF REMOVE COMMAND
+}//IF USER HAS CAPTAINS PRIVILEDGE
+});//END OF CLIENT
+
 
 client.login(process.env.TOKEN);
