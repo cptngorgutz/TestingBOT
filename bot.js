@@ -4777,6 +4777,10 @@ message.channel.send("@everyone Free For All")
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
+const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
+const TB2captains = message.guild.roles.find(role => role.name === 'TB2 Captain');
+const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain');
+if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
     
@@ -4791,7 +4795,7 @@ if(command === "purge") {
     const fetched = await message.channel.fetchMessages({limit: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
-  }
+}}
 });
 
 client.login(process.env.TOKEN);
