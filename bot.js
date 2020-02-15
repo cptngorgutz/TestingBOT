@@ -4892,6 +4892,7 @@ if(tb3 === "tb3"){
 const MENTION = message.mentions.members.first();
 if(MENTION){
 const MENTION = message.mentions.members.first();
+const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB3team1');
