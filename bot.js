@@ -4732,7 +4732,6 @@ const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 MENTION.addRole(TB1).catch(console.error);
 message.channel.send("TB1 added to " + MENTION );
 	//GIVE TB1 REMOVE TB2
-const MENTION = message.mentions.members.first();
 if(MENTION){
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
@@ -4885,7 +4884,6 @@ const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 MENTION.addRole(TB2).catch(console.error);
 message.channel.send("TB2 added to " + MENTION );
 	//GIVE TB2 REMOVE TB1
-const MENTION = message.mentions.members.first();
 if(MENTION){
 const MENTION = message.mentions.members.first();
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
@@ -5039,7 +5037,6 @@ const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 MENTION.addRole(TB1).catch(console.error);
 message.channel.send("TB3 added to " + MENTION );
 	//GIVE TB3 REMOVE TB2
-const MENTION = message.mentions.members.first();
 if(MENTION){
 const MENTION = message.mentions.members.first();
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
