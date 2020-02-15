@@ -3496,7 +3496,7 @@ let ultimus = args[0];
 const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
 const TB2captains = message.guild.roles.find(role => role.name === 'TB2 Captain');
 const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain');
-if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
+if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)).catch(err => console.log(err)); {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //BOT SPAM CHANNEL
 if(command === 'raid') {
 if(alpha === "alpha" && args[1] === "4"){
