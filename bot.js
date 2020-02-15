@@ -4893,7 +4893,7 @@ MENTION.removeRole(aTB2team3).catch(console.error);
 MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
-message.channel.send("TB1 Removed from " + MENTION)
+message.channel.send("TB1 Removed from " + MENTION + "TB2 added.")
 } else if(MENTION.roles.has(TB3.id)) { //GIVE TB2 REMOVE TB3
 MENTION.addRole(TB2).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
