@@ -4770,7 +4770,7 @@ message.channel.send("@everyone Free For All")
 
 //IF USER HAS ROLES TB1/2/3 CAPTAIN
 } else {
-	console.log("User doesn't have role for purge");
+	console.log(`User doesn't have role for purging.`);
 }
 }); //END OF CLIENT
 
