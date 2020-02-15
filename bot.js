@@ -4774,7 +4774,7 @@ message.channel.send("@everyone Free For All")
 
 
 //remove messages
-client.on("message", message => {
+client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command === "purge") {
