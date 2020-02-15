@@ -4723,6 +4723,7 @@ const MENTION = message.mentions.members.first();
 if(MENTION){
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const TB2 = message.guild.roles.find(role => role.name === 'TB3');
 const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
 const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
 const aTB1team3 = message.guild.roles.find(role => role.name === 'TB1team3');
