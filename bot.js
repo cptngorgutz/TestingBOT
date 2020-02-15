@@ -5034,7 +5034,7 @@ message.channel.bulkDelete(1)
 if(tb3 === "tb3"){
 const MENTION = message.mentions.members.first();
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-MENTION.addRole(TB1).catch(console.error);
+MENTION.addRole(TB3).catch(console.error);
 message.channel.send("TB3 added to " + MENTION );
 	//GIVE TB3 REMOVE TB2
 if(MENTION){
