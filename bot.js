@@ -4755,7 +4755,7 @@ MENTION.removeRole(aTB2team3).catch(console.error);
 MENTION.removeRole(aTB3team1).catch(console.error);
 MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
-message.channel.send("TB2 Removed from " + MENTION)
+message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added.")
 } else if(MENTION.roles.has(TB3.id)) { //GIVE TB1 REMOVE TB3
 MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
