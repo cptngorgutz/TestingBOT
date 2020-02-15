@@ -4757,12 +4757,7 @@ MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB2 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
-} else {
-	MENTION.addRole(TB1).catch(console.error);
-message.channel.send("TB1 added to " + MENTION );
-}
-//GIVE TB1 REMOVE TB3
-if(MENTION.roles.has(TB3.id)) {
+} else if(MENTION.roles.has(TB3.id)) { //GIVE TB1 REMOVE TB3
 MENTION.addRole(TB1).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
 MENTION.removeRole(aTB1team1).catch(console.error);
@@ -4776,14 +4771,11 @@ MENTION.removeRole(aTB3team2).catch(console.error);
 MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB3 Removed from " + MENTION + " + TB1 Added, Team1 Assigned.")
+} else if(MENTION.roles.has(TB1.id)) { // GIVE TB1 WHILST HAVING TB1
+message.channel.send("" + MENTION + " Is already in TB1")
 } else {
 MENTION.addRole(TB1).catch(console.error);
 message.channel.send("TB1 added to " + MENTION );
-}
-// GIVE TB1 WHILST HAVING TB1
-if(MENTION.roles.has(TB1.id)) {
-message.channel.send("" + MENTION + " Is already in TB1")
-} else if (MENTION){
 } 
 }
 }
