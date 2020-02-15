@@ -4822,6 +4822,7 @@ if(MENTION){
 const MENTION = message.mentions.members.first();
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const RANDOMTEAM = message.guild.roles.find(role => role.name === 'TB2team1');
 const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
 const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
@@ -4849,8 +4850,6 @@ message.channel.send("TB1 Removed from " + MENTION + " + TB2 Added, Team1 Assign
 } else {
 }
 //GIVE TB2 REMOVE TB3
-if(message.content.startsWith('!give TB2 ') && message.content.includes(MENTION)) {
-const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 if(MENTION.roles.has(TB3.id)) {
 MENTION.addRole(TB2).catch(console.error);
 MENTION.removeRole(TB3).catch(console.error);
@@ -4866,7 +4865,7 @@ MENTION.removeRole(aTB3team3).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB3 Removed from " + MENTION + " + TB2 Added, Team1 Assigned.")
 } else {
-}}
+}
 // GIVE TB2 WHILST HAVING TB2
 if(MENTION.roles.has(TB2.id)) {
 message.channel.send("" + MENTION + " Is already in TB2")
