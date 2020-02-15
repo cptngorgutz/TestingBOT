@@ -4922,8 +4922,6 @@ message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Team1 Assign
 } else {
 }
 //GIVE TB3 REMOVE TB1
-if(message.content.startsWith('!give TB3 ') && message.content.includes(MENTION)) {
-const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 if(MENTION.roles.has(TB1.id)) {
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
@@ -4946,7 +4944,6 @@ if(MENTION.roles.has(TB3.id)) {
 //console.log("Reached has role");
 message.channel.send("" + MENTION + " Is already in TB3")  //if(message.content && message.content.toLowerCase() === 'xd') { 
 } else {
-	console.log("ERROR REACHING HERE");
 }}
 
 }
