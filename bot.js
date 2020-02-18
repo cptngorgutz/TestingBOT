@@ -3142,7 +3142,7 @@ if(unlock === "unlock" || unlock === "farm") {
 
 }
 let ironfistlist = ["iron", "fist", "iron fist", "ir", "iro", "fi", "fis"]
-if[ironfistlist].includes(command){
+[ironfistlist].includes(command){
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
