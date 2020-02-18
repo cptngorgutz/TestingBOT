@@ -5205,18 +5205,6 @@ message.channel.bulkDelete(1)
 //POLLS (FINISHED)
 client.on('message', message =>{
 let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-if(command === 'poll') {
-	let Embed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setTitle("Initiate Poll")
-	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll4 to ininiate a 4 responce poll 👍,👎,👌,💪");	
-	message.channel.send(Embed);
-}
-});
-//simple 1 responce poll
-client.on('message', message =>{
-let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 	switch(args[0]){
 		
 		case "poll1":
@@ -5270,6 +5258,13 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			});	
 		break;
 	}
+	if(command === 'poll') {
+	let Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle("Initiate Poll")
+	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll4 to ininiate a 4 responce poll 👍,👎,👌,💪");	
+	message.channel.send(Embed);
+}
 });
 
 
