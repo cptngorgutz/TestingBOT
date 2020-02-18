@@ -5200,7 +5200,7 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			let msgArgs3 = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs3).then(async messageReaction => {
-				await messageReaction.react(":one:");
+				await messageReaction.react("1️⃣");
 				await messageReaction.react(":two:");
 				await messageReaction.react(":three:"); 
 				await messageReaction.react(":four:"); 
