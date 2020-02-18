@@ -625,7 +625,7 @@ if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
-	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
+	.setThumbnail('https://i.imgur.com/h9BAFZ1.png') 
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -3063,11 +3063,6 @@ if(unlock === "unlock" || unlock === "farm") {
 
 
 
-
-
-
-
-
 //<:hydragrenadier:663749985669611540>
 //<:hydraguard:663749985321353218>
 //<:hydrascientist:663749986013413386>
@@ -3146,11 +3141,84 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
+if (message.content.startsWith(`${config.prefix}iron fist`)) {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Basic)** \n \n**Martial Arts • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. Chain to **1-2 -> 2** adjacent targets for 130% damage.\nCounterattack breaks this Chain.")
+	.setThumbnail('111') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Special)** \n \n**Inner Peace • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear all negative effects from self.\nHeal self and all DEFENDER allies for **5000 -> 8000** Health + 10% of this character's Max Health. Then, heal most injured CITY HERO ally for **5000 -> 8000** Health + 10% of this character's Max Health\nChange Speed Bar by 30%.")
+	.setThumbnail('222') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Ultimate)** \n \n**The Iron Fist • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **600% -> 700%** damage + clear 3 positive effects.\n60% chance to gain Offense Down.\nCannot be Blocked.")
+	.setThumbnail('333') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Passive)** \n \n**Son of K'un-Lun • T4 Upgrade** \n \nOn Spawn, heal self and DEFENDER allies for 30% of this character's Max Health. Heal additional CITY HERO allies for 10% of this character's Max Health.\nOn Turn, **30% -> 40%** chance to heal self and DEFENDER allies for **20% -> 30%** of this character's Max Health, and heal additional CITY HERO allies for **10% -> 20%** of this character's Max Health.\nGain +5% damage for each DEFENDER ally.")
+	.setThumbnail('444') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Basic)** \n \n**Martial Arts • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. Chain to **1-2 -> 2** adjacent targets for 130% damage.\nCounterattack breaks this Chain.")
+	.setThumbnail('111') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Special)** \n \n**Inner Peace • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear all negative effects from self.\nHeal self and all DEFENDER allies for **5000 -> 8000** Health + 10% of this character's Max Health. Then, heal most injured CITY HERO ally for **5000 -> 8000** Health + 10% of this character's Max Health\nChange Speed Bar by 30%.")
+	.setThumbnail('222') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Ultimate)** \n \n**The Iron Fist • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **600% -> 700%** damage + clear 3 positive effects.\n60% chance to gain Offense Down.\nCannot be Blocked.")
+	.setThumbnail('333') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Passive)** \n \n**Son of K'un-Lun • T4 Upgrade** \n \nOn Spawn, heal self and DEFENDER allies for 30% of this character's Max Health. Heal additional CITY HERO allies for 10% of this character's Max Health.\nOn Turn, **30% -> 40%** chance to heal self and DEFENDER allies for **20% -> 30%** of this character's Max Health, and heal additional CITY HERO allies for **10% -> 20%** of this character's Max Health.\nGain +5% damage for each DEFENDER ally.")
+	.setThumbnail('444') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nIron Fist's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nIron Fist is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
 
 
 
 
-//<:ironfist:663751749454004254>
+
+
+
 //<:ironman:663751735591960577>
 //<:jessicajones:663750493540974612>
 //<:johnnystorm:663750493478322186>
