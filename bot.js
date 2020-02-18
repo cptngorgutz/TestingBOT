@@ -5201,7 +5201,6 @@ message.channel.bulkDelete(1)
 }//IF USER HAS CAPTAINS PRIVILEDGE
 });//END OF CLIENT
 
-
 //POLLS (FINISHED)
 client.on('message', message =>{
 let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -5258,6 +5257,7 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			});	
 		break;
 	}
+	let command = args.shift().toLowerCase();
 	if(command === 'poll') {
 	let Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
