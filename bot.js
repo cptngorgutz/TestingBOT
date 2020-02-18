@@ -5203,6 +5203,7 @@ message.channel.bulkDelete(1)
 
 
 //********************** POLLS?***************
+//simple 1 responce poll
 client.on('message', message =>{
 let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
@@ -5211,19 +5212,16 @@ if(command === 'poll') {
 	.setColor('#0099ff')
 	.setTitle("Initiate Poll")
 	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll3 to ininiate a 4 responce poll 👍,👎,👌,💪");	
+	message.channel.send(Embed);
 }
-});
-//simple 1 responce poll
-client.on('message', message =>{
-let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 	switch(args[0]){
 		
 		case "poll1":
 	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
+		let Embed2 = new Discord.RichEmbed()
 		
 			if(!args[1]){
-				message.channel.send(Embed);
+				message.channel.send(Embed2);
 				break;
 			}
 			
