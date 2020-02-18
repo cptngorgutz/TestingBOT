@@ -486,7 +486,7 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 //example: !ironman speed || !asgardians)
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
+const command = args.shift().toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 let kit = args[0]; 
 let basic = args[0];
 let special = args[0];
@@ -3142,6 +3142,7 @@ if(unlock === "unlock" || unlock === "farm") {
 
 }
 if(command.startsWith(`{config.prefix}ironfist`)) {
+	
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
