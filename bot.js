@@ -3213,8 +3213,7 @@ if(unlock === "unlock" || unlock === "farm") {
 
 }
 
-const command = "!";
-["tes", "test", "testi"].includes(command){
+if["tes", "test", "testi"].includes(command){
 	message.channel.send("woop");
 }
 
