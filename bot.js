@@ -3141,7 +3141,7 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
-if(command.startsWith(`{config.prefix}iron fist`)) {
+if(command.startsWith(`{config.prefix}ironfist`)) {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
