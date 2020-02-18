@@ -5211,7 +5211,7 @@ if(command === 'poll') {
 	let Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle("Initiate Poll")
-	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll3 to ininiate a 4 responce poll 👍,👎,👌,💪");	
+	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll4 to ininiate a 4 responce poll 👍,👎,👌,💪");	
 	message.channel.send(Embed);
 }
 	switch(args[0]){
@@ -5244,7 +5244,6 @@ client.on('message', async message =>{
 		case "poll2":
 	//	const EMBEDPOLL = new RichEmbed()
 		let Embed = new Discord.RichEmbed()
-		.setColor(0xFFC300)
 		
 			if(!args[1]){
 				message.channel.send(Embed);
@@ -5270,7 +5269,6 @@ client.on('message', async message =>{
 		case "poll3":
 	//	const EMBEDPOLL = new RichEmbed()
 		let Embed = new Discord.RichEmbed()
-		.setColor(0xFFC300)
 		
 			if(!args[1]){
 				message.channel.send(Embed);
@@ -5297,7 +5295,6 @@ client.on('message', async message =>{
 		case "poll4":
 	//	const EMBEDPOLL = new RichEmbed()
 		let Embed = new Discord.RichEmbed()
-		.setColor(0xFFC300)
 		
 			if(!args[1]){
 				message.channel.send(Embed);
