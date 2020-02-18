@@ -5262,7 +5262,7 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 	let Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle("Initiate Poll")
-	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll4 to ininiate a 4 responce poll 👍,👎,👌,💪");	
+	.setDescription("!poll1 to launch a 1 responce poll 👍 \n!poll2 to launch a 2 responce poll 👍,👎 \n!poll3 to launch a 3 responce poll 👍,👎,👌 \n!poll4 to launch a 4 responce poll 👍,👎,👌,💪");	
 	message.channel.send(Embed);
 }
 });
