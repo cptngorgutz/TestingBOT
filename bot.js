@@ -5224,7 +5224,7 @@ client.on('message', message =>{
 			}
 			
 			let msgArgs = args.slice(1).join(" ");
-			
+			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs).then(messageReaction => {
 				messageReaction.react("👍");
 				messageReaction.react("👎");
