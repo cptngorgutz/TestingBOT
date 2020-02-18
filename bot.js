@@ -5203,7 +5203,6 @@ message.channel.bulkDelete(1)
 
 
 //********************** POLLS?***************
-//simple 1 responce poll
 client.on('message', message =>{
 let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
@@ -5214,21 +5213,25 @@ if(command === 'poll') {
 	.setDescription("!poll1 to ininiate a 1 responce poll 👍 \n!poll2 to ininiate a 2 responce poll 👍,👎 \n!poll3 to ininiate a 3 responce poll 👍,👎,👌 \n!poll4 to ininiate a 4 responce poll 👍,👎,👌,💪");	
 	message.channel.send(Embed);
 }
+});
+//simple 1 responce poll
+client.on('message', message =>{
+let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 	switch(args[0]){
 		
 		case "poll1":
 	//	const EMBEDPOLL = new RichEmbed()
-		let Embed2 = new Discord.RichEmbed()
+		let Embed = new Discord.RichEmbed()
 		
 			if(!args[1]){
-				message.channel.send(Embed2);
+				message.channel.send(Embed);
 				break;
 			}
 			
 			let msgArgs = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs).then(messageReaction => {
-				messageReaction.react("👍");
+			messageReaction.react("👍");
 			});
 			
 		break;
@@ -5251,7 +5254,7 @@ client.on('message', async message =>{
 			}
 			
 			let msgArgs = args.slice(1).join(" ");
-			
+			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs).then(async messageReaction => {
 				await messageReaction.react("👍");
 				await messageReaction.react("👎");
@@ -5276,7 +5279,7 @@ client.on('message', async message =>{
 			}
 			
 			let msgArgs = args.slice(1).join(" ");
-			
+			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs).then(async messageReaction => {
 				await messageReaction.react("👍");
 				await messageReaction.react("👎");
@@ -5302,7 +5305,7 @@ client.on('message', async message =>{
 			}
 			
 			let msgArgs = args.slice(1).join(" ");
-			
+			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs).then(async messageReaction => {
 				await messageReaction.react("👍");
 				await messageReaction.react("👎");
