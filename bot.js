@@ -3141,7 +3141,7 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
-if(command === 'iron' || command === 'fist') {
+if[iron, fist, iron fist].includes(command){
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -3212,9 +3212,9 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
-if(message.content.startsWith(config.prefix + 'scarlet witch')) {
-    message.channel.send('Pong!');
-}
+
+[c1, c2, c3].includes(command){ would be one rather clean approach
+otherwise restructuring your command handling and allowing it to be identified by alias as well is another way
 
 
 
