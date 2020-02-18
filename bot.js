@@ -3146,22 +3146,22 @@ if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Basic)** \n \n**Martial Arts • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. Chain to **1-2 -> 2** adjacent targets for 130% damage.\nCounterattack breaks this Chain.")
-	.setThumbnail('111') 
+	.setThumbnail('https://i.imgur.com/1EciYhA.png') 
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Special)** \n \n**Inner Peace • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear all negative effects from self.\nHeal self and all DEFENDER allies for **5000 -> 8000** Health + 10% of this character's Max Health. Then, heal most injured CITY HERO ally for **5000 -> 8000** Health + 10% of this character's Max Health\nChange Speed Bar by 30%.")
-	.setThumbnail('222') 
+	.setThumbnail('https://i.imgur.com/bEPx4IK.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Ultimate)** \n \n**The Iron Fist • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **600% -> 700%** damage + clear 3 positive effects.\n60% chance to gain Offense Down.\nCannot be Blocked.")
-	.setThumbnail('333') 
+	.setThumbnail('https://i.imgur.com/EeNRVBY.png') 
 	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Passive)** \n \n**Son of K'un-Lun • T4 Upgrade** \n \nOn Spawn, heal self and DEFENDER allies for 30% of this character's Max Health. Heal additional CITY HERO allies for 10% of this character's Max Health.\nOn Turn, **30% -> 40%** chance to heal self and DEFENDER allies for **20% -> 30%** of this character's Max Health, and heal additional CITY HERO allies for **10% -> 20%** of this character's Max Health.\nGain +5% damage for each DEFENDER ally.")
-	.setThumbnail('444') 
+	.setThumbnail('https://i.imgur.com/oSfw4EU.png') 
 	message.channel.send(exampleEmbed4);
 }
 
@@ -3169,7 +3169,7 @@ if(basic === "basic") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Basic)** \n \n**Martial Arts • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. Chain to **1-2 -> 2** adjacent targets for 130% damage.\nCounterattack breaks this Chain.")
-	.setThumbnail('111') 
+	.setThumbnail('https://i.imgur.com/1EciYhA.png') 
 	message.channel.send(exampleEmbed);
 }
 
@@ -3177,7 +3177,7 @@ if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Special)** \n \n**Inner Peace • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear all negative effects from self.\nHeal self and all DEFENDER allies for **5000 -> 8000** Health + 10% of this character's Max Health. Then, heal most injured CITY HERO ally for **5000 -> 8000** Health + 10% of this character's Max Health\nChange Speed Bar by 30%.")
-	.setThumbnail('222') 
+	.setThumbnail('https://i.imgur.com/bEPx4IK.png') 
 	message.channel.send(exampleEmbed2);
 }
 
@@ -3185,7 +3185,7 @@ if(ultimate === "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Ultimate)** \n \n**The Iron Fist • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for **600% -> 700%** damage + clear 3 positive effects.\n60% chance to gain Offense Down.\nCannot be Blocked.")
-	.setThumbnail('333') 
+	.setThumbnail('https://i.imgur.com/EeNRVBY.png') 
 	message.channel.send(exampleEmbed3);
 }
 
@@ -3193,7 +3193,7 @@ if(passive === "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Passive)** \n \n**Son of K'un-Lun • T4 Upgrade** \n \nOn Spawn, heal self and DEFENDER allies for 30% of this character's Max Health. Heal additional CITY HERO allies for 10% of this character's Max Health.\nOn Turn, **30% -> 40%** chance to heal self and DEFENDER allies for **20% -> 30%** of this character's Max Health, and heal additional CITY HERO allies for **10% -> 20%** of this character's Max Health.\nGain +5% damage for each DEFENDER ally.")
-	.setThumbnail('444') 
+	.setThumbnail('https://i.imgur.com/oSfw4EU.png') 
 	message.channel.send(exampleEmbed4);
 }
 
@@ -3212,13 +3212,86 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
+if(command === 'ironman' || command === 'ironm' || command === 'stark' || command === 'mrstark') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Basic)** \n \n**Repulsor Blast • T4 Upgrade** \n \nAttack primary target for 280% damage. 30% chance to Chain to up to 2 adjacent targets for **170% -> 230%** damage.\nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/krvvnqO.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Special)** \n \n**Rocket Barrage • T4 Upgrade** \n<:abilityon:663751832690229278> \n:ability_on::ability_on::ability_on::ability_on:\nAttack all enemies for **190% -> 210%** Unavoidable damage. If Captain America is your ally, attack all enemies for **220% -> 250%** Unavoidable damage instead.")
+	.setThumbnail('https://i.imgur.com/m2xUQ8h.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Ultimate)** \n \n**Unibeam • T4 Upgrade** \n<:abilityoff:> \n:ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack primary target for **540% -> 600%** damage.")
+	.setThumbnail('https://i.imgur.com/1shVLOz.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Passive)** \n \n**Stark Upgrades • T4 Upgrade** \n \nGain **+10% -> +15%** Extra Crit chance. Apply **+10% -> +15%** Extra Crit chance to TECH allies. Apply +10% Extra Crit chance all other allies.")
+	.setThumbnail('https://i.imgur.com/jah6KCY.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Basic)** \n \n**Repulsor Blast • T4 Upgrade** \n \nAttack primary target for 280% damage. 30% chance to Chain to up to 2 adjacent targets for **170% -> 230%** damage.\nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/krvvnqO.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Special)** \n \n**Rocket Barrage • T4 Upgrade** \n<:abilityon:663751832690229278> \n:ability_on::ability_on::ability_on::ability_on:\nAttack all enemies for **190% -> 210%** Unavoidable damage. If Captain America is your ally, attack all enemies for **220% -> 250%** Unavoidable damage instead.")
+	.setThumbnail('https://i.imgur.com/m2xUQ8h.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Ultimate)** \n \n**Unibeam • T4 Upgrade** \n<:abilityoff:663751832413405184> \n:ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack primary target for **540% -> 600%** damage.")
+	.setThumbnail('https://i.imgur.com/1shVLOz.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577>	**Iron Man (Passive)** \n \n**Stark Upgrades • T4 Upgrade** \n \nGain **+10% -> +15%** Extra Crit chance. Apply **+10% -> +15%** Extra Crit chance to TECH allies. Apply +10% Extra Crit chance all other allies.")
+	.setThumbnail('https://i.imgur.com/jah6KCY.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577> **Iron Man** \nIron Man's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironman:663751735591960577> **Iron Man** \nIron Man is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
 
 
 
 
 
 
-//<:ironman:663751735591960577>
+
+
+
 //<:jessicajones:663750493540974612>
 //<:johnnystorm:663750493478322186>
 //<:juggernaut:663750495558696970>
