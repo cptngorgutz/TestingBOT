@@ -5202,7 +5202,7 @@ message.channel.bulkDelete(1)
 });//END OF CLIENT
 
 
-//********************** POLLS?***************
+//POLLS (FINISHED)
 client.on('message', message =>{
 let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
@@ -5231,15 +5231,6 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			});
 			
 		break;
-		
-	}
-});
-//simple 2 responce poll
-client.on('message', async message =>{
-	let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-	
-	switch(args[0]){
-		
 		case "poll2":	
 			if(!args[1]){
 				break;
@@ -5253,14 +5244,6 @@ client.on('message', async message =>{
 
 			});	
 		break;
-	}
-});
-//simple 3 responce poll
-client.on('message', async message =>{
-	let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-	
-	switch(args[0]){
-		
 		case "poll3":		
 			if(!args[1]){
 				break;
@@ -5275,14 +5258,6 @@ client.on('message', async message =>{
 
 			});	
 		break;
-	}
-});
-//simple 4 responce poll
-client.on('message', async message =>{
-	let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-	
-	switch(args[0]){
-		
 		case "poll4":		
 			if(!args[1]){
 				break;
@@ -5299,5 +5274,6 @@ client.on('message', async message =>{
 		break;
 	}
 });
+
 
 client.login(process.env.TOKEN);
