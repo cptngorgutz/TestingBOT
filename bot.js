@@ -5220,12 +5220,8 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 	switch(args[0]){
 		
 		case "poll1":
-	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
-		
 			if(!args[1]){
-				message.channel.send(Embed);
-				break;
+			break;
 			}
 			
 			let msgArgs = args.slice(1).join(" ");
@@ -5244,12 +5240,8 @@ client.on('message', async message =>{
 	
 	switch(args[0]){
 		
-		case "poll2":
-	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
-		
+		case "poll2":	
 			if(!args[1]){
-				message.channel.send(Embed);
 				break;
 			}
 			
@@ -5269,12 +5261,8 @@ client.on('message', async message =>{
 	
 	switch(args[0]){
 		
-		case "poll3":
-	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
-		
+		case "poll3":		
 			if(!args[1]){
-				message.channel.send(Embed);
 				break;
 			}
 			
@@ -5295,12 +5283,8 @@ client.on('message', async message =>{
 	
 	switch(args[0]){
 		
-		case "poll4":
-	//	const EMBEDPOLL = new RichEmbed()
-		let Embed = new Discord.RichEmbed()
-		
+		case "poll4":		
 			if(!args[1]){
-				message.channel.send(Embed);
 				break;
 			}
 			
