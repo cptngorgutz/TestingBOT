@@ -5187,9 +5187,9 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			let msgArgs2 = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs2).then(async messageReaction => {
-				await messageReaction.react("👍");
-				await messageReaction.react("👎");
-				await messageReaction.react("👌");
+				await messageReaction.react("1️⃣");
+				await messageReaction.react("2️⃣");
+				await messageReaction.react("3️⃣");
 
 			});	
 		break;
@@ -5212,7 +5212,7 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 	let Embed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle("Initiate Poll")
-	.setDescription("!poll1 to launch a 1 responce poll 👍 \n!poll2 to launch a 2 responce poll 👍,👎 \n!poll3 to launch a 3 responce poll 👍,👎,👌 \n!poll4 to launch a 4 responce poll 👍,👎,👌,💪");	
+	.setDescription("!poll1 to launch a 1 responce poll 👍 \n!poll2 to launch a 2 responce poll 👍,👎 \n!poll3 to launch a 3 responce poll 1️⃣,2️⃣,3️⃣\n!poll4 to launch a 4 responce poll 1️⃣,2️⃣,3️⃣,4️⃣");	
 	message.channel.send(Embed);
 }
 });
