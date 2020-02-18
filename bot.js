@@ -3069,7 +3069,79 @@ if(unlock === "unlock" || unlock === "farm") {
 //<:hydrasniper:663749986336374811>
 //<:hydratrooper:663752253215342603>
 
-if["invisible", "invisib", "invis"].includes(command){
+
+if(command === 'iw' || command === 'invisible' || command === 'woman' || command === 'sue' || command === 'storm') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Basic)** \n \n**Cosmic Rays • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Barrier self for **5% -> 10%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/e5xdMW2.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Special)** \n \n**Bending Light • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear 2 negative effects from **3 most injured -> self and all** allies. Apply Stealth to **3 most injured -> self and all** allies. \nApply Defense Up for 2 turns to self and all allies. \nClear Stealth from highest Health ally. Apply 3 Deflect + Immunity for 2 turns to highest Health ally.\nClear Stealth from all enemies.")
+	.setThumbnail('https://i.imgur.com/YJ5Txin.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Ultimate)** \n \n**Psionic Shields • T4 Upgrade** \n<:abilityoff:663751832413405184> \nApply Offense Down for 2 turns to **3 -> all** enemies.\nBarrier all allies for **30% -> 40%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/Er1kRs2.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Passive)** \n \n**Hard Light • T4 Upgrade** \n \nWhen an enemy attacks a FANTASTIC FOUR ally with Barrier, attack that enemy for **200% -> 250%** damage. \nGain **+10% -> +20%** Max Health. FANTASTIC FOUR and Namor allies gain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/RahrDqe.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Basic)** \n \n**Cosmic Rays • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Barrier self for **5% -> 10%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/e5xdMW2.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Special)** \n \n**Bending Light • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear 2 negative effects from **3 most injured -> self and all** allies. Apply Stealth to **3 most injured -> self and all** allies. \nApply Defense Up for 2 turns to self and all allies. \nClear Stealth from highest Health ally. Apply 3 Deflect + Immunity for 2 turns to highest Health ally.\nClear Stealth from all enemies.")
+	.setThumbnail('https://i.imgur.com/YJ5Txin.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Ultimate)** \n \n**Psionic Shields • T4 Upgrade** \n<:abilityoff:663751832413405184> \nApply Offense Down for 2 turns to **3 -> all** enemies.\nBarrier all allies for **30% -> 40%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/Er1kRs2.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Passive)** \n \n**Hard Light • T4 Upgrade** \n \nWhen an enemy attacks a FANTASTIC FOUR ally with Barrier, attack that enemy for **200% -> 250%** damage. \nGain **+10% -> +20%** Max Health. FANTASTIC FOUR and Namor allies gain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/RahrDqe.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+if(command === 'iron' || command === 'fist') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -3141,6 +3213,10 @@ if(unlock === "unlock" || unlock === "farm") {
 
 }
 
+const ironfist = ['iron', 'fist'];
+if[ironfist].includes(command){
+message.channel.send("woop")	
+}
 
 
 
