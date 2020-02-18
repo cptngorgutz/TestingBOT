@@ -3141,7 +3141,7 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
-[invisible,invisib,invis].includes(command){
+[invisible, invisib, invis].includes(command){
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
