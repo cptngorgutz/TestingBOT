@@ -5235,9 +5235,9 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			if(!args[1]){
 				break;
 			}
-			
+			let msgArgs1 = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
-			message.channel.send(msgArgs).then(async messageReaction => {
+			message.channel.send(msgArgs1).then(async messageReaction => {
 				await messageReaction.react("👍");
 				await messageReaction.react("👎");
 
@@ -5247,9 +5247,9 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			if(!args[1]){
 				break;
 			}
-			
+			let msgArgs2 = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
-			message.channel.send(msgArgs).then(async messageReaction => {
+			message.channel.send(msgArgs2).then(async messageReaction => {
 				await messageReaction.react("👍");
 				await messageReaction.react("👎");
 				await messageReaction.react("👌");
@@ -5260,9 +5260,9 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			if(!args[1]){
 				break;
 			}
-			
+			let msgArgs3 = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
-			message.channel.send(msgArgs).then(async messageReaction => {
+			message.channel.send(msgArgs3).then(async messageReaction => {
 				await messageReaction.react("👍");
 				await messageReaction.react("👎");
 				await messageReaction.react("👌"); 
