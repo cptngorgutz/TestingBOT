@@ -3069,7 +3069,7 @@ if(unlock === "unlock" || unlock === "farm") {
 //<:hydrasniper:663749986336374811>
 //<:hydratrooper:663752253215342603>
 
-["invisible", "invisib", "invis"].includes(command){
+if["invisible", "invisib", "invis"].includes(command){
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
