@@ -482,7 +482,7 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 });
 
 
-//*********CHARACTERS + TEAMS*********** (FINISHED)
+//*********CHARACTERS + TEAMS*********** (NOT FINISHED)
 //example: !ironman speed || !asgardians)
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -2989,12 +2989,84 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
+if(command === 'hulk' || command === 'bruce' || command === 'banner') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Basic)** \n \n**Smash • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage. If this character is below 50% Health, multiply damage by **1.4 -> 1.5**.")
+	.setThumbnail('https://i.imgur.com/COy0USK.png ') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Special)** \n \n**Rage • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain Taunt. If any ally is a WAVE I - AVENGER, gain Counter. Clear **3 -> all** negative effects from self.")
+	.setThumbnail('https://i.imgur.com/AuAGucR.png ') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Ultimate)** \n \n**Leap • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for 330% damage and adjacent enemies for **190% -> 260%** damage. If this character is below 50% Health, multiply damage by 1.5.")
+	.setThumbnail('https://i.imgur.com/GuF7Mzb.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Passive)** \n \n**Always Angry • T4 Upgrade** \n \nOn dropping below 50% Health, fill (75% -> 100%** Speed Bar + gain Offense Up + clear Stun from self. On dropping below 25% Health, gain Deathproof + clear all negative effects from self.")
+	.setThumbnail('https://i.imgur.com/tOcy0ck.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Basic)** \n \n**Smash • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage. If this character is below 50% Health, multiply damage by **1.4 -> 1.5**.")
+	.setThumbnail('https://i.imgur.com/COy0USK.png ') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Special)** \n \n**Rage • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain Taunt. If any ally is a WAVE I - AVENGER, gain Counter. Clear **3 -> all** negative effects from self.")
+	.setThumbnail('https://i.imgur.com/AuAGucR.png ') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Ultimate)** \n \n**Leap • T4 Upgrade** \n<:abilityoff:663751832413405184> \nAttack primary target for 330% damage and adjacent enemies for **190% -> 260%** damage. If this character is below 50% Health, multiply damage by 1.5.")
+	.setThumbnail('https://i.imgur.com/GuF7Mzb.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130>	**Hulk (Passive)** \n \n**Always Angry • T4 Upgrade** \n \nOn dropping below 50% Health, fill **75% -> 100%** Speed Bar + gain Offense Up + clear Stun from self. On dropping below 25% Health, gain Deathproof + clear all negative effects from self.")
+	.setThumbnail('https://i.imgur.com/tOcy0ck.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130> **Hulk** \nHulk's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130> **Hulk** \nHulk is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
 
 
 
 
 
-//<:hulk:663749985594245130>
+
+
 
 //<:hydragrenadier:663749985669611540>
 //<:hydraguard:663749985321353218>
@@ -3003,7 +3075,81 @@ if(unlock === "unlock" || unlock === "farm") {
 //<:hydratrooper:663752253215342603>
 
 
-//<:invisiblewoman:663752234126934016>
+if(command === 'iw' || command === 'invisible' || command === 'woman' || command === 'sue' || command === 'storm') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Basic)** \n \n**Cosmic Rays • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Barrier self for **5% -> 10%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/e5xdMW2.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Special)** \n \n**Bending Light • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear 2 negative effects from **3 most injured -> self and all** allies. Apply Stealth to **3 most injured -> self and all** allies. \nApply Defense Up for 2 turns to self and all allies. \nClear Stealth from highest Health ally. Apply 3 Deflect + Immunity for 2 turns to highest Health ally.\nClear Stealth from all enemies.")
+	.setThumbnail('https://i.imgur.com/YJ5Txin.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Ultimate)** \n \n**Psionic Shields • T4 Upgrade** \n<:abilityoff:663751832413405184> \nApply Offense Down for 2 turns to **3 -> all** enemies.\nBarrier all allies for **30% -> 40%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/Er1kRs2.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Passive)** \n \n**Hard Light • T4 Upgrade** \n \nWhen an enemy attacks a FANTASTIC FOUR ally with Barrier, attack that enemy for **200% -> 250%** damage. \nGain **+10% -> +20%** Max Health. FANTASTIC FOUR and Namor allies gain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/RahrDqe.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Basic)** \n \n**Cosmic Rays • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Barrier self for **5% -> 10%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/e5xdMW2.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Special)** \n \n**Bending Light • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear 2 negative effects from **3 most injured -> self and all** allies. Apply Stealth to **3 most injured -> self and all** allies. \nApply Defense Up for 2 turns to self and all allies. \nClear Stealth from highest Health ally. Apply 3 Deflect + Immunity for 2 turns to highest Health ally.\nClear Stealth from all enemies.")
+	.setThumbnail('https://i.imgur.com/YJ5Txin.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Ultimate)** \n \n**Psionic Shields • T4 Upgrade** \n<:abilityoff:663751832413405184> \nApply Offense Down for 2 turns to **3 -> all** enemies.\nBarrier all allies for **30% -> 40%** of this character's Max Health.")
+	.setThumbnail('https://i.imgur.com/Er1kRs2.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Passive)** \n \n**Hard Light • T4 Upgrade** \n \nWhen an enemy attacks a FANTASTIC FOUR ally with Barrier, attack that enemy for **200% -> 250%** damage. \nGain **+10% -> +20%** Max Health. FANTASTIC FOUR and Namor allies gain **+10% -> +20%** Max Health.")
+	.setThumbnail('https://i.imgur.com/RahrDqe.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
+
+
+
+
 //<:ironfist:663751749454004254>
 //<:ironman:663751735591960577>
 //<:jessicajones:663750493540974612>
@@ -3120,202 +3266,6 @@ if (message.content === '!Asgardians') {
 	message.channel.send(exampleEmbed);
 }
 }
-});
-
-
-//*********TESTING TRAITS***********
-client.on("message", message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-
-//EVERY CHARACTER
-if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'trait') {
-
-
-
-
-
-//aim global protector - //aim protector global //global aim protector  //global protector aim   //protector aim global   //protector global aim
-if(args[0] === "aim" && args[1] === "global" & args[2] === "protector" || args[0] === "aim" && args[1] === "protector" & args[2] === "global" || args[0] === "global" && args[1] === "aim" & args[2] === "protector" || args[0] === "global" && args[1] === "protector" & args[2] === "aim" || args[0] === "protector" && args[1] === "aim" & args[2] === "global" || args[0] === "protector" && args[1] === "global" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Global, Protector** \n \n<:aimsecurity:663749977071157283> Aim Security ")
-message.channel.send(exampleEmbed);
-//aim global minion - //aim minion global //global aim minion  //global minion aim   //minion aim global   //minion global aim
-} else if(args[0] === "aim" && args[1] === "global" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "global" || args[0] === "global" && args[1] === "aim" & args[2] === "minion" || args[0] === "global" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "global" || args[0] === "minion" && args[1] === "global" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Global, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security ")
-message.channel.send(exampleEmbed);
-//aim controller villain - //aim villain controller //controller aim villain  //controller villain aim   //villain aim controller   //villain controller aim
-} else if(args[0] === "aim" && args[1] === "controller" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "controller" || args[0] === "controller" && args[1] === "aim" & args[2] === "villain" || args[0] === "controller" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "controller" || args[0] === "villain" && args[1] === "controller" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Controller, Villain** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed);
-//aim controller minion - //aim minion controller //controller aim minion  //controller minion aim   //minion aim controller   //minion controller aim
-} else if(args[0] === "aim" && args[1] === "controller" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "controller" || args[0] === "controller" && args[1] === "aim" & args[2] === "minion" || args[0] === "controller" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "controller" || args[0] === "minion" && args[1] === "controller" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Controller, Minion** \n \n<:aiminfector:663749979441070090> Aim Infector")
-message.channel.send(exampleEmbed);
-//aim controller global - //aim global controller //controller aim global  //controller global aim   //global aim controller   //global controller aim
-} else if(args[0] === "aim" && args[1] === "controller" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "controller" || args[0] === "controller" && args[1] === "aim" & args[2] === "global" || args[0] === "controller" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "controller" || args[0] === "global" && args[1] === "controller" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Controller, Global** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed);
-//aim brawler villain - //aim villain brawler //brawler aim villain  //brawler villain aim   //villain aim brawler   //villain brawler aim
-} else if(args[0] === "aim" && args[1] === "brawler" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "brawler" || args[0] === "brawler" && args[1] === "aim" & args[2] === "villain" || args[0] === "brawler" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "brawler" || args[0] === "villain" && args[1] === "brawler" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Brawler, Villain** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-message.channel.send(exampleEmbed);
-//aim brawler minion - //aim minion brawler //brawler aim minion  //brawler minion aim   //minion aim brawler   //minion brawler aim
-} else if(args[0] === "aim" && args[1] === "brawler" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "brawler" || args[0] === "brawler" && args[1] === "aim" & args[2] === "minion" || args[0] === "brawler" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "brawler" || args[0] === "minion" && args[1] === "brawler" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Brawler, Minion** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-message.channel.send(exampleEmbed);
-//aim brawler global - //aim global brawler //brawler aim global  //brawler global aim   //global aim brawler   //global brawler aim
-} else if(args[0] === "aim" && args[1] === "brawler" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "brawler" || args[0] === "brawler" && args[1] === "aim" & args[2] === "global" || args[0] === "brawler" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "brawler" || args[0] === "global" && args[1] === "brawler" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Brawler, Global** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-message.channel.send(exampleEmbed);
-//aim blaster villain - //aim villain blaster //blaster aim villain  //blaster villain aim   //villain aim blaster   //villain blaster aim
-} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "villain" || args[0] === "blaster" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "blaster" || args[0] === "villain" && args[1] === "blaster" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Blaster, Villain** \n \n<:aimassault:663749974869147648> Aim Assaulter")
-message.channel.send(exampleEmbed);
-//aim blaster tech - //aim tech blaster //blaster aim tech  //blaster tech aim   //tech aim blaster   //tech blaster aim
-} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "tech" || args[0] === "aim" && args[1] === "tech" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "tech" || args[0] === "blaster" && args[1] === "tech" & args[2] === "aim" || args[0] === "tech" && args[1] === "aim" & args[2] === "blaster" || args[0] === "tech" && args[1] === "blaster" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Blaster, Tech** \n \n<:aimassault:663749974869147648> Aim Assaulter")
-message.channel.send(exampleEmbed);
-//aim blaster minion - //aim minion blaster //blaster aim minion  //blaster minion aim   //minion aim blaster   //minion blaster aim
-} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "minion" || args[0] === "blaster" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "blaster" || args[0] === "minion" && args[1] === "blaster" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Blaster, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter")
-message.channel.send(exampleEmbed);
-//aim blaster global - //aim global blaster //blaster aim global  //blaster global aim   //global aim blaster   //global blaster aim
-} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "global" || args[0] === "blaster" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "blaster" || args[0] === "global" && args[1] === "blaster" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Blaster, Global** \n \n<:aimassault:663749974869147648> Aim Assaulter")
-message.channel.send(exampleEmbed);
-//aim bio brawler - //aim brawler bio //bio aim brawler  //bio brawler aim   //brawler aim bio   //brawler bio aim
-} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "brawler" || args[0] === "aim" && args[1] === "brawler" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "brawler" || args[0] === "bio" && args[1] === "brawler" & args[2] === "aim" || args[0] === "brawler" && args[1] === "aim" & args[2] === "bio" || args[0] === "brawler" && args[1] === "bio" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-message.channel.send(exampleEmbed);
-//aim bio controller - //aim controller bio	- //bio aim controller - //bio controller aim - //controller aim bio - //controller bio aim
-} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "controller" || args[0] === "aim" && args[1] === "controller" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "controller" || args[0] === "bio" && args[1] === "controller" & args[2] === "aim" || args[0] === "controller" && args[1] === "aim" & args[2] === "bio" || args[0] === "controller" && args[1] === "bio" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio, Controller** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed);
-//aim bio global - //aim global bio	- //bio aim global - //bio global aim - //global aim bio - //global bio aim
-} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "global" || args[0] === "bio" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "bio" || args[0] === "global" && args[1] === "bio" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio, Global** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed);
-//aim bio minion - //aim minion bio	- //bio aim minion - //bio minion aim - //minion aim bio - //minion bio aim
-} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "minion" || args[0] === "bio" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "bio" || args[0] === "minion" && args[1] === "bio" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio, Minion** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-message.channel.send(exampleEmbed);
-//aim bio villain - //aim villain bio	- //bio aim villain - //bio villain aim - //villain aim bio - //villain bio aim
-} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "villain" || args[0] === "bio" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "bio" || args[0] === "villain" && args[1] === "bio" & args[2] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio, Villain** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed);
-//****DOUBLES BELOW HERE****
-//aim blaster - //blaster aim
-} else if(args[0] === "aim" && args[1] === "blaster" || args[0] === "blaster" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Blaster** \n \n<:aimassault:663749974869147648> Aim Assaulter")
-message.channel.send(exampleEmbed);
-//aim brawler - //brawler aim
-} else if(args[0] === "aim" && args[1] === "brawler" || args[0] === "brawler" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
-message.channel.send(exampleEmbed);
-//aim controller - //controller aim
-}  else if(args[0] === "aim" && args[1] === "controller" || args[0] === "controller" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Controller** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed);
-//aim global - //global aim
-}  else if(args[0] === "aim" && args[1] === "global" || args[0] === "global" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Global** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-message.channel.send(exampleEmbed);
-//aim minion - //minion aim
-}  else if(args[0] === "aim" && args[1] === "minion" || args[0] === "minion" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security")
-message.channel.send(exampleEmbed);
-//aim protector - //protector aim
-}  else if(args[0] === "aim" && args[1] === "protector" || args[0] === "protector" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Protector** \n \n<:aimsecurity:663749977071157283> Aim Security")
-message.channel.send(exampleEmbed);
-//aim skill - //skill aim
-}  else if(args[0] === "aim" && args[1] === "skill" || args[0] === "skill" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Skill** \n \n<:aimresearcher:663749975200759829> Aim Researcher")
-message.channel.send(exampleEmbed);
-//aim support - //support aim
-}  else if(args[0] === "aim" && args[1] === "support" || args[0] === "support" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Support** \n \n<:aimresearcher:663749975200759829> Aim Researcher \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-message.channel.send(exampleEmbed);
-//aim tech - //tech aim
-}  else if(args[0] === "aim" && args[1] === "tech" || args[0] === "tech" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Tech** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aimsecurity:663749977071157283> Aim Security \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-message.channel.send(exampleEmbed);
-//aim villain - //villain aim
-}  else if(args[0] === "aim" && args[1] === "villain" || args[0] === "villain" && args[1] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Villain** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-message.channel.send(exampleEmbed);
-//aim bio - //bio aim
-} else if(args[0] === "aim" && args[1] === "bio" || args[0] === "bio" && args[1] === "aim"){
-const exampleEmbed1 = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
-message.channel.send(exampleEmbed1);
-//****SINGLES BELOW HERE****
-} else if(args[0] === "aim"){
-const exampleEmbed = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
-message.channel.send(exampleEmbed);
-}
-
-
-}//command
-}//channel ID
 });
 
 
@@ -5250,10 +5200,10 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 			let msgArgs3 = args.slice(1).join(" ");
 			message.channel.bulkDelete(1)
 			message.channel.send(msgArgs3).then(async messageReaction => {
-				await messageReaction.react("👍");
-				await messageReaction.react("👎");
-				await messageReaction.react("👌"); 
-				await messageReaction.react("💪"); 
+				await messageReaction.react("1️");
+				await messageReaction.react("2️");
+				await messageReaction.react("3️"); 
+				await messageReaction.react("4️"); 
 			});	
 		break;
 	}
@@ -5265,6 +5215,202 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 	.setDescription("!poll1 to launch a 1 responce poll 👍 \n!poll2 to launch a 2 responce poll 👍,👎 \n!poll3 to launch a 3 responce poll 👍,👎,👌 \n!poll4 to launch a 4 responce poll 👍,👎,👌,💪");	
 	message.channel.send(Embed);
 }
+});
+
+
+//*********TRAITS***********
+client.on("message", message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+
+//EVERY CHARACTER
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
+if(command === 'trait') {
+
+
+
+
+
+//aim global protector - //aim protector global //global aim protector  //global protector aim   //protector aim global   //protector global aim
+if(args[0] === "aim" && args[1] === "global" & args[2] === "protector" || args[0] === "aim" && args[1] === "protector" & args[2] === "global" || args[0] === "global" && args[1] === "aim" & args[2] === "protector" || args[0] === "global" && args[1] === "protector" & args[2] === "aim" || args[0] === "protector" && args[1] === "aim" & args[2] === "global" || args[0] === "protector" && args[1] === "global" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Global, Protector** \n \n<:aimsecurity:663749977071157283> Aim Security ")
+message.channel.send(exampleEmbed);
+//aim global minion - //aim minion global //global aim minion  //global minion aim   //minion aim global   //minion global aim
+} else if(args[0] === "aim" && args[1] === "global" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "global" || args[0] === "global" && args[1] === "aim" & args[2] === "minion" || args[0] === "global" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "global" || args[0] === "minion" && args[1] === "global" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Global, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security ")
+message.channel.send(exampleEmbed);
+//aim controller villain - //aim villain controller //controller aim villain  //controller villain aim   //villain aim controller   //villain controller aim
+} else if(args[0] === "aim" && args[1] === "controller" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "controller" || args[0] === "controller" && args[1] === "aim" & args[2] === "villain" || args[0] === "controller" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "controller" || args[0] === "villain" && args[1] === "controller" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Controller, Villain** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed);
+//aim controller minion - //aim minion controller //controller aim minion  //controller minion aim   //minion aim controller   //minion controller aim
+} else if(args[0] === "aim" && args[1] === "controller" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "controller" || args[0] === "controller" && args[1] === "aim" & args[2] === "minion" || args[0] === "controller" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "controller" || args[0] === "minion" && args[1] === "controller" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Controller, Minion** \n \n<:aiminfector:663749979441070090> Aim Infector")
+message.channel.send(exampleEmbed);
+//aim controller global - //aim global controller //controller aim global  //controller global aim   //global aim controller   //global controller aim
+} else if(args[0] === "aim" && args[1] === "controller" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "controller" || args[0] === "controller" && args[1] === "aim" & args[2] === "global" || args[0] === "controller" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "controller" || args[0] === "global" && args[1] === "controller" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Controller, Global** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed);
+//aim brawler villain - //aim villain brawler //brawler aim villain  //brawler villain aim   //villain aim brawler   //villain brawler aim
+} else if(args[0] === "aim" && args[1] === "brawler" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "brawler" || args[0] === "brawler" && args[1] === "aim" & args[2] === "villain" || args[0] === "brawler" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "brawler" || args[0] === "villain" && args[1] === "brawler" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Brawler, Villain** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
+message.channel.send(exampleEmbed);
+//aim brawler minion - //aim minion brawler //brawler aim minion  //brawler minion aim   //minion aim brawler   //minion brawler aim
+} else if(args[0] === "aim" && args[1] === "brawler" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "brawler" || args[0] === "brawler" && args[1] === "aim" & args[2] === "minion" || args[0] === "brawler" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "brawler" || args[0] === "minion" && args[1] === "brawler" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Brawler, Minion** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
+message.channel.send(exampleEmbed);
+//aim brawler global - //aim global brawler //brawler aim global  //brawler global aim   //global aim brawler   //global brawler aim
+} else if(args[0] === "aim" && args[1] === "brawler" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "brawler" || args[0] === "brawler" && args[1] === "aim" & args[2] === "global" || args[0] === "brawler" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "brawler" || args[0] === "global" && args[1] === "brawler" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Brawler, Global** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
+message.channel.send(exampleEmbed);
+//aim blaster villain - //aim villain blaster //blaster aim villain  //blaster villain aim   //villain aim blaster   //villain blaster aim
+} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "villain" || args[0] === "blaster" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "blaster" || args[0] === "villain" && args[1] === "blaster" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Blaster, Villain** \n \n<:aimassault:663749974869147648> Aim Assaulter")
+message.channel.send(exampleEmbed);
+//aim blaster tech - //aim tech blaster //blaster aim tech  //blaster tech aim   //tech aim blaster   //tech blaster aim
+} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "tech" || args[0] === "aim" && args[1] === "tech" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "tech" || args[0] === "blaster" && args[1] === "tech" & args[2] === "aim" || args[0] === "tech" && args[1] === "aim" & args[2] === "blaster" || args[0] === "tech" && args[1] === "blaster" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Blaster, Tech** \n \n<:aimassault:663749974869147648> Aim Assaulter")
+message.channel.send(exampleEmbed);
+//aim blaster minion - //aim minion blaster //blaster aim minion  //blaster minion aim   //minion aim blaster   //minion blaster aim
+} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "minion" || args[0] === "blaster" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "blaster" || args[0] === "minion" && args[1] === "blaster" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Blaster, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter")
+message.channel.send(exampleEmbed);
+//aim blaster global - //aim global blaster //blaster aim global  //blaster global aim   //global aim blaster   //global blaster aim
+} else if(args[0] === "aim" && args[1] === "blaster" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "blaster" || args[0] === "blaster" && args[1] === "aim" & args[2] === "global" || args[0] === "blaster" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "blaster" || args[0] === "global" && args[1] === "blaster" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Blaster, Global** \n \n<:aimassault:663749974869147648> Aim Assaulter")
+message.channel.send(exampleEmbed);
+//aim bio brawler - //aim brawler bio //bio aim brawler  //bio brawler aim   //brawler aim bio   //brawler bio aim
+} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "brawler" || args[0] === "aim" && args[1] === "brawler" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "brawler" || args[0] === "bio" && args[1] === "brawler" & args[2] === "aim" || args[0] === "brawler" && args[1] === "aim" & args[2] === "bio" || args[0] === "brawler" && args[1] === "bio" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
+message.channel.send(exampleEmbed);
+//aim bio controller - //aim controller bio	- //bio aim controller - //bio controller aim - //controller aim bio - //controller bio aim
+} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "controller" || args[0] === "aim" && args[1] === "controller" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "controller" || args[0] === "bio" && args[1] === "controller" & args[2] === "aim" || args[0] === "controller" && args[1] === "aim" & args[2] === "bio" || args[0] === "controller" && args[1] === "bio" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio, Controller** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed);
+//aim bio global - //aim global bio	- //bio aim global - //bio global aim - //global aim bio - //global bio aim
+} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "global" || args[0] === "aim" && args[1] === "global" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "global" || args[0] === "bio" && args[1] === "global" & args[2] === "aim" || args[0] === "global" && args[1] === "aim" & args[2] === "bio" || args[0] === "global" && args[1] === "bio" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio, Global** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed);
+//aim bio minion - //aim minion bio	- //bio aim minion - //bio minion aim - //minion aim bio - //minion bio aim
+} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "minion" || args[0] === "aim" && args[1] === "minion" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "minion" || args[0] === "bio" && args[1] === "minion" & args[2] === "aim" || args[0] === "minion" && args[1] === "aim" & args[2] === "bio" || args[0] === "minion" && args[1] === "bio" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio, Minion** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
+message.channel.send(exampleEmbed);
+//aim bio villain - //aim villain bio	- //bio aim villain - //bio villain aim - //villain aim bio - //villain bio aim
+} else if(args[0] === "aim" && args[1] === "bio" & args[2] === "villain" || args[0] === "aim" && args[1] === "villain" & args[2] === "bio" || args[0] === "bio" && args[1] === "aim" & args[2] === "villain" || args[0] === "bio" && args[1] === "villain" & args[2] === "aim" || args[0] === "villain" && args[1] === "aim" & args[2] === "bio" || args[0] === "villain" && args[1] === "bio" & args[2] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio, Villain** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed);
+//****DOUBLES BELOW HERE****
+//aim blaster - //blaster aim
+} else if(args[0] === "aim" && args[1] === "blaster" || args[0] === "blaster" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Blaster** \n \n<:aimassault:663749974869147648> Aim Assaulter")
+message.channel.send(exampleEmbed);
+//aim brawler - //brawler aim
+} else if(args[0] === "aim" && args[1] === "brawler" || args[0] === "brawler" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Brawler** \n \n<:aimmonstrosity:663749978639827004> Aim Monstrosity")
+message.channel.send(exampleEmbed);
+//aim controller - //controller aim
+}  else if(args[0] === "aim" && args[1] === "controller" || args[0] === "controller" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Controller** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed);
+//aim global - //global aim
+}  else if(args[0] === "aim" && args[1] === "global" || args[0] === "global" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Global** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
+message.channel.send(exampleEmbed);
+//aim minion - //minion aim
+}  else if(args[0] === "aim" && args[1] === "minion" || args[0] === "minion" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Minion** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security")
+message.channel.send(exampleEmbed);
+//aim protector - //protector aim
+}  else if(args[0] === "aim" && args[1] === "protector" || args[0] === "protector" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Protector** \n \n<:aimsecurity:663749977071157283> Aim Security")
+message.channel.send(exampleEmbed);
+//aim skill - //skill aim
+}  else if(args[0] === "aim" && args[1] === "skill" || args[0] === "skill" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Skill** \n \n<:aimresearcher:663749975200759829> Aim Researcher")
+message.channel.send(exampleEmbed);
+//aim support - //support aim
+}  else if(args[0] === "aim" && args[1] === "support" || args[0] === "support" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Support** \n \n<:aimresearcher:663749975200759829> Aim Researcher \n<:scientistsupreme:663751613256826910> Scientist Supreme")
+message.channel.send(exampleEmbed);
+//aim tech - //tech aim
+}  else if(args[0] === "aim" && args[1] === "tech" || args[0] === "tech" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Tech** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aimsecurity:663749977071157283> Aim Security \n<:scientistsupreme:663751613256826910> Scientist Supreme")
+message.channel.send(exampleEmbed);
+//aim villain - //villain aim
+}  else if(args[0] === "aim" && args[1] === "villain" || args[0] === "villain" && args[1] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Villain** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
+message.channel.send(exampleEmbed);
+//aim bio - //bio aim
+} else if(args[0] === "aim" && args[1] === "bio" || args[0] === "bio" && args[1] === "aim"){
+const exampleEmbed1 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim, Bio** \n \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:graviton:663749985417953300> Graviton")
+message.channel.send(exampleEmbed1);
+//****SINGLES BELOW HERE****
+} else if(args[0] === "aim"){
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Aim** \n \n<:aimassault:663749974869147648> Aim Assaulter \n<:aiminfector:663749979441070090> Aim Infector \n<:aimmonstrosity:663749978639827004> Aim Monstrosity \n<:aimresearcher:663749975200759829> Aim Researcher \n<:aimsecurity:663749977071157283> Aim Security \n<:graviton:663749985417953300> Graviton \n<:scientistsupreme:663751613256826910> Scientist Supreme")
+message.channel.send(exampleEmbed);
+}
+
+
+}//command
+}//channel ID
 });
 
 
