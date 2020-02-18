@@ -3213,9 +3213,9 @@ if(unlock === "unlock" || unlock === "farm") {
 
 }
 
-const ironfist = ['iron', 'fist'];
-if[ironfist].includes(command){
-message.channel.send("woop")	
+const command = "!";
+["tes", "test", "testi"].includes(command){
+	message.channel.send("woop");
 }
 
 
