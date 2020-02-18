@@ -5202,4 +5202,37 @@ message.channel.bulkDelete(1)
 });//END OF CLIENT
 
 
+//********************** POLLS?***************
+//simple 2 responce poll yes or no
+client.on('message', message =>{
+	let args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+
+	
+	switch(args[0]){
+		
+		case "poll":
+	//	const EMBEDPOLL = new RichEmbed()
+		let Embed = new Discord.RichEmbed()
+		.setColor(0xFFC300)
+		.setTitle("Initiate Poll")
+		.setDescription("!poll to ininiate a simple yes or no poll");
+		
+		
+			if(!args[1]){
+				message.channel.send(Embed);
+				break;
+			}
+			
+			let msgArgs = args.slice(1).join(" ");
+			
+			message.channel.send(msgArgs).then(messageReaction => {
+				messageReaction.react("👍");
+				messageReaction.react("👎");
+			});
+			
+		break;
+		
+	}
+});
+
 client.login(process.env.TOKEN);
