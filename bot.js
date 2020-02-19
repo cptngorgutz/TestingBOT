@@ -98,7 +98,7 @@ if (msg.content === '!sad') {
 	.setDescription('**You made Cap cry with your bad luck**')
 	.attachFiles(['./Misc/sadgif.gif'])
 	.setImage('attachment://sadgif.gif')
-	msg.channel.send(exampleEmbed);
+	msg.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 
 if (msg.content === '!happy') {
@@ -108,7 +108,7 @@ if (msg.content === '!happy') {
 	.setDescription('**Cap appreciates your luck**')
 	.attachFiles(['./Misc/happygif.gif'])
 	.setImage('attachment://happygif.gif')
-	msg.channel.send(exampleEmbed);
+	msg.channel.send(exampleEmbed).catch(err => console.log(err));
 }
 });
 
@@ -3496,7 +3496,77 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
+if(command === 'killmonger' || command === 'kill' || command === 'monger' || command === 'km') {
+if(kit === "kit"){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Basic)** \n \n**Focus Fire • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage + **20% -> 30%** Drain. On Crit, Bonus Attack **1-2 -> 2** times for **200% -> 240%** damage + **20% -> 30%** Drain and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
+	.setThumbnail('https://i.imgur.com/u1dFKdS.png') 
+	message.channel.send(exampleEmbed);
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278> \n:ability_on::ability_on::ability_on:\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
+	.setThumbnail('https://i.imgur.com/qsNve8S.png') 
+	message.channel.send(exampleEmbed2);
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Ultimate)** \n \n**Battle Frenzy • T4 Upgrade** \n<:abilityoff:663751832413405184> \n:ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack primary target for **270% -> 300%** damage. Chain to **5 -> all** adjacent targets for **210% -> 240%** damage.\nOn Crit, attack all enemies for **175% -> 200%** damage and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.\nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/DRa9myB.png') 
+	message.channel.send(exampleEmbed3);
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Passive)** \n \n**Retribution • T4 Upgrade** \n \nOn Defense Up, attack the most injured enemy for **260% -> 330%** damage.\nOn Kill, heal for 10% of this character's Max Health.\nGain +20% Drain.\nGain +20% Crit Chance per Charged.\nIn RAIDS, +20% chance to Counterattack. In RAIDS, gain +20% chance to Counterattack for each WAKANDAN ally.")
+	.setThumbnail('https://i.imgur.com/l2VAvX5.png') 
+	message.channel.send(exampleEmbed4);
+}
 
+if(basic === "basic") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Basic)** \n \n**Focus Fire • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage + **20% -> 30%** Drain. On Crit, Bonus Attack **1-2 -> 2** times for **200% -> 240%** damage + **20% -> 30%** Drain and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
+	.setThumbnail('https://i.imgur.com/u1dFKdS.png') 
+	message.channel.send(exampleEmbed);
+}
+
+if(special === "special") {
+	const exampleEmbed2 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278> \n:ability_on::ability_on::ability_on:\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
+	.setThumbnail('https://i.imgur.com/qsNve8S.png') 
+	message.channel.send(exampleEmbed2);
+}
+
+if(ultimate === "ultimate") {
+	const exampleEmbed3 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Ultimate)** \n \n**Battle Frenzy • T4 Upgrade** \n<:abilityoff:663751832413405184> \n:ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack primary target for **270% -> 300%** damage. Chain to **5 -> all** adjacent targets for **210% -> 240%** damage.\nOn Crit, attack all enemies for **175% -> 200%** damage and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.\nCounterattack breaks this Chain.")
+	.setThumbnail('https://i.imgur.com/DRa9myB.png') 
+	message.channel.send(exampleEmbed3);
+}
+
+if(passive === "passive") {
+	const exampleEmbed4 = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<>	**Killmonger (Passive)** \n \n**Retribution • T4 Upgrade** \n \nOn Defense Up, attack the most injured enemy for **260% -> 330%** damage.\nOn Kill, heal for 10% of this character's Max Health.\nGain +20% Drain.\nGain +20% Crit Chance per Charged.\nIn RAIDS, +20% chance to Counterattack. In RAIDS, gain +20% chance to Counterattack for each WAKANDAN ally.")
+	.setThumbnail('https://i.imgur.com/l2VAvX5.png') 
+	message.channel.send(exampleEmbed4);
+}
+
+if(speed === "speed") {
+const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **Killmonger** \nKillmonger's speed is: **")
+	message.channel.send(speedEmbed);
+}
+
+if(unlock === "unlock" || unlock === "farm") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<> **Killmonger** \nKillmonger is farmable in:**")
+	message.channel.send(speedEmbed); 
+}
+
+}
 
 
 
