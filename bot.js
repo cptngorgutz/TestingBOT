@@ -484,7 +484,7 @@ message.channel.send("Sorry, this doesn't work here. Head to <#66630582481321987
 
 //*********CHARACTERS + TEAMS*********** (NOT FINISHED)
 //example: !ironman speed || !asgardians)
-client.on("message", message => {
+client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let kit = args[0]; 
@@ -5533,7 +5533,7 @@ let args = message.content.toLowerCase().slice(config.prefix.length).trim().spli
 				break;
 			}
 			let msgArgs2 = args.slice(1).join(" ");
-			message.channel.bulkDelete(1)
+			message.channel.bulkDelete(1).catch(O_o=>{}); 
 			message.channel.send(msgArgs2).then(async messageReaction => {
 				await messageReaction.react("1️⃣");
 				await messageReaction.react("2️⃣");
