@@ -92,7 +92,7 @@ client.on('guildMemberRemove', function(member)
 //**MEMES**
 client.on('message', msg => {
 if (msg.content === '!sad') {
-	msg.channel.bulkDelete(1)
+	msg.channel.bulkDelete(1).catch(err => console.log(err));
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('**You made Cap cry with your bad luck**')
@@ -102,7 +102,7 @@ if (msg.content === '!sad') {
 }
 
 if (msg.content === '!happy') {
-	msg.channel.bulkDelete(1)
+	msg.channel.bulkDelete(1).catch(err => console.log(err));
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('**Cap appreciates your luck**')
