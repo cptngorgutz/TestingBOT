@@ -135,9 +135,7 @@ let shield = args[1];
 let s6 = args[1];
 
  //bot spam channel
-if (command === 'counter' && args[0] !== "aim" || args[0] !== "aim+info" || args[0] !== "asgardians" || args[0] !== "asgardians+info" || args[0] !== "brawlers" || args[0] !== "brawlers+info" || args[0] !== "shield" || args[0] !== "shield+info" || args[0] !== "s6" || args[0] !== "s6+info"){	
-message.channel.send("Please use a valid team phrase, such as aim,asgardians,brawlers,shield, or s6.").catch(console.error);	
-} else if(command === 'counter') {
+if(command === 'counter') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 if (aimcounter === "aim"){	
 const aimcounterimage = client.channels.get('666332891730673668')
@@ -147,8 +145,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim.url)
 message.channel.send(attachment);
 })
-}
-if (aimcounterinfo === "aim+info"){		
+} else if (aimcounterinfo === "aim+info"){		
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -176,8 +173,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (asgardianscounter === "asgardians"){	
+} else if (asgardianscounter === "asgardians"){	
 const asgardcounterimage = client.channels.get('666340204872990730')
 asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterasgard = messages.first().attachments.first()
@@ -185,8 +181,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterasgard.url)
 message.channel.send(attachment);
 })
-}
-if (asgardianscounterinfo === "asgardians+info"){	
+} else if (asgardianscounterinfo === "asgardians+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -214,8 +209,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (brawlerscounter === "brawlers"){	
+} else if (brawlerscounter === "brawlers"){	
 const brawlerscounterimage = client.channels.get('666340239903686659')
 brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterbrawlers = messages.first().attachments.first()
@@ -223,8 +217,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterbrawlers.url)
 message.channel.send(attachment);
 })
-}
-if (brawlerscounterinfo === "brawlers+info"){	
+} else if (brawlerscounterinfo === "brawlers+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
 const channelToCheckText = client.channels.get('666317820656615435')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -252,8 +245,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (shieldcounter === "shield"){	
+} else if (shieldcounter === "shield"){	
 const shieldcounterimage = client.channels.get('666340284962963524')
 shieldcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countershield = messages.first().attachments.first()
@@ -261,8 +253,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countershield.url)
 message.channel.send(attachment);
 })
-}
-if (shieldcounterinfo === "shield+info"){	
+} else if (shieldcounterinfo === "shield+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -290,8 +281,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (s6counter === "s6"){	
+} else if (s6counter === "s6"){	
 const s6counterimage = client.channels.get('666340284962963524')
 s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counters6 = messages.first().attachments.first()
@@ -299,8 +289,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counters6.url)
 message.channel.send(attachment);
 })
-}
-if (s6counterinfo === "s6+info"){	
+} else if (s6counterinfo === "s6+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
 const channelToCheckText = client.channels.get('666319009465237524')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
