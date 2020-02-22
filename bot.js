@@ -321,7 +321,7 @@ message.channel.send(embed);
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
 }
-} else if (command === 'counter' && args[0] !== "aim" || args[0] !== "aim+info" || args[0] !== "asgardians" || args[0] !== "asgardians+info" || args[0] !== "brawlers" || args[0] !== "brawlers+info" || args[0] !== "shield" || args[0] !== "shield+info" || args[0] !== "s6" || args[0] !== "s6+info"){	
+} else if (command === 'counter' && aimcounter !== "aim" || aimcounterinfo !== "aim+info" || asgardianscounter !== "asgardians" || asgardianscounterinfo !== "asgardians+info" || brawlerscounter !== "brawlers" || brawlerscounterinfo !== "brawlers+info" || shieldcounter !== "shield" || shieldcounterinfo !== "shield+info" || s6counter !== "s6" || s6counterinfo !== "s6+info"){	
 message.channel.send("Please use a valid team phrase, such as aim,asgardians,brawlers,shield, or s6.").catch(console.error);	
 }
 
