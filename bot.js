@@ -116,16 +116,6 @@ if (msg.content === '!happy') {
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-let aimcounter = args[0];
-let aimcounterinfo = args[0];
-let asgardianscounter = args[0];
-let asgardianscounterinfo = args[0];
-let brawlerscounter = args[0];
-let brawlerscounterinfo = args[0];
-let shieldcounter = args[0];
-let shieldcounterinfo = args[0];
-let s6counter = args[0];
-let s6counterinfo = args[0];
 //Submit war counters below
 let counter = args[0]; 
 let aim = args[1];
@@ -322,7 +312,7 @@ message.channel.send(embed);
 message.channel.send("Please use a valid team phrase, such as aim,asgardians,brawlers,shield, or s6.").catch(console.error);	
 }
 } else {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> or <#665215273778937876> and try again.").catch(console.error);
 }
 }
 
@@ -356,8 +346,7 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 AimSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
-}
-if (args[1] === "asgardians"){	
+} else if (args[1] === "asgardians"){
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const AsgardianSubmission = client.channels.get('666384999246725150')
@@ -383,8 +372,7 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 AsgardianSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
-}
-if (args[1] === "brawlers"){	
+} else if (args[1] === "brawlers"){
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const BrawlerSubmission = client.channels.get('666385224174927873')
@@ -410,8 +398,7 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 BrawlerSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
-}
-if (args[1] === "shield"){	
+} else if (args[1] === "shield"){
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const ShieldSubmission = client.channels.get('666385470514790440')
@@ -437,8 +424,7 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 ShieldSubmission.send(embed);
 CheckText.send("War Counter Submission Received.");
-}
-if (args[1] === "s6"){	
+} else if (args[1] === "s6"){	
 const CheckImage = client.channels.get('666305824813219870')
 const CheckText = client.channels.get('666305824813219870')
 const S6Submission = client.channels.get('666385715566739467')
@@ -464,13 +450,14 @@ embed.setDescription(Text)
 embed.setImage(Image.url)
 S6Submission.send(embed);
 CheckText.send("War Counter Submission Received.");
-}
 } else {
-message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
+message.channel.send("Please use a valid team phrase, such as !submit counter aim,asgardians,brawlers,shield, or s6.").catch(console.error);	
 }
-} 
+} else {//channel ID
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);
+}
+}//submit
 });
-
 
 //*********CHARACTERS + TEAMS*********** (NOT FINISHED)
 //example: !ironman speed || !asgardians)
