@@ -321,7 +321,7 @@ message.channel.send(embed);
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
 }
-} else if (command === 'counter' && args.length == 0){	
+} else if (command === 'counter' && args[0] == null){	
 message.channel.send("Please use a valid team phrase, such as aim,asgardians,brawlers,shield, or s6.").catch(console.error);	
 }
 
