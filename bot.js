@@ -112,7 +112,7 @@ if (msg.content === '!happy') {
 
 
 //*********WAR COUNTERS + SUBMIT WAR COUNTERS*********** (FINISHED)
-//example: !counter aim/+info || !submit warcounter aim)     
+//example: !counter aim/+info || !submit counter aim)     
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
@@ -127,7 +127,7 @@ let shieldcounterinfo = args[0];
 let s6counter = args[0];
 let s6counterinfo = args[0];
 //Submit war counters below
-let warcounter = args[0]; 
+let counter = args[0]; 
 let aim = args[1];
 let asgardians = args[1];
 let brawlers = args[1];
@@ -137,7 +137,8 @@ let s6 = args[1];
  //bot spam channel
 if(command === 'counter') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
-if (aimcounter === "aim"){	
+message.channel.send("Sorry, you need to add a teamname phrase, such as aim,asgardians,brawlers etc.").catch(console.error)	
+} else if (command === 'counter' && aimcounter === "aim"){	
 const aimcounterimage = client.channels.get('666332891730673668')
 aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counteraim = messages.first().attachments.first()
@@ -145,8 +146,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim.url)
 message.channel.send(attachment);
 })
-}
-if (aimcounterinfo === "aim+info"){		
+} else if (command === 'counter' && aimcounterinfo === "aim+info"){		
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -174,8 +174,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (asgardianscounter === "asgardians"){	
+} else if (command === 'counter' && asgardianscounter === "asgardians"){	
 const asgardcounterimage = client.channels.get('666340204872990730')
 asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterasgard = messages.first().attachments.first()
@@ -183,8 +182,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterasgard.url)
 message.channel.send(attachment);
 })
-}
-if (asgardianscounterinfo === "asgardians+info"){	
+} else if (command === 'counter' && asgardianscounterinfo === "asgardians+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -212,8 +210,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (brawlerscounter === "brawlers"){	
+} else if (command === 'counter' && brawlerscounter === "brawlers"){	
 const brawlerscounterimage = client.channels.get('666340239903686659')
 brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterbrawlers = messages.first().attachments.first()
@@ -221,8 +218,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterbrawlers.url)
 message.channel.send(attachment);
 })
-}
-if (brawlerscounterinfo === "brawlers+info"){	
+} else if (command === 'counter' && brawlerscounterinfo === "brawlers+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
 const channelToCheckText = client.channels.get('666317820656615435')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -250,8 +246,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (shieldcounter === "shield"){	
+} else if (command === 'counter' && shieldcounter === "shield"){	
 const shieldcounterimage = client.channels.get('666340284962963524')
 shieldcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countershield = messages.first().attachments.first()
@@ -259,8 +254,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countershield.url)
 message.channel.send(attachment);
 })
-}
-if (shieldcounterinfo === "shield+info"){	
+} else if (command === 'counter' && shieldcounterinfo === "shield+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -288,8 +282,7 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-}
-if (s6counter === "s6"){	
+} else if (command === 'counter' && s6counter === "s6"){	
 const s6counterimage = client.channels.get('666340284962963524')
 s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counters6 = messages.first().attachments.first()
@@ -297,8 +290,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counters6.url)
 message.channel.send(attachment);
 })
-}
-if (s6counterinfo === "s6+info"){	
+} else if (command === 'counter' && s6counterinfo === "s6+info"){	
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
 const channelToCheckText = client.channels.get('666319009465237524')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
@@ -329,14 +321,11 @@ message.channel.send(embed);
 }
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);	
-}
-} else {
-}  
-//if (condition1 && [1, 2].some(r => r == 2))
+}	
 
 if(command === 'submit') {
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
-if (args[0] === "warcounter"){	
+if (args[0] === "counter"){	
 }
 if (args[1] === "aim"){	
 const CheckImage = client.channels.get('666305824813219870')
@@ -4683,7 +4672,7 @@ client.on('message', message => {
 if (message.content === '!comm') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("**Commands List** \n \n**!away** \nSends away note to captains \n[!away travelling for 2 days] \n(It will remove your message for privacy and inform captains of your circumstances) \n \n**!uniques** \nSends an infographic of uniques tied to characters. \n \n**!blitz** \nShows current blitz predictions, (!blitz2 for orb assault blitz) \n \n**!event [charactername]** \nSends an infographic of lowest reported requirements to beat the legendary event 5/6/7* \n \n**![charactername]** \nSends an infographic of required gear levels for the character GearTier 10/11/12 + 1-13 + T4 recommendations \n \n**-------------CHARACTERS-------------** \n**![charactername] basic** \nSends characters basic information \n**![charactername] special** \nSends characters special information \n**![charactername] ultimate** \nSends characters ultimate information \n**![charactername] passive** \nSends characters passive information \n**![charactername] speed** \nSends characters speed \n**![charactername] unlock** \n Sends characters unlock/farming location \n**![charactername] trait** \nSends characters traits \n**![charactername] kit** \nSends characters full kit \n \n**---------------WAR---------------** \n **!counter [teamname]** \nSends an infographic of war counters \nexample:[!counter aim] \n \n** !counter [teamname+info]** \nSends a detailed guide including text,youtube videos, and winning matchups. \n \n**!submit warcounter aim** \nSends your text&image to be reviewed by captains. If approved they will be added to the counter infographics. \n**(Image + command must be sent in the same message)** \n \n")
+	.setDescription("**Commands List** \n \n**!away** \nSends away note to captains \n[!away travelling for 2 days] \n(It will remove your message for privacy and inform captains of your circumstances) \n \n**!uniques** \nSends an infographic of uniques tied to characters. \n \n**!blitz** \nShows current blitz predictions, (!blitz2 for orb assault blitz) \n \n**!event [charactername]** \nSends an infographic of lowest reported requirements to beat the legendary event 5/6/7* \n \n**![charactername]** \nSends an infographic of required gear levels for the character GearTier 10/11/12 + 1-13 + T4 recommendations \n \n**-------------CHARACTERS-------------** \n**![charactername] basic** \nSends characters basic information \n**![charactername] special** \nSends characters special information \n**![charactername] ultimate** \nSends characters ultimate information \n**![charactername] passive** \nSends characters passive information \n**![charactername] speed** \nSends characters speed \n**![charactername] unlock** \n Sends characters unlock/farming location \n**![charactername] trait** \nSends characters traits \n**![charactername] kit** \nSends characters full kit \n \n**---------------WAR---------------** \n **!counter [teamname]** \nSends an infographic of war counters \nexample:[!counter aim] \n \n** !counter [teamname+info]** \nSends a detailed guide including text,youtube videos, and winning matchups. \n \n**!submit counter aim** \nSends your text&image to be reviewed by captains. If approved they will be added to the counter infographics. \n**(Image + command must be sent in the same message)** \n \n")
 	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 	message.channel.send(exampleEmbed);
 }
