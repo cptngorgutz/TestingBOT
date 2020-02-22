@@ -137,7 +137,7 @@ let s6 = args[1];
  //bot spam channel
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 if(command === 'counter') {
-message.channel.send("use phrases.")
+message.channel.send("use phrases.").catch(console.error)
 } else if (aimcounter === "aim"){	
 const aimcounterimage = client.channels.get('666332891730673668')
 aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
