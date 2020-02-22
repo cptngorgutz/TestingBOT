@@ -136,6 +136,7 @@ let s6 = args[1];
 
  //bot spam channel
 if(command === 'counter') {
+if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') {
 if(args[0] == "aim"){
 const aimcounterimage = client.channels.get('666332891730673668')
 aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -319,6 +320,9 @@ message.channel.send(embed);
 	
 } else {
 message.channel.send("Please use a valid team phrase, such as aim,asgardians,brawlers,shield, or s6.").catch(console.error);	
+}
+} else {
+message.channel.send("Sorry, this doesn't work here. Head to <#666305824813219870> and try again.").catch(console.error);
 }
 }
 
