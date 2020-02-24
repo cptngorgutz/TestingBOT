@@ -4639,7 +4639,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \n**Please use a valid phrase:** \n!basic\n!special\n!ultimate\n!kit\n!speed\n!unlock")
+	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\nunlock\ntrait")
 	message.channel.send(embedEmbed); 
 }
 } 
@@ -4702,7 +4702,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \n**Please use a valid phrase:** \n!basic\n!special\n!ultimate\n!kit\n!speed\n!unlock")
+	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\nunlock\ntrait")
 	message.channel.send(embedEmbed); 
 }
 }
