@@ -4602,55 +4602,45 @@ if(args[1] == "kit"){
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Passive)** \n \n**From the Ashes • T4 Upgrade** \n \nOn Spawn, attack all enemies for **200% -> 250%** damage + apply Defense Down for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/8oHzMHk.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(args[1] == "basic") {
+} else if(args[1] == "basic") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Basic)** \n \n**Immolation • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **200% -> 250%** damage. Clear 2 positive effects on each target.")
 	.setThumbnail('https://i.imgur.com/f9CRI8p.png') 
 	message.channel.send(exampleEmbed);
-}
-
-if(args[1] == "special") {
+} else if(args[1] == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Special)** \n \n**Vitality Drain • T4 Upgrade** \n:ability_on::ability_on::ability_on::ability_on::ability_on:\nSteal **15% -> 20%** Health from all enemies and redistribute to self. Apply Regeneration to all allies. Apply an additional Regeneration to all X-MEN allies.")
 	.setThumbnail('https://i.imgur.com/8YAN1aJ.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-if(args[1] == "ultimate") {
+} else if(args[1] == "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Ultimate)** \n \n**Phoenix Unleashed • T4 Upgrade** \n:ability_on::ability_on::ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack all enemies for **350% -> 400%** damage.\nClear **3 -> all** positive effects on each target.\nGain +50000% Extra Focus for this attack.\nThis attack is Unavoidable.")
 	.setThumbnail('https://i.imgur.com/sLWbL8Y.png') 
 	message.channel.send(exampleEmbed3);
-}
-
-if(args[1] == "passive") {
+} else if(args[1] == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Passive)** \n \n**From the Ashes • T4 Upgrade** \n \nOn Spawn, attack all enemies for **200% -> 250%** damage + apply Defense Down for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/8oHzMHk.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(args[1] == "speed") {
+} else if(args[1] == "speed") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \nDark Phoenix's speed is: **")
 	message.channel.send(speedEmbed);
-}
-
-if(args[1] == "unlock" || unlock === "farm") {
+} else if(args[1] == "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \nDark Phoenix is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else {
+message.channel.send("Please use a valid phrase, such as phoenix kit, or dark phoenix ultimate").catch(console.error);
 }
-
-} else if(command === 'pho' || command === 'phoe'|| command === 'phoen' || command === 'phoeni' || command === 'phoenix') {
+} 
+if(command === 'pho' || command === 'phoe'|| command === 'phoen' || command === 'phoeni' || command === 'phoenix') {
 if(args[0] == "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -4672,55 +4662,43 @@ if(args[0] == "kit"){
 	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Passive)** \n \n**Phoenix Rising • T4 Upgrade** \n \nOn Death, summon Dark Phoenix.\nPhoenix cannot be revived.\nOn ally Taunt, gain Taunt.\nGain **+20% -> +30%** Damage. X-Men allies gain **+20% -> +30%** Damage.\nGain **+20% -> +30%** Max Health. X-Men allies gain **+20% -> +30%** Max Health.")
 	.setThumbnail('https://i.imgur.com/a8ILqVz.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(args[0] == "basic") {
+} else if(args[0] == "basic") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Basic)** \n \n**Psychic Blast • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + clear 2 positive effects.")
 	.setThumbnail('https://i.imgur.com/7tVRvd6.png') 
 	message.channel.send(exampleEmbed);
-}
-
-if(args[0] == "special") {
+} else if(args[0] == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Special)** \n \n**Bestow Light • T4 Upgrade** \n<:abilityon:663751832690229278> \n:ability_on::ability_on::ability_on::ability_on::ability_on:\nApply Stealth to all allies to 2 turns. Apply Defense Up to all allies.\nRedistribute 25% of Max Health from self to all allies. All allies receive an additional **6000 -> 10000** Health. This bypasses Heal Block.\nTransfer all negative effects from allies to self.\nIf there are no allies, attack self for 5000% Piercing damage.\nIf Phoenix dies, her Passive Ability is triggered.")
 	.setThumbnail('https://i.imgur.com/kAV4oD8.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-if(args[0] == "ultimate") {
+} else if(args[0] == "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Ultimate)** \n \n**Phoenix Force • T4 Upgrade** \n<:abilityoff:663751832413405184> \n:ability_on::ability_on::ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack primary target for **350% -> 400%** damage + clear **3 -> all** positive effects.\nGain +50000% Extra Focus for this attack")
 	.setThumbnail('https://i.imgur.com/TbhMRUg.png') 
 	message.channel.send(exampleEmbed3);
-}
-
-if(args[0] == "passive") {
+} else if(args[0] == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Passive)** \n \n**Phoenix Rising • T4 Upgrade** \n \nOn Death, summon Dark Phoenix.\nPhoenix cannot be revived.\nOn ally Taunt, gain Taunt.\nGain **+20% -> +30%** Damage. X-Men allies gain **+20% -> +30%** Damage.\nGain **+20% -> +30%** Max Health. X-Men allies gain **+20% -> +30%** Max Health.")
 	.setThumbnail('https://i.imgur.com/a8ILqVz.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(args[0] == "speed") {
+} else if(args[0] == "speed") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958> **Phoenix** \nPhoenix's speed is: **")
 	message.channel.send(speedEmbed);
-}
-
-if(args[0] == "unlock" || unlock === "farm") {
+} else if(args[0] == "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958> **Phoenix** \nPhoenix is farmable in:**")
 	message.channel.send(speedEmbed); 
-}
 } else {
 message.channel.send("Please use a valid phrase, such as phoenix kit, or dark phoenix ultimate").catch(console.error);
+}
 }
 
 
