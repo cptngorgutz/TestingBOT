@@ -4720,7 +4720,6 @@ if(unlock === "unlock" || unlock === "farm") {
 	message.channel.send(speedEmbed); 
 }
 } else {
-	message.channel.send("Please try phoenix kit or dark phoenix kit etc.").catch(console.error);	
 }
 
 
