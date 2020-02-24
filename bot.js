@@ -4580,8 +4580,8 @@ if(unlock === "unlock" || unlock === "farm") {
 
 }
 
-if(command === 'da' || command === 'dar'|| command === 'dark' && args[1] == "pho" || args[1] == "phoe" || args[1] == "phoen" || args[1] == "phoeni" || args[1] == "phoenix") {
-if(args[2] === "kit"){
+if(command === 'da' || command === 'dar'|| command === 'dark' && args[0] == "pho" || args[0] == "phoe" || args[0] == "phoen" || args[0] == "phoeni" || args[0] == "phoenix") {
+if(args[1] === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958>	**Dark Phoenix (Basic)** \n \n**Immolation • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **200% -> 250%** damage. Clear 2 positive effects on each target.")
@@ -4604,7 +4604,7 @@ if(args[2] === "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-if(args[2] === "basic") {
+if(args[1] === "basic") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958>	**Dark Phoenix (Basic)** \n \n**Immolation • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **200% -> 250%** damage. Clear 2 positive effects on each target.")
@@ -4612,7 +4612,7 @@ if(args[2] === "basic") {
 	message.channel.send(exampleEmbed);
 }
 
-if(args[2] === "special") {
+if(args[1] === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958>	**Dark Phoenix (Special)** \n \n**Vitality Drain • T4 Upgrade** \n:ability_on::ability_on::ability_on::ability_on::ability_on:\nSteal **15% -> 20%** Health from all enemies and redistribute to self. Apply Regeneration to all allies. Apply an additional Regeneration to all X-MEN allies.")
@@ -4620,7 +4620,7 @@ if(args[2] === "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-if(args[2] === "ultimate") {
+if(args[1] === "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958>	**Dark Phoenix (Ultimate)** \n \n**Phoenix Unleashed • T4 Upgrade** \n:ability_on::ability_on::ability_on::ability_on::ability_on::ability_on::ability_off::ability_off:\nAttack all enemies for **350% -> 400%** damage.\nClear **3 -> all** positive effects on each target.\nGain +50000% Extra Focus for this attack.\nThis attack is Unavoidable.")
@@ -4628,7 +4628,7 @@ if(args[2] === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-if(args[2] === "passive") {
+if(args[1] === "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958>	**Dark Phoenix (Passive)** \n \n**From the Ashes • T4 Upgrade** \n \nOn Spawn, attack all enemies for **200% -> 250%** damage + apply Defense Down for **1 -> 2** turns.")
@@ -4636,14 +4636,14 @@ if(args[2] === "passive") {
 	message.channel.send(exampleEmbed4);
 }
 
-if(args[2] === "speed") {
+if(args[1] === "speed") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958> **Dark Phoenix** \nDark Phoenix's speed is: **")
 	message.channel.send(speedEmbed);
 }
 
-if(args[2] === "unlock" || unlock === "farm") {
+if(args[1] === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Dark Phoenix:663750496829308958> **Dark Phoenix** \nDark Phoenix is farmable in:**")
