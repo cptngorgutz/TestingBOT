@@ -4637,7 +4637,10 @@ const speedEmbed = new Discord.RichEmbed()
 	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \nDark Phoenix is farmable in:**")
 	message.channel.send(speedEmbed); 
 } else {
-message.channel.send("Please use a valid phrase, such as phoenix kit, or dark phoenix ultimate").catch(console.error);
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \n**Please use a valid phrase:** \n!basic\n!special\n!ultimate\n!kit\n!speed\n!unlock")
+	message.channel.send(embedEmbed); 
 }
 } 
 if(command === 'pho' || command === 'phoe'|| command === 'phoen' || command === 'phoeni' || command === 'phoenix') {
@@ -4697,7 +4700,10 @@ const speedEmbed = new Discord.RichEmbed()
 	.setDescription("<:phoenix:663750496829308958> **Phoenix** \nPhoenix is farmable in:**")
 	message.channel.send(speedEmbed); 
 } else {
-message.channel.send("Please use a valid phrase, such as phoenix kit, or dark phoenix ultimate").catch(console.error);
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \n**Please use a valid phrase:** \n!basic\n!special\n!ultimate\n!kit\n!speed\n!unlock")
+	message.channel.send(embedEmbed); 
 }
 }
 
