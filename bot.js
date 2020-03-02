@@ -775,8 +775,8 @@ if(akit === "kit" || akit === "k"){
 
 
 
-if(command === 'americachavez' || command === 'americach' || command === 'americachav' || command === 'chavez' || command === 'missamerica') {
-if(kit === "kit"){
+if(command === 'america' || command === 'americ' || command === 'ameri' || command === 'ame' && args[0] === "chavez" || && args[0] === "chave" && args[0] === "chav" || args[0] === "cha") {
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
@@ -797,54 +797,51 @@ if(kit === "kit"){
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. \nHERO BRAWLER allies gain **+10% -> +20%** Max Health.")
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(basic === "basic"){
+} else if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
 	.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
 	message.channel.send(exampleEmbed);
-}
-
-else if(args[1] == "special") {
+} else if(aspecial == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **250% -> 300%** damage + \n**50% -> 75%** damage per HERO BRAWLER ally.")
 	.setThumbnail('https://i.imgur.com/0V2pdTr.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-if(ultimate === "ultimate") {
+} else if(aultimate === "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Ultimate)** \n \n**America's Starling • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nClear 3 positive effects. \nAttack primary target for **350% -> 430%** damage.")
 	.setThumbnail('https://i.imgur.com/hdqNsvC.png') 
 	message.channel.send(exampleEmbed3);
-}
-
-else if(args[1] == "passive") {
+} else if(apassive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. \nHERO BRAWLER allies gain **+10% -> +20%** Max Health.")
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-else if(args[1] == "speed") {
+} else if(aspeed == "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez's speed is: 115")
 	message.channel.send(speedEmbed);
-}
-
-else if(args[1] == "unlock" || args[1] == "farm") {
+} else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nBrawler,Cosmic,Hero,Mystic.")  
+	message.channel.send(speedEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
-
 }
 if(command === 'antman' || command === 'ant' || command === 'scott' || command === 'lang') {
 if(kit === "kit"){
@@ -878,7 +875,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
@@ -894,7 +891,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
@@ -949,7 +946,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Special)** \n \n**Staggering Voice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack Primary target for **500% -> 600%** damage. \nThis attack is unavoidable.")
@@ -965,7 +962,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Passive)** \n \n**King Of Attilan • T4 Upgrade** \n \nCharacters killed by Black Bolt cannot be revived. \nWhen an enemy drops below 25% Health, attack that enemy for\n**150% -> 200%** damage. If that enemy is VILLAIN TECH, attack that enemy \nfor **300% -> 400%** damage instead. \nOn enemy summon, apply Disrupted + clear 3 positive effects on\nthe summoner. \nGain +40% Resistance. INHUMAN allies gain +40% Resistance. \nGain **+30% -> +50%** Max Health. INHUMAN allies gain **+30% -> +50%** Max Health.")
@@ -1020,7 +1017,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Special)** \n \n**Hunter's Spirit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **190% -> 230%** damage + \n30% Piercing. Gain Offense Up for 2 turns. \nOn Crit, gain Counter.")
@@ -1036,7 +1033,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Passive)** \n \n**Defender of Wakanda • T4 Upgrade** \n \nOn dropping below 50% of Max Health, gain +1 Charged, \nup to a maximum of 5. \nOn Kill, fill Speed Bar by **80% -> 100%**. \nOn Defense Up, gain Deflect.")
@@ -1091,7 +1088,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Special)** \n \n**Camouflage Tech • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Stealth for 2 turns + clear all negative effects from Self. \nClear 1 negative effect from AVENGER allies. \nApply Speed Up to Self/S.H.I.E.L.D./AVENGER allies for 2 turns. \n60% chance to apply Speed Up to all allies for 2 turns.")
@@ -1107,7 +1104,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Passive)** \n \n**Saboteur • T4 Upgrade** \n \nGain **+10% -> +15%** Speed. \nThis is applied after any character has taken a turn. \nWhen in Stealth, gain Offense Up.")
@@ -1162,7 +1159,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blob:684029278366597127>	**Blob (Special)** \n \n**Meat Shield • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nCopy all positive effects from BROTHERHOOD allies to this character. Attack primary target for **290% -> 350%** damage. Attack all adjacent targets for **260% -> 320%** damage.")
@@ -1177,7 +1174,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blob:684029278366597127>	**Blob (Passive)** \n \n**Solid Mass • T4 Upgrade** \n \nOn Spawn, gain Offense Up for 2 turns.\nWhen a Brotherhood ally drops below 50% Health, gain Taunt.\nOn Enemy turn, apply +1 Deflect, up to a maximum of 3, to adjacent allies.\nGain **+40% -> +50%** Resistance. BROTHERHOOD allies gain **+40% -> +50%** Resistance.\nGain **+15% -> +25%** chance to Counterattack. Gain **+15% -> +25%** chance to Counterattack per BROTHERHOOD ally.")
@@ -1232,7 +1229,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Special)** \n \n**Card Trick • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 230%** damage and **+20% -> +25%** Crit chance. 80% chance to gain a Bonus attack for 190% damage and +40% Crit chance.")
@@ -1248,7 +1245,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Passive)** \n \n**Never Miss • T4 Upgrade** \n \nGain +10% Accuracy. All allies gain **+5% -> +10%** Accuracy. \nMERCENARY allies gain +10% Crit damage.")
@@ -1303,7 +1300,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Special)** \n \n**Overload • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \nchange Speed Bar by -50%. Attack adjacent targets for: \n**150% -> 170%** damage + change Speed Bar by -10%. \n \nIf Charged, in addition, attack targets 2 spaces from primary for **150% -> 170%** damage and change Speed Bar by -10%, then lose Charged.")
@@ -1319,7 +1316,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Passive)** \n \n**Time Sense • T4 Upgrade** \n \nOn Spawn, Self and all allies gain 5% Speed Bar. \nOn Turn, **20% -> 30%** chance to apply Counter to a random \nMUTANT ally, and 20% chance to apply Counter to another random ally.")
@@ -1374,7 +1371,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Special)** \n \n**Inspire • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt and Defense Up on self. \nApply Defense Up to all allies. \nGrant 1 Ability Energy to 1-2 AVENGER allies. \nGrant 1 Ability Energy to **1-2 -> 1-3** random allies.")
@@ -1390,7 +1387,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Passive)** \n \n**!Assemble • T4 Upgrade** \n \n+25% Block chance. **+5% -> +10%** Block Amount. \n+10% Max Health. +5% Block chance per AVENGER ally.")
@@ -1445,7 +1442,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Special)** \n \n**Warbird • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **360% -> 450%** damage + \nclear all positive effects. \nIf not in Binary, gain +1 Charged, up to a maximum of 5. \nIf in Binary, lose 1 Charged. On losing all Charged, end Binary.")
@@ -1461,7 +1458,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Passive)** \n \n**Higher. Further. Faster. • T4 Upgrade** \n \nWhile in Binary gain: 25% Damage, 25% Armor, 100% Focus, and 100% Resistance. While in Binary, on End of Turn, attack all enemies for **120% -> 150%** damage. \nOn Spawn: \n Clear all Charged. If any Charged were cleared, gain Regeneration. \nGain Charged, If at least one ally is MILITARY, gain an additional Charge. \nMILITARY allies gain +15% Max Health. \nMILITARY allies gain +10% Damage. \nIf not in Binary, when this character gains Ability Energy, \ngain +1 Charged, up to a maximum of 5. \nOn Turn, heal self for **10% -> 20%** of Max Health.")
@@ -1516,7 +1513,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Special)** \n \n**Slaughter • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **350% -> 420%** damage + \n100% additional damage per negative effect. \nRemove all negative effects from the primary target. \nAttack all adjacent targets for **180% -> 250%** damage.")
@@ -1532,7 +1529,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Passive)** \n \n**Frenzied Fury • T4 Upgrade** \n \nWhen an enemy drops below 25% Health, change Speed Bar of self and all SYMBIOTE allies by **+20% -> +30%** + heal them for 10% of this character's Max Health.")
@@ -1587,7 +1584,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Special)** \n \n**Altruism • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt. Gain **1 -> 2** Counter. \nApply 2 Deflect to Self and X-MEN Allies. \nApply Deflect to all other allies. \nIf Phoenix is an ally, gain Taunt for 2 turns.")
@@ -1603,7 +1600,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Passive)** \n \n**Steel Form • T4 Upgrade** \n \nOn Spawn, if Charged, generate 1 Ability Energy for self. \nThen clear Charged. \nOn Spawn, if Phoenix is an ally: \nGain Defense Up for **1 -> 2** turns. \nApply Defense Up to all X-MEN allies. \nWhen a negative effect is applied to an X-MEN ally, gain +1 Charged, up to a maximum of 5. \nWhile Charged, when attacked, attack that enemy for \n**75% -> 100%** damage +10% damage per Charged. \nWhen an X-MEN ally drops below 50% Max Health, \ngain +1 Taunt, up to a maximum of 2. \nWhile in Defense Up, gain +1000% Resistance. \nGain +15% Max Health. X-MEN allies gain +15% Max Health.")
@@ -1658,7 +1655,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:coulson:663749981605199912>	**Coulson (Special)** \n \n**EMP Punch • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **190% -> 200%** damage. \nAttack all other enemies for **140% -> 150%** damage. \nOn WAR DEFENSE: \nTransfer 4 positive effects from primary target to all \nnon-MINION S.H.I.E.L.D. allies. \nFlip all positive effects on primary target. \nRemove **3 -> all** positive effects from all enemies. \nApply Slow to all TECH enemies.")
@@ -1674,7 +1671,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:coulson:663749981605199912>	**Coulson (Passive)** \n \n**The Agent • T4 Upgrade** \n \nIf Coulson drops below 50% Health, change Speed Bar by \n**50% -> 60%** for S.H.I.E.L.D. Medic. \nOn WAR DEFENSE: \nGain **+20% -> +40%** Max Health. \nS.H.I.E.L.D. allies gain **+20% -> +40%** Max Health. \nOn Spawn, apply Immunity to **4 -> all** S.H.I.E.L.D. allies. \nGain +120% Resistance. \nS.H.I.E.L.D. allies gain +120% Resistance.")
@@ -1729,7 +1726,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Special)** \n \n**Wrath • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt + **2 -> 2-3** Counter. \nHeal self for 15% of Max Health.")
@@ -1745,7 +1742,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Passive)** \n \n**Vengeance • T4 Upgrade** \n \n**+15% -> +20%** Max Health. HYDRA allies gain +5% Armor.")
@@ -1800,7 +1797,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Special)** \n \n**To Me! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nApply Taunt to the 2 most injured non-summoned \nnon-primary target enemies. \nCall an ally Wolverine to attack the most injured \nof those previous enemies. \n**75% -> 100%** chance to call an ally to attack the second most injured of those previous enemies. \nAttack primary target for **300% -> 350%** damage.")
@@ -1816,7 +1813,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Passive)** \n \n**Team Synergy • T4 Upgrade** \n \nOn Turn and on X-Men ally turn, gain **+1 -> +2** Charged,\n up to a maximum of **10 -> 20**. \nWhen an enemy attacks an ally Phoenix or Dark Phoenix, \n50% chance to attack that enemy for 200% damage. \nIf this character does not attack, \ncall an assist from an ally Wolverine to attack that enemy. \nWolverine gains +80% Damage for the assist. \nOn ally Phoenix death, gain Offense Up + \nchange an ally Wolverine Speed Bar by +100%.")
@@ -1871,7 +1868,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Special)** \n \n**Throw Baton • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **180% -> 200%** damage + \nChain to **1-2 -> 2** targets within 2 spaces of \nprevious target for **130% -> 150%** damage. \nDodge breaks this Chain. \nApply 2 Counter to self and all DEFENDER allies.")
@@ -1887,7 +1884,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Passive)** \n \n**Enhance Senses • T4 Upgrade** \n \nSelf and DEFENDER allies gain **+5% -> +10%** Speed. \nGain +5% Dodge chance. \nGain +5% Dodge chance per DEFENDER ally. \nGain +10% Damage.")
@@ -1942,7 +1939,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Special)** \n \n**Bounty Hunter • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack the most injured target for **490% -> 550%** damage, \nignoring Taunt. On Kill, gain Regeneration.")
@@ -1958,7 +1955,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Passive)** \n \n**Merc With A Mouth • T4 Upgrade** \n \nOn Turn, clear all negative effects from Self + \nHeal **10% -> 15%** of Max Health per negative effect removed. \n5% chance to Revive for 10% of Max Health.")
@@ -2013,7 +2010,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drax:663749981496279062>	**Drax (Special)** \n \n**Fast Reflexes • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain Taunt + **1-2 -> 2** Counter. \nGain Defense Up for 1-2 turns.")
@@ -2029,7 +2026,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drax:663749981496279062>	**Drax (Passive)** \n \n**Destroyer • T4 Upgrade** \n \nOn Spawn, gain Taunt. **+15% -> +20%** increase to Drain.")
@@ -2084,7 +2081,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Special)** \n \n**Winds of Watoomb • T4 Upgrade** \n<:abilityon:663751832690229278> \nApply 2 random negative effects against primary target + \n**90% -> 100%** chance to flip all positive effects on each enemy to negative effects. \nIf positive effects are not flipped, they are removed instead.")
@@ -2100,7 +2097,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Passive)** \n \n**Master of the Arcane Arts • T4 Upgrade** \n \nOn Turn, **20% -> 30%** chance to Fill lowest Speed Bar by 30%. \nIf this character has 3 or more SUPERNATURAL allies, \nwhen a positive effect is applied to an enemy, \nheal for 5% of this character's Max Health + \ngain 1 Deflect, up to a maximum of 5.")
@@ -2155,7 +2152,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elektra:663749981940875265>	**Elektra (Special)** \n \n**Into Shadow • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **150% -> 160%** damage + \nclear **1-2 -> 2** positive effects. Gain Stealth.")
@@ -2171,7 +2168,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elektra:663749981940875265>	**Elektra (Passive)** \n \n**Death's Grace • T4 Upgrade** \n \nOn Spawn, a random HAND ally gains Evade. \n**10% -> 15%** chance to Revive on Death with 20% of Max Health.")
@@ -2226,7 +2223,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elsa:663749985460027402>	**Elsa (Special)** \n \n**Trick Shot • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **240% -> 300%** damage. \nAttack the most injured enemy for **290% -> 350%** damage, ignoring Taunt and Stealth.")
@@ -2242,7 +2239,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elsa:663749985460027402>	**Elsa (Passive)** \n \n**#%@$! • T4 Upgrade** \n \nOn Miss or on ally miss, if this character has 3 or more \nSUPERNATURAL allies, attack that target for **220% -> 270%** damage. \nOn enemy dodge, attack that enemy for **220% -> 270%** damage. \nGain +10% Crit Chance. MYSTIC allies gain +10% Crit Chance. \nGain **+10% -> +20%** Accuracy per SUPERNATURAL ally.")
@@ -2297,7 +2294,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:falcon:663749983551488063>	**Falcon (Special)** \n \n**Redwing • T4 Upgrade** \n<:abilityon:663751832690229278> \nChange Speed Bar for self and all allies by **25% -> 30%** + \n10% for each enemy with a positive effect. \nClear Stealth from all enemies.")
@@ -2313,7 +2310,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:falcon:663749983551488063>	**Falcon (Passive)** \n \n**EXO-7 Wingsuit • T4 Upgrade** \n \nGain +25% Block Chance. \nGain +5% Block Chance per POWER ARMOR ally. \nGain +10% Max Health. \nGain **+5% -> +10%** Block Amount.")
@@ -2368,7 +2365,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:gamora:663749983815860234>	**Gamora (Special)** \n \n**Ruthless Blade • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **230% -> 270%** damage. \nChain to 1-2 adjacent targets for **180% -> 200%** damage. \nOn Kill, fill Speed Bar by 100%. \nCounterattack breaks this Chain.")
@@ -2384,7 +2381,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:gamora:663749983815860234>	**Gamora (Passive)** \n \n**Deadly Methods • T4 Upgrade** \n \nGain **+5% -> +10%** Crit Chance. \nApply +10% Crit Chance to GUARDIAN allies. \nApply +5% Crit Chance to additional allies.")
@@ -2439,7 +2436,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Special)** \n \n**Hell Cycle • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **260% -> 290%** damage + \napply 2 Bleed for **1 -> 2** turns. \nAttack all adjacent targets for **240% -> 270%** damage + \napply 2 Bleed. This attack cannot be blocked and cannot miss.")
@@ -2455,7 +2452,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Passive)** \n \n**Spirit of Vengeance • T4 Upgrade** \n \nOn Death, grant 2 Ability Energy to all SUPERNATURAL allies. \nOn non-summoned ally Death, attack the enemy that killed the \ntarget for **400% -> 500%** damage and gain +1 Charged, up to a maximum of 5. \nGenerate **2 -> 3** Ability Energy for self. \nWhen a negative effect is applied to an enemy, \nchange Speed Bar of self and all SUPERNATURAL allies by 3%. \nGain **+20% -> +40%** Max Health. \nSUPERNATURAL allies gain **+20% -> +40%** Max Health. \nGain +30% Focus. MYSTIC allies gain +30% Focus.")
@@ -2510,7 +2507,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Special)** \n \n**Burning Rage • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack a random target with Stealth for **380% -> 450%** damage. \nIf no targets have Stealth, attack primary target instead. \nDeal 50% additional damage per positive effect on the target.")
@@ -2526,7 +2523,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Passive)** \n \n**Cauterize • T4 Upgrade** \n \nOn any SPIDER-VERSE ally's turn, choose 2 random enemies. \nIf they have a positive effect, remove 1. \nOn Spawn, apply Defense Down to the enemy with the most Resistance. \nIf that enemy is S.H.I.E.L.D., apply Defense Down for 2 turns. \nThis attack cannot be resisted. \nGain **+10% -> +20%** Max Health.")
@@ -2581,7 +2578,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:graviton:663749985417953300>	**Graviton (Special)** \n \n**Crushing Force • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target and adjacent targets for \n**240% -> 300%** damage. \nApply +2 Slow, up to a maximum of 5 to primary target and adjacent targets. \nIf Scientist Supreme is an ally, \napply Bleed to primary target and adjacent targets.")
@@ -2597,7 +2594,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:graviton:663749985417953300>	**Graviton (Passive)** \n \n**Weight of the World • T4 Upgrade** \n \nWhen an enemy drops below 50% health, \nincrease the duration of their negative effects by +1, \nup to a maximum of 5. \nA.I.M. MINION allies gain **+10% -> +20%** Damage. \nA.I.M. MINION allies gain +20% Max Health. \nIn WAR, on Turn, change Speed Bar of the enemy with the highest Speed by -25%. \nIn WAR, when an enemy drops below 75% health, apply Disrupted.")
@@ -2647,7 +2644,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Special)** \n \n**Dark Sacrifice • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **340% -> 400%** Piercing + \napply 2 Bleed for 2 turns. \nAttack self for 2000% Piercing damage. \nThis attack cannot miss **though it can be dodged**.")
@@ -2655,7 +2652,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Passive)** \n \n**Undeath • T4 Upgrade** \n \nOn Death, Heal most injured, non-summoned ASGARDIAN \nally for **140% -> 180%** of this character's Max Health. \nOn Death, change Speed Bar of all enemies by -10%.")
@@ -2710,7 +2707,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:groot:663749986218934282>	**groot (Special)** \n \n**Overgrowth • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain **1 -> 2** Deathproof. \nApply Deathproof + Defense Up to all allies.")
@@ -2726,7 +2723,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:groot:663749986218934282>	**groot (Passive)** \n \n**I am Groot • T4 Upgrade** \n \nWhen Groot is attacked, **50% -> 100%** chance to apply \nSlow to attacker for 1 turns. \nOn Death: \n20% chance to Revive with 25% of this character's Max Health. \nApply Deathproof to Rocket Raccoon. \nApply Defense Up to all allies. \nApply Speed Up + Offense Up + Counter to GUARDIAN allies")
@@ -2776,7 +2773,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Special)** \n \n**Arrow Storm • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **170% -> 190%** damage + clear 1 positive effect off each enemy.\nGain +100,000% Extra Focus for this attack.")
@@ -2784,7 +2781,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Passive)** \n \n**Archery • T4 Upgrade** \n \nGain +5% accuracy and +5% damage. Gain +10% damage per HAND ally. Gain **+5% -> +10%** accuracy per HAND ally.")
@@ -2834,7 +2831,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Special)** \n \n**Shuriken • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **410% -> 480%** damage + apply Heal Block for **2 -> 3** turns.")
@@ -2842,7 +2839,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Passive)** \n \n**Touch of Death • T4 Upgrade** \n \nGain **+20% -> +25%** damage.")
@@ -2892,7 +2889,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Special)** \n \n**Assailing Blade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **370% -> 430%** damage + 40% chance to gain a Bonus attack for **290% -> 340%** damage.")
@@ -2900,7 +2897,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Passive)** \n \n**Kenjutsu • T4 Upgrade** \n \nGain **+20% -> +25%** damage.")
@@ -2950,7 +2947,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Special)** \n \n**Smoke Bomb • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies except self for 2 turns. Apply Evade to 4 allies. Gain Deflect.")
@@ -2958,7 +2955,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Passive)** \n \n**Way of the Scorpion • T4 Upgrade** \n \nGain **+15 -> +20%** Block chance and +10% damage.")
@@ -3008,7 +3005,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Special)** \n \n**Blood Magic • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal all allies **3600 -> 4200** Health + 15% of this character's Max Health. Apply Defense Up to **4 -> all** allies.")
@@ -3016,7 +3013,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Passive)** \n \n**Way of the Shadow • T4 Upgrade** \n \nOn turn, **20% -> 25%** chance to gain Stealth for the next 2 turns.")
@@ -3071,7 +3068,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Special)** \n \n**Concussion Arrow • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **140% -> 150%** damage + \nchange Speed Bar by -20%. Clear **3 -> all** positive \neffects from primary and adjacent targets. \nThis attack cannot miss and cannot be dodged.")
@@ -3087,7 +3084,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Passive)** \n \n**Shot in the Dark • T4 Upgrade** \n \nOn turn, 50% chance to attack an enemy with Stealth \nfor **170% -> 200%** Unavoidable damage. \nClear Stealth from that enemy.")
@@ -3142,7 +3139,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Special)** \n \n**Divine Foresight • T4 Upgrade** \n<:abilityon:663751832690229278> \nFlip Stealth on each enemy. \nAttack all enemies for **280% -> 330%** damage. \n**75% -> 100%** chance to clear Heal Block from self and all ASGARDIAN allies.")
@@ -3158,7 +3155,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Passive)** \n \n**The All-Seeing • T4 Upgrade** \n \nGain +10000% Resistance against Blind. \nASGARDIAN allies gain +10000% Resistance against Blind. \nGain **+20% -> +30%** Focus. \nASGARDIAN allies gain **+20% -> +30%** Focus. \nOn Turn, heal self for 5% of Max Health + \n5% of Max Health per non-minion ASGARDIAN ally. \nOn WAR DEFENSE, on Spawn, apply Defense Up to \n**3 -> all** ASGARDIAN allies for 2 turns.")
@@ -3213,7 +3210,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hela:663749986290368512>	**Hela (Special)** \n \n**Command Undead • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **290% -> 350%** damage + \napply Disrupted for **1 -> 2** turns. Gain an Assist from Undead Asgardian.")
@@ -3229,7 +3226,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hela:663749986290368512>	**Hela (Passive)** \n \n**Goddess of Death • T4 Upgrade** \n \nOn Spawn, summon an Undead Asgardian. \nOn an Undead Asgardian's Death, summon an Undead Asgardian. \nOn Turn, heal self for 5% of Max Health + \n5% of Max Health per non-summoned ASGARDIAN ally. \nGain **+10% -> +15%** Max Health. \nGain **+10% -> +15%** Max Health per non-summoned ASGARDIAN ally. \nOn WAR DEFENSE: \nOn non-summoned ASGARDIAN ally's Death, summon an Undead Asgardian. \nGain **+20% -> +25%** Damage. \nASGARDIAN allies gain **+20% -> +25%** Damage.")
@@ -3284,7 +3281,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hulk:663749985594245130>	**Hulk (Special)** \n \n**Rage • T4 Upgrade** \n<:abilityon:663751832690229278> \nGain Taunt. If any ally is a WAVE I - AVENGER, gain Counter. Clear **3 -> all** negative effects from self.")
@@ -3300,7 +3297,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hulk:663749985594245130>	**Hulk (Passive)** \n \n**Always Angry • T4 Upgrade** \n \nOn dropping below 50% Health, fill **75% -> 100%** Speed Bar + gain Offense Up + clear Stun from self. On dropping below 25% Health, gain Deathproof + clear all negative effects from self.")
@@ -3350,7 +3347,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Special)** \n \n**Corrosive Grenade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 190%** damage + clear 1 positive effect from each target.\nRepeat this attack 1 time.")
@@ -3358,7 +3355,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Passive)** \n \n**Hydra Arsenal • T4 Upgrade** \n \nGain **+20% -> +25%** Focus.")
@@ -3408,7 +3405,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Special)** \n \n**Alert! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn.\nClear all negative effects from self + heal 5% of Max Health per negative effect removed.\nHeal self for **1,400 -> 2,500** Health + 10% of Max Health.\nIf Red Skull is an ally, gain Immunity.")
@@ -3416,7 +3413,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Passive)** \n \n**Serum Treatment • T4 Upgrade** \n \nGain **+15 -> +20%** Armor. HYDRA MINION and Red Skull allies gain **+15% -> +20%** Armor.\nOn Turn, Heal for 10% of Max Health.")
@@ -3466,7 +3463,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Special)** \n \n**Test Patient Zero • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Deathproof and Deflect to the most injured ally and Heal that ally for **7000 -> 10000** Health + **15% -> 20%** of this character's Max Health.\nOn WAR DEFENSE, clear Stun from Red Skull ally.")
@@ -3474,7 +3471,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Passive)** \n \n**Experimental Serum • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. HYDRA MINION and Red Skull allies gain **+10% -> +20%** Max Health.\nOn Turn, apply Regeneration + **1-2 -> 2** random positive effects to the 2 most injured HYDRA allies.\nOn WAR DEFENSE, when an enemy drops below 50% Health, apply Defense Down and Offense Down to that enemy.")
@@ -3524,7 +3521,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Special)** \n \n**Zero In • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +2 Offense Up, up to a maximum of 3, for self and **3 -> all** HYDRA MINION and Red Skull allies.\nGain Speed Up for 2 turns. Change Speed Bar by **50% -> 60%**.")
@@ -3532,7 +3529,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Passive)** \n \n**On Target • T4 Upgrade** \n \nGain **+10% -> +15%** Speed. HYDRA MINION and Red Skull allies gain **+10% -> +15%** Speed.\nOn WAR DEFENSE:\nGain **+10% -> +15%** Crit Chance.\nHYDRA MINION and Red Skull allies gain **+10% -> +15%** Crit Chance.\nOn Spawn, Gain Stealth for 2 turns.")
@@ -3582,7 +3579,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Special)** \n \n**Hail of Bullets • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **150% -> 180%** Piercing.")
@@ -3590,7 +3587,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Passive)** \n \n**For the Cause • T4 Upgrade** \n \nGain +10% damage. HYDRA MINION and Red Skull allies gain +10% damage. Gain +10% Max Health.\nGain **60% -> 100%** chance to assist HYDRA allies on non-attack abilities.\nOn Revive, attack all enemies for **150% -> 180%** Piercing.\nOn WAR DEFENSE, on Spawn, gain Offense Up for 2 turns.")
@@ -3645,7 +3642,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Special)** \n \n**Bending Light • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear 2 negative effects from **3 most injured -> self and all** allies. Apply Stealth to **3 most injured -> self and all** allies. \nApply Defense Up for 2 turns to self and all allies. \nClear Stealth from highest Health ally. Apply 3 Deflect + Immunity for 2 turns to highest Health ally.\nClear Stealth from all enemies.")
@@ -3661,7 +3658,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Passive)** \n \n**Hard Light • T4 Upgrade** \n \nWhen an enemy attacks a FANTASTIC FOUR ally with Barrier, attack that enemy for **200% -> 250%** damage. \nGain **+10% -> +20%** Max Health. FANTASTIC FOUR and Namor allies gain **+10% -> +20%** Max Health.")
@@ -3716,7 +3713,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Special)** \n \n**Inner Peace • T4 Upgrade** \n<:abilityon:663751832690229278> \nClear all negative effects from self.\nHeal self and all DEFENDER allies for **5000 -> 8000** Health + 10% of this character's Max Health. Then, heal most injured CITY HERO ally for **5000 -> 8000** Health + 10% of this character's Max Health\nChange Speed Bar by 30%.")
@@ -3732,7 +3729,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Passive)** \n \n**Son of K'un-Lun • T4 Upgrade** \n \nOn Spawn, heal self and DEFENDER allies for 30% of this character's Max Health. Heal additional CITY HERO allies for 10% of this character's Max Health.\nOn Turn, **30% -> 40%** chance to heal self and DEFENDER allies for **20% -> 30%** of this character's Max Health, and heal additional CITY HERO allies for **10% -> 20%** of this character's Max Health.\nGain +5% damage for each DEFENDER ally.")
@@ -3787,7 +3784,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Special)** \n \n**Deploy Flares • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 180%** damage.\nChange Speed Bar of primary and adjacent targets by **-15% -> -20%**. Apply Ability Block to primary target.")
@@ -3802,7 +3799,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Passive)** \n \n**Prodigy • T4 Upgrade** \n \nOn Spawn, apply Defense Up to self and all POWER ARMOR allies for 2 turns.\nApply **+30% -> +40%** Resist, **+10% -> +15%** Max Health, and **+10% -> +15%** Armor to self and all POWER ARMOR allies.")
@@ -3857,7 +3854,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironman:663751735591960577>	**Iron Man (Special)** \n \n**Rocket Barrage • T4 Upgrade** \n<:abilityon:663751832690229278> \n\nAttack all enemies for **190% -> 210%** Unavoidable damage. If Captain America is your ally, attack all enemies for **220% -> 250%** Unavoidable damage instead.")
@@ -3873,7 +3870,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironman:663751735591960577>	**Iron Man (Passive)** \n \n**Stark Upgrades • T4 Upgrade** \n \nGain **+10% -> +15%** Extra Crit chance. Apply **+10% -> +15%** Extra Crit chance to TECH allies. Apply +10% Extra Crit chance all other allies.")
@@ -3928,7 +3925,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Special)** \n \n**Shake it Off • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nClear all negative effects from self. Clear **3 -> all** negative effects from all allies.\nGenerate 1 Ability Energy for each DEFENDER ally. Generate 4 Ability Energy for random allies.")
@@ -3944,7 +3941,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Passive)** \n \n**Denial • T4 Upgrade** \n \nGain **+30% -> +40%** Resistance.\nDEFENDER allies gain **+30% -> +40%** Resistance.\nAdditional CITY allies gain +20% Resistance.\nOther additional allies gain +15% Resistance.")
@@ -3999,7 +3996,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Special)** \n \n**Heating Up • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain **+1 -> +2** Offense Up, up to a maximum of 5.\nApply +1 Offense Up, up to a maximum of 3, to **3 -> all** FANTASTIC FOUR or Namor allies.\nAttack primary target for **300% -> 350%** damage.")
@@ -4015,7 +4012,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Passive)** \n \n**Flame On! • T4 Upgrade** \n \nOn Turn, flip **1 -> 2** negative effects on self to positive effects.\nGain **+20% -> +30%** Damage. FANTASTIC FOUR and Namor allies gain **+20% -> +30%** Damage.\nGain +10000% Resistance against Bleed.")
@@ -4070,7 +4067,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Special)** \n \n**Immovable Object • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up for 2 turns + Immunity + Deathproof + **1 -> 2** Regeneration.\nIf Magneto is an ally, gain Taunt for 2 turns.")
@@ -4086,7 +4083,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Passive)** \n \n**I'm the Juggernaut! • T4 Upgrade** \n \nOn Turn, gain Charged, up to a maximum of 4. On Spawn, clear all but one stack of Charged. If any Charged were cleared, fill Speed Bar by 40%.\nIf Magneto is an ally, when an enemy attacks this character, fill Speed Bar by **15% -> 20%**.\nGain +5% Max Health\nGain **+5% -> +10%** Resistance\nGain +1000% Resistance while he has Immunity.\nGain +1000% Resistance against Stun.")
@@ -4141,7 +4138,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
@@ -4157,7 +4154,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Passive)** \n \n**Retribution • T4 Upgrade** \n \nOn Defense Up, attack the most injured enemy for **260% -> 330%** damage.\nOn Kill, heal for 10% of this character's Max Health.\nGain +20% Drain.\nGain +20% Crit Chance per Charged.\nIn RAIDS, +20% chance to Counterattack. In RAIDS, gain +20% chance to Counterattack for each WAKANDAN ally.")
@@ -4212,7 +4209,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Special)** \n \n**Crime Lord • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2 -> 2-3** Bodyguards at **300% -> 340%** normal damage and 100% of normal Health. Bodyguard gains Taunt on self when Summoned.")
@@ -4228,7 +4225,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Passive)** \n \n**Mastermind • T4 Upgrade** \n \nAt the start of each VILLAIN ally's turn, **20% -> 25%** chance for an ally to gain Team Attack for that turn.")
@@ -4283,7 +4280,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Special)** \n \n**Target Lock • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **200% -> 260%** damage. Apply Taunt to target for 1 turn. Gain an Assist from an ally **greater assist chance from MERCENARY and KREE allies**.\nGain +750% Extra Focus for this attack.")
@@ -4299,7 +4296,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Passive)** \n \n**Hot Pursuit • T4 Upgrade** \n \nOn Enemy Death, gain Speed Up for **1 -> 2** turns. On Spawn, gain Speed Up for **1 -> 2** turns.")
@@ -4349,7 +4346,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Special)** \n \n**Auto Targeter • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 360%** damage + **80% -> 100%** chance to Bonus Attack for 260% damage.")
@@ -4357,7 +4354,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Passive)** \n \n**Integrated Systems • T4 Upgrade** \n \nOn Enemy Taunt, **75% -> 100%** chance to gain Offense Up for 2 turns and apply Offense Up to a KREE ally for 2 turns.\nGain +5% Speed per other KREE character. This is applied after any character has taken a turn.")
@@ -4407,7 +4404,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Special)** \n \n**Call to Glory • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up. Apply Defense Up to all KREE allies. Heal self for **1300 -> 1850** Health + 10% of Max Health.\nIf Ronan is an ally, heal for an additional **1300 -> 1850** Health + 10% of Max Health.")
@@ -4415,7 +4412,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Passive)** \n \n**Royal Guard Armor • T4 Upgrade** \n \nWhile in Taunt, when attacked, **50% -> 75%** chance to generate 1 Ability Energy for a random KREE ally.\nGain **+15% -> +20%** Armor. Gain +5% Armor per KREE ally.")
@@ -4465,7 +4462,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Special)** \n \n**Imperial Decree • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Assist Now to an adjacent ally. If that ally is KREE, they also gain Offense Up. Attack primary target for (465 -> 530%) damage.")
@@ -4473,7 +4470,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Passive)** \n \n**Loyalist • T4 Upgrade** \n \nOn Turn, clear 1 negative effect from (1 -> 2) allies that have negative effects. If those allies are KREE, remove an additional negative effect.")
@@ -4523,7 +4520,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Special)** \n \n**Nanomachine Cloud • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Regeneration to all allies for **1 -> 2** turns. Apply an additional Regeneration to Ronan and KREE MINION allies.")
@@ -4531,7 +4528,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Passive)** \n \n**Zeal • T4 Upgrade** \n \nWhenever this character or an ally gains energy, heal them for **1400 -> 2000** Health + 5% of this character's Max Health.\nIf that target is Ronan or a KREE MINION, heal them for **2800 -> 4000** Health + 10% of this character's Max Health.")
@@ -4581,7 +4578,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Special)** \n \n**Ferocious Pursuit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 540% damage + apply Heal Block for **1 -> 2** turns.")
@@ -4589,7 +4586,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Passive)** \n \n**Hunter-Killer • T4 Upgrade** \n \nOn Crit, heal self for 15% of Max Health and generate 1 Ability Energy for 1-2 random KREE allies.\nGain **+10% -> +15%** Crit Chance.\nGain +5% Crit Chance per KREE MINION ally.")
@@ -4645,7 +4642,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:loki:663750495139266591>	**Loki (Special)** \n \n**Mind Control • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Down to primary target for 2 turns.\nOn WAR DEFENSE, with 4 or more ASGARDIAN allies, apply Taunt to primary target.\nMind Control 1 enemy to attack the primary target + **75% -> 100%** chance to control a second enemy. The controlled enemies gain +25% Damage for this attack.")
@@ -4662,7 +4659,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:loki:663750495139266591>	**Loki (Passive)** \n \n**God of Mischief • T4 Upgrade** \n \nOn Spawn, gain 15% Speed Bar. MYSTIC CONTROLLER allies gain 10% Speed Bar.\nApply **-20% -> -30%** Resistance to all enemies.\nGain +20% Focus. MYSTIC CONTROLLER allies gain +20% Focus.\nGain +20% Resistance. MYSTIC CONTROLLER allies gain 20% Resistance.\nOn Turn, heal self for 5% of Max Health + 5% of Max Health per non-minion ASGARDIAN ally.\nWhen an ASGARDIAN ally drops below 50% Max Health, apply Stealth to that ally.")
@@ -4717,7 +4714,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Special)** \n \n**Bring it On! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 2 turns + 2 Regeneration. Clear **2 -> all** negative effects from self.\nApply Regeneration to all DEFENDER allies.")
@@ -4733,7 +4730,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Passive)** \n \n**Power Man • T4 Upgrade** \n \nGain +5% Max Health per DEFENDER ally.\nGain +5% Armor.\nGain **+10% -> +15%** Max Health.")
@@ -4788,7 +4785,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:magneto:663750493419339810>	**Magneto (Special)** \n \n**Polarized Beam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage + 20% Piercing + apply Disrupted for 2 turns + apply Slow for 2 turns + remove **2 -> all** positive effects.\nThis attack is Unavoidable.")
@@ -4804,7 +4801,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:magneto:663750493419339810>	**Magneto (Passive)** \n \n**Brotherhood of Mutants • T4 Upgrade** \n \nOn Spawn, fill 15% Speed Bar. Fill 15% Speed Bar per BROTHERHOOD ally. On enemy Crit, apply Speed Up to self and all BROTHERHOOD allies.\nGain **+30% -> +50%** Focus. BROTHERHOOD allies gain **+30% -> +50%** Focus.\nGain **+20% -> +30%** Max Health. BROTHERHOOD allies gain **+20% -> +30%** Max Health.")
@@ -4859,7 +4856,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mantis:663750493583179808>	**Mantis (Special)** \n \n**Empathy • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self and adjacent allies for **2750 -> 3000** Health + 15% of this character's Max Health. Heal all additional allies for **1500 -> 1750** Health + 10% of this character's Max Health. **75% -> 100%** chance to apply Regeneration to self and adjacent allies.\nIn RAIDS, apply additional Regeneration to all allies.")
@@ -4875,7 +4872,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mantis:663750493583179808>	**Mantis (Passive)** \n \n**Will to Power • T4 Upgrade** \n \nOn Spawn, **75% -> 100%** chance to gain Charged.\nOn Turn, Heal for 15% of this character's Max Health.\nGain +5% Max Health per GUARDIAN ally.")
@@ -4930,7 +4927,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Special)** \n \n**Call of the Mountain • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + **1-2 -> 2** Counter. Gain **+1 -> +2** Charged, up to a maximum of 5.")
@@ -4946,7 +4943,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Passive)** \n \n**Ancestral Might • T4 Upgrade** \n \nOn Defense Up, Heal for **10% -> 15%** of Max Health. If already at Max Health, gain +1 Defense Up.\nWhile Charged, gain +100% Block Chance and **+25% -> +50%** Block Amount.\nOn Block, lose 1 Charged.\nIn RAIDS, on Block, Heal for 10% of Max Health.\nIn RAIDS gain +25% Block chance.")
@@ -4996,7 +4993,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Special)** \n \n**Call the Shots • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Offense Up to **4 -> all** allies for 1 turn. Apply Speed Up to **4 -> all** allies for 1 turn.")
@@ -5004,7 +5001,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Passive)** \n \n**Squad Coherency • T4 Upgrade** \n \nOn Turn, **30% -> 40%** chance to heal Lowest Health ally for 20% of this character's Max Health. If ally is MERCENARY, heal for +30% of this character's Max Health.")
@@ -5054,7 +5051,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Special)** \n \n**Rampart • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn. Gain Defense Up on self for **2 -> 3** turns. Apply Defense Up to 4 Lowest Health allies for 1 turn.")
@@ -5062,7 +5059,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Passive)** \n \n**Riot Suppression • T4 Upgrade** \n \nGain **+20% -> +25%** Block chance.")
@@ -5112,7 +5109,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Special)** \n \n**Steady Aim • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **360% -> 450%** damage and **40% -> 50%** Piercing.")
@@ -5120,7 +5117,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Passive)** \n \n**High Velocity • T4 Upgrade** \n \nGain +15% Damage and **+5% -> +10%** Piercing")
@@ -5175,7 +5172,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<>	**Miles Morales (Special)** \n \n**Venom Shock • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage + change Speed Bar by -50%. Apply Slow for **1 -> 2** turns + prolong all negative effects by 1. Gain Stealth.\nThis attack cannot be blocked.")
@@ -5191,7 +5188,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<>	**Miles Morales (Passive)** \n \n**Ultimate Spidey • T4 Upgrade** \n \nOn Spawn, gain Stealth. On Turn, apply Defense Down to a random target. If that target already had Defense Down, gain Offense Up instead. This attack is Unavoidable and cannot be blocked.\nDuring Stealth, +50% Dodge Chance.")
@@ -5246,7 +5243,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Special)** \n \n**Genetic Reconstruction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **3000 -> 5000** Health + 15% of this character's Max Health.\nGenerate Ability Energy to a random KREE ally.\nRevive dead ally with 40% Max Health + apply 2 Deathproof.")
@@ -5262,7 +5259,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Passive)** \n \n**Kree Nanotech • T4 Upgrade** \n \nOn ally Death, change Speed Bar by **20% -> 25%**.\nOn enemy Death, heal the most injured non-summoned ally for 15% of this character's Max Health. If that ally is KREE, also apply a random positive effect.")
@@ -5317,7 +5314,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Special)** \n \n**Entangle • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack primary target for **330% -> 400%** damage + **50% -> 100%** chance to apply Stun.")
@@ -5333,7 +5330,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Passive)** \n \n**For Science! • T4 Upgrade** \n \nGain **+50% -> +60%** Focus and Resistance for self, FANTASTIC FOUR and Namor allies.\nOn self and each FANTASTIC FOUR ally's turn, 100% chance to apply Assist Now to self, Namor, or a random FANTASTIC FOUR ally. If Assist Now is applied, clear Blind on that target.\nOn Turn, choose **2 -> 3** random enemies. If they have a positive effect, remove 1.")
@@ -5388,7 +5385,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mordo:663750495562629161>	**Mordo (Special)** \n \n**Mesmerize • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\n**50% -> 100%** chance to Stun primary target + 50% chance to Blind up to 3 targets. 50% chance to Slow up to 2 targets.")
@@ -5404,7 +5401,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mordo:663750495562629161>	**Mordo (Passive)** \n \n**Too Many Sorcerers • T4 Upgrade** \n \nOn Death of any Character, Heal self and the most injured SUPERNATURAL ally for 10% of this character's Max Health.\nOn Death of a Mystic, Heal self and most injured SUPERNATURAL ally for 15% of this character's Max Health + grant **1 -> 1-2** Ability Energy to self and that ally.")
@@ -5461,7 +5458,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister (Special)** \n \n**Gene Therapy • T4 Upgrade** \n<:abilityon:663751832690229278> \nAttack primary target for **250% -> 300%** damage + 50% damage per non-Cloned MARAUDERS ally.\nGain an assist from a random Cloned ally.\n**70% -> 100%** chance to gain an assist from a random MARAUDERS ally.")
@@ -5479,7 +5476,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister (Passive)** \n \n**Mutant Eugenicist • T4 Upgrade** \n \nOn Spawn, generate 3 Ability Energy for this character if non-Cloned.\nOn turn, Heal 15% of Max Health +5% of Max Health per MARAUDERS ally and apply regenaration to the 2 most injured MUTANT allies.\nOn MARAUDERS ally's turn, if this character's Health is greater than 50%, redistribute 10% Health from this character to that ally.\nGain **+30% -> +50%** Focus. MARAUDERS allies gain **+30% -> +50%** Focus.\nGain **+10% -> +20%** Max Health. MARAUDERS allies gain **+10% -> +20%** Max Health.\nOn WAR DEFENSE, MARAUDERS allies gain **+20% -> +30%** Max Health.")
@@ -5534,7 +5531,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Special)** \n \n**Rejuvenate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self for **17000 -> 20000** Health + 50% of this character's Max Health. If Health started below 50%, also gain Slow.")
@@ -5550,7 +5547,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Passive)** \n \n**Fangirl • T4 Upgrade** \n \n**80% -> 100%** chance to gain Assist Now on each HERO BRAWLER ally's turn. On Turn, **80% -> 100%** chance to grant Assist Now to a random HERO BRAWLER ally.\nWhen a HERO ally drops below 50% Health, gain Taunt. If that ally is a BRAWLER, also gain 2 Deflect.")
@@ -5606,7 +5603,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("mysterio:663750495734726656>	**Mysterio (Special)** \n \n**Master of Illusion • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Blind to primary target.\n**70% -> 100%** chance to gain an assist from a random SINISTER SIX ally.\nGain an assist from a random ally.\nIf target is a CITY HERO, **70% -> 100%** chance to apply Ability Block.")
@@ -5622,7 +5619,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("mysterio:663750495734726656>	**Mysterio (Passive)** \n \n**Grand Masquerade • T4 Upgrade** \n \nOn Spawn, apply 2 Deflect to self and all SINISTER SIX allies.\nGain **15% -> +20%** Focus for self per SPIDER-VERSE ally.\nSPIDER-VERSE allies gain **15% -> +20%** Focus.\nOn Death, summon **1-2 -> 2** Mirror Images at **220% -> 260%** of normal Damage and 150% of normal Health.")
@@ -5678,7 +5675,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mystique:663750495697109002>	**Mystique (Special)** \n \n**Infiltrate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage. Attack **2 -> 3** additional targets that do not have Stealth for **140 -> 170%** damage.\nAttack all additional targets that do have Stealth for **140% -> 170%** damage + clear Stealth from each target.\nIf no enemies had Stealth, gain Stealth.\nThis ability does not remove Stealth from the primary target.\nIf Magneto is ally, this attack is Unavoidable.\nIf Mister Sinister is an ally, flip **1 -> 2** positive effects to negative effects on each target.")
@@ -5694,7 +5691,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mystique:663750495697109002>	**Mystique (Passive)** \n \n**Subterfuge • T4 Upgrade** \n \nOn Spawn, **50% -> 100%** chance to gain Evade. Gain 1000% Resistance against Bleed.\nOn a non-Cloned Magneto's or Mister Sinister's turn, prolong all positive effects on self and Magneto by a duration of 1, up to a maximum of 3.\nOn WAR DEFENSE, if Mister Sinister is an ally, gain **50% -> 100%** chance to assist on non-attack abilities.")
@@ -5749,7 +5746,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:namor:663750493709008919>	**Namor (Special)** \n \n**Tidal Wave • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 350%** damage. Attack adjacent targets for **280% -> 340%** damage.\nOn target Block, Bonus Attack 2 times for **80% -> 100%** Piercing to primary and adjacent targets.")
@@ -5765,7 +5762,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:namor:663750493709008919>	**Namor (Passive)** \n \n**Imperius Rex • T4 Upgrade** \n \nGain **+10% -> +20%** Damage.\nGain **+20% -> +30%** Armor.\nOn WAR OFFENSE:\nOn Spawn, apply Offense Up for 2 turns to **3 -> all** FANTASTIC FOUR allies and self.\nOn Spawn, apply Deflect for 2 turns to **3 -> all** FANTASTIC FOUR ally or self.\nGain additional **+20% -> +30%** Damage.\nFANTASTIC FOUR allies gain **+20% -> +30%** Damage.")
@@ -5820,7 +5817,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nebula:663750493033594890>	**Nebula (Special)** \n \n**Challenging Foe • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **170% -> 200%** damage + gain 2 Counter.")
@@ -5836,7 +5833,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nebula:663750493033594890>	**Nebula (Passive)** \n \n**Exploit Weakness • T4 Upgrade** \n \n**10% -> 15%** chance to Assist when an ally attacks. 15% chance to Revive on Death with 10% of Max Health.")
@@ -5891,7 +5888,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nickfury:663750493687775236>	**Fury (Special)** \n \n**Rally • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up. Spread all positive effects on self to all allies.\nHeal self and all S.H.I.E.L.D. MINION allies for **8000 -> 10000** Health + 15% of this character's Max Health.\nOn WAR DEFENSE, Heal Coulson as well.")
@@ -5907,7 +5904,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nickfury:663750493687775236>	**Fury (Passive)** \n \n**Director of S.H.I.E.L.D. • T4 Upgrade** \n \nOn Spawn, grant Speed Up to self and all S.H.I.E.L.D. MINION allies. On WAR DEFENSE, this action also affects Coulson. On Turn, **30% -> 50%** chance to grant Speed Up to self + S.H.I.E.L.D. MINION allies.\n**20% -> 30%** chance to grant Assist Now to self or a random ally on each HERO ally's turn. If the ally granted Assist Now is a S.H.I.E.L.D. MINION or Nick Fury, they also gain Offense Up. On WAR DEFENSE, if Coulson is granted Assist Now, he also gains Offense Up.\nS.H.I.E.L.D. MINION allies gain +10% Armor. S.H.I.E.L.D. MINION allies gain +30% Resistance.\nOn WAR DEFENSE, Coulson gains +10% Armor and +30% Resistance.")
@@ -5962,7 +5959,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Special)** \n \n**First Aid • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal lowest Health ally for **3300 -> 4200** Health + 20% of this character's Max Health.")
@@ -5978,7 +5975,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Passive)** \n \n**Triage • T4 Upgrade** \n \nOn turn, if the ally with the least Health has less than 100% Health, **20% -> 25%** chance to Heal them for 15% of this character's Max Health.")
@@ -6033,7 +6030,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:okeye:663750495860686848>	**Okeye (Special)** \n \n**Precision Strike • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 220%** damage + apply Defense Down. Chain to 1 adjacent target for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
@@ -6049,7 +6046,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:okeye:663750495860686848>	**Okeye (Passive)** \n \n**Dora Milaje • T4 Upgrade** \n \nGain **+30% -> +50%** Piercing. On Defense Up, gain Immunity.\nOn self or WAKANDAN ally Crit, gain +1 Charged, up to a maximum of 5.\nOn WAKANDAN ally's turn, while in Charged, gain Assist Now and lose 1 Charged. Otherwise, 20% chance to gain Assist Now.")
@@ -6100,7 +6097,7 @@ if(kit === "kit"){
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Basic)** \n \n**Immolation • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **200% -> 250%** damage. Clear 2 positive effects on each target.")
 	.setThumbnail('https://i.imgur.com/f9CRI8p.png') 
 	message.channel.send(exampleEmbed);
-} else if(args[1] == "special") {
+} else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Special)** \n \n**Vitality Drain • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSteal **15% -> 20%** Health from all enemies and redistribute to self. Apply Regeneration to all allies. Apply an additional Regeneration to all X-MEN allies.")
@@ -6112,7 +6109,7 @@ if(kit === "kit"){
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Ultimate)** \n \n**Phoenix Unleashed • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack all enemies for **350% -> 400%** damage.\nClear **3 -> all** positive effects on each target.\nGain +50000% Extra Focus for this attack.\nThis attack is Unavoidable.")
 	.setThumbnail('https://i.imgur.com/sLWbL8Y.png') 
 	message.channel.send(exampleEmbed3);
-} else if(args[1] == "passive") {
+} else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Passive)** \n \n**From the Ashes • T4 Upgrade** \n \nOn Spawn, attack all enemies for **200% -> 250%** damage + apply Defense Down for **1 -> 2** turns.")
@@ -6240,7 +6237,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Special)** \n \n**Telekinetic Armament • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** Piercing damage. Chain to 3 adjacent targets for **160% -> 200%** Piercing damage. Clear 2 positive effects from each target.\nCounterattack breaks this Chain.")
@@ -6256,7 +6253,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Passive)** \n \n**Reinvigorate • T4 Upgrade** \n \nOn Spawn, **50% -> 100%** chance to gain Evade + Counter. When an X-MEN ally drops below 50% Max Health, apply Evade + Counter to that ally.\nGain +1000% Resistance against Disrupted.")
@@ -6312,7 +6309,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:punisher:663750495982190620>	**Punisher (Special)** \n \n**Grenade Launcher • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 200%** damage + 10% Piercing. Attack all adjacent enemies for **140% -> 160%** damage + 10% Piercing.")
@@ -6328,7 +6325,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:punisher:663750495982190620>	**Punisher (Passive)** \n \n**Lock and Load • T4 Upgrade** \n \nIf at least one ally is a CITY HERO, gain **+10% -> +20%** chance to assist on non-attack abilities. Gain **+10% -> +20%** chance to assist on non-attack abilities per DEFENDER ally.\nIf Daredevil is an ally, when an enemy attacks him, attack that enemy for **160% -> 200%** damage + 10% Piercing.\nGain +10% Damage. Gain +50% Damage against VILLAIN targets.\nCITY allies gain +5% Damage. CITY HERO allies gain +10% Damage instead.\nCITY HERO allies gain an additional +30% Damage against VILLAIN targets.")
@@ -6384,7 +6381,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:pyro:663750496346963968>	**Pyro (Special)** \n \n**Pyrotechnics • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent targets for **140% -> 180%** damage. Apply 2 Bleed for **1 -> 2** turns + Clear 2 positive effects from each target.\nIf Magneto is ally, clear all positive effects from each target.")
@@ -6400,7 +6397,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:pyro:663750496346963968>	**Pyro (Passive)** \n \n**Stoke the Flames • T4 Upgrade** \n \nGain **+20% -> +25%** Extra Focus.\nWhen Pyro is attacked, fill **+10% -> +15%** Speed Bar.\nIf Magneto is ally, when an enemy drops below 50% health, apply Heal Block.")
@@ -6455,7 +6452,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:quake:663750496024133632>	**Quake (Special)** \n \n**Shockwave • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **185% -> 210%** damage + clear 2 positive effects. 40% chance to Chain up to 2 targets for **140% -> 160%** damage + clear 2 positive effects.\nCounterattack breaks this Chain. If Coulson or Black Bolt is an ally, apply Slow to primary target and secondary targets.")
@@ -6471,7 +6468,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:quake:663750496024133632>	**Quake (Passive)** \n \n**Secret Warrior • T4 Upgrade** \n \nGain **+15% -> +20%** Extra Focus. S.H.I.E.L.D. allies gain +5% damage. INHUMAN allies gain +5% Extra Focus.")
@@ -6521,7 +6518,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Special)** \n \n**Full Blast • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **230% -> 270%** damage and adjacent targets for **210% -> 220%** damage.")
@@ -6529,7 +6526,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Passive)** \n \n**Heavy Artillery • T4 Upgrade** \n \n15% chance to Assist RAVAGER allies. **5% -> 10%** chance to Assist non-RAVAGER allies.")
@@ -6579,7 +6576,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Special)** \n \n**Avast! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up for 3 turns. Heal self for **1700 -> 2000** Health + 5% of this character's Max Health.")
@@ -6587,7 +6584,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Passive)** \n \n**Seasoned Fighter • T4 Upgrade** \n \nGain **+20% -> +25%** Block chance.")
@@ -6637,7 +6634,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Special)** \n \n**Stitcher Kit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health. Then Heal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health.")
@@ -6645,7 +6642,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Passive)** \n \n**Stimutox Treatment • T4 Upgrade** \n \nGain **+20% -> +25%** Max Health.")
@@ -6703,7 +6700,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:redskull:663750496959594531>	**Red Skull (Special)** \n \n**Elite Guard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** HYDRA MINIONS at **300% -> 340%** normal damage and 150% of normal Health.\nFill Speed Bar of self and all allies by +30%.\nOn WAR DEFENSE, generate 2 Ability Energy for self.")
@@ -6720,7 +6717,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:redskull:663750496959594531>	**Red Skull (Passive)** \n \n**Hail Hydra • T4 Upgrade** \n \nOn Spawn, if Health is full, this character has 1 or more HYDRA MINION allies, and no Charged, gain 8 Charged.\nOn non-Summoned HYDRA MINION ally death, if Charged, Revive that ally at 50% of Max Health + apply 2 Deathproof and lose 1 Charged.\nGain **+10% -> +15%** Speed and Damage. HYDRA MINION allies gain **+10% -> +15%** Speed and Damage.")
@@ -6776,7 +6773,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rescue:663750496057819147>	**Rescue (Special)** \n \n**Tech Shield • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nBarrier all allies for **2500 -> 3500** + 10% of this character's Max Health. Apply Regeneration to all allies. In WAR, apply 2 Regeneration to all allies instead.")
@@ -6792,7 +6789,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rescue:663750496057819147>	**Rescue (Passive)** \n \n**Stark Upgrade • T4 Upgrade** \n \nIn WAR, on Spawn, Barrier POWER ARMOR allies for **1500 -> 2000** + **5% -> 10%** of this character's Max Health.\nWhen an ally drops below 50% Health, Barrier them for **1500 -> 2000** + 5% of this character's Max Health.\nGain **+10% -> +15%** Max Health.\nIn WAR, Barrier for an additional 5% of this character's Max Health.\nPOWER ARMOR allies gain **+10% -> +15%** Max Health.")
@@ -6847,7 +6844,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rhino:663750497328693261>	**Rhino (Special)** \n \n**Furious Charge • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt.\nClear 1 negative effect from self and each adjacent ally.\nAttack primary and all adjacent targets for **290% -> 350%** damage.\nThis attack cannot be blocked.")
@@ -6863,7 +6860,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rhino:663750497328693261>	**Rhino (Passive)** \n \n**Rhino Hide • T4 Upgrade** \n \nOn Spawn, gain Counter.\nGain **15% -> 25%** Max Health per SINISTER SIX ally.\nOn Blind, change Speed Bar by **75 -> 100%**.\nOn Blind, clear 1 negative effect from self and each ally.")
@@ -6918,7 +6915,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Special)** \n \n**Pretty Good Plan • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 340%** damage.\nIf Groot is an ally, gain an Assist from Groot and apply Taunt to Groot.\n**50% -> 70%** chance to gain an Assist from a random ally.")
@@ -6934,7 +6931,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Passive)** \n \n**Expert Tinker • T4 Upgrade** \n \nTech allies gain +5% Damage.\nOn Turn, 40% chance to apply Offense Up to **1-2 -> 2** random allies")
@@ -6989,7 +6986,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ronan:663752093135274014>	**Ronan (Special)** \n \n**Judgment • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **1-2 -> 2** KREE allies at **300% -> 340%** normal Damage and 100% of normal Health. Clear 2 negative effects from all allies.\nPossible Summons:\nKree Reaper\nKree Noble")
@@ -7005,7 +7002,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ronan:663752093135274014>	**Ronan (Passive)** \n \n**Accuser • T4 Upgrade** \n \nWhenever this character or a KREE ally gains energy, they change Speed Bar by 20% and are healed for **3800 -> 4200** Health + 15% of this character's max Health. This effect may be triggered by another passive.\nGain **+15% -> +30%** Resist. Apply **+15% -> +30%** Resist to KREE allies.\nApply +20% Max Health and +20% Damage to non-summoned KREE MINION allies.")
@@ -7060,7 +7057,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Special)** \n \n**Thrash • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **390% -> 460%** damage. If target has Taunt, this ability deals an additional **60% -> 80%** Piercing damage.\nAttack all adjacent targets for **280% -> 320%** damage.\nThis attack cannot be blocked.")
@@ -7076,7 +7073,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Passive)** \n \n**Feral Healing • T4 Upgrade** \n \nGain +5% damage per BROTHERHOOD or MARAUDERS ally.\nIf Mr Sinister is an ally, gain +20% Crit chance.\nOn Turn, Heal for **10% -> 15%** of this character's Max Health. When this character drops below 50% Health, gain Deathproof.\nGain **+15% -> +25%** chance to assist on non-attack abilities.\nGain **+15% -> +25%** chance to assist on non-attack abilities per MARAUDERS ally.")
@@ -7131,7 +7128,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Special)** \n \n**Warp Reality • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nRedistribute your total squad health evenly. Apply Deflect to all allies. **50% -> 100%** chance to apply Defense Up to all allies, plus always apply to Vision if he is an ally.")
@@ -7147,7 +7144,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Passive)** \n \n**Power of Chthon • T4 Upgrade** \n \nOn Turn, **40% -> 50%** chance to spread a negative effect from an enemy with a negative effect to an adjacent target.\nThis will not spread Stun.")
@@ -7202,7 +7199,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Special)** \n \n**Field Trials • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nFlip **3 -> 4** negative effects into positive effects for all allies. Apply 1 Regeneration to self and all A.I.M. allies. Increase duration of positive effects on self and all A.I.M. allies by +1, up to a maximum of 3.")
@@ -7218,7 +7215,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Passive)** \n \n**Mad Science • T4 Upgrade** \n \nOn Spawn, change Speed Bar by +10% + 10% per A.I.M. ally. On Turn, 25% chance to Revive an ally with 20% Max Health, A.I.M. allies Revive with **25% -> 30%** of Max Health instead.\nOn Turn, grant **1 -> 1-2** Ability Energy to all A.I.M. allies with a negative effect.")
@@ -7268,7 +7265,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Special)** \n \n**Barrage • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **200% -> 230%** damage + 50% chance to remove 1 positive effect from all targets.")
@@ -7276,7 +7273,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Passive)** \n \n**Airborne • T4 Upgrade** \n \nGain **+40% -> +50%** Extra Crit chance. Nick Fury and S.H.I.E.L.D. MINION allies gain **+40% -> +50%** Crit chance.\nOn WAR DEFENSE Coulson gains **+40% -> +50%** Extra Crit chance.")
@@ -7326,7 +7323,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Special)** \n \n**Emergency Treatment • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nIf Coulson is an ally and dead, Revive him with 51% Health. 20% chance to Revive dead ally with 10% Health. Heal all allies for **1100 -> 1500** Health + 15% of this character's Max Health.\nIf allies are S.H.I.E.L.D., then heal for an additional 20% of this character's Max Health.")
@@ -7334,7 +7331,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Passive)** \n \n**Fighting Fit • T4 Upgrade** \n \nOn turn, **30% -> 50%** chance to heal most injured ally for 20% of this character's Max Health + apply Regeneration for 2 turns.\nIf ally is Nick Fury or S.H.I.E.L.D. MINION, then apply an additional Regeneration. On WAR DEFENSE If ally is Coulson, then apply an additional Regeneration.")
@@ -7384,7 +7381,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Special)** \n \n**Extraction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to most injured ally for 2 turns + heal for **900 -> 1200** Health + 10% of this character's Max Health. Apply 3 Regeneration.\nIf ally is Nick Fury or S.H.I.E.L.D. MINION, apply additional Regeneration. On WAR DEFENSE, if that ally is Coulson, also apply additional Regeneration.")
@@ -7392,7 +7389,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Passive)** \n \n**Special Agent • T4 Upgrade** \n \nGain **+10% -> +20%** Extra Focus. Nick Fury and S.H.I.E.L.D. MINION allies gain **+10% -> +20%** Extra Focus. On WAR DEFENSE, Coulson gains **+10% -> +20%** Extra Focus.\nOn Spawn, apply **1 -> 2** Counter to Nick Fury if ally.\nOn Turn, apply Counter to 2 allies **must be Nick Fury or S.H.I.E.L.D. MINION. In WAR DEFENSE, can also choose Coulson.**")
@@ -7442,7 +7439,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Special)** \n \n**Crowd Control • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **320% -> 370%** damage + Bonus attack for **300% -> 350%** damage. If target has Slow, apply Stun.")
@@ -7450,7 +7447,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Passive)** \n \n**S.H.I.E.L.D. Agent • T4 Upgrade** \n \n**+15% -> +20%** Block chance. +10% Block amount.\nFor each ally that is Nick Fury or S.H.I.E.L.D. MINION, gain +10% Block chance. On WAR DEFENSE, if Coulson is an ally, gain +10% Block chance.\nWhen an ally drops below 50% Health, gain Taunt. If that ally is Nick Fury or a S.H.I.E.L.D. MINION, also gain Defense Up. On WAR DEFENSE, if that ally is Coulson, also gain Defense Up.")
@@ -7500,7 +7497,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Special)** \n \n**Overwatch • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **340% -> 370%** damage + **80% -> 100%** Piercing.")
@@ -7509,7 +7506,7 @@ else if(args[1] == "special") {
 }
 
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Passive)** \n \n**Fire Support • T4 Upgrade** \n \nWhen an enemy attacks an adjacent ally, attack that enemy for **210% -> 250%** damage + on Crit, change Speed Bar by -25%.")
@@ -7564,7 +7561,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shocker:663750794142679041>	**Shocker (Special)** \n \n**Sonic Dissonance • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGenerate 1 Ability Energy for self.\nApply Offense Up to self for **1-2 -> 2** turns.\nApply Offense Up to **2 -> all** SINISTER SIX allies.\nChange Speed Bar by 80%.")
@@ -7580,7 +7577,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shocker:663750794142679041>	**Shocker (Passive)** \n \n**Vibro-Shock • T4 Upgrade** \n \nGain **15% -> 20%** Armor. Gain +5% Armor per SINISTER SIX ally.\nGain **10% -> 20%** Damage. Gain +5% Damage per CITY HERO enemy.")
@@ -7635,7 +7632,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shuri:663750793765060629>	**Shuri (Special)** \n \n**Instant Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Up to self and all allies for 2 turns.\nApply +1 Charged, up to a maximum of 5, to self and all WAKANDAN allies.\nGenerate Ability Energy for 2 random allies. Generate Ability Energy for 1 random WAKANDAN ally.")
@@ -7651,7 +7648,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shuri:663750793765060629>	**Shuri (Passive)** \n \n**Wakanda Forever • T4 Upgrade** \n \nOn Spawn, apply Speed Up to self and **2 -> all** WAKANDAN allies.\nOn Turn, heal the most injured ally for 10% of this character's Max Health. While in Charged, heal an additional most injured ally for 10% of this character's Max Health and lose 1 Charged.\nOn Defense Up, generate Ability Energy for self.\nIn RAIDS, self and all WAKANDAN allies gain **+20% -> +40%** Max Health. In RAIDS, self and all WAKANDAN allies gain +20% Armor.\nIn RAIDS, when self or any WAKANDAN ally drops below 50% Max Health, gain 3 Deflect.")
@@ -7706,7 +7703,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sif:663750798311948299>	**Sif (Special)** \n \n**Shield Slam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 340%** damage.\nGain Taunt and 3 Counter.")
@@ -7722,7 +7719,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sif:663750798311948299>	**Sif (Passive)** \n \n**Defender of Asgard • T4 Upgrade** \n \nGain **+25% -> +35%** Block Chance. Gain **+10% -> +15%** Block Amount.\nGain +10% Block Chance for each ASGARDIAN ally.\nOn Spawn, gain Defense Up + 2 Deflect.\nOn Turn, heal self for 5% of Max Health + 5% of Max Health per non-minion ASGARDIAN ally.")
@@ -7777,7 +7774,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Special)** \n \n**Web Slinger • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **190% -> 200%** damage + Chain to **2-3 -> 3** adjacent targets for **150% -> 160%** damage. Apply Defense Down to each target for 2 turns.\nThis attack cannot be Countered.")
@@ -7793,7 +7790,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Passive)** \n \n**Spidey-Sense • T4 Upgrade** \n \nGain **+20% -> +25%** Dodge chance.\nOn Dodge, fill Spider-Man **Miles** and this character's Speed Bar by +10%.")
@@ -7848,7 +7845,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:starlord:663750797447921705>	**Star Lord (Special)** \n \n**Clever Distraction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant 2 Ability Energy to random adjacent allies.\nApply Blind to primary target and an additional random target + 50% chance to apply to a third target.\nThis ability is Unavoidable.")
@@ -7864,7 +7861,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:starlord:663750797447921705>	**Star Lord (Passive)** \n \n**Improvisation • T4 Upgrade** \n \nOn Turn, 50% chance to both generate **1 -> 1-2** Ability Energy for adjacent allies and generate 1-2 Ability Energy to GUARDIAN allies.\nGUARDIAN allies gain +30% Damage.\nGUARDIAN allies gain +20% Speed.")
@@ -7919,7 +7916,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Special)** \n \n**Ice Storm • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **150% -> 180%** damage + 50% chance to apply Slow to each target.\nIf Charged, chance to apply Slow is increased by **+20% -> +25%** per Charged. Additionally, 10% chance to apply Stun to each target, and chance to apply is increased by +10% per Charged. Then lose Charged.\nThis attack has +100% Extra Focus and cannot be Dodged.")
@@ -7935,7 +7932,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Passive)** \n \n**Ride the Wind • T4 Upgrade** \n \nOn Turn, **40% -> 50%** chance to apply Speed Up to X-MEN and X-FORCE allies.\n**40% -> 50%** chance to grant Assist Now to self or a random X-MEN or X-FORCE ally on each X-MEN or X-FORCE ally's turn.")
@@ -7990,7 +7987,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Special)** \n \n**Superiority • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +1 Taunt, up to a maximum of 3.\nGain 3 Deflect + Barrier self for **10% -> 15%** of this character's Max Health.\nGenerate 2 Ability Energy for 2 random Marauders allies.")
@@ -8006,7 +8003,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Passive)** \n \n**Grandeur • T4 Upgrade** \n \nOn Spawn, fill +10% Speed Bar + 10% Speed Bar per MUTANT VILLAIN ally.\nOn turn, if Taunting, gain +1 Deflect up to a maximum of 3.\nWhen an allied Mister Sinister drops below 50% Max Health, gain +1 Taunt, up to a maximum of 3 + gain Barrier for **10% -> 15%** of this character's Max Health.\nOn WAR DEFENSE:\nGain **+40% -> +50%** Resistance.\nMUTANT allies gain **+40% -> +50%** Resistance.\nGain **+40% -> +50%** Focus.\nVILLAIN allies gain **+40% -> +50%** Focus.")
@@ -8061,7 +8058,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thanos:663750798324400128>	**Thanos (Special)** \n \n**Brutal Assault • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **300% -> 350%** damage + apply Offense Down. Gain Taunt for 2 turns.")
@@ -8077,7 +8074,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thanos:663750798324400128>	**Thanos (Passive)** \n \n**Titan Eternal • T4 Upgrade** \n \nGain +1000% Extra Resistance while Taunting.\nOn Death of an enemy, **75% -> 100%** chance to generate 2 Ability Energy for self or any adjacent COSMIC ally.")
@@ -8132,7 +8129,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thing:663750797791592478>	**The Thing (Special)** \n \n**Pummelling Stone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **240% -> 280%** damage. Bonus Attack **1-2 -> 2** times for **180% -> 220%** damage.")
@@ -8148,7 +8145,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thing:663750797791592478>	**The Thing (Passive)** \n \n**It's Clobberin' Time • T4 Upgrade** \n \nWhen attacked, attack that enemy for **125% -> 150%** damage.\nGain **+10% -> +20%** Armor. FANTASTIC FOUR and Namor allies gain **+10% -> +20%** Armor.")
@@ -8203,7 +8200,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thor:663750798014021632>	**Thor (Special)** \n \n**Hammer Throw • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage. Chain to **2-3 -> 3** adjacent targets for **200% -> 230%** damage.\nDodge breaks this Chain.")
@@ -8219,7 +8216,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thor:663750798014021632>	**Thor (Passive)** \n \n**God of Thunder • T4 Upgrade** \n \nGain **+10% -> +15%** damage. Gain +10% damage for each ASGARDIAN ally.\nOn Turn, heal self for 5% of Max Health + 5% of Max Health per non-minion ASGARDIAN ally.\nWhen an enemy attacks an ASGARDIAN ally:\nChange Speed Bar by 5%\nGain +1 Charged, up to a maximum of 5.\nOn maximum Charged:\nGenerate +1 Ability Energy for self\nAttack all enemies for **240% -> 260%** damage.\nRemove all Charged.")
@@ -8274,7 +8271,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:toad:684029278425579556>	**Toad (Special)** \n \n**Acid Spray • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack the primary and all adjacent targets for **230% -> 280%** damage. Each target has all negative effects prolonged by a duration of 1.")
@@ -8289,7 +8286,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:toad:684029278425579556>	**Toad (Passive)** \n \n**Amphibian Anatomy • T4 Upgrade** \n \nGain **20% -> 25%** Dodge chance. On Spawn, fill +15% Speed Bar. Fill +15% Speed Bar per BROTHERHOOD ally. 50% chance to gain Assist Now on each BROTHERHOOD ally's turn. On turn, if any BROTHERHOOD ally is Taunting, gain +1 Offense Up, up to a maximum of 3.\nIn WAR:\nGain **+50% -> +60%** Focus. BROTHERHOOD allies gain **+50% -> +60%** Focus")
@@ -8344,7 +8341,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Special)** \n \n**Energy Beam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent enemies for **230% -> 280%** Piercing.\nTransfer **2 -> all** positive effects, excluding Stealth and Taunt, from each target to self.\nApply Regeneration to self and adjacent allies.")
@@ -8360,7 +8357,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Passive)** \n \n**Kree Eternal • T4 Upgrade** \n \nOn enemy Taunt, change Speed Bar by +30%.\nOn Kill, change Speed Bar by +15% for all non-KREE allies + 20% for all KREE allies.\nGain **15% -> 20%** Block chance + 10% Block chance per non-MINION KREE ally. Non-MINION KREE allies gain **15% -> 20%** Block chance.\nGain 20% Max Health. Non-MINION KREE allies gain 20% Max Health.")
@@ -8415,7 +8412,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultron:663750798202634250>	**Ultron (Special)** \n \n**Factory Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** Ultron Minions at **300% -> 340%** normal damage and 100% of normal Health. Apply Defense Up to self and all ULTRON MINION allies for 2 turns.\nPossible Summons:\nUltron Incinerator\nUltron Accelerator\nUltron Fabricator")
@@ -8431,7 +8428,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultron:663750798202634250>	**Ultron (Passive)** \n \n**Ultron Prime • T4 Upgrade** \n \nIf Health is full at the start of a match, Revive once with 50% of this character's Max Health.\nOn Kill, this character and all VILLAIN TECH allies have **4 -> all** positive effects prolonged by a duration of 1.")
@@ -8481,14 +8478,14 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Special)** \n \n**Overdrive • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Speed Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Speed Up, fill Ultron's Speed Bar by 40% instead of 25%.\n**No changes**")
 	.setThumbnail('https://i.imgur.com/7ZuQVM4.png') 
 	message.channel.send(exampleEmbed2);
 }
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Passive)** \n \n**Hypermagnetics • T4 Upgrade** \n \nOn Death, fill Ultron's Speed Bar by 25%.\n**No changes**")
@@ -8538,7 +8535,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Special)** \n \n**Fusion • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal the 4 most injured allies, except Ultron, for **6000 -> 7000** Health + 15% of this character's Max Health.\nHeal Ultron for **12000 -> 14000** Health + 25% of this character's Max Health + Clear **3 -> 4** negative effects from Ultron. Grant Ultron Regeneration for 2 turns + fill Ultron's Speed Bar by 25%.")
@@ -8546,7 +8543,7 @@ else if(args[1] == "special") {
 	message.channel.send(exampleEmbed2);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Passive)** \n \n**Nanobot Hive • T4 Upgrade** \n \nOn Death, grant Ultron Deathproof.\n**No changes**")
@@ -8596,14 +8593,14 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Special)** \n \n**Ignition • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Offense Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Offense Up, grant Ultron 1 Ability Energy.\n**No changes**")
 	.setThumbnail('https://i.imgur.com/Fq5ohWt.png') 
 	message.channel.send(exampleEmbed2);
 }
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Passive)** \n \n**Plasma Reactor • T4 Upgrade** \n \nOn Death, grant Ultron Counter.\n**No changes**")
@@ -8658,7 +8655,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:venom:663750908668018710>	**Venom (Special)** \n \n**Violate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **330% -> 380%** damage. Apply Ability Block and 3 Bleed for **1 -> 2** turns.")
@@ -8674,7 +8671,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:venom:663750908668018710>	**Venom (Passive)** \n \n**Symbiosis • T4 Upgrade** \n \nOn Turn, Heal for **10% -> 15%** of this character's Max Health. If Health is greater than 95%, apply Defense Up for 2 turns to self and all SYMBIOTE allies.\nGain +100% Focus if any SPIDER-VERSE character is present.")
@@ -8729,7 +8726,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vision:663750896835887110>	**Vision (Special)** \n \n**Dive Bomb • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 230%** damage + adjacent targets for **140% -> 160%** damage. Apply Ability Block to primary target + 1 additional target.")
@@ -8745,7 +8742,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vision:663750896835887110>	**Vision (Passive)** \n \n**Density Manipulation • T4 Upgrade** \n \nGain **+20% -> +25%** Extra Dodge chance. Gain Defense Up for 2 turns. On Spawn, all TECH allies gain Defense Up for 2 turns.")
@@ -8800,7 +8797,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vulture:663750909653811221>	**Vulture (Special)** \n \n**Fight and Flight • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and all adjacent targets for **240% -> 300%** damage + **70% -> 100%** chance to apply Slow.\nIf target is a CITY HERO, apply Offense Down for **1-2 -> 2** turns.")
@@ -8816,7 +8813,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vulture:663750909653811221>	**Vulture (Passive)** \n \n**Scavenger • T4 Upgrade** \n \nOn Spawn, fill 10% Speed Bar. Fill 10% Speed Bar per CITY HERO enemy.\nOn ally Death, **70% -> 100%** chance to gain Deflect.\nOn enemy Death, change Speed Bar by **10% -> 25%**.\nGain **+5% -> +10%** Block Chance for each CITY HERO enemy.")
@@ -8871,7 +8868,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
@@ -8887,7 +8884,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<warmachine:663750909146300441>	**War Machine (Passive)** \n \n**Integrated Targeting • T4 Upgrade** \n \nGain +10% Damage. Gain 5% Piercing. When an enemy drops below 50% Health, **50% -> 100%** chance they gain Taunt.\nIf Iron Man is an ally, gain **20% -> 30%** Crit Damage, gain Deathproof, and grant Deathproof to Iron Man.\nIn WAR, War Machine gains **20% -> 30%** Damage.")
@@ -8942,7 +8939,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wasp:663750911088394280>	**Wasp (Special)** \n \n**Blasters • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **220% -> 250%** damage + Bonus attack 1-2 times for **170% -> 200%** damage.\nIf Charged, then in addition, Stun the target. Then lose Charged.")
@@ -8958,7 +8955,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wasp:663750911088394280>	**Wasp (Passive)** \n \n**Shrink • T4 Upgrade** \n \nOn Dodge, gain Charged.\nGain **+20% -> +25%** Dodge chance.")
@@ -9013,7 +9010,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Special)** \n \n**Relentless Assassin • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 200% damage + apply Bleed. 70% chance to Bonus attack up to 2 times for **100% -> 150%** damage + 50% chance to apply Bleed.")
@@ -9029,7 +9026,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Passive)** \n \n**Expert Assassin • T4 Upgrade** \n \nGain +15% Crit chance. Apply **+5% -> +10%** Crit chance to HYDRA allies.")
@@ -9084,7 +9081,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Special)** \n \n**Slice and Dice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **120% -> 150%** Piercing + apply Bleed on Crit. Chain to **3-4 -> 4** targets for **90% -> 120%** Piercing + apply Bleed on Crit.\nIf Phoenix is an ally, the primary target takes **250% -> 350%** Piercing instead.\nIf Cyclops is an ally, all secondary attacks have 100% chance to Crit.\nCounterattack breaks this Chain.\nIf Psylocke is an ally, this attack cannot be counterattacked.")
@@ -9100,7 +9097,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Passive)** \n \n**Healing Factor • T4 Upgrade** \n \nOn Turn, Heal for **15% -> 20%** of this character's Max Health.\nOn Death, 5% chance to Revive with 20% of this character's Max Health. If at least one ally is X-MEN, gain an additional 5% chance to Revive.\nGain +5% Speed per X-MEN ally. This is applied after any character has taken an action.")
@@ -9156,7 +9153,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:yondu:663750908957556785>	**Yondu (Special)** \n \n**Boarding Party • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nSummon 1-2 RAVAGER allies at **300% -> 340%** normal damage and 100% of normal Health. Apply Offense Up to all RAVAGER allies for 1 turn.")
@@ -9173,7 +9170,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:yondu:663750908957556785>	**Yondu (Passive)** \n \n**Centauri Hunter • T4 Upgrade** \n \nOn Turn, choose **1 -> 2** random enemies. If they have a positive effect, copy the positive effect to self. Clear the positive effect from the enemy.\nRAVAGER allies gain +5% damage.")
@@ -9228,7 +9225,7 @@ if(basic === "basic"){
 	message.channel.send(exampleEmbed);
 }
 
-else if(args[1] == "special") {
+else if(special == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **150% -> 170%** damage + Bonus attack 2 times for **150% -> 170%** damage.\nRepeat this attack on **2 -> 3** additional random targets.\nThis attack cannot be counterattacked.")
@@ -9244,7 +9241,7 @@ if(ultimate === "ultimate") {
 	message.channel.send(exampleEmbed3);
 }
 
-else if(args[1] == "passive") {
+else if(passive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Passive)** \n \n**Swift Protector • T4 Upgrade** \n \nOn enemy turn, if this character has no other PROTECTOR allies, apply Offense Down to that enemy. This cannot be dodged.\nOn ally non-MINION S.H.I.E.L.D. or INHUMAN turn, 50% chance to apply Evade to that ally.\nOn Spawn, apply Defense Up to self and all non-MINION S.H.I.E.L.D. or INHUMAN allies.\nWhen a non-MINION S.H.I.E.L.D. or INHUMAN ally drops below 50% Health, apply Defense Up to that ally.\nGain **+15% -> +25%** Dodge chance.\nGain +10% Focus per non-MINION S.H.I.E.L.D. and INHUMAN ally.")
