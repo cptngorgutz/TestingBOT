@@ -543,7 +543,7 @@ if(akit === "kit"){
 	message.channel.send(embedEmbed); 
 }
 }
-if(args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
+if(args[0] === "infector" || args[0] === "infect" || args[0] === "infe" || args[0] === "inf" || args[0] === "infec") {
 if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -587,6 +587,11 @@ if(akit === "kit"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
+	message.channel.send(speedEmbed); 
+} else if(atrait == "trait" || atrait === "traits") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim,Bio,Controller,Global,Minion,Villain")  
 	message.channel.send(speedEmbed); 
 } else {
 	const embedEmbed = new Discord.RichEmbed()
@@ -640,7 +645,12 @@ if(akit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	message.channel.send(speedEmbed); 
-} else {
+} else if(atrait == "trait" || atrait === "traits") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim,Bio,Brawler,Global,Minion,Villain")  
+	message.channel.send(speedEmbed); 
+}else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
@@ -691,6 +701,11 @@ if(akit === "kit"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
+	message.channel.send(speedEmbed); 
+} else if(atrait == "trait" || atrait === "traits") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim,Global,Minion,Skill,Support,Villain")  
 	message.channel.send(speedEmbed); 
 } else {
 	const embedEmbed = new Discord.RichEmbed()
@@ -743,6 +758,11 @@ if(akit === "kit"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
+	message.channel.send(speedEmbed); 
+} else if(atrait == "trait" || atrait === "traits") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim,Global,Minion,Protector,Tech,Villain")  
 	message.channel.send(speedEmbed); 
 } else {
 	const embedEmbed = new Discord.RichEmbed()
