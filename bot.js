@@ -485,7 +485,8 @@ let afarm = args[1];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'aim' || command === 'ai' && args[0] === "assaulter" || args[0] === "assault" || args[0] === "ass" || args[0] === "assau" || args[0] === "assa") {
+if(command === 'aim' || command === 'ai') {
+if(args[0] === "assaulter" || args[0] === "assault" || args[0] === "ass" || args[0] === "assau" || args[0] === "assa"){
 if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -541,7 +542,8 @@ if(akit === "kit"){
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
-} else if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
+}
+if(args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
 if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -591,6 +593,7 @@ if(akit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
+}
 }
 }
 if(command === 'aimmonstrosity' || command === 'aimmon' || command === 'aimmonstro' || command === 'monstrosity') {
