@@ -595,9 +595,8 @@ if(akit === "kit"){
 	message.channel.send(embedEmbed); 
 }
 }
-}
-if(command === 'aimmonstrosity' || command === 'aimmon' || command === 'aimmonstro' || command === 'monstrosity') {
-if(kit === "kit"){
+if(args[0] === "monstrosity" || args[0] === "monstrosit" || args[0] === "monstros" || args[0] === "monsto" || args[0] === "mon") {
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -613,49 +612,43 @@ if(kit === "kit"){
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(basic === "basic"){
+} else if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
 	message.channel.send(exampleEmbed);
-}
-
-else if(args[1] == "special") {
+} else if(aspecial == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Special)** \n \n**Sudden Evolution • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-else if(args[1] == "passive") {
+} else if(apassive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-else if(args[1] == "speed") {
+} else if(aspeed == "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nA.I.M. Monstrosity's base speed is 77, but his effective turn 1 speed with an adjacent A.I.M. Assaulter is 85.33 with their level 4 passive, \nor 95.18 with their level 5 passive.")
 	message.channel.send(speedEmbed);
-}
-
-else if(args[1] == "unlock" || args[1] == "farm") {
+} else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	message.channel.send(speedEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
-
-} 
-if(command === 'aimresearcher' || command === 'aimresearch' || command === 'aimre' || command === 'researcher') {
-if(kit === "kit"){
+}
+if(args[0] === 'researcher' || args[0] === 'reasearcher' || args[0] === 'rea' || args[0] === 'res' || args[0] === 'research' || args[0] === 'reasearch') {
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
@@ -671,49 +664,43 @@ if(kit === "kit"){
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • T4 Upgrade** \n \n**On Turn** \n**75% -> 100%** chance to choose 1 random ally to apply 1 random positive effect from this list: Offense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \n \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by **+10% -> +20%**.")
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(basic === "basic"){
+} else if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
 	.setThumbnail('https://i.imgur.com/qThfwy9.png') 
 	message.channel.send(exampleEmbed);
-}
-
-else if(args[1] == "special") {
+} else if(aspecial == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Special)** \n \n**Surgery Drone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nHeal lowest Health ally and their adjacent allies for \n**6000 -> 7000** Health + 15% of this character's Max Health + \n**75% -> 100%** chance to flip Bleed on lowest Health ally and their adjacent allies.")
 	.setThumbnail('https://i.imgur.com/Y2X5nS8.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-else if(args[1] == "passive") {
+} else if(apassive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • T4 Upgrade** \n \n**On Turn** \n**75% -> 100%** chance to choose 1 random ally to apply 1 random positive effect from this list: Offense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \n \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by **+10% -> +20%**.")
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-else if(args[1] == "speed") {
+} else if(aspeed == "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nA.I.M. Researcher's base speed is 81, but she can gain 10% to 20% speed bar multiple times from her and A.I.M. Assaulter's passive. \nHer possible effective turn 1 speed can be as follows: \n+10% Speed Bar: **89.33**, +20%: **101**, +30%: **114.33**, 40%: **131**, 50%: **152.43**.")
 	message.channel.send(speedEmbed);
-}
-
-else if(args[1] == "unlock" || args[1] == "farm") {
+} else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	message.channel.send(speedEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
-
-} 
-if(command === 'aimsecurity' || command === 'aimsec') {
-if(kit === "kit"){
+}
+if(args[0] === 'security' || args[0] === 'sec' || args[0] === 'securit' || args[0] === 'secur' || args[0] === 'securi') {
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
@@ -729,47 +716,45 @@ if(kit === "kit"){
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • T4 Upgrade** \n \nAfter attacked, if Scientist Supreme is an ally, if still above 75% Health, transfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. \nGain +10% Max Health and **+10% -> +15%** Resistance.")
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(basic === "basic"){
+} else if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
 	.setThumbnail('https://i.imgur.com/S00SWQw.png') 
 	message.channel.send(exampleEmbed);
-}
-
-else if(args[1] == "special") {
+} else if(aspecial == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Special)** \n \n**Charge Capacitor • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nGain Taunt for 1 turn + Slow for 2 turns. Heal self and adjacent A.I.M. allies for **7000 -> 10000** Health + 10% of Max Health. Clear Speed Up on self.")
 	.setThumbnail('https://i.imgur.com/Ted3CoX.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-else if(args[1] == "passive") {
+} else if(apassive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • T4 Upgrade** \n \nAfter attacked, if Scientist Supreme is an ally, if still above 75% Health, transfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. \nGain +10% Max Health and **+10% -> +15%** Resistance.")
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-else if(args[1] == "speed") {
+} else if(aspeed == "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nA.I.M. Security's base speed is 76, but her effective turn 1 speed with an adjacent A.I.M. Assaulter is 84.33 with their level 4 passive, \nor 94.18 with their level 5 passive.")
 	message.channel.send(speedEmbed);
-}
-
-else if(args[1] == "unlock" || args[1] == "farm") {
+} else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
 	message.channel.send(speedEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
+}
+}
 }
 
-}
+
+
 if(command === 'americachavez' || command === 'americach' || command === 'americachav' || command === 'chavez' || command === 'missamerica') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
