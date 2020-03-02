@@ -472,6 +472,7 @@ let passive = args[0];
 let speed = args[0];
 let unlock = args[0];
 let trait = args[0];
+let farm = args[0];
 let akit = args[1]; 
 let abasic = args[1];
 let aspecial = args[1];
@@ -480,6 +481,7 @@ let apassive = args[1];
 let aspeed = args[1];
 let aunlock = args[1];
 let atrait = args[1];
+let afarm = args[1];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
