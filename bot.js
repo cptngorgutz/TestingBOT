@@ -826,7 +826,7 @@ if(akit === "kit" || akit === "k"){
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez's speed is: 115")
 	message.channel.send(speedEmbed);
-} else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" afarm === "f") {
+} else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in:**")
