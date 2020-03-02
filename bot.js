@@ -487,7 +487,7 @@ let afarm = args[1];
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'aim' || command === 'ai') {
 if(args[0] === "assaulter" || args[0] === "assault" || args[0] === "ass" || args[0] === "assau" || args[0] === "assa"){
-if(akit === "kit"){
+if(akit === "kit" || akit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
@@ -503,35 +503,35 @@ if(akit === "kit"){
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-} else if(abasic === "basic"){
+} else if(abasic === "basic" || abasic === "bas" || abasic === "b"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
-} else if(aspecial === "special"){
+} else if(aspecial === "special" || aspecial === "spec" || aspecial === "s"){
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
 	message.channel.send(exampleEmbed2);
-}  else if(apassive === "passive"){
+}  else if(apassive === "passive" || apassive === "pass" || apassive === "p"){
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-}  else if(aspeed === "speed"){
+}  else if(aspeed === "speed" || aspeed === "spe" || aspeed === "s"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter's speed is: 118")
 	message.channel.send(speedEmbed);
-}  else if(aunlock == "unlock" || afarm === "farm") {
+}  else if(aunlock == "unlock" || aunlock == "unl" || aunlock == "u" || afarm === "farm" || afarm === "far" afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
 	message.channel.send(speedEmbed); 
-} else if(atrait == "trait" || atrait === "traits") {
+} else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nA.I.M., Blaster, Global, Minion, Tech, Villain.")  
@@ -544,7 +544,7 @@ if(akit === "kit"){
 }
 }
 if(args[0] === "infector" || args[0] === "infect" || args[0] === "infe" || args[0] === "inf" || args[0] === "infec") {
-if(akit === "kit"){
+if(akit === "kit" || akit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -560,35 +560,35 @@ if(akit === "kit"){
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-} else if(abasic === "basic"){
+} else if(abasic === "basic" || abasic === "bas" || abasic === "b"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
 	message.channel.send(exampleEmbed);
-} else if(aspecial === "special"){
+} else if(aspecial === "special" || aspecial === "spec" || aspecial === "s"){
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Special)** \n \n**Biohazard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
 	message.channel.send(exampleEmbed2);
-} else if(apassive === "passive"){
+} else if(apassive === "passive" || apassive === "pass" || apassive === "p"){
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-} else if(aspeed === "speed"){
+} else if(aspeed === "speed" || aspeed === "spe" || aspeed === "s"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nA.I.M. Infector's base speed is **104**, but he gains: \n+5% to +%10 Speed after any character's first turn. \nWith level 4 passive, that makes his speed after turn one **114.4**. \nWith level 4 passive, **Scientist Supreme**, and 3 other AIM characters: \nHis effective turn 1 speed is **108.16**. \nWith an adjacent **A.I.M. Assaulter** with level 4 passive and no **Scientist Supreme**, **A.I.M. Infector's** effective turn 1 speed is usually **115.11**. /nWith **Assaulter** and his level 5 passive or level 4 passive along with \n**Scientist Supreme**, his effective turn 1 speed is **118**.")
 	message.channel.send(speedEmbed);
-} else if(aunlock == "unlock" || afarm === "farm") {
+} else if(aunlock == "unlock" || aunlock == "unl" || aunlock == "u" || afarm === "farm" || afarm === "far" afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
 	message.channel.send(speedEmbed); 
-} else if(atrait == "trait" || atrait === "traits") {
+} else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim,Bio,Controller,Global,Minion,Villain")  
@@ -601,7 +601,7 @@ if(akit === "kit"){
 }
 }
 if(args[0] === "monstrosity" || args[0] === "monstrosit" || args[0] === "monstros" || args[0] === "monsto" || args[0] === "mon") {
-if(akit === "kit"){
+if(akit === "kit" || akit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -617,7 +617,7 @@ if(akit === "kit"){
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Passive)** \n \n**Growth Spurt • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-} else if(abasic === "basic"){
+} else if(abasic === "basic" || abasic === "bas" || abasic === "b"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -645,7 +645,7 @@ if(akit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	message.channel.send(speedEmbed); 
-} else if(atrait == "trait" || atrait === "traits") {
+} else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim,Bio,Brawler,Global,Minion,Villain")  
@@ -658,7 +658,7 @@ if(akit === "kit"){
 }
 }
 if(args[0] === 'researcher' || args[0] === 'reasearcher' || args[0] === 'rea' || args[0] === 'res' || args[0] === 'research' || args[0] === 'reasearch') {
-if(akit === "kit"){
+if(akit === "kit" || akit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
@@ -674,7 +674,7 @@ if(akit === "kit"){
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Passive)** \n \n**Antidote • T4 Upgrade** \n \n**On Turn** \n**75% -> 100%** chance to choose 1 random ally to apply 1 random positive effect from this list: Offense Up, Defense Up, Speed Up, Regeneration, Deathproof, Deflect. \nIf ally is A.I.M., then apply 2 random positive effects from the list. \n \nWhen a negative effect is applied to an A.I.M. ally, fill this character's Speed Bar by **+10% -> +20%**.")
 	.setThumbnail('https://i.imgur.com/x7MKhcD.png') 
 	message.channel.send(exampleEmbed4);
-} else if(abasic === "basic"){
+} else if(abasic === "basic" || abasic === "bas" || abasic === "b"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
@@ -702,7 +702,7 @@ if(akit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim Researcher is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
 	message.channel.send(speedEmbed); 
-} else if(atrait == "trait" || atrait === "traits") {
+} else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \nAim,Global,Minion,Skill,Support,Villain")  
@@ -715,7 +715,7 @@ if(akit === "kit"){
 }
 }
 if(args[0] === 'security' || args[0] === 'sec' || args[0] === 'securit' || args[0] === 'secur' || args[0] === 'securi') {
-if(akit === "kit"){
+if(akit === "kit" || akit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
@@ -731,7 +731,7 @@ if(akit === "kit"){
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Passive)** \n \n**Immunization • T4 Upgrade** \n \nAfter attacked, if Scientist Supreme is an ally, if still above 75% Health, transfer 1 negative effect from self and each A.I.M. ally to the attacking enemy. \nGain +10% Max Health and **+10% -> +15%** Resistance.")
 	.setThumbnail('https://i.imgur.com/Fx7CjEy.png') 
 	message.channel.send(exampleEmbed4);
-} else if(abasic === "basic"){
+} else if(abasic === "basic" || abasic === "bas" || abasic === "b"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
@@ -759,7 +759,7 @@ if(akit === "kit"){
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
 	message.channel.send(speedEmbed); 
-} else if(atrait == "trait" || atrait === "traits") {
+} else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim,Global,Minion,Protector,Tech,Villain")  
