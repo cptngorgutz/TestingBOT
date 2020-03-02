@@ -502,7 +502,7 @@ if(akit === "kit"){
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-}  if(abasic === "basic"){
+} else if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
@@ -541,9 +541,8 @@ if(akit === "kit"){
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
-}
-if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
-if(kit === "kit"){
+} else if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -559,7 +558,7 @@ if(kit === "kit"){
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-} if(basic === "basic"){
+} if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
