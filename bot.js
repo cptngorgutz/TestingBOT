@@ -6124,6 +6124,11 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \nDark Phoenix is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(args[1] == "trait" || unlock === "trait") {
+		const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \nHero, Global, Mutant, Controller, Xmen.")
+	message.channel.send(traitEmbed);	
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -6187,7 +6192,12 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:phoenix:663750496829308958> **Phoenix** \nPhoenix is farmable in:**")
 	message.channel.send(speedEmbed); 
-} else {
+} else if(args[0] == "trait" || unlock === "trait") {
+		const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \nHero, Global, Mutant, Controller, Xmen.")
+	message.channel.send(traitEmbed);	
+}  else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
