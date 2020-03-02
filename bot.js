@@ -531,8 +531,7 @@ if(args[1] == "kit"){
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
-}
-if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
+} else if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
 if(args[1] == "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
