@@ -475,7 +475,7 @@ let trait = args[0];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'aim' || command === 'ai' && args[0] == "assaulter" || args[0] == "assault" || args[0] == "ass" || args[0] == "assau" || args[0] == "assa") {
+if(command === 'aim' || command === 'ai' && args[0] === "assaulter" || args[0] === "assault" || args[0] === "ass" || args[0] === "assau" || args[0] === "assa") {
 if(args[1] == "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -532,7 +532,7 @@ if(args[1] == "kit"){
 	message.channel.send(embedEmbed); 
 }
 }
-if(command === 'aim' || command === 'ai' && args[0] == "infector" || args[0] == "infect" || args[0] == "i" || args[0] == "inf" || args[0] == "infec") {
+if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
 if(args[1] == "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
