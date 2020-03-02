@@ -1135,7 +1135,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blob:684029278366597127>	**Blob (Special)** \n \n**Meat Shield • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nCopy all positive effects from BROTHERHOOD allies to this character. Attack primary target for **290% -> 350%** damage. Attack all adjacent targets for **260% -> 320%** damage.")
+	.setDescription("<:blob:684029278366597127>	**Blob (Special)** \n \n**Meat Shield • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nCopy all positive effects from BROTHERHOOD allies to this character. Attack primary target for **290% -> 350%** damage. Attack all adjacent targets for **260% -> 320%** damage.")
 	.setThumbnail('https://i.imgur.com/28OGyCi.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -1161,7 +1161,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blob:684029278366597127>	**Blob (Special)** \n \n**Meat Shield • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nCopy all positive effects from BROTHERHOOD allies to this character. Attack primary target for **290% -> 350%** damage. Attack all adjacent targets for **260% -> 320%** damage.")
+	.setDescription("<:blob:684029278366597127>	**Blob (Special)** \n \n**Meat Shield • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nCopy all positive effects from BROTHERHOOD allies to this character. Attack primary target for **290% -> 350%** damage. Attack all adjacent targets for **260% -> 320%** damage.")
 	.setThumbnail('https://i.imgur.com/28OGyCi.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -2754,7 +2754,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Special)** \n \n**Arrow Storm • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **170% -> 190%** damage + clear 1 positive effect off each enemy.\nGain +100,000% Extra Focus for this attack.")
+	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Special)** \n \n**Arrow Storm • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **170% -> 190%** damage + clear 1 positive effect off each enemy.\nGain +100,000% Extra Focus for this attack.")
 	.setThumbnail('https://i.imgur.com/yzkodgQ.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -2775,7 +2775,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Special)** \n \n**Arrow Storm • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **170% -> 190%** damage + clear 1 positive effect off each enemy.\nGain +100,000% Extra Focus for this attack.")
+	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Special)** \n \n**Arrow Storm • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **170% -> 190%** damage + clear 1 positive effect off each enemy.\nGain +100,000% Extra Focus for this attack.")
 	.setThumbnail('https://i.imgur.com/yzkodgQ.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -2812,7 +2812,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Special)** \n \n**Shuriken • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **410% -> 480%** damage + apply Heal Block for **2 -> 3** turns.")
+	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Special)** \n \n**Shuriken • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **410% -> 480%** damage + apply Heal Block for **2 -> 3** turns.")
 	.setThumbnail('https://i.imgur.com/FtA3o9b.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -2833,7 +2833,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Special)** \n \n**Shuriken • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **410% -> 480%** damage + apply Heal Block for **2 -> 3** turns.")
+	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Special)** \n \n**Shuriken • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **410% -> 480%** damage + apply Heal Block for **2 -> 3** turns.")
 	.setThumbnail('https://i.imgur.com/FtA3o9b.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -2870,7 +2870,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Special)** \n \n**Assailing Blade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **370% -> 430%** damage + 40% chance to gain a Bonus attack for **290% -> 340%** damage.")
+	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Special)** \n \n**Assailing Blade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **370% -> 430%** damage + 40% chance to gain a Bonus attack for **290% -> 340%** damage.")
 	.setThumbnail('https://i.imgur.com/nm2hZ2i.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -2891,7 +2891,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Special)** \n \n**Assailing Blade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **370% -> 430%** damage + 40% chance to gain a Bonus attack for **290% -> 340%** damage.")
+	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Special)** \n \n**Assailing Blade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **370% -> 430%** damage + 40% chance to gain a Bonus attack for **290% -> 340%** damage.")
 	.setThumbnail('https://i.imgur.com/nm2hZ2i.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -2928,7 +2928,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Special)** \n \n**Smoke Bomb • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies except self for 2 turns. Apply Evade to 4 allies. Gain Deflect.")
+	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Special)** \n \n**Smoke Bomb • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies except self for 2 turns. Apply Evade to 4 allies. Gain Deflect.")
 	.setThumbnail('https://i.imgur.com/k2YiJiz.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -2949,7 +2949,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Special)** \n \n**Smoke Bomb • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies except self for 2 turns. Apply Evade to 4 allies. Gain Deflect.")
+	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Special)** \n \n**Smoke Bomb • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies except self for 2 turns. Apply Evade to 4 allies. Gain Deflect.")
 	.setThumbnail('https://i.imgur.com/k2YiJiz.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -2986,7 +2986,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Special)** \n \n**Blood Magic • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal all allies **3600 -> 4200** Health + 15% of this character's Max Health. Apply Defense Up to **4 -> all** allies.")
+	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Special)** \n \n**Blood Magic • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal all allies **3600 -> 4200** Health + 15% of this character's Max Health. Apply Defense Up to **4 -> all** allies.")
 	.setThumbnail('https://i.imgur.com/DexeOzh.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -3007,7 +3007,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Special)** \n \n**Blood Magic • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal all allies **3600 -> 4200** Health + 15% of this character's Max Health. Apply Defense Up to **4 -> all** allies.")
+	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Special)** \n \n**Blood Magic • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal all allies **3600 -> 4200** Health + 15% of this character's Max Health. Apply Defense Up to **4 -> all** allies.")
 	.setThumbnail('https://i.imgur.com/DexeOzh.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3328,7 +3328,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Special)** \n \n**Corrosive Grenade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 190%** damage + clear 1 positive effect from each target.\nRepeat this attack 1 time.")
+	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Special)** \n \n**Corrosive Grenade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 190%** damage + clear 1 positive effect from each target.\nRepeat this attack 1 time.")
 	.setThumbnail('https://i.imgur.com/NL4rzmY.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -3349,7 +3349,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Special)** \n \n**Corrosive Grenade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 190%** damage + clear 1 positive effect from each target.\nRepeat this attack 1 time.")
+	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Special)** \n \n**Corrosive Grenade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 190%** damage + clear 1 positive effect from each target.\nRepeat this attack 1 time.")
 	.setThumbnail('https://i.imgur.com/NL4rzmY.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3386,7 +3386,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Special)** \n \n**Alert! • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn.\nClear all negative effects from self + heal 5% of Max Health per negative effect removed.\nHeal self for **1,400 -> 2,500** Health + 10% of Max Health.\nIf Red Skull is an ally, gain Immunity.")
+	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Special)** \n \n**Alert! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn.\nClear all negative effects from self + heal 5% of Max Health per negative effect removed.\nHeal self for **1,400 -> 2,500** Health + 10% of Max Health.\nIf Red Skull is an ally, gain Immunity.")
 	.setThumbnail('https://i.imgur.com/n0DfTBB.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -3407,7 +3407,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Special)** \n \n**Alert! • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn.\nClear all negative effects from self + heal 5% of Max Health per negative effect removed.\nHeal self for **1,400 -> 2,500** Health + 10% of Max Health.\nIf Red Skull is an ally, gain Immunity.")
+	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Special)** \n \n**Alert! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn.\nClear all negative effects from self + heal 5% of Max Health per negative effect removed.\nHeal self for **1,400 -> 2,500** Health + 10% of Max Health.\nIf Red Skull is an ally, gain Immunity.")
 	.setThumbnail('https://i.imgur.com/n0DfTBB.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3444,7 +3444,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Special)** \n \n**Test Patient Zero • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Deathproof and Deflect to the most injured ally and Heal that ally for **7000 -> 10000** Health + **15% -> 20%** of this character's Max Health.\nOn WAR DEFENSE, clear Stun from Red Skull ally.")
+	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Special)** \n \n**Test Patient Zero • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Deathproof and Deflect to the most injured ally and Heal that ally for **7000 -> 10000** Health + **15% -> 20%** of this character's Max Health.\nOn WAR DEFENSE, clear Stun from Red Skull ally.")
 	.setThumbnail('https://i.imgur.com/WqwwFE8.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -3465,7 +3465,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Special)** \n \n**Test Patient Zero • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Deathproof and Deflect to the most injured ally and Heal that ally for **7000 -> 10000** Health + **15% -> 20%** of this character's Max Health.\nOn WAR DEFENSE, clear Stun from Red Skull ally.")
+	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Special)** \n \n**Test Patient Zero • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Deathproof and Deflect to the most injured ally and Heal that ally for **7000 -> 10000** Health + **15% -> 20%** of this character's Max Health.\nOn WAR DEFENSE, clear Stun from Red Skull ally.")
 	.setThumbnail('https://i.imgur.com/WqwwFE8.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3502,7 +3502,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Special)** \n \n**Zero In • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +2 Offense Up, up to a maximum of 3, for self and **3 -> all** HYDRA MINION and Red Skull allies.\nGain Speed Up for 2 turns. Change Speed Bar by **50% -> 60%**.")
+	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Special)** \n \n**Zero In • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +2 Offense Up, up to a maximum of 3, for self and **3 -> all** HYDRA MINION and Red Skull allies.\nGain Speed Up for 2 turns. Change Speed Bar by **50% -> 60%**.")
 	.setThumbnail('https://i.imgur.com/i2VTDl5.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -3523,7 +3523,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Special)** \n \n**Zero In • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +2 Offense Up, up to a maximum of 3, for self and **3 -> all** HYDRA MINION and Red Skull allies.\nGain Speed Up for 2 turns. Change Speed Bar by **50% -> 60%**.")
+	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Special)** \n \n**Zero In • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +2 Offense Up, up to a maximum of 3, for self and **3 -> all** HYDRA MINION and Red Skull allies.\nGain Speed Up for 2 turns. Change Speed Bar by **50% -> 60%**.")
 	.setThumbnail('https://i.imgur.com/i2VTDl5.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3560,7 +3560,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Special)** \n \n**Hail of Bullets • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **150% -> 180%** Piercing.")
+	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Special)** \n \n**Hail of Bullets • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **150% -> 180%** Piercing.")
 	.setThumbnail('https://i.imgur.com/6MipyYF.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -3581,7 +3581,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Special)** \n \n**Hail of Bullets • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **150% -> 180%** Piercing.")
+	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Special)** \n \n**Hail of Bullets • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all enemies for **150% -> 180%** Piercing.")
 	.setThumbnail('https://i.imgur.com/6MipyYF.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3760,7 +3760,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Special)** \n \n**Deploy Flares • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 180%** damage.\nChange Speed Bar of primary and adjacent targets by **-15% -> -20%**. Apply Ability Block to primary target.")
+	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Special)** \n \n**Deploy Flares • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 180%** damage.\nChange Speed Bar of primary and adjacent targets by **-15% -> -20%**. Apply Ability Block to primary target.")
 	.setThumbnail('https://i.imgur.com/jyXeFZz.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -3786,7 +3786,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Special)** \n \n**Deploy Flares • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 180%** damage.\nChange Speed Bar of primary and adjacent targets by **-15% -> -20%**. Apply Ability Block to primary target.")
+	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Special)** \n \n**Deploy Flares • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets for **160% -> 180%** damage.\nChange Speed Bar of primary and adjacent targets by **-15% -> -20%**. Apply Ability Block to primary target.")
 	.setThumbnail('https://i.imgur.com/jyXeFZz.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3901,7 +3901,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Special)** \n \n**Shake it Off • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nClear all negative effects from self. Clear **3 -> all** negative effects from all allies.\nGenerate 1 Ability Energy for each DEFENDER ally. Generate 4 Ability Energy for random allies.")
+	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Special)** \n \n**Shake it Off • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nClear all negative effects from self. Clear **3 -> all** negative effects from all allies.\nGenerate 1 Ability Energy for each DEFENDER ally. Generate 4 Ability Energy for random allies.")
 	.setThumbnail('https://i.imgur.com/HFSba32.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -3927,7 +3927,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Special)** \n \n**Shake it Off • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nClear all negative effects from self. Clear **3 -> all** negative effects from all allies.\nGenerate 1 Ability Energy for each DEFENDER ally. Generate 4 Ability Energy for random allies.")
+	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Special)** \n \n**Shake it Off • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nClear all negative effects from self. Clear **3 -> all** negative effects from all allies.\nGenerate 1 Ability Energy for each DEFENDER ally. Generate 4 Ability Energy for random allies.")
 	.setThumbnail('https://i.imgur.com/HFSba32.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -3972,7 +3972,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Special)** \n \n**Heating Up • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain **+1 -> +2** Offense Up, up to a maximum of 5.\nApply +1 Offense Up, up to a maximum of 3, to **3 -> all** FANTASTIC FOUR or Namor allies.\nAttack primary target for **300% -> 350%** damage.")
+	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Special)** \n \n**Heating Up • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain **+1 -> +2** Offense Up, up to a maximum of 5.\nApply +1 Offense Up, up to a maximum of 3, to **3 -> all** FANTASTIC FOUR or Namor allies.\nAttack primary target for **300% -> 350%** damage.")
 	.setThumbnail('https://i.imgur.com/CuqT4Hh.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -3998,7 +3998,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Special)** \n \n**Heating Up • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain **+1 -> +2** Offense Up, up to a maximum of 5.\nApply +1 Offense Up, up to a maximum of 3, to **3 -> all** FANTASTIC FOUR or Namor allies.\nAttack primary target for **300% -> 350%** damage.")
+	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Special)** \n \n**Heating Up • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain **+1 -> +2** Offense Up, up to a maximum of 5.\nApply +1 Offense Up, up to a maximum of 3, to **3 -> all** FANTASTIC FOUR or Namor allies.\nAttack primary target for **300% -> 350%** damage.")
 	.setThumbnail('https://i.imgur.com/CuqT4Hh.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4043,7 +4043,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Special)** \n \n**Immovable Object • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up for 2 turns + Immunity + Deathproof + **1 -> 2** Regeneration.\nIf Magneto is an ally, gain Taunt for 2 turns.")
+	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Special)** \n \n**Immovable Object • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up for 2 turns + Immunity + Deathproof + **1 -> 2** Regeneration.\nIf Magneto is an ally, gain Taunt for 2 turns.")
 	.setThumbnail('https://i.imgur.com/KWVh15e.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4069,7 +4069,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Special)** \n \n**Immovable Object • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up for 2 turns + Immunity + Deathproof + **1 -> 2** Regeneration.\nIf Magneto is an ally, gain Taunt for 2 turns.")
+	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Special)** \n \n**Immovable Object • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up for 2 turns + Immunity + Deathproof + **1 -> 2** Regeneration.\nIf Magneto is an ally, gain Taunt for 2 turns.")
 	.setThumbnail('https://i.imgur.com/KWVh15e.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4114,7 +4114,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
+	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
 	.setThumbnail('https://i.imgur.com/qsNve8S.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4140,7 +4140,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
+	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Special)** \n \n**Full Auto • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** damage 3 times. On Crit, gain Offense Up and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
 	.setThumbnail('https://i.imgur.com/qsNve8S.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4185,7 +4185,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Special)** \n \n**Crime Lord • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2 -> 2-3** Bodyguards at **300% -> 340%** normal damage and 100% of normal Health. Bodyguard gains Taunt on self when Summoned.")
+	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Special)** \n \n**Crime Lord • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2 -> 2-3** Bodyguards at **300% -> 340%** normal damage and 100% of normal Health. Bodyguard gains Taunt on self when Summoned.")
 	.setThumbnail('https://i.imgur.com/KHCRGmc.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4211,7 +4211,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Special)** \n \n**Crime Lord • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2 -> 2-3** Bodyguards at **300% -> 340%** normal damage and 100% of normal Health. Bodyguard gains Taunt on self when Summoned.")
+	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Special)** \n \n**Crime Lord • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2 -> 2-3** Bodyguards at **300% -> 340%** normal damage and 100% of normal Health. Bodyguard gains Taunt on self when Summoned.")
 	.setThumbnail('https://i.imgur.com/KHCRGmc.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4256,7 +4256,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Special)** \n \n**Target Lock • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **200% -> 260%** damage. Apply Taunt to target for 1 turn. Gain an Assist from an ally **greater assist chance from MERCENARY and KREE allies**.\nGain +750% Extra Focus for this attack.")
+	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Special)** \n \n**Target Lock • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **200% -> 260%** damage. Apply Taunt to target for 1 turn. Gain an Assist from an ally **greater assist chance from MERCENARY and KREE allies**.\nGain +750% Extra Focus for this attack.")
 	.setThumbnail('https://i.imgur.com/HsDRVps.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4282,7 +4282,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Special)** \n \n**Target Lock • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **200% -> 260%** damage. Apply Taunt to target for 1 turn. Gain an Assist from an ally **greater assist chance from MERCENARY and KREE allies**.\nGain +750% Extra Focus for this attack.")
+	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Special)** \n \n**Target Lock • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **200% -> 260%** damage. Apply Taunt to target for 1 turn. Gain an Assist from an ally **greater assist chance from MERCENARY and KREE allies**.\nGain +750% Extra Focus for this attack.")
 	.setThumbnail('https://i.imgur.com/HsDRVps.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4327,7 +4327,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Special)** \n \n**Auto Targeter • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 360%** damage + **80% -> 100%** chance to Bonus Attack for 260% damage.")
+	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Special)** \n \n**Auto Targeter • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 360%** damage + **80% -> 100%** chance to Bonus Attack for 260% damage.")
 	.setThumbnail('https://i.imgur.com/MzXF5Pn.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -4348,7 +4348,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Special)** \n \n**Auto Targeter • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 360%** damage + **80% -> 100%** chance to Bonus Attack for 260% damage.")
+	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Special)** \n \n**Auto Targeter • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 360%** damage + **80% -> 100%** chance to Bonus Attack for 260% damage.")
 	.setThumbnail('https://i.imgur.com/MzXF5Pn.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4385,7 +4385,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Special)** \n \n**Call to Glory • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up. Apply Defense Up to all KREE allies. Heal self for **1300 -> 1850** Health + 10% of Max Health.\nIf Ronan is an ally, heal for an additional **1300 -> 1850** Health + 10% of Max Health.")
+	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Special)** \n \n**Call to Glory • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up. Apply Defense Up to all KREE allies. Heal self for **1300 -> 1850** Health + 10% of Max Health.\nIf Ronan is an ally, heal for an additional **1300 -> 1850** Health + 10% of Max Health.")
 	.setThumbnail('https://i.imgur.com/DpryBis.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -4406,7 +4406,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Special)** \n \n**Call to Glory • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up. Apply Defense Up to all KREE allies. Heal self for **1300 -> 1850** Health + 10% of Max Health.\nIf Ronan is an ally, heal for an additional **1300 -> 1850** Health + 10% of Max Health.")
+	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Special)** \n \n**Call to Glory • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + Defense Up. Apply Defense Up to all KREE allies. Heal self for **1300 -> 1850** Health + 10% of Max Health.\nIf Ronan is an ally, heal for an additional **1300 -> 1850** Health + 10% of Max Health.")
 	.setThumbnail('https://i.imgur.com/DpryBis.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4443,7 +4443,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Special)** \n \n**Imperial Decree • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Assist Now to an adjacent ally. If that ally is KREE, they also gain Offense Up. Attack primary target for (465 -> 530%) damage.")
+	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Special)** \n \n**Imperial Decree • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Assist Now to an adjacent ally. If that ally is KREE, they also gain Offense Up. Attack primary target for (465 -> 530%) damage.")
 	.setThumbnail('https://i.imgur.com/FsIfDnm.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -4464,7 +4464,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Special)** \n \n**Imperial Decree • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Assist Now to an adjacent ally. If that ally is KREE, they also gain Offense Up. Attack primary target for (465 -> 530%) damage.")
+	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Special)** \n \n**Imperial Decree • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Assist Now to an adjacent ally. If that ally is KREE, they also gain Offense Up. Attack primary target for (465 -> 530%) damage.")
 	.setThumbnail('https://i.imgur.com/FsIfDnm.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4501,7 +4501,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Special)** \n \n**Nanomachine Cloud • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Regeneration to all allies for **1 -> 2** turns. Apply an additional Regeneration to Ronan and KREE MINION allies.")
+	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Special)** \n \n**Nanomachine Cloud • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Regeneration to all allies for **1 -> 2** turns. Apply an additional Regeneration to Ronan and KREE MINION allies.")
 	.setThumbnail('https://i.imgur.com/b3pHwcV.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -4522,7 +4522,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Special)** \n \n**Nanomachine Cloud • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Regeneration to all allies for **1 -> 2** turns. Apply an additional Regeneration to Ronan and KREE MINION allies.")
+	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Special)** \n \n**Nanomachine Cloud • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Regeneration to all allies for **1 -> 2** turns. Apply an additional Regeneration to Ronan and KREE MINION allies.")
 	.setThumbnail('https://i.imgur.com/b3pHwcV.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4559,7 +4559,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Special)** \n \n**Ferocious Pursuit • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 540% damage + apply Heal Block for **1 -> 2** turns.")
+	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Special)** \n \n**Ferocious Pursuit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 540% damage + apply Heal Block for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/eQx4nPB.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -4580,7 +4580,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Special)** \n \n**Ferocious Pursuit • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 540% damage + apply Heal Block for **1 -> 2** turns.")
+	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Special)** \n \n**Ferocious Pursuit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 540% damage + apply Heal Block for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/eQx4nPB.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4617,7 +4617,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:loki:663750495139266591>	**Loki (Special)** \n \n**Mind Control • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Down to primary target for 2 turns.\nOn WAR DEFENSE, with 4 or more ASGARDIAN allies, apply Taunt to primary target.\nMind Control 1 enemy to attack the primary target + **75% -> 100%** chance to control a second enemy. The controlled enemies gain +25% Damage for this attack.")
+	.setDescription("<:loki:663750495139266591>	**Loki (Special)** \n \n**Mind Control • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Down to primary target for 2 turns.\nOn WAR DEFENSE, with 4 or more ASGARDIAN allies, apply Taunt to primary target.\nMind Control 1 enemy to attack the primary target + **75% -> 100%** chance to control a second enemy. The controlled enemies gain +25% Damage for this attack.")
 	.setThumbnail('https://i.imgur.com/1hjIgKf.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4644,7 +4644,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:loki:663750495139266591>	**Loki (Special)** \n \n**Mind Control • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Down to primary target for 2 turns.\nOn WAR DEFENSE, with 4 or more ASGARDIAN allies, apply Taunt to primary target.\nMind Control 1 enemy to attack the primary target + **75% -> 100%** chance to control a second enemy. The controlled enemies gain +25% Damage for this attack.")
+	.setDescription("<:loki:663750495139266591>	**Loki (Special)** \n \n**Mind Control • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Down to primary target for 2 turns.\nOn WAR DEFENSE, with 4 or more ASGARDIAN allies, apply Taunt to primary target.\nMind Control 1 enemy to attack the primary target + **75% -> 100%** chance to control a second enemy. The controlled enemies gain +25% Damage for this attack.")
 	.setThumbnail('https://i.imgur.com/1hjIgKf.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4690,7 +4690,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Special)** \n \n**Bring it On! • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 2 turns + 2 Regeneration. Clear **2 -> all** negative effects from self.\nApply Regeneration to all DEFENDER allies.")
+	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Special)** \n \n**Bring it On! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 2 turns + 2 Regeneration. Clear **2 -> all** negative effects from self.\nApply Regeneration to all DEFENDER allies.")
 	.setThumbnail('https://i.imgur.com/Nk0iZmf.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4716,7 +4716,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Special)** \n \n**Bring it On! • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 2 turns + 2 Regeneration. Clear **2 -> all** negative effects from self.\nApply Regeneration to all DEFENDER allies.")
+	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Special)** \n \n**Bring it On! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 2 turns + 2 Regeneration. Clear **2 -> all** negative effects from self.\nApply Regeneration to all DEFENDER allies.")
 	.setThumbnail('https://i.imgur.com/Nk0iZmf.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4761,7 +4761,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:magneto:663750493419339810>	**Magneto (Special)** \n \n**Polarized Beam • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage + 20% Piercing + apply Disrupted for 2 turns + apply Slow for 2 turns + remove **2 -> all** positive effects.\nThis attack is Unavoidable.")
+	.setDescription("<:magneto:663750493419339810>	**Magneto (Special)** \n \n**Polarized Beam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage + 20% Piercing + apply Disrupted for 2 turns + apply Slow for 2 turns + remove **2 -> all** positive effects.\nThis attack is Unavoidable.")
 	.setThumbnail('https://i.imgur.com/DMdU1aN.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4787,7 +4787,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:magneto:663750493419339810>	**Magneto (Special)** \n \n**Polarized Beam • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage + 20% Piercing + apply Disrupted for 2 turns + apply Slow for 2 turns + remove **2 -> all** positive effects.\nThis attack is Unavoidable.")
+	.setDescription("<:magneto:663750493419339810>	**Magneto (Special)** \n \n**Polarized Beam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage + 20% Piercing + apply Disrupted for 2 turns + apply Slow for 2 turns + remove **2 -> all** positive effects.\nThis attack is Unavoidable.")
 	.setThumbnail('https://i.imgur.com/DMdU1aN.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4832,7 +4832,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mantis:663750493583179808>	**Mantis (Special)** \n \n**Empathy • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self and adjacent allies for **2750 -> 3000** Health + 15% of this character's Max Health. Heal all additional allies for **1500 -> 1750** Health + 10% of this character's Max Health. **75% -> 100%** chance to apply Regeneration to self and adjacent allies.\nIn RAIDS, apply additional Regeneration to all allies.")
+	.setDescription("<:mantis:663750493583179808>	**Mantis (Special)** \n \n**Empathy • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self and adjacent allies for **2750 -> 3000** Health + 15% of this character's Max Health. Heal all additional allies for **1500 -> 1750** Health + 10% of this character's Max Health. **75% -> 100%** chance to apply Regeneration to self and adjacent allies.\nIn RAIDS, apply additional Regeneration to all allies.")
 	.setThumbnail('https://i.imgur.com/2gfaB83.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4858,7 +4858,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mantis:663750493583179808>	**Mantis (Special)** \n \n**Empathy • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self and adjacent allies for **2750 -> 3000** Health + 15% of this character's Max Health. Heal all additional allies for **1500 -> 1750** Health + 10% of this character's Max Health. **75% -> 100%** chance to apply Regeneration to self and adjacent allies.\nIn RAIDS, apply additional Regeneration to all allies.")
+	.setDescription("<:mantis:663750493583179808>	**Mantis (Special)** \n \n**Empathy • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self and adjacent allies for **2750 -> 3000** Health + 15% of this character's Max Health. Heal all additional allies for **1500 -> 1750** Health + 10% of this character's Max Health. **75% -> 100%** chance to apply Regeneration to self and adjacent allies.\nIn RAIDS, apply additional Regeneration to all allies.")
 	.setThumbnail('https://i.imgur.com/2gfaB83.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4903,7 +4903,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Special)** \n \n**Call of the Mountain • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + **1-2 -> 2** Counter. Gain **+1 -> +2** Charged, up to a maximum of 5.")
+	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Special)** \n \n**Call of the Mountain • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + **1-2 -> 2** Counter. Gain **+1 -> +2** Charged, up to a maximum of 5.")
 	.setThumbnail('https://i.imgur.com/221kYD0.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -4929,7 +4929,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Special)** \n \n**Call of the Mountain • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + **1-2 -> 2** Counter. Gain **+1 -> +2** Charged, up to a maximum of 5.")
+	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Special)** \n \n**Call of the Mountain • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt + **1-2 -> 2** Counter. Gain **+1 -> +2** Charged, up to a maximum of 5.")
 	.setThumbnail('https://i.imgur.com/221kYD0.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -4974,7 +4974,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Special)** \n \n**Call the Shots • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Offense Up to **4 -> all** allies for 1 turn. Apply Speed Up to **4 -> all** allies for 1 turn.")
+	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Special)** \n \n**Call the Shots • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Offense Up to **4 -> all** allies for 1 turn. Apply Speed Up to **4 -> all** allies for 1 turn.")
 	.setThumbnail('https://i.imgur.com/FfBLQJp.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -4995,7 +4995,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Special)** \n \n**Call the Shots • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Offense Up to **4 -> all** allies for 1 turn. Apply Speed Up to **4 -> all** allies for 1 turn.")
+	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Special)** \n \n**Call the Shots • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Offense Up to **4 -> all** allies for 1 turn. Apply Speed Up to **4 -> all** allies for 1 turn.")
 	.setThumbnail('https://i.imgur.com/FfBLQJp.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5032,7 +5032,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Special)** \n \n**Rampart • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn. Gain Defense Up on self for **2 -> 3** turns. Apply Defense Up to 4 Lowest Health allies for 1 turn.")
+	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Special)** \n \n**Rampart • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn. Gain Defense Up on self for **2 -> 3** turns. Apply Defense Up to 4 Lowest Health allies for 1 turn.")
 	.setThumbnail('https://i.imgur.com/dwZiUUv.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -5053,7 +5053,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Special)** \n \n**Rampart • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn. Gain Defense Up on self for **2 -> 3** turns. Apply Defense Up to 4 Lowest Health allies for 1 turn.")
+	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Special)** \n \n**Rampart • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt for 1 turn. Gain Defense Up on self for **2 -> 3** turns. Apply Defense Up to 4 Lowest Health allies for 1 turn.")
 	.setThumbnail('https://i.imgur.com/dwZiUUv.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5090,7 +5090,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Special)** \n \n**Steady Aim • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **360% -> 450%** damage and **40% -> 50%** Piercing.")
+	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Special)** \n \n**Steady Aim • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **360% -> 450%** damage and **40% -> 50%** Piercing.")
 	.setThumbnail('https://i.imgur.com/kLPTxMO.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -5111,7 +5111,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Special)** \n \n**Steady Aim • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **360% -> 450%** damage and **40% -> 50%** Piercing.")
+	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Special)** \n \n**Steady Aim • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **360% -> 450%** damage and **40% -> 50%** Piercing.")
 	.setThumbnail('https://i.imgur.com/kLPTxMO.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5148,7 +5148,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<>	**Miles Morales (Special)** \n \n**Venom Shock • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage + change Speed Bar by -50%. Apply Slow for **1 -> 2** turns + prolong all negative effects by 1. Gain Stealth.\nThis attack cannot be blocked.")
+	.setDescription("<>	**Miles Morales (Special)** \n \n**Venom Shock • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage + change Speed Bar by -50%. Apply Slow for **1 -> 2** turns + prolong all negative effects by 1. Gain Stealth.\nThis attack cannot be blocked.")
 	.setThumbnail('https://i.imgur.com/7c797AE.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5174,7 +5174,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<>	**Miles Morales (Special)** \n \n**Venom Shock • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage + change Speed Bar by -50%. Apply Slow for **1 -> 2** turns + prolong all negative effects by 1. Gain Stealth.\nThis attack cannot be blocked.")
+	.setDescription("<>	**Miles Morales (Special)** \n \n**Venom Shock • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage + change Speed Bar by -50%. Apply Slow for **1 -> 2** turns + prolong all negative effects by 1. Gain Stealth.\nThis attack cannot be blocked.")
 	.setThumbnail('https://i.imgur.com/7c797AE.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5219,7 +5219,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Special)** \n \n**Genetic Reconstruction • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **3000 -> 5000** Health + 15% of this character's Max Health.\nGenerate Ability Energy to a random KREE ally.\nRevive dead ally with 40% Max Health + apply 2 Deathproof.")
+	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Special)** \n \n**Genetic Reconstruction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **3000 -> 5000** Health + 15% of this character's Max Health.\nGenerate Ability Energy to a random KREE ally.\nRevive dead ally with 40% Max Health + apply 2 Deathproof.")
 	.setThumbnail('https://i.imgur.com/vI6OfS5.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5245,7 +5245,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Special)** \n \n**Genetic Reconstruction • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **3000 -> 5000** Health + 15% of this character's Max Health.\nGenerate Ability Energy to a random KREE ally.\nRevive dead ally with 40% Max Health + apply 2 Deathproof.")
+	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Special)** \n \n**Genetic Reconstruction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **3000 -> 5000** Health + 15% of this character's Max Health.\nGenerate Ability Energy to a random KREE ally.\nRevive dead ally with 40% Max Health + apply 2 Deathproof.")
 	.setThumbnail('https://i.imgur.com/vI6OfS5.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5290,7 +5290,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Special)** \n \n**Entangle • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack primary target for **330% -> 400%** damage + **50% -> 100%** chance to apply Stun.")
+	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Special)** \n \n**Entangle • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack primary target for **330% -> 400%** damage + **50% -> 100%** chance to apply Stun.")
 	.setThumbnail('https://i.imgur.com/7KGg9V8.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5316,7 +5316,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Special)** \n \n**Entangle • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack primary target for **330% -> 400%** damage + **50% -> 100%** chance to apply Stun.")
+	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Special)** \n \n**Entangle • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack primary target for **330% -> 400%** damage + **50% -> 100%** chance to apply Stun.")
 	.setThumbnail('https://i.imgur.com/7KGg9V8.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5361,7 +5361,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mordo:663750495562629161>	**Mordo (Special)** \n \n**Mesmerize • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\n**50% -> 100%** chance to Stun primary target + 50% chance to Blind up to 3 targets. 50% chance to Slow up to 2 targets.")
+	.setDescription("<:mordo:663750495562629161>	**Mordo (Special)** \n \n**Mesmerize • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\n**50% -> 100%** chance to Stun primary target + 50% chance to Blind up to 3 targets. 50% chance to Slow up to 2 targets.")
 	.setThumbnail('https://i.imgur.com/tCTZxEW.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5387,7 +5387,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mordo:663750495562629161>	**Mordo (Special)** \n \n**Mesmerize • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\n**50% -> 100%** chance to Stun primary target + 50% chance to Blind up to 3 targets. 50% chance to Slow up to 2 targets.")
+	.setDescription("<:mordo:663750495562629161>	**Mordo (Special)** \n \n**Mesmerize • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\n**50% -> 100%** chance to Stun primary target + 50% chance to Blind up to 3 targets. 50% chance to Slow up to 2 targets.")
 	.setThumbnail('https://i.imgur.com/tCTZxEW.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5507,7 +5507,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Special)** \n \n**Rejuvenate • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self for **17000 -> 20000** Health + 50% of this character's Max Health. If Health started below 50%, also gain Slow.")
+	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Special)** \n \n**Rejuvenate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self for **17000 -> 20000** Health + 50% of this character's Max Health. If Health started below 50%, also gain Slow.")
 	.setThumbnail('https://i.imgur.com/jU3pYkS.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5533,7 +5533,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Special)** \n \n**Rejuvenate • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self for **17000 -> 20000** Health + 50% of this character's Max Health. If Health started below 50%, also gain Slow.")
+	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Special)** \n \n**Rejuvenate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nHeal self for **17000 -> 20000** Health + 50% of this character's Max Health. If Health started below 50%, also gain Slow.")
 	.setThumbnail('https://i.imgur.com/jU3pYkS.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5578,7 +5578,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("mysterio:663750495734726656>	**Mysterio (Special)** \n \n**Master of Illusion • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Blind to primary target.\n**70% -> 100%** chance to gain an assist from a random SINISTER SIX ally.\nGain an assist from a random ally.\nIf target is a CITY HERO, **70% -> 100%** chance to apply Ability Block.")
+	.setDescription("mysterio:663750495734726656>	**Mysterio (Special)** \n \n**Master of Illusion • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Blind to primary target.\n**70% -> 100%** chance to gain an assist from a random SINISTER SIX ally.\nGain an assist from a random ally.\nIf target is a CITY HERO, **70% -> 100%** chance to apply Ability Block.")
 	.setThumbnail('https://i.imgur.com/m9Wv9CM.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5605,7 +5605,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("mysterio:663750495734726656>	**Mysterio (Special)** \n \n**Master of Illusion • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Blind to primary target.\n**70% -> 100%** chance to gain an assist from a random SINISTER SIX ally.\nGain an assist from a random ally.\nIf target is a CITY HERO, **70% -> 100%** chance to apply Ability Block.")
+	.setDescription("mysterio:663750495734726656>	**Mysterio (Special)** \n \n**Master of Illusion • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Blind to primary target.\n**70% -> 100%** chance to gain an assist from a random SINISTER SIX ally.\nGain an assist from a random ally.\nIf target is a CITY HERO, **70% -> 100%** chance to apply Ability Block.")
 	.setThumbnail('https://i.imgur.com/m9Wv9CM.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5651,7 +5651,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mystique:663750495697109002>	**Mystique (Special)** \n \n**Infiltrate • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage. Attack **2 -> 3** additional targets that do not have Stealth for **140 -> 170%** damage.\nAttack all additional targets that do have Stealth for **140% -> 170%** damage + clear Stealth from each target.\nIf no enemies had Stealth, gain Stealth.\nThis ability does not remove Stealth from the primary target.\nIf Magneto is ally, this attack is Unavoidable.\nIf Mister Sinister is an ally, flip **1 -> 2** positive effects to negative effects on each target.")
+	.setDescription("<:mystique:663750495697109002>	**Mystique (Special)** \n \n**Infiltrate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage. Attack **2 -> 3** additional targets that do not have Stealth for **140 -> 170%** damage.\nAttack all additional targets that do have Stealth for **140% -> 170%** damage + clear Stealth from each target.\nIf no enemies had Stealth, gain Stealth.\nThis ability does not remove Stealth from the primary target.\nIf Magneto is ally, this attack is Unavoidable.\nIf Mister Sinister is an ally, flip **1 -> 2** positive effects to negative effects on each target.")
 	.setThumbnail('https://i.imgur.com/7RdsgtC.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5677,7 +5677,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mystique:663750495697109002>	**Mystique (Special)** \n \n**Infiltrate • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage. Attack **2 -> 3** additional targets that do not have Stealth for **140 -> 170%** damage.\nAttack all additional targets that do have Stealth for **140% -> 170%** damage + clear Stealth from each target.\nIf no enemies had Stealth, gain Stealth.\nThis ability does not remove Stealth from the primary target.\nIf Magneto is ally, this attack is Unavoidable.\nIf Mister Sinister is an ally, flip **1 -> 2** positive effects to negative effects on each target.")
+	.setDescription("<:mystique:663750495697109002>	**Mystique (Special)** \n \n**Infiltrate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 240%** damage. Attack **2 -> 3** additional targets that do not have Stealth for **140 -> 170%** damage.\nAttack all additional targets that do have Stealth for **140% -> 170%** damage + clear Stealth from each target.\nIf no enemies had Stealth, gain Stealth.\nThis ability does not remove Stealth from the primary target.\nIf Magneto is ally, this attack is Unavoidable.\nIf Mister Sinister is an ally, flip **1 -> 2** positive effects to negative effects on each target.")
 	.setThumbnail('https://i.imgur.com/7RdsgtC.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5722,7 +5722,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:namor:663750493709008919>	**Namor (Special)** \n \n**Tidal Wave • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 350%** damage. Attack adjacent targets for **280% -> 340%** damage.\nOn target Block, Bonus Attack 2 times for **80% -> 100%** Piercing to primary and adjacent targets.")
+	.setDescription("<:namor:663750493709008919>	**Namor (Special)** \n \n**Tidal Wave • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 350%** damage. Attack adjacent targets for **280% -> 340%** damage.\nOn target Block, Bonus Attack 2 times for **80% -> 100%** Piercing to primary and adjacent targets.")
 	.setThumbnail('https://i.imgur.com/G1OQ8F8.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5748,7 +5748,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:namor:663750493709008919>	**Namor (Special)** \n \n**Tidal Wave • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 350%** damage. Attack adjacent targets for **280% -> 340%** damage.\nOn target Block, Bonus Attack 2 times for **80% -> 100%** Piercing to primary and adjacent targets.")
+	.setDescription("<:namor:663750493709008919>	**Namor (Special)** \n \n**Tidal Wave • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 350%** damage. Attack adjacent targets for **280% -> 340%** damage.\nOn target Block, Bonus Attack 2 times for **80% -> 100%** Piercing to primary and adjacent targets.")
 	.setThumbnail('https://i.imgur.com/G1OQ8F8.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5793,7 +5793,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nebula:663750493033594890>	**Nebula (Special)** \n \n**Challenging Foe • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **170% -> 200%** damage + gain 2 Counter.")
+	.setDescription("<:nebula:663750493033594890>	**Nebula (Special)** \n \n**Challenging Foe • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **170% -> 200%** damage + gain 2 Counter.")
 	.setThumbnail('https://i.imgur.com/F2SyORs.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5819,7 +5819,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nebula:663750493033594890>	**Nebula (Special)** \n \n**Challenging Foe • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **170% -> 200%** damage + gain 2 Counter.")
+	.setDescription("<:nebula:663750493033594890>	**Nebula (Special)** \n \n**Challenging Foe • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **170% -> 200%** damage + gain 2 Counter.")
 	.setThumbnail('https://i.imgur.com/F2SyORs.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5864,7 +5864,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nickfury:663750493687775236>	**Fury (Special)** \n \n**Rally • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up. Spread all positive effects on self to all allies.\nHeal self and all S.H.I.E.L.D. MINION allies for **8000 -> 10000** Health + 15% of this character's Max Health.\nOn WAR DEFENSE, Heal Coulson as well.")
+	.setDescription("<:nickfury:663750493687775236>	**Fury (Special)** \n \n**Rally • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up. Spread all positive effects on self to all allies.\nHeal self and all S.H.I.E.L.D. MINION allies for **8000 -> 10000** Health + 15% of this character's Max Health.\nOn WAR DEFENSE, Heal Coulson as well.")
 	.setThumbnail('https://i.imgur.com/w27xVao.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5890,7 +5890,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nickfury:663750493687775236>	**Fury (Special)** \n \n**Rally • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up. Spread all positive effects on self to all allies.\nHeal self and all S.H.I.E.L.D. MINION allies for **8000 -> 10000** Health + 15% of this character's Max Health.\nOn WAR DEFENSE, Heal Coulson as well.")
+	.setDescription("<:nickfury:663750493687775236>	**Fury (Special)** \n \n**Rally • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up. Spread all positive effects on self to all allies.\nHeal self and all S.H.I.E.L.D. MINION allies for **8000 -> 10000** Health + 15% of this character's Max Health.\nOn WAR DEFENSE, Heal Coulson as well.")
 	.setThumbnail('https://i.imgur.com/w27xVao.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -5935,7 +5935,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Special)** \n \n**First Aid • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal lowest Health ally for **3300 -> 4200** Health + 20% of this character's Max Health.")
+	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Special)** \n \n**First Aid • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal lowest Health ally for **3300 -> 4200** Health + 20% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/mVZTPHB.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -5961,7 +5961,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Special)** \n \n**First Aid • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal lowest Health ally for **3300 -> 4200** Health + 20% of this character's Max Health.")
+	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Special)** \n \n**First Aid • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal lowest Health ally for **3300 -> 4200** Health + 20% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/mVZTPHB.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6006,7 +6006,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:okeye:663750495860686848>	**Okeye (Special)** \n \n**Precision Strike • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 220%** damage + apply Defense Down. Chain to 1 adjacent target for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
+	.setDescription("<:okeye:663750495860686848>	**Okeye (Special)** \n \n**Precision Strike • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 220%** damage + apply Defense Down. Chain to 1 adjacent target for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/m6uRMYd.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6032,7 +6032,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:okeye:663750495860686848>	**Okeye (Special)** \n \n**Precision Strike • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 220%** damage + apply Defense Down. Chain to 1 adjacent target for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
+	.setDescription("<:okeye:663750495860686848>	**Okeye (Special)** \n \n**Precision Strike • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 220%** damage + apply Defense Down. Chain to 1 adjacent target for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/m6uRMYd.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6140,7 +6140,7 @@ if(args[0] == "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Special)** \n \n**Bestow Light • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies to 2 turns. Apply Defense Up to all allies.\nRedistribute 25% of Max Health from self to all allies. All allies receive an additional **6000 -> 10000** Health. This bypasses Heal Block.\nTransfer all negative effects from allies to self.\nIf there are no allies, attack self for 5000% Piercing damage.\nIf Phoenix dies, her Passive Ability is triggered.")
+	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Special)** \n \n**Bestow Light • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies to 2 turns. Apply Defense Up to all allies.\nRedistribute 25% of Max Health from self to all allies. All allies receive an additional **6000 -> 10000** Health. This bypasses Heal Block.\nTransfer all negative effects from allies to self.\nIf there are no allies, attack self for 5000% Piercing damage.\nIf Phoenix dies, her Passive Ability is triggered.")
 	.setThumbnail('https://i.imgur.com/kAV4oD8.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6162,7 +6162,7 @@ if(args[0] == "kit"){
 } else if(args[0] == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Special)** \n \n**Bestow Light • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies to 2 turns. Apply Defense Up to all allies.\nRedistribute 25% of Max Health from self to all allies. All allies receive an additional **6000 -> 10000** Health. This bypasses Heal Block.\nTransfer all negative effects from allies to self.\nIf there are no allies, attack self for 5000% Piercing damage.\nIf Phoenix dies, her Passive Ability is triggered.")
+	.setDescription("<:phoenix:663750496829308958>	**Phoenix (Special)** \n \n**Bestow Light • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to all allies to 2 turns. Apply Defense Up to all allies.\nRedistribute 25% of Max Health from self to all allies. All allies receive an additional **6000 -> 10000** Health. This bypasses Heal Block.\nTransfer all negative effects from allies to self.\nIf there are no allies, attack self for 5000% Piercing damage.\nIf Phoenix dies, her Passive Ability is triggered.")
 	.setThumbnail('https://i.imgur.com/kAV4oD8.png') 
 	message.channel.send(exampleEmbed2);
 } else if(args[0] == "ultimate") {
@@ -6203,7 +6203,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Special)** \n \n**Telekinetic Armament • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** Piercing damage. Chain to 3 adjacent targets for **160% -> 200%** Piercing damage. Clear 2 positive effects from each target.\nCounterattack breaks this Chain.")
+	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Special)** \n \n**Telekinetic Armament • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** Piercing damage. Chain to 3 adjacent targets for **160% -> 200%** Piercing damage. Clear 2 positive effects from each target.\nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/iQK40EF.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6229,7 +6229,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Special)** \n \n**Telekinetic Armament • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** Piercing damage. Chain to 3 adjacent targets for **160% -> 200%** Piercing damage. Clear 2 positive effects from each target.\nCounterattack breaks this Chain.")
+	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Special)** \n \n**Telekinetic Armament • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **160% -> 200%** Piercing damage. Chain to 3 adjacent targets for **160% -> 200%** Piercing damage. Clear 2 positive effects from each target.\nCounterattack breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/iQK40EF.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6274,7 +6274,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:punisher:663750495982190620>	**Punisher (Special)** \n \n**Grenade Launcher • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 200%** damage + 10% Piercing. Attack all adjacent enemies for **140% -> 160%** damage + 10% Piercing.")
+	.setDescription("<:punisher:663750495982190620>	**Punisher (Special)** \n \n**Grenade Launcher • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 200%** damage + 10% Piercing. Attack all adjacent enemies for **140% -> 160%** damage + 10% Piercing.")
 	.setThumbnail('https://i.imgur.com/mMHPY6h.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6301,7 +6301,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:punisher:663750495982190620>	**Punisher (Special)** \n \n**Grenade Launcher • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 200%** damage + 10% Piercing. Attack all adjacent enemies for **140% -> 160%** damage + 10% Piercing.")
+	.setDescription("<:punisher:663750495982190620>	**Punisher (Special)** \n \n**Grenade Launcher • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **180% -> 200%** damage + 10% Piercing. Attack all adjacent enemies for **140% -> 160%** damage + 10% Piercing.")
 	.setThumbnail('https://i.imgur.com/mMHPY6h.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6347,7 +6347,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:pyro:663750496346963968>	**Pyro (Special)** \n \n**Pyrotechnics • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent targets for **140% -> 180%** damage. Apply 2 Bleed for **1 -> 2** turns + Clear 2 positive effects from each target.\nIf Magneto is ally, clear all positive effects from each target.")
+	.setDescription("<:pyro:663750496346963968>	**Pyro (Special)** \n \n**Pyrotechnics • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent targets for **140% -> 180%** damage. Apply 2 Bleed for **1 -> 2** turns + Clear 2 positive effects from each target.\nIf Magneto is ally, clear all positive effects from each target.")
 	.setThumbnail('https://i.imgur.com/TkAXYrx.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6373,7 +6373,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:pyro:663750496346963968>	**Pyro (Special)** \n \n**Pyrotechnics • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent targets for **140% -> 180%** damage. Apply 2 Bleed for **1 -> 2** turns + Clear 2 positive effects from each target.\nIf Magneto is ally, clear all positive effects from each target.")
+	.setDescription("<:pyro:663750496346963968>	**Pyro (Special)** \n \n**Pyrotechnics • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent targets for **140% -> 180%** damage. Apply 2 Bleed for **1 -> 2** turns + Clear 2 positive effects from each target.\nIf Magneto is ally, clear all positive effects from each target.")
 	.setThumbnail('https://i.imgur.com/TkAXYrx.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6418,7 +6418,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:quake:663750496024133632>	**Quake (Special)** \n \n**Shockwave • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **185% -> 210%** damage + clear 2 positive effects. 40% chance to Chain up to 2 targets for **140% -> 160%** damage + clear 2 positive effects.\nCounterattack breaks this Chain. If Coulson or Black Bolt is an ally, apply Slow to primary target and secondary targets.")
+	.setDescription("<:quake:663750496024133632>	**Quake (Special)** \n \n**Shockwave • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **185% -> 210%** damage + clear 2 positive effects. 40% chance to Chain up to 2 targets for **140% -> 160%** damage + clear 2 positive effects.\nCounterattack breaks this Chain. If Coulson or Black Bolt is an ally, apply Slow to primary target and secondary targets.")
 	.setThumbnail('https://i.imgur.com/4LAMndt.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6444,7 +6444,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:quake:663750496024133632>	**Quake (Special)** \n \n**Shockwave • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **185% -> 210%** damage + clear 2 positive effects. 40% chance to Chain up to 2 targets for **140% -> 160%** damage + clear 2 positive effects.\nCounterattack breaks this Chain. If Coulson or Black Bolt is an ally, apply Slow to primary target and secondary targets.")
+	.setDescription("<:quake:663750496024133632>	**Quake (Special)** \n \n**Shockwave • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **185% -> 210%** damage + clear 2 positive effects. 40% chance to Chain up to 2 targets for **140% -> 160%** damage + clear 2 positive effects.\nCounterattack breaks this Chain. If Coulson or Black Bolt is an ally, apply Slow to primary target and secondary targets.")
 	.setThumbnail('https://i.imgur.com/4LAMndt.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6489,7 +6489,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Special)** \n \n**Full Blast • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **230% -> 270%** damage and adjacent targets for **210% -> 220%** damage.")
+	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Special)** \n \n**Full Blast • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **230% -> 270%** damage and adjacent targets for **210% -> 220%** damage.")
 	.setThumbnail('https://i.imgur.com/7OP10lg.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -6510,7 +6510,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Special)** \n \n**Full Blast • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **230% -> 270%** damage and adjacent targets for **210% -> 220%** damage.")
+	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Special)** \n \n**Full Blast • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **230% -> 270%** damage and adjacent targets for **210% -> 220%** damage.")
 	.setThumbnail('https://i.imgur.com/7OP10lg.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6547,7 +6547,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Special)** \n \n**Avast! • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up for 3 turns. Heal self for **1700 -> 2000** Health + 5% of this character's Max Health.")
+	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Special)** \n \n**Avast! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up for 3 turns. Heal self for **1700 -> 2000** Health + 5% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/oYDake6.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -6568,7 +6568,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Special)** \n \n**Avast! • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up for 3 turns. Heal self for **1700 -> 2000** Health + 5% of this character's Max Health.")
+	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Special)** \n \n**Avast! • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Defense Up for 3 turns. Heal self for **1700 -> 2000** Health + 5% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/oYDake6.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6605,7 +6605,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Special)** \n \n**Stitcher Kit • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health. Then Heal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health.")
+	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Special)** \n \n**Stitcher Kit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health. Then Heal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/ZNrvcBp.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -6626,7 +6626,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Special)** \n \n**Stitcher Kit • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health. Then Heal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health.")
+	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Special)** \n \n**Stitcher Kit • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health. Then Heal most injured ally for **2500 -> 3500** Health + 8% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/ZNrvcBp.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6663,7 +6663,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:redskull:663750496959594531>	**Red Skull (Special)** \n \n**Elite Guard • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** HYDRA MINIONS at **300% -> 340%** normal damage and 150% of normal Health.\nFill Speed Bar of self and all allies by +30%.\nOn WAR DEFENSE, generate 2 Ability Energy for self.")
+	.setDescription("<:redskull:663750496959594531>	**Red Skull (Special)** \n \n**Elite Guard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** HYDRA MINIONS at **300% -> 340%** normal damage and 150% of normal Health.\nFill Speed Bar of self and all allies by +30%.\nOn WAR DEFENSE, generate 2 Ability Energy for self.")
 	.setThumbnail('https://i.imgur.com/2gL6nXV.png')
 	.addFooter("Possible Summons:\nHydra Scientist\nHydra Rifle Trooper")
 	
@@ -6692,7 +6692,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:redskull:663750496959594531>	**Red Skull (Special)** \n \n**Elite Guard • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** HYDRA MINIONS at **300% -> 340%** normal damage and 150% of normal Health.\nFill Speed Bar of self and all allies by +30%.\nOn WAR DEFENSE, generate 2 Ability Energy for self.")
+	.setDescription("<:redskull:663750496959594531>	**Red Skull (Special)** \n \n**Elite Guard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** HYDRA MINIONS at **300% -> 340%** normal damage and 150% of normal Health.\nFill Speed Bar of self and all allies by +30%.\nOn WAR DEFENSE, generate 2 Ability Energy for self.")
 	.setThumbnail('https://i.imgur.com/2gL6nXV.png') 
 	.addFooter("Possible Summons:\nHydra Scientist\nHydra Rifle Trooper")
 	message.channel.send(exampleEmbed2);
@@ -6739,7 +6739,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rescue:663750496057819147>	**Rescue (Special)** \n \n**Tech Shield • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nBarrier all allies for **2500 -> 3500** + 10% of this character's Max Health. Apply Regeneration to all allies. In WAR, apply 2 Regeneration to all allies instead.")
+	.setDescription("<:rescue:663750496057819147>	**Rescue (Special)** \n \n**Tech Shield • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nBarrier all allies for **2500 -> 3500** + 10% of this character's Max Health. Apply Regeneration to all allies. In WAR, apply 2 Regeneration to all allies instead.")
 	.setThumbnail('https://i.imgur.com/UGC7VVq.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6765,7 +6765,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rescue:663750496057819147>	**Rescue (Special)** \n \n**Tech Shield • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nBarrier all allies for **2500 -> 3500** + 10% of this character's Max Health. Apply Regeneration to all allies. In WAR, apply 2 Regeneration to all allies instead.")
+	.setDescription("<:rescue:663750496057819147>	**Rescue (Special)** \n \n**Tech Shield • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nBarrier all allies for **2500 -> 3500** + 10% of this character's Max Health. Apply Regeneration to all allies. In WAR, apply 2 Regeneration to all allies instead.")
 	.setThumbnail('https://i.imgur.com/UGC7VVq.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6810,7 +6810,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rhino:663750497328693261>	**Rhino (Special)** \n \n**Furious Charge • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt.\nClear 1 negative effect from self and each adjacent ally.\nAttack primary and all adjacent targets for **290% -> 350%** damage.\nThis attack cannot be blocked.")
+	.setDescription("<:rhino:663750497328693261>	**Rhino (Special)** \n \n**Furious Charge • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt.\nClear 1 negative effect from self and each adjacent ally.\nAttack primary and all adjacent targets for **290% -> 350%** damage.\nThis attack cannot be blocked.")
 	.setThumbnail('https://i.imgur.com/GjNG9ou.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6836,7 +6836,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rhino:663750497328693261>	**Rhino (Special)** \n \n**Furious Charge • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt.\nClear 1 negative effect from self and each adjacent ally.\nAttack primary and all adjacent targets for **290% -> 350%** damage.\nThis attack cannot be blocked.")
+	.setDescription("<:rhino:663750497328693261>	**Rhino (Special)** \n \n**Furious Charge • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain Taunt.\nClear 1 negative effect from self and each adjacent ally.\nAttack primary and all adjacent targets for **290% -> 350%** damage.\nThis attack cannot be blocked.")
 	.setThumbnail('https://i.imgur.com/GjNG9ou.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6881,7 +6881,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Special)** \n \n**Pretty Good Plan • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 340%** damage.\nIf Groot is an ally, gain an Assist from Groot and apply Taunt to Groot.\n**50% -> 70%** chance to gain an Assist from a random ally.")
+	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Special)** \n \n**Pretty Good Plan • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 340%** damage.\nIf Groot is an ally, gain an Assist from Groot and apply Taunt to Groot.\n**50% -> 70%** chance to gain an Assist from a random ally.")
 	.setThumbnail('222') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6907,7 +6907,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Special)** \n \n**Pretty Good Plan • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 340%** damage.\nIf Groot is an ally, gain an Assist from Groot and apply Taunt to Groot.\n**50% -> 70%** chance to gain an Assist from a random ally.")
+	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Special)** \n \n**Pretty Good Plan • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **310% -> 340%** damage.\nIf Groot is an ally, gain an Assist from Groot and apply Taunt to Groot.\n**50% -> 70%** chance to gain an Assist from a random ally.")
 	.setThumbnail('222') 
 	message.channel.send(exampleEmbed2);
 }
@@ -6952,7 +6952,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ronan:663752093135274014>	**Ronan (Special)** \n \n**Judgment • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **1-2 -> 2** KREE allies at **300% -> 340%** normal Damage and 100% of normal Health. Clear 2 negative effects from all allies.\nPossible Summons:\nKree Reaper\nKree Noble")
+	.setDescription("<:ronan:663752093135274014>	**Ronan (Special)** \n \n**Judgment • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **1-2 -> 2** KREE allies at **300% -> 340%** normal Damage and 100% of normal Health. Clear 2 negative effects from all allies.\nPossible Summons:\nKree Reaper\nKree Noble")
 	.setThumbnail('https://i.imgur.com/UB2JLHC.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -6978,7 +6978,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ronan:663752093135274014>	**Ronan (Special)** \n \n**Judgment • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **1-2 -> 2** KREE allies at **300% -> 340%** normal Damage and 100% of normal Health. Clear 2 negative effects from all allies.\nPossible Summons:\nKree Reaper\nKree Noble")
+	.setDescription("<:ronan:663752093135274014>	**Ronan (Special)** \n \n**Judgment • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **1-2 -> 2** KREE allies at **300% -> 340%** normal Damage and 100% of normal Health. Clear 2 negative effects from all allies.\nPossible Summons:\nKree Reaper\nKree Noble")
 	.setThumbnail('https://i.imgur.com/UB2JLHC.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7023,7 +7023,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Special)** \n \n**Thrash • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **390% -> 460%** damage. If target has Taunt, this ability deals an additional **60% -> 80%** Piercing damage.\nAttack all adjacent targets for **280% -> 320%** damage.\nThis attack cannot be blocked.")
+	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Special)** \n \n**Thrash • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **390% -> 460%** damage. If target has Taunt, this ability deals an additional **60% -> 80%** Piercing damage.\nAttack all adjacent targets for **280% -> 320%** damage.\nThis attack cannot be blocked.")
 	.setThumbnail('https://i.imgur.com/Uu2hVBK.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7049,7 +7049,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Special)** \n \n**Thrash • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **390% -> 460%** damage. If target has Taunt, this ability deals an additional **60% -> 80%** Piercing damage.\nAttack all adjacent targets for **280% -> 320%** damage.\nThis attack cannot be blocked.")
+	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Special)** \n \n**Thrash • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **390% -> 460%** damage. If target has Taunt, this ability deals an additional **60% -> 80%** Piercing damage.\nAttack all adjacent targets for **280% -> 320%** damage.\nThis attack cannot be blocked.")
 	.setThumbnail('https://i.imgur.com/Uu2hVBK.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7094,7 +7094,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Special)** \n \n**Warp Reality • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nRedistribute your total squad health evenly. Apply Deflect to all allies. **50% -> 100%** chance to apply Defense Up to all allies, plus always apply to Vision if he is an ally.")
+	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Special)** \n \n**Warp Reality • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nRedistribute your total squad health evenly. Apply Deflect to all allies. **50% -> 100%** chance to apply Defense Up to all allies, plus always apply to Vision if he is an ally.")
 	.setThumbnail('https://i.imgur.com/4wJ707q.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7120,7 +7120,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Special)** \n \n**Warp Reality • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nRedistribute your total squad health evenly. Apply Deflect to all allies. **50% -> 100%** chance to apply Defense Up to all allies, plus always apply to Vision if he is an ally.")
+	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Special)** \n \n**Warp Reality • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nRedistribute your total squad health evenly. Apply Deflect to all allies. **50% -> 100%** chance to apply Defense Up to all allies, plus always apply to Vision if he is an ally.")
 	.setThumbnail('https://i.imgur.com/4wJ707q.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7165,7 +7165,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Special)** \n \n**Field Trials • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nFlip **3 -> 4** negative effects into positive effects for all allies. Apply 1 Regeneration to self and all A.I.M. allies. Increase duration of positive effects on self and all A.I.M. allies by +1, up to a maximum of 3.")
+	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Special)** \n \n**Field Trials • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nFlip **3 -> 4** negative effects into positive effects for all allies. Apply 1 Regeneration to self and all A.I.M. allies. Increase duration of positive effects on self and all A.I.M. allies by +1, up to a maximum of 3.")
 	.setThumbnail('https://i.imgur.com/3YKx2tV.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7191,7 +7191,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Special)** \n \n**Field Trials • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nFlip **3 -> 4** negative effects into positive effects for all allies. Apply 1 Regeneration to self and all A.I.M. allies. Increase duration of positive effects on self and all A.I.M. allies by +1, up to a maximum of 3.")
+	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Special)** \n \n**Field Trials • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nFlip **3 -> 4** negative effects into positive effects for all allies. Apply 1 Regeneration to self and all A.I.M. allies. Increase duration of positive effects on self and all A.I.M. allies by +1, up to a maximum of 3.")
 	.setThumbnail('https://i.imgur.com/3YKx2tV.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7236,7 +7236,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Special)** \n \n**Barrage • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **200% -> 230%** damage + 50% chance to remove 1 positive effect from all targets.")
+	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Special)** \n \n**Barrage • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **200% -> 230%** damage + 50% chance to remove 1 positive effect from all targets.")
 	.setThumbnail('https://i.imgur.com/OnkyDQb.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -7257,7 +7257,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Special)** \n \n**Barrage • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **200% -> 230%** damage + 50% chance to remove 1 positive effect from all targets.")
+	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Special)** \n \n**Barrage • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **200% -> 230%** damage + 50% chance to remove 1 positive effect from all targets.")
 	.setThumbnail('https://i.imgur.com/OnkyDQb.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7294,7 +7294,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Special)** \n \n**Emergency Treatment • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nIf Coulson is an ally and dead, Revive him with 51% Health. 20% chance to Revive dead ally with 10% Health. Heal all allies for **1100 -> 1500** Health + 15% of this character's Max Health.\nIf allies are S.H.I.E.L.D., then heal for an additional 20% of this character's Max Health.")
+	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Special)** \n \n**Emergency Treatment • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nIf Coulson is an ally and dead, Revive him with 51% Health. 20% chance to Revive dead ally with 10% Health. Heal all allies for **1100 -> 1500** Health + 15% of this character's Max Health.\nIf allies are S.H.I.E.L.D., then heal for an additional 20% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/bI3AoNl.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -7315,7 +7315,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Special)** \n \n**Emergency Treatment • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nIf Coulson is an ally and dead, Revive him with 51% Health. 20% chance to Revive dead ally with 10% Health. Heal all allies for **1100 -> 1500** Health + 15% of this character's Max Health.\nIf allies are S.H.I.E.L.D., then heal for an additional 20% of this character's Max Health.")
+	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Special)** \n \n**Emergency Treatment • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nIf Coulson is an ally and dead, Revive him with 51% Health. 20% chance to Revive dead ally with 10% Health. Heal all allies for **1100 -> 1500** Health + 15% of this character's Max Health.\nIf allies are S.H.I.E.L.D., then heal for an additional 20% of this character's Max Health.")
 	.setThumbnail('https://i.imgur.com/bI3AoNl.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7352,7 +7352,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Special)** \n \n**Extraction • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to most injured ally for 2 turns + heal for **900 -> 1200** Health + 10% of this character's Max Health. Apply 3 Regeneration.\nIf ally is Nick Fury or S.H.I.E.L.D. MINION, apply additional Regeneration. On WAR DEFENSE, if that ally is Coulson, also apply additional Regeneration.")
+	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Special)** \n \n**Extraction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to most injured ally for 2 turns + heal for **900 -> 1200** Health + 10% of this character's Max Health. Apply 3 Regeneration.\nIf ally is Nick Fury or S.H.I.E.L.D. MINION, apply additional Regeneration. On WAR DEFENSE, if that ally is Coulson, also apply additional Regeneration.")
 	.setThumbnail('https://i.imgur.com/WOxcCYS.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -7373,7 +7373,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Special)** \n \n**Extraction • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to most injured ally for 2 turns + heal for **900 -> 1200** Health + 10% of this character's Max Health. Apply 3 Regeneration.\nIf ally is Nick Fury or S.H.I.E.L.D. MINION, apply additional Regeneration. On WAR DEFENSE, if that ally is Coulson, also apply additional Regeneration.")
+	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Special)** \n \n**Extraction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Stealth to most injured ally for 2 turns + heal for **900 -> 1200** Health + 10% of this character's Max Health. Apply 3 Regeneration.\nIf ally is Nick Fury or S.H.I.E.L.D. MINION, apply additional Regeneration. On WAR DEFENSE, if that ally is Coulson, also apply additional Regeneration.")
 	.setThumbnail('https://i.imgur.com/WOxcCYS.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7410,7 +7410,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Special)** \n \n**Crowd Control • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **320% -> 370%** damage + Bonus attack for **300% -> 350%** damage. If target has Slow, apply Stun.")
+	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Special)** \n \n**Crowd Control • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **320% -> 370%** damage + Bonus attack for **300% -> 350%** damage. If target has Slow, apply Stun.")
 	.setThumbnail('https://i.imgur.com/mGLtHGV.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -7431,7 +7431,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Special)** \n \n**Crowd Control • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **320% -> 370%** damage + Bonus attack for **300% -> 350%** damage. If target has Slow, apply Stun.")
+	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Special)** \n \n**Crowd Control • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **320% -> 370%** damage + Bonus attack for **300% -> 350%** damage. If target has Slow, apply Stun.")
 	.setThumbnail('https://i.imgur.com/mGLtHGV.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7468,7 +7468,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Special)** \n \n**Overwatch • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **340% -> 370%** damage + **80% -> 100%** Piercing.")
+	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Special)** \n \n**Overwatch • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **340% -> 370%** damage + **80% -> 100%** Piercing.")
 	.setThumbnail('https://i.imgur.com/8UPTtFL.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -7489,7 +7489,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Special)** \n \n**Overwatch • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **340% -> 370%** damage + **80% -> 100%** Piercing.")
+	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Special)** \n \n**Overwatch • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **340% -> 370%** damage + **80% -> 100%** Piercing.")
 	.setThumbnail('https://i.imgur.com/8UPTtFL.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7527,7 +7527,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shocker:663750794142679041>	**Shocker (Special)** \n \n**Sonic Dissonance • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGenerate 1 Ability Energy for self.\nApply Offense Up to self for **1-2 -> 2** turns.\nApply Offense Up to **2 -> all** SINISTER SIX allies.\nChange Speed Bar by 80%.")
+	.setDescription("<:shocker:663750794142679041>	**Shocker (Special)** \n \n**Sonic Dissonance • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGenerate 1 Ability Energy for self.\nApply Offense Up to self for **1-2 -> 2** turns.\nApply Offense Up to **2 -> all** SINISTER SIX allies.\nChange Speed Bar by 80%.")
 	.setThumbnail('https://i.imgur.com/prHwuDf.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7553,7 +7553,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shocker:663750794142679041>	**Shocker (Special)** \n \n**Sonic Dissonance • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGenerate 1 Ability Energy for self.\nApply Offense Up to self for **1-2 -> 2** turns.\nApply Offense Up to **2 -> all** SINISTER SIX allies.\nChange Speed Bar by 80%.")
+	.setDescription("<:shocker:663750794142679041>	**Shocker (Special)** \n \n**Sonic Dissonance • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGenerate 1 Ability Energy for self.\nApply Offense Up to self for **1-2 -> 2** turns.\nApply Offense Up to **2 -> all** SINISTER SIX allies.\nChange Speed Bar by 80%.")
 	.setThumbnail('https://i.imgur.com/prHwuDf.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7598,7 +7598,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shuri:663750793765060629>	**Shuri (Special)** \n \n**Instant Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Up to self and all allies for 2 turns.\nApply +1 Charged, up to a maximum of 5, to self and all WAKANDAN allies.\nGenerate Ability Energy for 2 random allies. Generate Ability Energy for 1 random WAKANDAN ally.")
+	.setDescription("<:shuri:663750793765060629>	**Shuri (Special)** \n \n**Instant Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Up to self and all allies for 2 turns.\nApply +1 Charged, up to a maximum of 5, to self and all WAKANDAN allies.\nGenerate Ability Energy for 2 random allies. Generate Ability Energy for 1 random WAKANDAN ally.")
 	.setThumbnail('https://i.imgur.com/JkKv1vJ.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7624,7 +7624,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shuri:663750793765060629>	**Shuri (Special)** \n \n**Instant Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Up to self and all allies for 2 turns.\nApply +1 Charged, up to a maximum of 5, to self and all WAKANDAN allies.\nGenerate Ability Energy for 2 random allies. Generate Ability Energy for 1 random WAKANDAN ally.")
+	.setDescription("<:shuri:663750793765060629>	**Shuri (Special)** \n \n**Instant Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nApply Defense Up to self and all allies for 2 turns.\nApply +1 Charged, up to a maximum of 5, to self and all WAKANDAN allies.\nGenerate Ability Energy for 2 random allies. Generate Ability Energy for 1 random WAKANDAN ally.")
 	.setThumbnail('https://i.imgur.com/JkKv1vJ.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7669,7 +7669,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sif:663750798311948299>	**Sif (Special)** \n \n**Shield Slam • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 340%** damage.\nGain Taunt and 3 Counter.")
+	.setDescription("<:sif:663750798311948299>	**Sif (Special)** \n \n**Shield Slam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 340%** damage.\nGain Taunt and 3 Counter.")
 	.setThumbnail('https://i.imgur.com/vqiZAiN.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7695,7 +7695,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sif:663750798311948299>	**Sif (Special)** \n \n**Shield Slam • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 340%** damage.\nGain Taunt and 3 Counter.")
+	.setDescription("<:sif:663750798311948299>	**Sif (Special)** \n \n**Shield Slam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **290% -> 340%** damage.\nGain Taunt and 3 Counter.")
 	.setThumbnail('https://i.imgur.com/vqiZAiN.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7740,7 +7740,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Special)** \n \n**Web Slinger • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **190% -> 200%** damage + Chain to **2-3 -> 3** adjacent targets for **150% -> 160%** damage. Apply Defense Down to each target for 2 turns.\nThis attack cannot be Countered.")
+	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Special)** \n \n**Web Slinger • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **190% -> 200%** damage + Chain to **2-3 -> 3** adjacent targets for **150% -> 160%** damage. Apply Defense Down to each target for 2 turns.\nThis attack cannot be Countered.")
 	.setThumbnail('https://i.imgur.com/pdhaJwJ.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7766,7 +7766,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Special)** \n \n**Web Slinger • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **190% -> 200%** damage + Chain to **2-3 -> 3** adjacent targets for **150% -> 160%** damage. Apply Defense Down to each target for 2 turns.\nThis attack cannot be Countered.")
+	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Special)** \n \n**Web Slinger • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **190% -> 200%** damage + Chain to **2-3 -> 3** adjacent targets for **150% -> 160%** damage. Apply Defense Down to each target for 2 turns.\nThis attack cannot be Countered.")
 	.setThumbnail('https://i.imgur.com/pdhaJwJ.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7811,7 +7811,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:starlord:663750797447921705>	**Star Lord (Special)** \n \n**Clever Distraction • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant 2 Ability Energy to random adjacent allies.\nApply Blind to primary target and an additional random target + 50% chance to apply to a third target.\nThis ability is Unavoidable.")
+	.setDescription("<:starlord:663750797447921705>	**Star Lord (Special)** \n \n**Clever Distraction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant 2 Ability Energy to random adjacent allies.\nApply Blind to primary target and an additional random target + 50% chance to apply to a third target.\nThis ability is Unavoidable.")
 	.setThumbnail('https://i.imgur.com/rxFuTu0.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7837,7 +7837,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:starlord:663750797447921705>	**Star Lord (Special)** \n \n**Clever Distraction • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant 2 Ability Energy to random adjacent allies.\nApply Blind to primary target and an additional random target + 50% chance to apply to a third target.\nThis ability is Unavoidable.")
+	.setDescription("<:starlord:663750797447921705>	**Star Lord (Special)** \n \n**Clever Distraction • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant 2 Ability Energy to random adjacent allies.\nApply Blind to primary target and an additional random target + 50% chance to apply to a third target.\nThis ability is Unavoidable.")
 	.setThumbnail('https://i.imgur.com/rxFuTu0.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7882,7 +7882,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Special)** \n \n**Ice Storm • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **150% -> 180%** damage + 50% chance to apply Slow to each target.\nIf Charged, chance to apply Slow is increased by **+20% -> +25%** per Charged. Additionally, 10% chance to apply Stun to each target, and chance to apply is increased by +10% per Charged. Then lose Charged.\nThis attack has +100% Extra Focus and cannot be Dodged.")
+	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Special)** \n \n**Ice Storm • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **150% -> 180%** damage + 50% chance to apply Slow to each target.\nIf Charged, chance to apply Slow is increased by **+20% -> +25%** per Charged. Additionally, 10% chance to apply Stun to each target, and chance to apply is increased by +10% per Charged. Then lose Charged.\nThis attack has +100% Extra Focus and cannot be Dodged.")
 	.setThumbnail('https://i.imgur.com/zKaLYAw.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7908,7 +7908,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Special)** \n \n**Ice Storm • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **150% -> 180%** damage + 50% chance to apply Slow to each target.\nIf Charged, chance to apply Slow is increased by **+20% -> +25%** per Charged. Additionally, 10% chance to apply Stun to each target, and chance to apply is increased by +10% per Charged. Then lose Charged.\nThis attack has +100% Extra Focus and cannot be Dodged.")
+	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Special)** \n \n**Ice Storm • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack all targets for **150% -> 180%** damage + 50% chance to apply Slow to each target.\nIf Charged, chance to apply Slow is increased by **+20% -> +25%** per Charged. Additionally, 10% chance to apply Stun to each target, and chance to apply is increased by +10% per Charged. Then lose Charged.\nThis attack has +100% Extra Focus and cannot be Dodged.")
 	.setThumbnail('https://i.imgur.com/zKaLYAw.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -7953,7 +7953,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Special)** \n \n**Superiority • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +1 Taunt, up to a maximum of 3.\nGain 3 Deflect + Barrier self for **10% -> 15%** of this character's Max Health.\nGenerate 2 Ability Energy for 2 random Marauders allies.")
+	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Special)** \n \n**Superiority • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +1 Taunt, up to a maximum of 3.\nGain 3 Deflect + Barrier self for **10% -> 15%** of this character's Max Health.\nGenerate 2 Ability Energy for 2 random Marauders allies.")
 	.setThumbnail('https://i.imgur.com/wM1Hx5K.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -7979,7 +7979,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Special)** \n \n**Superiority • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +1 Taunt, up to a maximum of 3.\nGain 3 Deflect + Barrier self for **10% -> 15%** of this character's Max Health.\nGenerate 2 Ability Energy for 2 random Marauders allies.")
+	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Special)** \n \n**Superiority • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGain +1 Taunt, up to a maximum of 3.\nGain 3 Deflect + Barrier self for **10% -> 15%** of this character's Max Health.\nGenerate 2 Ability Energy for 2 random Marauders allies.")
 	.setThumbnail('https://i.imgur.com/wM1Hx5K.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8024,7 +8024,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thanos:663750798324400128>	**Thanos (Special)** \n \n**Brutal Assault • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **300% -> 350%** damage + apply Offense Down. Gain Taunt for 2 turns.")
+	.setDescription("<:thanos:663750798324400128>	**Thanos (Special)** \n \n**Brutal Assault • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **300% -> 350%** damage + apply Offense Down. Gain Taunt for 2 turns.")
 	.setThumbnail('https://i.imgur.com/9K0OnTU.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8050,7 +8050,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thanos:663750798324400128>	**Thanos (Special)** \n \n**Brutal Assault • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **300% -> 350%** damage + apply Offense Down. Gain Taunt for 2 turns.")
+	.setDescription("<:thanos:663750798324400128>	**Thanos (Special)** \n \n**Brutal Assault • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **300% -> 350%** damage + apply Offense Down. Gain Taunt for 2 turns.")
 	.setThumbnail('https://i.imgur.com/9K0OnTU.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8095,7 +8095,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thing:663750797791592478>	**The Thing (Special)** \n \n**Pummelling Stone • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **240% -> 280%** damage. Bonus Attack **1-2 -> 2** times for **180% -> 220%** damage.")
+	.setDescription("<:thing:663750797791592478>	**The Thing (Special)** \n \n**Pummelling Stone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **240% -> 280%** damage. Bonus Attack **1-2 -> 2** times for **180% -> 220%** damage.")
 	.setThumbnail('https://i.imgur.com/loLFfJK.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8121,7 +8121,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thing:663750797791592478>	**The Thing (Special)** \n \n**Pummelling Stone • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **240% -> 280%** damage. Bonus Attack **1-2 -> 2** times for **180% -> 220%** damage.")
+	.setDescription("<:thing:663750797791592478>	**The Thing (Special)** \n \n**Pummelling Stone • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **240% -> 280%** damage. Bonus Attack **1-2 -> 2** times for **180% -> 220%** damage.")
 	.setThumbnail('https://i.imgur.com/loLFfJK.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8166,7 +8166,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thor:663750798014021632>	**Thor (Special)** \n \n**Hammer Throw • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage. Chain to **2-3 -> 3** adjacent targets for **200% -> 230%** damage.\nDodge breaks this Chain.")
+	.setDescription("<:thor:663750798014021632>	**Thor (Special)** \n \n**Hammer Throw • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage. Chain to **2-3 -> 3** adjacent targets for **200% -> 230%** damage.\nDodge breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/KXmuYhe.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8192,7 +8192,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thor:663750798014021632>	**Thor (Special)** \n \n**Hammer Throw • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage. Chain to **2-3 -> 3** adjacent targets for **200% -> 230%** damage.\nDodge breaks this Chain.")
+	.setDescription("<:thor:663750798014021632>	**Thor (Special)** \n \n**Hammer Throw • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **260% -> 300%** damage. Chain to **2-3 -> 3** adjacent targets for **200% -> 230%** damage.\nDodge breaks this Chain.")
 	.setThumbnail('https://i.imgur.com/KXmuYhe.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8237,7 +8237,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:toad:684029278425579556>	**Toad (Special)** \n \n**Acid Spray • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack the primary and all adjacent targets for **230% -> 280%** damage. Each target has all negative effects prolonged by a duration of 1.")
+	.setDescription("<:toad:684029278425579556>	**Toad (Special)** \n \n**Acid Spray • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack the primary and all adjacent targets for **230% -> 280%** damage. Each target has all negative effects prolonged by a duration of 1.")
 	.setThumbnail('https://i.imgur.com/aN5QmRN.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8263,7 +8263,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:toad:684029278425579556>	**Toad (Special)** \n \n**Acid Spray • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack the primary and all adjacent targets for **230% -> 280%** damage. Each target has all negative effects prolonged by a duration of 1.")
+	.setDescription("<:toad:684029278425579556>	**Toad (Special)** \n \n**Acid Spray • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack the primary and all adjacent targets for **230% -> 280%** damage. Each target has all negative effects prolonged by a duration of 1.")
 	.setThumbnail('https://i.imgur.com/aN5QmRN.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8307,7 +8307,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Special)** \n \n**Energy Beam • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent enemies for **230% -> 280%** Piercing.\nTransfer **2 -> all** positive effects, excluding Stealth and Taunt, from each target to self.\nApply Regeneration to self and adjacent allies.")
+	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Special)** \n \n**Energy Beam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent enemies for **230% -> 280%** Piercing.\nTransfer **2 -> all** positive effects, excluding Stealth and Taunt, from each target to self.\nApply Regeneration to self and adjacent allies.")
 	.setThumbnail('https://i.imgur.com/tdi8pkw.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8333,7 +8333,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Special)** \n \n**Energy Beam • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent enemies for **230% -> 280%** Piercing.\nTransfer **2 -> all** positive effects, excluding Stealth and Taunt, from each target to self.\nApply Regeneration to self and adjacent allies.")
+	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Special)** \n \n**Energy Beam • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target and adjacent enemies for **230% -> 280%** Piercing.\nTransfer **2 -> all** positive effects, excluding Stealth and Taunt, from each target to self.\nApply Regeneration to self and adjacent allies.")
 	.setThumbnail('https://i.imgur.com/tdi8pkw.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8378,7 +8378,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultron:663750798202634250>	**Ultron (Special)** \n \n**Factory Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** Ultron Minions at **300% -> 340%** normal damage and 100% of normal Health. Apply Defense Up to self and all ULTRON MINION allies for 2 turns.\nPossible Summons:\nUltron Incinerator\nUltron Accelerator\nUltron Fabricator")
+	.setDescription("<:ultron:663750798202634250>	**Ultron (Special)** \n \n**Factory Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** Ultron Minions at **300% -> 340%** normal damage and 100% of normal Health. Apply Defense Up to self and all ULTRON MINION allies for 2 turns.\nPossible Summons:\nUltron Incinerator\nUltron Accelerator\nUltron Fabricator")
 	.setThumbnail('https://i.imgur.com/HaIZygM.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8404,7 +8404,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultron:663750798202634250>	**Ultron (Special)** \n \n**Factory Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** Ultron Minions at **300% -> 340%** normal damage and 100% of normal Health. Apply Defense Up to self and all ULTRON MINION allies for 2 turns.\nPossible Summons:\nUltron Incinerator\nUltron Accelerator\nUltron Fabricator")
+	.setDescription("<:ultron:663750798202634250>	**Ultron (Special)** \n \n**Factory Upgrade • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nSummon **2-3 -> 3** Ultron Minions at **300% -> 340%** normal damage and 100% of normal Health. Apply Defense Up to self and all ULTRON MINION allies for 2 turns.\nPossible Summons:\nUltron Incinerator\nUltron Accelerator\nUltron Fabricator")
 	.setThumbnail('https://i.imgur.com/HaIZygM.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8449,7 +8449,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Special)** \n \n**Overdrive • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Speed Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Speed Up, fill Ultron's Speed Bar by 40% instead of 25%.\n**No changes**")
+	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Special)** \n \n**Overdrive • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Speed Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Speed Up, fill Ultron's Speed Bar by 40% instead of 25%.\n**No changes**")
 	.setThumbnail('https://i.imgur.com/7ZuQVM4.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -8470,7 +8470,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Special)** \n \n**Overdrive • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Speed Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Speed Up, fill Ultron's Speed Bar by 40% instead of 25%.\n**No changes**")
+	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Special)** \n \n**Overdrive • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Speed Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Speed Up, fill Ultron's Speed Bar by 40% instead of 25%.\n**No changes**")
 	.setThumbnail('https://i.imgur.com/7ZuQVM4.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8506,7 +8506,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Special)** \n \n**Fusion • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal the 4 most injured allies, except Ultron, for **6000 -> 7000** Health + 15% of this character's Max Health.\nHeal Ultron for **12000 -> 14000** Health + 25% of this character's Max Health + Clear **3 -> 4** negative effects from Ultron. Grant Ultron Regeneration for 2 turns + fill Ultron's Speed Bar by 25%.")
+	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Special)** \n \n**Fusion • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal the 4 most injured allies, except Ultron, for **6000 -> 7000** Health + 15% of this character's Max Health.\nHeal Ultron for **12000 -> 14000** Health + 25% of this character's Max Health + Clear **3 -> 4** negative effects from Ultron. Grant Ultron Regeneration for 2 turns + fill Ultron's Speed Bar by 25%.")
 	.setThumbnail('https://i.imgur.com/Yq1MPQR.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -8527,7 +8527,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Special)** \n \n**Fusion • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal the 4 most injured allies, except Ultron, for **6000 -> 7000** Health + 15% of this character's Max Health.\nHeal Ultron for **12000 -> 14000** Health + 25% of this character's Max Health + Clear **3 -> 4** negative effects from Ultron. Grant Ultron Regeneration for 2 turns + fill Ultron's Speed Bar by 25%.")
+	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Special)** \n \n**Fusion • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nHeal the 4 most injured allies, except Ultron, for **6000 -> 7000** Health + 15% of this character's Max Health.\nHeal Ultron for **12000 -> 14000** Health + 25% of this character's Max Health + Clear **3 -> 4** negative effects from Ultron. Grant Ultron Regeneration for 2 turns + fill Ultron's Speed Bar by 25%.")
 	.setThumbnail('https://i.imgur.com/Yq1MPQR.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8564,7 +8564,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Special)** \n \n**Ignition • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Offense Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Offense Up, grant Ultron 1 Ability Energy.\n**No changes**")
+	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Special)** \n \n**Ignition • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Offense Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Offense Up, grant Ultron 1 Ability Energy.\n**No changes**")
 	.setThumbnail('https://i.imgur.com/Fq5ohWt.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed4 = new Discord.RichEmbed()
@@ -8585,7 +8585,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Special)** \n \n**Ignition • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Offense Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Offense Up, grant Ultron 1 Ability Energy.\n**No changes**")
+	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Special)** \n \n**Ignition • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nGrant Offense Up to self, 4 allies, and Ultron for 2 turns + Fill Ultron's Speed Bar by 25%. If Ultron already had Offense Up, grant Ultron 1 Ability Energy.\n**No changes**")
 	.setThumbnail('https://i.imgur.com/Fq5ohWt.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8621,7 +8621,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:venom:663750908668018710>	**Venom (Special)** \n \n**Violate • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **330% -> 380%** damage. Apply Ability Block and 3 Bleed for **1 -> 2** turns.")
+	.setDescription("<:venom:663750908668018710>	**Venom (Special)** \n \n**Violate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **330% -> 380%** damage. Apply Ability Block and 3 Bleed for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/NpOqsZt.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8647,7 +8647,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:venom:663750908668018710>	**Venom (Special)** \n \n**Violate • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **330% -> 380%** damage. Apply Ability Block and 3 Bleed for **1 -> 2** turns.")
+	.setDescription("<:venom:663750908668018710>	**Venom (Special)** \n \n**Violate • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **330% -> 380%** damage. Apply Ability Block and 3 Bleed for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/NpOqsZt.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8692,7 +8692,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vision:663750896835887110>	**Vision (Special)** \n \n**Dive Bomb • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 230%** damage + adjacent targets for **140% -> 160%** damage. Apply Ability Block to primary target + 1 additional target.")
+	.setDescription("<:vision:663750896835887110>	**Vision (Special)** \n \n**Dive Bomb • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 230%** damage + adjacent targets for **140% -> 160%** damage. Apply Ability Block to primary target + 1 additional target.")
 	.setThumbnail('https://i.imgur.com/B4HEL5v.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8718,7 +8718,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vision:663750896835887110>	**Vision (Special)** \n \n**Dive Bomb • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 230%** damage + adjacent targets for **140% -> 160%** damage. Apply Ability Block to primary target + 1 additional target.")
+	.setDescription("<:vision:663750896835887110>	**Vision (Special)** \n \n**Dive Bomb • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **210% -> 230%** damage + adjacent targets for **140% -> 160%** damage. Apply Ability Block to primary target + 1 additional target.")
 	.setThumbnail('https://i.imgur.com/B4HEL5v.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8763,7 +8763,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vulture:663750909653811221>	**Vulture (Special)** \n \n**Fight and Flight • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and all adjacent targets for **240% -> 300%** damage + **70% -> 100%** chance to apply Slow.\nIf target is a CITY HERO, apply Offense Down for **1-2 -> 2** turns.")
+	.setDescription("<:vulture:663750909653811221>	**Vulture (Special)** \n \n**Fight and Flight • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and all adjacent targets for **240% -> 300%** damage + **70% -> 100%** chance to apply Slow.\nIf target is a CITY HERO, apply Offense Down for **1-2 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/bBEz2D0.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8789,7 +8789,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vulture:663750909653811221>	**Vulture (Special)** \n \n**Fight and Flight • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and all adjacent targets for **240% -> 300%** damage + **70% -> 100%** chance to apply Slow.\nIf target is a CITY HERO, apply Offense Down for **1-2 -> 2** turns.")
+	.setDescription("<:vulture:663750909653811221>	**Vulture (Special)** \n \n**Fight and Flight • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and all adjacent targets for **240% -> 300%** damage + **70% -> 100%** chance to apply Slow.\nIf target is a CITY HERO, apply Offense Down for **1-2 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/bBEz2D0.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8834,7 +8834,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
 	.setThumbnail('https://i.imgur.com/bWO3Hs8.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8860,7 +8860,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
 	.setThumbnail('https://i.imgur.com/bWO3Hs8.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8905,7 +8905,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wasp:663750911088394280>	**Wasp (Special)** \n \n**Blasters • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **220% -> 250%** damage + Bonus attack 1-2 times for **170% -> 200%** damage.\nIf Charged, then in addition, Stun the target. Then lose Charged.")
+	.setDescription("<:wasp:663750911088394280>	**Wasp (Special)** \n \n**Blasters • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **220% -> 250%** damage + Bonus attack 1-2 times for **170% -> 200%** damage.\nIf Charged, then in addition, Stun the target. Then lose Charged.")
 	.setThumbnail('https://i.imgur.com/gXYDKvV.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -8931,7 +8931,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wasp:663750911088394280>	**Wasp (Special)** \n \n**Blasters • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **220% -> 250%** damage + Bonus attack 1-2 times for **170% -> 200%** damage.\nIf Charged, then in addition, Stun the target. Then lose Charged.")
+	.setDescription("<:wasp:663750911088394280>	**Wasp (Special)** \n \n**Blasters • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **220% -> 250%** damage + Bonus attack 1-2 times for **170% -> 200%** damage.\nIf Charged, then in addition, Stun the target. Then lose Charged.")
 	.setThumbnail('https://i.imgur.com/gXYDKvV.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8976,7 +8976,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Special)** \n \n**Relentless Assassin • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 200% damage + apply Bleed. 70% chance to Bonus attack up to 2 times for **100% -> 150%** damage + 50% chance to apply Bleed.")
+	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Special)** \n \n**Relentless Assassin • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 200% damage + apply Bleed. 70% chance to Bonus attack up to 2 times for **100% -> 150%** damage + 50% chance to apply Bleed.")
 	.setThumbnail('https://i.imgur.com/c2KCL7J.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -9002,7 +9002,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Special)** \n \n**Relentless Assassin • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 200% damage + apply Bleed. 70% chance to Bonus attack up to 2 times for **100% -> 150%** damage + 50% chance to apply Bleed.")
+	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Special)** \n \n**Relentless Assassin • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for 200% damage + apply Bleed. 70% chance to Bonus attack up to 2 times for **100% -> 150%** damage + 50% chance to apply Bleed.")
 	.setThumbnail('https://i.imgur.com/c2KCL7J.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -9047,7 +9047,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Special)** \n \n**Slice and Dice • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **120% -> 150%** Piercing + apply Bleed on Crit. Chain to **3-4 -> 4** targets for **90% -> 120%** Piercing + apply Bleed on Crit.\nIf Phoenix is an ally, the primary target takes **250% -> 350%** Piercing instead.\nIf Cyclops is an ally, all secondary attacks have 100% chance to Crit.\nCounterattack breaks this Chain.\nIf Psylocke is an ally, this attack cannot be counterattacked.")
+	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Special)** \n \n**Slice and Dice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **120% -> 150%** Piercing + apply Bleed on Crit. Chain to **3-4 -> 4** targets for **90% -> 120%** Piercing + apply Bleed on Crit.\nIf Phoenix is an ally, the primary target takes **250% -> 350%** Piercing instead.\nIf Cyclops is an ally, all secondary attacks have 100% chance to Crit.\nCounterattack breaks this Chain.\nIf Psylocke is an ally, this attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/lnBM9mV.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -9073,7 +9073,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Special)** \n \n**Slice and Dice • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **120% -> 150%** Piercing + apply Bleed on Crit. Chain to **3-4 -> 4** targets for **90% -> 120%** Piercing + apply Bleed on Crit.\nIf Phoenix is an ally, the primary target takes **250% -> 350%** Piercing instead.\nIf Cyclops is an ally, all secondary attacks have 100% chance to Crit.\nCounterattack breaks this Chain.\nIf Psylocke is an ally, this attack cannot be counterattacked.")
+	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Special)** \n \n**Slice and Dice • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **120% -> 150%** Piercing + apply Bleed on Crit. Chain to **3-4 -> 4** targets for **90% -> 120%** Piercing + apply Bleed on Crit.\nIf Phoenix is an ally, the primary target takes **250% -> 350%** Piercing instead.\nIf Cyclops is an ally, all secondary attacks have 100% chance to Crit.\nCounterattack breaks this Chain.\nIf Psylocke is an ally, this attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/lnBM9mV.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -9191,7 +9191,7 @@ if(kit === "kit"){
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **150% -> 170%** damage + Bonus attack 2 times for **150% -> 170%** damage.\nRepeat this attack on **2 -> 3** additional random targets.\nThis attack cannot be counterattacked.")
+	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **150% -> 170%** damage + Bonus attack 2 times for **150% -> 170%** damage.\nRepeat this attack on **2 -> 3** additional random targets.\nThis attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/XSiALFR.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
@@ -9217,7 +9217,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **150% -> 170%** damage + Bonus attack 2 times for **150% -> 170%** damage.\nRepeat this attack on **2 -> 3** additional random targets.\nThis attack cannot be counterattacked.")
+	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Special)** \n \n**Flurry • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary target for **150% -> 170%** damage + Bonus attack 2 times for **150% -> 170%** damage.\nRepeat this attack on **2 -> 3** additional random targets.\nThis attack cannot be counterattacked.")
 	.setThumbnail('https://i.imgur.com/XSiALFR.png') 
 	message.channel.send(exampleEmbed2);
 }
