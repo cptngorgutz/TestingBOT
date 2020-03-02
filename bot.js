@@ -775,7 +775,7 @@ if(akit === "kit" || akit === "k"){
 
 
 if(command === 'america' || command === 'americ' || command === 'ameri' || command === 'amer' || command === 'ame' || command === 'ame' || args[0] === "chavez" || args[0] === "chave" || args[0] === "chav" || args[0] === "cha" || args[0] === "ch") {
-if(akit === "kit" || akit === "k"){
+if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
