@@ -472,11 +472,19 @@ let passive = args[0];
 let speed = args[0];
 let unlock = args[0];
 let trait = args[0];
+let akit = args[1]; 
+let abasic = args[1];
+let aspecial = args[1];
+let aultimate = args[1];
+let apassive = args[1];
+let aspeed = args[1];
+let aunlock = args[1];
+let atrait = args[1];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'aim' || command === 'ai' && args[0] === "assaulter" || args[0] === "assault" || args[0] === "ass" || args[0] === "assau" || args[0] === "assa") {
-if(args[1] == "kit"){
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
@@ -492,35 +500,35 @@ if(args[1] == "kit"){
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-}  else if(args[1] == "basic") {
+}  if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
-} else if(args[1] == "special") {
+} else if(aspecial === "special"){
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
 	message.channel.send(exampleEmbed2);
-}  else if(args[1] == "passive") {
+}  else if(apassive === "passive"){
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-}  else if(args[1] == "speed") {
+}  else if(aspeed === "speed"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter's speed is: 118")
 	message.channel.send(speedEmbed);
-}  else if(args[1] == "unlock" || args[1] === "farm") {
+}  else if(aunlock == "unlock" || afarm === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
 	message.channel.send(speedEmbed); 
-} else if(args[1] == "trait" || args[1] === "trait") {
+} else if(atrait == "trait" || atrait === "traits") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nA.I.M., Blaster, Global, Minion, Tech, Villain.")  
@@ -533,7 +541,7 @@ if(args[1] == "kit"){
 }
 }
 if(command === 'aim' || command === 'ai' && args[0] === "infector" || args[0] === "infect" || args[0] === "i" || args[0] === "inf" || args[0] === "infec") {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -549,30 +557,30 @@ if(args[1] == "kit"){
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-} else if(args[1] == "basic") {
+} if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Basic)** \n \n**Puncture • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
 	.setThumbnail('https://i.imgur.com/LcGVgou.png') 
 	message.channel.send(exampleEmbed);
-} else if(args[1] == "special") {
+} else if(aspecial === "special"){
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Special)** \n \n**Biohazard • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nChange Speed Bar by **+50% -> +75%**. \nHeal self for **6000 -> 10000** Health + 20% of Max Health. \nGain **1 -> 2** Counter. \nApply **1 -> 2** Counter to adjacent A.I.M. allies.")
 	.setThumbnail('https://i.imgur.com/ctXEGhs.png') 
 	message.channel.send(exampleEmbed2);
-} else if(args[1] == "passive") {
+} else if(apassive === "passive"){
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090>	**Aim Infector (Passive)** \n \n**Metabolism • T4 Upgrade** \n \n**On Turn** \nGain **1 -> 2** random negative effects for 2 turns. \nGain +10% Speed. \nGain **10% -> +15%** Max Health. \n \nIf Offense Down, gain Offense Up for 2 turns. \nIf Defense Down, gain Defense Up for 2 turns. \nIf Slow, gain Speed Up for 2 turns.")
 	.setThumbnail('https://i.imgur.com/6GgGj50.png') 
 	message.channel.send(exampleEmbed4);
-} else if(args[1] == "speed") {
+} else if(aspeed === "speed"){
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nA.I.M. Infector's base speed is **104**, but he gains: \n+5% to +%10 Speed after any character's first turn. \nWith level 4 passive, that makes his speed after turn one **114.4**. \nWith level 4 passive, **Scientist Supreme**, and 3 other AIM characters: \nHis effective turn 1 speed is **108.16**. \nWith an adjacent **A.I.M. Assaulter** with level 4 passive and no **Scientist Supreme**, **A.I.M. Infector's** effective turn 1 speed is usually **115.11**. /nWith **Assaulter** and his level 5 passive or level 4 passive along with \n**Scientist Supreme**, his effective turn 1 speed is **118**.")
 	message.channel.send(speedEmbed);
-} else if(args[1] == "unlock" || args[1] == "farm") {
+} else if(aunlock == "unlock" || afarm === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
@@ -585,7 +593,7 @@ if(args[1] == "kit"){
 }
 }
 if(command === 'aimmonstrosity' || command === 'aimmon' || command === 'aimmonstro' || command === 'monstrosity') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -603,7 +611,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimmonstrosity:663749978639827004>	**Aim Monstrosity (Basic)** \n \n**Bash • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. \nTransfer all negative effects on this character to primary target + \n**70% -> 100%** chance to apply a random negative effect.")
@@ -643,7 +651,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 } 
 if(command === 'aimresearcher' || command === 'aimresearch' || command === 'aimre' || command === 'researcher') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
@@ -661,7 +669,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimresearcher:663749975200759829>	**Aim Researcher (Basic)** \n \n**Wounding Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 280%** damage. \n**90% -> 100%** chance to apply Offense Down for 1 turn..")
@@ -701,7 +709,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 } 
 if(command === 'aimsecurity' || command === 'aimsec') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
@@ -719,7 +727,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimsecurity:663749977071157283>	**Aim Security (Basic)** \n \n**Takedown • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage. \nIf Ability Blocked, attack primary target for \n**430% -> 470%** damage instead. \nApply Slow.")
@@ -759,7 +767,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'americachavez' || command === 'americach' || command === 'americachav' || command === 'chavez' || command === 'missamerica') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
@@ -782,7 +790,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
@@ -830,7 +838,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'antman' || command === 'ant' || command === 'scott' || command === 'lang') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
@@ -853,7 +861,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
@@ -901,7 +909,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'blackbolt' || command === 'bolt' || command === 'blackbo' || command === 'blackbol' || command === 'kingofattilan' || command === 'blackagar' || command === 'boltagon') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
@@ -924,7 +932,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackbolt:663749971971014698>	**Black Bolt (Basic)** \n \n**Royal Strike • T4 Upgrade** \n \nIf the primary target has slow, flip **1 -> 2** negative effects on self. \nAttack primary target for **350% -> 400%** damage + \nclear **1 -> 2** positive effects.")
@@ -972,7 +980,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'blackpanther' || command === 'panther' || command === 'blackpan' || command === 'tchalla' || command === 'kingofwakanda') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Basic)** \n \n**Claw Slash • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + \n30% Piercing. **90% -> 100%** chance to apply Slow.")
@@ -995,7 +1003,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackpanther:663749966212104233>	**Black Panther (Basic)** \n \n**Claw Slash • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + \n30% Piercing. **90% -> 100%** chance to apply Slow.")
@@ -1043,7 +1051,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'blackwidow' || command === 'blackw' || command === 'blackwid' || command === 'bw' || command === 'widow' || command === 'natasha' || command === 'romanova') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • T4 Upgrade** \n \nAttack primary target for **190% -> 250%** damage. \nDuring Stealth, copy & clear all positive effects on primary target.")
@@ -1066,7 +1074,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blackwidow:663749977637519370>	**Black Widow (Basic)** \n \n**Sabotage • T4 Upgrade** \n \nAttack primary target for **190% -> 250%** damage. \nDuring Stealth, copy & clear all positive effects on primary target.")
@@ -1114,7 +1122,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'blob') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blob:684029278366597127>	**Blob (Basic)** \n \n**Heavy Handed • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + apply Slow. If the target has Disrupted, change the target's Speed Bar by **-15% -> -20%**.")
@@ -1137,7 +1145,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:blob:684029278366597127>	**Blob (Basic)** \n \n**Heavy Handed • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + apply Slow. If the target has Disrupted, change the target's Speed Bar by **-15% -> -20%**.")
@@ -1184,7 +1192,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'bullseye' || command === 'bull' || command === 'bulls') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Basic)** \n \n**Throwing Knife • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \nThis attack cannot miss **though it can be dodged**. \nGain **+15% -> +20%** Crit chance for this attack.")
@@ -1207,7 +1215,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:bullseye:663749972939767828>	**Bullseye (Basic)** \n \n**Throwing Knife • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \nThis attack cannot miss **though it can be dodged**. \nGain **+15% -> +20%** Crit chance for this attack.")
@@ -1255,7 +1263,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'cable' || command === 'cab') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Basic)** \n \n**Plasma Rifle • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + \ngain Charged.")
@@ -1278,7 +1286,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cable:663749981290758154>	**Cable (Basic)** \n \n**Plasma Rifle • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + \ngain Charged.")
@@ -1326,7 +1334,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'captainamerica' || command === 'cptnamerica' || command === 'capamerica' || command === 'steve' || command === 'rogers') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Basic)** \n \n**Shield Bash • T4 Upgrade** \n \nAttack primary target for **200% -> 220%** damage. \n30% chance to Chain to up to 2 adjacent targets for 170% damage. \n**50% -> 100%** chance to gain Defense Up for 1 turn. \nCounterattack breaks this Chain.")
@@ -1349,7 +1357,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701>	**Captain America (Basic)** \n \n**Shield Bash • T4 Upgrade** \n \nAttack primary target for **200% -> 220%** damage. \n30% chance to Chain to up to 2 adjacent targets for 170% damage. \n**50% -> 100%** chance to gain Defense Up for 1 turn. \nCounterattack breaks this Chain.")
@@ -1397,7 +1405,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'captainmarvel' || command === 'cptnmarvel' || command === 'capmarvel' || command === 'carol' || command === 'danvers') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Basic)** \n \n**Princess Sparkle Fist • T4 Upgrade** \n \nAttack primary target for **280% -> 320%** damage. \n50% chance to Chain to 1 adjacent target for **180% -> 220%** damage. \nIf not in Binary, gain +1 Charged, up to a maximum of 5 If in Binary, lose 1 Charged. On losing all Charged, end Binary. \nCounterattack breaks this Chain.")
@@ -1420,7 +1428,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Basic)** \n \n**Princess Sparkle Fist • T4 Upgrade** \n \nAttack primary target for **280% -> 320%** damage. \n50% chance to Chain to 1 adjacent target for **180% -> 220%** damage. \nIf not in Binary, gain +1 Charged, up to a maximum of 5 If in Binary, lose 1 Charged. On losing all Charged, end Binary. \nCounterattack breaks this Chain.")
@@ -1468,7 +1476,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'carnage' || command === 'car' || command === 'carn') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Basic)** \n \n**Cleave • T4 Upgrade** \n \nAttack primary target for **230% -> 280%** damage. \nIf the primary target has a negative effect, \nChain to 1-2 adjacent targets for 90% damage + \nspread 2 negative effects from the primary target to secondary targets. \nThis will not spread Stun. Counterattack breaks this Chain.")
@@ -1491,7 +1499,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570>	**Carnage (Basic)** \n \n**Cleave • T4 Upgrade** \n \nAttack primary target for **230% -> 280%** damage. \nIf the primary target has a negative effect, \nChain to 1-2 adjacent targets for 90% damage + \nspread 2 negative effects from the primary target to secondary targets. \nThis will not spread Stun. Counterattack breaks this Chain.")
@@ -1539,7 +1547,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'colossus' || command === 'colo' || command === 'col' || command === 'coloss') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Basic)** \n \n**Ringdinger • T4 Upgrade** \n \nAttack primary target for **290% -> 340%** damage + \napply Offense Down for **1 -> 2** turns.")
@@ -1562,7 +1570,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528>	**Colossus (Basic)** \n \n**Ringdinger • T4 Upgrade** \n \nAttack primary target for **290% -> 340%** damage + \napply Offense Down for **1 -> 2** turns.")
@@ -1610,7 +1618,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'coulson' || command === 'agent' || command === 'coul' || command === 'couls' || command === 'colson') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:coulson:663749981605199912>	**Coulson (Basic)** \n \n**Night-Night Gun • T4 Upgrade** \n \nAttack primary target for **210% -> 230%** damage + \nChain to 2-4 adjacent targets for **160% -> 180%** damage. \nCounterattack breaks this Chain. \nChange Speed Bar of primary and secondary targets by -20%.")
@@ -1633,7 +1641,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:coulson:663749981605199912>	**Coulson (Basic)** \n \n**Night-Night Gun • T4 Upgrade** \n \nAttack primary target for **210% -> 230%** damage + \nChain to 2-4 adjacent targets for **160% -> 180%** damage. \nCounterattack breaks this Chain. \nChange Speed Bar of primary and secondary targets by -20%.")
@@ -1681,7 +1689,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'crossbones' || command === 'cb' || command === 'xb' || command === 'cross' || command === 'xbones') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Basic)** \n \n**Piston Punch • T4 Upgrade** \n \nAttack primary target for **175% -> 200%** damage. \n75% chance of a Bonus attack for **125% -> 150%** damage and apply Offense Down.")
@@ -1704,7 +1712,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:crossbones:663749981177511937>	**Crossbones (Basic)** \n \n**Piston Punch • T4 Upgrade** \n \nAttack primary target for **175% -> 200%** damage. \n75% chance of a Bonus attack for **125% -> 150%** damage and apply Offense Down.")
@@ -1752,7 +1760,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'cyclops' || command === 'cy' || command === 'clops' || command === 'cyc') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Basic)** \n \n**Optic Blast • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage + \n50% chance to apply Defense Down. \nIf Psylocke is an ally, always apply Defense Down.")
@@ -1775,7 +1783,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:cyclops:663749981387358230>	**Cyclops (Basic)** \n \n**Optic Blast • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage + \n50% chance to apply Defense Down. \nIf Psylocke is an ally, always apply Defense Down.")
@@ -1823,7 +1831,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'daredevil' || command === 'dd' || command === 'dare' || command === 'devil') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
@@ -1846,7 +1854,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156>	**Daredevil (Basic)** \n \n**Strike Without Fear • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage. \n**40% -> 50%** chance to Bonus attack for 200% damage. \nIf target is VILLAIN, always Bonus attack.")
@@ -1894,7 +1902,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'deadpool' || command === 'dp' || command === 'dead' || command === 'pool') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Basic)** \n \n**Dual Pistols • T4 Upgrade** \n \nAttack primary target for **190% -> 220%** damage + \n80% chance to Bonus attack for **140% -> 170%** damage. \nBonus attack always Crits if the target is a MINION.")
@@ -1917,7 +1925,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Deadpool:663749981705994251>	**Deadpool (Basic)** \n \n**Dual Pistols • T4 Upgrade** \n \nAttack primary target for **190% -> 220%** damage + \n80% chance to Bonus attack for **140% -> 170%** damage. \nBonus attack always Crits if the target is a MINION.")
@@ -1965,7 +1973,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'drax' || command === 'draxthedestroyer') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drax:663749981496279062>	**Drax (Basic)** \n \n**Knife Slash • T4 Upgrade** \n \nAttack primary target for **220% -> 250%** damage + 30% Drain.")
@@ -1988,7 +1996,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drax:663749981496279062>	**Drax (Basic)** \n \n**Knife Slash • T4 Upgrade** \n \nAttack primary target for **220% -> 250%** damage + 30% Drain.")
@@ -2036,7 +2044,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'doctor' || command === 'ds' || command === 'strange' || command === 'mrdoctor') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Basic)** \n \n**Bolt of Balthak • T4 Upgrade** \n \nAttack primary target for **150% -> 170%** Piercing \n+ apply Offense Down for **1 -> 1-2** turns. \nThis is Unavoidable.")
@@ -2059,7 +2067,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drstrange:663749984990265364>	**Doctor Strange (Basic)** \n \n**Bolt of Balthak • T4 Upgrade** \n \nAttack primary target for **150% -> 170%** Piercing \n+ apply Offense Down for **1 -> 1-2** turns. \nThis is Unavoidable.")
@@ -2107,7 +2115,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'elektra' || command === 'elek' || command === 'electra' || command === 'elec') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elektra:663749981940875265>	**Elektra (Basic)** \n \n**Sneak Attack • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** damage + \n**70% -> 100%** chance to apply Bleed. If target is a DEFENDER, \napply 3 Bleed and gain +1,000% Extra Focus for this attack.")
@@ -2130,7 +2138,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elektra:663749981940875265>	**Elektra (Basic)** \n \n**Sneak Attack • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** damage + \n**70% -> 100%** chance to apply Bleed. If target is a DEFENDER, \napply 3 Bleed and gain +1,000% Extra Focus for this attack.")
@@ -2178,7 +2186,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'elsa' || command === 'blood' || command === 'stone' || command === 'bloodstone') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elsa:663749985460027402>	**Elsa (Basic)** \n \n**Bloody Good Guns • T4 Upgrade** \n \nAttack primary target for **35% -> 45%** Piercing + \nBonus Attack 5 times for **35% -> 45%** Piercing.")
@@ -2201,7 +2209,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elsa:663749985460027402>	**Elsa (Basic)** \n \n**Bloody Good Guns • T4 Upgrade** \n \nAttack primary target for **35% -> 45%** Piercing + \nBonus Attack 5 times for **35% -> 45%** Piercing.")
@@ -2249,7 +2257,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'falcon' || command === 'fal' || command === 'falc' || command === 'redwing') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:falcon:663749983551488063>	**Falcon (Basic)** \n \n**Dual SMGs • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage. \nIf primary target has any positive effects, \nBonus Attack for **110% -> 120%** damage. \nIn WAR, if target has any positive effects, \nBonus Attack again for **110% -> 120%** damage.")
@@ -2272,7 +2280,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:falcon:663749983551488063>	**Falcon (Basic)** \n \n**Dual SMGs • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage. \nIf primary target has any positive effects, \nBonus Attack for **110% -> 120%** damage. \nIn WAR, if target has any positive effects, \nBonus Attack again for **110% -> 120%** damage.")
@@ -2320,7 +2328,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'gamora' || command === 'daughterofthanos' || command === 'gam' || command === 'gamor') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:gamora:663749983815860234>	**Gamora (Basic)** \n \n**Assassin's Strike • T4 Upgrade** \n \nAttack primary target for 250% damage + \n**40% -> 50%** chance to Bonus attack up to 2 times for 200% damage.")
@@ -2343,7 +2351,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:gamora:663749983815860234>	**Gamora (Basic)** \n \n**Assassin's Strike • T4 Upgrade** \n \nAttack primary target for 250% damage + \n**40% -> 50%** chance to Bonus attack up to 2 times for 200% damage.")
@@ -2391,7 +2399,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ghostrider' || command === 'ghost' || command === 'rider' || command === 'gr') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Basic)** \n \n**Hellfire • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \napply Bleed for 2 turns.")
@@ -2414,7 +2422,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ghostrider:663749984662847489>	**Ghost Rider (Basic)** \n \n**Hellfire • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \napply Bleed for 2 turns.")
@@ -2462,7 +2470,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'greengoblin' || command === 'green' || command === 'goblin' || command === 'gg') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Basic)** \n \n**Goblin Strike • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage. \n25% chance to attack adjacent targets for **220% -> 260%** damage.")
@@ -2485,7 +2493,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:goblin:663749986160476171>	**Green Goblin (Basic)** \n \n**Goblin Strike • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage. \n25% chance to attack adjacent targets for **220% -> 260%** damage.")
@@ -2533,7 +2541,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'graviton' || command === 'grav' || command === 'gravi' || command === 'gra') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:graviton:663749985417953300>	**Graviton (Basic)** \n \n**Gravity Wall • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \nBonus attack for **75% -> 100%** damage per negative effect on the target.")
@@ -2556,7 +2564,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:graviton:663749985417953300>	**Graviton (Basic)** \n \n**Gravity Wall • T4 Upgrade** \n \nAttack primary target for **200% -> 250%** damage + \nBonus attack for **75% -> 100%** damage per negative effect on the target.")
@@ -2604,7 +2612,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'greg' || command === 'undead' || command === 'undeadasgardian') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Basic)** \n \n**Heavy Slash • T4 Upgrade** \n \nAttack primary target for **210% -> 260%** Piercing + \napply Heal Block.")
@@ -2622,7 +2630,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:greg:663749986290499614>	**Undead Asgardian (Basic)** \n \n**Heavy Slash • T4 Upgrade** \n \nAttack primary target for **210% -> 260%** Piercing + \napply Heal Block.")
@@ -2662,7 +2670,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'groot' || command === 'tree') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:groot:663749986218934282>	**groot (Basic)** \n \n**Crushing Blow • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2685,7 +2693,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:groot:663749986218934282>	**groot (Basic)** \n \n**Crushing Blow • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2733,7 +2741,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'handarcher' || command === 'archer') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Basic)** \n \n**Arrow • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + 20% Piercing.")
@@ -2751,7 +2759,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handarcher:663749985258569769>	**Hand Archer (Basic)** \n \n**Arrow • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + 20% Piercing.")
@@ -2791,7 +2799,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'handassassin' || command === 'assassin') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Basic)** \n \n**Ninjutsu • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2809,7 +2817,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handassassin:663749983413075969>	**Hand Assassin (Basic)** \n \n**Ninjutsu • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2849,7 +2857,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'handblademaster' || command === 'blademaster') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Basic)** \n \n**Sword Slash • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2867,7 +2875,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handblademaster:663749983945752586>	**Hand Blademaster (Basic)** \n \n**Sword Slash • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2907,7 +2915,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'handsentry' || command === 'sentry') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Basic)** \n \n**Sai Strike • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2925,7 +2933,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsentry:663749985027883019>	**Hand Sentry (Basic)** \n \n**Sai Strike • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -2965,7 +2973,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'handsorceress' || command === 'sorceress') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Basic)** \n \n**Chi Strike • T4 Upgrade** \n \nAttack primary target for **260% -> 300%** damage + Drain for 20% of base damage.")
@@ -2983,7 +2991,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsorceress:663749985094991915>	**Hand Sorceress (Basic)** \n \n**Chi Strike • T4 Upgrade** \n \nAttack primary target for **260% -> 300%** damage + Drain for 20% of base damage.")
@@ -3023,7 +3031,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hawkeye' || command === 'hawk' || command === 'eye' || command === 'ronin'|| command === 'clint' || command === 'barton') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Basic)** \n \n**Deadeye • T4 Upgrade** \n \nAttack primary target for 250% damage. \nGain **+10% -> +15%** Crit chance and deal \n+20% Piercing with this attack. \nAttack is Unavoidable.")
@@ -3046,7 +3054,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hawkeye:663749985267089428>	**Hawkeye (Basic)** \n \n**Deadeye • T4 Upgrade** \n \nAttack primary target for 250% damage. \nGain **+10% -> +15%** Crit chance and deal \n+20% Piercing with this attack. \nAttack is Unavoidable.")
@@ -3094,7 +3102,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'heimdall') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Basic)** \n \n**Hofund Slash • T4 Upgrade** \n \nAttack primary target for **260% -> 310%** damage to primary target. \nGain an assist from a random ASGARDIAN ally.")
@@ -3117,7 +3125,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:heimdall:663750299575517195>	**Heimdall (Basic)** \n \n**Hofund Slash • T4 Upgrade** \n \nAttack primary target for **260% -> 310%** damage to primary target. \nGain an assist from a random ASGARDIAN ally.")
@@ -3165,7 +3173,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hela' || command === 'goddess' || command === 'godessofdeath') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hela:663749986290368512>	**Hela (Basic)** \n \n**Black Blade • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + \nflip 1 Deathproof on target. Attack the most injured enemy for \n**90% -> 100%** Piercing, ignoring Taunt.")
@@ -3188,7 +3196,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hela:663749986290368512>	**Hela (Basic)** \n \n**Black Blade • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + \nflip 1 Deathproof on target. Attack the most injured enemy for \n**90% -> 100%** Piercing, ignoring Taunt.")
@@ -3236,7 +3244,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hulk' || command === 'bruce' || command === 'banner') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hulk:663749985594245130>	**Hulk (Basic)** \n \n**Smash • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage. If this character is below 50% Health, multiply damage by **1.4 -> 1.5**.")
@@ -3259,7 +3267,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hulk:663749985594245130>	**Hulk (Basic)** \n \n**Smash • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage. If this character is below 50% Health, multiply damage by **1.4 -> 1.5**.")
@@ -3307,7 +3315,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hydragrenadier' || command === 'grenadier') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Basic)** \n \n**Flak Grenade • T4 Upgrade** \n \nAttack primary and adjacent targets for **190% -> 210%** damage and **15% -> 20%** Piercing.\nApply Slow to primary target.")
@@ -3325,7 +3333,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydragrenadier:663749985669611540>	**Hydra Grenadier (Basic)** \n \n**Flak Grenade • T4 Upgrade** \n \nAttack primary and adjacent targets for **190% -> 210%** damage and **15% -> 20%** Piercing.\nApply Slow to primary target.")
@@ -3365,7 +3373,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hydraarmoredguard' || command === 'guard') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Basic)** \n \n**Rapid Fire • T4 Upgrade** \n \nApply Assist Now to a Hydra Rifle Trooper ally.\nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -3383,7 +3391,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydraguard:663749985321353218>	**Hydra Armored Guard (Basic)** \n \n**Rapid Fire • T4 Upgrade** \n \nApply Assist Now to a Hydra Rifle Trooper ally.\nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -3423,7 +3431,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hydrascientist' || command === 'scientist') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Basic)** \n \n**Talon Pistol • T4 Upgrade** \n \nAttack primary target for **260 -> 280%** damage and **20% -> 25%** Piercing. 50% chance to apply Heal Block for 1 turn.\nIf Red Skull is an ally, always apply Heal Block.")
@@ -3441,7 +3449,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrascientist:663749986013413386>	**Hydra Scientist (Basic)** \n \n**Talon Pistol • T4 Upgrade** \n \nAttack primary target for **260 -> 280%** damage and **20% -> 25%** Piercing. 50% chance to apply Heal Block for 1 turn.\nIf Red Skull is an ally, always apply Heal Block.")
@@ -3481,7 +3489,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hydrasniper' || command === 'sniper') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Basic)** \n \n**Marksman Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** Piercing.")
@@ -3499,7 +3507,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydrasniper:663749986336374811>	**Hydra Sniper (Basic)** \n \n**Marksman Shot • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** Piercing.")
@@ -3539,7 +3547,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'hydrarifletrooper' || command === 'trooper') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Basic)** \n \n**Talon Assault Rifle • T4 Upgrade** \n \nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -3557,7 +3565,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hydratrooper:663752253215342603>	**Hydra Rifle Trooper (Basic)** \n \n**Talon Assault Rifle • T4 Upgrade** \n \nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -3597,7 +3605,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'iw' || command === 'invisible' || command === 'woman' || command === 'sue' || command === 'storm') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Basic)** \n \n**Cosmic Rays • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Barrier self for **5% -> 10%** of this character's Max Health.")
@@ -3620,7 +3628,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:invisiblewoman:663752234126934016>	**Invisible Woman (Basic)** \n \n**Cosmic Rays • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Barrier self for **5% -> 10%** of this character's Max Health.")
@@ -3668,7 +3676,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'iron' || command === 'fist') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Basic)** \n \n**Martial Arts • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. Chain to **1-2 -> 2** adjacent targets for 130% damage.\nCounterattack breaks this Chain.")
@@ -3691,7 +3699,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironfist:663751749454004254>	**Iron Fist (Basic)** \n \n**Martial Arts • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. Chain to **1-2 -> 2** adjacent targets for 130% damage.\nCounterattack breaks this Chain.")
@@ -3739,7 +3747,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ironheart') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Basic)** \n \n**Prototype Repulsors • T4 Upgrade** \n \nAttack primary target for **260% -> 320%** damage. Gain an Assist from Iron Man.")
@@ -3762,7 +3770,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Ironheart:684029278425579566>	**Ironheart (Basic)** \n \n**Prototype Repulsors • T4 Upgrade** \n \nAttack primary target for **260% -> 320%** damage. Gain an Assist from Iron Man.")
@@ -3809,7 +3817,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ironman' || command === 'ironm' || command === 'stark' || command === 'mrstark') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironman:663751735591960577>	**Iron Man (Basic)** \n \n**Repulsor Blast • T4 Upgrade** \n \nAttack primary target for 280% damage. 30% chance to Chain to up to 2 adjacent targets for **170% -> 230%** damage.\nCounterattack breaks this Chain.")
@@ -3832,7 +3840,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ironman:663751735591960577>	**Iron Man (Basic)** \n \n**Repulsor Blast • T4 Upgrade** \n \nAttack primary target for 280% damage. 30% chance to Chain to up to 2 adjacent targets for **170% -> 230%** damage.\nCounterattack breaks this Chain.")
@@ -3880,7 +3888,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'jessicajones' || command === 'jessjones' || command === 'jjones' || command === 'jj') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Basic)** \n \n**Jaw Breaker • T4 Upgrade** \n \nAttack primary target for **200% -> 220%** damage + 50% chance to Bonus attack **1 -> 1-2** times for 170% damage.\nGenerate 1 Ability Energy for a random DEFENDER ally. Each attack has a 50% chance to generate 1 Ability Energy for a random ally.")
@@ -3903,7 +3911,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:jessicajones:663750493540974612>	**Jessica Jones (Basic)** \n \n**Jaw Breaker • T4 Upgrade** \n \nAttack primary target for **200% -> 220%** damage + 50% chance to Bonus attack **1 -> 1-2** times for 170% damage.\nGenerate 1 Ability Energy for a random DEFENDER ally. Each attack has a 50% chance to generate 1 Ability Energy for a random ally.")
@@ -3951,7 +3959,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'humantorch' || command === 'human' || command === 'torch' || command === 'johnny' || command === 'blaze') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Basic)** \n \n**Hotshot • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + apply Bleed for **1 -> 2** turns.")
@@ -3974,7 +3982,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:johnnystorm:663750493478322186>	**Human Torch (Basic)** \n \n**Hotshot • T4 Upgrade** \n \nAttack primary target for **180% -> 210%** damage + apply Bleed for **1 -> 2** turns.")
@@ -4022,7 +4030,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'juggernaut' || command === 'jugg' || command === 'juggs') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Basic)** \n \n**Overwhelming Blow • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Gain +1 Charged, up to a maximum of 4. **80% -> 100%** chance to gain Ability Energy. This attack cannot be blocked.")
@@ -4045,7 +4053,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:juggernaut:663750495558696970>	**Juggernaut (Basic)** \n \n**Overwhelming Blow • T4 Upgrade** \n \nAttack primary target for **250% -> 290%** damage. Gain +1 Charged, up to a maximum of 4. **80% -> 100%** chance to gain Ability Energy. This attack cannot be blocked.")
@@ -4093,7 +4101,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'killmonger' || command === 'kill' || command === 'monger' || command === 'km') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Basic)** \n \n**Focus Fire • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage + **20% -> 30%** Drain. On Crit, Bonus Attack **1-2 -> 2** times for **200% -> 240%** damage + **20% -> 30%** Drain and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
@@ -4116,7 +4124,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:killmonger:663750495608897566>	**Killmonger (Basic)** \n \n**Focus Fire • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage + **20% -> 30%** Drain. On Crit, Bonus Attack **1-2 -> 2** times for **200% -> 240%** damage + **20% -> 30%** Drain and lose Charged. Otherwise, gain +1 Charged up to a maximum of 5.")
@@ -4164,7 +4172,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'kingpin' || command === 'king' || command === 'pin') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Basic)** \n \n**Batter • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. 50% chance to gain an Assist.")
@@ -4187,7 +4195,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kingpin:663750493612539904>	**Kingpin (Basic)** \n \n**Batter • T4 Upgrade** \n \nAttack primary target for **210% -> 270%** damage. 50% chance to gain an Assist.")
@@ -4235,7 +4243,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'korath' || command === 'the' || command === 'pursuer') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Basic)** \n \n**Smart-linked Rifle • T4 Upgrade** \n \nAttack primary target for 190% damage + **30% -> 40%** Piercing. **90% -> 100%** chance to apply Slow for 1 turn.")
@@ -4258,7 +4266,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:korath:663750493331521547>	**Korath the Pursuer (Basic)** \n \n**Smart-linked Rifle • T4 Upgrade** \n \nAttack primary target for 190% damage + **30% -> 40%** Piercing. **90% -> 100%** chance to apply Slow for 1 turn.")
@@ -4306,7 +4314,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'kreecyborg' || command === 'cyborg') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Basic)** \n \n**Energy Blaster • T4 Upgrade** \n \nAttack primary target for 270% damage.\nOn Kill, Chain to 1 adjacent target for 270% damage and grant 1 Ability Energy to **1-2 -> 2** random allies.")
@@ -4324,7 +4332,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreecyborg:663750490512687116>	**Kree Cyborg (Basic)** \n \n**Energy Blaster • T4 Upgrade** \n \nAttack primary target for 270% damage.\nOn Kill, Chain to 1 adjacent target for 270% damage and grant 1 Ability Energy to **1-2 -> 2** random allies.")
@@ -4364,7 +4372,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'Kree Royal Guard' || command === 'dp' || command === 'dead' || command === 'pool') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Basic)** \n \n**Guardian Blaster • T4 Upgrade** \n \nAttack primary target for 180% damage. **80% -> 100%** chance to gain Counter.")
@@ -4382,7 +4390,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeguard:663750493398368276>	**Kree Royal Guard (Basic)** \n \n**Guardian Blaster • T4 Upgrade** \n \nAttack primary target for 180% damage. **80% -> 100%** chance to gain Counter.")
@@ -4422,7 +4430,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'kreenoble' || command === 'noble') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Basic)** \n \n**Kree Sidearm • T4 Upgrade** \n \nAttack primary target for 270% damage.\nIf target has a positive ability, (75% -> 100%) chance to:\nGenerate 1 Ability Energy for 1-2 allies.\nClear 1 positive effect from the target.")
@@ -4440,7 +4448,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreenoble:663750496569524255>	**Kree Noble (Basic)** \n \n**Kree Sidearm • T4 Upgrade** \n \nAttack primary target for 270% damage.\nIf target has a positive ability, (75% -> 100%) chance to:\nGenerate 1 Ability Energy for 1-2 allies.\nClear 1 positive effect from the target.")
@@ -4480,7 +4488,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'kreeoracle' || command === 'oracle') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Basic)** \n \n**Kree Energy Pistol • T4 Upgrade** \n \nAttack primary target for 270% damage. **80% -> 100%** generate 1 Ability Energy to 1 random ally.")
@@ -4498,7 +4506,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreeoracle:663750494795202562>	**Kree Oracle (Basic)** \n \n**Kree Energy Pistol • T4 Upgrade** \n \nAttack primary target for 270% damage. **80% -> 100%** generate 1 Ability Energy to 1 random ally.")
@@ -4538,7 +4546,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'kreereaper' || command === 'reaper') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Basic)** \n \n**Predatory Strike • T4 Upgrade** \n \nAttack primary target for 270% damage + **70% -> 100%** chance to apply Bleed.")
@@ -4556,7 +4564,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:kreereaper:663750487346118676>	**Kree Reaper (Basic)** \n \n**Predatory Strike • T4 Upgrade** \n \nAttack primary target for 270% damage + **70% -> 100%** chance to apply Bleed.")
@@ -4596,7 +4604,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'loki' || command === 'godofmischief' || command === 'mischief') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:loki:663750495139266591>	**Loki (Basic)** \n \n**Eldritch Bolt • T4 Upgrade** \n \nAttack primary target for **230% -> 260%** Piercing. **40% -> 50%** chance to gain Evade.")
@@ -4620,7 +4628,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:loki:663750495139266591>	**Loki (Basic)** \n \n**Eldritch Bolt • T4 Upgrade** \n \nAttack primary target for **230% -> 260%** Piercing. **40% -> 50%** chance to gain Evade.")
@@ -4669,7 +4677,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'luke' || command === 'cage' || command === 'lc') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Basic)** \n \n**Beat Up • T4 Upgrade** \n \n30% chance to apply Assist Now to a random HERO ally. If that ally is a DEFENDER they also gain Offense Up.\nAttack primary target for **290% -> 330%** damage.")
@@ -4692,7 +4700,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:lukecage:663750493172006936>	**Luke Cage (Basic)** \n \n**Beat Up • T4 Upgrade** \n \n30% chance to apply Assist Now to a random HERO ally. If that ally is a DEFENDER they also gain Offense Up.\nAttack primary target for **290% -> 330%** damage.")
@@ -4740,7 +4748,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'magneto' || command === 'mag' || command === 'neto') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:magneto:663750493419339810>	**Magneto (Basic)** \n \n**Magnetic Force • T4 Upgrade** \n \nAttack primary target for **190% -> 220%** damage + 20% Piercing. Chain to 1-2 additional targets for **160% -> 190%** damage + 20% Piercing.")
@@ -4763,7 +4771,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:magneto:663750493419339810>	**Magneto (Basic)** \n \n**Magnetic Force • T4 Upgrade** \n \nAttack primary target for **190% -> 220%** damage + 20% Piercing. Chain to 1-2 additional targets for **160% -> 190%** damage + 20% Piercing.")
@@ -4811,7 +4819,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mantis' || command === 'mant' || command === 'manti') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mantis:663750493583179808>	**Mantis (Basic)** \n \n**Sleeeeep • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage. If Charged, then in addition, Stun the target. Then lose Charged.\nIf Drax is an ally, apply Deflect to Drax.")
@@ -4834,7 +4842,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mantis:663750493583179808>	**Mantis (Basic)** \n \n**Sleeeeep • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage. If Charged, then in addition, Stun the target. Then lose Charged.\nIf Drax is an ally, apply Deflect to Drax.")
@@ -4882,7 +4890,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mbaku' || command === 'baku' || command === 'mba' || command === 'bak') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Basic)** \n \n**Cudgel Slam • T4 Upgrade** \n \nAttack primary target for **260% -> 300%** damage. On target Dodge, Bonus Attack for **260% -> 300%** damage.")
@@ -4905,7 +4913,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mbaku:663750495621480449>	**M'Baku (Basic)** \n \n**Cudgel Slam • T4 Upgrade** \n \nAttack primary target for **260% -> 300%** damage. On target Dodge, Bonus Attack for **260% -> 300%** damage.")
@@ -4953,7 +4961,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mercenarylieutenant' || command === 'merc' || command === 'leui' || command === 'lieu') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Basic)** \n \n**Cover Fire • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage. Grant 1 ability energy to an ally.")
@@ -4971,7 +4979,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant (Basic)** \n \n**Cover Fire • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage. Grant 1 ability energy to an ally.")
@@ -5011,7 +5019,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mercenaryriotguard' || command === 'riot' || command === 'guard') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Basic)** \n \n**Combat Pistol • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -5029,7 +5037,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard (Basic)** \n \n**Combat Pistol • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -5069,7 +5077,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mercenarysniper' || command === 'merc' || command === 'sniper') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Basic)** \n \n**Sniper Shot • T4 Upgrade** \n \nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -5087,7 +5095,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper (Basic)** \n \n**Sniper Shot • T4 Upgrade** \n \nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -5127,7 +5135,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'miles' || command === 'mile' || command === 'morales' || command === 'moral') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<>	**Miles Morales (Basic)** \n \n**Quick Strike • T4 Upgrade** \n \nAttack primary target for **240% -> 280%** damage. If the target has Defense Down, clear 3 positive effect.")
@@ -5150,7 +5158,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<>	**Miles Morales (Basic)** \n \n**Quick Strike • T4 Upgrade** \n \nAttack primary target for **240% -> 280%** damage. If the target has Defense Down, clear 3 positive effect.")
@@ -5198,7 +5206,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'minnerva' || command === 'min' || command === 'minn' || command === 'minerva') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Basic)** \n \n**Bio-Weapon • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** damage + apply Bleed.\nApply Regeneration to the most injured non-summoned ally.")
@@ -5221,7 +5229,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:minnerva:663750495751634954>	**Minnerva (Basic)** \n \n**Bio-Weapon • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** damage + apply Bleed.\nApply Regeneration to the most injured non-summoned ally.")
@@ -5269,7 +5277,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'misterfantastic' || command === 'fantastic' || command === 'mrf' || command === 'reed' || command === 'richards') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Basic)** \n \n**Tensile Strength • T4 Upgrade** \n \nAttack primary target for **190% -> 230%** damage. Chain to **2 -> 3** adjacent targets for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
@@ -5292,7 +5300,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic (Basic)** \n \n**Tensile Strength • T4 Upgrade** \n \nAttack primary target for **190% -> 230%** damage. Chain to **2 -> 3** adjacent targets for **150% -> 190%** damage.\nCounterattack breaks this Chain.")
@@ -5340,7 +5348,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mordo' || command === 'mor' || command === 'mo' || command === 'mord') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mordo:663750495562629161>	**Mordo (Basic)** \n \n**Arcane Scourge • T4 Upgrade** \n \nAttack primary target for 220% damage + apply **1-2 -> 2** random negative effects.")
@@ -5363,7 +5371,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mordo:663750495562629161>	**Mordo (Basic)** \n \n**Arcane Scourge • T4 Upgrade** \n \nAttack primary target for 220% damage + apply **1-2 -> 2** random negative effects.")
@@ -5411,7 +5419,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mistersinister' || command === 'sinister' || command === 'mrsinister' || command === 'mrsin' || command === 'mistersin') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister (Basic)** \n \n**Psionic Beam • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage + 50% damage per non-Cloned MARAUDERS ally.\nGain an assist from a random Cloned ally.\n**70% -> 100%** chance to gain an assist from a random MARAUDERS ally.")
@@ -5436,7 +5444,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister (Basic)** \n \n**Psionic Beam • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage + 50% damage per non-Cloned MARAUDERS ally.\nGain an assist from a random Cloned ally.\n**70% -> 100%** chance to gain an assist from a random MARAUDERS ally.")
@@ -5486,7 +5494,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'msmarvel' || command === 'ms' || command === 'msmarv' || command === 'missmarvel') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Basic)** \n \n**Big Bash • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage. Gain Deflect.")
@@ -5509,7 +5517,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel (Basic)** \n \n**Big Bash • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage. Gain Deflect.")
@@ -5557,7 +5565,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mysterio' || command === 'myste' || command === 'myster') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("mysterio:663750495734726656>	**Mysterio (Basic)** \n \n**The Ol' One-Two • T4 Upgrade** \n \nClear **2 -> 3** positive effects from primary target. Attack primary target for **200% -> 250%** damage.")
@@ -5581,7 +5589,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("mysterio:663750495734726656>	**Mysterio (Basic)** \n \n**The Ol' One-Two • T4 Upgrade** \n \nClear **2 -> 3** positive effects from primary target. Attack primary target for **200% -> 250%** damage.")
@@ -5630,7 +5638,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'mystique' || command === 'mysti' || command === 'mystiq') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mystique:663750495697109002>	**Mystique (Basic)** \n \n**Mimic Strike • T4 Upgrade** \n \nAttack primary target for **190% -> 230%** damage + Bonus Attack 1-2 times for **150% -> 190%** damage + copy **1 -> 2** positive effects and apply them to self.\nIf Magneto is an ally, copy all positive effects.")
@@ -5653,7 +5661,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mystique:663750495697109002>	**Mystique (Basic)** \n \n**Mimic Strike • T4 Upgrade** \n \nAttack primary target for **190% -> 230%** damage + Bonus Attack 1-2 times for **150% -> 190%** damage + copy **1 -> 2** positive effects and apply them to self.\nIf Magneto is an ally, copy all positive effects.")
@@ -5701,7 +5709,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'namor' || command === 'nam' || command === 'namo' || command === 'na') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:namor:663750493709008919>	**Namor (Basic)** \n \n**Neptune's Trident • T4 Upgrade** \n \nAttack primary target for **170% -> 210%** damage + **40% -> 50%** Piercing.")
@@ -5724,7 +5732,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:namor:663750493709008919>	**Namor (Basic)** \n \n**Neptune's Trident • T4 Upgrade** \n \nAttack primary target for **170% -> 210%** damage + **40% -> 50%** Piercing.")
@@ -5772,7 +5780,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'nebula') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nebula:663750493033594890>	**Nebula (Basic)** \n \n**Relentless Pursuit • T4 Upgrade** \n \nAttack primary target for 280% damage. **90% -> 100%** chance to gain Speed Up for 1 turn.")
@@ -5795,7 +5803,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nebula:663750493033594890>	**Nebula (Basic)** \n \n**Relentless Pursuit • T4 Upgrade** \n \nAttack primary target for 280% damage. **90% -> 100%** chance to gain Speed Up for 1 turn.")
@@ -5843,7 +5851,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'nick' || command === 'fury' || command === 'nickfury') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nickfury:663750493687775236>	**Fury (Basic)** \n \n**Custom I.C.E.R. • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage + Chain to 1 adjacent target for **150% -> 180%** damage. Generate 1 ability energy on each Crit. Energy is granted to adjacent allies.\nCounterattack breaks this Chain.")
@@ -5866,7 +5874,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nickfury:663750493687775236>	**Fury (Basic)** \n \n**Custom I.C.E.R. • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage + Chain to 1 adjacent target for **150% -> 180%** damage. Generate 1 ability energy on each Crit. Energy is granted to adjacent allies.\nCounterattack breaks this Chain.")
@@ -5914,7 +5922,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'nightnurse' || command === 'night' || command === 'nurse') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Basic)** \n \n**Self Defense • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage + 50% chance to apply Slow for 2 turns.")
@@ -5937,7 +5945,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse (Basic)** \n \n**Self Defense • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage + 50% chance to apply Slow for 2 turns.")
@@ -5985,7 +5993,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'okoye' || command === 'oko' || command === 'okoy' || command === 'ok') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:okeye:663750495860686848>	**Okeye (Basic)** \n \n**Spear Strike • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage + clear a positive effect.\nGain +50% Extra Focus for this attack.")
@@ -6008,7 +6016,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:okeye:663750495860686848>	**Okeye (Basic)** \n \n**Spear Strike • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage + clear a positive effect.\nGain +50% Extra Focus for this attack.")
@@ -6056,7 +6064,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'da' || command === 'dar'|| command === 'dark' && args[0] == "pho" || args[0] == "phoe" || args[0] == "phoen" || args[0] == "phoeni" || args[0] == "phoenix") {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Basic)** \n \n**Immolation • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **200% -> 250%** damage. Clear 2 positive effects on each target.")
@@ -6077,7 +6085,7 @@ if(args[1] == "kit"){
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Passive)** \n \n**From the Ashes • T4 Upgrade** \n \nOn Spawn, attack all enemies for **200% -> 250%** damage + apply Defense Down for **1 -> 2** turns.")
 	.setThumbnail('https://i.imgur.com/8oHzMHk.png') 
 	message.channel.send(exampleEmbed4);
-} else if(args[1] == "basic") {
+} if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Phoenix:663750496829308958>	**Dark Phoenix (Basic)** \n \n**Immolation • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **200% -> 250%** damage. Clear 2 positive effects on each target.")
@@ -6192,7 +6200,7 @@ const speedEmbed = new Discord.RichEmbed()
 }
 }
 if(command === 'psylocke' || command === 'psy' || command === 'psyl' || command === 'psylock') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Basic)** \n \n**Psi Knife • T4 Upgrade** \n \nAttack primary target for **220% -> 270%** Piercing damage.")
@@ -6215,7 +6223,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:psylocke:663750496837828608>	**Psylocke (Basic)** \n \n**Psi Knife • T4 Upgrade** \n \nAttack primary target for **220% -> 270%** Piercing damage.")
@@ -6263,7 +6271,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'punisher' || command === 'punish' || command === 'pun' || command === 'puni' || command === 'frank' || command === 'castle') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:punisher:663750495982190620>	**Punisher (Basic)** \n \n**M4 Carbine • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage + 20% Piercing. 30% chance to Chain to up to 2 additional targets for **160% -> 200%** damage + 20% Piercing.\nCounterattack breaks this Chain.")
@@ -6287,7 +6295,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:punisher:663750495982190620>	**Punisher (Basic)** \n \n**M4 Carbine • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage + 20% Piercing. 30% chance to Chain to up to 2 additional targets for **160% -> 200%** damage + 20% Piercing.\nCounterattack breaks this Chain.")
@@ -6336,7 +6344,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'pyro' || command === 'py' || command === 'pyr') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:pyro:663750496346963968>	**Pyro (Basic)** \n \n**Flame Thrower • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 150%** damage. Apply Bleed to each target.")
@@ -6359,7 +6367,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:pyro:663750496346963968>	**Pyro (Basic)** \n \n**Flame Thrower • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 150%** damage. Apply Bleed to each target.")
@@ -6407,7 +6415,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'quake' || command === 'qu' || command === 'qua' || command === 'quak') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:quake:663750496024133632>	**Quake (Basic)** \n \n**Seismic Blast • T4 Upgrade** \n \nAttack primary target and adjacent targets for **125% -> 150%** damage. Apply Slow to primary target and adjacent targets for 2 turns.")
@@ -6430,7 +6438,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:quake:663750496024133632>	**Quake (Basic)** \n \n**Seismic Blast • T4 Upgrade** \n \nAttack primary target and adjacent targets for **125% -> 150%** damage. Apply Slow to primary target and adjacent targets for 2 turns.")
@@ -6478,7 +6486,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ravagerboomer' || command === 'boomer') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Basic)** \n \n**Plasma Blast • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -6496,7 +6504,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer (Basic)** \n \n**Plasma Blast • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -6536,7 +6544,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ravagerbruiser' || command === 'bruiser') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Basic)** \n \n**Cutlazz • T4 Upgrade** \n \nAttack primary target for **230% -> 290%** damage. 70% chance to Taunt for 1 turn.")
@@ -6554,7 +6562,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser (Basic)** \n \n**Cutlazz • T4 Upgrade** \n \nAttack primary target for **230% -> 290%** damage. 70% chance to Taunt for 1 turn.")
@@ -6594,7 +6602,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ravagerstitcher' || command === 'stitcher') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Basic)** \n \n**Disintegrator • T4 Upgrade** \n \nAttack primary target for 160% damage + **70% -> 100%** chance to apply Bleed.")
@@ -6612,7 +6620,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher (Basic)** \n \n**Disintegrator • T4 Upgrade** \n \nAttack primary target for 160% damage + **70% -> 100%** chance to apply Bleed.")
@@ -6652,7 +6660,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'redskull' || command === 'red' || command === 'sku' || command === 'skull') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:redskull:663750496959594531>	**Red Skull (Basic)** \n \n**Hydra-99 Pistol • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** Piercing + apply Defense Down. On WAR DEFENSE, apply Taunt.\n**80% -> 100%** chance to chain to 1 adjacent target for **150% -> 180%** Piercing + apply Defense Down.")
@@ -6678,7 +6686,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:redskull:663750496959594531>	**Red Skull (Basic)** \n \n**Hydra-99 Pistol • T4 Upgrade** \n \nAttack primary target for **170% -> 200%** Piercing + apply Defense Down. On WAR DEFENSE, apply Taunt.\n**80% -> 100%** chance to chain to 1 adjacent target for **150% -> 180%** Piercing + apply Defense Down.")
@@ -6728,7 +6736,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'rescue' || command === 'res' || command === 'resc' || command === 'rescu') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rescue:663750496057819147>	**Rescue (Basic)** \n \n**Sonic Repulsor • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage. Chain to an adjacent target for **120% -> 140%** damage. Always apply Slow to each target.")
@@ -6751,7 +6759,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rescue:663750496057819147>	**Rescue (Basic)** \n \n**Sonic Repulsor • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage. Chain to an adjacent target for **120% -> 140%** damage. Always apply Slow to each target.")
@@ -6799,7 +6807,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'rhino' || command === 'rhi' || command === 'rhin') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rhino:663750497328693261>	**Rhino (Basic)** \n \n**Pummel • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage.")
@@ -6822,7 +6830,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rhino:663750497328693261>	**Rhino (Basic)** \n \n**Pummel • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage.")
@@ -6870,7 +6878,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'rocketraccoon' || command === 'rocket' || command === 'raccoon') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Basic)** \n \n**Rocket Rifle • T4 Upgrade** \n \nAttack primary target for **160% -> 180%** damage + **+10% -> 15%** Crit Chance. Attack all adjacent targets for **110% -> 150%** damage + **10% -> 15%** Crit Chance.")
@@ -6893,7 +6901,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon (Basic)** \n \n**Rocket Rifle • T4 Upgrade** \n \nAttack primary target for **160% -> 180%** damage + **+10% -> 15%** Crit Chance. Attack all adjacent targets for **110% -> 150%** damage + **10% -> 15%** Crit Chance.")
@@ -6941,7 +6949,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'Ronan' || command === 'ron' || command === 'rona' || command === 'accuser') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ronan:663752093135274014>	**Ronan (Basic)** \n \n**Hammer Smash • T4 Upgrade** \n \nClear 2 positive effects from primary target.\nAttack primary target for **140% -> 180%** damage + **20% -> 25%** Piercing.\nThis attack is Unavoidable.")
@@ -6964,7 +6972,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ronan:663752093135274014>	**Ronan (Basic)** \n \n**Hammer Smash • T4 Upgrade** \n \nClear 2 positive effects from primary target.\nAttack primary target for **140% -> 180%** damage + **20% -> 25%** Piercing.\nThis attack is Unavoidable.")
@@ -7012,7 +7020,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'sabretooth' || command === 'sabre' || command === 'tooth') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Basic)** \n \n**Claw Rake • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -7035,7 +7043,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth (Basic)** \n \n**Claw Rake • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -7083,7 +7091,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'scarlet' || command === 'witch') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Basic)** \n \n**Hex Bolt • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** Piercing damage + apply 1-2 random negative effects.")
@@ -7106,7 +7114,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch (Basic)** \n \n**Hex Bolt • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** Piercing damage + apply 1-2 random negative effects.")
@@ -7154,7 +7162,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'scientist' || command === 'supreme') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Basic)** \n \n**Serum Pistol • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage. Apply 2 random negative effects to primary target.")
@@ -7177,7 +7185,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme (Basic)** \n \n**Serum Pistol • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage. Apply 2 random negative effects to primary target.")
@@ -7225,7 +7233,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shieldassault' || command === 'assault') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Basic)** \n \n**Concussion Grenade • T4 Upgrade** \n \nAttack primary target for 110% damage + **25 -> 35%** Piercing. Attack adjacent targets for 100% damage + **25% -> 35%** Piercing.")
@@ -7243,7 +7251,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault (Basic)** \n \n**Concussion Grenade • T4 Upgrade** \n \nAttack primary target for 110% damage + **25 -> 35%** Piercing. Attack adjacent targets for 100% damage + **25% -> 35%** Piercing.")
@@ -7283,7 +7291,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shieldmedic' || command === 'medic') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Basic)** \n \n**I.C.E.R. Pistol • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage + apply Offense Down for 1-2 turns. On Crit, change Speed Bar by -25%.")
@@ -7301,7 +7309,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic (Basic)** \n \n**I.C.E.R. Pistol • T4 Upgrade** \n \nAttack primary target for **200% -> 240%** damage + apply Offense Down for 1-2 turns. On Crit, change Speed Bar by -25%.")
@@ -7341,7 +7349,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shieldoperative' || command === 'operative') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Basic)** \n \n**Snap Shot • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. On Crit, change Speed Bar by -25%. Clear a positive effect from target.\nIf Nick Fury is ally, he gains the cleared effect.")
@@ -7359,7 +7367,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative (Basic)** \n \n**Snap Shot • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage. On Crit, change Speed Bar by -25%. Clear a positive effect from target.\nIf Nick Fury is ally, he gains the cleared effect.")
@@ -7399,7 +7407,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shieldsecurity' || command === 'security') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Basic)** \n \n**Stun Baton • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage + apply Slow.")
@@ -7417,7 +7425,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security (Basic)** \n \n**Stun Baton • T4 Upgrade** \n \nAttack primary target for **230% -> 270%** damage + apply Slow.")
@@ -7457,7 +7465,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shieldtrooper' || command === 'trooper') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Basic)** \n \n**I.C.E.R. Rifle • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage. On Crit, change Speed Bar by -25%.")
@@ -7475,7 +7483,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper (Basic)** \n \n**I.C.E.R. Rifle • T4 Upgrade** \n \nAttack primary target for **290% -> 330%** damage. On Crit, change Speed Bar by -25%.")
@@ -7516,7 +7524,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shocker' || command === 'shock' || command === 'shocke') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shocker:663750794142679041>	**Shocker (Basic)** \n \n**Concussion Bolt • T4 Upgrade** \n \nAttack primary target for **220% -> 280%** Piercing. On target Dodge, apply Assist Now to a random SINISTER SIX ally.")
@@ -7539,7 +7547,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shocker:663750794142679041>	**Shocker (Basic)** \n \n**Concussion Bolt • T4 Upgrade** \n \nAttack primary target for **220% -> 280%** Piercing. On target Dodge, apply Assist Now to a random SINISTER SIX ally.")
@@ -7587,7 +7595,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'shuri' || command === 'shu' || command === 'shur') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shuri:663750793765060629>	**Shuri (Basic)** \n \n**Vibranium Gauntlets • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **150% -> 200%** damage. Apply Heal Block to primary target for **1 -> 2** turns.")
@@ -7610,7 +7618,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:shuri:663750793765060629>	**Shuri (Basic)** \n \n**Vibranium Gauntlets • T4 Upgrade** \n \nAttack primary target and all adjacent targets for **150% -> 200%** damage. Apply Heal Block to primary target for **1 -> 2** turns.")
@@ -7658,7 +7666,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'sif' || command === 'lady' || command === 'si' || command === 'lad') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sif:663750798311948299>	**Sif (Basic)** \n \n**Fending Strike • T4 Upgrade** \n \nAttack primary target for **240% -> 280%** damage.\nGain 2 Deflect.")
@@ -7681,7 +7689,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:sif:663750798311948299>	**Sif (Basic)** \n \n**Fending Strike • T4 Upgrade** \n \nAttack primary target for **240% -> 280%** damage.\nGain 2 Deflect.")
@@ -7729,7 +7737,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'spiderman' || command === 'spider' || command === 'spid' || command === 'spide') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Basic)** \n \n**Agile Attack • T4 Upgrade** \n \nAttack primary target for **220% -> 270%** damage + 70% chance to Chain up to 1 adjacent target for **150% -> 200%** damage. **50% -> 60%** chance to gain Evade.\nCounterattack breaks this Chain.")
@@ -7752,7 +7760,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:spiderman:663750794092216361>	**Spider-Man (Basic)** \n \n**Agile Attack • T4 Upgrade** \n \nAttack primary target for **220% -> 270%** damage + 70% chance to Chain up to 1 adjacent target for **150% -> 200%** damage. **50% -> 60%** chance to gain Evade.\nCounterattack breaks this Chain.")
@@ -7800,7 +7808,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'starlord' || command === 'star' || command === 'lord') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:starlord:663750797447921705>	**Star Lord (Basic)** \n \n**Element Gun • T4 Upgrade** \n \nAttack primary target for **260% -> 310%** damage + Chain to 1-2 adjacent targets for **200 -> 250%** damage.\nCounterattack breaks this Chain.")
@@ -7823,7 +7831,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:starlord:663750797447921705>	**Star Lord (Basic)** \n \n**Element Gun • T4 Upgrade** \n \nAttack primary target for **260% -> 310%** damage + Chain to 1-2 adjacent targets for **200 -> 250%** damage.\nCounterattack breaks this Chain.")
@@ -7871,7 +7879,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'storm' || command === 'sto' || command === 'stor') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Basic)** \n \n**Shocking Blow • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage. If Charged, in addition, attack adjacent targets for **130% -> 150%** damage.\nGain +1 Charged, up to a maximum of **15 -> 20**.")
@@ -7894,7 +7902,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:storm:66375079https://i.imgur.com/9CTsQUW.png0197249>	**Storm (Basic)** \n \n**Shocking Blow • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage. If Charged, in addition, attack adjacent targets for **130% -> 150%** damage.\nGain +1 Charged, up to a maximum of **15 -> 20**.")
@@ -7942,7 +7950,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'stryfe' || command === 'str' || command === 'stry' || command === 'stryf') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Basic)** \n \n**Psychic Strike • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage.\nIf the target has Taunt, Gain +1 Taunt, up to a maximum of 3. Clear Taunt from the target.\nIf Mister Sinister is an ally, transfer **4 -> all** positive effects from the primary target to Mister Sinister.")
@@ -7965,7 +7973,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:stryfe:663750797871546368>	**Stryfe (Basic)** \n \n**Psychic Strike • T4 Upgrade** \n \nAttack primary target for **250% -> 300%** damage.\nIf the target has Taunt, Gain +1 Taunt, up to a maximum of 3. Clear Taunt from the target.\nIf Mister Sinister is an ally, transfer **4 -> all** positive effects from the primary target to Mister Sinister.")
@@ -8013,7 +8021,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'thanos' || command === 'than' || command === 'thano' || command === 'titan') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thanos:663750798324400128>	**Thanos (Basic)** \n \n**Power Punch • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage + **80% -> 100%** chance to gain Counter.")
@@ -8036,7 +8044,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thanos:663750798324400128>	**Thanos (Basic)** \n \n**Power Punch • T4 Upgrade** \n \nAttack primary target for **180% -> 200%** damage + **80% -> 100%** chance to gain Counter.")
@@ -8084,7 +8092,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'thething' || command === 'thing' || command === 'ben' || command === 'grimm') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thing:663750797791592478>	**The Thing (Basic)** \n \n**Knuckle Sandwich • T4 Upgrade** \n \nAttack primary target for **300% -> 350%** damage.")
@@ -8107,7 +8115,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thing:663750797791592478>	**The Thing (Basic)** \n \n**Knuckle Sandwich • T4 Upgrade** \n \nAttack primary target for **300% -> 350%** damage.")
@@ -8155,7 +8163,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'thor' || command === 'th' || command === 'odinson') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thor:663750798014021632>	**Thor (Basic)** \n \n**Hammer Uppercut • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -8178,7 +8186,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:thor:663750798014021632>	**Thor (Basic)** \n \n**Hammer Uppercut • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage.")
@@ -8226,7 +8234,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'toad') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:toad:684029278425579556>	**Toad (Basic)** \n \n**Tongue Lash • T4 Upgrade** \n \nAttack the primary target for **210% -> 260%** damage. Apply Offense Down for 1 turn and Slow for 2 turns.")
@@ -8249,7 +8257,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:toad:684029278425579556>	**Toad (Basic)** \n \n**Tongue Lash • T4 Upgrade** \n \nAttack the primary target for **210% -> 260%** damage. Apply Offense Down for 1 turn and Slow for 2 turns.")
@@ -8296,7 +8304,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ultimus' || command === 'ultimu' || command === 'ulti' || command === 'ult') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Basic)** \n \n**Overwhelming Assault • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + 30% Piercing. 30% chance to apply Ability Block, Defense Down, and Mind Control 1 enemy to attack the primary target.")
@@ -8319,7 +8327,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultimus:663750798039056384>	**Ultimus (Basic)** \n \n**Overwhelming Assault • T4 Upgrade** \n \nAttack primary target for **240% -> 300%** damage + 30% Piercing. 30% chance to apply Ability Block, Defense Down, and Mind Control 1 enemy to attack the primary target.")
@@ -8367,7 +8375,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'ultron' || command === 'ul' || command === 'ult' || command === 'ultro') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultron:663750798202634250>	**Ultron (Basic)** \n \n**Disintegration Beam • T4 Upgrade** \n \nAttack primary target for **270% -> 340%** damage + steal 2 positive effects + clear Taunt.")
@@ -8390,7 +8398,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultron:663750798202634250>	**Ultron (Basic)** \n \n**Disintegration Beam • T4 Upgrade** \n \nAttack primary target for **270% -> 340%** damage + steal 2 positive effects + clear Taunt.")
@@ -8438,7 +8446,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'accelerator' || command === 'accel' || command === 'acc' || command === 'acceler') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Basic)** \n \n**Rail Gun • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + change Speed Bar by **-25% -> -30%**.")
@@ -8456,7 +8464,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronaccelerator:663753510210240525>	**Deadpool (Basic)** \n \n**Rail Gun • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage + change Speed Bar by **-25% -> -30%**.")
@@ -8495,7 +8503,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'fabricator' || command === 'fab' || command === 'fabri' || command === 'fabrica') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Basic)** \n \n**Weld • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage and grant 1 Ability Energy to Ultron.")
@@ -8513,7 +8521,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator (Basic)** \n \n**Weld • T4 Upgrade** \n \nAttack primary target for **300% -> 340%** damage and grant 1 Ability Energy to Ultron.")
@@ -8553,7 +8561,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'incinerator' || command === 'inciner' || command === 'inci' || command === 'incin') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Basic)** \n \n**Scorch • T4 Upgrade** \n \nAttack primary target for **330% -> 370%** damage + clear 1 positive effect from target. If Ultron is an ally, he gains the cleared effect.\nThis attack will not clear Taunt.")
@@ -8571,7 +8579,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator (Basic)** \n \n**Scorch • T4 Upgrade** \n \nAttack primary target for **330% -> 370%** damage + clear 1 positive effect from target. If Ultron is an ally, he gains the cleared effect.\nThis attack will not clear Taunt.")
@@ -8610,7 +8618,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'venom' || command === 'ven' || command === 'veno') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:venom:663750908668018710>	**Venom (Basic)** \n \n**Maul • T4 Upgrade** \n \nAttack primary target for **180% -> 230%** damage + apply Bleed for 1 turn. Flip 2 positive effects to negative effects.\nThis attack cannot be dodged.")
@@ -8633,7 +8641,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:venom:663750908668018710>	**Venom (Basic)** \n \n**Maul • T4 Upgrade** \n \nAttack primary target for **180% -> 230%** damage + apply Bleed for 1 turn. Flip 2 positive effects to negative effects.\nThis attack cannot be dodged.")
@@ -8681,7 +8689,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'vision' || command === 'vis' || command === 'visi' || command === 'visio') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vision:663750896835887110>	**Vision (Basic)** \n \n**Heavy Hitter • T4 Upgrade** \n \nAttack primary target for **210% -> 260%** damage + Chain to **1 -> 1-2** additional targets for **170% -> 220%** damage. Apply Offense Down to each target + apply Bleed against each TECH enemy.\nCounterattack breaks this Chain.")
@@ -8704,7 +8712,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vision:663750896835887110>	**Vision (Basic)** \n \n**Heavy Hitter • T4 Upgrade** \n \nAttack primary target for **210% -> 260%** damage + Chain to **1 -> 1-2** additional targets for **170% -> 220%** damage. Apply Offense Down to each target + apply Bleed against each TECH enemy.\nCounterattack breaks this Chain.")
@@ -8752,7 +8760,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'vulture' || command === 'vul' || command === 'vult' || command === 'vultu') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vulture:663750909653811221>	**Vulture (Basic)** \n \n**Liftoff • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage + **30% -> 40%** additional damage per negative effect.")
@@ -8775,7 +8783,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:vulture:663750909653811221>	**Vulture (Basic)** \n \n**Liftoff • T4 Upgrade** \n \nAttack primary target for **210% -> 250%** damage + **30% -> 40%** additional damage per negative effect.")
@@ -8823,7 +8831,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'warmachine' || command === 'war' || command === 'machine') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<<warmachine:663750909146300441>	**War Machine (Basic)** \n \n**Railgun • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 140%** damage. Apply Offense Down to primary target.")
@@ -8846,7 +8854,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<warmachine:663750909146300441>	**War Machine (Basic)** \n \n**Railgun • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 140%** damage. Apply Offense Down to primary target.")
@@ -8894,7 +8902,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'wasp') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wasp:663750911088394280>	**Wasp (Basic)** \n \n**Sting and Move • T4 Upgrade** \n \nAttack primary target for **260% -> 290%** damage + 30% chance to Chain to 1 adjacent target for **210% -> 240%** damage.\nCounterattack breaks this Chain.")
@@ -8917,7 +8925,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wasp:663750911088394280>	**Wasp (Basic)** \n \n**Sting and Move • T4 Upgrade** \n \nAttack primary target for **260% -> 290%** damage + 30% chance to Chain to 1 adjacent target for **210% -> 240%** damage.\nCounterattack breaks this Chain.")
@@ -8965,7 +8973,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'wintersoldier' || command === 'winter' || command === 'soldier') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Basic)** \n \n**Winter Assault • T4 Upgrade** \n \nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -8988,7 +8996,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier (Basic)** \n \n**Winter Assault • T4 Upgrade** \n \nAttack primary target for 290% damage and **20% -> 25%** Piercing.")
@@ -9036,7 +9044,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'wolverine' || command === 'wolver' || command === 'wolv' || command === 'wol') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Basic)** \n \n**Adamantium Claws • T4 Upgrade** \n \nAttack primary target for **230% -> 240%** Piercing + apply Bleed on Crit.")
@@ -9059,7 +9067,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:wolverine:663750909062414356>	**Wolverine (Basic)** \n \n**Adamantium Claws • T4 Upgrade** \n \nAttack primary target for **230% -> 240%** Piercing + apply Bleed on Crit.")
@@ -9107,7 +9115,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'Yondu' || command === 'dp' || command === 'dead' || command === 'pool') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:yondu:663750908957556785>	**Yondu (Basic)** \n \n**Jagged Edge • T4 Upgrade** \n \nAttack primary target for **160% -> 200%** damage and **20% -> 25%** Piercing. Clear 2 positive effects from target.")
@@ -9131,7 +9139,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:yondu:663750908957556785>	**Yondu (Basic)** \n \n**Jagged Edge • T4 Upgrade** \n \nAttack primary target for **160% -> 200%** damage and **20% -> 25%** Piercing. Clear 2 positive effects from target.")
@@ -9180,7 +9188,7 @@ else if(args[1] == "unlock" || args[1] == "farm") {
 
 }
 if(command === 'yo-yo' || command === 'yoyo' || command === 'yo') {
-if(args[1] == "kit"){
+if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Basic)** \n \n**Rapid Strikes • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage + clear Counter.\n**70% -> 100%** chance to gain an Assist from a random INHUMAN ally.\nThis attack cannot be counterattacked.")
@@ -9203,7 +9211,7 @@ if(args[1] == "kit"){
 	message.channel.send(exampleEmbed4);
 }
 
-else if(args[1] == "basic") {
+if(basic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo (Basic)** \n \n**Rapid Strikes • T4 Upgrade** \n \nAttack primary target for **200% -> 230%** damage + clear Counter.\n**70% -> 100%** chance to gain an Assist from a random INHUMAN ally.\nThis attack cannot be counterattacked.")
