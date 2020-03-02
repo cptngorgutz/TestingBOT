@@ -475,8 +475,8 @@ let trait = args[0];
 
 //EVERY CHARACTER
 if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220') { //bot spam channel
-if(command === 'aimassaulter' || command === 'aimassault' || command === 'aimass' || command === 'assault' || command === 'assaulter') {
-if(kit === "kit"){
+if(command === 'aim' || command === 'ai' && args[0] == "assaulter" || args[0] == "assault" || args[0] == "ass" || args[0] == "assau" || args[0] == "assa") {
+if(args[1] == "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
@@ -492,51 +492,44 @@ if(kit === "kit"){
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(basic === "basic") {
+}  else if(args[1] == "basic") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Basic)** \n \n**Submachine Gun • T4 Upgrade** \n \nAttack primary target for **140% -> 160%** damage + \napply Bleed for 2 turns.")
 	.setThumbnail('https://i.imgur.com/M2II5ei.png') 
 	message.channel.send(exampleEmbed);
-}
-
-if(special === "special") {
+} else if(args[1] == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Special)** \n \n**Hyperdose • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 250%** damage. \nIf this character has a negative effect, Bonus attack the primary \ntarget for **100% -> 125%** per negative effect on the target. \nGain Speed Up for 4 turns.")
 	.setThumbnail('https://i.imgur.com/nNIMVDs.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-if(passive === "passive") {
+}  else if(args[1] == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648>	**Aim Assaulter (Passive)** \n \n**Juicer • T4 Upgrade** \n \nOn Turn, change Speed Bar by **+10% -> +20%** for self \nand adjacent A.I.M. allies. \nGain **+10% -> +15%** Damage and +10% Max Health.")
 	.setThumbnail('https://i.imgur.com/6b9TZXU.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(speed === "speed") {
+}  else if(args[1] == "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter's speed is: 118")
 	message.channel.send(speedEmbed);
-}
-
-if(unlock === "unlock" || unlock === "farm") {
+}  else if(args[1] == "unlock" || args[1] === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
 	message.channel.send(speedEmbed); 
-}
-
-if(trait === "trait" || unlock === "traits") {
+} else if(args[1] == "trait" || args[1] === "trait") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nA.I.M., Blaster, Global, Minion, Tech, Villain.")  
 	message.channel.send(speedEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 }
 if(command === 'aiminfector' || command === 'aiminfect' || command === 'infector') {
