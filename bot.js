@@ -821,7 +821,7 @@ if(akit === "kit" || akit === "k"){
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Passive)** \n \n**Starling Highway • T4 Upgrade** \n \nGain **+10% -> +20%** Max Health. \nHERO BRAWLER allies gain **+10% -> +20%** Max Health.")
 	.setThumbnail('https://i.imgur.com/dpbmvcX.png') 
 	message.channel.send(exampleEmbed4);
-} else if(aspeed === "speed" || aspeed === "spee" || aspeed === "s" || apseed === "spe") {
+} else if(aspeed === "speed" || aspeed === "spee" || aspeed === "s" || aspeed === "spe") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez's speed is: 115")
