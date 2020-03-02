@@ -1126,7 +1126,7 @@ if(unlock === "unlock" || unlock === "farm") {
 }
 
 }
-if(command === 'Blob') {
+if(command === 'blob') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -8829,22 +8829,22 @@ if(command === 'warmachine' || command === 'war' || command === 'machine') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Basic)** \n \n**Railgun • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 140%** damage. Apply Offense Down to primary target.")
+	.setDescription("<<warmachine:663750909146300441>	**War Machine (Basic)** \n \n**Railgun • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 140%** damage. Apply Offense Down to primary target.")
 	.setThumbnail('https://i.imgur.com/Z18csvE.png') 
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
 	.setThumbnail('https://i.imgur.com/bWO3Hs8.png') 
 	message.channel.send(exampleEmbed2);
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Ultimate)** \n \n**Cluster Bombs • T4 Upgrade** \n<:abilityoff:663751832413405184> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack all enemies for **310% -> 340%** damage.\nDamage is increased by 30% per HERO ally.\nThis attack cannot miss **though it can be dodged**.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Ultimate)** \n \n**Cluster Bombs • T4 Upgrade** \n<:abilityoff:663751832413405184> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack all enemies for **310% -> 340%** damage.\nDamage is increased by 30% per HERO ally.\nThis attack cannot miss **though it can be dodged**.")
 	.setThumbnail('https://i.imgur.com/Rqo2wuz.png') 
 	message.channel.send(exampleEmbed3);
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Passive)** \n \n**Integrated Targeting • T4 Upgrade** \n \nGain +10% Damage. Gain 5% Piercing. When an enemy drops below 50% Health, **50% -> 100%** chance they gain Taunt.\nIf Iron Man is an ally, gain **20% -> 30%** Crit Damage, gain Deathproof, and grant Deathproof to Iron Man.\nIn WAR, War Machine gains **20% -> 30%** Damage.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Passive)** \n \n**Integrated Targeting • T4 Upgrade** \n \nGain +10% Damage. Gain 5% Piercing. When an enemy drops below 50% Health, **50% -> 100%** chance they gain Taunt.\nIf Iron Man is an ally, gain **20% -> 30%** Crit Damage, gain Deathproof, and grant Deathproof to Iron Man.\nIn WAR, War Machine gains **20% -> 30%** Damage.")
 	.setThumbnail('https://i.imgur.com/v7t2Otw.png') 
 	message.channel.send(exampleEmbed4);
 }
@@ -8852,7 +8852,7 @@ if(kit === "kit"){
 if(basic === "basic") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Basic)** \n \n**Railgun • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 140%** damage. Apply Offense Down to primary target.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Basic)** \n \n**Railgun • T4 Upgrade** \n \nAttack primary target and adjacent targets for **120% -> 140%** damage. Apply Offense Down to primary target.")
 	.setThumbnail('https://i.imgur.com/Z18csvE.png') 
 	message.channel.send(exampleEmbed);
 }
@@ -8860,7 +8860,7 @@ if(basic === "basic") {
 if(special === "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Special)** \n \n**Missile System • T4 Upgrade** \n<:abilityon:663751832690229278> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278>\nAttack primary and adjacent targets **2-3 -> 3** times for **80% -> 90%** Piercing.\nIf Iron Man is an ally, attack 1 additional time.")
 	.setThumbnail('https://i.imgur.com/bWO3Hs8.png') 
 	message.channel.send(exampleEmbed2);
 }
@@ -8868,7 +8868,7 @@ if(special === "special") {
 if(ultimate === "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Ultimate)** \n \n**Cluster Bombs • T4 Upgrade** \n<:abilityoff:663751832413405184> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack all enemies for **310% -> 340%** damage.\nDamage is increased by 30% per HERO ally.\nThis attack cannot miss **though it can be dodged**.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Ultimate)** \n \n**Cluster Bombs • T4 Upgrade** \n<:abilityoff:663751832413405184> \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityoff:663751832413405184><:abilityoff:663751832413405184>\nAttack all enemies for **310% -> 340%** damage.\nDamage is increased by 30% per HERO ally.\nThis attack cannot miss **though it can be dodged**.")
 	.setThumbnail('https://i.imgur.com/Rqo2wuz.png') 
 	message.channel.send(exampleEmbed3);
 }
@@ -8876,7 +8876,7 @@ if(ultimate === "ultimate") {
 if(passive === "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441>	**War Machine (Passive)** \n \n**Integrated Targeting • T4 Upgrade** \n \nGain +10% Damage. Gain 5% Piercing. When an enemy drops below 50% Health, **50% -> 100%** chance they gain Taunt.\nIf Iron Man is an ally, gain **20% -> 30%** Crit Damage, gain Deathproof, and grant Deathproof to Iron Man.\nIn WAR, War Machine gains **20% -> 30%** Damage.")
+	.setDescription("<warmachine:663750909146300441>	**War Machine (Passive)** \n \n**Integrated Targeting • T4 Upgrade** \n \nGain +10% Damage. Gain 5% Piercing. When an enemy drops below 50% Health, **50% -> 100%** chance they gain Taunt.\nIf Iron Man is an ally, gain **20% -> 30%** Crit Damage, gain Deathproof, and grant Deathproof to Iron Man.\nIn WAR, War Machine gains **20% -> 30%** Damage.")
 	.setThumbnail('https://i.imgur.com/v7t2Otw.png') 
 	message.channel.send(exampleEmbed4);
 }
@@ -8884,14 +8884,14 @@ if(passive === "passive") {
 if(speed === "speed") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441> **War Machine** \nWar Machine's speed is: **")
+	.setDescription("<warmachine:663750909146300441> **War Machine** \nWar Machine's speed is: **")
 	message.channel.send(speedEmbed);
 }
 
 if(unlock === "unlock" || unlock === "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("warmachine:663750909146300441> **War Machine** \nWar Machine is farmable in:**")
+	.setDescription("<warmachine:663750909146300441> **War Machine** \nWar Machine is farmable in:**")
 	message.channel.send(speedEmbed); 
 }
 
