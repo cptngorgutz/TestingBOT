@@ -801,7 +801,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Basic)** \n \n**Starstruck • T4 Upgrade** \n \nAttack primary target for **240% -> 290%** damage + \napply Defense Down.")
 	.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
 	message.channel.send(exampleEmbed);
-} else if(aspecial === "special" || aspecial === "spec" || aspecial === "spe" || aspecial === "s" || special === "special" || special === "spec" || special === "spe" || special === "s") {
+} else if(aspecial === "special" || aspecial === "spec" || aspecial === "spe" || special === "special" || special === "spec" || special === "spe" || special === "s") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:americachavez:663749979394801686>	**America Chavez (Special)** \n \n**Shooting Star • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **250% -> 300%** damage + \n**50% -> 75%** damage per HERO BRAWLER ally.")
