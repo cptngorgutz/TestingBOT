@@ -773,8 +773,7 @@ if(akit === "kit" || akit === "k"){
 }
 }
 
-if(command === 'america' || command === 'chavez' || command === 'ac') {
-if(args[0] === "chavez" || args[0] === "chave" || args[0] === "chav" || args[0] === "cha"){
+if(command === 'america' || command === 'chavez' || command === 'ac' || args[0] === "chavez" || args[0] === "chave" || args[0] === "chav" || args[0] === "cha") {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -842,7 +841,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	message.channel.send(embedEmbed); 
 }
 }
-}
+
 
 if(command === 'antman' || command === 'ant' || command === 'scott' || command === 'lang') {
 if(kit === "kit"){
