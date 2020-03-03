@@ -773,7 +773,7 @@ if(akit === "kit" || akit === "k"){
 }
 }
 
-if(command === 'america' || command === 'chavez' || command === 'ac' || args[0] === "chavez" || args[0] === "chave" || args[0] === "chav" || args[0] === "cha") {
+if(command === 'america' || command === 'chavez' || command === 'ac' || command === 'america' && args[0] === "chavez" || command === 'america' && args[0] === "chave" || command === 'america' && args[0] === "chav" || command === 'america' && args[0] === "cha") {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
