@@ -827,7 +827,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in:**")
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable via:\n**Campaign: Villains United, 6-9**\n\nOrbs: Mega, Milestone, Premium, Red Star.")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
