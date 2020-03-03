@@ -897,7 +897,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable via:\n\n**Supplies:** Blitz Store\n\n**Orbs:** Blitz, Mega, Milestone, Legacy, Premium, Red Star")	 
 	message.channel.send(speedEmbed); 
-} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {	
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273> **Ant Man** \nAvenger,Controller,Global,Hero,Tech")  
 	message.channel.send(speedEmbed); 
