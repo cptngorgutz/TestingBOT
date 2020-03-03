@@ -774,7 +774,7 @@ if(akit === "kit" || akit === "k"){
 }
 
 
-if(command === 'america' && args[0] === "chavez" || command === 'america' || command === 'chavez') {
+if(command === 'america' && args[0] === "chavez" || command === 'americ' && args[0] === "chave" || command === 'ameri' && args[0] === "chav" || command === 'amer' && args[0] === "cha" || command === 'ame' && args[0] === "ch" || command === 'america' || command === 'americ' || command === 'ameri' || command === 'ame' || command === 'am' || command === 'chavez' || command === 'chave' || command === 'chav' || command === 'cha' || command === 'ch') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
