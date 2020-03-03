@@ -827,7 +827,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable via:\n\n**Campaign:** Villains United, **6-9**\n\n**Orbs:** Mega, Milestone, Premium, Red Star")
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable via:\n\n**Campaign:** Villains, **6-9**\n\n**Orbs:** Mega, Milestone, Premium, Red Star")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -843,8 +843,8 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 }
 
 
-if(command === 'antman' || command === 'ant' || command === 'scott' || command === 'lang') {
-if(kit === "kit"){
+if(command === 'ant' || command === 'man' ||command === 'scott' || command === 'lang' || command === 'am' || command === 'ant' && args[0] === "man" || command === 'ant' && args[0] === "ma" || command === 'ant' && args[0] === "m" || command === 'ant' && args[0] === "man") {
+if(akit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
@@ -865,55 +865,57 @@ if(kit === "kit"){
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
 	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-if(basic === "basic"){
+} else if(abasic === "basic"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Basic)** \n \n**Scrappy Fighter • T4 Upgrade** \n \nAttack primary target for **240% -> 270%** damage + \ncopy a positive effect from the target to Self + \nclear the copied effect. \nIf Wasp is an ally, she also gains the copied effect.")
 	.setThumbnail('https://i.imgur.com/0gqCigL.png') 
 	message.channel.send(exampleEmbed);
-}
-
-else if(special == "special") {
+} else if(aspecial == "special") {
 	const exampleEmbed2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Special)** \n \n**Gum Up the Works • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack primary target for **200% -> 220%** damage + \napply Ability Block for 2 turns. \nThis attack cannot be dodged or blocked.")
 	.setThumbnail('https://i.imgur.com/kHl8bsh.png') 
 	message.channel.send(exampleEmbed2);
-}
-
-if(ultimate === "ultimate") {
+} else if(aultimate === "ultimate") {
 	const exampleEmbed3 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Ultimate)** \n \n**Stomp • T4 Upgrade** \n<:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278><:abilityon:663751832690229278> \nAttack all for **130% -> 140%** damage + Apply Slow to all targets. \nIf Wasp is an ally, deal an additional +30% damage to all targets.")
 	.setThumbnail('https://i.imgur.com/MTgIIvw.png') 
 	message.channel.send(exampleEmbed3);
-}
-
-else if(passive == "passive") {
+} else if(apassive == "passive") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273>	**Ant Man (Passive)** \n \n**Escape Plan • T4 Upgrade** \n \nOn Spawn, apply Evade to Wasp if she is an ally. \nOn Turn, 15% chance to gain Evade + \n**10% -> 15%** chance to gain Assist Now.")
 	.setThumbnail('https://i.imgur.com/5yQ6YZx.png') 
 	message.channel.send(exampleEmbed4);
-}
-
-else if(args[1] == "speed") {
+} else if(aspeed == "speed") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:antman:663749977469878273> **Ant Man** \n**Ant-Man**'s base speed is 100, but with **Black Widow** \nusing her turn 1 special, his effective turn 1 speed is 110.")
 	message.channel.send(speedEmbed);
-}
-
-else if(args[1] == "unlock" || args[1] == "farm") {
+} else if(aunlock == "unlock" || args[1] == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable in:**")
+	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable via:\n\n**Supplies:** Blitz Store\n\n**Orbs:** Blitz, Mega, Milestone, Legacy, Premium, Red Star")	 
+
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const speedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:antman:663749977469878273> **Ant Man** \nAvenger,Controller,Global,Hero,Tech")  
+	message.channel.send(speedEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:antman:663749977469878273> **Ant Man** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
+}
 }
 
-}
+
+
+
 if(command === 'blackbolt' || command === 'bolt' || command === 'blackbo' || command === 'blackbol' || command === 'kingofattilan' || command === 'blackagar' || command === 'boltagon') {
 if(kit === "kit"){
 	const exampleEmbed = new Discord.RichEmbed()
