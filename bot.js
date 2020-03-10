@@ -11428,7 +11428,7 @@ message.channel.send(exampleEmbed);
 });
 
 
-
+//GIVING ROLES
 //*********GIVING TB2*********** 
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -11445,7 +11445,31 @@ const rolelist = [ '653653557475803137','653653611741446144','653653648655777830
 //                    GADD                   BOB                   CLEAVELANDS          RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id) ){
-if(command === 'give' && args[0] === "tb2") { 
+if(command === 'give' && args[0] === "tb1 ") { 
+//GIVING TB1
+if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
+mentionedUser.addRole(TB1).catch(console.error);
+mentionedUser.removeRole(TB2).catch(console.error);
+mentionedUser.removeRole//all roles
+mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB2 Removed from " + mentionedUser + " + TB1 Added, Team1 Assigned.")
+} else if(mentionedUser.roles.has(TB3.id)) { //GIVE TB1 REMOVE TB3
+mentionedUser.addRole(TB1).catch(console.error);
+mentionedUser.removeRole(TB3).catch(console.error);
+mentionedUser.removeRole//all roles
+mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB3 Removed from " + mentionedUser + " + TB1 Added, Team1 Assigned.")
+} else if(mentionedUser.roles.has(TB1.id)) { // GIVE TB1 WHILST HAVING TB1
+message.channel.send("" + mentionedUser + " Is already in TB1")
+} else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB1 WHILST HAVING RECRUIT ROLE
+mentionedUser.addRole(TB1).catch(console.error);
+message.channel.send("You've just added " + mentionedUser + " to the TB1 family ❤️")
+message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&652129311465406497> Welcomes You Aboard.");
+} else {
+message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
+}
+}
+if(command === 'give' && args[0] === "tb2 ") { 
 if(mentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
 mentionedUser.addRole(TB2).catch(console.error);
 mentionedUser.removeRole(TB1).catch(console.error);
@@ -11465,9 +11489,33 @@ mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB2 family ❤️")
 message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&650511206947225641>️ Welcomes You Aboard.");
 } else {
-message.channel.send("Something has gone wrong, mentionedUser possibly does not have a role of TB1/TB2/TB3.")
+message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
 }
-}}});
+}
+if(command === 'give' && args[0] === "tb3 ") { 
+if(MENTION.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
+MENTION.addRole(TB3).catch(console.error);
+MENTION.removeRole(TB2).catch(console.error);
+MENTION.removeRole//all roles
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
+} else if(MENTION.roles.has(TB1.id)) { //GIVE TB3 REMOVE TB1
+MENTION.addRole(TB3).catch(console.error);
+MENTION.removeRole(TB1).catch(console.error);
+MENTION.removeRole//all roles
+MENTION.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
+} else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB3 WHILST HAVING RECRUIT ROLE
+mentionedUser.addRole(TB3).catch(console.error);
+message.channel.send("You've just added " + mentionedUser + " to the TB3 family ❤️")
+message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&653653681136467978> Welcomes You Aboard.");
+} else {
+message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
+}
+}
+
+
+}});
 
 
 
