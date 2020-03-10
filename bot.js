@@ -11450,7 +11450,7 @@ const rolelist = [ '431511357540532244','431511377824448512','431511398057771029
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id) ){
-if(command === 'give') && (message.content.includes(USER)) {
+if(command === 'give' && message.content.includes(USER)) {
 if (args[0] === "TB2"){	 //GIVE TB2 REMOVE TB1
 if(USER.roles.has(TB1.id)) {
 USER.addRole(TB2).catch(console.error);
