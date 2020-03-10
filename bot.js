@@ -11450,13 +11450,13 @@ if(command === 'give' && args[0] === "tb1 ") {
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
 mentionedUser.addRole(TB1).catch(console.error);
 mentionedUser.removeRole(TB2).catch(console.error);
-mentionedUser.removeRole//all roles
+mentionedUser.removeRoles(rolelist).catch(console.error);
 mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB2 Removed from " + mentionedUser + " + TB1 Added, Team1 Assigned.")
 } else if(mentionedUser.roles.has(TB3.id)) { //GIVE TB1 REMOVE TB3
 mentionedUser.addRole(TB1).catch(console.error);
 mentionedUser.removeRole(TB3).catch(console.error);
-mentionedUser.removeRole//all roles
+mentionedUser.removeRoles(rolelist).catch(console.error);
 mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB3 Removed from " + mentionedUser + " + TB1 Added, Team1 Assigned.")
 } else if(mentionedUser.roles.has(TB1.id)) { // GIVE TB1 WHILST HAVING TB1
@@ -11496,13 +11496,13 @@ if(command === 'give' && args[0] === "tb3 ") {
 if(MENTION.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB2).catch(console.error);
-MENTION.removeRole//all roles
+mentionedUser.removeRoles(rolelist).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
 } else if(MENTION.roles.has(TB1.id)) { //GIVE TB3 REMOVE TB1
 MENTION.addRole(TB3).catch(console.error);
 MENTION.removeRole(TB1).catch(console.error);
-MENTION.removeRole//all roles
+mentionedUser.removeRoles(rolelist).catch(console.error);
 MENTION.addRole(RANDOMTEAM).catch(console.error); 
 message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB3 WHILST HAVING RECRUIT ROLE
