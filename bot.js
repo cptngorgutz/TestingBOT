@@ -11437,7 +11437,7 @@ const mentionedUser = message.mentions.users.first();
 const recruit = message.guild.roles.find(role => role.name === 'recruit');
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-if(command === 'give' && args[0] === "tb2" && message.content.includes(mentionedUser)) {
+if(command === 'give' && args[0] === "tb2") {
 if(mentionedUser.roles.has(recruit.id)) {
 mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("" + mentionedUser + " is now in TB2")
