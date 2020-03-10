@@ -11471,6 +11471,6 @@ message.channel.send("" + USER + " Is now apart of  the TB2 family ❤️")
 } else {
 message.channel.send("Something has gone wrong, user possibly does not have a role of TB1/TB2/TB3.")
 }
-}}}});
+}}});
 
 client.login(process.env.TOKEN);
