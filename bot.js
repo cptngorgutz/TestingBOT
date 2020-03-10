@@ -11454,7 +11454,7 @@ const rolelist = [ '653653557475803137','653653611741446144','653653648655777830
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id) ){
 if(command === 'give' && args[0] === "tb2") { 
-if(mentionedmentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
+if(mentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
 mentionedUser.addRole(TB2).catch(console.error);
 mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
