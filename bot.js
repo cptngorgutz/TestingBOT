@@ -11433,7 +11433,7 @@ message.channel.send(exampleEmbed);
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-const mentionedmentionedUser = message.mentions.members.first();
+const mentionedUser = message.mentions.members.first();
 const recruit = message.guild.roles.find(role => role.name === 'recruit');
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
