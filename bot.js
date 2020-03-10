@@ -11427,6 +11427,8 @@ message.channel.send(exampleEmbed);
 }//channel ID
 });
 
+
+
 //*********GIVING TB2*********** 
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -11446,12 +11448,14 @@ const aTB3team1 = message.guild.roles.find(role => role.name === 'TB3team1');
 const aTB3team2 = message.guild.roles.find(role => role.name === 'TB3team2');
 const aTB3team3 = message.guild.roles.find(role => role.name === 'TB3team3');
 //                       TB1team1             TB1team2            TB1team3              TB2team1             TB2team2            TB2team3             TB3team1              TB3team2             TB3team3
-const rolelist = [ '431511357540532244','431511377824448512','431511398057771029','486675509166735371','486675593522446346','486675606021341204','643129349926682635','643129351549878295','643129353873391657',]
+const rolelistactual = [ '431511357540532244','431511377824448512','431511398057771029','486675509166735371','486675593522446346','486675606021341204','643129349926682635','643129351549878295','643129353873391657',]
+const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
 //                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id) ){
-if(command === 'give' && message.content.includes("TB2") && message.content.includes(USER)) {
-if(USER.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
+if(command === 'give') && (message.content.includes(USER)) {
+if (args[0] === "TB2"){	 //GIVE TB2 REMOVE TB1
+if(USER.roles.has(TB1.id)) {
 USER.addRole(TB2).catch(console.error);
 USER.removeRole(TB1).catch(console.error);
 USER.removeRoles(rolelist).catch(console.error);
@@ -11471,6 +11475,6 @@ message.channel.send("" + USER + " Is now apart of  the TB2 family ❤️")
 } else {
 message.channel.send("Something has gone wrong, user possibly does not have a role of TB1/TB2/TB3.")
 }
-}}});
+}}}});
 
 client.login(process.env.TOKEN);
