@@ -11463,7 +11463,7 @@ message.channel.send("" + mentionedUser + " Is already in TB2")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB2 WHILST HAVING RECRUIT ROLE
 mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB2 family ❤️")
-member.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&650511206947225641>️ Welcomes You Aboard.");
+message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&650511206947225641>️ Welcomes You Aboard.");
 } else {
 message.channel.send("Something has gone wrong, mentionedUser possibly does not have a role of TB1/TB2/TB3.")
 }
