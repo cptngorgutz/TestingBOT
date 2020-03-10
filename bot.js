@@ -11468,9 +11468,9 @@ message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/T
 }
 if(command === 'give' && args[0] === "tb2") { 
 if(mentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
-mentionedUser.addRole(TB2).catch(console.error);
 mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("TB1 Removed from " + mentionedUser + " + TB2 Added.")
 } else if (mentionedUser.roles.has(TB3.id)) { //GIVE TB2 REMOVE TB3
 mentionedUser.addRole(TB2).catch(console.error);
