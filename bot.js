@@ -11447,14 +11447,14 @@ if(admin.includes(message.author.id) ){
 if(command === 'give' && args[0] === "tb1") { 
 //GIVING TB1
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
-mentionedUser.addRole(TB1).catch(console.error);
-mentionedUser.removeRole(TB2).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.removeRole(TB2).catch(console.error);
+mentionedUser.addRole(TB1).catch(console.error);
 message.channel.send("TB2 Removed from " + mentionedUser + " + TB1 Added.")
 } else if(mentionedUser.roles.has(TB3.id)) { //GIVE TB1 REMOVE TB3
-mentionedUser.addRole(TB1).catch(console.error);
-mentionedUser.removeRole(TB3).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.removeRole(TB3).catch(console.error);
+mentionedUser.addRole(TB1).catch(console.error);
 message.channel.send("TB3 Removed from " + mentionedUser + " + TB1 Added.")
 } else if(mentionedUser.roles.has(TB1.id)) { // GIVE TB1 WHILST HAVING TB1
 message.channel.send("" + mentionedUser + " Is already in TB1")
@@ -11468,14 +11468,14 @@ message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/T
 }
 if(command === 'give' && args[0] === "tb2") { 
 if(mentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
-mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("TB1 Removed from " + mentionedUser + " + TB2 Added.")
 } else if (mentionedUser.roles.has(TB3.id)) { //GIVE TB2 REMOVE TB3
-mentionedUser.addRole(TB2).catch(console.error);
-mentionedUser.removeRole(TB3).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.removeRole(TB3).catch(console.error);
+mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("TB3 Removed from " + mentionedUser + " + TB2 Added.")
 } else if(mentionedUser.roles.has(TB2.id)) { // GIVE TB2 WHILST HAVING TB2
 message.channel.send("" + mentionedUser + " Is already in TB2")
@@ -11489,14 +11489,14 @@ message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/T
 }
 if(command === 'give' && args[0] === "tb3") { 
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
-mentionedUser.addRole(TB3).catch(console.error);
-mentionedUser.removeRole(TB2).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.removeRole(TB2).catch(console.error);
+mentionedUser.addRole(TB3).catch(console.error);
 message.channel.send("TB2 Removed from " + mentionedUser + " + TB3 Added.")
 } else if(mentionedUser.roles.has(TB1.id)) { //GIVE TB3 REMOVE TB1
-mentionedUser.addRole(TB3).catch(console.error);
-mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.removeRole(TB1).catch(console.error);
+mentionedUser.addRole(TB3).catch(console.error);
 message.channel.send("TB1 Removed from " + mentionedUser + " + TB3 Added.")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB3 WHILST HAVING RECRUIT ROLE
 mentionedUser.addRole(TB3).catch(console.error);
