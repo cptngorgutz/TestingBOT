@@ -11445,7 +11445,7 @@ const rolelist = [ '653653557475803137','653653611741446144','653653648655777830
 //                    GADD                   BOB                   CLEAVELANDS          RAIN                 VAYGRANT               BUSTA
 const admin = [ '174307382296313857', '212232190358978560', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
 if(admin.includes(message.author.id) ){
-if(command === 'give' && args[0] === "tb1 ") { 
+if(command === 'give' && args[0] === "tb1") { 
 //GIVING TB1
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
 mentionedUser.addRole(TB1).catch(console.error);
@@ -11469,7 +11469,7 @@ message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders 
 message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
 }
 }
-if(command === 'give' && args[0] === "tb2 ") { 
+if(command === 'give' && args[0] === "tb2") { 
 if(mentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
 mentionedUser.addRole(TB2).catch(console.error);
 mentionedUser.removeRole(TB1).catch(console.error);
@@ -11492,7 +11492,7 @@ message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders 
 message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
 }
 }
-if(command === 'give' && args[0] === "tb3 ") { 
+if(command === 'give' && args[0] === "tb3") { 
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
 mentionedUser.addRole(TB3).catch(console.error);
 mentionedUser.removeRole(TB2).catch(console.error);
