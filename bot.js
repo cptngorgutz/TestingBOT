@@ -11493,18 +11493,18 @@ message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/T
 }
 }
 if(command === 'give' && args[0] === "tb3 ") { 
-if(MENTION.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
-MENTION.addRole(TB3).catch(console.error);
-MENTION.removeRole(TB2).catch(console.error);
+if(mentionedUser.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
+mentionedUser.addRole(TB3).catch(console.error);
+mentionedUser.removeRole(TB2).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
-} else if(MENTION.roles.has(TB1.id)) { //GIVE TB3 REMOVE TB1
-MENTION.addRole(TB3).catch(console.error);
-MENTION.removeRole(TB1).catch(console.error);
+mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB2 Removed from " + mentionedUser + " + TB3 Added, Team1 Assigned.")
+} else if(mentionedUser.roles.has(TB1.id)) { //GIVE TB3 REMOVE TB1
+mentionedUser.addRole(TB3).catch(console.error);
+mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-MENTION.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB1 Removed from " + MENTION + " + TB3 Added, Team1 Assigned.")
+mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
+message.channel.send("TB1 Removed from " + mentionedUser + " + TB3 Added, Team1 Assigned.")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB3 WHILST HAVING RECRUIT ROLE
 mentionedUser.addRole(TB3).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB3 family ❤️")
