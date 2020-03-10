@@ -11438,7 +11438,6 @@ const recruit = message.guild.roles.find(role => role.name === 'recruit');
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
 const TB3 = message.guild.roles.find(role => role.name === 'TB3');
-const Team1 = message.guild.roles.find(role => role.name === 'TB2team1')
 //                       TB1team1             TB1team2            TB1team3              TB2team1             TB2team2            TB2team3             TB3team1              TB3team2             TB3team3
 const rolelistactual = [ '431511357540532244','431511377824448512','431511398057771029','486675509166735371','486675593522446346','486675606021341204','643129349926682635','643129351549878295','643129353873391657',]
 const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
@@ -11451,14 +11450,12 @@ if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
 mentionedUser.addRole(TB1).catch(console.error);
 mentionedUser.removeRole(TB2).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + mentionedUser + " + TB1 Added, Team1 Assigned.")
+message.channel.send("TB2 Removed from " + mentionedUser + " + TB1 Added.")
 } else if(mentionedUser.roles.has(TB3.id)) { //GIVE TB1 REMOVE TB3
 mentionedUser.addRole(TB1).catch(console.error);
 mentionedUser.removeRole(TB3).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB3 Removed from " + mentionedUser + " + TB1 Added, Team1 Assigned.")
+message.channel.send("TB3 Removed from " + mentionedUser + " + TB1 Added.")
 } else if(mentionedUser.roles.has(TB1.id)) { // GIVE TB1 WHILST HAVING TB1
 message.channel.send("" + mentionedUser + " Is already in TB1")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB1 WHILST HAVING RECRUIT ROLE
@@ -11474,14 +11471,12 @@ if(mentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
 mentionedUser.addRole(TB2).catch(console.error);
 mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-mentionedUser.addRole(Team1).catch(console.error); 
-message.channel.send("TB1 Removed from " + mentionedUser + " + TB2 Added, Team1 Assigned.")
+message.channel.send("TB1 Removed from " + mentionedUser + " + TB2 Added.")
 } else if (mentionedUser.roles.has(TB3.id)) { //GIVE TB2 REMOVE TB3
 mentionedUser.addRole(TB2).catch(console.error);
 mentionedUser.removeRole(TB3).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-mentionedUser.addRole(Team1).catch(console.error); 
-message.channel.send("TB3 Removed from " + mentionedUser + " + TB2 Added, Team1 Assigned.")
+message.channel.send("TB3 Removed from " + mentionedUser + " + TB2 Added.")
 } else if(mentionedUser.roles.has(TB2.id)) { // GIVE TB2 WHILST HAVING TB2
 message.channel.send("" + mentionedUser + " Is already in TB2")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB2 WHILST HAVING RECRUIT ROLE
@@ -11497,14 +11492,12 @@ if(mentionedUser.roles.has(TB2.id)) { //GIVE TB3 REMOVE TB2
 mentionedUser.addRole(TB3).catch(console.error);
 mentionedUser.removeRole(TB2).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB2 Removed from " + mentionedUser + " + TB3 Added, Team1 Assigned.")
+message.channel.send("TB2 Removed from " + mentionedUser + " + TB3 Added.")
 } else if(mentionedUser.roles.has(TB1.id)) { //GIVE TB3 REMOVE TB1
 mentionedUser.addRole(TB3).catch(console.error);
 mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.removeRoles(rolelist).catch(console.error);
-mentionedUser.addRole(RANDOMTEAM).catch(console.error); 
-message.channel.send("TB1 Removed from " + mentionedUser + " + TB3 Added, Team1 Assigned.")
+message.channel.send("TB1 Removed from " + mentionedUser + " + TB3 Added.")
 } else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB3 WHILST HAVING RECRUIT ROLE
 mentionedUser.addRole(TB3).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB3 family ❤️")
