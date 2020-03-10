@@ -11433,19 +11433,18 @@ message.channel.send(exampleEmbed);
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-const USER = message.mentions.members.first();
+const mentionedmentionedUser = message.mentions.mentionedUsers.first();
 const recruit = message.guild.roles.find(role => role.name === 'recruit');
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-//                       TB1team1             TB1team2            TB1team3              TB2team1             TB2team2            TB2team3             TB3team1              TB3team2             TB3team3
-const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
-if(command === 'give' && args[0] === "tb2" && message.content.includes(USER)) {
-if(USER.roles.has(recruit.id)) {
-USER.addRole(TB2).catch(console.error);
-message.channel.send("" + USER + " is now in TB2")
+if(command === 'give' && args[0] === "tb2" && message.content.includes(mentionedUser)) {
+if(mentionedUser.roles.has(recruit.id)) {
+mentionedUser.addRole(TB2).catch(console.error);
+message.channel.send("" + mentionedUser + " is now in TB2")
 }
 }
 });
+
 
 
 client.login(process.env.TOKEN);
