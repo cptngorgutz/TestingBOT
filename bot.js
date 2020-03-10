@@ -11433,17 +11433,48 @@ message.channel.send(exampleEmbed);
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-const mentionedUser = message.mentions.members.first();
+const mentionedmentionedUser = message.mentions.members.first();
 const recruit = message.guild.roles.find(role => role.name === 'recruit');
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
-if(command === 'give' && args[0] === "tb2") {
-if(mentionedUser.roles.has(recruit.id)) {
+const Team1 = message.guild.roles.find(role => role.name === 'TB2team1');
+const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
+const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
+const aTB1team3 = message.guild.roles.find(role => role.name === 'TB1team3');
+const aTB2team1 = message.guild.roles.find(role => role.name === 'TB2team1');
+const aTB2team2 = message.guild.roles.find(role => role.name === 'TB2team2');
+const aTB2team3 = message.guild.roles.find(role => role.name === 'TB2team3');
+const aTB3team1 = message.guild.roles.find(role => role.name === 'TB3team1');
+const aTB3team2 = message.guild.roles.find(role => role.name === 'TB3team2');
+const aTB3team3 = message.guild.roles.find(role => role.name === 'TB3team3');
+//                       TB1team1             TB1team2            TB1team3              TB2team1             TB2team2            TB2team3             TB3team1              TB3team2             TB3team3
+const rolelistactual = [ '431511357540532244','431511377824448512','431511398057771029','486675509166735371','486675593522446346','486675606021341204','643129349926682635','643129351549878295','643129353873391657',]
+const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
+//                    GADD                   BOB                   SIREN              CLEAVELANDS              RAIN                 VAYGRANT               BUSTA
+const admin = [ '174307382296313857', '212232190358978560', '297448131698753538', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
+if(admin.includes(message.author.id) ){
+if(command === 'give' && args[0] === "tb2") { 
+if(mentionedmentionedUser.roles.has(TB1.id)) { //GIVE TB2 REMOVE TB1
 mentionedUser.addRole(TB2).catch(console.error);
-message.channel.send("" + mentionedUser + " is now in TB2")
+mentionedUser.removeRole(TB1).catch(console.error);
+mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.addRole(Team1).catch(console.error); 
+message.channel.send("TB1 Removed from " + mentionedUser + " + TB2 Added, Team1 Assigned.")
+} else if (mentionedUser.roles.has(TB3.id)) { //GIVE TB2 REMOVE TB3
+mentionedUser.addRole(TB2).catch(console.error);
+mentionedUser.removeRole(TB3).catch(console.error);
+mentionedUser.removeRoles(rolelist).catch(console.error);
+mentionedUser.addRole(Team1).catch(console.error); 
+message.channel.send("TB3 Removed from " + mentionedUser + " + TB2 Added, Team1 Assigned.")
+} else if(mentionedUser.roles.has(TB2.id)) { // GIVE TB2 WHILST HAVING TB2
+message.channel.send("" + mentionedUser + " Is already in TB2")
+} else if(mentionedUser.roles.has(recruit.id)) { // GIVE TB2 WHILST HAVING RECRUIT ROLE
+mentionedUser.addRole(TB2).catch(console.error);
+message.channel.send("" + mentionedUser + " Is now apart of  the TB2 family ❤️")
+} else {
+message.channel.send("Something has gone wrong, mentionedUser possibly does not have a role of TB1/TB2/TB3.")
 }
-}
-});
+}}}});
 
 
 
