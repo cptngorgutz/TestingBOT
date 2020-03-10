@@ -11437,6 +11437,7 @@ const mentionedUser = message.mentions.members.first();
 const recruit = message.guild.roles.find(role => role.name === 'recruit');
 const TB1 = message.guild.roles.find(role => role.name === 'TB1');
 const TB2 = message.guild.roles.find(role => role.name === 'TB2');
+const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const Team1 = message.guild.roles.find(role => role.name === 'TB2team1');
 const aTB1team1 = message.guild.roles.find(role => role.name === 'TB1team1');
 const aTB1team2 = message.guild.roles.find(role => role.name === 'TB1team2');
