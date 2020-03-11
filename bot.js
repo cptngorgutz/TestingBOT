@@ -11446,7 +11446,7 @@ const rolelistactual = [ '431511357540532244','431511377824448512','431511398057
 const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
 //                    GADD                   BOB                   CLEAVELANDS          RAIN                 VAYGRANT               BUSTA
 const cap = [ '678031406483374101', '678038936496635907', '678031440700506132', ]
-if(message.member.roles.has(TB1cap.id) || message.member.roles.has(TB2cap.id) || message.member.roles.has(TB3cap.id) {
+if(message.member.roles.has(TB1cap.id) || message.member.roles.has(TB2cap.id) || message.member.roles.has(TB3cap.id)) {
 if(command === 'give' && args[0] === "tb1") { 
 //GIVING TB1
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
