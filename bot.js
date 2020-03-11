@@ -11444,8 +11444,7 @@ const TB3cap = message.guild.roles.find(role => role.name === 'TB3 Captain');
 //                       TB1team1             TB1team2            TB1team3              TB2team1             TB2team2            TB2team3             TB3team1              TB3team2             TB3team3
 const rolelistactual = [ '431511357540532244','431511377824448512','431511398057771029','486675509166735371','486675593522446346','486675606021341204','643129349926682635','643129351549878295','643129353873391657',]
 const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
-//                    GADD                   BOB                   CLEAVELANDS          RAIN                 VAYGRANT               BUSTA
-const cap = [ '678031406483374101', '678038936496635907', '678031440700506132', ]
+const cap = [ '678031406483374101', '678038936496635907', '678031440700506132', ] //CAPTAIN ROLES 1/2/3
 if(message.member.roles.has(TB1cap.id) || message.member.roles.has(TB2cap.id) || message.member.roles.has(TB3cap.id)) {
 if(command === 'give' && args[0] === "tb1") { 
 //GIVING TB1
@@ -11465,7 +11464,6 @@ message.channel.send("" + mentionedUser + " Is already in TB1")
 mentionedUser.addRole(TB1).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB1 family ❤️")
 mentionedUser.removeRole(recruit).catch(console.error);
-message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&652129311465406497> Welcomes You Aboard.");
 } else {
 message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
 }
@@ -11487,7 +11485,6 @@ message.channel.send("" + mentionedUser + " Is already in TB2")
 mentionedUser.addRole(TB2).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB2 family ❤️")
 mentionedUser.removeRole(recruit).catch(console.error);
-message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&650511206947225641>️ Welcomes You Aboard.");
 } else {
 message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
 }
@@ -11507,7 +11504,6 @@ mentionedUser.removeRole(TB1).catch(console.error);
 mentionedUser.addRole(TB3).catch(console.error);
 message.channel.send("You've just added " + mentionedUser + " to the TB3 family ❤️")
 mentionedUser.removeRole(recruit).catch(console.error);
-message.guild.channels.get('661661368943902720').send("Welcome to The Beyonders family " + mentionedUser + " <@&653653681136467978> Welcomes You Aboard.");
 } else {
 message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/TB2/TB3.")
 }
