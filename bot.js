@@ -11509,7 +11509,7 @@ message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/T
 
 
 }});
-if(message.member.roles.has(captain.id))
+
 
 
 
