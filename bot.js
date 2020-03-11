@@ -11442,8 +11442,8 @@ const TB3 = message.guild.roles.find(role => role.name === 'TB3');
 const rolelistactual = [ '431511357540532244','431511377824448512','431511398057771029','486675509166735371','486675593522446346','486675606021341204','643129349926682635','643129351549878295','643129353873391657',]
 const rolelist = [ '653653557475803137','653653611741446144','653653648655777830','649763104057720853','649763122688688129','649763083052384260','653653699285221419','653653722739769344','653653761012531208',]
 //                    GADD                   BOB                   CLEAVELANDS          RAIN                 VAYGRANT               BUSTA
-const admin = [ '174307382296313857', '212232190358978560', '344950903910170655', '416730768388390912', '159953251691790336', '354421064815607808', ]
-if(admin.includes(message.author.id) ){
+const cap = [ '678031406483374101', '678038936496635907', '678031440700506132', ]
+if(cap.includes(member.roles.has(cap.id))){
 if(command === 'give' && args[0] === "tb1") { 
 //GIVING TB1
 if(mentionedUser.roles.has(TB2.id)) { //GIVE TB1 REMOVE TB2
@@ -11509,6 +11509,7 @@ message.channel.send("Error: mentionedUser does not have a role of recruit/TB1/T
 
 
 }});
+if(message.member.roles.has(captain.id))
 
 
 
