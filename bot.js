@@ -150,7 +150,12 @@ if(command === 'commandsusual') {
 
 
 //LEGENDARY EVENTS
-if(command === 'event') {
+if(command === 'event' || command === 'legendary') {
+const eventEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription("**Legendary Events:** \n \n**!event charactername** or **!legendary charactername** \n \n**Availible characters** \nFury\nIron Man,\nMagneto,\nShuri,\nStarlord,\nPhoenix,\nInvisible Woman")
+.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
+message.channel.send(eventEmbed);
 if(args[0] === "fury"){
 message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
 }
