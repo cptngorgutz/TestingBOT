@@ -172,7 +172,7 @@ const eventEmbed = new Discord.RichEmbed()
 .setThumbnail('https://i.imgur.com/9eCZztr.png') 
 message.channel.send(eventEmbed);
 }
-
+}
 
 //CHARACTER TIERS
 if(command === 'ultron') {
