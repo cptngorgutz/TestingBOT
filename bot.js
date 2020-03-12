@@ -78,7 +78,7 @@ if(command === 'uniques') {
 
 //*****************************************************************************************************//
 //**********************************SELF ASSIGNED ROLES***********************************************//
-client.on('message', (message) => {
+client.on('message', async (message) => {
 const args = message.content.toLowerCase().slice(config.prefix2.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command === 'notifications') {
