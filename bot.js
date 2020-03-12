@@ -153,31 +153,24 @@ if(command === 'commandsusual') {
 if(command === 'event' || command === 'legendary') {
 const eventEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setDescription("**Legendary Events:** \n \n**!event charactername** or **!legendary charactername** \n \n**Availible characters** \nFury\nIron Man,\nMagneto,\nShuri,\nStarlord,\nPhoenix,\nInvisible Woman")
-.setThumbnail('https://i.imgur.com/XVvMMSA.png') 
+.setDescription("**Legendary Events:** \n**!event charactername** or **!legendary charactername** \n \n**Availible characters:** \nFury\nIron Man,\nMagneto,\nShuri,\nStarlord,\nPhoenix,\nInvisible Woman")
 message.channel.send(eventEmbed);
-if(args[0] === "fury"){
+} else if(args[0] === "fury"){
 message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
-}
-if(args[0] === "ironman"){
+} else if(args[0] === "ironman"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/ironmanevent.png')] });
-}
-if(args[0] === "magneto"){
+} else if(args[0] === "magneto"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/magnetoevent.png')] });	
-}
-if(args[0] === "shuri"){
+} else if(args[0] === "shuri"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/shurievent.png')] });
-}
-if(args[0] === "starlord"){
+} else if(args[0] === "starlord"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/starlordevent.png')] });  	
-}
-if(args[0] === "phoenix"){
+} else if(args[0] === "phoenix"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] }); 
-}
-if(args[0] === "iw" || args[0] === "invisiblewoman" || args[0] === "invisiblewoman" || args[0] === "suestorm"){
+} else if(args[0] === "iw" || args[0] === "invisiblewoman" || args[0] === "invisiblewoman" || args[0] === "suestorm"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
 }
-}
+
 
 //CHARACTER TIERS
 if(command === 'ultron') {
