@@ -169,7 +169,7 @@ if(args[0] === "starlord"){
 if(args[0] === "phoenix"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] }); 
 }
-if(args[0] === "iw" || args[0] === "invisiblewoman" || args[0] === "invisiblewoman" || args[0] iw === "suestorm"){
+if(args[0] === "iw" || args[0] === "invisiblewoman" || args[0] === "invisiblewoman" || args[0] === "suestorm"){
 	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
 }
 }
