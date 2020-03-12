@@ -207,83 +207,83 @@ message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './Charact
 
 //MEMES
 if(command === 'vaystfu') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setImage('https://i.imgur.com/tVcDb5u.gif') 
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'sad') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('**You made Cap cry with your bad luck**')
 	.attachFiles(['./Misc/sadgif.gif'])
 	.setImage('attachment://sadgif.gif')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'happy') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('**Cap appreciates your luck**')
 	.attachFiles(['./Misc/happygif.gif'])
 	.setImage('attachment://happygif.gif')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'nevermisses') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('**You forgot one thing, he never misses**')
 	.attachFiles(['./Misc/nevermissgif.gif'])
 	.setImage('attachment://nevermissgif.gif')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'spideydance') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('**When the camera keeps on rolling...**')
 	.attachFiles(['./Misc/spideygif.gif'])
 	.setImage('attachment://spideygif.gif')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'dafuq') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 //	.setDescription('?????????????????????')
 	.attachFiles(['./Misc/dafuq.gif'])
 	.setImage('attachment://dafuq.gif')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'dafuq1') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 //	.setDescription('?????????????????????')
 	.attachFiles(['./Misc/dafuq1.jpg'])
 	.setImage('attachment://dafuq1.jpg')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'dafuq2') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 //	.setDescription('?????????????????????')
 	.attachFiles(['./Misc/dafuq2.jpg'])
 	.setImage('attachment://dafuq2.jpg')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 if(command === 'dafuq3') {
-	msg.channel.bulkDelete(1)
+	message.channel.bulkDelete(1)
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 //	.setDescription('?????????????????????')
 	.attachFiles(['./Misc/dafuq3.jpg'])
 	.setImage('attachment://dafuq3.jpg')
-	msg.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 }
 
 	
@@ -345,211 +345,211 @@ message.channel.send("You dont have permission to use this command.")
 }
 }
 
-//LAUNCHING ACTUAL RAIDS      //testing room   || msg.channel.id === '617707484626288672'
+//LAUNCHING ACTUAL RAIDS      //testing room   || message.channel.id === '617707484626288672'
 if(command === 'raid') {
 if(args[0] === "ultimus" && args[1] === "6"){
-if (msg.channel.id === '656244057244303361' || msg.channel.id === '643229492650704973' || msg.channel.id === '617707484626288672') {
+if (message.channel.id === '656244057244303361' || message.channel.id === '643229492650704973' || message.channel.id === '617707484626288672') {
 if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 //                           TB2 ULT 6 ROOM                             TB3 ULT 6 ROOM                       
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus6.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
+	message.channel.bulkDelete(100)
+    message.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus6.png')] });
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  	
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  		
 } else {
 message.channel.send("You dont have permission to use this command.")
 }
 } else {
-	msg.channel.send("Cannot be used here")
+	message.channel.send("Cannot be used here")
 }
 }
 if(args[0] === "ultimus" && args[1] === "7"){
-if (msg.channel.id === '634155222490415104' || msg.channel.id === '634155347736526848' || msg.channel.id === '646322699869880340' || msg.channel.id === '617707484626288672') {
+if (message.channel.id === '634155222490415104' || message.channel.id === '634155347736526848' || message.channel.id === '646322699869880340' || message.channel.id === '617707484626288672') {
 if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 //                           TB1 ULT 7 ROOM                             TB2 ULT 7 ROOM                              TB3 ULT 7 ROOM
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus7.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
+	message.channel.bulkDelete(100)
+    message.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Ultimus7.png')] });
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  	
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  		
 } else {
 message.channel.send("You dont have permission to use this command.")
 }
 } else {
-	msg.channel.send("Cannot be used here")
+	message.channel.send("Cannot be used here")
 }
 }
 if(args[0] === "alpha" && args[1] === "4"){
-if (msg.channel.id === '656230420265828363' || msg.channel.id === '656230665221701682' || msg.channel.id === '656207417033359371' || msg.channel.id === '656216714723459116' || msg.channel.id === '656232194137784333' || msg.channel.id === '656232345371672577' || msg.channel.id === '643229344793231370' || msg.channel.id === '617707484626288672') {
+if (message.channel.id === '656230420265828363' || message.channel.id === '656230665221701682' || message.channel.id === '656207417033359371' || message.channel.id === '656216714723459116' || message.channel.id === '656232194137784333' || message.channel.id === '656232345371672577' || message.channel.id === '643229344793231370' || message.channel.id === '617707484626288672') {
 if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 //                       TB1 EVENT ROOM#1                           TB1 EVENT ROOM#2                           TB2 EVENT ROOM#1                           TB2 EVENT ROOM#2                           TB3 EVENT ROOM#1                           TB3 EVENT ROOM#2                           TB3 ALPHA ROOM 
-	msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Alpha4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
+	message.channel.bulkDelete(100)
+    message.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Alpha4.png')] });
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  	
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  		
 } else {
 message.channel.send("You dont have permission to use this command.")
 }
 } else {
-	msg.channel.send("cannot do this here")
+	message.channel.send("cannot do this here")
 }
 }
 if(args[0] === "beta" && args[1] === "4"){
-if (msg.channel.id === '656230420265828363' || msg.channel.id === '656230665221701682' || msg.channel.id === '656207417033359371' || msg.channel.id === '656216714723459116' || msg.channel.id === '656232194137784333' || msg.channel.id === '656232345371672577' || msg.channel.id === '651159388685336587' || msg.channel.id === '617707484626288672') {
+if (message.channel.id === '656230420265828363' || message.channel.id === '656230665221701682' || message.channel.id === '656207417033359371' || message.channel.id === '656216714723459116' || message.channel.id === '656232194137784333' || message.channel.id === '656232345371672577' || message.channel.id === '651159388685336587' || message.channel.id === '617707484626288672') {
 if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 //                       TB1 EVENT ROOM#1                           TB1 EVENT ROOM#2                           TB2 EVENT ROOM#1                           TB2 EVENT ROOM#2                           TB3 EVENT ROOM#1                           TB3 EVENT ROOM#2 TB3 room 
-msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Beta4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
+message.channel.bulkDelete(100)
+    message.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Beta4.png')] });
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  	
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  		
 } else {
 message.channel.send("You dont have permission to use this command.")
 }
 } else {
-	msg.channel.send("cannot do this here")
+	message.channel.send("cannot do this here")
 }
 }
 if(args[0] === "gamma" && args[1] === "4"){
-if (msg.channel.id === '656230420265828363' || msg.channel.id === '656230665221701682' || msg.channel.id === '656207417033359371' || msg.channel.id === '656216714723459116' || msg.channel.id === '656232194137784333' || msg.channel.id === '656232345371672577' || msg.channel.id === '655246084418830346' || msg.channel.id === '617707484626288672') {
+if (message.channel.id === '656230420265828363' || message.channel.id === '656230665221701682' || message.channel.id === '656207417033359371' || message.channel.id === '656216714723459116' || message.channel.id === '656232194137784333' || message.channel.id === '656232345371672577' || message.channel.id === '655246084418830346' || message.channel.id === '617707484626288672') {
 if(message.member.roles.has(TB1captains.id) || message.member.roles.has(TB2captains.id) || message.member.roles.has(TB3captains.id)) {
 //                           TB1 EVENT ROOM#1                           TB1 EVENT ROOM#2                           TB2 EVENT ROOM#1                           TB2 EVENT ROOM#2                           TB3 EVENT ROOM#1                           TB3 EVENT ROOM#2                            TB3 GAMMA ROOM :/
-msg.channel.bulkDelete(100)
-    msg.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
-	msg.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Gamma4.png')] });
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  	
-	msg.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
-    msg.channel.send("Lane 1 - Blue")
-	msg.channel.send("Lane 2 - Yellow") 
-	msg.channel.send("Lane 3 - Red")  
-	msg.channel.send("Lane 4 - Green")  
-	msg.channel.send("Lane 5 - Purple")  
-	msg.channel.send("Lane 6 - White")  
-	msg.channel.send("Lane 7 - Teal")
-	msg.channel.send("Lane 8 - Orange")	  		
+message.channel.bulkDelete(100)
+    message.channel.send('```To claim a lane: \n Put an 👌 emoji on the lane of choice.```');
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/Gamma4.png')] });
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 1 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 2 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  	
+	message.channel.send("``` ╔═══════════════╗ \n ║ Strike Team 3 ║  \n ╚═══════════════╝ ```")
+    message.channel.send("Lane 1 - Blue")
+	message.channel.send("Lane 2 - Yellow") 
+	message.channel.send("Lane 3 - Red")  
+	message.channel.send("Lane 4 - Green")  
+	message.channel.send("Lane 5 - Purple")  
+	message.channel.send("Lane 6 - White")  
+	message.channel.send("Lane 7 - Teal")
+	message.channel.send("Lane 8 - Orange")	  		
 } else {
 message.channel.send("You dont have permission to use this command.")
 }
 } else {
-	msg.channel.send("cannot do this here")
+	message.channel.send("cannot do this here")
 }
 }
 }
