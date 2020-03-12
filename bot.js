@@ -79,7 +79,9 @@ if(command === 'uniques') {
 //*****************************************************************************************************//
 //**********************************SELF ASSIGNED ROLES***********************************************//
 client.on('message', (message) => {
-if(message.content.startsWith('?notifications')){
+const args = message.content.toLowerCase().slice(config.prefix2.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+if(command === 'notifications') {
 message.channel.bulkDelete(1)
 const notify = message.guild.roles.find(r => r.name === "notifications");
 if(message.member.roles.has(notify.id)) {
