@@ -151,24 +151,26 @@ if(command === 'commandsusual') {
 
 //LEGENDARY EVENTS
 if(command === 'event' || command === 'legendary') {
+if(args[0] === "fury"){
+message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
+} else if(args[0] === "ironman"){
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/ironmanevent.png')] });
+} else if(args[0] === "magneto"){
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/magnetoevent.png')] });	
+} else if(args[0] === "shuri"){
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/shurievent.png')] });
+} else if(args[0] === "starlord"){
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/starlordevent.png')] });  	
+} else if(args[0] === "phoenix"){
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] }); 
+} else if(args[0] === "iw" || args[0] === "invisiblewoman" || args[0] === "invisiblewoman" || args[0] === "suestorm"){
+	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
+} else {
 const eventEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription("**Legendary Events:** \n**!event charactername** or **!legendary charactername** \n \n**Availible characters:** \nFury\nIron Man,\nMagneto,\nShuri,\nStarlord,\nPhoenix,\nInvisible Woman")
+.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 message.channel.send(eventEmbed);
-} else if(command === 'event' && args[0] === "fury"){
-message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
-} else if(command === 'event' && args[0] === "ironman"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/ironmanevent.png')] });
-} else if(command === 'event' && args[0] === "magneto"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/magnetoevent.png')] });	
-} else if(command === 'event' && args[0] === "shuri"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/shurievent.png')] });
-} else if(command === 'event' && args[0] === "starlord"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/starlordevent.png')] });  	
-} else if(command === 'event' && args[0] === "phoenix"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] }); 
-} else if(command === 'event' && args[0] === "iw" || command === 'event' && args[0] === "invisiblewoman" || command === 'event' && args[0] === "invisiblewoman" || command === 'event' && args[0] === "suestorm"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
 }
 
 
