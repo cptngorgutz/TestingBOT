@@ -1454,7 +1454,7 @@ message.channel.send("You do not have permission to use this command.")
 }
 
 //WAR COMMANDS
-if (message.channel.id === '666305824813219870' || message.channel.id === '617707484626288672' || message.channel.id === '661221254958940220' || message.channel.id === '606119830516400162') { //WAR CHANNEL & test room 
+if (message.channel.id === '560885890369585164' || message.channel.id === '602762910728716288' || message.channel.id === '643140863794348072' || message.channel.id === '606119830516400162') { //WAR STRATEGY CHANNELS & test room 
 let l = args[0];
 let r = args[0];
 let f = args[0];
