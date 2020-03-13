@@ -151,20 +151,101 @@ if(command === 'commandsusual') {
 
 //LEGENDARY EVENTS
 if(command === 'event' || command === 'legendary') {
-if(args[0] === "fury"){
-message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
-} else if(args[0] === "ironman"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/ironmanevent.png')] });
+if(args[0] === "blackbolt" || args[0] === "bb" || args[0] === "blackagar" && args[1] === "boltagon" || args[0] === "black" && args[1] === "bolt"){
+	const channelToCheck = client.channels.get('688002560640155712')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
+} else if(args[0] === "fury" || args[0] === "nick" && args[1] === "fury"){
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/furyevent.png')] });
+	const channelToCheck = client.channels.get('688002478649901056')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
+} else if(args[0] === "ironman" || args[0] === "iron" && args[1] === "man"){
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/ironmanevent.png')] });
+	const channelToCheck = client.channels.get('688002514792349797')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
 } else if(args[0] === "magneto"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/magnetoevent.png')] });	
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/magnetoevent.png')] });
+	const channelToCheck = client.channels.get('688002528792674352')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
 } else if(args[0] === "shuri"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/shurievent.png')] });
-} else if(args[0] === "starlord"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/starlordevent.png')] });  	
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/shurievent.png')] });
+	const channelToCheck = client.channels.get('688002969987317780')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
+} else if(args[0] === "starlord" || args[0] === "star" && args[1] === "lord"){
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/starlordevent.png')] });  	
+	const channelToCheck = client.channels.get('688002652612853799')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    })
 } else if(args[0] === "phoenix"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] }); 
-} else if(args[0] === "iw" || args[0] === "invisiblewoman" || args[0] === "invisiblewoman" || args[0] === "suestorm"){
-	message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/phoenixevent.png')] });
+	const channelToCheck = client.channels.get('688002661244600331')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    }) 
+} else if(args[0] === "iw" || args[0] === "i" && args[1] === "w" || args[0] === "invisible" && args[1] === "woman" || args[0] === "invisiblewoman" || args[0] === "sue" && args[1] === "storm"){
+//message.channel.send({ files:[('.C:\Users\Jamie\discord-greeter-bot', './images/invisibleevent.png')] }); 
+	const channelToCheck = client.channels.get('688002544865378304')
+    channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first().attachments.first()
+	const Attachment = require('discord.js').Attachment;
+	const attachment = new Attachment(lastMessage.url)
+	message.channel.send(attachment);
+	//message.channel.send(lastMessage.url)
+    }).catch(err => {
+    console.error(err)
+    }) 
 } else {
 const eventEmbed = new Discord.RichEmbed()
 .setColor('#0099ff')
@@ -1453,7 +1534,7 @@ message.channel.send("You do not have permission to use this command.")
 }
 }
 
-//WAR COMMANDS
+//WAR COMMANDS 
 if (message.channel.id === '560885890369585164' || message.channel.id === '602762910728716288' || message.channel.id === '643140863794348072' || message.channel.id === '606119830516400162') { //WAR STRATEGY CHANNELS & test room 
 let l = args[0];
 let r = args[0];
