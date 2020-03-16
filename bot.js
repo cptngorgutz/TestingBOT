@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
+const config = require('./index.js');
 
 //ADD & REMOVE ROLES (FINISHED)
 client.on("message", async message => {
