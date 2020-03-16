@@ -4,7 +4,6 @@
   "description": "",
   "main": "Bot.js",
   "scripts": {
-    "start": "./spreadsheet.js" 
   },
   "keywords": [],
   "author": "",
