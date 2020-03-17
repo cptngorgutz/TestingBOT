@@ -1,24 +1,6 @@
-/**
- * @license
- * Copyright Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-// [START sheets_quickstart]
 const fs = require('fs');
 const readline = require('readline');
-const google = require('discord.js/node_modules/googleapis');
-
+const {google} = require('googleapis');
 
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
@@ -87,30 +69,46 @@ function getNewToken(oAuth2Client, callback) {
 /**
  * Prints the names and majors of students in a sample spreadsheet:
  * @see https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+https://docs.google.com/spreadsheets/d/1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw/edit?usp=sharing
  * @param {google.auth.OAuth2} auth The authenticated Google OAuth client.
  */
 function listMajors(auth) {
   const sheets = google.sheets({version: 'v4', auth});
   sheets.spreadsheets.values.get({
-    spreadsheetId: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
-    range: 'Class Data!A2:E',
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: 'A1:E',
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-      console.log('Name, Major:');
+  //    console.log('Name, Major:');
       // Print columns A and E, which correspond to indices 0 and 4.
       rows.map((row) => {
-        console.log(`${row[0]}, ${row[4]}`);
+        console.log(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
       });
     } else {
       console.log('No data found.');
     }
   });
 }
-// [END sheets_quickstart]
 
-module.exports = {
-  SCOPES,
-  listMajors,
-};
+
+function checkPoints(auth,name) {
+    return new Promise((resolve, reject) => {
+        const sheets = google.sheets({ version: 'v4', auth });
+
+        sheets.spreadsheets.values.get({
+            spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+            range: 'A2:B', // A2 because i assume you got a title like "Name/Username" etc.
+        }, (err, res) => {
+            if (err) return console.log("The API returned an error: " + err);
+            let list = [];
+            for(let i = 0; i < res[0].length; i++){ //Loop throw all Players
+                if(res[0][i] == name){
+                    resolve(res[1][i]); //Returns the Points of the Player
+                }
+            }
+        }
+        );
+    });
+}
