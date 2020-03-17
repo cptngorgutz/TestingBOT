@@ -8581,7 +8581,7 @@ function listMajors(auth) {
     }
   });
 }
-});
+
 function checkPoints(auth,name) {
     return new Promise((resolve, reject) => {
         const sheets = google.sheets({ version: 'v4', auth });
@@ -8602,5 +8602,31 @@ function checkPoints(auth,name) {
     });
 }
 
+function appendData(auth) {
+if(command === 'update') {
+  var sheets = google.sheets('v4');
+  sheets.spreadsheets.values.append({
+    auth: auth,
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: 'A1:B', 
+    valueInputOption: "USER_ENTERED",
+    resource: {
+      values: [ ["Void", "Canvas", "Website"], ["Paul", "Shan", "Human"] ]
+    }
+  }, (err, response) => {
+    if (err) {
+      console.log('The API returned an error: ' + err);
+      return;
+    } else {
+        console.log("Appended");
+    }
+  });
+}
+}
+ 
+authentication.authenticate().then((auth)=>{
+    appendData(auth);
+});
 
+});
 client.login(process.env.TOKEN);
