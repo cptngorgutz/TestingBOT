@@ -1583,13 +1583,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 
 }
 
-if(command === 'captain') {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
-	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
-	message.channel.send(exampleEmbed);
-} else if(command === 'captain' && args[0] === "america" || command === 'cap' && args[0] === "america" || command === 'ca' || command === 'cap' || command === 'steve' && args[0] === "rogers" || command === 'steve' || command === 'rogers') {
+if(command === 'captain' && args[0] === "america" || command === 'cap' && args[0] === "america" || command === 'ca' || command === 'cap' || command === 'steve' && args[0] === "rogers" || command === 'steve' || command === 'rogers') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -1714,6 +1708,12 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
+} else if(command === 'captain') {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
+	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
+	message.channel.send(exampleEmbed);
 }
 
 
