@@ -1718,7 +1718,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
-
+}
 
 
 
