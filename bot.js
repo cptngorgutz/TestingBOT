@@ -8623,7 +8623,7 @@ if(command === 'update') {
   });
 }
 }
- 
+let authentication = require("./authentication");
 authentication.authenticate().then((auth)=>{
     appendData(auth);
 });
