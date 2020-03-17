@@ -8522,7 +8522,10 @@ function getNewToken(oAuth2Client, callback) {
 
 
 
-
+client.on("message", message => {
+if(command === 'testing123') {
+	
+	
 function listMajors(auth) {
   const sheets = google.sheets({version: 'v4', auth});
   sheets.spreadsheets.values.get({
@@ -8535,15 +8538,15 @@ function listMajors(auth) {
   //    console.log('Name, Major:');
       // Print columns A and E, which correspond to indices 0 and 4.
       rows.map((row) => {
-        message.channel.send(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
+        console.log(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
       });
     } else {
       console.log('No data found.');
     }
   });
 }
-
-
+}
+});
 function checkPoints(auth,name) {
     return new Promise((resolve, reject) => {
         const sheets = google.sheets({ version: 'v4', auth });
