@@ -1589,8 +1589,7 @@ if(command === 'captain') {
 	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
 	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 	message.channel.send(exampleEmbed);
-}
-if(command === 'captain' && args[0] === "america" || command === 'cap' && args[0] === "america" || command === 'ca' || command === 'cap' || command === 'steve' && args[0] === "rogers" || command === 'steve' || command === 'rogers') {
+} else if(command === 'captain' && args[0] === "america" || command === 'cap' && args[0] === "america" || command === 'ca' || command === 'cap' || command === 'steve' && args[0] === "rogers" || command === 'steve' || command === 'rogers') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -1648,8 +1647,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	message.channel.send(speedEmbed); 
 }
 
-}
-if(command === 'captain' && args[0] === "marvel" || command === 'cm' || command === 'captainmarvel' || command === 'cptnmarvel' || command === 'capmarvel' || command === 'carol' || command === 'danvers') {
+} else if(command === 'captain' && args[0] === "marvel" || command === 'cm' || command === 'captainmarvel' || command === 'cptnmarvel' || command === 'capmarvel' || command === 'carol' || command === 'danvers') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
