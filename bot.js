@@ -1583,8 +1583,13 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 
 }
 
-
-
+if(command === 'captain') {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
+	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
+	message.channel.send(exampleEmbed);
+}
 if(command === 'captain' && args[0] === "america" || command === 'cap' && args[0] === "america" || command === 'ca' || command === 'cap' || command === 'steve' && args[0] === "rogers" || command === 'steve' || command === 'rogers') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
@@ -1644,16 +1649,8 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 }
 
 }
-
-
 if(command === 'captain' && args[0] === "marvel" || command === 'cm' || command === 'captainmarvel' || command === 'cptnmarvel' || command === 'capmarvel' || command === 'carol' || command === 'danvers') {
-if(command === 'captain') {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
-	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
-	message.channel.send(exampleEmbed);
-} else if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
+if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Basic)** \n \n**Princess Sparkle Fist • T4 Upgrade** \n \nAttack primary target for **280% -> 320%** damage. \n50% chance to Chain to 1 adjacent target for **180% -> 220%** damage. \nIf not in Binary, gain +1 Charged, up to a maximum of 5 If in Binary, lose 1 Charged. On losing all Charged, end Binary. \nCounterattack breaks this Chain.")
