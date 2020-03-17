@@ -1708,7 +1708,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
-} else if(command === 'captain') {
+} else {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
