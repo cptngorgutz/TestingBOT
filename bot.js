@@ -8602,6 +8602,16 @@ function checkPoints(auth,name) {
     });
 }
 
+function sheetReady(err, spreadsheet) {
+    if(err) throw err;
+  if(command === 'updatesheet') {
+    spreadsheet.add({ 3: { 5: "hello!" } });
+  }
+    spreadsheet.send(function(err) {
+      if(err) throw err;
+      console.log("Updated Cell at row 3, column 5 to 'hello!'");
+    });
+  }
 
 });
 client.login(process.env.TOKEN);
