@@ -8535,8 +8535,23 @@ function listMajors(auth) {
   //    console.log('Name, Major:');
       // Print columns A and E, which correspond to indices 0 and 4.
       rows.map((row) => {
-		 if(command === 'testing123') {
+		 if(command === 'columnall') {
         message.channel.send(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
+		 }
+		 if(command === 'columna') {
+        message.channel.send(`${row[0]}`);
+		 }
+		 if(command === 'columnb') {
+        message.channel.send(`${row[1]}`);
+		 }
+		 if(command === 'columnc') {
+        message.channel.send(`${row[2]}`);
+		 }
+		 if(command === 'columnd') {
+        message.channel.send(`${row[3]}`);
+		 }
+		 if(command === 'columne') {
+        message.channel.send(`${row[4]}`);
 		 }
       });
     } else {
