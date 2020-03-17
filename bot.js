@@ -8545,7 +8545,7 @@ function listMajors(auth) {
 		 if(command === 'columna') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(`${row[0]}`)
+	.setDescription(row.join('\n'))
 	message.channel.send(exampleEmbed);
        // message.channel.send(`${row[0]}`);
 		 }
