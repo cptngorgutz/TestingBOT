@@ -1647,7 +1647,13 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 
 
 if(command === 'captain' && args[0] === "marvel" || command === 'cm' || command === 'captainmarvel' || command === 'cptnmarvel' || command === 'capmarvel' || command === 'carol' || command === 'danvers') {
-if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
+if(command === 'captain') {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Please choose a character:** \ncaptain marvel = !captain marvel \ncaptain america = !captain america")
+	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
+	message.channel.send(exampleEmbed);
+} else if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340>	**Captain Marvel (Basic)** \n \n**Princess Sparkle Fist • T4 Upgrade** \n \nAttack primary target for **280% -> 320%** damage. \n50% chance to Chain to 1 adjacent target for **180% -> 220%** damage. \nIf not in Binary, gain +1 Charged, up to a maximum of 5 If in Binary, lose 1 Charged. On losing all Charged, end Binary. \nCounterattack breaks this Chain.")
@@ -1707,12 +1713,6 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \nBio,Brawler,Cosmic,Hero,Kree,Military")  
 	message.channel.send(traitEmbed); 
-}  else if(command === 'captain') {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Captain Marvel (Basic)** \n \n")
-	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
-	message.channel.send(exampleEmbed);
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
