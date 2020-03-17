@@ -8605,6 +8605,7 @@ function checkPoints(auth,name) {
 }
 
  if(command === 'updatesheet') {
+	 const sheets = google.sheets({version: 'v4', auth});
 	sheets.spreadsheets.values.update({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: 'A1',
