@@ -8534,7 +8534,6 @@ function listMajors(auth) {
     if (rows.length) {
   //    console.log('Name, Major:');
       // Print columns A and E, which correspond to indices 0 and 4.
-      rows.map((row) => {
 		 if(command === 'columnall') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -8545,7 +8544,7 @@ function listMajors(auth) {
 		 if(command === 'columna') {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(row.join('\n'))
+	.setDescription(rows.join('\n'))
 	message.channel.send(exampleEmbed);
        // message.channel.send(`${row[0]}`);
 		 }
@@ -8577,7 +8576,6 @@ function listMajors(auth) {
 	message.channel.send(exampleEmbed);
 	//    message.channel.send(`${row[4]}`);
 		 }
-      });
     } else {
       console.log('No data found.');
     }
