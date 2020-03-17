@@ -8570,5 +8570,5 @@ const command = args.shift().toLowerCase();
 if(command === 'testing123') {
 message.channel.send(listMajors());
 }
-}
+});
 client.login(process.env.TOKEN);
