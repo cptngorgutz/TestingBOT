@@ -8536,7 +8536,7 @@ function listMajors(auth) {
       // Print columns A and E, which correspond to indices 0 and 4.
       rows.map((row) => {
 		 if(command === 'testing123') {
-        console.log(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
+        message.channel.send(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
 		 }
       });
     } else {
