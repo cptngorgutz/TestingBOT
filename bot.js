@@ -8470,6 +8470,7 @@ fs.readFile('credentials.json', (err, content) => {
   if (err) return console.log('Error loading client secret file:', err);
   // Authorize a client with credentials, then call the Google Sheets API.
   authorize(JSON.parse(content), listMajors);
+  authorize(JSON.parse(content), listers);
 });
 
 /**
@@ -8602,15 +8603,15 @@ function checkPoints(auth,name) {
     });
 }
 
-function sheetReady(err, spreadsheet) {
+function listers(auth) {
     if(err) throw err;
   if(command === 'updatesheet') {
     spreadsheet.add({ 3: { 5: "hello!" } });
-  }
     spreadsheet.send(function(err) {
       if(err) throw err;
       console.log("Updated Cell at row 3, column 5 to 'hello!'");
     });
+  }
   }
 
 });
