@@ -8524,9 +8524,6 @@ function getNewToken(oAuth2Client, callback) {
 
 
 function listMajors(auth) {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-if(command === 'testing123') {
   const sheets = google.sheets({version: 'v4', auth});
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -8545,7 +8542,7 @@ if(command === 'testing123') {
     }
   });
 }
-}
+
 
 function checkPoints(auth,name) {
     return new Promise((resolve, reject) => {
@@ -8567,15 +8564,10 @@ function checkPoints(auth,name) {
     });
 }
 
-
-
-
-
-
-
-
-
-
-
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+if(command === 'testing123') {
+message.channel.send(listMajors());
+}
 
 client.login(process.env.TOKEN);
