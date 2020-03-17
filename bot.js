@@ -8564,10 +8564,11 @@ function checkPoints(auth,name) {
     });
 }
 
+client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command === 'testing123') {
 message.channel.send(listMajors());
 }
-
+}
 client.login(process.env.TOKEN);
