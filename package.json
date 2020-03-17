@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord.js": "^11.5.1",
     "googleapis": "^30.0.0"
   }
 }
