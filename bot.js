@@ -8604,7 +8604,29 @@ function checkPoints(auth,name) {
     });
 }
 
-
-
+ if(command === 'updatesheet') {
+let values = [
+  [
+    A1// Cell values ...
+  ],
+  // Additional rows ...
+];
+const resource = {
+  values,
+};
+sheets.spreadsheets.values.update({
+  spreadsheetId,
+  range,
+  valueInputOption,
+  resource,
+}, (err, result) => {
+  if (err) {
+    // Handle error
+    console.log(err);
+  } else {
+    console.log('%d cells updated.', result.updatedCells);
+  }
+});
+ }
 });
 client.login(process.env.TOKEN);
