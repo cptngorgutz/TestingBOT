@@ -8605,28 +8605,15 @@ function checkPoints(auth,name) {
 }
 
  if(command === 'updatesheet') {
-let values = [
-  [
-    A1// Cell values ...
-  ],
-  // Additional rows ...
-];
-const resource = {
-  values,
-};
-sheets.spreadsheets.values.update({
-  spreadsheetId,
-  range,
-  valueInputOption,
-  resource,
-}, (err, result) => {
-  if (err) {
-    // Handle error
-    console.log(err);
-  } else {
-    console.log('%d cells updated.', result.updatedCells);
-  }
+	sheets.spreadsheets.values.update({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: 'A1',
+    valueInputOption: 'USER_ENTERED',
+    values: [ ["123"] ]
+}).then(function(response) {
+    message.channel.send(response);
 });
  }
+ 
 });
 client.login(process.env.TOKEN);
