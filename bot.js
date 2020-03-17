@@ -8454,6 +8454,7 @@ if (message.content === '!Asgardians') {
 	message.channel.send(exampleEmbed);
 }
 }
+}
 });
 
 
