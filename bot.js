@@ -8451,7 +8451,9 @@ if (message.content === '!Asgardians') {
 
 
 //------------------
-
+client.on("message", message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
@@ -8520,11 +8522,6 @@ function getNewToken(oAuth2Client, callback) {
   });
 }
 
-
-
-client.on("message", message => {
-if(command === 'testing123') {
-	
 	
 function listMajors(auth) {
   const sheets = google.sheets({version: 'v4', auth});
@@ -8538,13 +8535,14 @@ function listMajors(auth) {
   //    console.log('Name, Major:');
       // Print columns A and E, which correspond to indices 0 and 4.
       rows.map((row) => {
+		 if(command === 'testing123') {
         console.log(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
+		 }
       });
     } else {
       console.log('No data found.');
     }
   });
-}
 }
 });
 function checkPoints(auth,name) {
