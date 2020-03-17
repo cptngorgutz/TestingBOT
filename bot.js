@@ -8535,7 +8535,7 @@ function listMajors(auth) {
   //    console.log('Name, Major:');
       // Print columns A and E, which correspond to indices 0 and 4.
       rows.map((row) => {
-        console.log(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
+        message.channel.send(`${row[0]},${row[1]},${row[2]}, ${row[3]}, ${row[4]}`);
       });
     } else {
       console.log('No data found.');
@@ -8564,11 +8564,5 @@ function checkPoints(auth,name) {
     });
 }
 
-client.on("message", message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-if(command === 'testing123') {
-message.channel.send(listMajors());
-}
-});
+
 client.login(process.env.TOKEN);
