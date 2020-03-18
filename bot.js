@@ -8582,30 +8582,8 @@ function listMajors(auth) {
       console.log('No data found.');
     }
   });
-}
-
-function checkPoints(auth,name) {
-    return new Promise((resolve, reject) => {
-        const sheets = google.sheets({ version: 'v4', auth });
-
-        sheets.spreadsheets.values.get({
-            spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-            range: 'A2:B', // A2 because i assume you got a title like "Name/Username" etc.
-        }, (err, res) => {
-            if (err) return console.log("The API returned an error: " + err);
-            let list = [];
-            for(let i = 0; i < res[0].length; i++){ //Loop throw all Players
-                if(res[0][i] == name){
-                    resolve(res[1][i]); //Returns the Points of the Player
-                }
-            }
-        }
-        );
-    });
-}
-
- if(command === 'updatesheet') {
-	 const sheets = google.sheets({version: 'v4', auth});
+   if(command === 'updatesheet') {
+	// const sheets = google.sheets({version: 'v4', auth});
 	sheets.spreadsheets.values.update({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: 'A1',
@@ -8615,6 +8593,10 @@ function checkPoints(auth,name) {
     message.channel.send(response);
 });
  }
+}
+
+
+
  
 });
 client.login(process.env.TOKEN);
