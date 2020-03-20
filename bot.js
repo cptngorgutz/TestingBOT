@@ -8760,6 +8760,7 @@ function listMajors(auth) {
     }
   });
   if(command === 'updatethesheet') {
+const sheets = google.sheets({version: 'v4', auth});
 sheets.spreadsheets.values.append({
   auth: auth,
   range: "A1",
