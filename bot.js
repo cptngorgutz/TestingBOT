@@ -8763,7 +8763,7 @@ function listMajors(auth) {
 const sheets = google.sheets({version: 'v4', auth});
 sheets.spreadsheets.values.append({
   auth: auth,
-  range: "A1",
+	range: 'A1:E',
   spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
   includeValuesInResponse: true,
   insertDataOption: "INSERT_ROWS",
