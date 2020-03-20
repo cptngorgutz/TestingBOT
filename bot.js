@@ -8769,7 +8769,7 @@ sheets.spreadsheets.values.append({
   insertDataOption: "INSERT_ROWS",
   responseDateTimeRenderOption: "FORMATTED_STRING",
   responseValueRenderOption: "UNFORMATTED_VALUE",
-  valueInputOption: "RAW",
+  valueInputOption: "USER_ENTERED",
   resource: {
     values: [
       ["Hello", "Google", "Sheets"]
