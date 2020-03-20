@@ -8762,8 +8762,8 @@ function listMajors(auth) {
   if(command === 'updatethesheet') {
   sheets.spreadsheets.values.append({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: 'A1:E', // This is a sample range.
-    valueInputOption: "RAW",
+    range: 'A:A', // This is a sample range.
+    valueInputOption: "USER_ENTERED",
     resource: { values: [["date", "result", "comment"]] } // This is a sample value.
   }, (err, response) => {
 }
