@@ -8760,14 +8760,27 @@ function listMajors(auth) {
     }
   });
   if(command === 'updatethesheet') {
-  sheets.spreadsheets.values.append({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: 'A:A', // This is a sample range.
-    valueInputOption: "USER_ENTERED",
-    resource: { values: [["date", "result", "comment"]] } // This is a sample value.
-  }, (err, response) => {
-}
-)
+sheets.spreadsheets.values.append({
+  auth: auth,
+  range: "A1",
+  spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+  includeValuesInResponse: true,
+  insertDataOption: "INSERT_ROWS",
+  responseDateTimeRenderOption: "FORMATTED_STRING",
+  responseValueRenderOption: "UNFORMATTED_VALUE",
+  valueInputOption: "RAW",
+  resource: {
+    values: [
+      ["Hello", "Google", "Sheets"]
+    ]
+  }
+}, function(err, response){
+  if (err) {
+    console.log('The API returned an error: ' + err);
+    return;
+  }
+  console.log(response);
+});
 }
 }
 
