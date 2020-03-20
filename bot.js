@@ -1773,6 +1773,16 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:carnage:663749984843202570> **Carnage** \nCarnage is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:carnage:663749984843202570> **Carnage** \nBio,Brawler,City,SpiderVerse,Symbiote,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:carnage:663749984843202570> **Carnage** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -1835,8 +1845,17 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:colossus:663749981559062528> **Colossus** \nColossus is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:colossus:663749981559062528> **Colossus** \nGlobal,Hero,Mutant,Protector,Xmen")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:colossus:663749981559062528> **Colossus** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
-
 }
 
 
@@ -1897,8 +1916,17 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:coulson:663749981605199912> **Coulson** \nCoulson is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:coulson:663749981605199912> **Coulson** \nAvenger,Controller,Global,Hero,Shield,Tech")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:coulson:663749981605199912> **Coulson** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
-
 }
 
 
@@ -1959,8 +1987,17 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:crossbones:663749981177511937> **Crossbones** \nCrossbones is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \nGlobal,Hydra,Protector,Tech,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
-
 }
 
 
@@ -2021,6 +2058,16 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:cyclops:663749981387358230> **Cyclops** \nCyclops is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \nBlaster,Global,Hero,Mutant,Xmen")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2083,6 +2130,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nBio,Brawler,City,Defender,Hero,MartialArtist")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2145,6 +2202,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nBrawler,Global,Hero,Mercenary,Mutant,Xforce")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2207,6 +2274,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drax:663749981496279062> **Drax** \nDrax is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062> **Drax** \nBio,Cosmic,GotG,Hero,Protector")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drax:663749981496279062> **Drax** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2269,6 +2346,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \nDoctor Strange is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \nCosmic,Hero,Mystic,Supernatural,Support")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2331,6 +2418,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elektra:663749981940875265> **Elektra** \nElektra is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elektra:663749981940875265> **Elektra** \nBrawler,City,Hand,MartialArtist,Mystic,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elektra:663749981940875265> **Elektra** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2393,6 +2490,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:elsa:663749985460027402> **Elsa** \nElsa is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402> **Elsa** \nBlaster,Global,Hero,Mystic,Supernatural")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:elsa:663749985460027402> **Elsa** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2455,6 +2562,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:falcon:663749983551488063> **Falcon** \nFalcon is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:falcon:663749983551488063> **Falcon** \nAvenger,Blaster,Global,Hero,PowerArmor,Tech")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:falcon:663749983551488063> **Falcon** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2517,6 +2634,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234> **Gamora** \nBrawler,Cosmic,GotG,Hero,Skill")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:gamora:663749983815860234> **Gamora** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2579,6 +2706,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \nGhost Rider is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \nBrawler,City,hero,Mystic,Supernatural")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2641,6 +2778,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:goblin:663749986160476171> **Green Goblin** \nGreen Goblin is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \nBio,Blaster,City,SinisterSix,SpiderVerse,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2703,6 +2850,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300> **Graviton** \nAim,Bio,Controller,Global,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:graviton:663749985417953300> **Graviton** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2754,6 +2911,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \nUndead Asgardian is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \nAsgard,Brawler,Cosmic,Minion,Mystic,Summon,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -2816,6 +2983,16 @@ const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:groot:663749986218934282> **groot** \ngroot is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:groot:663749986218934282> **groot** \nBio,Cosmic,GotG,Hero,Support")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:groot:663749986218934282> **groot** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -8582,6 +8759,16 @@ function listMajors(auth) {
       console.log('No data found.');
     }
   });
+  if(command === 'updatethesheet') {
+  sheets.spreadsheets.values.append({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: 'A1:E', // This is a sample range.
+    valueInputOption: "RAW",
+    resource: { values: [["date", "result", "comment"]] } // This is a sample value.
+  }, (err, response) => {
+}
+)
+}
 }
 
 
