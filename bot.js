@@ -8761,7 +8761,7 @@ function listMajors(auth) {
   });
   if(command === 'updatethesheet') {
 const sheets = google.sheets({version: 'v4', auth});
-sheets.spreadsheets.values.append({
+sheets.spreadsheets.values.update({
   auth: auth,
 	range: 'A1:E',
   spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
