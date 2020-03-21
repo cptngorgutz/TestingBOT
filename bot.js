@@ -8638,12 +8638,6 @@ const auth = require("./credentials-load");
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
-   const channelToCheckText = client.channels.get('661661368943902720')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const LastText = messages.first();
-	}).catch(err => {
-    console.error(err)
-    })
   if (command === 'update'){
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
@@ -8651,7 +8645,7 @@ async function run() {
     valueInputOption: "RAW",
     resource: {
       values: [
-        [LastText.content],
+        ["WORKS"],
       ]
     }
   });
