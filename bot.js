@@ -8640,12 +8640,13 @@ async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
+  const res = await sheets.spreadsheets.values.update({
+ const LastText = messages.first();
+ channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
 	}).catch(err => {
     console.error(err)
     })
-  const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
