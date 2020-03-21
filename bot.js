@@ -8646,7 +8646,7 @@ async function run() {
     valueInputOption: "RAW",
     resource: {
       values: [
-        args.join(' '),
+        args.join["WORKS"],
       ]
     }
   });
