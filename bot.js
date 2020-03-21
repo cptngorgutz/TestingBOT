@@ -8635,18 +8635,23 @@ const args = message.content.toLowerCase().slice(config.prefix.length).trim().sp
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
 const auth = require("./credentials-load");
-
+const channelToCheckText = client.channels.get('661661368943902720')
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
+	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
+	const LastText = messages.first();
+	}).catch(err => {
+    console.error(err)
+    })
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
     resource: {
       values: [
-        ["bob it works"],
+        [LastText.content],
       ]
     }
   });
@@ -8657,3 +8662,6 @@ run().catch(err => console.error("ERR", err));
  
 });
 client.login(process.env.TOKEN);
+
+
+	
