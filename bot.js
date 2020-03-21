@@ -8650,7 +8650,6 @@ async function run() {
       ]
     }
   });
-  console.log(JSON.stringify(res.data, null, 2));
   }
 }
 
