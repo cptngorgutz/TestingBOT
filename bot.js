@@ -8706,7 +8706,7 @@ function listMajors(auth) {
   const sheets = google.sheets({version: 'v4', auth});
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: 'A1:E',
+    range: 'A1:A',
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
@@ -8759,30 +8759,7 @@ function listMajors(auth) {
       console.log('No data found.');
     }
   });
-  if(command === 'updatethesheet') {
-const sheets = google.sheets({version: 'v4', auth});
-sheets.spreadsheets.values.update({
-  auth: auth,
-	range: 'A1:E',
-  spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-  includeValuesInResponse: true,
-  insertDataOption: "INSERT_ROWS",
-  responseDateTimeRenderOption: "FORMATTED_STRING",
-  responseValueRenderOption: "UNFORMATTED_VALUE",
-  valueInputOption: "USER_ENTERED",
-  resource: {
-    values: [
-      ["Hello", "Google", "Sheets"]
-    ]
-  }
-}, function(err, response){
-  if (err) {
-    console.log('The API returned an error: ' + err);
-    return;
-  }
-  console.log(response);
-});
-}
+
 }
 
 
