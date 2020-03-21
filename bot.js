@@ -8652,7 +8652,7 @@ async function run() {
   });
   }
 }
-
+run().catch(err => console.error("ERR", err));
  
 });
 client.login(process.env.TOKEN);
