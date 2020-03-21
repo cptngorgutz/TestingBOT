@@ -8647,7 +8647,7 @@ async function run() {
     valueInputOption: "RAW",
     resource: {
       values: [
-        [text],
+        [(text)],
       ]
     }
   });
