@@ -8638,7 +8638,6 @@ const auth = require("./credentials-load");
 const channelToCheckText = client.channels.get('661661368943902720')
 let budget = channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 const LastText = messages.first();
-message.channel.send(LastText.content);
 }).catch(err => {
 console.error(err)
 })
