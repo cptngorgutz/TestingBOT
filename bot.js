@@ -8641,7 +8641,6 @@ async function run() {
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
   const res = await sheets.spreadsheets.values.update({
- const LastText = messages.first();
  channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
 	}).catch(err => {
