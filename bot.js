@@ -8650,7 +8650,7 @@ async function run() {
       ]
     }
   });
-  message.channel.send(JSON.stringify(res.data, null, 2));
+  console.log(JSON.stringify(res.data, null, 2));
   }
 }
 
