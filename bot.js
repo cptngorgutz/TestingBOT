@@ -8630,7 +8630,7 @@ if (message.content === '!Asgardians') {
 
 
 //------------------
-client.on("message", async message => {
+client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
@@ -8639,10 +8639,10 @@ const auth = require("./credentials-load");
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
-  if (command === 'update'){
   const channelToCheck = message.guild.channels.get('617707484626288672')
-	channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
-    const lastMessage = messages.first()
+  channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+  const lastMessage = messages.first()
+  if (command === 'update'){
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
