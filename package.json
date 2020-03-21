@@ -1,15 +1,5 @@
 {
-  "name": "discord-greeter-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "Bot.js",
-  "scripts": {
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "googleapis": "^30.0.0"
+    "googleapis": "^36.0.0"
   }
 }
