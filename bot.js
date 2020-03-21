@@ -8639,17 +8639,21 @@ const auth = require("./credentials-load");
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
-  if (command === 'sheetupdate'){
+  if (command === 'update'){
+  const channelToCheck = message.guild.channels.get('617707484626288672')
+	channelToCheck.fetchMessages({ limit: 1 }).then(messages => {
+    const lastMessage = messages.first()
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
     resource: {
       values: [
-        ["PLZ UPDATE"],
+        [lastMessage.content],
       ]
     }
   });
+  }
   }
 }
 run().catch(err => console.error("ERR", err));
