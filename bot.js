@@ -8640,14 +8640,13 @@ async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
-const lastMessage = messages.first()
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
     resource: {
       values: [
-        [lastMessage.content],
+        ["bob it works"],
       ]
     }
   });
