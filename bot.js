@@ -8635,12 +8635,12 @@ const args = message.content.toLowerCase().slice(config.prefix.length).trim().sp
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
 const auth = require("./credentials-load");
-const channelToCheckText = client.channels.get('661661368943902720')
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
   const res = await sheets.spreadsheets.values.update({
+ const channelToCheckText = client.channels.get('661661368943902720')
  channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
 	}).catch(err => {
