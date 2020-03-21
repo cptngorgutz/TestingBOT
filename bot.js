@@ -8654,7 +8654,7 @@ async function run() {
     }
   });
   }
-  }
+  })
 }
 run().catch(err => console.error("ERR", err));
  
