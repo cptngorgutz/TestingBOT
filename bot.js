@@ -8638,14 +8638,14 @@ const auth = require("./credentials-load");
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
-  if (command === 'update'){
-  const res = await sheets.spreadsheets.values.update({
- const channelToCheckText = client.channels.get('661661368943902720')
- channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
+   const channelToCheckText = client.channels.get('661661368943902720')
+	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
 	}).catch(err => {
     console.error(err)
     })
+  if (command === 'update'){
+  const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
