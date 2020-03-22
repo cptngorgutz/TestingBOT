@@ -8638,7 +8638,7 @@ const auth = require("./credentials-load");
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
-  if (command === 'updatea1'){
+if (command === 'updatea1'){
   message.channel.send("A1 updated.")
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
@@ -8652,7 +8652,7 @@ async function run() {
     }
   });
   }
-  if (command === 'updatea2'){
+if (command === 'updatea2'){
   message.channel.send("A2 updated.")
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
@@ -8666,22 +8666,59 @@ async function run() {
     }
   });
   }
-
+if (command === 'updatea3'){
+  message.channel.send("A2 updated.")
+  const thistext = args.join(" ");
+  const res = await sheets.spreadsheets.values.update({
+    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+    range: "Sheet1!A3",
+    valueInputOption: "RAW",
+    resource: {
+      values: [
+        [thistext],
+      ]
+    }
+  });
+  }
 
 if (command === 'geta1'){
-  //get a range of values
-  const res = await sheets.spreadsheets.values.get({
-    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Sheet1!A1"
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "Sheet1!A1",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n'))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
   });
-  //print results
-  message.channel.send(JSON.stringify(res.data, null, 2));
 }
-
+if (command === 'geta2'){
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "Sheet1!A2",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n'))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
 if (command === 'geta3'){
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Sheet1!A3",
+    range: "Sheet1!A1",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
