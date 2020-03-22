@@ -8696,59 +8696,30 @@ if (command === 'updatez3'){
   });
   }
 
-
-if (command === 'get' && args[0] === "a1" && args[1] === "a2"){
-const embed = new Discord.RichEmbed()
-  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Sheet1!A1",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const SENDTEXT = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
-	//message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
+if (command === 'attack'){
+if (args[0] === "sn"){
+ let thistext = args[2];
+  const res = await sheets.spreadsheets.values.update({
+    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+    range: "Supernatural!A2",
+    valueInputOption: "RAW",
+    resource: {
+      values: [
+        [thistext],
+      ]
     }
-  })
-  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Sheet1!A2",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const SENDTEXT2 = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
-	//message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  })
-
-
-embed.setColor('#0099ff')
-embed.setDescription(SENDTEXT)
-message.channel.send(embed);
+  });
 }
-if (args[2] === "b8"){
-  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Sheet1!B8",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
+if (args[1] === "pa"){
+ let thistext = args[3];
+  const res = await sheets.spreadsheets.values.update({
+    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+    range: "PowerArmor!D2",
+    valueInputOption: "RAW",
+    resource: {
+      values: [
+        [thistext],
+      ]
     }
   });
 }
@@ -8943,6 +8914,7 @@ sheets.spreadsheets.values.get(
 
 }
 run().catch(err => console.error("ERR", err));
+
 });
 
 
