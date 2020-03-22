@@ -8752,7 +8752,7 @@ if (args[2] === "b8"){
     }
   });
 }
-}
+
 if (command === 'geta'){
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
