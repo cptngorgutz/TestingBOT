@@ -8801,7 +8801,6 @@ sheets.spreadsheets.values.get(
           console.log("Data Error :", err);
           reject(err);
         }
-        resolve(resp);
       }
     );
   }
