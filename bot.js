@@ -8787,7 +8787,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		 spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-        range: "Sheet1!A:A{i + 1}",
+        range: "A:A{i + 1}",
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
