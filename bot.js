@@ -8649,7 +8649,7 @@ if (command === 'updatea'){
       values: [
         [thistext],
       ]
-    }
+    }/
   });
   }
 
@@ -8768,13 +8768,11 @@ if (command === 'geta3'){
 
 
 if (command === 'updatetest'){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Sheet1";
 const thistext = args.join(" ");
 sheets.spreadsheets.values.get(
   {
-    spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!A:A`
+	spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+    range: "Sheet1!A:A",
   },
   (err, res) => {
     if (err) {
@@ -8787,9 +8785,10 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
     sheets.spreadsheets.values.update(
+	const thistext = args.join(" ");
       {
-        spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!A${i + 1}`,
+		 spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+        range: "Sheet1!A:A{i + 1}",
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
