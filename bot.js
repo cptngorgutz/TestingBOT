@@ -8805,10 +8805,6 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-}
-
-
-
 
 }
 
