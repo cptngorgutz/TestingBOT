@@ -8688,6 +8688,7 @@ if (command === 'updatea3'){
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A3",
     valueInputOption: "RAW",
+	insertDataOption: "INSERT_ROWS",
     resource: {
       values: [
         [thistext],
