@@ -8643,7 +8643,7 @@ if (command === 'updatea'){
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Sheet1!A1:A",
+    range: "Sheet1!A:A",
     valueInputOption: "RAW",
     resource: {
       values: [
