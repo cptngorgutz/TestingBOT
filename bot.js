@@ -8638,12 +8638,12 @@ const auth = require("./credentials-load");
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
-  if (command === 'update'){
-	  message.channel.send("Sheet updated.")
+  if (command === 'update' && args[0] === "a1"){
+  message.channel.send("A1 updated.")
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Sheet1!A13",
+    range: "Sheet1!A1",
     valueInputOption: "RAW",
     resource: {
       values: [
@@ -8652,6 +8652,23 @@ async function run() {
     }
   });
   }
+  if (command === 'update' && args[0] === "a2"){
+  message.channel.send("A2 updated.")
+  const thistext = args.join(" ");
+  const res = await sheets.spreadsheets.values.update({
+    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+    range: "Sheet1!A2",
+    valueInputOption: "RAW",
+    resource: {
+      values: [
+        [thistext],
+      ]
+    }
+  });
+  }
+
+
+
 }
 
 run().catch(err => console.error("ERR", err));
