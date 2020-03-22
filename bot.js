@@ -8773,7 +8773,6 @@ const sheetName = "Sheet1";
 const thistext = args.join(" ");
 sheets.spreadsheets.values.get(
   {
-    auth: jwtClient,
     spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!A:A`
   },
@@ -8789,7 +8788,6 @@ sheets.spreadsheets.values.get(
     }
     sheets.spreadsheets.values.update(
       {
-        auth: jwtClient,
         spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
         valueInputOption: "USER_ENTERED",
