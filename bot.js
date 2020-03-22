@@ -8630,7 +8630,7 @@ if (message.content === '!Asgardians') {
 
 
 //------------------
-client.on("message", message => {
+client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
@@ -8696,8 +8696,24 @@ if (command === 'updatez3'){
   });
   }
 
-if (command === 'get'){
-if (args[0] === "a2"){
+
+if (command === 'get' && args[0] === "a1" && args[1] === "a2"){
+const embed = new Discord.RichEmbed()
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "Sheet1!A1",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const SENDTEXT = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n'))
+	//message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "Sheet1!A2",
@@ -8705,31 +8721,19 @@ if (args[0] === "a2"){
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
+	const SENDTEXT2 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(rows.join('\n'))
-	message.channel.send(exampleEmbed); 
+	//message.channel.send(exampleEmbed); 
     } else {
       console.log('No data found.');
     }
   });
-}
-if (args[1] === "b5"){
-  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Sheet1!B5",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
+
+
+embed.setColor('#0099ff')
+embed.setDescription(SENDTEXT + SENDTEXT2)
+message.channel.send(embed);
 }
 if (args[2] === "b8"){
   sheets.spreadsheets.values.get({
