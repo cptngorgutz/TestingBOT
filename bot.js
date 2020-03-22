@@ -8677,7 +8677,7 @@ if (command === 'geta1'){
   //print results
   message.channel.send(JSON.stringify(res.data, null, 2));
 }
-
+}
 run().catch(err => console.error("ERR", err));
  
 });
