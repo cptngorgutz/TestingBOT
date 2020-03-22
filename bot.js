@@ -8770,6 +8770,7 @@ if (command === 'geta3'){
 if (command === 'updatetest'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "Sheet1";
+const thistext = args.join(" ");
 sheets.spreadsheets.values.get(
   {
     auth: jwtClient,
