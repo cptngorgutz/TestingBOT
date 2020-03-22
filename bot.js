@@ -8649,7 +8649,7 @@ if (command === 'updatea'){
       values: [
         [thistext],
       ]
-    }/
+    }
   });
   }
 
