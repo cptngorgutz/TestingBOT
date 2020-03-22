@@ -8677,10 +8677,11 @@ if (command === 'geta1'){
   //print results
   message.channel.send(JSON.stringify(res.data, null, 2));
 }
+
 if (command === 'geta3'){
-    sheets.spreadsheets.values.get({
+  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: 'Sheet1!A3',
+    range: "Sheet1!A3",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
@@ -8688,13 +8689,20 @@ if (command === 'geta3'){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(rows.join('\n'))
-	message.channel.send(exampleEmbed);
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
 }
-});
+
+
+
+
+
+
 }
 run().catch(err => console.error("ERR", err));
- 
-
 });
 
 
