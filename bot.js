@@ -8640,8 +8640,8 @@ async function run() {
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
 	  message.channel.send("Sheet updated.")
-  const res = await sheets.spreadsheets.values.update({
   const thistext = args.join(" ");
+  const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
