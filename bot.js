@@ -8768,7 +8768,6 @@ if (command === 'geta3'){
 
 
 if (command === 'updatetest'){
-const thistext = args.join(" ");
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
@@ -8784,6 +8783,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
+	const thistext = args.join(" ");
     sheets.spreadsheets.values.update(
       {
 		 spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
@@ -8791,7 +8791,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [thistext],
+          values: [[thistext]],
         }
       },
       (err, resp) => {
