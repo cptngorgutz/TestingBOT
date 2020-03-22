@@ -8732,7 +8732,7 @@ const embed = new Discord.RichEmbed()
 
 
 embed.setColor('#0099ff')
-embed.setDescription(SENDTEXT + SENDTEXT2)
+embed.setDescription(SENDTEXT)
 message.channel.send(embed);
 }
 if (args[2] === "b8"){
