@@ -8785,7 +8785,6 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
     sheets.spreadsheets.values.update(
-	const thistext = args.join(" ");
       {
 		 spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
         range: "Sheet1!A:A{i + 1}",
