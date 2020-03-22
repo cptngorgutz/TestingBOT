@@ -8688,7 +8688,6 @@ if (command === 'updatea3'){
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A3",
     valueInputOption: "RAW",
-	insertDataOption: "INSERT_ROWS",
     resource: {
       values: [
         [thistext],
@@ -8768,11 +8767,56 @@ if (command === 'geta3'){
 }
 
 
+if (command === 'updatetest'){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "Sheet1";
+sheets.spreadsheets.values.get(
+  {
+    auth: jwtClient,
+    spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+    sheets.spreadsheets.values.update(
+      {
+        auth: jwtClient,
+        spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [thistext],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+        resolve(resp);
+      }
+    );
+  }
+);
+}
 
 
 
 
 }
+
+
+
+
 run().catch(err => console.error("ERR", err));
 });
 
