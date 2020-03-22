@@ -8639,15 +8639,15 @@ async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
   if (command === 'update'){
- let text = args.join(" ");
-	  message.channel.send("Updated A13 to 'WORKS'")
+	  message.channel.send("Sheet updated.")
   const res = await sheets.spreadsheets.values.update({
+  const thistext = args.join(" ");
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
     range: "Sheet1!A13",
     valueInputOption: "RAW",
     resource: {
       values: [
-        [(text)],
+        [thistext],
       ]
     }
   });
