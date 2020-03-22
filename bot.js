@@ -8718,7 +8718,7 @@ if (command === 'geta2'){
 if (command === 'geta3'){
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Sheet1!A1",
+    range: "Sheet1!A3",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
