@@ -8768,10 +8768,12 @@ if (command === 'geta3'){
 
 
 if (command === 'updatetest'){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "Sheet1";
 sheets.spreadsheets.values.get(
   {
-	spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Sheet1!A:A",
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
   },
   (err, res) => {
     if (err) {
@@ -8786,8 +8788,8 @@ sheets.spreadsheets.values.get(
 	const thistext = args.join(" ");
     sheets.spreadsheets.values.update(
       {
-		 spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-        range: "A:A{i + 1}",
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
