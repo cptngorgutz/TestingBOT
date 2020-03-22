@@ -8653,7 +8653,7 @@ if (command === 'updatea'){
   });
   }
 
-if (command === 'updatea1'){
+if (command === 'updatez1'){
   message.channel.send("A1 updated.")
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
@@ -8667,7 +8667,7 @@ if (command === 'updatea1'){
     }
   });
   }
-if (command === 'updatea2'){
+if (command === 'updatez2'){
   message.channel.send("A2 updated.")
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
@@ -8681,7 +8681,7 @@ if (command === 'updatea2'){
     }
   });
   }
-if (command === 'updatea3'){
+if (command === 'updatez3'){
   message.channel.send("A2 updated.")
   const thistext = args.join(" ");
   const res = await sheets.spreadsheets.values.update({
