@@ -8697,7 +8697,7 @@ if (command === 'updatez3'){
   });
   }
 
-!add asgardians 000 xmen 111
+
 if (command === 'add'){
 if (asgardssheet === "asgardians" && args[2] === "xmen"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
