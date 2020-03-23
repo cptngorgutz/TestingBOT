@@ -8697,9 +8697,9 @@ if (command === 'updatez3'){
   });
   }
 
-
+!add asgardians 000 xmen 111
 if (command === 'add'){
-if (asgardssheet === "asgardians" && args[1] === "xmen"){
+if (asgardssheet === "asgardians" && args[2] === "xmen"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "Asgardians";
 sheets.spreadsheets.values.get(
@@ -8717,7 +8717,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let asgardtext = args[2];
+	let asgardnumber = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -8725,7 +8725,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[asgardtext]],
+          values: [[asgardnumber]],
         }
       },
       (err, resp) => {
@@ -8752,7 +8752,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let xmentext = args[3];
+	let xmennumber = args[3];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -8760,7 +8760,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[xmentext]],
+          values: [[xmennumber]],
         }
       },
       (err, resp) => {
@@ -8772,9 +8772,10 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-
-
-
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("Added: Asgardians" + asgardnumber + "vs" "X-Men" + xmennumber )
+	message.channel.send(exampleEmbed); 
 }
 
 }
