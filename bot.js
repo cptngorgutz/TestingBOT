@@ -8700,30 +8700,82 @@ if (command === 'updatez3'){
 
 if (command === 'add'){
 if (asgardssheet === "asgardians" && args[3] === "xmen"){
- let asgardtext = args[2];
-  const res = await sheets.spreadsheets.values.update({
-    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Asgardians!B4",
-    valueInputOption: "RAW",
-    resource: {
-      values: [
-        [asgardtext],
-      ]
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "Asgardians";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
     }
-  });
-  let xmentext = args[3];
-  const res = await sheets.spreadsheets.values.update({
-    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Asgardians!A4",
-    valueInputOption: "RAW",
-    resource: {
-      values: [
-        [xmentext],
-      ]
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
     }
-  });
-}
+	let asgardtext = args[2];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[asgardtext]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let xmentext = args[3];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[xmentext]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
 
+
+
+}
 
 }
 
