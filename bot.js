@@ -8774,7 +8774,7 @@ sheets.spreadsheets.values.get(
 );
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("Added: Asgardians" + asgardnumber + "vs" "X-Men" + xmennumber )
+	.setDescription("Added: " + args[1] + asgardnumber + " vs " + args[2] + xmennumber )
 	message.channel.send(exampleEmbed); 
 }
 
