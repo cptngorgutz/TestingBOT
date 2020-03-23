@@ -8635,6 +8635,7 @@ const args = message.content.toLowerCase().slice(config.prefix.length).trim().sp
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
 const auth = require("./credentials-load");
+let asgardssheet = args[0];
 async function run() {
   //create sheets client
   const sheets = google.sheets({ version: "v4", auth });
@@ -8696,34 +8697,39 @@ if (command === 'updatez3'){
   });
   }
 
-if (command === 'attack'){
-if (args[0] === "sn"){
- let thistext = args[2];
+
+if (command === 'add'){
+if (asgardssheet === "asgardians" && args[3] === "xmen"){
+ let asgardtext = args[2];
   const res = await sheets.spreadsheets.values.update({
     spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "Supernatural!A2",
+    range: "Asgardians!B4",
     valueInputOption: "RAW",
     resource: {
       values: [
-        [thistext],
+        [asgardtext],
+      ]
+    }
+  });
+  let xmentext = args[3];
+  const res = await sheets.spreadsheets.values.update({
+    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
+    range: "Asgardians!A4",
+    valueInputOption: "RAW",
+    resource: {
+      values: [
+        [xmentext],
       ]
     }
   });
 }
-if (args[1] === "pa"){
- let thistext = args[3];
-  const res = await sheets.spreadsheets.values.update({
-    spreadsheetId: "1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw",
-    range: "PowerArmor!D2",
-    valueInputOption: "RAW",
-    resource: {
-      values: [
-        [thistext],
-      ]
-    }
-  });
+
+
 }
-}
+
+
+
+
 if (command === 'geta'){
   sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
