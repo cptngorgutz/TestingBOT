@@ -8699,7 +8699,7 @@ if (command === 'updatez3'){
 
 
 if (command === 'add'){
-if (asgardssheet === "asgardians" && args[3] === "xmen"){
+if (asgardssheet === "asgardians" && args[1] === "xmen"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "Asgardians";
 sheets.spreadsheets.values.get(
