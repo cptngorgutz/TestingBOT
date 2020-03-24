@@ -8785,7 +8785,7 @@ sheets.spreadsheets.values.get(
 if (command === 'test' && args[0] === "test"){
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!A1:B",
+    range: "ControlPanel!A1:C",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
