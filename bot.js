@@ -8782,7 +8782,7 @@ sheets.spreadsheets.values.get(
 }
 
 
-if (command === 'counter' && args[0] === "test"){
+if (command === 'test' && args[0] === "testing"){
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!A1:A,ControlPanel!B2:B",
