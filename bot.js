@@ -713,6 +713,7 @@ message.channel.send(exampleEmbed);
 //*********CHARACTERS + TEAMS*********** (NOT FINISHED)
 //example: !ironman speed || !asgardians)
 client.on("message", async message => {
+if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 let kit = args[0]; 
