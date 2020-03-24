@@ -8629,6 +8629,10 @@ if (message.content === '!Asgardians') {
 }
 });
 
+client.on("message", async message => {
+if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
 if(command === 'counter') { //123 or bottesting
 if (message.channel.id === '661221254958940220' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '606119830516400162') {
 if(args[0] == "aim"){
@@ -8818,9 +8822,10 @@ message.channel.send("Please use a valid team phrase, such as aim,asgardians,bra
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#673261006918516741> or your war chat channel and try again.").catch(console.error);
 }
+
+
 }
-
-
+});
 //------------------
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
