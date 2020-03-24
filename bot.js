@@ -1093,7 +1093,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 }
 }
 
-if(command === 'ant' && args[0] === "man" || command === 'scott' || command === 'lang' || command === 'am' || command === 'ant') {
+if(command === 'ant' && args[0] === "man" || command === 'scott' || command === 'lang' || command === 'am') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
