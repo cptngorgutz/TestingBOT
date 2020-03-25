@@ -9023,7 +9023,7 @@ if (command === 'aim' && args[0] === "stats"){
     if (rows.length) {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, 'abc'))
+	.setDescription(rows.join('\n').replace(/,/g, 'abcabcabcabcabc'))
 	message.channel.send(exampleEmbed); 
     } else {
       console.log('No data found.');
