@@ -9020,6 +9020,7 @@ if (command === 'aim' && args[0] === "stats"){
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
+	return [row[0].toString().replace(",", "")];
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(rows.join('\n'))
