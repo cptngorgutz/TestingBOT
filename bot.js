@@ -9015,14 +9015,14 @@ if (command === 'asgardians' && args[0] === "stats"){
 if (command === 'aim' && args[0] === "stats"){
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!D1:F"(' '),
+    range: "ControlPanel!D1:F",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
+	.setDescription(rows.join('\n').replace(','', '''))
 	message.channel.send(exampleEmbed); 
     } else {
       console.log('No data found.');
