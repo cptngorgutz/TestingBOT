@@ -9044,7 +9044,10 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-
+const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3])
+	message.channel.send(exampleEmbed);
 
 }
 
