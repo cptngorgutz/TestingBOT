@@ -8977,7 +8977,7 @@ const sheetName = "Asgardians";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D5:D`
+    range: `${sheetName}!D:D5`
   },
   (err, res) => {
     if (err) {
@@ -9012,7 +9012,7 @@ sheets.spreadsheets.values.get(
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!E5:E`
+    range: `${sheetName}!E:E5`
   },
   (err, res) => {
     if (err) {
