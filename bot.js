@@ -9066,8 +9066,7 @@ sheets.spreadsheets.values.get(
 	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3] + recordEmbed)
 	message.channel.send(exampleEmbed); 
 }
-
-
+}
 
 
 
