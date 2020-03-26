@@ -8980,7 +8980,7 @@ const sheetName = "Asgardians";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!E:E`
+    range: `${sheetName}!E5:E`
   },
   (err, res) => {
     if (err) {
@@ -9015,7 +9015,7 @@ sheets.spreadsheets.values.get(
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D`
+    range: `${sheetName}!D5:D`
   },
   (err, res) => {
     if (err) {
@@ -9060,11 +9060,12 @@ sheets.spreadsheets.values.get(
     } else {
       console.log('No data found.');
     }
-  });
+
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3] + recordEmbed)
 	message.channel.send(exampleEmbed); 
+  });
 }
 }
 
