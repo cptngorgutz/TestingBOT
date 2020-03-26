@@ -9028,7 +9028,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!E5${i + 1}`,
+        range: `${sheetName}!E5:E$`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
