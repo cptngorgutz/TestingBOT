@@ -8969,10 +8969,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3])
-	message.channel.send(exampleEmbed); 
+	 
 }
 if (asgardssheet === "asgardians" && args[2] === "asgardians"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -9047,12 +9044,14 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3] + recordEmbed)
-	message.channel.send(exampleEmbed); 
 
+const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3])
+	message.channel.send(exampleEmbed);
 }
+
+
 }
 
 
