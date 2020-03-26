@@ -8980,7 +8980,7 @@ const sheetName = "Asgardians";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!E5:E`
+    range: `${sheetName}!D:D`
   },
   (err, res) => {
     if (err) {
@@ -8996,7 +8996,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!E5${i + 1}`,
+        range: `${sheetName}!D${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -9015,7 +9015,7 @@ sheets.spreadsheets.values.get(
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D5:D`
+    range: `${sheetName}!E:E`
   },
   (err, res) => {
     if (err) {
@@ -9031,7 +9031,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D5${i + 1}`,
+        range: `${sheetName}!E${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -9047,25 +9047,11 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "Asgardians!D3",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const recordEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
-    } else {
-      console.log('No data found.');
-    }
-
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3] + recordEmbed)
 	message.channel.send(exampleEmbed); 
-  });
+
 }
 }
 
