@@ -8977,7 +8977,7 @@ const sheetName = "Asgardians";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D5`
+    range: `${sheetName}!D5:D`
   },
   (err, res) => {
     if (err) {
@@ -8993,7 +8993,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
+        range: `${sheetName}!D5:D${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -9012,7 +9012,7 @@ sheets.spreadsheets.values.get(
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!E:E5`
+    range: `${sheetName}!E5:E`
   },
   (err, res) => {
     if (err) {
@@ -9028,7 +9028,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!E${i + 1}`,
+        range: `${sheetName}!E5:E${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
