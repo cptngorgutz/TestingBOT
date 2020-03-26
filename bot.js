@@ -8996,7 +8996,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!E${i + 1}`,
+        range: `${sheetName}!E5${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -9031,7 +9031,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
+        range: `${sheetName}!D5${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
