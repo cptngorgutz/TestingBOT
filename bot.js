@@ -8993,7 +8993,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D5:D{i + 1}`,
+        range: `${sheetName}!D5${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -9028,7 +9028,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!E5:E{i + 1}`,
+        range: `${sheetName}!E5${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -9045,10 +9045,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3])
-	message.channel.send(exampleEmbed);
+
 }
 
 
