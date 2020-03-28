@@ -10849,7 +10849,7 @@ const exampleEmbed = new Discord.RichEmbed()
 } else {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("__**Please use a valid team phrase:**__ \n!add [teamname] [power] [teamname] [power]")
+	.setDescription("__**Please use a valid team phrase:**__ \n!add [attacker teamname] [power] [defender teamname] [power]")
 	message.channel.send(exampleEmbed);
 }
 
