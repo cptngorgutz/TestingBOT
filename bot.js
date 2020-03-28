@@ -9287,7 +9287,7 @@ sheets.spreadsheets.values.get(
 );
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("__**Sheet Updated:**__ \n" + args[0] + " " + args[1] + " offence vs " + args[2] + " " + args[3] + " defence.")
+	.setDescription("__**Data added to sheet:**__ **Offence -> Defence** \n" + args[0] + " " + args[1] + " - vs - " + args[2] + " " + args[3])
 	message.channel.send(exampleEmbed);
 
 }
