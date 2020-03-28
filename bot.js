@@ -8971,7 +8971,7 @@ sheets.spreadsheets.values.get(
 );
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3])
+	.setDescription("__**Data added to sheet:**__ **Offence -> Defence** \n" + args[0] + " " + args[1] + " - vs - " + args[2] + " " + args[3])
 	message.channel.send(exampleEmbed);
 
 } else if (args[0] === "aim" && args[2] === "asgardians"){
@@ -10921,7 +10921,7 @@ sheets.spreadsheets.values.get(
 );
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("Added: " + args[0] + " " + args[1] + " vs " + args[2] + " " + args[3])
+	.setDescription("__**Data added to sheet:**__ **Offence -> Defence** \n" + args[0] + " " + args[1] + " - vs - " + args[2] + " " + args[3])
 	message.channel.send(exampleEmbed);
 
 } else if (args[0] === "asgardians" && args[2] === "aim"){
