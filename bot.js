@@ -57652,6 +57652,8 @@ const exampleEmbed = new Discord.RichEmbed()
 	.setDescription("__**Please use a valid phrase:**__ \n!add [attacker team name] [power] [defender team name] [power]")
 	message.channel.send(exampleEmbed);
 }
+}
+if (command === 'test'){
 if (args[0] === "layout"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
