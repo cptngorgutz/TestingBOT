@@ -58006,7 +58006,7 @@ sheets.spreadsheets.values.get(
   }
 );
 }
-
+}
 
 if (command === 'counter' && args[0] === "aim" || command === 'counter' && args[0] === "aim+" || command === 'aim' && args[0] === "stats"){
 if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
