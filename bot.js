@@ -8971,7 +8971,7 @@ sheets.spreadsheets.values.get(
 );
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("__**Database updated:**__ \n**Attacker: **" + args[0] + " - " + args[1] + "\n Defender: " + args[2] + " - " + args[3])
+	.setDescription("__**Database updated:**__ \nAttacker: " + **args[0]** + " - " + **args[1]** + "\n Defender: " + **args[2]** + " - " + **args[3]**)
 	message.channel.send(exampleEmbed);
 
 } else if (args[0] === "aim" && args[2] === "asgardians"){
@@ -47898,7 +47898,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "aim" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -47976,7 +47976,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "asgardians" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48054,7 +48054,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "aimtron" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48132,7 +48132,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "ogbh" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48210,7 +48210,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "bh" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48288,7 +48288,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "bkt" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48366,7 +48366,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "brawlers" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48444,7 +48444,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "captainmarvel" || args[0] === "cm" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48522,7 +48522,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "defenders" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48600,7 +48600,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "f4" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48678,7 +48678,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "gotg" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48756,7 +48756,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "hydra" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48834,7 +48834,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "inhumans" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48912,7 +48912,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "kreeronan" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -48990,7 +48990,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "kreeultimus" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49068,7 +49068,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "marauders" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49146,7 +49146,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "maraudertron" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49224,7 +49224,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "pa" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49302,7 +49302,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "s6" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49380,7 +49380,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "coulsonshield" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49458,7 +49458,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "supernatural" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49536,7 +49536,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "symbiote" || args[0] === "symbiotes" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49614,7 +49614,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "ultron" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49692,7 +49692,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "wakanda" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -49770,7 +49770,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 } else if (args[0] === "xmen" && args[2] === "supernatural"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "Supernatural";
+const sheetName = "Supernaturals";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
