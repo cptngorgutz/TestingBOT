@@ -57672,7 +57672,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let topright = args[8];
+	let args1 = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57680,7 +57680,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[topright]],
+          values: [[args1]],
         }
       },
       (err, resp) => {
@@ -57692,7 +57692,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send(`__**War data added:**__ \n Right: **${args[1]}**`);
+message.channel.send(`__**War data added:**__ \n Name: **${args[1]}**`);
 }
 if (args[0] === "left"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57712,7 +57712,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let topleft = args[2];
+	let args1 = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57720,7 +57720,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[topleft]],
+          values: [[args1]],
         }
       },
       (err, resp) => {
@@ -57752,7 +57752,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let topmid = args[5];
+	let args1 = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57760,7 +57760,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[topmid]],
+          values: [[args1]],
         }
       },
       (err, resp) => {
@@ -57792,7 +57792,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let topright = args[8];
+	let args1 = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57800,7 +57800,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[topright]],
+          values: [[args1]],
         }
       },
       (err, resp) => {
