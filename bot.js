@@ -57653,10 +57653,8 @@ const exampleEmbed = new Discord.RichEmbed()
 	message.channel.send(exampleEmbed);
 }
 }
-if (command === 'layout'){
-if (args[0] === "left"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
+if (command === 'war'){
+if (args[0] === "name"){
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -57672,7 +57670,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let opponentname = args[1];
+	let topright = args[8];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57680,7 +57678,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[opponentname]],
+          values: [[topright]],
         }
       },
       (err, resp) => {
@@ -57692,6 +57690,11 @@ sheets.spreadsheets.values.get(
     );
   }
 );
+message.channel.send(`__**War data added:**__ \n Right: **${args[1]}**`);
+}
+if (args[0] === "left"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -57727,77 +57730,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!B:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let midleft = args[3];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!B${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[midleft]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!B:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let bottomleft = args[4];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!B${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[bottomleft]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-message.channel.send(`__**War data added:**__ \n Teamname: **${args[1]}** \nLeftTop: **${args[2]}** LeftMid: **${args[3]}** LeftBottom:**${args[4]}**`);
+message.channel.send(`__**War data added:**__ \n LEFT: **${args[1]}**`);
 }
 if (args[0] === "mid"){
 sheets.spreadsheets.values.get(
@@ -57835,77 +57768,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!C:C`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let midmid = args[6];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!C${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[midmid]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!C:C`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let bottommid = args[7];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!C${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[bottommid]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-message.channel.send(`__**War data added:**__ \n MiddleTop: **${args[1]}** MiddleMiddle: **${args[2]}** MiddleBottom: **${args[3]}**`);
+message.channel.send(`__**War data added:**__ \n Middle: **${args[1]}**`);
 }
 if (args[0] === "right"){
 sheets.spreadsheets.values.get(
@@ -57943,77 +57806,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let midright = args[9];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[midright]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let bottomright = args[10];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[bottomright]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-message.channel.send(`__**War data added:**__ \n RightTop: **${args[1]}** RightMiddle: **${args[2]}** RightBottom: **${args[3]}**`);
+message.channel.send(`__**War data added:**__ \n Right: **${args[1]}**`);
 }
 }
 
