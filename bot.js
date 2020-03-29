@@ -8634,7 +8634,7 @@ if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command === 'counter') { //123 or bottesting
-if (message.channel.id === '661221254958940220' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '606119830516400162') {
+if (message.channel.id === '661221254958940220' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '606119830516400162' || message.channel.id === '661221254958940220' || message.channel.id === '617707484626288672') {
 if(args[0] == "aim"){
 const aimcounterimage = client.channels.get('666332891730673668')
 aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -57656,8 +57656,9 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 
+if (command === 'counter' && args[0] === "aim" || command === 'counter' && args[0] === "aim+" || command === 'aim' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 
-if (command === 'counter' && args[0] === "aim+"){
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!A1:C",
@@ -57674,7 +57675,9 @@ if (command === 'counter' && args[0] === "aim+"){
     }
   });
 }
-if (command === 'asgardians' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "asgardians" || command === 'counter' && args[0] === "asgardians+" || command === 'asgardians' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!A1:C",
@@ -57691,25 +57694,10 @@ if (command === 'asgardians' && args[0] === "stats"){
     }
   });
 }
-if (command === 'aim' && args[0] === "stats"){
-	let abc = "\u200B";
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!D1:F",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
 }
-if (command === 'aimtron' && args[0] === "stats"){
+if (command === 'counter' && args[0] === "aimtron" || command === 'counter' && args[0] === "aimtron+" || command === 'aimtron' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57727,7 +57715,9 @@ if (command === 'aimtron' && args[0] === "stats"){
     }
   });
 }
-if (command === 'ogbh' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "ogbh" || command === 'ogbh' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57745,7 +57735,10 @@ if (command === 'ogbh' && args[0] === "stats"){
     }
   });
 }
-if (command === 'bh' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "bh" || command === 'bh' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57763,7 +57756,10 @@ if (command === 'bh' && args[0] === "stats"){
     }
   });
 }
-if (command === 'bkt' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "bkt" || command === 'bkt' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57781,7 +57777,10 @@ if (command === 'bkt' && args[0] === "stats"){
     }
   });
 }
-if (command === 'brawlers' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "brawlers" || command === 'brawlers' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57799,8 +57798,10 @@ if (command === 'brawlers' && args[0] === "stats"){
     }
   });
 }
-if (command === 'captain' && args[0] === "marvel" && args[1] === "stats" || command === 'captainmarvel' && args[0] === "stats" || command === 'captain' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "cm" || command === 'captain' && args[0] === "marvel" && args[1] === "stats" || command === 'captainmarvel' && args[0] === "stats" || command === 'captain' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!V1:X",
@@ -57817,7 +57818,10 @@ if (command === 'captain' && args[0] === "marvel" && args[1] === "stats" || comm
     }
   });
 }
-if (command === 'defenders' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "defenders" || command === 'defenders' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57835,7 +57839,10 @@ if (command === 'defenders' && args[0] === "stats"){
     }
   });
 }
-if (command === 'fantastic' && args[0] === "four" && args[1] === "stats" || command === 'f4' && args[0] === "stats" || command === 'fantastic4' && args[0] === "stats" || command === 'fantasticfour' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "f4" || command === 'fantastic' && args[0] === "four" && args[1] === "stats" || command === 'f4' && args[0] === "stats" || command === 'fantastic4' && args[0] === "stats" || command === 'fantasticfour' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57853,8 +57860,10 @@ if (command === 'fantastic' && args[0] === "four" && args[1] === "stats" || comm
     }
   });
 }
-if (command === 'gotg' && args[0] === "stats" || command === 'guardians' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "gotg" || command === 'counter' && args[0] === "guardians" || command === 'gotg' && args[0] === "stats" || command === 'guardians' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!AE1:AG",
@@ -57871,7 +57880,10 @@ if (command === 'gotg' && args[0] === "stats" || command === 'guardians' && args
     }
   });
 }
-if (command === 'hydra' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "hydra" || command === 'hydra' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57889,7 +57901,10 @@ if (command === 'hydra' && args[0] === "stats"){
     }
   });
 }
-if (command === 'inhumans' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "inhumans" || command === 'inhumans' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57907,7 +57922,9 @@ if (command === 'inhumans' && args[0] === "stats"){
     }
   });
 }
-if (command === 'kreeronan' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "kreeronan" || command === 'kreeronan' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57925,8 +57942,10 @@ if (command === 'kreeronan' && args[0] === "stats"){
     }
   });
 }
-if (command === 'kreeultimus' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "kreeultimus" || command === 'kreeultimus' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!AQ1:AS",
@@ -57943,7 +57962,9 @@ if (command === 'kreeultimus' && args[0] === "stats"){
     }
   });
 }
-if (command === 'marauders' && args[0] === "stats"){
+}
+if (command === 'counter' && args[0] === "marauders" || command === 'marauders' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel	
 	let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -57961,8 +57982,10 @@ if (command === 'marauders' && args[0] === "stats"){
     }
   });
 }
-if (command === 'maraudertron' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "maraudertron" || command === 'maraudertron' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!AW1:AY",
@@ -57979,8 +58002,10 @@ if (command === 'maraudertron' && args[0] === "stats"){
     }
   });
 }
-if (command === 'pa' && args[0] === "stats" || command === 'power' && args[0] === "armor" && args[1] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "pa" || command === 'pa' && args[0] === "stats" || command === 'power' && args[0] === "armor" && args[1] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!AZ1:BB",
@@ -57997,8 +58022,10 @@ if (command === 'pa' && args[0] === "stats" || command === 'power' && args[0] ==
     }
   });
 }
-if (command === 's6' && args[0] === "stats" || command === 'sinister' && args[0] === "six" && args[1] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "s6" || command === 's6' && args[0] === "stats" || command === 'sinister' && args[0] === "six" && args[1] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BC1:BE",
@@ -58015,8 +58042,10 @@ if (command === 's6' && args[0] === "stats" || command === 'sinister' && args[0]
     }
   });
 }
-if (command === 'coulson' && args[0] === "shield" && args[1] === "stats" || command === 'coulsonshield' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "coulsonshield" || command === 'coulson' && args[0] === "shield" && args[1] === "stats" || command === 'coulsonshield' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BF1:BH",
@@ -58033,8 +58062,10 @@ if (command === 'coulson' && args[0] === "shield" && args[1] === "stats" || comm
     }
   });
 }
-if (command === 'supernatural' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "supernatural" || command === 'counter' && args[0] === "supernaturals" ||  command === 'supernatural' && args[0] === "stats" || command === 'supernaturals' && args[0] === "stats" || ){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BI1:BK",
@@ -58051,8 +58082,10 @@ if (command === 'supernatural' && args[0] === "stats"){
     }
   });
 }
-if (command === 'symbiote' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "symbiote" || command === 'symbiote' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BL1:BN",
@@ -58069,8 +58102,10 @@ if (command === 'symbiote' && args[0] === "stats"){
     }
   });
 }
-if (command === 'ultron' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "ultron" || command === 'ultron' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BO1:BQ",
@@ -58087,8 +58122,10 @@ if (command === 'ultron' && args[0] === "stats"){
     }
   });
 }
-if (command === 'wakanda' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "wakanda" || command === 'wakanda' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BR1:BT",
@@ -58105,8 +58142,10 @@ if (command === 'wakanda' && args[0] === "stats"){
     }
   });
 }
-if (command === 'xmen' && args[0] === "stats"){
-	let abc = "\u200B";
+}
+if (command === 'counter' && args[0] === "xmen" || command === 'xmen' && args[0] === "stats"){
+if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
+let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!BU1:BW",
@@ -58122,6 +58161,7 @@ if (command === 'xmen' && args[0] === "stats"){
       console.log('No data found.');
     }
   });
+}
 }
 
 
