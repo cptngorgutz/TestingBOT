@@ -57797,6 +57797,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
+message.channel.send(`__**War data added:**__ \n Teamname: **${args[1]}** \nLeftTop: **${args[2]}** LeftMid: **${args[3]}** LeftBottom:**${args[4]}**`);
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -57902,6 +57903,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
+message.channel.send(`__**War data added:**__ \n MiddleTop: **${args[5]}** \nMiddleMiddle: **${args[6]}** MiddleBottom: **${args[7]}**`);
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -58007,6 +58009,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
+message.channel.send(`__**War data added:**__ \n RightTop: **${args[8]}** \nRightMiddle: **${args[9]}** RightBottom: **${args[10]}**`);
 }
 }
 
