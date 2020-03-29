@@ -57661,7 +57661,7 @@ if (message.channel.id === '661661368943902720' || message.channel.id === '66122
 
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!A1:C",
+    range: "ControlPanel!D1:F",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
