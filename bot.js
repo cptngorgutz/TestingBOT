@@ -57655,6 +57655,8 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 if (command === 'war'){
 if (args[0] === "name"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -57733,6 +57735,8 @@ sheets.spreadsheets.values.get(
 message.channel.send(`__**War data added:**__ \n LEFT: **${args[1]}**`);
 }
 if (args[0] === "mid"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -57771,6 +57775,8 @@ sheets.spreadsheets.values.get(
 message.channel.send(`__**War data added:**__ \n Middle: **${args[1]}**`);
 }
 if (args[0] === "right"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
