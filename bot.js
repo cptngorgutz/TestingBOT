@@ -58063,7 +58063,7 @@ let abc = "\u200B";
   });
 }
 }
-if (command === 'counter' && args[0] === "supernatural" || command === 'counter' && args[0] === "supernaturals" ||  command === 'supernatural' && args[0] === "stats" || command === 'supernaturals' && args[0] === "stats" || ){
+if (command === 'counter' && args[0] === "supernatural" || command === 'counter' && args[0] === "supernaturals" ||  command === 'supernatural' && args[0] === "stats" || command === 'supernaturals' && args[0] === "stats"){
 if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
