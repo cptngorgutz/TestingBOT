@@ -8971,7 +8971,7 @@ sheets.spreadsheets.values.get(
 );
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("__**Database updated:**__ \nAttacker: " + **args[0]** + " - " + **args[1]** + "\n Defender: " + **args[2]** + " - " + **args[3]**)
+	.setDescription(`__**Database updated:**__ \nAttacker: **${args[0]}** + " - " + **${args[1]}** + "\n Defender: " + **${args[2]}** + " - " + **${args[3]}**`)
 	message.channel.send(exampleEmbed);
 
 } else if (args[0] === "aim" && args[2] === "asgardians"){
