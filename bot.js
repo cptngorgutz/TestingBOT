@@ -57704,7 +57704,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-fetchchannel.send("!warargs1 " + args[1]);
+fetchchannel.send("!warargs1 " + args[1] + "test");
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
