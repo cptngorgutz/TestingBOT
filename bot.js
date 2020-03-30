@@ -57692,9 +57692,15 @@ sheets.spreadsheets.values.get(
   }
 );
 message.channel.send(`__**War data added:**__ **${args[0]}** \n**${args[1]}** **${args[2]}** **${args[3]}** **${args[4]}** **${args[5]}** **${args[6]}** **${args[7]}** **${args[8]}** **${args[9]}**`);
-message.channel.send("!war " + "left" + args[1])
-message.channel.send("!war " + "left" + args[2])
-message.channel.send("!war " + "left" + args[3])
+message.channel.send("!war " + "left " + args[1])
+message.delete(5000);
+message.delete(25000);
+message.channel.send("!war " + "left " + args[2]);
+message.delete(60000);
+message.delete(80000);
+message.channel.send("!war " + "left " + args[3]);
+message.delete(120000);
+message.delete(150000);
 if (args[0] === "left"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57735,9 +57741,15 @@ sheets.spreadsheets.values.get(
 );
 message.channel.send(`__**War data added:**__ \n LEFT: **${args[1]}**`);
 }
-message.channel.send("!war " + "mid" + args[4])
-message.channel.send("!war " + "mid" + args[5])
-message.channel.send("!war " + "mid" + args[6])
+message.channel.send("!war " + "mid " + args[4])
+message.delete(190000);
+message.delete(220000);
+message.channel.send("!war " + "mid " + args[5]);
+message.delete(260000);
+message.delete(290000);
+message.channel.send("!war " + "mid " + args[6]);
+message.delete(350000);
+message.delete(390000);
 if (args[0] === "mid"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57778,9 +57790,15 @@ sheets.spreadsheets.values.get(
 );
 message.channel.send(`__**War data added:**__ \n Middle: **${args[1]}**`);
 }
-message.channel.send("!war " + "right" + args[7])
-message.channel.send("!war " + "right" + args[8])
-message.channel.send("!war " + "right" + args[9])
+message.channel.send("!war " + "right " + args[7])
+message.delete(430000);
+message.delete(480000);
+message.channel.send("!war " + "right " + args[8]);
+message.delete(530000);
+message.delete(590000);
+message.channel.send("!war " + "right " + args[9]);
+message.delete(630000);
+message.delete(690000);
 if (args[0] === "right"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
