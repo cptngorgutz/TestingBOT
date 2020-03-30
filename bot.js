@@ -57656,41 +57656,6 @@ const exampleEmbed = new Discord.RichEmbed()
 if (command === 'war'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!A:A`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args1 = args[1];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!A${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args1]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
 message.channel.send(`__**War data added:**__ **${args[0]}** \n**${args[1]}** **${args[2]}** **${args[3]}** **${args[4]}** **${args[5]}** **${args[6]}** **${args[7]}** **${args[8]}** **${args[9]}**`);
 sheets.spreadsheets.values.get(
   {
@@ -57728,7 +57693,6 @@ sheets.spreadsheets.values.get(
   }
 );
 message.channel.send("!warargs1")
-message.channel.bulkDelete(1)
 
 if(message.content.startsWith('!warargs')) {
 const fetchchannel = client.channels.get('617707484626288672')
