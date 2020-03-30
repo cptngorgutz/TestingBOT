@@ -57692,7 +57692,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send("!warargs1")
+message.channel.send("!warargs")
 
 if(message.content.startsWith('!warargs')) {
 const fetchchannel = client.channels.get('617707484626288672')
@@ -57704,7 +57704,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-fetchchannel.send("!warargs1 " + args[1] + "test");
+fetchchannel.send("!warargs1 " + args[1]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
