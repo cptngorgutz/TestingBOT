@@ -57729,7 +57729,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-if (command === 'war' && args[1] === "han" || command === 'war' && args[1] === "car" || command === 'war' && args[1] === "rea" || command === 'war' && args[1] === "sec" || command === 'war' && args[1] === "eng" || command === 'war' && args[1] === "med" || command === 'war' && args[1] === "bar" || command === 'war' && args[1] === "arm" || command === 'war' && args[1] === "bri"){
+} else if (command === 'war' && args[1] === "han" || command === 'war' && args[1] === "car" || command === 'war' && args[1] === "rea" || command === 'war' && args[1] === "sec" || command === 'war' && args[1] === "eng" || command === 'war' && args[1] === "med" || command === 'war' && args[1] === "bar" || command === 'war' && args[1] === "arm" || command === 'war' && args[1] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57767,9 +57767,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-}
-
-if (command === 'war' && args[2] === "han" || command === 'war' && args[2] === "car" || command === 'war' && args[2] === "rea" || command === 'war' && args[2] === "sec" || command === 'war' && args[2] === "eng" || command === 'war' && args[2] === "med" || command === 'war' && args[2] === "bar" || command === 'war' && args[2] === "arm" || command === 'war' && args[2] === "bri"){
+} else if (command === 'war' && args[2] === "han" || command === 'war' && args[2] === "car" || command === 'war' && args[2] === "rea" || command === 'war' && args[2] === "sec" || command === 'war' && args[2] === "eng" || command === 'war' && args[2] === "med" || command === 'war' && args[2] === "bar" || command === 'war' && args[2] === "arm" || command === 'war' && args[2] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57808,9 +57806,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[3] === "han" || command === 'war' && args[3] === "car" || command === 'war' && args[3] === "rea" || command === 'war' && args[3] === "sec" || command === 'war' && args[3] === "eng" || command === 'war' && args[3] === "med" || command === 'war' && args[3] === "bar" || command === 'war' && args[3] === "arm" || command === 'war' && args[3] === "bri"){
+} else if (command === 'war' && args[3] === "han" || command === 'war' && args[3] === "car" || command === 'war' && args[3] === "rea" || command === 'war' && args[3] === "sec" || command === 'war' && args[3] === "eng" || command === 'war' && args[3] === "med" || command === 'war' && args[3] === "bar" || command === 'war' && args[3] === "arm" || command === 'war' && args[3] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57849,9 +57845,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[4] === "han" || command === 'war' && args[4] === "car" || command === 'war' && args[4] === "rea" || command === 'war' && args[4] === "sec" || command === 'war' && args[4] === "eng" || command === 'war' && args[4] === "med" || command === 'war' && args[4] === "bar" || command === 'war' && args[4] === "arm" || command === 'war' && args[4] === "bri"){
+} else if (command === 'war' && args[4] === "han" || command === 'war' && args[4] === "car" || command === 'war' && args[4] === "rea" || command === 'war' && args[4] === "sec" || command === 'war' && args[4] === "eng" || command === 'war' && args[4] === "med" || command === 'war' && args[4] === "bar" || command === 'war' && args[4] === "arm" || command === 'war' && args[4] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57890,9 +57884,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[5] === "han" || command === 'war' && args[5] === "car" || command === 'war' && args[5] === "rea" || command === 'war' && args[5] === "sec" || command === 'war' && args[5] === "eng" || command === 'war' && args[5] === "med" || command === 'war' && args[5] === "bar" || command === 'war' && args[5] === "arm" || command === 'war' && args[5] === "bri"){
+} else if (command === 'war' && args[5] === "han" || command === 'war' && args[5] === "car" || command === 'war' && args[5] === "rea" || command === 'war' && args[5] === "sec" || command === 'war' && args[5] === "eng" || command === 'war' && args[5] === "med" || command === 'war' && args[5] === "bar" || command === 'war' && args[5] === "arm" || command === 'war' && args[5] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57931,9 +57923,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[6] === "han" || command === 'war' && args[6] === "car" || command === 'war' && args[6] === "rea" || command === 'war' && args[6] === "sec" || command === 'war' && args[6] === "eng" || command === 'war' && args[6] === "med" || command === 'war' && args[6] === "bar" || command === 'war' && args[6] === "arm" || command === 'war' && args[6] === "bri"){
+} else if (command === 'war' && args[6] === "han" || command === 'war' && args[6] === "car" || command === 'war' && args[6] === "rea" || command === 'war' && args[6] === "sec" || command === 'war' && args[6] === "eng" || command === 'war' && args[6] === "med" || command === 'war' && args[6] === "bar" || command === 'war' && args[6] === "arm" || command === 'war' && args[6] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57972,9 +57962,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[7] === "han" || command === 'war' && args[7] === "car" || command === 'war' && args[7] === "rea" || command === 'war' && args[7] === "sec" || command === 'war' && args[7] === "eng" || command === 'war' && args[7] === "med" || command === 'war' && args[7] === "bar" || command === 'war' && args[7] === "arm" || command === 'war' && args[7] === "bri"){
+} else if (command === 'war' && args[7] === "han" || command === 'war' && args[7] === "car" || command === 'war' && args[7] === "rea" || command === 'war' && args[7] === "sec" || command === 'war' && args[7] === "eng" || command === 'war' && args[7] === "med" || command === 'war' && args[7] === "bar" || command === 'war' && args[7] === "arm" || command === 'war' && args[7] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -58013,9 +58001,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[8] === "han" || command === 'war' && args[8] === "car" || command === 'war' && args[8] === "rea" || command === 'war' && args[8] === "sec" || command === 'war' && args[8] === "eng" || command === 'war' && args[8] === "med" || command === 'war' && args[8] === "bar" || command === 'war' && args[8] === "arm" || command === 'war' && args[8] === "bri"){
+} else if (command === 'war' && args[8] === "han" || command === 'war' && args[8] === "car" || command === 'war' && args[8] === "rea" || command === 'war' && args[8] === "sec" || command === 'war' && args[8] === "eng" || command === 'war' && args[8] === "med" || command === 'war' && args[8] === "bar" || command === 'war' && args[8] === "arm" || command === 'war' && args[8] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -58054,9 +58040,7 @@ sheets.spreadsheets.values.get(
   }
 );
 
-}
-
-if (command === 'war' && args[9] === "han" || command === 'war' && args[9] === "car" || command === 'war' && args[9] === "rea" || command === 'war' && args[9] === "sec" || command === 'war' && args[9] === "eng" || command === 'war' && args[9] === "med" || command === 'war' && args[9] === "bar" || command === 'war' && args[9] === "arm" || command === 'war' && args[9] === "bri"){
+} else if (command === 'war' && args[9] === "han" || command === 'war' && args[9] === "car" || command === 'war' && args[9] === "rea" || command === 'war' && args[9] === "sec" || command === 'war' && args[9] === "eng" || command === 'war' && args[9] === "med" || command === 'war' && args[9] === "bar" || command === 'war' && args[9] === "arm" || command === 'war' && args[9] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -58096,7 +58080,6 @@ sheets.spreadsheets.values.get(
 );
 }
 
-}
 
 
 
