@@ -57692,7 +57692,6 @@ sheets.spreadsheets.values.get(
   }
 );
 message.channel.send(`__**War data added:**__ **${args[0]}** \n**${args[1]}** **${args[2]}** **${args[3]}** **${args[4]}** **${args[5]}** **${args[6]}** **${args[7]}** **${args[8]}** **${args[9]}**`);
-
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -57728,8 +57727,10 @@ sheets.spreadsheets.values.get(
     );
   }
 );
+message.channel.send("!warargs1")
+message.channel.bulkDelete(1)
 
-if(message.content.startsWith('!war')) {
+if(message.content.startsWith('!warargs')) {
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
