@@ -8894,7 +8894,6 @@ if (command === 'updatez3'){
   });
   }
 
-
 if (command === 'add'){
 if (args[0] === "asgardians" && args[2] === "asgardians"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57653,6 +57652,7 @@ const exampleEmbed = new Discord.RichEmbed()
 	message.channel.send(exampleEmbed);
 }
 }
+
 if (command === 'war'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57729,7 +57729,20 @@ sheets.spreadsheets.values.get(
   }
 );
 
-} else if (command === 'war' && args[1] === "han" || command === 'war' && args[1] === "car" || command === 'war' && args[1] === "rea" || command === 'war' && args[1] === "sec" || command === 'war' && args[1] === "eng" || command === 'war' && args[1] === "med" || command === 'war' && args[1] === "bar" || command === 'war' && args[1] === "arm" || command === 'war' && args[1] === "bri"){
+if(message.content.startsWith('!war')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs1 " + args[1])
+embed.setTimestamp()
+fetchchannel.send(embed);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57767,7 +57780,22 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-} else if (command === 'war' && args[2] === "han" || command === 'war' && args[2] === "car" || command === 'war' && args[2] === "rea" || command === 'war' && args[2] === "sec" || command === 'war' && args[2] === "eng" || command === 'war' && args[2] === "med" || command === 'war' && args[2] === "bar" || command === 'war' && args[2] === "arm" || command === 'war' && args[2] === "bri"){
+}
+
+if(message.content.startsWith('!warargs1')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs2 " + args[2])
+embed.setTimestamp()
+fetchchannel.send(embed);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57785,7 +57813,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args2 = args[2];
+	let args1 = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57793,7 +57821,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args2]],
+          values: [[args1]],
         }
       },
       (err, resp) => {
@@ -57806,7 +57834,22 @@ sheets.spreadsheets.values.get(
   }
 );
 
-} else if (command === 'war' && args[3] === "han" || command === 'war' && args[3] === "car" || command === 'war' && args[3] === "rea" || command === 'war' && args[3] === "sec" || command === 'war' && args[3] === "eng" || command === 'war' && args[3] === "med" || command === 'war' && args[3] === "bar" || command === 'war' && args[3] === "arm" || command === 'war' && args[3] === "bri"){
+}
+
+if(message.content.startsWith('!warargs2')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs3 " + args[3])
+embed.setTimestamp()
+fetchchannel.send(embed);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57824,7 +57867,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args3 = args[3];
+	let args1 = args[1];
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -57832,241 +57875,7 @@ sheets.spreadsheets.values.get(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args3]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-
-} else if (command === 'war' && args[4] === "han" || command === 'war' && args[4] === "car" || command === 'war' && args[4] === "rea" || command === 'war' && args[4] === "sec" || command === 'war' && args[4] === "eng" || command === 'war' && args[4] === "med" || command === 'war' && args[4] === "bar" || command === 'war' && args[4] === "arm" || command === 'war' && args[4] === "bri"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!C:C`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args4 = args[4];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!C${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args4]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-
-} else if (command === 'war' && args[5] === "han" || command === 'war' && args[5] === "car" || command === 'war' && args[5] === "rea" || command === 'war' && args[5] === "sec" || command === 'war' && args[5] === "eng" || command === 'war' && args[5] === "med" || command === 'war' && args[5] === "bar" || command === 'war' && args[5] === "arm" || command === 'war' && args[5] === "bri"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!C:C`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args5 = args[5];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!C${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args5]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-
-} else if (command === 'war' && args[6] === "han" || command === 'war' && args[6] === "car" || command === 'war' && args[6] === "rea" || command === 'war' && args[6] === "sec" || command === 'war' && args[6] === "eng" || command === 'war' && args[6] === "med" || command === 'war' && args[6] === "bar" || command === 'war' && args[6] === "arm" || command === 'war' && args[6] === "bri"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!C:C`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args6 = args[6];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!C${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args6]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-
-} else if (command === 'war' && args[7] === "han" || command === 'war' && args[7] === "car" || command === 'war' && args[7] === "rea" || command === 'war' && args[7] === "sec" || command === 'war' && args[7] === "eng" || command === 'war' && args[7] === "med" || command === 'war' && args[7] === "bar" || command === 'war' && args[7] === "arm" || command === 'war' && args[7] === "bri"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args7 = args[7];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args7]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-
-} else if (command === 'war' && args[8] === "han" || command === 'war' && args[8] === "car" || command === 'war' && args[8] === "rea" || command === 'war' && args[8] === "sec" || command === 'war' && args[8] === "eng" || command === 'war' && args[8] === "med" || command === 'war' && args[8] === "bar" || command === 'war' && args[8] === "arm" || command === 'war' && args[8] === "bri"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args8 = args[8];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args8]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-
-} else if (command === 'war' && args[9] === "han" || command === 'war' && args[9] === "car" || command === 'war' && args[9] === "rea" || command === 'war' && args[9] === "sec" || command === 'war' && args[9] === "eng" || command === 'war' && args[9] === "med" || command === 'war' && args[9] === "bar" || command === 'war' && args[9] === "arm" || command === 'war' && args[9] === "bri"){
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
-const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!D:D`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args9 = args[9];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!D${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args9]],
+          values: [[args1]],
         }
       },
       (err, resp) => {
@@ -58080,6 +57889,325 @@ sheets.spreadsheets.values.get(
 );
 }
 
+if(message.content.startsWith('!warargs3')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs4 " + args[4])
+embed.setTimestamp()
+fetchchannel.send(embed);
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!C:C`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!C${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+}
+
+if(message.content.startsWith('!warargs4')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs5 " + args[5])
+embed.setTimestamp()
+fetchchannel.send(embed);
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!C:C`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!C${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+}
+
+if(message.content.startsWith('!warargs5')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs6 " + args[6])
+embed.setTimestamp()
+fetchchannel.send(embed);
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!C:C`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!C${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+}
+
+if(message.content.startsWith('!warargs6')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs7 " + args[7])
+embed.setTimestamp()
+fetchchannel.send(embed);
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!D:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+}
+
+if(message.content.startsWith('!warargs7')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs8 " + args[8])
+embed.setTimestamp()
+fetchchannel.send(embed);
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!D:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+}
+
+if(message.content.startsWith('!warargs8')) {
+const fetchchannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+message.channel.bulkDelete(1)
+embed.setColor('#0099ff')
+embed.setDescription("!warargs9 " + args[9])
+embed.setTimestamp()
+fetchchannel.send(embed);
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!D:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+}
+
+}
 
 
 
