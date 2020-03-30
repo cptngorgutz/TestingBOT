@@ -57693,7 +57693,7 @@ sheets.spreadsheets.values.get(
   }
 );
 message.channel.send('!warargs')
-
+}
 if(message.content.startsWith('!warargs')) {
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
@@ -58145,7 +58145,7 @@ sheets.spreadsheets.values.get(
 );
 }
 
-}
+
 
 
 
