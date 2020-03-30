@@ -57840,10 +57840,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs3 " + args[3])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs3 " + args[3]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57893,10 +57890,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs4 " + args[4])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs4 " + args[4]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57946,10 +57940,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs5 " + args[5])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs5 " + args[5]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57999,10 +57990,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs6 " + args[6])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs6 " + args[6]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -58052,10 +58040,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs7 " + args[7])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs7 " + args[7]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -58105,10 +58090,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs8 " + args[8])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs8 " + args[8]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -58158,10 +58140,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 message.channel.bulkDelete(1)
-embed.setColor('#0099ff')
-embed.setDescription("!warargs9 " + args[9])
-embed.setTimestamp()
-fetchchannel.send(embed);
+fetchchannel.send("!warargs9 " + args[9]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
