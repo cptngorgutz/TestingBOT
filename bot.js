@@ -57694,16 +57694,9 @@ sheets.spreadsheets.values.get(
 );
 message.channel.send('!warargs ' + args[1])
 
-if(message.content.startsWith('!warargs')) {
-const fetchchannel = client.channels.get('617707484626288672')
-const messages1 = await message.channel.fetchMessages({ limit: 1 });
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
+if(message.content.startsWith('!warargs ')) {
 message.channel.bulkDelete(1)
+const fetchchannel = client.channels.get('617707484626288672')
 fetchchannel.send("!warargs1 " + args[1]);
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
