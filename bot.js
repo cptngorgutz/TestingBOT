@@ -57692,7 +57692,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs' + args[1])
+message.channel.send('!warargs ' + args[1])
 
 if(message.content.startsWith('!warargs')) {
 const fetchchannel = client.channels.get('617707484626288672')
@@ -57742,7 +57742,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs1' + args[2])
+message.channel.send('!warargs1 ' + args[2])
 }
 
 if(message.content.startsWith('!warargs1')) {
@@ -57793,7 +57793,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs2' + args[3])
+message.channel.send('!warargs2 ' + args[3])
 }
 
 if(message.content.startsWith('!warargs2')) {
@@ -57844,7 +57844,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs3' + args[4])
+message.channel.send('!warargs3 ' + args[4])
 }
 
 if(message.content.startsWith('!warargs3')) {
@@ -57895,7 +57895,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs4' + args[5])
+message.channel.send('!warargs4 ' + args[5])
 }
 
 if(message.content.startsWith('!warargs4')) {
@@ -57946,7 +57946,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs5' + args[6])
+message.channel.send('!warargs5 ' + args[6])
 }
 
 if(message.content.startsWith('!warargs5')) {
@@ -57997,7 +57997,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs6' + args[7])
+message.channel.send('!warargs6 ' + args[7])
 }
 
 if(message.content.startsWith('!warargs6')) {
@@ -58048,7 +58048,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs7' + args[8])
+message.channel.send('!warargs7 ' + args[8])
 }
 
 if(message.content.startsWith('!warargs7')) {
@@ -58099,7 +58099,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs8' + args[9])
+message.channel.send('!warargs8 ' + args[9])
 }
 
 if(message.content.startsWith('!warargs8')) {
