@@ -57768,7 +57768,7 @@ sheets.spreadsheets.values.get(
   }
 );
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(30000).catch();
 if (args[2] === "han" || args[2] === "car" || args[2] === "rea" || args[2] === "sec" || args[2] === "eng" || args[2] === "med" || args[2] === "bar" || args[2] === "arm" || args[2] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57810,7 +57810,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(60000).catch();
 if (args[3] === "han" || args[3] === "car" || args[3] === "rea" || args[3] === "sec" || args[3] === "eng" || args[3] === "med" || args[3] === "bar" || args[3] === "arm" || args[3] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57852,7 +57852,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(90000).catch();
 if (args[4] === "han" || args[4] === "car" || args[4] === "rea" || args[4] === "sec" || args[4] === "eng" || args[4] === "med" || args[4] === "bar" || args[4] === "arm" || args[4] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57894,7 +57894,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(120000).catch();
 if (args[5] === "han" || args[5] === "car" || args[5] === "rea" || args[5] === "sec" || args[5] === "eng" || args[5] === "med" || args[5] === "bar" || args[5] === "arm" || args[5] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57936,7 +57936,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(150000).catch();
 if (args[6] === "han" || args[6] === "car" || args[6] === "rea" || args[6] === "sec" || args[6] === "eng" || args[6] === "med" || args[6] === "bar" || args[6] === "arm" || args[6] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -57978,7 +57978,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(180000).catch();
 if (args[7] === "han" || args[7] === "car" || args[7] === "rea" || args[7] === "sec" || args[7] === "eng" || args[7] === "med" || args[7] === "bar" || args[7] === "arm" || args[7] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -58020,7 +58020,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(21000).catch();
 if (args[8] === "han" || args[8] === "car" || args[8] === "rea" || args[8] === "sec" || args[8] === "eng" || args[8] === "med" || args[8] === "bar" || args[8] === "arm" || args[8] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -58062,7 +58062,7 @@ sheets.spreadsheets.values.get(
 );
 
 }
-message.channel.send(" ");
+message.channel.send("‎");
 message.delete(24000).catch();
 if (args[9] === "han" || args[9] === "car" || args[9] === "rea" || args[9] === "sec" || args[9] === "eng" || args[9] === "med" || args[9] === "bar" || args[9] === "arm" || args[9] === "bri"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -58102,7 +58102,6 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send(`__**War data added:**__ \n Right: **${args[1]}**`);
 }
 
 }
