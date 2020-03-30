@@ -57654,7 +57654,6 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 }
 if (command === 'war'){
-if (args[0] === "name"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57692,8 +57691,10 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send(`__**War data added:**__ \n Name: **${args[1]}**`);
-}
+message.channel.send(`__**War data added:**__ \n Name: **${args[0]}** **${args[1]}** **${args[2]}** **${args[3]}** **${args[4]}** **${args[5]}** **${args[6]}** **${args[7]}** **${args[8]}** **${args[9]}**`);
+message.channel.send("!war" + "left" + args[1])
+message.channel.send("!war" + "left" + args[2])
+message.channel.send("!war" + "left" + args[3])
 if (args[0] === "left"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57734,6 +57735,9 @@ sheets.spreadsheets.values.get(
 );
 message.channel.send(`__**War data added:**__ \n LEFT: **${args[1]}**`);
 }
+message.channel.send("!war" + "mid" + args[4])
+message.channel.send("!war" + "mid" + args[5])
+message.channel.send("!war" + "mid" + args[6])
 if (args[0] === "mid"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57774,6 +57778,9 @@ sheets.spreadsheets.values.get(
 );
 message.channel.send(`__**War data added:**__ \n Middle: **${args[1]}**`);
 }
+message.channel.send("!war" + "right" + args[7])
+message.channel.send("!war" + "right" + args[8])
+message.channel.send("!war" + "right" + args[9])
 if (args[0] === "right"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
