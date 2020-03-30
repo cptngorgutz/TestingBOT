@@ -57654,7 +57654,6 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if (command === 'war'){
-if(message.author.bot) return;
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 message.channel.send(`__**War data added:**__ **${args[0]}** \n**${args[1]}** **${args[2]}** **${args[3]}** **${args[4]}** **${args[5]}** **${args[6]}** **${args[7]}** **${args[8]}** **${args[9]}**`);
@@ -57693,10 +57692,9 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send("!warargs")
+message.channel.send('!warargs')
 
 if(message.content.startsWith('!warargs')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -57744,10 +57742,9 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-
+}
 
 if(message.content.startsWith('!warargs1')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -57799,7 +57796,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs2')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -57850,7 +57846,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs3')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -57901,7 +57896,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs4')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -57952,7 +57946,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs5')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -58003,7 +57996,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs6')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -58054,7 +58046,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs7')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
@@ -58105,7 +58096,6 @@ sheets.spreadsheets.values.get(
 }
 
 if(message.content.startsWith('!warargs8')) {
-if(message.author.bot) return;
 const fetchchannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
