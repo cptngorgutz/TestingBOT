@@ -57694,7 +57694,7 @@ sheets.spreadsheets.values.get(
 );
 }
 
-if (command === 'war' && args[0] === "left"){
+if (command === 'war' && args[0] === "left" || args[0] === "l"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57734,7 +57734,7 @@ sheets.spreadsheets.values.get(
 );
 }
 
-if (command === 'war' && args[0] === "mid" || args[0] === "middle"){
+if (command === 'war' && args[0] === "mid" || args[0] === "middle" || args[0] === "m"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57772,10 +57772,9 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-message.channel.send('!warargs4 ' + args[5])
 }
 
-if (command === 'war' && args[0] === "right"){
+if (command === 'war' && args[0] === "right" || args[0] === "r"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
