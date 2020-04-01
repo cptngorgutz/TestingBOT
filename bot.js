@@ -58089,7 +58089,7 @@ sheets.spreadsheets.values.get(
   console.log('The API returned an error: ' + err);
 }
 try {
-sheets.spreadsheets.values.get(
+await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58128,7 +58128,7 @@ sheets.spreadsheets.values.get(
   console.log('The API returned an error: ' + err);
 }
 try {
-sheets.spreadsheets.values.get(
+await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
