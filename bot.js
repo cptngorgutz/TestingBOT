@@ -58066,7 +58066,7 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-    sheets.spreadsheets.values.update(
+    sheets.spreadsheets.values.append(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -58105,7 +58105,7 @@ await sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-    sheets.spreadsheets.values.update(
+    sheets.spreadsheets.values.append(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58144,7 +58144,7 @@ await sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args3 = args[3];
-    sheets.spreadsheets.values.update(
+    sheets.spreadsheets.values.append(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
