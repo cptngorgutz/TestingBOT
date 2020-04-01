@@ -57653,13 +57653,8 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 }
 
-if (command === 'war'){
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**Steps Order:** \nwar name [name]\nwar l [roomname] x3\nwar m [roomname] x3\nwar r [roomname] x3\nwar result [w/l] \nwar score [score] x2")
-	message.channel.send(exampleEmbed); 
-}
 
+//WAR ROOM LAYOUTS
 if (command === 'war' && args[0] === "name"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57698,9 +57693,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-}
-
-if (command === 'war' && args[0] === "left" || args[0] === "l"){
+} else if (command === 'war' && args[0] === "left" || args[0] === "l"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57738,9 +57731,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-}
-
-if (command === 'war' && args[0] === "mid" || args[0] === "middle" || args[0] === "m"){
+} else if (command === 'war' && args[0] === "mid" || args[0] === "middle" || args[0] === "m"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57778,9 +57769,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-}
-
-if (command === 'war' && args[0] === "right" || args[0] === "r"){
+} else if (command === 'war' && args[0] === "right" || args[0] === "r"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57818,9 +57807,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-}
-
-if (command === 'war' && args[0] === "result"){
+} else if (command === 'war' && args[0] === "result"){
 if (args[1] === "l"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57900,9 +57887,7 @@ sheets.spreadsheets.values.get(
 );
 }
 
-}
-
-if (command === 'war' && args[0] === "score"){
+} else if (command === 'war' && args[0] === "score"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 sheets.spreadsheets.values.get(
@@ -57940,11 +57925,12 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-
-
+} else if (command === 'war'){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Steps Order:** \nwar name [name]\nwar l [roomname] x3\nwar m [roomname] x3\nwar r [roomname] x3\nwar result [w/l] \nwar score [score] x2")
+	message.channel.send(exampleEmbed); 
 }
-
-
 
 
 
