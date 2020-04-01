@@ -58017,10 +58017,10 @@ const sheetName = "WarMatchups";
       console.error(err);
       return;
     }
-    const data1 = res.data.values;
-    let i = 0;
-    for (i = 1; i < data1.length; i++) {
-      if (!data1[i][0]) break;
+    const data = res.data.values;
+    let i = 1;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
     }
 	let args3 = args[3];
     sheets.spreadsheets.values.update(
