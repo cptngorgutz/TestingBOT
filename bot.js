@@ -58042,7 +58042,6 @@ const sheetName = "WarMatchups";
     );
   }
 );
-)
 }
 
 if (command === 'counter' && args[0] === "aim" || command === 'counter' && args[0] === "aim+" || command === 'aim' && args[0] === "stats"){
