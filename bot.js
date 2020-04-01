@@ -57654,6 +57654,12 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if (command === 'war'){
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("**Steps Order: \nwar name [name]\nwar l [roomname] x3\nwar m [roomname] x3\nwar r [roomname] x3\nwar w/l \nwar score [score] x2")
+	message.channel.send(exampleEmbed); 
+}
+
 if (command === 'war' && args[0] === "name"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
@@ -57814,7 +57820,132 @@ sheets.spreadsheets.values.get(
 );
 }
 
+if (command === 'war' && args[0] === "w" || args[0] === "win"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E:E`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args = args[0];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+
+
 }
+
+if (command === 'war' && args[0] === "l" || args[0] === "lose"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E:E`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args = args[0];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+
+
+}
+	
+if (command === 'war' && args[0] === "score"){
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E:E`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+
+
+}
+
 
 
 
