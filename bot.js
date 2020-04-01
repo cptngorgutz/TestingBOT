@@ -58085,6 +58085,8 @@ sheets.spreadsheets.values.get(
     );
   }
 );
+} catch(err) {
+  console.log('The API returned an error: ' + err);
 }
 try {
 sheets.spreadsheets.values.get(
@@ -58122,7 +58124,8 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-
+}catch(err) {
+  console.log('The API returned an error: ' + err);
 }
 try {
 sheets.spreadsheets.values.get(
@@ -58160,9 +58163,7 @@ sheets.spreadsheets.values.get(
     );
   }
 );
-	
-}
-catch(err) {
+} catch(err) {
   console.log('The API returned an error: ' + err);
 }
 
