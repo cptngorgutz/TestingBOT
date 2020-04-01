@@ -58007,7 +58007,6 @@ const sheetName = "WarMatchups";
     );
   }
 );
-)
 			await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
