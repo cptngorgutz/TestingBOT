@@ -57937,7 +57937,7 @@ if (command === 'testingwar'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 
-		sheets.spreadsheets.values.get(
+			sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!A:A`
@@ -57972,7 +57972,7 @@ const sheetName = "WarMatchups";
     );
   }
 );
-			.then(() => sheets.spreadsheets.values.get(
+			await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58008,7 +58008,7 @@ const sheetName = "WarMatchups";
   }
 );
 )
-			.then(() => sheets.spreadsheets.values.get(
+			await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58044,9 +58044,6 @@ const sheetName = "WarMatchups";
   }
 );
 )
-			.catch(error => {
-				// handle failure of any Promise rejection inside here
-			});
 }
 
 if (command === 'counter' && args[0] === "aim" || command === 'counter' && args[0] === "aim+" || command === 'aim' && args[0] === "stats"){
