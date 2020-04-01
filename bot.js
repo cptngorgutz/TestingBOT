@@ -58018,9 +58018,9 @@ const sheetName = "WarMatchups";
       return;
     }
     const data1 = res.data.values;
-    let i = 1;
+    let i = 0;
     for (i = 1; i < data1.length; i++) {
-      if (!data1[i][1]) break;
+      if (!data1[i][0]) break;
     }
 	let args3 = args[3];
     sheets.spreadsheets.values.update(
