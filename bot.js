@@ -57951,7 +57951,7 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args0 = args[0];
-   const res1 = await sheets.spreadsheets.values.update({
+    await sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -57967,7 +57967,7 @@ sheets.spreadsheets.values.get(
           reject(err);
         }
       }
-   });
+   );
   }
 );
 sheets.spreadsheets.values.get(
@@ -57986,7 +57986,7 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-    const res2 = await sheets.spreadsheets.values.update({
+    await sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58002,7 +58002,7 @@ sheets.spreadsheets.values.get(
           reject(err);
         }
       }
-    });
+    );
   }
 );
 sheets.spreadsheets.values.get(
@@ -58021,7 +58021,7 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-	const res3 = await sheets.spreadsheets.values.update({
+	 await sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58037,10 +58037,9 @@ sheets.spreadsheets.values.get(
           reject(err);
         }
       }
-    });
+    );
   }
 );
-message.channel.send(JSON.stringify(res.data, null, 2));
 }
 
 
