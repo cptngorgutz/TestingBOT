@@ -58754,7 +58754,7 @@ if (command === '222test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 		try {
-			const sentMessage = awaitsheets.spreadsheets.values.get(
+			const sentMessage = await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!A:A`
@@ -58794,7 +58794,7 @@ sheets.spreadsheets.values.update(
 			// handle error
 		}
 		try {
-			const sentMessage2 = sheets.spreadsheets.values.get(
+			const sentMessage2 = await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58834,7 +58834,7 @@ sheets.spreadsheets.values.update(
 			// handle error
 		}
 		try {
-			const sentMessage3 =sheets.spreadsheets.values.get(
+			const sentMessage3 = await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
