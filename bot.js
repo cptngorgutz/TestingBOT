@@ -57972,7 +57972,7 @@ const sheetName = "WarMatchups";
     );
   }
 );
-		sheets.spreadsheets.values.get(
+		await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58007,7 +58007,7 @@ const sheetName = "WarMatchups";
     );
   }
 );
-		sheets.spreadsheets.values.get(
+		await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
