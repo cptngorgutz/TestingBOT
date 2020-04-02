@@ -58750,10 +58750,11 @@ run().catch(err => console.error("ERR", err));
 
 async function dowar() {
 const sheets = google.sheets({ version: "v4", auth });
-if (command === '111test') {
+if (command === '222test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
+		try {
+			const sentMessage = awaitsheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!A:A`
@@ -58788,7 +58789,12 @@ sheets.spreadsheets.values.update(
    );
   }
 );
-await sheets.spreadsheets.values.get(
+			await sentMessage;
+		} catch (error) {
+			// handle error
+		}
+		try {
+			const sentMessage2 = sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58823,7 +58829,12 @@ sheets.spreadsheets.values.update(
     );
   }
 );
-await sheets.spreadsheets.values.get(
+			await sentMessage2;
+		} catch (error) {
+			// handle error
+		}
+		try {
+			const sentMessage3 =sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58858,8 +58869,11 @@ sheets.spreadsheets.values.update(
     );
   }
 );
-message.channel.send("AWAITED");
-}
+			await sentMessage3;
+		}  catch (error) {
+			// handle error
+		}
+	}
 };
 dowar().catch(err => console.error("ERR", err));
 
