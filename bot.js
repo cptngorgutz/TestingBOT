@@ -57935,6 +57935,11 @@ sheets.spreadsheets.values.get(
 if (command === 'wartester'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
+	(err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
     const data = res.data.values;
     let i = 0;
     for (i = 0; i < data.length; i++) {
@@ -57995,6 +58000,7 @@ const sheetName = "WarMatchups";
       }
     );
  }
+}
 
 
 
