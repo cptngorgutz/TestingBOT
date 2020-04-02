@@ -58794,7 +58794,7 @@ sheets.spreadsheets.values.update(
 			// handle error
 		}
 		try {
-			sheets.spreadsheets.values.get(
+			const sentMessage2 = await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58810,7 +58810,7 @@ sheets.spreadsheets.values.update(
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-			const sentMessage2 = awaitsheets.spreadsheets.values.update(
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58834,7 +58834,7 @@ sheets.spreadsheets.values.update(
 			// handle error
 		}
 		try {
-			sheets.spreadsheets.values.get(
+			const sentMessage3 = await sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58850,7 +58850,7 @@ sheets.spreadsheets.values.update(
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-			const sentMessage3 = await sheets.spreadsheets.values.update(
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
