@@ -57953,7 +57953,7 @@ const sheetName = "WarMatchups";
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-    await sheets.spreadsheets.values.update(
+  const res = await sheets.spreadsheets.values.update({   
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -57969,10 +57969,9 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-    );
-  }
-);
-		await sheets.spreadsheets.values.get(
+  });
+  });
+		sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -57988,7 +57987,7 @@ const sheetName = "WarMatchups";
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-    await sheets.spreadsheets.values.update(
+  const res = await sheets.spreadsheets.values.update({   
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58004,10 +58003,9 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-    );
-  }
-);
-		await sheets.spreadsheets.values.get(
+  });
+  });
+		sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
     range: `${sheetName}!B:B`
@@ -58023,7 +58021,7 @@ const sheetName = "WarMatchups";
       if (!data[i][0]) break;
     }
 	let args3 = args[3];
-    await sheets.spreadsheets.values.update(
+  const res = await sheets.spreadsheets.values.update({  
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -58039,9 +58037,8 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-    );
-  }
-);
+  });
+  });
 }
 
 if (command === 'counter' && args[0] === "aim" || command === 'counter' && args[0] === "aim+" || command === 'aim' && args[0] === "stats"){
