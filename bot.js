@@ -58748,7 +58748,7 @@ sheets.spreadsheets.values.get(
 }
 run().catch(err => console.error("ERR", err));
 
-(async function () {
+async function dowar() {
 const sheets = google.sheets({ version: "v4", auth });
 if (command === '111test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -58769,7 +58769,7 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args0 = args[0];
-await sheets.spreadsheets.values.update(
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -58804,7 +58804,7 @@ await sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-await sheets.spreadsheets.values.update(
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58839,7 +58839,7 @@ await sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-await sheets.spreadsheets.values.update(
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58860,7 +58860,8 @@ await sheets.spreadsheets.values.update(
 );
 message.channel.send("AWAITED");
 }
-})();
+};
+dowar().catch(err => console.error("ERR", err));
 
 });
 
