@@ -57953,7 +57953,7 @@ const sheetName = "WarMatchups";
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-  const res = await sheets.spreadsheets.values.update({   
+  const res1 = await sheets.spreadsheets.values.update({   
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -57987,7 +57987,7 @@ const sheetName = "WarMatchups";
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-  const res = await sheets.spreadsheets.values.update({   
+  const res2 = await sheets.spreadsheets.values.update({   
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58021,7 +58021,7 @@ const sheetName = "WarMatchups";
       if (!data[i][0]) break;
     }
 	let args3 = args[3];
-  const res = await sheets.spreadsheets.values.update({  
+  const res3 = await sheets.spreadsheets.values.update({  
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
