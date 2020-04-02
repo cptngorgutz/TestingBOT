@@ -57935,20 +57935,20 @@ sheets.spreadsheets.values.get(
 if (command === 'wartester'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-	(err, res) => {
+(err, res1) => {
     if (err) {
       console.error(err);
       return;
     }
-    const data = res.data.values;
+    const data1 = res1.data1.values;
     let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
+    for (i = 0; i < data1.length; i++) {
+      if (!data1[i][0]) break;
     }
 	let args0 = args[0];
 	let args1 = args[1];
 	let args2 = args[2];
-    sheets.spreadsheets.values.update(
+    const res1 = await sheets.spreadsheets.values.update({
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -57964,8 +57964,20 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-   );
-    await sheets.spreadsheets.values.update(
+	});
+}
+(err, res2) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data2 = res2.data2.values;
+    let i = 0;
+    for (i = 0; i < data2.length; i++) {
+      if (!data2[i][0]) break;
+    }   
+
+   const res2 = await sheets.spreadsheets.values.update({
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -57981,8 +57993,19 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-    );
-	await sheets.spreadsheets.values.update(
+   });
+}
+(err, res3) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data3 = res3.data3.values;
+    let i = 0;
+    for (i = 0; i < data3.length; i++) {
+      if (!data3[i][0]) break;
+    }
+	const res3 = await sheets.spreadsheets.values.update({
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -57998,7 +58021,7 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-    );
+    });
  }
 }
 
