@@ -58768,7 +58768,7 @@ sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args0 = args[0];
-sheets.spreadsheets.values.update({
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -58784,7 +58784,7 @@ sheets.spreadsheets.values.update({
           reject(err);
         }
       }
-   });
+   );
   }
 );
 await sheets.spreadsheets.values.get(
@@ -58803,7 +58803,7 @@ await sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args1 = args[1];
-sheets.spreadsheets.values.update({
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58819,7 +58819,7 @@ sheets.spreadsheets.values.update({
           reject(err);
         }
       }
-    });
+    );
   }
 );
 await sheets.spreadsheets.values.get(
@@ -58838,7 +58838,7 @@ await sheets.spreadsheets.values.get(
       if (!data[i][0]) break;
     }
 	let args2 = args[2];
-sheets.spreadsheets.values.update({
+sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58854,7 +58854,7 @@ sheets.spreadsheets.values.update({
           reject(err);
         }
       }
-    });
+    );
   }
 );
 message.channel.send("AWAITED");
