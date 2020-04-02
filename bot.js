@@ -57935,20 +57935,23 @@ sheets.spreadsheets.values.get(
 if (command === 'wartester'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-(err, res1) => {
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
+  },
+  (err, res) => {
     if (err) {
       console.error(err);
       return;
     }
-    const data1 = res1.data1.values;
+    const data = res.data.values;
     let i = 0;
-    for (i = 0; i < data1.length; i++) {
-      if (!data1[i][0]) break;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
     }
 	let args0 = args[0];
-	let args1 = args[1];
-	let args2 = args[2];
-    const res4 = await sheets.spreadsheets.values.update({
+sheets.spreadsheets.values.update({
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -57964,20 +57967,26 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-	});
-}
-(err, res2) => {
+   });
+  }
+);
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
     if (err) {
       console.error(err);
       return;
     }
-    const data2 = res2.data2.values;
+    const data = res.data.values;
     let i = 0;
-    for (i = 0; i < data2.length; i++) {
-      if (!data2[i][0]) break;
-    }   
-
-   const res5 = await sheets.spreadsheets.values.update({
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update({
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -57993,19 +58002,26 @@ const sheetName = "WarMatchups";
           reject(err);
         }
       }
-   });
-}
-(err, res3) => {
+    });
+  }
+);
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
     if (err) {
       console.error(err);
       return;
     }
-    const data3 = res3.data3.values;
+    const data = res.data.values;
     let i = 0;
-    for (i = 0; i < data3.length; i++) {
-      if (!data3[i][0]) break;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
     }
-	const res6 = await sheets.spreadsheets.values.update({
+	let args2 = args[2];
+sheets.spreadsheets.values.update({
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58022,10 +58038,10 @@ const sheetName = "WarMatchups";
         }
       }
     });
- }
+  }
+);
+message.channel.send(JSON.stringify(res.data, null, 2));
 }
-
-
 
 
 
@@ -58732,6 +58748,119 @@ sheets.spreadsheets.values.get(
 
 }
 run().catch(err => console.error("ERR", err));
+
+(async function () {
+if (command === '111test') {
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args0 = args[0];
+sheets.spreadsheets.values.update({
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args0]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   });
+  }
+);
+await sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update({
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    });
+  }
+);
+await sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args2 = args[2];
+sheets.spreadsheets.values.update({
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args2]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    });
+  }
+);
+message.channel.send("AWAITED");
+}
+})();
 
 });
 
