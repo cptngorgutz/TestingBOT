@@ -58749,6 +58749,7 @@ sheets.spreadsheets.values.get(
 run().catch(err => console.error("ERR", err));
 
 (async function () {
+const sheets = google.sheets({ version: "v4", auth });
 if (command === '111test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
