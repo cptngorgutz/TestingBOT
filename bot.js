@@ -57935,23 +57935,15 @@ sheets.spreadsheets.values.get(
 if (command === 'wartester'){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!A:A`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
     const data = res.data.values;
     let i = 0;
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
 	let args0 = args[0];
-    await sheets.spreadsheets.values.update(
+	let args1 = args[1];
+	let args2 = args[2];
+    sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!A${i + 1}`,
@@ -57968,24 +57960,6 @@ sheets.spreadsheets.values.get(
         }
       }
    );
-  }
-);
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!B:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args1 = args[1];
     await sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -58003,25 +57977,7 @@ sheets.spreadsheets.values.get(
         }
       }
     );
-  }
-);
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!B:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args2 = args[2];
-	 await sheets.spreadsheets.values.update(
+	await sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
         range: `${sheetName}!B${i + 1}`,
@@ -58038,9 +57994,9 @@ sheets.spreadsheets.values.get(
         }
       }
     );
-  }
-);
-}
+ }
+
+
 
 
 
