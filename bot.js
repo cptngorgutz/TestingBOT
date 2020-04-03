@@ -58762,7 +58762,7 @@ message.channel.send("!room1" + " A " + args[1])
 message.channel.send("!room11" + " A " + " A " + args[2])
 
 
-if (command === 'name') {
+if(message.content.startsWith('!name')){
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -58799,7 +58799,7 @@ sheets.spreadsheets.values.update(
   }
 );
 }
-if (command === 'room1') {
+if(message.content.startsWith('room1')){
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -58835,9 +58835,8 @@ sheets.spreadsheets.values.update(
     );
   }
 );
-
 }
-if (command === 'room11') {
+if(message.content.startsWith('room11')){
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -58873,7 +58872,6 @@ sheets.spreadsheets.values.update(
     );
   }
 );
-
 }
 
 
