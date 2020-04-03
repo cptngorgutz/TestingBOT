@@ -58967,7 +58967,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args15 = args[15];
+	let args13 = args[13];
 sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -58975,7 +58975,7 @@ sheets.spreadsheets.values.update(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args15]],
+          values: [[args13]],
         }
       },
       (err, resp) => {
@@ -59013,7 +59013,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args18 = args[18];
+	let args16 = args[16];
 sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -59021,7 +59021,7 @@ sheets.spreadsheets.values.update(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args18]],
+          values: [[args16]],
         }
       },
       (err, resp) => {
@@ -59035,6 +59035,53 @@ sheets.spreadsheets.values.update(
 );
 
 }
+
+if(message.content.startsWith('!room6')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!room7 " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!C:C`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args19 = args[19];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!C${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args19]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
 
 }
 letssee().catch(err => console.error("ERR", err));
