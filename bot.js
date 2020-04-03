@@ -58760,7 +58760,7 @@ message.channel.send("!name " + " empty " + args[0] + " empty " + args[1] + " em
 };
 }
 dowar().catch(err => console.error("ERR", err));
-
+async function letssee() {
 if(message.content.startsWith('!name')) {
 const sheets = google.sheets({ version: "v4", auth });
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
@@ -59036,7 +59036,8 @@ sheets.spreadsheets.values.update(
 
 }
 
-
+}
+letssee().catch(err => console.error("ERR", err));
 
 });
 
