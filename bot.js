@@ -59318,8 +59318,8 @@ const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
-message.channel.bulkDelete(1)
-message.channel.send("**Opponent:** " + args[15] + "\n Left Rooms: " + args[17] + args[19] + args[21] + "\n Middle Rooms: "  + args[23] + args[25] + args[27] + "\n Right Rooms: " + args[29] + args[31] + args[33] + "\n War Result: " + args[35] + "\n War Scores: " + args[37] + " vs " + args[39]).catch(err => console.log(err));
+message.channel.send("testing this works")
+//message.channel.send("**Opponent:** " + args[15] + "\n Left Rooms: " + args[17] + args[19] + args[21] + "\n Middle Rooms: "  + args[23] + args[25] + args[27] + "\n Right Rooms: " + args[29] + args[31] + args[33] + "\n War Result: " + args[35] + "\n War Scores: " + args[37] + " vs " + args[39]).catch(err => console.log(err));
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -59335,7 +59335,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args37 = args[37];
+	let args36 = args[36];
 sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -59343,7 +59343,7 @@ sheets.spreadsheets.values.update(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args37]],
+          values: [[args36]],
         }
       },
       (err, resp) => {
