@@ -58831,7 +58831,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args3 = args[3];
+	let args4 = args[4];
 sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -58839,7 +58839,98 @@ sheets.spreadsheets.values.update(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args3]],
+          values: [[args4]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+}
+
+if(message.content.startsWith('!room1')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!room3 " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args7 = args[7];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args7]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
+if(message.content.startsWith('!room1')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!room4 " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args10 = args[10];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args10]],
         }
       },
       (err, resp) => {
