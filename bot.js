@@ -59318,8 +59318,8 @@ const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
-message.channel.bulkDelete(1)
-message.channel.send("**Opponent:** " + args[1] + "\n Left Rooms: " + args[4] + args[6] + args[6] + "\n Middle Rooms: "  + args[10] + args[12] + args[14] + "\n Right Rooms: " + args[16] + args[18] + args[20] + "\n War Result: " + args[22] + "\n War Scores: " + args[24] + " vs " + args[26])
+//message.channel.bulkDelete(1)
+message.channel.send("**Opponent:** " + args[1] + "\n Left Rooms: " + args[4] + args[6] + args[6] + "\n Middle Rooms: "  + args[10] + args[12] + args[14] + "\n Right Rooms: " + args[16] + args[18] + args[20] + "\n War Result: " + args[22] + "\n War Scores: " + args[24] + " vs " + args[26]).catch(err => console.log(err));
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
