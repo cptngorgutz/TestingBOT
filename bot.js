@@ -58761,45 +58761,6 @@ message.channel.send("!name" + args[0])
 message.channel.send("!room1" + " A " + args[1])
 message.channel.send("!room11" + " A " + " A " + args[2])
 
-
-if(message.content.startsWith('!name')){
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!A:A`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args0 = args[0];
-sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!A${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args0]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-   );
-  }
-);
-message.channel.send("name working");
-}
 if(message.content.startsWith('!room1')){
 sheets.spreadsheets.values.get(
   {
@@ -58881,6 +58842,51 @@ message.channel.send("room11 working");
 };
 }
 dowar().catch(err => console.error("ERR", err));
+
+if(message.content.startsWith('!name')) {
+const awaynoteschannel = client.channels.get('617707484626288672')
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+
+//message.channel.bulkDelete(1)
+awaynoteschannel.send(""+ Text)
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args0 = args[0];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args0]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
 
 });
 
