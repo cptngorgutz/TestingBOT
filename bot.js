@@ -58758,9 +58758,7 @@ const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 //message.channel.send("**Opponent:** " + args[0] + "\n Left Rooms: " + args[1] + args[2] + args[3] + "\n Middle Rooms: "  + args[4] + args[5] + args[6] + "\n Right Rooms: " + args[7] + args[8] + args[9] + "\n War Result: " + args[10] + "\n War Scores: " + args[11] + " vs " + args[12])
 message.channel.send("!name" + args[0])
-message.channel.send("!room1" + " A " + args[1])
-message.channel.send("!room11" + " A " + " A " + args[2])
-
+message.channel.bulkDelete(1)
 };
 }
 dowar().catch(err => console.error("ERR", err));
@@ -58771,7 +58769,6 @@ const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
-message.channel.bulkDelete(1)
 message.channel.send(" " + Text).catch(err => console.log(err));
 sheets.spreadsheets.values.get(
   {
