@@ -58748,132 +58748,17 @@ sheets.spreadsheets.values.get(
 }
 run().catch(err => console.error("ERR", err));
 
+if (command === '2test') {
+message.channel.send("**Steps Order:** \nwar name [name]\nwar l [roomname] x3\nwar m [roomname] x3\nwar r [roomname] x3\nwar result [w/l]\nwar score [score] x2");
+}
 async function dowar() {
 const sheets = google.sheets({ version: "v4", auth });
-if (command === '222test') {
+if (command === '22test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-		try {
-			const sentMessage = await sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!A:A`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args0 = args[0];
-sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!A${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args0]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-   );
-  }
-);
-			await sentMessage;
-		} catch (error) {
-			// handle error
-		}
-		try {
-			const sentMessage2 = await sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!B:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args1 = args[1];
-sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!B${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args1]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-			await sentMessage2;
-		} catch (error) {
-			// handle error
-		}
-		try {
-			const sentMessage3 = await sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!B:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let args2 = args[2];
-sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!B${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[args2]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-			await sentMessage3;
-		}  catch (error) {
-			// handle error
-		}
-	}
+message.channel.send("Opponent: " + args[0] + \n" Left Rooms " + args[1] + args[2] + args[3] + \n" Middle Rooms"  + args[4] + args[5] + args[6] + \n" Right Rooms " + args[7] + args[8] + args[9] + \n" War Result: " + args[10] + \n" War Scores: " + args[11] + args[12])
+		
+}
 };
 dowar().catch(err => console.error("ERR", err));
 
