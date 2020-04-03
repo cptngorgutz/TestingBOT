@@ -58756,9 +58756,127 @@ const sheets = google.sheets({ version: "v4", auth });
 if (command === '22test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
-message.channel.send("Opponent: " + args[0] + "\n Left Rooms " + args[1] + args[2] + args[3] + "\n Middle Rooms"  + args[4] + args[5] + args[6] + "\n Right Rooms " + args[7] + args[8] + args[9] + "\n War Result: " + args[10] + "\n War Scores: " + args[11] + args[12])
-		
+//message.channel.send("**Opponent:** " + args[0] + "\n Left Rooms: " + args[1] + args[2] + args[3] + "\n Middle Rooms: "  + args[4] + args[5] + args[6] + "\n Right Rooms: " + args[7] + args[8] + args[9] + "\n War Result: " + args[10] + "\n War Scores: " + args[11] + " vs " + args[12])
+message.channel.send("!name" + args[0])
+message.channel.send("!room1" + " A " + args[1])
+message.channel.send("!room11" + " A " + " A " + args[2])
+
+
+if (command === 'name') {
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!A:A`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args0 = args[0];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args0]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
 }
+if (command === 'room1') {
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+
+}
+if (command === 'room11') {
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!B:B`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args2 = args[2];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!B${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args2]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+
+}
+
+
 };
 dowar().catch(err => console.error("ERR", err));
 
