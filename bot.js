@@ -58844,6 +58844,7 @@ message.channel.send("room11 working");
 dowar().catch(err => console.error("ERR", err));
 
 if(message.content.startsWith('!name')) {
+const sheets = google.sheets({ version: "v4", auth });
 const awaynoteschannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
