@@ -58967,7 +58967,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args10 = args[10];
+	let args15 = args[15];
 sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -58975,7 +58975,7 @@ sheets.spreadsheets.values.update(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args10]],
+          values: [[args15]],
         }
       },
       (err, resp) => {
@@ -59013,7 +59013,7 @@ sheets.spreadsheets.values.get(
     for (i = 0; i < data.length; i++) {
       if (!data[i][0]) break;
     }
-	let args12 = args[12];
+	let args18 = args[18];
 sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
@@ -59021,7 +59021,7 @@ sheets.spreadsheets.values.update(
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
-          values: [[args12]],
+          values: [[args18]],
         }
       },
       (err, resp) => {
