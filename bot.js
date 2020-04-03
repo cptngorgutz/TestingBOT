@@ -58757,7 +58757,7 @@ if (command === '22test') {
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "WarMatchups";
 //message.channel.send("**Opponent:** " + args[0] + "\n Left Rooms: " + args[1] + args[2] + args[3] + "\n Middle Rooms: "  + args[4] + args[5] + args[6] + "\n Right Rooms: " + args[7] + args[8] + args[9] + "\n War Result: " + args[10] + "\n War Scores: " + args[11] + " vs " + args[12])
-message.channel.send("!name " + args[0] + args[1] + args[2] + args[3] + args[4] + args[5] + args[6] + args[7] + args[8] + args[9] + args[10] + args[11] + args[12]).catch(err => console.log(err));
+message.channel.send("!name " + " empty " + args[0] + " empty " + args[1] + " empty " + args[2] + " empty " + args[3] + " empty " + args[4] + " empty " + args[5] + " empty " + args[6] + " empty " + args[7] + " empty " + args[8] + " empty " + args[9] + " empty " + args[10] + " empty " + args[11] + " empty " + args[12]).catch(err => console.log(err));
 };
 }
 dowar().catch(err => console.error("ERR", err));
