@@ -58845,6 +58845,8 @@ dowar().catch(err => console.error("ERR", err));
 
 if(message.content.startsWith('!name')) {
 const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
 const awaynoteschannel = client.channels.get('617707484626288672')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
