@@ -59319,8 +59319,8 @@ const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
 message.channel.bulkDelete(1).catch(O_o=>{}); 
-message.channel.send("testing this works")
-//message.channel.send("**Opponent:** " + args[15] + "\n Left Rooms: " + args[17] + args[19] + args[21] + "\n Middle Rooms: "  + args[23] + args[25] + args[27] + "\n Right Rooms: " + args[29] + args[31] + args[33] + "\n War Result: " + args[35] + "\n War Scores: " + args[37] + " vs " + args[39]).catch(err => console.log(err));
+//message.channel.send("testing this works")
+message.channel.send("**Opponent:** " + args[13] + "\n Left Rooms: " + args[15] + args[17] + args[19] + "\n Middle Rooms: "  + args[21] + args[23] + args[25] + "\n Right Rooms: " + args[27] + args[29] + args[31] + "\n War Result: " + args[33] + "\n War Scores: " + args[35] + " vs " + args[37]).catch(err => console.log(err));
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -59356,7 +59356,7 @@ sheets.spreadsheets.values.update(
    );
   }
 );
-message.channel.send("War layout added").catch(O_o=>{}); 
+//message.channel.send("War layout added").catch(O_o=>{}); 
 }
 
 });
