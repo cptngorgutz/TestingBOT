@@ -59082,6 +59082,280 @@ sheets.spreadsheets.values.update(
 
 }
 
+if(message.content.startsWith('!room7')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!room8 " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!D:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args22 = args[22];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args22]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
+if(message.content.startsWith('!room8')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!room9 " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!D:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args25 = args[25];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args25]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
+if(message.content.startsWith('!room9')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!result " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!D:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args28 = args[28];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args28]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
+if(message.content.startsWith('!result')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!score " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E:E`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args31 = args[31];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args31]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
+if(message.content.startsWith('!score')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+const messages1 = await message.channel.fetchMessages({ limit: 1 });
+const Text = messages1.first().content;
+message.channel.bulkDelete(1)
+message.channel.send("!score2 " + Text).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E:E`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args33 = args[33];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args33]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
+if(message.content.startsWith('!score2')) {
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const sheetName = "WarMatchups";
+//message.channel.bulkDelete(1)
+//message.channel.send("**Opponent:** " + args[1] + "\n Left Rooms: " + args[4] + args[6] + args[8] + "\n Middle Rooms: "  + args[10] + args[12] + args[14] + "\n Right Rooms: " + args[16] + args[18] + args[20] + "\n War Result: " + args[22] + "\n War Scores: " + args[24] + " vs " + args[26]).catch(err => console.log(err));
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E:E`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args36 = args[36];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args36]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+
+}
+
 
 }
 letssee().catch(err => console.error("ERR", err));
