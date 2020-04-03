@@ -58878,6 +58878,7 @@ sheets.spreadsheets.values.update(
 
 
 };
+}
 dowar().catch(err => console.error("ERR", err));
 
 });
