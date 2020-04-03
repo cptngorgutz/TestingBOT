@@ -58798,6 +58798,7 @@ sheets.spreadsheets.values.update(
    );
   }
 );
+message.channel.send("name working");
 }
 if(message.content.startsWith('room1')){
 sheets.spreadsheets.values.get(
@@ -58835,6 +58836,7 @@ sheets.spreadsheets.values.update(
     );
   }
 );
+message.channel.send("room1 working");
 }
 if(message.content.startsWith('room11')){
 sheets.spreadsheets.values.get(
@@ -58872,6 +58874,7 @@ sheets.spreadsheets.values.update(
     );
   }
 );
+message.channel.send("room11 working");
 }
 
 
