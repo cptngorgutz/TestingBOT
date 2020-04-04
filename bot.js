@@ -58754,7 +58754,7 @@ message.channel.send("**Steps Order:** \nwar name [name]\nwar l [roomname] x3\nw
 async function dowar() {
 const sheets = google.sheets({ version: "v4", auth });
 if (command === 'warsheet') {
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 message.channel.send("!name " + " empty " + args[0] + " empty " + args[1] + " empty " + args[2] + " empty " + args[3] + " empty " + args[4] + " empty " + args[5] + " empty " + args[6] + " empty " + args[7] + " empty " + args[8] + " empty " + args[9] + " empty " + args[10] + " empty " + args[11] + " empty " + args[12]).catch(err => console.log(err));
 };
@@ -58763,7 +58763,7 @@ dowar().catch(err => console.error("ERR", err));
 
 if(message.content.startsWith('!name')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -58809,7 +58809,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room1')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -58854,7 +58854,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room2')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -58900,7 +58900,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room3')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -58946,7 +58946,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room4')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -58992,7 +58992,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room5')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59038,7 +59038,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room6')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59084,7 +59084,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room7')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59130,7 +59130,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room8')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59176,7 +59176,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!room9')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59222,7 +59222,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!result')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59268,7 +59268,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!score')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
@@ -59314,7 +59314,7 @@ sheets.spreadsheets.values.update(
 
 if(message.content.startsWith('!points2')) {
 const sheets = google.sheets({ version: "v4", auth });
-const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
 const sheetName = "WarMatchups";
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const Text = messages1.first().content;
