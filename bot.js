@@ -1715,7 +1715,8 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 	message.channel.send(exampleEmbed);
 }
-
+=VLOOKUP(MAX($A$2:$A$11), $A$2:$B$11, 2, FALSE)
+=INDEX(A2:A11,MATCH(MAX(B2:B11),B2:B11,0))
 
 
 if(command === 'carnage' || command === 'car' || command === 'carn') {
@@ -8629,6 +8630,15 @@ if (message.content === '!Asgardians') {
 }
 });
 
+
+
+
+
+
+
+
+
+
 client.on("message", async message => {
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -8828,6 +8838,7 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 });
 //------------------
 client.on("message", async message => {
+if (!message.content.startsWith(config.prefix)) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
@@ -58749,7 +58760,7 @@ sheets.spreadsheets.values.get(
 run().catch(err => console.error("ERR", err));
 
 if (command === '2test') {
-message.channel.send("**Steps Order:** \nwar name [name]\nwar l [roomname] x3\nwar m [roomname] x3\nwar r [roomname] x3\nwar result [w/l]\nwar score [score] x2");
+message.channel.send("**Steps Order:** \n[opponent name]\n[roomname] x9\n [w/l]\n[highest score] [lowest score] ");
 }
 async function dowar() {
 const sheets = google.sheets({ version: "v4", auth });
@@ -59321,6 +59332,8 @@ const Text = messages1.first().content;
 message.channel.bulkDelete(1).catch(O_o=>{}); 
 //message.channel.send("testing this works")
 message.channel.send("**Opponent:** " + args[13] + "\n **Left Rooms:** " + args[15] + " + " +  args[17] + " + " + args[19] + "\n **Middle Rooms:** "  + args[21] + " + " + args[23] + " + " + args[25] + "\n **Right Rooms:** " + args[27] + " + " + args[29] + " + " + args[31] + "\n **War Result:** " + args[33] + "\n **War Scores:** " + args[35] + " **vs** " + args[37]).catch(err => console.log(err));
+message.channel.send("``` ╔═══════════════╗ \n ║ " + args[13] + " ║  \n ╚═══════════════╝``` \n╔═══════════════╗ \n ║ " + args[35] + " vs " + args[37] + " ║" + " **War Result = ** " + args[33] + "\n ╚═══════════════╝ \n╔═══════════════╗ \n ║ Flight Deck 1 ║ \n║ " + args[15] + " ║ \n║ " + args[17] + " ║ \n║ " + args[19] + " ║  \n ╚═══════════════╝")
+
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
@@ -59357,6 +59370,198 @@ sheets.spreadsheets.values.update(
   }
 );
 //message.channel.send("War layout added").catch(O_o=>{}); 
+}
+
+
+//raids
+if(command === 'raidsheet'){
+const sheets = google.sheets({ version: "v4", auth });
+const mySpreadSheetId = '1IffqmCNt86w12QqCnC7E-gz0TtO3ek0ElwMTwVAWSKI';
+const sheetName = "RaidData";
+
+if(args[0] === "season"){
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!F:F`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!F${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+} else if(args[0] === "u7"){
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!G:G`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!A${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+} else if(args[0] === "a4"){
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!H:H`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!H${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+} elseif(args[0] === "b4"){
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!I:I`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!I${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+} else if(args[0] === "g4"){
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!J:J`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let args1 = args[1];
+sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!J${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[args1]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+   );
+  }
+);
+} else {
+message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
+}
 }
 
 });
