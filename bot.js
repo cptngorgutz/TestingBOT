@@ -1715,8 +1715,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setThumbnail('https://i.imgur.com/9eCZztr.png') 
 	message.channel.send(exampleEmbed);
 }
-=VLOOKUP(MAX($A$2:$A$11), $A$2:$B$11, 2, FALSE)
-=INDEX(A2:A11,MATCH(MAX(B2:B11),B2:B11,0))
+
 
 
 if(command === 'carnage' || command === 'car' || command === 'carn') {
