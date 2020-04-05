@@ -59486,7 +59486,7 @@ sheets.spreadsheets.values.update(
    );
   }
 );
-} elseif(args[0] === "b4"){
+} else if(args[0] === "b4"){
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
