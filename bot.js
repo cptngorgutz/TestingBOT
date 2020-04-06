@@ -59566,9 +59566,9 @@ if (!message.content.startsWith(config.prefix)) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-var ocrSpaceApi = require("ocr-space-api")
+const ocrSpaceApi = require("ocr-space-api")
 
-var options =  { 
+const options =  { 
     apikey: '642efb483488957',
     language: 'eng',
     imageFormat: 'image/png',
