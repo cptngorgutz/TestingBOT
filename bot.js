@@ -59560,31 +59560,7 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 });
 
 
-//TESTING OCR
-client.on("message", message => {
-if (!message.content.startsWith(config.prefix)) return;
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
 
-const ocrSpaceApi = require("./ocr-space-api.js")
-
-const options =  { 
-    apikey: '642efb483488957',
-    language: 'eng',
-    imageFormat: 'image/png',
-    isOverlayRequired: true
-  };
-if(command === 'texttest'){
-const imageFilePath =  message.channel.fetchMessages({ limit: 1 });
-const Text = imageFilePath.first().content;
-ocrSpaceApi.parseImageFromLocalFile(imageFilePath, options)
-  .then(function (parsedResult) {
-    message.channel.send(parsedResult.parsedText);
-  }).catch(function (err, body) {
-    message.channel.send('ERROR:', err, body);
-  });
-}
-});
 
 
 
