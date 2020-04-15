@@ -8876,6 +8876,22 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterhydra.url)
 message.channel.send(attachment);
 })
+//stats
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!AH1:AJ",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
 } else if(args[0] == "hydra+"){
 const hydracounterimage2 = client.channels.get('698203936061915206')
 const channelToCheckText = client.channels.get('698224225516781638')
@@ -8896,20 +8912,6 @@ embed1.setColor('#0099ff')
 embed1.setImage(counterhydra22.url)
 message.channel.send(embed1);
 
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-message.channel.send(embed);
-
-
 //stats
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -8926,6 +8928,22 @@ message.channel.send(embed);
       console.log('No data found.');
     }
   });
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+message.channel.send(embed);
+
+
+
 
 } else if(args[0] == "shield"){
 const shieldcounterimage = client.channels.get('666340284962963524')
