@@ -8944,7 +8944,7 @@ message.channel.send(embed);
 }
 
 
-}
+
 });
 //------------------
 client.on("message", async message => {
