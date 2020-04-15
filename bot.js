@@ -8747,9 +8747,12 @@ message.channel.send(attachment);
 })
 } else if(args[0] == "aim+"){
 const aimcounterimage2 = client.channels.get('666332891730673668')
+const channelToCheckText = client.channels.get('665671446026125312')
 const messages2 = await aimcounterimage2.fetchMessages({ limit: 1 });
+const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const counteraim22 = messages2.first().attachments.first()
 const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim22.url)
 message.channel.send(attachment);
@@ -8940,40 +8943,6 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 
 
 }
-if(message.content.startsWith('!aimmm')) {
-message.channel.bulkDelete(1).catch(O_o=>{});
-const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-const channelToCheckText = client.channels.get('665671446026125312')
-const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
-const aimcounterimage2 = client.channels.get('666332891730673668')
-aimcounterimage2.fetchMessages({ limit: 1 }).then(messages => {
-const counteraim22 = messages.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment2 = new Attachment(counteraim22.url)
-message.channel.send(attachment2);
-})
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-message.channel.send(embed);
-}
-
 
 
 });
