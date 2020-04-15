@@ -781,7 +781,7 @@ if(akit === "kit" || akit === "k"){
 }  else if(aunlock == "unlock" || aunlock == "unl" || aunlock == "u" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes Campaign \nNode 5-3**")
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes \nNode 5-3** \n \nOrbs:Premium,Milestones,Alpha raid orb.")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -791,7 +791,7 @@ if(akit === "kit" || akit === "k"){
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -838,7 +838,7 @@ if(akit === "kit" || akit === "k"){
 } else if(aunlock == "unlock" || aunlock == "unl" || aunlock == "u" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n**Orbs: \nPremium, Basic and Raid Orb.**")
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \nOrbs:\nPremium,Milestones,Raid orb,Alpha raid orb \n \nStore:\nRaid Store")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -848,7 +848,7 @@ if(akit === "kit" || akit === "k"){
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -895,7 +895,7 @@ if(akit === "kit" || akit === "k"){
 } else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n**Orbs: \nPremium & Basic. \n \nBlitz: \nBlitz orb & blitz store**")
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \nOrbs:\nPremium,Milestones,Alpha raid orb,blitz orb \n \nStore:\nBlitz Store")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -905,7 +905,7 @@ if(akit === "kit" || akit === "k"){
 }else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -962,7 +962,7 @@ if(akit === "kit" || akit === "k"){
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:aimresearcher:663749975200759829> **Aim Researcher** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -1009,7 +1009,7 @@ if(akit === "kit" || akit === "k"){
 } else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Orbs: \nPremium & Basic. \n \nMissions: \nVillains United: Chapter 5-3**")
+	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \nAim Security is farmable in: \n**Villains \nNode 5-3** \n \nOrbs:\nPremium,Milestones,Alpha raid orb \n \nStore:\nRaid Store")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -1019,7 +1019,7 @@ if(akit === "kit" || akit === "k"){
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \n**Please use a valid phrase:** \nbasic\nspecial\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:aimsecurity:663749977071157283> **Aim Security** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -1079,7 +1079,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable via:\n\n**Campaign:** Villains, **6-9**\n\n**Orbs:** Mega, Milestone, Premium, Red Star")
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \nAmerica Chavez is farmable in: \n**Villains \nNode 6-9** \n \nOrbs:\nPremium,Milestones,Mega")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -1089,7 +1089,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **America Chavez** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -1148,7 +1148,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const unlockEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable via:\n\n**Supplies:** Blitz Store\n\n**Orbs:** Blitz, Mega, Milestone, Legacy, Premium, Red Star")	 
+	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable in: \nOrbs:\nPremium,Legacy,Mega,Milestones,Beta raid orb,blitz orb \n \nStore:\nBlitz Store")
 	message.channel.send(unlockEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1158,7 +1158,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:antman:663749977469878273> **Ant Man** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:antman:663749977469878273> **Ant Man** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -1227,7 +1227,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1297,7 +1297,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1367,7 +1367,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1437,7 +1437,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blob:684029278366597127> **Blob** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:blob:684029278366597127> **Blob** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1507,7 +1507,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:bullseye:663749972939767828> **Bullseye** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:bullseye:663749972939767828> **Bullseye** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1578,7 +1578,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:cable:663749981290758154> **Cable** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:cable:663749981290758154> **Cable** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1640,6 +1640,16 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	.setColor('#0099ff')
 	.setDescription("<:captainamerica:663749981299015701> **Captain America** \nCaptain America is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:captainamerica:663749981299015701> **Captain America** \nBio,Global,Hero,Military,Protector,Shield,Wave1Avenger")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:captainamerica:663749981299015701> **Captain America** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 } else if(command === 'captain' && args[0] === "marvel" || command === 'cm' || command === 'captainmarvel' || command === 'cptnmarvel' || command === 'capmarvel' || command === 'carol' || command === 'danvers') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
@@ -1705,7 +1715,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 } else if(command === 'captain'){
@@ -1782,7 +1792,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:carnage:663749984843202570> **Carnage** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:carnage:663749984843202570> **Carnage** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -1854,7 +1864,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:colossus:663749981559062528> **Colossus** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:colossus:663749981559062528> **Colossus** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -1925,7 +1935,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:coulson:663749981605199912> **Coulson** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:coulson:663749981605199912> **Coulson** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -1996,7 +2006,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:crossbones:663749981177511937> **Crossbones** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 }
@@ -2067,7 +2077,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:cyclops:663749981387358230> **Cyclops** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2124,7 +2134,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil's speed is: **")
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil's speed is: 119")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2139,7 +2149,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2196,7 +2206,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool's speed is: **")
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool's speed is: 112")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2211,7 +2221,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2268,7 +2278,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drax:663749981496279062> **Drax** \nDrax's speed is: **")
+	.setDescription("<:drax:663749981496279062> **Drax** \nDrax's speed is: 66")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2283,7 +2293,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drax:663749981496279062> **Drax** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:drax:663749981496279062> **Drax** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2340,7 +2350,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \nDoctor Strange's speed is: **")
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \nDoctor Strange's speed is: 108")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2355,7 +2365,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2412,7 +2422,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:elektra:663749981940875265> **Elektra** \nElektra's speed is: **")
+	.setDescription("<:elektra:663749981940875265> **Elektra** \nElektra's speed is: 113")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2427,7 +2437,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:elektra:663749981940875265> **Elektra** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:elektra:663749981940875265> **Elektra** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2484,7 +2494,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:elsa:663749985460027402> **Elsa** \nElsa's speed is: **")
+	.setDescription("<:elsa:663749985460027402> **Elsa** \nElsa's speed is: 114")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2499,7 +2509,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:elsa:663749985460027402> **Elsa** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:elsa:663749985460027402> **Elsa** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2556,7 +2566,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:falcon:663749983551488063> **Falcon** \nFalcon's speed is: **")
+	.setDescription("<:falcon:663749983551488063> **Falcon** \nFalcon's speed is: 113")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2571,7 +2581,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:falcon:663749983551488063> **Falcon** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:falcon:663749983551488063> **Falcon** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2628,7 +2638,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora's speed is: **")
+	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora's speed is: 130")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2643,7 +2653,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:gamora:663749983815860234> **Gamora** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:gamora:663749983815860234> **Gamora** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2700,7 +2710,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 }  else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \nGhost Rider's speed is: **")
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \nGhost Rider's speed is: 127")
 	message.channel.send(speedEmbed);
 }  else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2715,7 +2725,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2772,7 +2782,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:goblin:663749986160476171> **Green Goblin** \nGreen Goblin's speed is: **")
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \nGreen Goblin's speed is: 88")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2787,7 +2797,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:goblin:663749986160476171> **Green Goblin** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2844,7 +2854,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton's speed is: **")
+	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton's speed is: 106")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2859,7 +2869,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:graviton:663749985417953300> **Graviton** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:graviton:663749985417953300> **Graviton** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2905,7 +2915,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \nUndead Asgardian's speed is: **")
+	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \nUndead Asgardian's speed is: 105")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2920,7 +2930,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:greg:663749986290499614> **Undead Asgardian** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -2977,7 +2987,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:groot:663749986218934282> **groot** \ngroot's speed is: **")
+	.setDescription("<:groot:663749986218934282> **groot** \ngroot's speed is: 70")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -2992,7 +3002,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:groot:663749986218934282> **groot** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\nkit\nspeed\ntrait\nunlock")
+	.setDescription("<:groot:663749986218934282> **groot** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
 	message.channel.send(embedEmbed); 
 }
 
@@ -3038,13 +3048,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \nHand Archer's speed is: **")
+	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \nHand Archer's speed is: 107")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \nHand Archer is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \nBlaster,City,Hand,MartialArtist,Minion,Skill,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3089,13 +3109,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \nHand Assassin's speed is: **")
+	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \nHand Assassin's speed is: 109")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \nHand Assassin is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \nCity,Controller,Hand,MartialArtist,Minion,Mystic,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3140,13 +3170,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \nHand Blademaster's speed is: **")
+	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \nHand Blademaster's speed is: 111")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \nHand Blademaster is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \nBrawler,City,Hand,MartialArtist,Minion,Skill,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3191,13 +3231,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \nHand Sentry's speed is: **")
+	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \nHand Sentry's speed is: 103")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \nHand Sentry is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \nCity,Hand,MartialArtist,Minion,Mystic,Protector,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3242,13 +3292,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsorceress:663749985094991915> **Hand Sorceress** \nHand Sorceress's speed is: **")
+	.setDescription("<:handsorceress:663749985094991915> **Hand Sorceress** \nHand Sorceress's speed is: 105")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:handsorceress:663749985094991915> **Hand Sorceress** \nHand Sorceress is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handsorceress:663749985094991915> **Hand Sorceress** \nCity,Hand,MartialArtist,Minion,Mystic,Support,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:handsorceress:663749985094991915> **Hand Sorceress** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3304,13 +3364,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \nHawkeye's speed is: **")
+	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \nHawkeye's speed is: 116")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \nHawkeye is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \nController,Global,Hero,Shield,Skill,Wave1Avenger")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3366,13 +3436,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall's speed is: **")
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall's speed is: 100")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nAsgard,Brawler,Cosmic,Hero,Mystic")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -3428,16 +3508,32 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hela:663749986290368512> **Hela** \nHela's speed is: **")
+	.setDescription("<:hela:663749986290368512> **Hela** \nHela's speed is: 110")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:hela:663749986290368512> **Hela** \nHela is farmable in:**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512> **Hela** \nAsgard,Controller,Cosmic,Mystic,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hela:663749986290368512> **Hela** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
+
+
+
+
+
+
 
 
 
@@ -8649,17 +8745,20 @@ message.channel.send(attachment);
 } else if(args[0] == "aim+"){
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
 const channelToCheckText = client.channels.get('665671446026125312')
+const channelToCheckTextnew = client.channels.get('666332891730673668')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const messagesnew = await channelToCheckTextnew.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
+const Imagenew = messagesnew.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
 const counteraim = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setImage('https://i.ibb.co/vjkFbPM/AIM-Counters.png') 
+.setImage(messagesnew) 
 message.channel.send(counteraim);
 
 const TEXT = new Discord.RichEmbed()
