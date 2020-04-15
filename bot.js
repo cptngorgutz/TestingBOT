@@ -8761,10 +8761,10 @@ const attachment2 = new Attachment(counteraim22.url)
 message.channel.send(attachment2);
 })
 
-const counteraim2 = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(counteraim22.url) 
-message.channel.send(counteraim2);
+//const counteraim2 = new Discord.RichEmbed()
+//.setColor('#0099ff')
+//.setImage(counteraim22.url) 
+//message.channel.send(counteraim2);
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
