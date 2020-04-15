@@ -8749,17 +8749,21 @@ message.channel.send(attachment);
 const aimcounterimage2 = client.channels.get('666332891730673668')
 const channelToCheckText = client.channels.get('665671446026125312')
 const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-const messages2 = await aimcounterimage2.fetchMessages({ limit: 1 });
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
+const messages2 = await aimcounterimage2.fetchMessages({ limit: 1 });
 const messages3 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const counteraim22 = messages2.first().attachments.first()
 const embed = new Discord.RichEmbed()
+
 const Text = messages1.first().content;
 const Image = messages3.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(counteraim22.url)
-message.channel.send(attachment);
 
+
+const embed1 = new Discord.RichEmbed()
+embed1.setColor('#0099ff')
+embed1.setImage(counteraim22.url)
+message.channel.send(embed1);
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
