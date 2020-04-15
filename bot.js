@@ -58187,7 +58187,7 @@ if (message.channel.id === '661661368943902720' || message.channel.id === '66122
     if (rows.length) {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
 	message.channel.send(exampleEmbed); 
     } else {
       console.log('No data found.');
