@@ -8758,7 +8758,7 @@ const attachment = new Attachment(Image.url)
 
 const counteraim = new Discord.RichEmbed()
 .setColor('#0099ff')
-.setImage(messagesnew) 
+.setImage(messagesnew.url) 
 message.channel.send(counteraim);
 
 const TEXT = new Discord.RichEmbed()
