@@ -8893,6 +8893,23 @@ message.channel.send(attachment);
     }
   });
 } else if(args[0] == "hydra+"){
+//stats
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!AH1:AJ",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });	
+
 const hydracounterimage2 = client.channels.get('698203936061915206')
 const channelToCheckText = client.channels.get('698224225516781638')
 const channelToCheckImagesallin1 = client.channels.get('698224268273647698')
@@ -8912,22 +8929,6 @@ embed1.setColor('#0099ff')
 embed1.setImage(counterhydra22.url)
 message.channel.send(embed1);
 
-//stats
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!AH1:AJ",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
