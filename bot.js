@@ -8743,41 +8743,18 @@ const attachment = new Attachment(counteraim.url)
 message.channel.send(attachment);
 })
 } else if(args[0] == "aim+"){
-const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
-const channelToCheckText = client.channels.get('665671446026125312')
-const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
-const embed = new Discord.RichEmbed()
-const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
-
 const aimcounterimage2 = client.channels.get('666332891730673668')
-aimcounterimage2.fetchMessages({ limit: 1 }).then(messages => {
-const counteraim22 = messages.first().attachments.first()
+const messages2 = await aimcounterimage2.fetchMessages({ limit: 1 });
+const counteraim22 = messages2.first().attachments.first()
+const embed = new Discord.RichEmbed()
 const Attachment = require('discord.js').Attachment;
-const attachment2 = new Attachment(counteraim22.url)
-message.channel.send(attachment2);
-})
+const attachment = new Attachment(counteraim22.url)
 
-//const counteraim2 = new Discord.RichEmbed()
-//.setColor('#0099ff')
-//.setImage(counteraim22.url) 
-//message.channel.send(counteraim2);
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
 
 embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
+embed.setImage(counteraim22.url)
 message.channel.send(embed);
+message.channel.send("!aimmm");
 } else if(args[0] == "asgardians"){
 const asgardcounterimage = client.channels.get('666340204872990730')
 asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -8928,6 +8905,42 @@ message.channel.send("Please use a valid team phrase, such as aim,asgardians,bra
 }
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#673261006918516741> or your war chat channel and try again.").catch(console.error);
+}
+
+
+}
+if(message.content.startsWith('!aimmm')) {
+message.channel.bulkDelete(1).catch(O_o=>{});
+const channelToCheckImagesallin1 = client.channels.get('665762283883855873')
+const channelToCheckText = client.channels.get('665671446026125312')
+const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
+const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+const Image = messages2.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment = new Attachment(Image.url)
+
+const aimcounterimage2 = client.channels.get('666332891730673668')
+aimcounterimage2.fetchMessages({ limit: 1 }).then(messages => {
+const counteraim22 = messages.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+const attachment2 = new Attachment(counteraim22.url)
+message.channel.send(attachment2);
+})
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+message.channel.send(embed);
 }
 
 
