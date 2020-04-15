@@ -8893,6 +8893,40 @@ message.channel.send(attachment);
     }
   });
 } else if(args[0] == "hydra+"){
+const hydracounterimage2 = client.channels.get('698203936061915206')
+const channelToCheckText = client.channels.get('698224225516781638')
+const channelToCheckImagesallin1 = client.channels.get('698224268273647698')
+const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
+const messages2 = await hydracounterimage2.fetchMessages({ limit: 1 });
+const messages3 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const counterhydra22 = messages2.first().attachments.first()
+const embed = new Discord.RichEmbed()
+
+const Text = messages1.first().content;
+const Image = messages3.first().attachments.first()
+const Attachment = require('discord.js').Attachment;
+
+function function1() {
+const embed1 = new Discord.RichEmbed()
+embed1.setColor('#0099ff')
+embed1.setImage(counterhydra22.url)
+message.channel.send(embed1);
+}
+function function3() {
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+embed.setImage(Image.url)
+message.channel.send(embed);
+}
+function function2() {
 //stats
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -8908,43 +8942,12 @@ message.channel.send(attachment);
     } else {
       console.log('No data found.');
     }
-  });	
+  });
+}
 
-const hydracounterimage2 = client.channels.get('698203936061915206')
-const channelToCheckText = client.channels.get('698224225516781638')
-const channelToCheckImagesallin1 = client.channels.get('698224268273647698')
-const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await hydracounterimage2.fetchMessages({ limit: 1 });
-const messages3 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
-const counterhydra22 = messages2.first().attachments.first()
-const embed = new Discord.RichEmbed()
-
-const Text = messages1.first().content;
-const Image = messages3.first().attachments.first()
-const Attachment = require('discord.js').Attachment;
-
-
-const embed1 = new Discord.RichEmbed()
-embed1.setColor('#0099ff')
-embed1.setImage(counterhydra22.url)
-message.channel.send(embed1);
-
-
-const TEXT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
-embed.setColor('#0099ff')
-embed.setDescription(Text)
-embed.setImage(Image.url)
-message.channel.send(embed);
-
-
-
+function1();
+function2();
+setTimeout(function3, 4000);
 
 } else if(args[0] == "shield"){
 const shieldcounterimage = client.channels.get('666340284962963524')
