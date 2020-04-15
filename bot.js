@@ -8755,11 +8755,16 @@ const attachment = new Attachment(Image.url)
 
 const aimcounterimage2 = client.channels.get('666332891730673668')
 aimcounterimage2.fetchMessages({ limit: 1 }).then(messages => {
-const counteraim2 = messages.first().attachments.first()
+const counteraim22 = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
-const attachment2 = new Attachment(counteraim2.url)
+const attachment2 = new Attachment(counteraim22.url)
 message.channel.send(attachment2);
 })
+
+const counteraim2 = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(counteraim22.url) 
+message.channel.send(counteraim2);
 
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
