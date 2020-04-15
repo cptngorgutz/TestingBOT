@@ -8732,6 +8732,9 @@ client.on("message", async message => {
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
+const { google } = require("googleapis");
+const auth = require("./credentials-load");
+const sheets = google.sheets({ version: "v4", auth });
 if(command === 'counter') { //123 or bottesting
 if (message.channel.id === '661221254958940220' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '606119830516400162' || message.channel.id === '661221254958940220' || message.channel.id === '617707484626288672') {
 if(args[0] == "aim"){
@@ -8749,12 +8752,40 @@ const counteraim22 = messages2.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim22.url)
+message.channel.send(attachment);
 
+
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+const ATTACHMENT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setImage(Image.url)
 
 embed.setColor('#0099ff')
-embed.setImage(counteraim22.url)
+embed.setDescription(Text)
+embed.setImage(Image.url)
 message.channel.send(embed);
-message.channel.send("!aimmm");
+
+
+//stats
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!D1:F",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n'))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+
 } else if(args[0] == "asgardians"){
 const asgardcounterimage = client.channels.get('666340204872990730')
 asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -58168,26 +58199,7 @@ sheets.spreadsheets.values.update(
 
 
 
-if (command === 'counter' && args[0] === "aim" || command === 'counter' && args[0] === "aim+" || command === 'aim' && args[0] === "stats"){
-if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!D1:F",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n'))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
-}
-}
 if (command === 'counter' && args[0] === "asgardians" || command === 'counter' && args[0] === "asgardians+" || command === 'asgardians' && args[0] === "stats"){
 if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 	  sheets.spreadsheets.values.get({
