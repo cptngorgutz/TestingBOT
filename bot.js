@@ -8759,12 +8759,13 @@ const Text = messages1.first().content;
 const Image = messages3.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 
-
+function function1() {
 const embed1 = new Discord.RichEmbed()
 embed1.setColor('#0099ff')
 embed1.setImage(counteraim22.url)
 message.channel.send(embed1);
-
+}
+function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -8777,8 +8778,8 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
-
-
+}
+function function2() {
 //stats
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -8795,6 +8796,11 @@ message.channel.send(embed);
       console.log('No data found.');
     }
   });
+}
+
+function1();
+function2();
+setTimeout(function3, 4000);
 
 } else if(args[0] == "asgardians"){
 const asgardcounterimage = client.channels.get('666340204872990730')
@@ -8805,21 +8811,26 @@ const attachment = new Attachment(counterasgard.url)
 message.channel.send(attachment);
 })
 } else if(args[0] == "asgardians+"){
+const asgardianscounterimage2 = client.channels.get('666340239903686659')
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const messages3 = await brawlerscounterimage2.fetchMessages({ limit: 1 });
+const counterasgardians22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
-const counterasgard = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/6WghFCz/Asgardians-Counters.png') 
-message.channel.send(counterasgard);
-
+function function1() {
+const embed1 = new Discord.RichEmbed()
+embed1.setColor('#0099ff')
+embed1.setImage(counterasgardians22.url)
+message.channel.send(embed1);
+}
+function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -8832,6 +8843,30 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
+}
+function function2() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!A1:C",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+
+function1();
+function2();
+setTimeout(function3, 4000);
+
+
 } else if(args[0] == "brawlers"){
 const brawlerscounterimage = client.channels.get('666340239903686659')
 brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -58285,25 +58320,7 @@ sheets.spreadsheets.values.update(
 
 
 
-if (command === 'counter' && args[0] === "asgardians" || command === 'counter' && args[0] === "asgardians+" || command === 'asgardians' && args[0] === "stats"){
-if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!A1:C",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
-}
-}
+
 if (command === 'counter' && args[0] === "aimtron" || command === 'counter' && args[0] === "aimtron+" || command === 'aimtron' && args[0] === "stats"){
 if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
 
