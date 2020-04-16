@@ -9021,21 +9021,26 @@ const attachment = new Attachment(countershield.url)
 message.channel.send(attachment);
 })	
 } else if(args[0] == "shield+"){
+const shieldcounterimage2 = client.channels.get('666340284962963524')
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
 const channelToCheckText = client.channels.get('666318788140072981')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const messages3 = await shieldcounterimage2.fetchMessages({ limit: 1 });
+const countershield22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
-const countershield = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/ByJTvwh/Coulson-Counters.png') 
-message.channel.send(countershield);
-
+function function1() {
+const embed1 = new Discord.RichEmbed()
+embed1.setColor('#0099ff')
+embed1.setImage(countershield22.url)
+message.channel.send(embed1);
+}
+function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -9047,7 +9052,33 @@ const ATTACHMENT = new Discord.RichEmbed()
 embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
-message.channel.send(embed);	
+message.channel.send(embed);
+}
+function function2() {
+//stats
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BF1:BH",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+
+function1();
+function2();
+setTimeout(function3, 4000);
+
+
+
 } else if(args[0] == "s6"){
 const s6counterimage = client.channels.get('666340284962963524')
 s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -9057,21 +9088,26 @@ const attachment = new Attachment(counters6.url)
 message.channel.send(attachment);
 })	
 } else if(args[0] == "s6+"){
+const s6counterimage2 = client.channels.get('666340318102421504')
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
 const channelToCheckText = client.channels.get('666319009465237524')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const messages3 = await s6counterimage2.fetchMessages({ limit: 1 });
+const counters622 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
-const counters6 = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/YZGN5JP/S6-Counters.png') 
-message.channel.send(counters6);
-
+function function1() {
+const embed1 = new Discord.RichEmbed()
+embed1.setColor('#0099ff')
+embed1.setImage(counters622.url)
+message.channel.send(embed1);
+}
+function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -9083,7 +9119,31 @@ const ATTACHMENT = new Discord.RichEmbed()
 embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
-message.channel.send(embed);	
+message.channel.send(embed);
+}
+function function2() {
+//stats
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BC1:BE",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+
+function1();
+function2();
+setTimeout(function3, 4000);
+
 	
 } else if(args[0] == "ultron"){
 const ultroncounterimage = client.channels.get('698225013723234396')
@@ -58657,46 +58717,6 @@ let abc = "\u200B";
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!AZ1:BB",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
-}
-}
-if (command === 'counter' && args[0] === "s6" || command === 's6' && args[0] === "stats" || command === 'sinister' && args[0] === "six" && args[1] === "stats"){
-if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
-let abc = "\u200B";
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!BC1:BE",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
-}
-}
-if (command === 'counter' && args[0] === "coulsonshield" || command === 'coulson' && args[0] === "shield" && args[1] === "stats" || command === 'coulsonshield' && args[0] === "stats"){
-if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
-let abc = "\u200B";
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!BF1:BH",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
