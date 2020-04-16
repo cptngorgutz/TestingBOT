@@ -8841,21 +8841,26 @@ const attachment = new Attachment(counterbrawlers.url)
 message.channel.send(attachment);
 })
 } else if(args[0] == "brawlers+"){
+const brawlerscounterimage2 = client.channels.get('666340239903686659')
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
 const channelToCheckText = client.channels.get('666317820656615435')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+const messages3 = await brawlerscounterimage2.fetchMessages({ limit: 1 });
+const counterbrawlers22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
-const counterbrawlers = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage('https://i.ibb.co/0jsbMQ4/Brawlers-Counters.png') 
-message.channel.send(counterbrawlers);
-
+function function1() {
+const embed1 = new Discord.RichEmbed()
+embed1.setColor('#0099ff')
+embed1.setImage(counterbrawlers22.url)
+message.channel.send(embed1);
+}
+function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
@@ -8868,6 +8873,29 @@ embed.setColor('#0099ff')
 embed.setDescription(Text)
 embed.setImage(Image.url)
 message.channel.send(embed);
+}
+function function2() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!S1:U",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+
+function1();
+function2();
+setTimeout(function3, 4000);
+
 } else if(args[0] == "hydra"){
 const hydracounterimage = client.channels.get('698203936061915206')
 hydracounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -58345,27 +58373,6 @@ if (message.channel.id === '661661368943902720' || message.channel.id === '66122
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!P1:R",
-  }, (err, res) => {
-    if (err) return console.log('The API returned an error: ' + err);
-    const rows = res.data.values;
-    if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
-    } else {
-      console.log('No data found.');
-    }
-  });
-}
-}
-if (command === 'counter' && args[0] === "brawlers" || command === 'brawlers' && args[0] === "stats"){
-if (message.channel.id === '661661368943902720' || message.channel.id === '661221254958940220' || message.channel.id === '673261006918516741') { //bot spam channel
-
-	let abc = "\u200B";
-	  sheets.spreadsheets.values.get({
-    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!S1:U",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
