@@ -9080,7 +9080,7 @@ setTimeout(function3, 4000);
 
 
 } else if(args[0] == "s6"){
-const s6counterimage = client.channels.get('666340284962963524')
+const s6counterimage = client.channels.get('666340318102421504')
 s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counters6 = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
