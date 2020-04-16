@@ -8811,7 +8811,7 @@ const attachment = new Attachment(counterasgard.url)
 message.channel.send(attachment);
 })
 } else if(args[0] == "asgardians+"){
-const asgardianscounterimage2 = client.channels.get('666340239903686659')
+const asgardianscounterimage2 = client.channels.get('666340204872990730')
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
