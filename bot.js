@@ -8735,8 +8735,8 @@ const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
 const auth = require("./credentials-load");
 const sheets = google.sheets({ version: "v4", auth });
-if(command === 'counter') { //123 or bottesting
-if (message.channel.id === '661221254958940220' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '606119830516400162' || message.channel.id === '661221254958940220' || message.channel.id === '617707484626288672') {
+if(command === 'counter') { //123 or bottesting EMOJITEST SERVER 699707863148265512    
+if (message.channel.id === '661221254958940220' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '606119830516400162' || message.channel.id === '661221254958940220' || message.channel.id === '617707484626288672' || message.channel.id === '699707863148265512' || message.channel.id === '562757850477101063') {
 if(args[0] == "aim"){
 const aimcounterimage = client.channels.get('666332891730673668')
 aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
@@ -8745,6 +8745,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim.url)
 message.channel.send(attachment);
 })
+function functionaimstats() {
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!D1:F",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n'))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionaimstats, 3000);
 } else if(args[0] == "aim+"){
 const aimcounterimage2 = client.channels.get('666332891730673668')
 const channelToCheckText = client.channels.get('665671446026125312')
@@ -8810,6 +8828,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterasgard.url)
 message.channel.send(attachment);
 })
+function functionasgardiansstats() {
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!A1:C",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });	
+}
+setTimeout(functionasgardiansstats, 3000);
 } else if(args[0] == "asgardians+"){
 const asgardianscounterimage2 = client.channels.get('666340204872990730')
 const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
@@ -8868,12 +8904,30 @@ setTimeout(function3, 4000);
 
 } else if(args[0] == "bkt"){
 const bktcounterimage = client.channels.get('700322361966067812')
-asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
+bktcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterbkt = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterbkt.url)
 message.channel.send(attachment);
 })
+function functionbktstats() {
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!P1:R",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });	
+}
+setTimeout(functionbktstats, 3000);
 } else if(args[0] == "bkt+"){
 const bktcounterimage2 = client.channels.get('700322361966067812')
 const channelToCheckImagesallin1 = client.channels.get('700322458351173652')
@@ -8939,6 +8993,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterbrawlers.url)
 message.channel.send(attachment);
 })
+function functionbrawlerstats() {
+  	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!S1:U",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionbrawlerstats, 3000);
 } else if(args[0] == "brawlers+"){
 const brawlerscounterimage2 = client.channels.get('666340239903686659')
 const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
@@ -9003,6 +9075,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countercptnmarvel.url)
 message.channel.send(attachment);
 })
+function functioncptnmarvelstats() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!V1:X",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functioncptnmarvelstats, 3000);
 } else if(args[0] == "captainmarvel+"){
 const cptnmarvelcounterimage2 = client.channels.get('700487765518843938')
 const channelToCheckImagesallin1 = client.channels.get('700487815317684244')
@@ -9068,6 +9158,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterdefenders.url)
 message.channel.send(attachment);
 })
+function functiondefendersstats() {
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!Y1:AA",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functiondefendersstats, 3000);
 } else if(args[0] == "defenders+"){
 const defenderscounterimage2 = client.channels.get('700322862535278683')
 const channelToCheckImagesallin1 = client.channels.get('700322968223350966')
@@ -9133,6 +9241,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countergotg.url)
 message.channel.send(attachment);
 })
+function functiongotgstats() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!AE1:AG",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functiongotgstats, 3000);
 } else if(args[0] == "gotg+"){
 const gotgcounterimage2 = client.channels.get('700323244305022976')
 const channelToCheckImagesallin1 = client.channels.get('700323317172928542')
@@ -9198,7 +9324,7 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterhydra.url)
 message.channel.send(attachment);
 })
-//stats
+function functionhydrastats() {
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
     range: "ControlPanel!AH1:AJ",
@@ -9214,6 +9340,8 @@ message.channel.send(attachment);
       console.log('No data found.');
     }
   });
+}
+setTimeout(functionhydrastats, 3000);
 } else if(args[0] == "hydra+"){
 const hydracounterimage2 = client.channels.get('698203936061915206')
 const channelToCheckText = client.channels.get('698224225516781638')
@@ -9279,6 +9407,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterkreeronan.url)
 message.channel.send(attachment);
 })
+function functionkreeronanstats() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!AN1:AP",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionkreeronanstats, 3000);
 } else if(args[0] == "kreeronan+"){
 const kreeronancounterimage2 = client.channels.get('700532345576620072')
 const channelToCheckImagesallin1 = client.channels.get('700532388068851712')
@@ -9344,6 +9490,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countershield.url)
 message.channel.send(attachment);
 })	
+function functionshieldstats() {
+	 	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BF1:BH",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionshieldstats, 3000);
 } else if(args[0] == "shield+"){
 const shieldcounterimage2 = client.channels.get('666340284962963524')
 const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
@@ -9410,7 +9574,25 @@ const counters6 = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counters6.url)
 message.channel.send(attachment);
-})	
+})
+function functions6stats() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BC1:BE",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functions6stats, 3000);	
 } else if(args[0] == "s6+"){
 const s6counterimage2 = client.channels.get('666340318102421504')
 const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
@@ -9476,6 +9658,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countersupernatural.url)
 message.channel.send(attachment);
 })
+function functionsupernaturalstats() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BI1:BK",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionsupernaturalstats, 3000);	
 } else if(args[0] == "supernatural+"){
 const supernaturalcounterimage2 = client.channels.get('700533212358901760')
 const channelToCheckImagesallin1 = client.channels.get('700533264493838376')
@@ -9541,6 +9741,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countersymbiote.url)
 message.channel.send(attachment);
 })
+function functionsymbiotestats() {
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BL1:BN",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionsymbiotestats, 3000);
 } else if(args[0] == "symbiote+"){
 const symbiotecounterimage2 = client.channels.get('700535722498588682')
 const channelToCheckImagesallin1 = client.channels.get('700535787825004545')
@@ -9606,6 +9824,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterultron.url)
 message.channel.send(attachment);
 })	
+function functionultronstats() {
+  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BO1:BQ",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionultronstats, 3000);
 } else if(args[0] == "ultron+"){
 const ultroncounterimage2 = client.channels.get('698225013723234396')
 const channelToCheckText = client.channels.get('698225045499019284')
@@ -9670,6 +9906,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterwakanda.url)
 message.channel.send(attachment);
 })
+function functionwakandastats() {
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BR1:BT",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionwakandastats, 3000);
 } else if(args[0] == "wakanda+"){
 const wakandacounterimage2 = client.channels.get('700323525348818994')
 const channelToCheckImagesallin1 = client.channels.get('700323592734244925')
@@ -9735,6 +9989,24 @@ const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterxmen.url)
 message.channel.send(attachment);
 })
+function functionxmenstats() {
+	  sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!BU1:BW",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
+}
+setTimeout(functionxmenstats, 3000);
 } else if(args[0] == "xmen+"){
 const xmencounterimage2 = client.channels.get('700535062361276476')
 const channelToCheckImagesallin1 = client.channels.get('700535097543098428')
