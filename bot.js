@@ -58559,7 +58559,7 @@ const exampleEmbed = new Discord.RichEmbed()
 	message.channel.send(exampleEmbed);
 }
 }
-if (command === 'divide'){
+if (command === '%'){
 // Assign values to x and y
 let x = args[0];
 let y = args[1];
@@ -58568,7 +58568,7 @@ let y = args[1];
 //let z = x / y;
 let z = (y - x) / x*100;
 
-message.channel.send(z + "%");
+message.channel.send(z.toFixed(1) + "%");
 }
 });
 //------------------
