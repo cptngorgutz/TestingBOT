@@ -58559,8 +58559,16 @@ const exampleEmbed = new Discord.RichEmbed()
 	message.channel.send(exampleEmbed);
 }
 }
+if (command === 'divide'){
+// Assign values to x and y
+let x = args[0];
+let y = args[1];
 
+// Divide x by y to get the product
+let z = x / y;
 
+message.channel.send(z);
+}
 });
 //------------------
 client.on("message", async message => {
