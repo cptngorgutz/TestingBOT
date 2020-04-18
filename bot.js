@@ -8830,7 +8830,11 @@ asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterasgard = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterasgard.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterasgard.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionasgardiansstats() {
   sheets.spreadsheets.values.get({
@@ -8912,7 +8916,11 @@ bktcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterbkt = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterbkt.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterbkt.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionbktstats() {
   sheets.spreadsheets.values.get({
@@ -8995,7 +9003,11 @@ brawlerscounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterbrawlers = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterbrawlers.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterbrawlers.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionbrawlerstats() {
   	  sheets.spreadsheets.values.get({
@@ -9077,7 +9089,11 @@ cptnmarvelcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countercptnmarvel = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countercptnmarvel.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(countercptnmarvel.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functioncptnmarvelstats() {
 	  sheets.spreadsheets.values.get({
@@ -9160,7 +9176,11 @@ defenderscounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterdefenders = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterdefenders.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterdefenders.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functiondefendersstats() {
   sheets.spreadsheets.values.get({
@@ -9243,7 +9263,11 @@ gotgcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countergotg = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countergotg.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(countergotg.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functiongotgstats() {
 	  sheets.spreadsheets.values.get({
@@ -9326,7 +9350,11 @@ hydracounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterhydra = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterhydra.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterhydra.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionhydrastats() {
 	  sheets.spreadsheets.values.get({
@@ -9409,7 +9437,11 @@ kreeronancounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterkreeronan = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterkreeronan.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterkreeronan.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionkreeronanstats() {
 	  sheets.spreadsheets.values.get({
@@ -9492,7 +9524,11 @@ shieldcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countershield = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countershield.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(countershield.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })	
 function functionshieldstats() {
 	 	  sheets.spreadsheets.values.get({
@@ -9577,7 +9613,11 @@ s6counterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counters6 = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counters6.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counters6.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functions6stats() {
 	  sheets.spreadsheets.values.get({
@@ -9660,7 +9700,11 @@ supernaturalcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countersupernatural = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countersupernatural.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(countersupernatural.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionsupernaturalstats() {
 	  sheets.spreadsheets.values.get({
@@ -9743,7 +9787,11 @@ symbiotecounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countersymbiote = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(countersymbiote.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(countersymbiote.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionsymbiotestats() {
   sheets.spreadsheets.values.get({
@@ -9826,7 +9874,11 @@ ultroncounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterultron = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterultron.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterultron.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })	
 function functionultronstats() {
   sheets.spreadsheets.values.get({
@@ -9908,7 +9960,11 @@ wakandacounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterwakanda = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterwakanda.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterwakanda.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionwakandastats() {
 	sheets.spreadsheets.values.get({
@@ -9991,7 +10047,11 @@ xmencounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterxmen = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counterxmen.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counterxmen.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionxmenstats() {
 	  sheets.spreadsheets.values.get({
