@@ -8743,7 +8743,11 @@ aimcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counteraim = messages.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(counteraim.url)
-message.channel.send(attachment);
+const embed2 = new Discord.RichEmbed()
+embed2.setColor('#0099ff')
+embed2.setImage(counteraim.url)
+//message.channel.send(attachment);
+message.channel.send(embed2);
 })
 function functionaimstats() {
 	sheets.spreadsheets.values.get({
