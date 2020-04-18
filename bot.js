@@ -58566,7 +58566,7 @@ let y = args[1];
 
 // Divide x by y to get the product
 //let z = x / y;
-let z = (y - x) / x;
+let z = (y - x) / x*100;
 
 message.channel.send(z + "%");
 }
