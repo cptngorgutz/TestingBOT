@@ -2,6 +2,22 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+client.on('guildMemberAdd', member => {
+    const guild = member.guild;
+    const welcome_channel = guild.channels.cache.find(channel => channel.name === `│⋅💎⋅welcomes-and-goodbyes⋅💎⋅§`);
+    const embed = new Discord.MessageEmbed()
+    .setColor('#f9f3cc')
+    .setAuthor('Creative Cookies', guild.iconURL)
+    .setDescription(`Welcome, ${member.tag}!`)
+    .addFields(
+      { name: 'Regular field title', value: 'Youtube: https://www.youtube.com/channel/UCwjYdPOcz1qTeC1z8K2JQXQ' },
+      { name: '\u200B', value: '\u200B' },
+      { name: 'Inline field title', value: 'Discord: https://discord.gg/BBm5qtF', inline: true },
+      { name: 'Inline field title', value: '||~:cookie:-:cookie:-:cookie:~||', inline: true },
+    )
+    return welcome_channel.send(embed);
+});
+
 //ADD & REMOVE ROLES (FINISHED)
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
