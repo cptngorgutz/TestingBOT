@@ -58985,9 +58985,9 @@ const exampleEmbed = new Discord.RichEmbed()
 	message.channel.send(exampleEmbed);
 }
 } else {
-const CheckText = client.channels.get('673261006918516741')
-const reviewsubmission = client.channels.get('701432148774617148')
-const messages1 = await CheckText.fetchMessages({ limit: 1 });
+const channelToCheckText = client.channels.get('673261006918516741')
+const channelToReview = client.channels.get('701432148774617148')
+const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
@@ -58997,8 +58997,7 @@ const TEXT = new Discord.RichEmbed()
 
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-reviewsubmission.send(embed);
-CheckText.send("War stat received");
+channelToReview.send(embed);
 
 }
 }
