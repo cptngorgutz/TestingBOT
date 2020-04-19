@@ -10226,6 +10226,8 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 
 }
 if (command === 'add'){
+const managerrole = message.guild.roles.find(role => role.name === 'Bot Management');
+if(message.member.roles.has(managerrole.id)) {
 if (args[0] === "asgardians" && args[2] === "asgardians"){
 const mySpreadSheetId = '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw';
 const sheetName = "Asgardians";
@@ -58981,6 +58983,16 @@ const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("__**Please use a valid phrase:**__ \n!add [attacker team name] [power] [defender team name] [power]")
 	message.channel.send(exampleEmbed);
+}
+} else {
+const CheckText = client.channels.get('673261006918516741')
+const reviewsubmission = client.channels.get('701432148774617148')
+const messages1 = await CheckText.fetchMessages({ limit: 1 });
+const embed = new Discord.RichEmbed()
+const Text = messages1.first().content;
+
+reviewsubmission.send(Text.content);
+CheckText.send("War stat received");
 }
 }
 if (command === '%'){
