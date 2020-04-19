@@ -9782,7 +9782,7 @@ function1();
 function2();
 setTimeout(function3, 4000);
 	
-} else if(args[0] == "supernatural"){
+} else if(args[0] == "supernatural" || args[0] == "supernaturals"){
 const supernaturalcounterimage = client.channels.get('700533212358901760')
 supernaturalcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countersupernatural = messages.first().attachments.first()
@@ -9812,7 +9812,7 @@ function functionsupernaturalstats() {
   });
 }
 setTimeout(functionsupernaturalstats, 3000);	
-} else if(args[0] == "supernatural+"){
+} else if(args[0] == "supernatural+" || args[0] == "supernaturals+"){
 const supernaturalcounterimage2 = client.channels.get('700533212358901760')
 const channelToCheckImagesallin1 = client.channels.get('700533264493838376')
 const channelToCheckText = client.channels.get('700533244046606336')
@@ -9869,7 +9869,7 @@ function1();
 function2();
 setTimeout(function3, 4000);
 
-} else if(args[0] == "symbiote"){
+} else if(args[0] == "symbiote" || args[0] == "symbiotes"){
 const symbiotecounterimage = client.channels.get('700535722498588682')
 symbiotecounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countersymbiote = messages.first().attachments.first()
@@ -9899,7 +9899,7 @@ function functionsymbiotestats() {
   });
 }
 setTimeout(functionsymbiotestats, 3000);
-} else if(args[0] == "symbiote+"){
+} else if(args[0] == "symbiote+" || args[0] == "symbiotes+"){
 const symbiotecounterimage2 = client.channels.get('700535722498588682')
 const channelToCheckImagesallin1 = client.channels.get('700535787825004545')
 const channelToCheckText = client.channels.get('700535765448392754')
