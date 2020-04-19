@@ -10217,7 +10217,7 @@ function2();
 setTimeout(function3, 4000);
 
 } else {
-message.channel.send("Please use a valid team phrase, such as aim,asgardians,bkt,brawlers,captainmarvel,defenders,gotg,hydra,kreeronan,marauders,shield,s6,supernatural,symbiote,ultron,wakanda,xmen").catch(console.error);	
+message.channel.send("Please use a valid team phrase, such as: aim | asgardians | bkt | brawlers | captainmarvel | defenders | gotg | hydra | kreeronan | marauders | shield | s6 | supernatural | symbiote | ultron | wakanda").catch(console.error);	
 }
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#673261006918516741> or your war chat channel and try again.").catch(console.error);
