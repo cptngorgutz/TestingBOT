@@ -4,7 +4,7 @@ const config = require('./config.json');
 
 client.on('guildMemberAdd', member => {
     const guild = member.guild;
-    const welcome_channel = guild.channels.cache.find(channel => channel.name === `│⋅💎⋅welcomes-and-goodbyes⋅💎⋅§`);
+    const welcome_channel = member.guild.channels.find(c => c.name === `│⋅💎⋅welcomes-and-goodbyes⋅💎⋅§`);
     const embed = new Discord.MessageEmbed()
     .setColor('#f9f3cc')
     .setAuthor('Creative Cookies', guild.iconURL)
