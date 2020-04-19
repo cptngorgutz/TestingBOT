@@ -58991,8 +58991,15 @@ const messages1 = await CheckText.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
-reviewsubmission.send(Text.content);
+const TEXT = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setDescription(Text.content)
+
+embed.setColor('#0099ff')
+embed.setDescription(Text)
+reviewsubmission.send(embed);
 CheckText.send("War stat received");
+
 }
 }
 if (command === '%'){
