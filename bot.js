@@ -58985,8 +58985,8 @@ const exampleEmbed = new Discord.RichEmbed()
 	message.channel.send(exampleEmbed);
 }
 } else {
-if (message.channel.id === '673261006918516741') {
-const reviewchannel = client.channels.get('701432148774617148')
+if (message.channel.id === '666305824813219870') {
+const reviewchannel = client.channels.get('701452871056752640')
 const messages1 = await message.channel.fetchMessages({ limit: 1 });
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
