@@ -58996,7 +58996,7 @@ const TEXT = new Discord.RichEmbed()
 .setDescription(Text.content)
 
 embed.setColor('#0099ff')
-embed.setDescription(Text)
+embed.setDescription(message.author + " " + Text)
 embed.setTimestamp()
 reviewchannel.send(embed);
 message.channel.send("War stat Received.");
