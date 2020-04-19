@@ -58995,6 +58995,7 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 
+async function review() {
 embed.setColor('#0099ff')
 embed.setDescription(message.author + " " + Text)
 embed.setTimestamp()
@@ -59002,6 +59003,9 @@ reviewchannel.send(embed).then(messageReaction => {
 await messageReaction.react("☑️");	
 await messageReaction.react("❌");
 });
+}
+review();
+
 message.channel.send("War stat Received.");
 }
 }
