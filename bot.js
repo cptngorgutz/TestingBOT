@@ -2,6 +2,32 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+//USERS JOINING & LEAVING
+client.on('guildMemberAdd', function(member)
+{
+let memberRole = member.guild.roles.find(role => role.name === 'recruit');
+member.addRole(memberRole);
+member.guild.channels.get('701807115689525319').send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`);
+message.react('🎀')
+.then(() => message.react('☑️'))
+.then(() => message.react('🍎'))
+//NEW USERS JOIN
+member.guild.channels.get('666305824813219870').send({embed: {
+color: 0x00ff00, 
+title: "**MEMBER JOINED! ** ",
+description: member + " has joined **The Beyonders ** discord server!",
+author: "Member Joined",
+thumbnail: { url: member.user.displayAvatarURL },
+fields: [{
+name: member.user.username + "#" + member.user.discriminator,   
+value: "ID# " + member.id + "",
+}
+],
+timestamp: new Date(),
+footer: {
+}
+}})
+});	 
 
 //ADD & REMOVE ROLES (FINISHED)
 client.on("message", async message => {
@@ -60661,6 +60687,7 @@ var TB1name = ["🎀",""];
 //    Add role name
 var TB1rolename=["TB1",""];
 client.on("messageReactionAdd",(reaction,user)=>{
+const logs = client.channels.get('666305824813219870')
   if(!user) return;
   if(user.bot)return;
   if(!reaction.message.channel.guild) return;
@@ -60668,6 +60695,10 @@ client.on("messageReactionAdd",(reaction,user)=>{
   if(reaction.emoji.name == TB1name[n]){
     let role = reaction.message.guild.roles.find(r => r.name == TB1rolename[n]);          
     reaction.message.guild.member(user).addRole(role).catch(console.error);
+	logs.send(user + " added to TB1");
+	let memberRole = member.guild.roles.find(role => role.name === 'recruit');
+	member.removeRole(memberRole);
+	logs.send(user + " removed from recruit");
   }
 }
 });
