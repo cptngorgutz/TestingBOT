@@ -60656,15 +60656,20 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 });
 
 
-client.on('messageReactionAdd', (reaction, user) => {
-  if (message.channel.id === '699707863148265512') {
-    if (reaction.emoji.name === "❌") {
-      const guildMember = reaction.message.guild.members.get(user.id);
-      const role = reaction.message.guild.roles.get('630762185542336524');
-      guildMember.addRole(role);
-	  message.channel.send(message.author + " was given bot role")
-    }
+//    Add emoji name
+var emojiname = ["🎀",""];
+//    Add role name
+var rolename=["bot",""];
+client.on("messageReactionAdd",(reaction,user)=>{
+  if(!user) return;
+  if(user.bot)return;
+  if(!reaction.message.channel.guild) return;
+  for(let n in emojiname){
+  if(reaction.emoji.name == emojiname[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == rolename[n]);          
+    reaction.message.guild.member(user).addRole(role).catch(console.error);
   }
+}
 });
 
 
