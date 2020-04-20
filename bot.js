@@ -60657,20 +60657,31 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 
 
 //    Add emoji name
-var emojiname = ["🎀",""];
+var TB1name = ["🎀",""];
 //    Add role name
-var rolename=["TB1",""];
+var TB1rolename=["TB1",""];
 client.on("messageReactionAdd",(reaction,user)=>{
   if(!user) return;
   if(user.bot)return;
   if(!reaction.message.channel.guild) return;
-  for(let n in emojiname){
-  if(reaction.emoji.name == emojiname[n]){
-    let role = reaction.message.guild.roles.find(r => r.name == rolename[n]);          
+  for(let n in TB1name){
+  if(reaction.emoji.name == TB1name[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == TB1rolename[n]);          
     reaction.message.guild.member(user).addRole(role).catch(console.error);
   }
 }
 });
 
+client.on("messageReactionRemove",(reaction,user)=>{
+  if(!user) return;
+  if(user.bot)return;
+  if(!reaction.message.channel.guild) return;
+  for(let n in TB1name){
+  if(reaction.emoji.name == TB1name[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == TB1rolename[n]);   
+    reaction.message.guild.member(user).removeRole(role).catch(console.error);
+  }
+  }
+});
 
 client.login(process.env.TOKEN);
