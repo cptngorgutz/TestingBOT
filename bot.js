@@ -60657,7 +60657,12 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 
 
 
-
+client.on('messageReactionAdd', (reaction, user) => {
+const emojichannel = client.channels.get('699707863148265512')
+    if(reaction.emoji.name === "❌") {
+        emojichannel.send(reaction.users);
+    }
+});
 
 
 
