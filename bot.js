@@ -60669,7 +60669,7 @@ const filter = (reaction, user) => {
     return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
 };
 
-message.awaitReactions(filter, { max: 1, time: 10000, errors: ['time'] })
+message.awaitReactions(filter, { max: 4, time: 10000, errors: ['time'] })
     .then(collected => {
         const reaction = collected.first();
 
