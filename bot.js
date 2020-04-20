@@ -9,10 +9,13 @@ let memberRole = member.guild.roles.find(role => role.name === 'recruit');
 member.addRole(memberRole);
 let recruitroom = member.guild.channels.get('701807115689525319');
 recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`)
-	message.react('🎀')
-	.then(() => message.react('🍎'))
-	.then(() => message.react('☑️'))
-	.catch(() => console.error('One of the emojis failed to react.'));
+	.then(function (message) {
+			  message.react('🎀')
+              message.react("🍎")
+              message.react("☑️")
+            }).catch(function() {
+              console.log("one of the emojis failed to react.")
+             });
 
 //NEW USERS JOIN
 member.guild.channels.get('666305824813219870').send({embed: {
