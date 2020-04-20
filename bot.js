@@ -60692,10 +60692,7 @@ const logs = client.channels.get('666305824813219870')
   if(reaction.emoji.name == TB1name[n]){
     let role = reaction.message.guild.roles.find(r => r.name == TB1rolename[n]);          
     reaction.message.guild.member(user).addRole(role).catch(console.error);
-	logs.send(user + " added to TB1");
 	let memberRole = member.guild.roles.find(role => role.name === 'recruit');
-	member.removeRole(memberRole);
-	logs.send(user + " removed from recruit");
   }
 }
 });
