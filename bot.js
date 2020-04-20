@@ -60656,15 +60656,38 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 });
 
 
+client.on("message", async message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
 
-client.on('messageReactionAdd', (reaction, user) => {
-const emojichannel = client.channels.get('699707863148265512')
-    if(reaction.emoji.name === "❌") {
-        emojichannel.send(reaction.users);
-    }
+if (message.channel.id === '699707863148265512'){
+
+if(message.content.startsWith('@everyone')) {
+message.react('👍').then(() => message.react('👎'));
+
+const filter = (reaction, user) => {
+    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+};
+
+message.awaitReactions(filter, { max: 1, time: 10000, errors: ['time'] })
+    .then(collected => {
+        const reaction = collected.first();
+
+        if (reaction.emoji.name === '👍') {
+            message.reply('you reacted with a thumbs up.');
+        }
+        else {
+            message.reply('you reacted with a thumbs down.');
+        }
+    })
+    .catch(collected => {
+        console.log(`After 10 seconds, only ${collected.size} out of 4 reacted.`);
+        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
+    });
+
+}
+}
 });
-
-
 
 
 client.login(process.env.TOKEN);
