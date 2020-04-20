@@ -2,6 +2,16 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+client.on('ready', () => {
+  // "ready" isn't really ready. We need to wait a spell.
+  wait(1000);
+  
+client.guilds.forEach(g => {
+g.fetchInvites().then(guildInvites => {
+invites[g.id] = guildInvites;
+});
+});
+});
 //USERS JOINING & LEAVING
 client.on('guildMemberAdd', function(member)
 {
