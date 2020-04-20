@@ -60659,7 +60659,7 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 //    Add emoji name
 var emojiname = ["🎀",""];
 //    Add role name
-var rolename=["bot",""];
+var rolename=["TB1",""];
 client.on("messageReactionAdd",(reaction,user)=>{
   if(!user) return;
   if(user.bot)return;
