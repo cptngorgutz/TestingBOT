@@ -60656,32 +60656,15 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 });
 
 
-client.on("message", async message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-
-if (message.channel.id === '699707863148265512'){
-
-if(message.content.startsWith('@everyone')) {
-const time = 10000 //amount of time to collect for in milliseconds
-const emojichannel = client.channels.get('699707863148265512')
-
- emojichannel.send("Hello World")
- .then(async function (message) {
-      await message.react('❌')
-      const filter = (reaction, user) => {
-           return //YOUR FILTER HERE;
-      };
-
-      const collector = message.createReactionCollector(filter, { time: time });
-
-      collector.on('collect', (reaction, reactionCollector) => {
-           //do stuff
-		 emojichannel.send(reaction.users);
-      });
- });
-}
-}
+client.on('messageReactionAdd', (reaction, user) => {
+  if (message.channel.id === '699707863148265512') {
+    if (reaction.emoji.name === "❌") {
+      const guildMember = reaction.message.guild.members.get(user.id);
+      const role = reaction.message.guild.roles.get('630762185542336524');
+      guildMember.addRole(role);
+	  message.channel.send(message.author + " was given bot role")
+    }
+  }
 });
 
 
