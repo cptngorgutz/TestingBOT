@@ -2,6 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+const invites = {};
+
+// A pretty useful method to create a delay without blocking the whole script.
+const wait = require('util').promisify(setTimeout);
+
+
 client.on('ready', () => {
   // "ready" isn't really ready. We need to wait a spell.
   wait(1000);
