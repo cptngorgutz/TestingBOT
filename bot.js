@@ -7,9 +7,7 @@ client.on('guildMemberAdd', function(member)
 {
 let memberRole = member.guild.roles.find(role => role.name === 'recruit');
 member.addRole(memberRole);
-member.guild.channels.get('701807115689525319').send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`).then(() => message.react('🎀'))
-.then(() => message.react('☑️'))
-.then(() => message.react('🍎'))
+member.guild.channels.get('701807115689525319').send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`);
 //NEW USERS JOIN
 member.guild.channels.get('666305824813219870').send({embed: {
 color: 0x00ff00, 
