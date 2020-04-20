@@ -8,7 +8,7 @@ client.on('guildMemberAdd', function(member)
 let memberRole = member.guild.roles.find(role => role.name === 'recruit');
 member.addRole(memberRole);
 member.guild.channels.get('701807115689525319').send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`).then(function(message) {
-message.react(message.guild.emojis.find('name', "ribbon"))
+message.react(client.emojis.find(emoji => emoji.name === "ribbon"))
 });
 //NEW USERS JOIN
 member.guild.channels.get('666305824813219870').send({embed: {
