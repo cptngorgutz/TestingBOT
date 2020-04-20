@@ -60683,6 +60683,7 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 var TB1name = ["🎀",""];
 //    Add role name
 var TB1rolename=["TB1",""];
+var recruit=["recruit",""];
 client.on("messageReactionAdd",(reaction,user)=>{
 const logs = client.channels.get('666305824813219870')
   if(!user) return;
@@ -60692,7 +60693,10 @@ const logs = client.channels.get('666305824813219870')
   if(reaction.emoji.name == TB1name[n]){
     let role = reaction.message.guild.roles.find(r => r.name == TB1rolename[n]);          
     reaction.message.guild.member(user).addRole(role).catch(console.error);
-	let memberRole = member.guild.roles.find(role => role.name === 'recruit');
+	logs.send(reaction.message.guild.member(user) + " added to TB1");
+	let memberrole = reaction.message.guild.roles.find(r => r.name == recruit[n]);
+	reaction.message.guild.member(user).removeRole(memberrole).catch(console.error);
+	logs.send(user + " removed from recruit");
   }
 }
 });
