@@ -60662,10 +60662,11 @@ const command = args.shift().toLowerCase();
 
 if (message.channel.id === '699707863148265512'){
 
-
-const time = 10000 //amount of time to collect for in milliseconds
-
 if(message.content.startsWith('@everyone')) {
+const time = 10000 //amount of time to collect for in milliseconds
+const emojichannel = client.channels.get('699707863148265512')
+
+ emojichannel.send("Hello World")
  .then(async function (message) {
       await message.react('❌')
       const filter = (reaction, user) => {
@@ -60676,7 +60677,7 @@ if(message.content.startsWith('@everyone')) {
 
       collector.on('collect', (reaction, reactionCollector) => {
            //do stuff
-		   message.channel.send(reaction.users);
+		 emojichannel.send(reaction.users);
       });
  });
 }
