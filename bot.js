@@ -60662,29 +60662,23 @@ const command = args.shift().toLowerCase();
 
 if (message.channel.id === '699707863148265512'){
 
+
+const time = 10000 //amount of time to collect for in milliseconds
+
 if(message.content.startsWith('@everyone')) {
-message.react('👍').then(() => message.react('👎'));
+ .then(async function (message) {
+      await message.react('❌')
+      const filter = (reaction, user) => {
+           return //YOUR FILTER HERE;
+      };
 
-const filter = (reaction, user) => {
-    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
-};
+      const collector = message.createReactionCollector(filter, { time: time });
 
-message.awaitReactions(filter, { max: 4, time: 10000, errors: ['time'] })
-    .then(collected => {
-        const reaction = collected.first();
-
-        if (reaction.emoji.name === '👍') {
-            message.reply('you reacted with a thumbs up.');
-        }
-        else {
-            message.reply('you reacted with a thumbs down.');
-        }
-    })
-    .catch(collected => {
-        console.log(`After 10 seconds, only ${collected.size} out of 4 reacted.`);
-        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
-    });
-
+      collector.on('collect', (reaction, reactionCollector) => {
+           //do stuff
+		   message.channel.send(reaction.users);
+      });
+ });
 }
 }
 });
