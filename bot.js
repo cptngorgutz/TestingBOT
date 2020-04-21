@@ -21,7 +21,7 @@ invites[g.id] = guildInvites;
 //USERS JOINING & LEAVING
 client.on('guildMemberAdd', function(member)
 {
-let recruitroom = member.guild.channels.get('701807115689525319');
+let recruitroom = member.guild.channels.get('702146535663599668');
 recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`)
 	.then(function (message) {
 			  message.react('🎀')
@@ -31,7 +31,7 @@ recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your 
               console.log("one of the emojis failed to react.")
              });
 //NEW USERS JOIN
-member.guild.channels.get('666305824813219870').send({embed: {
+member.guild.channels.get('702146745441714176').send({embed: {
 color: 0x00ff00, 
 title: "**MEMBER JOINED! ** ",
 description: member + " has joined **The Beyonders ** discord server!",
@@ -57,22 +57,22 @@ footer: {
     // This is just to simplify the message being sent below (inviter doesn't have a tag property)
     const inviter = client.users.get(invite.inviter.id);
     // Get the log channel (change to your liking)
-    const logChannel = member.guild.channels.find(c => c.name === 'bot-spam');
+    const logChannel = member.guild.channels.find(c => c.name === 'logs');
     // A real basic message with the information we need. 
 //    logChannel.send(`${member.user.tag} joined using  code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
 let memberRole = member.guild.roles.find(r => r.name === "recruit");
 let TB1object = member.guild.roles.find(r => r.name === "TB1 Captain");
 let TB2object = member.guild.roles.find(r => r.name === "TB2 Captain");
 let TB3object = member.guild.roles.find(r => r.name === "TB3 Captain");
-if (invite.code === "YMuypD") { //TB1 INVITE CODE
+if (invite.code === "ZAN7Ka") { //TB1 INVITE CODE
 member.addRole(memberRole);
 logChannel.send(`${TB1object} ` + member + " is looking to join TB1");
 }
-if (invite.code === "24y2FP") { //TB2 INVITE CODE
+if (invite.code === "6wNCSq") { //TB2 INVITE CODE
 logChannel.send(`${TB2object} ` + member + " is looking to join TB2");
 member.addRole(memberRole);
 }
-if (invite.code === "zZhwvz") { //TB3 INVITE CODE
+if (invite.code === "bdRATb") { //TB3 INVITE CODE
 logChannel.send(`${TB3object} ` + member + " is looking to join TB3");
 member.addRole(memberRole);
 }
