@@ -60824,7 +60824,7 @@ var TB2rolename=["tb2rules",""];
 var TB3rolename=["tb3rules",""];
 var recruit=["recruit",""];
 client.on("messageReactionAdd",(reaction,user)=>{
-const logs = client.channels.get('666305824813219870')
+const logs = client.channels.get('702146745441714176')
   if(!user) return;
   if(user.bot)return;
   if(!reaction.message.channel.guild) return;
