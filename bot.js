@@ -60861,6 +60861,18 @@ client.on("messageReactionRemove",(reaction,user)=>{
     reaction.message.guild.member(user).removeRole(role).catch(console.error);
   }
   }
+  for(let n in TB2name){
+  if(reaction.emoji.name == TB2name[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == TB2rolename[n]);   
+    reaction.message.guild.member(user).removeRole(role).catch(console.error);
+  }
+  }
+  for(let n in TB3name){
+  if(reaction.emoji.name == TB3name[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == TB3rolename[n]);   
+    reaction.message.guild.member(user).removeRole(role).catch(console.error);
+  }
+  }
 });
 
 client.login(process.env.TOKEN);
