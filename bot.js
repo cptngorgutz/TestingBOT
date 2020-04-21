@@ -21,15 +21,6 @@ invites[g.id] = guildInvites;
 //USERS JOINING & LEAVING
 client.on('guildMemberAdd', function(member)
 {
-let recruitroom = member.guild.channels.get('702146535663599668');
-recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react to gain a role.`)
-	.then(function (message) {
-			  message.react('🎀')
-              message.react("🍎")
-              message.react("☑️")
-            }).catch(function() {
-              console.log("one of the emojis failed to react.")
-             });
 //NEW USERS JOIN
 member.guild.channels.get('702146745441714176').send({embed: {
 color: 0x00ff00, 
@@ -67,14 +58,35 @@ let TB3object = member.guild.roles.find(r => r.name === "TB3 Captain");
 if (invite.code === "ZAN7Ka") { //TB1 INVITE CODE
 member.addRole(memberRole);
 logChannel.send(`${TB1object} ` + member + " is looking to join TB1");
+let recruitroom = member.guild.channels.get('702146535663599668');
+recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react below to read TB1's rules.`)
+	.then(function (message) {
+			  message.react('🎀')
+            }).catch(function() {
+              console.log("one of the emojis failed to react.")
+             });
 }
 if (invite.code === "6wNCSq") { //TB2 INVITE CODE
 logChannel.send(`${TB2object} ` + member + " is looking to join TB2");
 member.addRole(memberRole);
+let recruitroom = member.guild.channels.get('702146535663599668');
+recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react below to read TB2's rules.`)
+	.then(function (message) {
+              message.react("🍎")
+            }).catch(function() {
+              console.log("one of the emojis failed to react.")
+             });
 }
 if (invite.code === "bdRATb") { //TB3 INVITE CODE
 logChannel.send(`${TB3object} ` + member + " is looking to join TB3");
 member.addRole(memberRole);
+let recruitroom = member.guild.channels.get('702146535663599668');
+recruitroom.send(`Welcome to The Beyonders! ${member}. \nWe hope you enjoy your stay here. \nPlease react below to read TB3's rules.`)
+	.then(function (message) {
+              message.react("☑️")
+            }).catch(function() {
+              console.log("one of the emojis failed to react.")
+             });
 }
 });
 
@@ -3608,13 +3620,6 @@ const speedEmbed = new Discord.RichEmbed()
 }
 
 
-
-
-
-
-
-
-
 if(command === 'hulk' || command === 'bruce' || command === 'banner') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
@@ -3664,17 +3669,26 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hulk:663749985594245130> **Hulk** \nHulk's speed is: **")
+	.setDescription("<:hulk:663749985594245130> **Hulk** \nHulk's speed is: 87")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hulk:663749985594245130> **Hulk** \nHulk is farmable in:**")
+	.setDescription("<:hulk:663749985594245130> **Hulk** \nHulk is farmable in: \n**Achievements**")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130> **Hulk** \nBio,Global,Hero,Protector,Wave1Avenger")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hulk:663749985594245130> **Hulk** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
-
 
 
 if(command === 'hydragrenadier' || command === 'grenadier') {
@@ -3715,17 +3729,26 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nHydra Grenadier's speed is: **")
+	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nHydra Grenadier's speed is: 87")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nHydra Grenadier is farmable in:**")
+	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nHydra Grenadier is farmable in: \nOrbs:\nPremium,Milestones,Raid orb,Alpha raid orb")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nBlaster,Global,Hydra,Minion,Tech,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
-
 
 
 if(command === 'hydraarmoredguard' || command === 'guard') {
@@ -3766,17 +3789,26 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nHydra Armored Guard's speed is: **")
+	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nHydra Armored Guard's speed is: 92")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nHydra Armored Guard is farmable in:**")
+	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nHydra Armored Guard is farmable in: \nOrbs:\nPremium,Milestones,Alpha raid orb \n \nStore:\nArena Store")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nGlobal,Hydra,Minion,Protector,Tech,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
-
 
 
 if(command === 'hydrascientist' || command === 'scientist') {
@@ -3817,17 +3849,26 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \nHydra Scientist's speed is: **")
+	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \nHydra Scientist's speed is: 94")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \nHydra Scientist is farmable in:**")
+	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \nHydra Scientist is farmable in: \nOrbs:\nPremium,Milestones,Alpha raid orb,Blitz orb \n \nStore:\nBlitz Store")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<<:hydrascientist:663749986013413386> **Hydra Scientist** \nGlobal,Hydra,Minion,Skill,Support,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
-
 
 
 if(command === 'hydrasniper' || command === 'sniper') {
@@ -3868,18 +3909,26 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \nHydra Sniper's speed is: **")
+	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \nHydra Sniper's speed is: 93")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \nHydra Sniper is farmable in:**")
+	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \nHydra Sniper is farmable in: \n**Villains \nNode 2-3** \n \nOrbs:\nPremium,Milestones,Alpha raid orb")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \nBlaster,Global,Hydra,Minion,Tech,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
-
-
 
 
 if(command === 'hydrarifletrooper' || command === 'trooper') {
@@ -3920,18 +3969,26 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nHydra Rifle Trooper's speed is: **")
+	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nHydra Rifle Trooper's speed is: 95")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nHydra Rifle Trooper is farmable in:**")
+	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nHydra Rifle Trooper is farmable in: \nOrbs:\nPremium,Milestones,Alpha raid orb,Blitz orb \n \nStore:\nBlitz Store")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nBlaster,Global,Hydra,Minion,Tech,Villain")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \n**Please use a valid phrase:** \nbasic\nspecial\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
-
-
 
 
 if(command === 'iw' || command === 'invisible' || command === 'woman' || command === 'sue' || command === 'storm') {
@@ -3983,16 +4040,30 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman's speed is: **")
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman's speed is: 105")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman is farmable in:**")
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nInvisible Woman is farmable in:\nLegendary Event, requiring x5 Sinister Six.")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \nBio,Cosmic,FantasticFour,Hero,Protector")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
+
+
+
+
 
 
 
@@ -4046,13 +4117,23 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aspeed === "speed" || aspeed === "spee" || aspeed === "spe" || speed === "speed" || speed === "spee" || speed === "spe") {
 const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nIron Fist's speed is: **")
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nIron Fist's speed is: 106")
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nIron Fist is farmable in:**")
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nIron Fist is farmable in: \n**Nexus \nNode 1-9** \n \nOrbs:\nPremium,Milestones,Gamma raid orb, Legacy orb")
 	message.channel.send(speedEmbed); 
+} else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
+	const traitEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \nBrawler,City,Defender,Hero,MartialArtist,Mystic")  
+	message.channel.send(traitEmbed); 
+} else {
+	const embedEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \n**Please use a valid phrase:** \nbasic\nspecial\nultimate\npassive\nkit\nspeed\ntrait\nunlock")
+	message.channel.send(embedEmbed); 
 }
 
 }
@@ -60735,8 +60816,12 @@ message.channel.send("**Steps:** \nraidsheet /season / u7 / a4 / b4 / g4");
 
 //    Add emoji name
 var TB1name = ["🎀",""];
+var TB2name = ["🍎",""];
+var TB3name = ["☑️",""];
 //    Add role name
-var TB1rolename=["TB1",""];
+var TB1rolename=["tb1rules",""];
+var TB2rolename=["tb2rules",""];
+var TB3rolename=["tb3rules",""];
 var recruit=["recruit",""];
 client.on("messageReactionAdd",(reaction,user)=>{
 const logs = client.channels.get('666305824813219870')
@@ -60747,10 +60832,21 @@ const logs = client.channels.get('666305824813219870')
   if(reaction.emoji.name == TB1name[n]){
     let role = reaction.message.guild.roles.find(r => r.name == TB1rolename[n]);          
     reaction.message.guild.member(user).addRole(role).catch(console.error);
-	logs.send(reaction.message.guild.member(user) + " added to TB1");
-	let memberrole = reaction.message.guild.roles.find(r => r.name == recruit[n]);
-	reaction.message.guild.member(user).removeRole(memberrole).catch(console.error);
-	logs.send(user + " removed from recruit");
+	logs.send(reaction.message.guild.member(user) + " added to TB1 rules");
+  }
+}
+ for(let n in TB2name){
+  if(reaction.emoji.name == TB2name[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == TB2rolename[n]);          
+    reaction.message.guild.member(user).addRole(role).catch(console.error);
+	logs.send(reaction.message.guild.member(user) + " added to TB1 rules");
+  }
+}
+for(let n in TB3name){
+  if(reaction.emoji.name == TB3name[n]){
+    let role = reaction.message.guild.roles.find(r => r.name == TB3rolename[n]);          
+    reaction.message.guild.member(user).addRole(role).catch(console.error);
+	logs.send(reaction.message.guild.member(user) + " added to TB1 rules");
   }
 }
 });
