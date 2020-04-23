@@ -9041,7 +9041,7 @@ const counterasgardians22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9119,7 +9119,7 @@ const counterbkt22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9201,7 +9201,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9281,7 +9281,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9362,7 +9362,6 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9443,7 +9442,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9604,7 +9603,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9685,7 +9684,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9766,7 +9765,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9849,7 +9848,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -9930,7 +9929,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -10011,7 +10010,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -10171,7 +10170,7 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
+
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
@@ -10252,7 +10251,6 @@ const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
 
 const Attachment = require('discord.js').Attachment;
-const attachment = new Attachment(Image.url)
 
 function function1() {
 const embed1 = new Discord.RichEmbed()
