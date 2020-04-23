@@ -9034,15 +9034,12 @@ function functionasgardiansstats() {
 setTimeout(functionasgardiansstats, 3000);
 } else if(args[0] == "asgardians+"){
 const asgardianscounterimage2 = client.channels.get('666340204872990730')
-const channelToCheckImagesallin1 = client.channels.get('666271524793221121')
 const channelToCheckText = client.channels.get('666271343536373761')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const messages3 = await asgardianscounterimage2.fetchMessages({ limit: 1 });
 const counterasgardians22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9057,13 +9054,8 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9120,15 +9112,12 @@ function functionbktstats() {
 setTimeout(functionbktstats, 3000);
 } else if(args[0] == "bkt+"){
 const bktcounterimage2 = client.channels.get('700322361966067812')
-const channelToCheckImagesallin1 = client.channels.get('700322458351173652')
 const channelToCheckText = client.channels.get('700322417003986978')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
 const messages3 = await bktcounterimage2.fetchMessages({ limit: 1 });
 const counterbkt22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9143,13 +9132,8 @@ const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
 
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9207,15 +9191,15 @@ function functionbrawlerstats() {
 setTimeout(functionbrawlerstats, 3000);
 } else if(args[0] == "brawlers+"){
 const brawlerscounterimage2 = client.channels.get('666340239903686659')
-const channelToCheckImagesallin1 = client.channels.get('666317849375277077')
+
 const channelToCheckText = client.channels.get('666317820656615435')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await brawlerscounterimage2.fetchMessages({ limit: 1 });
 const counterbrawlers22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9229,14 +9213,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9293,15 +9271,15 @@ function functioncptnmarvelstats() {
 setTimeout(functioncptnmarvelstats, 3000);
 } else if(args[0] == "captainmarvel+"){
 const cptnmarvelcounterimage2 = client.channels.get('700487765518843938')
-const channelToCheckImagesallin1 = client.channels.get('700487815317684244')
+
 const channelToCheckText = client.channels.get('700487792999792700')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await cptnmarvelcounterimage2.fetchMessages({ limit: 1 });
 const countercptnmarvel22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9315,14 +9293,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9380,15 +9352,15 @@ function functiondefendersstats() {
 setTimeout(functiondefendersstats, 3000);
 } else if(args[0] == "defenders+"){
 const defenderscounterimage2 = client.channels.get('700322862535278683')
-const channelToCheckImagesallin1 = client.channels.get('700322968223350966')
+
 const channelToCheckText = client.channels.get('700322892541591633')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await defenderscounterimage2.fetchMessages({ limit: 1 });
 const counterdefenders22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9402,14 +9374,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9467,15 +9433,15 @@ function functiongotgstats() {
 setTimeout(functiongotgstats, 3000);
 } else if(args[0] == "gotg+"){
 const gotgcounterimage2 = client.channels.get('700323244305022976')
-const channelToCheckImagesallin1 = client.channels.get('700323317172928542')
+
 const channelToCheckText = client.channels.get('700323286621487124')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await gotgcounterimage2.fetchMessages({ limit: 1 });
 const countergotg22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9489,14 +9455,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9555,15 +9515,14 @@ setTimeout(functionhydrastats, 3000);
 } else if(args[0] == "hydra+"){
 const hydracounterimage2 = client.channels.get('698203936061915206')
 const channelToCheckText = client.channels.get('698224225516781638')
-const channelToCheckImagesallin1 = client.channels.get('698224268273647698')
+
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await hydracounterimage2.fetchMessages({ limit: 1 });
-const messages3 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const counterhydra22 = messages2.first().attachments.first()
 const embed = new Discord.RichEmbed()
 
 const Text = messages1.first().content;
-const Image = messages3.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 
 function function1() {
@@ -9576,14 +9535,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9641,15 +9594,15 @@ function functionkreeronanstats() {
 setTimeout(functionkreeronanstats, 3000);
 } else if(args[0] == "kreeronan+"){
 const kreeronancounterimage2 = client.channels.get('700532345576620072')
-const channelToCheckImagesallin1 = client.channels.get('700532388068851712')
+
 const channelToCheckText = client.channels.get('700532370079481936')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await kreeronancounterimage2.fetchMessages({ limit: 1 });
 const counterkreeronan22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9663,14 +9616,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9728,15 +9675,15 @@ function functionmaraudersstats() {
 setTimeout(functionmaraudersstats, 3000);
 } else if(args[0] == "marauders+"){
 const marauderscounterimage2 = client.channels.get('698224640199491654')
-const channelToCheckImagesallin1 = client.channels.get('698224710772719749')
+
 const channelToCheckText = client.channels.get('698224678900203520')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await marauderscounterimage2.fetchMessages({ limit: 1 });
 const countermarauders22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9750,14 +9697,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9815,15 +9756,15 @@ function functionshieldstats() {
 setTimeout(functionshieldstats, 3000);
 } else if(args[0] == "shield+"){
 const shieldcounterimage2 = client.channels.get('666340284962963524')
-const channelToCheckImagesallin1 = client.channels.get('666318805844230144')
+
 const channelToCheckText = client.channels.get('666318788140072981')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await shieldcounterimage2.fetchMessages({ limit: 1 });
 const countershield22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9837,14 +9778,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9904,15 +9839,15 @@ function functions6stats() {
 setTimeout(functions6stats, 3000);	
 } else if(args[0] == "s6+"){
 const s6counterimage2 = client.channels.get('666340318102421504')
-const channelToCheckImagesallin1 = client.channels.get('666319027538493450')
+
 const channelToCheckText = client.channels.get('666319009465237524')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await s6counterimage2.fetchMessages({ limit: 1 });
 const counters622 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -9926,14 +9861,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -9991,15 +9920,15 @@ function functionsupernaturalstats() {
 setTimeout(functionsupernaturalstats, 3000);	
 } else if(args[0] == "supernatural+" || args[0] == "supernaturals+"){
 const supernaturalcounterimage2 = client.channels.get('700533212358901760')
-const channelToCheckImagesallin1 = client.channels.get('700533264493838376')
+
 const channelToCheckText = client.channels.get('700533244046606336')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await supernaturalcounterimage2.fetchMessages({ limit: 1 });
 const countersupernatural22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -10013,14 +9942,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -10078,15 +10001,15 @@ function functionsymbiotestats() {
 setTimeout(functionsymbiotestats, 3000);
 } else if(args[0] == "symbiote+" || args[0] == "symbiotes+"){
 const symbiotecounterimage2 = client.channels.get('700535722498588682')
-const channelToCheckImagesallin1 = client.channels.get('700535787825004545')
+
 const channelToCheckText = client.channels.get('700535765448392754')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await symbiotecounterimage2.fetchMessages({ limit: 1 });
 const countersymbiote22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -10100,14 +10023,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -10166,14 +10083,13 @@ setTimeout(functionultronstats, 3000);
 } else if(args[0] == "ultron+"){
 const ultroncounterimage2 = client.channels.get('698225013723234396')
 const channelToCheckText = client.channels.get('698225045499019284')
-const channelToCheckImagesallin1 = client.channels.get('698225078801793074')
+
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
 const messages2 = await ultroncounterimage2.fetchMessages({ limit: 1 });
-const messages3 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const counterultron22 = messages2.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages3.first().attachments.first()
 const Attachment = require('discord.js').Attachment;
 
 function function1() {
@@ -10186,14 +10102,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -10251,15 +10161,15 @@ function functionwakandastats() {
 setTimeout(functionwakandastats, 3000);
 } else if(args[0] == "wakanda+"){
 const wakandacounterimage2 = client.channels.get('700323525348818994')
-const channelToCheckImagesallin1 = client.channels.get('700323592734244925')
+
 const channelToCheckText = client.channels.get('700323563231641670')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await wakandacounterimage2.fetchMessages({ limit: 1 });
 const counterwakanda22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -10273,14 +10183,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
@@ -10338,15 +10242,15 @@ function functionxmenstats() {
 setTimeout(functionxmenstats, 3000);
 } else if(args[0] == "xmen+"){
 const xmencounterimage2 = client.channels.get('700535062361276476')
-const channelToCheckImagesallin1 = client.channels.get('700535097543098428')
+
 const channelToCheckText = client.channels.get('700535081290301490')
 const messages1 = await channelToCheckText.fetchMessages({ limit: 1 });
-const messages2 = await channelToCheckImagesallin1.fetchMessages({ limit: 1 });
+
 const messages3 = await xmencounterimage2.fetchMessages({ limit: 1 });
 const counterxmen22 = messages3.first().attachments.first()
 const embed = new Discord.RichEmbed()
 const Text = messages1.first().content;
-const Image = messages2.first().attachments.first()
+
 const Attachment = require('discord.js').Attachment;
 const attachment = new Attachment(Image.url)
 
@@ -10360,14 +10264,8 @@ function function3() {
 const TEXT = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setDescription(Text.content)
-
-const ATTACHMENT = new Discord.RichEmbed()
-.setColor('#0099ff')
-.setImage(Image.url)
-
 embed.setColor('#0099ff')
 embed.setDescription(Text)
-embed.setImage(Image.url)
 message.channel.send(embed);
 }
 function function2() {
