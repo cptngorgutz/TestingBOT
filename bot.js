@@ -11,7 +11,7 @@ const args = message.content.toLowerCase().slice(config.prefix.length).trim().sp
 const command = args.shift().toLowerCase();
 
 if(command === 'canvas'){
-const { createCanvas, loadImage } = require('canvas')
+const { createCanvas, loadImage } = require('./canvas')
 const canvas = createCanvas(200, 200)
 const ctx = canvas.getContext('2d')
 
