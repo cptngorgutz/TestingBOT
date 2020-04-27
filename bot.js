@@ -241,6 +241,8 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 }
 });
 client.on("message", async message => {
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
 if(command ==='trial') {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
