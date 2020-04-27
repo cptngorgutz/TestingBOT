@@ -236,15 +236,15 @@ if(command ==='trial') {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send(args[0] + args[3])
+	message.channel.send(args[0] + " " + args[4])
 	}).catch(err => {
     console.error(err)
     })
 	
 let x = args[0];
-let y = args[3];
+let y = args[4];
 let z = (y - x) / x*100;
-//message.channel.send(z.toFixed(1) + "%");
+message.channel.send(z.toFixed(1) + "%");
 }
 });
 
