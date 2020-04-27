@@ -35,7 +35,7 @@ ctx.lineTo(50 + text.width, 102)
 ctx.stroke()
 
 // Draw cat with lime helmet
-loadImage('examples/images/lime-cat.jpg').then((image) => {
+loadImage('wallpaper.jpg').then((image) => {
   ctx.drawImage(image, 50, 0, 70, 70)
 
   channel.send('<img src="' + canvas.toDataURL() + '" />')
