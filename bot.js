@@ -192,7 +192,6 @@ message.channel.send("@everyone Free For All")
 
 if(command === 'counter') { //   bot-spamTB                                 bot-spamTESTserver                              TB1-WAR-CHAT                                   TB2-WAR-CHAT                                    TB3-WAR-CHAT                                 General-TESTSERVER                       EMOJITESTSERVER-testing room
 if(args[0] == "aim"){
-let x = args[2];
 function functionaimstats() {
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -201,7 +200,7 @@ function functionaimstats() {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-	message.channel.send("!trial " + rows.join('\n').replace(/,/g, ' '))
+	message.channel.send("!trial " + args[1] + rows.join('\n').replace(/,/g, ' '))
     } else {
       console.log('No data found.');
     }
@@ -215,8 +214,7 @@ function functionstats() {
 	}).catch(err => {
     console.error(err)
     })
-let y = args[5];
-let z = (y - x) / x*100;
+
 }
 setTimeout(functionstats, 9000);
 }
@@ -247,10 +245,15 @@ if(command ==='trial') {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send(args[3])
+	message.channel.send(args[1] + args[3])
 	}).catch(err => {
     console.error(err)
     })
+	
+let x = args[1];
+let y = args[3];
+let z = (y - x) / x*100;
+message.channel.send(z.toFixed(1) + "%");
 }
 });
 
