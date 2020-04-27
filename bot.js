@@ -201,7 +201,7 @@ function functionaimstats() {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-	message.channel.send(rows.join('\n').replace(/,/g, ' ') + "!trial")
+	message.channel.send(rows.join('\n').replace(/,/g, ' ') + " !trial ")
     } else {
       console.log('No data found.');
     }
