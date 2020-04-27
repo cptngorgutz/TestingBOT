@@ -218,15 +218,6 @@ function functionstats() {
 let y = args[5];
 let z = (y - x) / x*100;
 }
-if(message.content.startsWith === '!trial') {
-	const channelToCheckText = client.channels.get('699707863148265512')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const LastText = messages.first();
-	message.channel.send(LastText.content + args[2])
-	}).catch(err => {
-    console.error(err)
-    })
-}
 setTimeout(functionstats, 9000);
 }
 }
@@ -249,5 +240,17 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 }
 }
 });
+client.on("message", async message => {
+if(message.content.startsWith === '!trial') {
+	const channelToCheckText = client.channels.get('699707863148265512')
+	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
+	const LastText = messages.first();
+	message.channel.send(LastText.content + args[2])
+	}).catch(err => {
+    console.error(err)
+    })
+}
+});
+
 
 client.login(process.env.TOKEN);
