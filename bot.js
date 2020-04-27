@@ -17,17 +17,29 @@ client.on('guildMemberAdd', async member => {
 	const channel = member.guild.channels.find(ch => ch.name === 'member-log');
 	if (!channel) return;
 
-	const canvas = Canvas.createCanvas(700, 250);
-	const ctx = canvas.getContext('2d');
+	const { createCanvas, loadImage } = require('canvas')
+const canvas = createCanvas(200, 200)
+const ctx = canvas.getContext('2d')
 
-	// Since the image takes time to load, you should await it
-	const background = await Canvas.loadImage('./wallpaper.jpg');
-	// This uses the canvas dimensions to stretch the image onto the entire canvas
-	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-	// Use helpful Attachment class structure to process the file for you
-	const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png');
+// Write "Awesome!"
+ctx.font = '30px Impact'
+ctx.rotate(0.1)
+ctx.fillText('Awesome!', 50, 100)
 
-	channel.send(`Welcome to the server, ${member}!`, attachment);
+// Draw line under text
+var text = ctx.measureText('Awesome!')
+ctx.strokeStyle = 'rgba(0,0,0,0.5)'
+ctx.beginPath()
+ctx.lineTo(50, 102)
+ctx.lineTo(50 + text.width, 102)
+ctx.stroke()
+
+// Draw cat with lime helmet
+loadImage('examples/images/lime-cat.jpg').then((image) => {
+  ctx.drawImage(image, 50, 0, 70, 70)
+
+  channel.send('<img src="' + canvas.toDataURL() + '" />')
+})
 });
 
 
