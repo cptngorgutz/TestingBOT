@@ -4,7 +4,7 @@ const config = require('./config.json');
 
 //war counter / add counter stats
 client.on("message", async message => {
-if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+if (!message.content.startsWith(config.prefix)) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
