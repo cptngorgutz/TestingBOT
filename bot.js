@@ -7,6 +7,12 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+client.on('message', message => {
+	if (message.content === '!join') {
+		client.emit('guildMemberAdd', message.member);
+	}
+});
+
 client.on('guildMemberAdd', async member => {
 	const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
 	if (!channel) return;
