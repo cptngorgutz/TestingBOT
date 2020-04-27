@@ -219,11 +219,11 @@ function functionstats() {
 let y = args[5];
 let z = (y - x) / x*100;
 }
-if(message.content.startsWith("!trial ")){
+if(command === 'trial') {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send(args[2])
+	message.channel.send(LastText.content + args[2])
 	}).catch(err => {
     console.error(err)
     })
