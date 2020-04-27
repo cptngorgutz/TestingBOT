@@ -206,6 +206,8 @@ function functionaimstats() {
     }
   });
 }
+setTimeout(functionaimstats, 3000);
+
 }
 }
 
