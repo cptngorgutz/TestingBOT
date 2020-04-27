@@ -239,7 +239,7 @@ let z = (y - x) / x*100;
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send(args[0] + " " + args[1] + " = " + z.toFixed(1) + "%")
+	message.channel.send(args[0] + " " + args[1] + " = " + z.toFixed(1))
 	}).catch(err => {
     console.error(err)
     })
