@@ -201,7 +201,7 @@ function functionaimstats() {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-	message.channel.send(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(rows.join('\n').replace(/,/g, ' ') + "!trial")
     } else {
       console.log('No data found.');
     }
@@ -212,14 +212,13 @@ function functionstats() {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send("!trial " + LastText.content)
 	}).catch(err => {
     console.error(err)
     })
 let y = args[5];
 let z = (y - x) / x*100;
 }
-if(command === 'trial') {
+if(message.content.contains === '!trial') {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
