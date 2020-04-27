@@ -12,6 +12,7 @@
   "dependencies": {
     "canvas": "^2.6.1",
     "discord.js": "^11.5.1",
+    "googleapis": "file:googleapis",
     "node-gyp": "^6.1.0"
   }
 }
