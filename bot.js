@@ -200,7 +200,7 @@ function functionaimstats() {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-	message.channel.send("!trial " + args[1] + rows.join('\n').replace(/,/g, ' '))
+	message.channel.send("!trial " + args[1] + " " + rows.join('\n').replace(/,/g, ' '))
     } else {
       console.log('No data found.');
     }
@@ -250,7 +250,7 @@ if(command ==='trial') {
     console.error(err)
     })
 	
-let x = args[1];
+let x = args[0];
 let y = args[3];
 let z = (y - x) / x*100;
 message.channel.send(z.toFixed(1) + "%");
