@@ -201,10 +201,7 @@ function functionaimstats() {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
     if (rows.length) {
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription(rows.join('\n').replace(/,/g, ' '))
-	message.channel.send(exampleEmbed); 
+	message.channel.send(rows.join('\n').replace(/,/g, ' '))
     } else {
       console.log('No data found.');
     }
