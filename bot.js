@@ -220,7 +220,7 @@ function functionstats() {
     console.error(err)
     })
 
-let y = args[4];
+let y = args[5];
 
 let z = (y - x) / x*100;
 message.channel.send(z.toFixed(1) + "%");
