@@ -1,42 +1,33 @@
 const Discord = require('discord.js');
+const Canvas = require('canvas');
+
 const client = new Discord.Client();
-const config = require('./config.json');
 
+client.once('ready', () => {
+	console.log('Ready!');
+});
 
-//*********CHARACTERS + TEAMS*********** (NOT FINISHED)
-//example: !ironman speed || !asgardians)
-client.on("message", async message => {
-if (!message.content.startsWith(config.prefix) || message.author.bot) return;
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
+client.on('guildMemberAdd', async member => {
+	const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
+	if (!channel) return;
 
-if(command === 'canvas'){
-const { createCanvas, loadImage } = require('./canvas')
-const canvas = createCanvas(200, 200)
-const ctx = canvas.getContext('2d')
+	const canvas = Canvas.createCanvas(700, 250);
+	const ctx = canvas.getContext('2d');
 
-// Write "Awesome!"
-ctx.font = '30px Impact'
-ctx.rotate(0.1)
-ctx.fillText('Awesome!', 50, 100)
+	// Since the image takes time to load, you should await it
+	const background = await Canvas.loadImage('./wallpaper.jpg');
+	// This uses the canvas dimensions to stretch the image onto the entire canvas
+	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+	// Use helpful Attachment class structure to process the file for you
+	const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png');
 
-// Draw line under text
-var text = ctx.measureText('Awesome!')
-ctx.strokeStyle = 'rgba(0,0,0,0.5)'
-ctx.beginPath()
-ctx.lineTo(50, 102)
-ctx.lineTo(50 + text.width, 102)
-ctx.stroke()
+	channel.send(`Welcome to the server, ${member}!`, attachment);
+});
 
-// Draw cat with lime helmet
-loadImage('lime-cat.jpg').then((image) => {
-  ctx.drawImage(image, 50, 0, 70, 70)
-
-  message.channel.send('<img src="' + canvas.toDataURL() + '" />');
-})
-
-}
-
+client.on('message', message => {
+	if (message.content === '!join') {
+		client.emit('guildMemberAdd', message.member);
+	}
 });
 
 
