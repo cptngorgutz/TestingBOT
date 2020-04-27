@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const Canvas = require('./canvas');
+const Canvas = require('canvas');
 
 const client = new Discord.Client();
 
@@ -24,11 +24,7 @@ client.on('guildMemberAdd', async member => {
 	channel.send(`Welcome to the server, ${member}!`, attachment);
 });
 
-client.on('message', message => {
-	if (message.content === '!join') {
-		client.emit('guildMemberAdd', message.member);
-	}
-});
+
 
 
 client.login(process.env.TOKEN);
