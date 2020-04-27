@@ -235,7 +235,7 @@ const command = args.shift().toLowerCase();
 if(command ==='trial') {
 let y = args[0];
 let x = args[1];
-let z = (100*y) / (100+x)
+let z = (100*y) / (100+x);
 
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
