@@ -221,9 +221,8 @@ function functionstats() {
     })
 
 let y = args[5];
-
 let z = (y - x) / x*100;
-message.channel.send(z.toFixed(1) + "%");
+
 }
 setTimeout(functionstats, 9000);
 }
