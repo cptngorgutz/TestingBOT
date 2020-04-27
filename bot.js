@@ -244,7 +244,10 @@ if(command ==='trial') {
 let x = args[0];
 let y = args[1];
 let z = (y - x) / x*100;
+function functionequal() {
 message.channel.send(z.toFixed(1) + "%");
+setTimeout(functionequal, 3000);
+}
 }
 });
 
