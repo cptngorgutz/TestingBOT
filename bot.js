@@ -215,7 +215,7 @@ function functionstats() {
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send(z)
+	message.channel.send(args[5])
 	}).catch(err => {
     console.error(err)
     })
