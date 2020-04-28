@@ -229,8 +229,8 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 }
 }
 if (command === '+'){
-let x = args[1];
-let y = args[0];
+let x = parseInt(args[1]);
+let y = parseInt(args[0]);
 
 // Divide x by y to get the product
 //let z = x / y;
