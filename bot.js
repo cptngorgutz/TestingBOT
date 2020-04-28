@@ -195,7 +195,7 @@ if(args[0] == "aim"){
 function functionaimstats() {
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "ControlPanel!E2:E",
+    range: "ControlPanel!D1:F",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
