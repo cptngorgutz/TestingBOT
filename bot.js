@@ -223,7 +223,7 @@ let y = args[0];
 //let z = x / y;
 let z = x + 1 / y;
 
-message.channel.send(z.toFixed(1) + "%");
+message.channel.send(z);
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#673261006918516741> or your war chat channel and try again.").catch(console.error);
 }
