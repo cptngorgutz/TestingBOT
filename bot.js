@@ -234,7 +234,7 @@ client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command ==='trial') {
-let y = parseInt(args[3]);
+let y = parseInt(args[4]);
 let x = parseInt(args[0]);
 let z = (y*100)/(100+x);
 //let z = (y - x) / x*100; 
@@ -242,7 +242,7 @@ let z = (y*100)/(100+x);
 	const channelToCheckText = client.channels.get('699707863148265512')
 	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
 	const LastText = messages.first();
-	message.channel.send(args[0] + args[5] + " = " + z)
+	message.channel.send(args[0] + args[4] + " = " + z)
 	
 	//message.channel.send(args[0] + " " + args[1] + " = " + z.toFixed(1))
 	}).catch(err => {
