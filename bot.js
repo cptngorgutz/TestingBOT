@@ -195,7 +195,7 @@ if(args[0] == "aim"){
 function functionaimstats() {
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
-    range: "TESTING!B1:B",
+    range: "ControlPanel!E2:E",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
@@ -234,9 +234,9 @@ client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command ==='trial') {
-let y = args[1];
-let x = args[0];
-let z = y/(1+x);
+let y = parseInt(args[1]);
+let x = parseInt(args[0]);
+let z = (y*100)/(100+x);
 //let z = (y - x) / x*100; 
 
 	const channelToCheckText = client.channels.get('699707863148265512')
