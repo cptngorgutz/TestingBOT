@@ -234,9 +234,9 @@ client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 if(command ==='trial') {
-let y = parseInt(args[1]);
+let y = (args[1]);
 let x = parseInt(args[0]);
-let z = (y*100)/(100+x);
+let z = (100*y)/(100+x);
 //let z = (y - x) / x*100; 
 
 	const channelToCheckText = client.channels.get('699707863148265512')
