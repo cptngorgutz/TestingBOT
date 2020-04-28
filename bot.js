@@ -221,7 +221,7 @@ let y = args[0];
 
 // Divide x by y to get the product
 //let z = x / y;
-let z = y/(1+x);
+let z = x + 1 / y;
 
 message.channel.send(z.toFixed(1) + "%");
 } else {
