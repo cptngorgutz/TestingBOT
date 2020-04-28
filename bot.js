@@ -228,6 +228,27 @@ message.channel.send(z);
 message.channel.send("Sorry, this doesn't work here. Head to <#673261006918516741> or your war chat channel and try again.").catch(console.error);
 }
 }
+if (command === '+'){
+let x = args[1];
+let y = args[0];
+
+// Divide x by y to get the product
+//let z = x / y;
+let z = y + x;
+
+message.channel.send(z);
+}
+if (command === '-'){
+let x = args[1];
+let y = args[0];
+
+// Divide x by y to get the product
+//let z = x / y;
+let z = y - x;
+
+message.channel.send(z);
+}
+
 });
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
