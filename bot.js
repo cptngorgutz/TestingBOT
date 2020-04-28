@@ -221,7 +221,7 @@ let y = parseInt(args[0]);
 
 // Divide x by y to get the product
 //let z = x / y;
-let z = (y*100) / (100+x);
+let z = y / (1+x);
 
 message.channel.send(z);
 } else {
