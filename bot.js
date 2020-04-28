@@ -234,7 +234,7 @@ let y = args[0];
 
 // Divide x by y to get the product
 //let z = x / y;
-let z = y + x;
+let z = y+x;
 
 message.channel.send(z);
 }
