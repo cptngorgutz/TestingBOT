@@ -216,12 +216,12 @@ if (command === '%'){
 							//   bot-spamTB                                 bot-spamTESTserver                              TB1-WAR-CHAT                                   TB2-WAR-CHAT                                    TB3-WAR-CHAT                                 General-TESTSERVER                       EMOJITESTSERVER-testing room
 if (message.channel.id === '673261006918516741' || message.channel.id === '666305824813219870' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '661221254958940220' || message.channel.id === '699707863148265512') {
 // Assign values to x and y
-let x = args[0];
-let y = args[1];
+let x = args[1];
+let y = args[0];
 
 // Divide x by y to get the product
 //let z = x / y;
-let z = (y - x) / x*100;
+let z = y/(1+x);
 
 message.channel.send(z.toFixed(1) + "%");
 } else {
