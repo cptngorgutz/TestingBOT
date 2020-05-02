@@ -233,22 +233,25 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 client.on("message", async message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-if(command ==='trial') {
-let y = parseInt(args[1]);
-let x = parseInt(args[0]);
-let z = (y*100)/(100+x);
-//let z = (y - x) / x*100; 
 
-	const channelToCheckText = client.channels.get('661221254958940220')
-	channelToCheckText.fetchMessages({ limit: 1 }).then(messages => {
-	const LastText = messages.first();
-	message.channel.send(args[0] + " " + args[1] + " = " + z)
-	
-	//message.channel.send(args[0] + " " + args[1] + " = " + z.toFixed(1))
-	}).catch(err => {
-    console.error(err)
-    })
+if (command === '%'){
+// Assign values to x and y
+let x = args[0];
+let y = args[1];
+
+// Divide x by y to get the product
+//let z = x / y;
+let z = (y - x) / x*100;
+if (z > 0) {
+    message.channel.send("Positive");
 }
+if (z < 0) {
+    message.channel.send("Negative");
+}
+
+message.channel.send(z.toFixed(1) + "%");
+}
+
 });
 
 
