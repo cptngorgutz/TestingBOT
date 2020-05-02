@@ -288,9 +288,7 @@ function1();
 function2();
 setTimeout(function3, 4000);
 
-} 
-
- else if(args[0] == "asgardians"){
+} else if(args[0] == "asgardians"){
 const asgardcounterimage = client.channels.get('666340204872990730')
 asgardcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const counterasgard = messages.first().attachments.first()
