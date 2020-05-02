@@ -271,7 +271,7 @@ function1();
 function2();
 setTimeout(function3, 4000);
 
-} else if(args[1] == "stats"){
+} else if(command === 'counter' && args[0] === "aim" && args[1] == "stats"){
 //stats
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
