@@ -224,15 +224,13 @@ let y = args[1];
 let z = (y - x) / x*100;
 // Divide x by y to get the product
 //let z = x / y;
-let positive = message.channel.send("Positive");
-let positive = message.channel.send("Negative");
 if (z > 0) {
-    let var1 = positive;
+    let var1 = message.channel.send("Positive");
 } else {
-	let var1 = negative;
+	let var2 = message.channel.send("Negative");
 }
 
-message.channel.send(z.toFixed(1) + "%" + var1).catch(console.error);
+message.channel.send(z.toFixed(1) + "%" + var1 + var2).catch(console.error);
 }
 
 });
