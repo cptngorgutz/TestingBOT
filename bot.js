@@ -224,19 +224,22 @@ let y = args[1];
 let z = (y - x) / x*100;
 // Divide x by y to get the product
 //let z = x / y;
-function z2(){
 if (z > 0) {
     message.channel.send("Positive");
 }
 if (z < 0) {
     message.channel.send("Negative");
 }
+if (z > 0) {
+    let var1 = positive;
+} else {
+	let var1 = negative;
 }
 
-message.channel.send(z.toFixed(1) + "%").then(() => message.channel.send(z2)).catch(console.error);
+message.channel.send(z.toFixed(1) + "%" + var1).catch(console.error);
 }
 
 });
-
+Make another if statement. if the string is positive store a variable with '+' if negative store '-' and then append that to the string in your message
 
 client.login(process.env.TOKEN);
