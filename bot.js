@@ -233,14 +233,8 @@ if (z < 0) {
     message.channel.send("Negative");
 }
 }
-function function2() {
-message.channel.send(z.toFixed(1) + "%");
-}
 
-const embed1 = new Discord.RichEmbed()
-embed1.setColor('#0099ff')
-embed1.send(function1 + function2);
-
+message.channel.send(z.toFixed(1) + "%" + function1);
 }
 
 });
