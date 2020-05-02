@@ -221,7 +221,7 @@ if (command === '%'){
 // Assign values to x and y
 let x = args[0];
 let y = args[1];
-
+let z = (y - x) / x*100;
 // Divide x by y to get the product
 //let z = x / y;
 function function1() {
