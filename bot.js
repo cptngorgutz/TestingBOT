@@ -193,7 +193,7 @@ message.channel.send("@everyone Free For All")
 if(command === 'counter' || command === 'c') { //   bot-spamTB                                 bot-spamTESTserver                              TB1-WAR-CHAT                                   TB2-WAR-CHAT                                    TB3-WAR-CHAT                                 General-TESTSERVER                       EMOJITESTSERVER-testing room
 if (message.channel.id === '673261006918516741' || message.channel.id === '666305824813219870' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '661221254958940220' || message.channel.id === '699707863148265512') {
 if(args[0] == "team" || args[0] == "list" || args[0] == "team" && args[1] == "list" || args[0] == "teamlist"){
-	message.channel.send("**Available Teams:** \naim | asgardians | bkt | brawlers | captainmarvel | defenders | gotg | hydra | kreeronan | marauders | shield | s6 | supernatural | symbiote | ultron | wakanda | xmen")
+	message.channel.send("**Available Teams:** \naim | asgardians | bkt | brawlers | captainmarvel | defenders | gotg | hydra | kreeronan | marauders | shield | s6 | supernaturals | symbiotes | ultron | wakanda | xmen")
 } else if(args[0] == "aim" && args[1] === "stats"){
 //stats
 	sheets.spreadsheets.values.get({
