@@ -213,31 +213,5 @@ setTimeout(functionaimstats, 3000);
 
 
 });
-client.on("message", async message => {
-const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-
-if (command === '%'){
-// Assign values to x and y
-let x = args[0];
-let y = args[1];
-let z = (y - x) / x*100;
-// Divide x by y to get the product
-//let z = x / y;
-if (z > 0) {
-    let var1 = "Positive";
-	message.channel.send(z.toFixed(1) + "%" + " " + var1).catch(console.error);
-} else if (z == 0) {
-    let var3 = "Neutral";
-	message.channel.send(z.toFixed(1) + "%" + " " + var3).catch(console.error);
-} else if (z === "Infinity"){
-	message.channel.send("To Infinity, and beyond!").catch(console.error);
-} else {
-	let var2 = "Negative";
-	message.channel.send(z.toFixed(1) + "%" + " " + var2).catch(console.error);
-}
-}
-
-});
 
 client.login(process.env.TOKEN);
