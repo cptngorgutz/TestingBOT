@@ -226,11 +226,11 @@ let z = (y - x) / x*100;
 //let z = x / y;
 if (z > 0) {
     let var1 = message.channel.send("Positive");
+	message.channel.send(z.toFixed(1) + "%" + var1).catch(console.error);
 } else {
 	let var2 = message.channel.send("Negative");
+	message.channel.send(z.toFixed(1) + "%" + var2).catch(console.error);
 }
-
-message.channel.send(z.toFixed(1) + "%" + var1 + var2).catch(console.error);
 }
 
 });
