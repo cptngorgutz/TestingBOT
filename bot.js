@@ -192,7 +192,9 @@ message.channel.send("@everyone Free For All")
 
 if(command === 'counter' || command === 'c') { //   bot-spamTB                                 bot-spamTESTserver                              TB1-WAR-CHAT                                   TB2-WAR-CHAT                                    TB3-WAR-CHAT                                 General-TESTSERVER                       EMOJITESTSERVER-testing room
 if (message.channel.id === '673261006918516741' || message.channel.id === '666305824813219870' || message.channel.id === '560885677475102740' || message.channel.id === '562757850477101063' || message.channel.id === '643140704624967694' || message.channel.id === '661221254958940220' || message.channel.id === '699707863148265512') {
-if(args[0] == "aim" && args[1] === "stats"){
+if(args[0] == "team" || args[0] == "list" || args[0] == "team" && args[1] == "list" || args[0] == "teamlist"){
+	message.channel.send("**Available Teams:** \naim | asgardians | bkt | brawlers | captainmarvel | defenders | gotg | hydra | kreeronan | marauders | shield | s6 | supernatural | symbiote | ultron | wakanda | xmen")
+} else if(args[0] == "aim" && args[1] === "stats"){
 //stats
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -1851,9 +1853,7 @@ setTimeout(function3, 4000);
 } else {
 message.channel.send("Please use a valid team phrase, such as: aim | asgardians | bkt | brawlers | captainmarvel | defenders | gotg | hydra | kreeronan | marauders | shield | s6 | supernatural | symbiote | ultron | wakanda").catch(console.error);	
 }
-if(args[0] == "team" || args[0] == "list" || args[0] == "team" && args[1] == "list" || args[0] == "teamlist"){
-	message.channel.send("**Available Teams:** \naim | asgardians | bkt | brawlers | captainmarvel | defenders | gotg | hydra | kreeronan | marauders | shield | s6 | supernatural | symbiote | ultron | wakanda | xmen")
-}
+
 } else {
 message.channel.send("Sorry, this doesn't work here. Head to <#673261006918516741> or your war chat channel and try again.").catch(console.error);
 }
