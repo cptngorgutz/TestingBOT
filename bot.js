@@ -271,7 +271,7 @@ function1();
 function2();
 setTimeout(function3, 4000);
 
-} else if(command === 'counter' && args[0] === "aim" && args[1] == "stats"){
+} else if(args[0] === "aim" && args[1] == "stats"){
 //stats
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -1585,7 +1585,25 @@ message.channel.send("Sorry, this doesn't work here. Head to <#67326100691851674
 
 
 }
+if(command === 'counter' && args[0] === "aim" && args[1] == "stats"){
+//stats
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
+    range: "ControlPanel!D1:F",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ' '))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
+    }
+  });
 
+}
 });
 
 
