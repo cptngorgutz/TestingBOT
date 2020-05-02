@@ -240,6 +240,5 @@ message.channel.send(z.toFixed(1) + "%" + var1).catch(console.error);
 }
 
 });
-Make another if statement. if the string is positive store a variable with '+' if negative store '-' and then append that to the string in your message
 
 client.login(process.env.TOKEN);
