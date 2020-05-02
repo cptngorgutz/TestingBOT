@@ -227,7 +227,7 @@ let z = (y - x) / x*100;
 if (z > 0) {
     let var1 = "Positive";
 	message.channel.send(z.toFixed(1) + "%" + " " + var1).catch(console.error);
-} else if (z = 0) {
+} else if (z == 0) {
     let var3 = "Neutral";
 	message.channel.send(z.toFixed(1) + "%" + " " + var3).catch(console.error);
 } else {
