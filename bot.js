@@ -230,6 +230,8 @@ if (z > 0) {
 } else if (z == 0) {
     let var3 = "Neutral";
 	message.channel.send(z.toFixed(1) + "%" + " " + var3).catch(console.error);
+} else if (z == "Infinity"){
+	message.channel.send("To Infinity, and beyond!").catch(console.error);
 } else {
 	let var2 = "Negative";
 	message.channel.send(z.toFixed(1) + "%" + " " + var2).catch(console.error);
