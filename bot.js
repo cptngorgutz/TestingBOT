@@ -579,7 +579,7 @@ function1();
 function2();
 setTimeout(function3, 4000);
 
-} else if(args[0] == "captainmarvel" && args[1] === "stats"){
+} else if(args[0] == "captainmarvel" || args[0] == "cm" && args[1] === "stats"){
 //stats
 	  sheets.spreadsheets.values.get({
     spreadsheetId: '1NrS1Uw3cg_UkYul5bYHiYAjKeopBU_aYXh2NRuLIXGw',
@@ -596,7 +596,7 @@ setTimeout(function3, 4000);
       console.log('No data found.');
     }
   });
-} else if(args[0] == "captainmarvel"){
+} else if(args[0] == "captainmarvel" || args[0] == "cm"){
 const cptnmarvelcounterimage = client.channels.get('700487765518843938')
 cptnmarvelcounterimage.fetchMessages({ limit: 1 }).then(messages => {
 const countercptnmarvel = messages.first().attachments.first()
@@ -626,7 +626,7 @@ function functioncptnmarvelstats() {
   });
 }
 setTimeout(functioncptnmarvelstats, 3000);
-} else if(args[0] == "captainmarvel+"){
+} else if(args[0] == "captainmarvel+" || args[0] == "cm+"){
 const cptnmarvelcounterimage2 = client.channels.get('700487765518843938')
 
 const channelToCheckText = client.channels.get('700487792999792700')
