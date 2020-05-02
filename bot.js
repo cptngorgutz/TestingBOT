@@ -224,8 +224,7 @@ let y = args[1];
 let z = (y - x) / x*100;
 // Divide x by y to get the product
 //let z = x / y;
-function function1() {
-let z = (y - x) / x*100;
+function z2(){
 if (z > 0) {
     message.channel.send("Positive");
 }
@@ -234,7 +233,7 @@ if (z < 0) {
 }
 }
 
-message.channel.send(z.toFixed(1) + "%" + function1);
+message.channel.send(z.toFixed(1) + "%").then(() => message.channel.send(z2)).catch(console.error);
 }
 
 });
