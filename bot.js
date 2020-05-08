@@ -18,7 +18,7 @@ const sheetName = "pvp";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!H4:H4`
+    range: `${sheetName}!H4`
   },
   (err, res) => {
     if (err) {
@@ -53,7 +53,7 @@ sheets.spreadsheets.values.get(
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!F6:F6`
+    range: `${sheetName}!F6`
   },
   (err, res) => {
     if (err) {
