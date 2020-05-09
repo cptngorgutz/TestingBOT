@@ -130,6 +130,52 @@ r.remove(r.users.filter(u => u === message.author).first());
 
 
 }
+
+if(command === 'helpme'){
+	
+let pages = ['Page one!', 'Second page', 'Third page'];
+let page = 1; 
+
+    const embed = new Discord.RichEmbed() // Define a new embed
+    .setColor(0xffffff) // Set the color
+    .setFooter(`Page ${page} of ${pages.length}`)
+    .setDescription(pages[page-1])
+
+    message.channel.send(embed).then(message => {
+
+    message.react('⬅').then( r => {
+        message.react('➡')
+
+        // Filters
+        const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
+        const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
+
+        const backwards = message.createReactionCollector(backwardsFilter, {timer: 6000});
+        const forwards = message.createReactionCollector(forwardsFilter, {timer: 6000});
+
+        backwards.on('collect', r => {
+            if (page === 1) return;
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            message.edit(embed)
+			r.remove(r.users.filter(u => u === message.author).first());
+        })
+
+        forwards.on('collect', r => {
+            if (page === pages.length) return;
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length}`);
+            message.edit(embed)
+			r.remove(r.users.filter(u => u === message.author).first());
+        })
+    })
+})
+	
+}
+
+
 });
 
 
