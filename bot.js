@@ -100,8 +100,8 @@ let page = 1;
         })
 		
 		forwards.on('end', r => {
-		r.remove;
-		});
+		msg.reactions.removeAll()
+		})
 		
     })
 })
