@@ -64,6 +64,11 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if(command === 'help'){
+const emojiNext = '➡'; // unicode emoji are identified by the emoji itself
+const emojiPrevious = '⬅';
+const reactionArrow = [emojiPrevious, emojiNext];
+const time = 60000; // time limit: 1 min
+
 const first = () => new Discord.RichEmbed()
       .setAuthor('TOTO', "https://i.imgur.com/ezC66kZ.png")
       .setColor('#AAA')
@@ -133,7 +138,7 @@ function sendList(channel, getList){
     .then(msgReaction => createCollectorMessage(msgReaction.message, getList));
 }
 
-	
+
 }
 });
 
