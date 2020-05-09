@@ -60,6 +60,7 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if(command === 'help'){
+
 let pages = ['General Commands Page 1', 'General Command Page 2', 'General Commands Page 3']; 
 let page = 1; 
 
@@ -67,34 +68,33 @@ let embed01 = new Discord.RichEmbed()
 .setColor("#15f153")
 .setDescription(pages[page-1])
 .setFooter(`Page ${page} of ${pages.length}`)
-.addField("field p1")
-.addField("field p1")
-.addField("field p1")
-.addField("field p1")
+.addField("field 1")
+.addField("field 2")
+.addField("!field 3")
+.addField("field 4")
 
 let embed02 = new Discord.RichEmbed()
 .setColor("#15f153")
-.setDescription(pages[page-2])
+.setDescription(pages[page-1])
 .setFooter(`Page ${page} of ${pages.length}`)
-.addField("field p2")
-.addField("field p2")
-.addField("field p2")
-.addField("field p2")
+.addField("field 1")
+.addField("field 2")
+.addField("!field 3")
+.addField("field 4")
 
 let embed03 = new Discord.RichEmbed()
 .setColor("#15f153")
-.setDescription(pages[page-3])
+.setDescription(pages[page-1])
 .setFooter(`Page ${page} of ${pages.length}`)
-.addField("field p3")
-.addField("field p3")
-.addField("field p3")
-.addField("field p3")
+.addField("field 1")
+.addField("field 2")
+.addField("!field 3")
+.addField("field 4")
  
 message.channel.send(embed01).then(message => {
 
 message.react('⬅').then( r => {
 message.react('➡')
-
 
 // Filters
 const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
@@ -104,26 +104,23 @@ const backwards = message.createReactionCollector(backwardsFilter, {timer: 1000}
 const forwards = message.createReactionCollector(forwardsFilter, {timer: 1000});
  
 backwards.on('collect', r => {
-if (page === 1) return;
-page--;
-embed.setDescription(pages[page-1]);
-embed.setFooter(`Page ${page} of ${pages.length}`);
-message.edit(embed)
+if (page === 4) {
+page--
+embed03.setDescription(pages[page-1])
+embed03.setFooter(`Page ${page} of ${pages.length}`)
+message.edit(embed03)
+}
+})
+})
+})
 
-r.remove(r.users.filter(u => u === message.author).first());
-})
 
-forwards.on('collect', r => {
-if (page === pages.length) return;
-page++;
-embed.setDescription(pages[page-1]);
-embed.setFooter(`Page ${page} of ${pages.length}`);
-message.edit(embed)
 
-r.remove(r.users.filter(u => u === message.author).first());
-})
-})
-})
+
+
+
+
+
 }
 });
 
