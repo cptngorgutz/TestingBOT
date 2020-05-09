@@ -111,9 +111,9 @@ const forwards = message.createReactionCollector(forwardsFilter, {timer: 1000});
 backwards.on('collect', r => {
 if (page === 4) {
 page--;
-embed03.setDescription(pages[page-1])
-embed03.setFooter(`Page ${page} of ${pages.length}`)
-message.edit(embed03)
+embed.setDescription(pages[page-1])
+embed.setFooter(`Page ${page} of ${pages.length}`)
+message.edit(embed)
 }
 })
 
