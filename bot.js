@@ -63,7 +63,7 @@ if(command === 'help'){
 let pages = ['General Commands Page 1', 'General Command Page 2', 'General Commands Page 3']; 
 let page = 1; 
 
-let embed01 = new Discord.RichEmbed()
+let embed = new Discord.RichEmbed()
 .setColor("#15f153")
 .setDescription(pages[page-1])
 .setFooter(`Page ${page} of ${pages.length}`)
@@ -90,7 +90,7 @@ let embed03 = new Discord.RichEmbed()
 .addField("field p3")
 .addField("field p3")
  
-message.channel.send(embed01).then(message => {
+message.channel.send(embed).then(message => {
 
 message.react('⬅').then( r => {
 message.react('➡')
