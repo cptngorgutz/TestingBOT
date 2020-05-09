@@ -10,6 +10,10 @@ const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
 const auth = require("./credentials-load");
 const sheets = google.sheets({ version: "v4", auth });
+const emojiNext = '➡'; // unicode emoji are identified by the emoji itself
+const emojiPrevious = '⬅';
+const reactionArrow = [emojiPrevious, emojiNext];
+const time = 60000; // time limit: 1 min
 
 if(command === 'pvp') {
 if (args[0] === "gadd" && args[2] === "bob"){
@@ -60,11 +64,6 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if(command === 'help'){
-const emojiNext = '➡'; // unicode emoji are identified by the emoji itself
-const emojiPrevious = '⬅';
-const reactionArrow = [emojiPrevious, emojiNext];
-const time = 60000; // time limit: 1 min
-
 const first = () => new Discord.RichEmbed()
       .setAuthor('TOTO', "https://i.imgur.com/ezC66kZ.png")
       .setColor('#AAA')
