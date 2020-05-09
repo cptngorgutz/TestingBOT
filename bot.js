@@ -93,6 +93,7 @@ message.channel.send(embed01).then(msg => {
 msg.react('⬅').then( r => {
 msg.react('➡')
 
+})}
 // Filters
 const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
 const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
@@ -106,11 +107,8 @@ page--
 embed03.setDescription(pages[page-1])
 embed03.setFooter(`Page ${page} of ${pages.length}`)
 msg.edit(embed03)
-}	
-
+}
 })
-}
-}
 
 }
 });
