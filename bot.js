@@ -107,11 +107,10 @@ embed03.setDescription(pages[page-1])
 embed03.setFooter(`Page ${page} of ${pages.length}`)
 msg.edit(embed03)
 }	
-	
-	
-	
-	
-	
+
+})
+}
+}
 
 }
 });
