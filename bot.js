@@ -100,7 +100,7 @@ let page = 1;
         })
 		
 		forwards.on('end', r => {
-		message.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
+		message.clearReactions(embed).catch(error => console.error('Failed to clear reactions: ', error));
 		})
 		
     })
