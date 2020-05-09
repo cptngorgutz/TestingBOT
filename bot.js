@@ -105,7 +105,7 @@ const forwards = message.createReactionCollector(forwardsFilter, {timer: 1000});
  
 backwards.on('collect', r => {
 if (page === 4) {
-page--
+page--;
 embed03.setDescription(pages[page-1])
 embed03.setFooter(`Page ${page} of ${pages.length}`)
 message.edit(embed03)
@@ -117,7 +117,7 @@ if (page === pages.length) return;
 page++;
 embed.setDescription(pages[page-1]);
 embed.setFooter(`Page ${page} of ${pages.length}`);
-msg.edit(embed)
+message.edit(embed)
 
 r.remove(r.users.filter(u => u === message.author).first());
 })
