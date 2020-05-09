@@ -60,11 +60,13 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if(command === 'help'){
+let pages = ['General Commands Page 1', 'General Command Page 2', 'General Commands Page 3']; 
+let page = 1; 
 
 let embed01 = new Discord.RichEmbed()
 .setColor("#15f153")
-.setDescription("page-1")
-.setFooter("page-1/3")
+.setDescription(pages[page-1])
+.setFooter(`Page ${page} of ${pages.length}`)
 .addField("field p1")
 .addField("field p1")
 .addField("field p1")
@@ -72,8 +74,8 @@ let embed01 = new Discord.RichEmbed()
 
 let embed02 = new Discord.RichEmbed()
 .setColor("#15f153")
-.setDescription("page-2")
-.setFooter("page-2/3")
+.setDescription(pages[page-2])
+.setFooter(`Page ${page} of ${pages.length}`)
 .addField("field p2")
 .addField("field p2")
 .addField("field p2")
@@ -81,8 +83,8 @@ let embed02 = new Discord.RichEmbed()
 
 let embed03 = new Discord.RichEmbed()
 .setColor("#15f153")
-.setDescription("page-3")
-.setFooter("page-3/3")
+.setDescription(pages[page-3])
+.setFooter(`Page ${page} of ${pages.length}`)
 .addField("field p3")
 .addField("field p3")
 .addField("field p3")
