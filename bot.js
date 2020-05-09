@@ -88,25 +88,25 @@ let embed03 = new Discord.RichEmbed()
 .addField("field p3")
 .addField("field p3")
  
-message.channel.send(embed01).then(msg => {
+message.channel.send(embed01).then(message => {
 
-msg.react('⬅').then( r => {
-msg.react('➡')
+message.react('⬅').then( r => {
+message.react('➡')
 
 })})
 // Filters
 const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
 const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
 
-const backwards = msg.createReactionCollector(backwardsFilter, {timer: 1000});
-const forwards = msg.createReactionCollector(forwardsFilter, {timer: 1000});
+const backwards = message.createReactionCollector(backwardsFilter, {timer: 1000});
+const forwards = message.createReactionCollector(forwardsFilter, {timer: 1000});
  
 backwards.on('collect', r => {
 if (page === 4) {
 page--
 embed03.setDescription(pages[page-1])
 embed03.setFooter(`Page ${page} of ${pages.length}`)
-msg.edit(embed03)
+message.edit(embed03)
 }
 })
 
