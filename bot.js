@@ -102,13 +102,15 @@ function onCollect(emoji, message, i, getList) {
   return i;
 }
 
-if (emojiPrevious === emojiPrevious) {
+if (reaction.emoji.name === emojiPrevious) {
+	let i = 0;
     const embed = getList(i-1);
     if (embed !== undefined) {
       message.edit(embed);
       i--;
     }
-  } else if (emojiNext === emojiNext) {
+  } else if (reaction.emoji.name === emojiNext) {
+	let i = 0;
     const embed = getList(i+1);
     if (embed !== undefined) {
       message.edit(embed);
