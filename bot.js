@@ -61,7 +61,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 if(command === 'helpme'){
 	
-let pages = ['Page one! \nthis is a test\n this is a second line test\n this is a third line test', 'Page two!', 'Page three!'];
+let pages = ['**Page one!** \nThis is a first line test\n This is a second line test\n This is a third line test', '**Page two!** \nThis is a test\n This is a second test\n This is a third test', '**Page three!** \nTest1\nTest2\nTest3'];
 let page = 1; 
 
     const embed = new Discord.RichEmbed() // Define a new embed
