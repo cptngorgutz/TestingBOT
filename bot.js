@@ -91,6 +91,11 @@ let embed03 = new Discord.RichEmbed()
 .addField("!field 3")
 .addField("field 4")
  
+ let embed = new Discord.RichEmbed()
+.setColor("#15f153")
+.setFooter(`Page ${page} of ${pages.length}`)
+.setDescription(pages[page-1])
+ 
 message.channel.send(embed01).then(message => {
 
 message.react('⬅').then( r => {
