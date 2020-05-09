@@ -71,8 +71,8 @@ let page = 1;
 
     message.channel.send(embed).then(msg => {
 
-    msg.react('⬅').then( r => {
-    msg.react('➡')
+    msg.react('⬅').remove(60000).then( r => {
+    msg.react('➡').remove(61000);
 	
         // Filters
         const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
