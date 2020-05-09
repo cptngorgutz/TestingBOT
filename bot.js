@@ -10,10 +10,6 @@ const command = args.shift().toLowerCase();
 const { google } = require("googleapis");
 const auth = require("./credentials-load");
 const sheets = google.sheets({ version: "v4", auth });
-const emojiNext = '➡'; // unicode emoji are identified by the emoji itself
-const emojiPrevious = '⬅';
-const reactionArrow = [emojiPrevious, emojiNext];
-const time = 60000; // time limit: 1 min
 
 if(command === 'pvp') {
 if (args[0] === "gadd" && args[2] === "bob"){
@@ -106,13 +102,13 @@ function onCollect(emoji, message, i, getList) {
   return i;
 }
 
-if (emoji.name === emojiPrevious) {
+if (emojiPrevious === emojiPrevious) {
     const embed = getList(i-1);
     if (embed !== undefined) {
       message.edit(embed);
       i--;
     }
-  } else if (emoji.name === emojiNext) {
+  } else if (emojiNext === emojiNext) {
     const embed = getList(i+1);
     if (embed !== undefined) {
       message.edit(embed);
