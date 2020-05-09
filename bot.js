@@ -84,7 +84,7 @@ let page = 1;
         backwards.on('collect', r => {
             if (page === 1) return;
             page--;
-            embed.setDescription(pages[page-1]);
+            embed.setDescription(pages[page-1] + "THIS IS A TEST");
             embed.setFooter(`Page ${page} of ${pages.length}`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
