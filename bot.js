@@ -72,14 +72,14 @@ let page = 1;
     message.channel.send(embed).then(msg => {
 
     msg.react('⬅').then( r => {
-        msg.react('➡')
-
+    msg.react('➡')
+	
         // Filters
         const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
         const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
 
-        const backwards = msg.createReactionCollector(backwardsFilter, {timer: 6000});
-        const forwards = msg.createReactionCollector(forwardsFilter, {timer: 6000});
+        const backwards = msg.createReactionCollector(backwardsFilter, {timer: 60000});
+        const forwards = msg.createReactionCollector(forwardsFilter, {timer: 60000});
 
         backwards.on('collect', r => {
             if (page === 1) return;
@@ -88,7 +88,6 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length}`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-			r.remove(60000)
         })
 
         forwards.on('collect', r => {
@@ -98,7 +97,6 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length}`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-			r.remove(60000)
         })
     })
 })
