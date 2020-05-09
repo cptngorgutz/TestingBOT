@@ -91,10 +91,6 @@ let embed03 = new Discord.RichEmbed()
 .addField("!field 3")
 .addField("field 4")
  
- let embed = new Discord.RichEmbed()
-.setColor("#15f153")
-.setFooter(`Page ${page} of ${pages.length}`)
-.setDescription(pages[page-1])
  
 message.channel.send(embed01).then(message => {
 
@@ -111,9 +107,9 @@ const forwards = message.createReactionCollector(forwardsFilter, {timer: 1000});
 backwards.on('collect', r => {
 if (page === 4) {
 page--;
-embed.setDescription(pages[page-1])
-embed.setFooter(`Page ${page} of ${pages.length}`)
-message.edit(embed)
+embed03.setDescription(pages[page-1])
+embed03.setFooter(`Page ${page} of ${pages.length}`)
+message.edit(embed03)
 }
 })
 
