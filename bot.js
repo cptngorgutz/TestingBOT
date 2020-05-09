@@ -87,7 +87,7 @@ let page = 1;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length}`);
             msg.edit(embed)
-			r.remove(r.users.filter(u => u === message.author).first());
+			r.remove(r.users.filter(u => !u.bot).first());
         })
 
         forwards.on('collect', r => {
@@ -96,7 +96,7 @@ let page = 1;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length}`);
             msg.edit(embed)
-			r.remove(r.users.filter(u => u === message.author).first());
+			r.remove(r.users.filter(u => !u.bot).first());
         })
     })
 })
