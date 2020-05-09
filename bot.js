@@ -118,11 +118,11 @@ message.edit(embed)
 })
 
 forwards.on('collect', r => {
-if (page === pages.length) return;
+if (page === 2) return;
 page++;
-embed.setDescription(pages[page-1]);
-embed.setFooter(`Page ${page} of ${pages.length}`);
-message.edit(embed)
+embed02.setDescription(pages[page-1]);
+embed02.setFooter(`Page ${page} of ${pages.length}`);
+message.edit(embed02)
 
 r.remove(r.users.filter(u => u === message.author).first());
 })
