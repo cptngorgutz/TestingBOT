@@ -60,82 +60,58 @@ const exampleEmbed = new Discord.RichEmbed()
 }
 
 if(command === 'help'){
-const emojiNext = '➡'; // unicode emoji are identified by the emoji itself
-const emojiPrevious = '⬅';
-const reactionArrow = [emojiPrevious, emojiNext];
-const time = 60000; // time limit: 1 min
 
-const first = () => new Discord.RichEmbed()
-      .setAuthor('TOTO', "https://i.imgur.com/ezC66kZ.png")
-      .setColor('#AAA')
-      .setTitle('First')
-      .setDescription('First');
+let embed01 = new Discord.RichEmbed()
+.setColor("#15f153")
+.setDescription(pages[page-1])
+.setFooter(`Page ${page} of ${pages.length}`)
+.addField("field p1")
+.addField("field p1")
+.addField("field p1")
+.addField("field p1")
 
-const second = () => new Discord.RichEmbed()
-      .setAuthor('TOTO', "https://i.imgur.com/ezC66kZ.png")
-      .setColor('#548')
-      .setTitle('Second')
-      .setDescription('Second');
+let embed02 = new Discord.RichEmbed()
+.setColor("#15f153")
+.setDescription(pages[page-1])
+.setFooter(`Page ${page} of ${pages.length}`)
+.addField("field p2")
+.addField("field p2")
+.addField("field p2")
+.addField("field p2")
 
-const third = () => new Discord.RichEmbed()
-      .setAuthor('TOTO', "https://i.imgur.com/ezC66kZ.png")
-      .setColor('#35D')
-      .setTitle('Third')
-      .setDescription('Third');
+let embed03 = new Discord.RichEmbed()
+.setColor("#15f153")
+.setDescription(pages[page-1])
+.setFooter(`Page ${page} of ${pages.length}`)
+.addField("field p3")
+.addField("field p3")
+.addField("field p3")
+.addField("field p3")
+ 
+message.channel.send(embed01).then(msg => {
 
-const list = [first, second, third];
+msg.react('⬅').then( r => {
+msg.react('➡')
 
-function getList(i) {
-return list[i]().setTimestamp().setFooter(`Page ${i+1}`); // i+1 because we start at 0
-}
+// Filters
+const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
+const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
 
-function filter(reaction, user){
-  return (!user.bot) && (reactionArrow.includes(reaction.emoji.name)); // check if the emoji is inside the list of emojis, and if the user is not a bot
-}
-
-function onCollect(emoji, message, i, getList) {
-  if ((emoji.name === emojiPrevious) && (i > 0)) {
-    message.edit(getList(--i));
-  } else if ((emoji.name === emojiNext) && (i < list.length-1)) {
-    message.edit(getList(++i));
-  }
-  return i;
-}
-
-if (emojiPrevious === emojiPrevious) {
-	let i = 0;
-    const embed = getList(i-1);
-    if (embed !== undefined) {
-      message.edit(embed);
-      i--;
-    }
-  } else if (emojiNext === emojiNext) {
-	let i = 0;
-    const embed = getList(i+1);
-    if (embed !== undefined) {
-      message.edit(embed);
-      i++;
-    }
-  }
-  return i;
-  
-  
-  function createCollectorMessage(message, getList) {
-  let i = 0;
-  const collector = message.createReactionCollector(filter, { time });
-  collector.on('collect', r => {
-    i = onCollect(r.emoji, message, i, getList);
-  });
-  collector.on('end', collected => message.clearReactions());
-}
-
-function sendList(channel, getList){
-  channel.send(getList(0))
-    .then(msg => msg.react(emojiPrevious))
-    .then(msgReaction => msgReaction.message.react(emojiNext))
-    .then(msgReaction => createCollectorMessage(msgReaction.message, getList));
-}
-
+const backwards = msg.createReactionCollector(backwardsFilter, {timer: 1000});
+const forwards = msg.createReactionCollector(forwardsFilter, {timer: 1000});
+ 
+backwards.on('collect', r => {
+if (page === 4) {
+page--
+embed03.setDescription(pages[page-1])
+embed03.setFooter(`Page ${page} of ${pages.length}`)
+msg.edit(embed03)
+}	
+	
+	
+	
+	
+	
 
 }
 });
