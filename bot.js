@@ -61,7 +61,7 @@ const exampleEmbed = new Discord.RichEmbed()
 
 if(command === 'helpme'){
 	
-let pages = ['Page one!-GADD IS A GENIOUS', 'Second page--BOB IS IMPRESSED!', 'Third page--WE ARE BOTH STUNNED!'];
+let pages = ['Page one! \nthis is a test\n this is a second line test\n this is a third line test', 'Page two!', 'Page three!'];
 let page = 1; 
 
     const embed = new Discord.RichEmbed() // Define a new embed
@@ -84,7 +84,7 @@ let page = 1;
         backwards.on('collect', r => {
             if (page === 1) return;
             page--;
-            embed.setDescription(pages[page-1] + "THIS IS A TEST");
+            embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length}`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
