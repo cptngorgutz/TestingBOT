@@ -78,8 +78,8 @@ let page = 1;
         const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
         const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
 
-        const backwards = msg.createReactionCollector(backwardsFilter, {timer: 60000});
-        const forwards = msg.createReactionCollector(forwardsFilter, {timer: 60000});
+        const backwards = msg.createReactionCollector(backwardsFilter, {time: 60000});
+        const forwards = msg.createReactionCollector(forwardsFilter, {time: 60000});
 
         backwards.on('collect', r => {
             if (page === 1) return;
@@ -100,7 +100,7 @@ let page = 1;
         })
 		
 		forwards.on('end', r => {
-		msg.reactions.removeAll(embed).catch(error => console.error('Failed to clear reactions: ', error));
+		msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
 		})
 		
     })
