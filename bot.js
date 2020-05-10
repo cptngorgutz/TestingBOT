@@ -15,7 +15,7 @@ if(command === 'bob') {
 if (args[0] === "stats"){
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
-    range: "bob!A1:B",
+    range: "bob!A6:B6",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
