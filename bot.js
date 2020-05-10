@@ -13,7 +13,7 @@ const sheets = google.sheets({ version: "v4", auth });
 
 if(command === 'bob') {
 if (args[0] === "stats"){
-	let member = "212232190358978560"
+	let bob = "212232190358978560"
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
     range: "bob!A1:C6",
@@ -24,7 +24,7 @@ if (args[0] === "stats"){
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription(rows.join('\n').replace(/,/g, ''))
-	.setThumbnail(member.avatarURL)
+	.setThumbnail(bob.avatarURL)
 	message.channel.send(exampleEmbed); 
     } else {
       console.log('No data found.');
