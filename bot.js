@@ -11,14 +11,14 @@ const { google } = require("googleapis");
 const auth = require("./credentials-load");
 const sheets = google.sheets({ version: "v4", auth });
 
-if(command === 'pvp') {
-if (args[0] === "gadd" && args[2] === "bob"){
+if(command === 'bob') {
+if (args[0] === "stats"){
 const mySpreadSheetId = '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE';
-const sheetName = "pvp";
+const sheetName = "bob";
 sheets.spreadsheets.values.get(
   {
 	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!H4`
+    range: `${sheetName}!A1:B`
   },
   (err, res) => {
     if (err) {
@@ -34,7 +34,7 @@ sheets.spreadsheets.values.get(
     sheets.spreadsheets.values.update(
       {
 		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!H4${i + 1}`,
+        range: `${sheetName}!A1:B${i + 1}`,
         valueInputOption: "USER_ENTERED",
         resource: {
           majorDimension: "ROWS",
@@ -52,10 +52,96 @@ sheets.spreadsheets.values.get(
 );
 const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#26ff00')
-	.setDescription(`__**Result accepted:**__ \Winner: **${args[0]}** **${args[1]}** \n Loser: **${args[2]}** **${args[3]}**`)
+	.setDescription("Attacking" + rows.join('\n').replace(/,/g, ''))
 	message.channel.send(exampleEmbed);
-
 }
+if (args[2] === "gadd"){
+const mySpreadSheetId = '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE';
+const sheetName = "bob";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!C1:D`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let asgardiannumber = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!C1:D${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[asgardiannumber]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#26ff00')
+	.setDescription("Attacking" + rows.join('\n').replace(/,/g, ''))
+	message.channel.send(exampleEmbed);
+}
+if (args[2] === "rain"){
+const mySpreadSheetId = '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE';
+const sheetName = "bob";
+sheets.spreadsheets.values.get(
+  {
+	spreadsheetId: mySpreadSheetId,
+    range: `${sheetName}!E1:F`
+  },
+  (err, res) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const data = res.data.values;
+    let i = 0;
+    for (i = 0; i < data.length; i++) {
+      if (!data[i][0]) break;
+    }
+	let asgardiannumber = args[1];
+    sheets.spreadsheets.values.update(
+      {
+		spreadsheetId: mySpreadSheetId,
+        range: `${sheetName}!E1:F${i + 1}`,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          majorDimension: "ROWS",
+          values: [[asgardiannumber]],
+        }
+      },
+      (err, resp) => {
+        if (err) {
+          console.log("Data Error :", err);
+          reject(err);
+        }
+      }
+    );
+  }
+);
+const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#26ff00')
+	.setDescription("Attacking" + rows.join('\n').replace(/,/g, ''))
+	message.channel.send(exampleEmbed);
+}
+
 
 }
 
