@@ -13,7 +13,7 @@ const sheets = google.sheets({ version: "v4", auth });
 
 if(command === 'bob') {
 if (args[0] === "stats"){
-	let bob = "212232190358978560"
+	let bob = client.users.get("212232190358978560");
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
     range: "bob!A1:C6",
