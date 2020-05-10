@@ -13,136 +13,58 @@ const sheets = google.sheets({ version: "v4", auth });
 
 if(command === 'bob') {
 if (args[0] === "stats"){
-const mySpreadSheetId = '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE';
-const sheetName = "bob";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!A1:B`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
+    range: "bob!A1:B",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ''))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
     }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let asgardiannumber = args[1];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!A1:B${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[asgardiannumber]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#26ff00')
-	.setDescription("Attacking" + rows.join('\n').replace(/,/g, ''))
-	message.channel.send(exampleEmbed);
+  });
 }
 if (args[2] === "gadd"){
-const mySpreadSheetId = '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE';
-const sheetName = "bob";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!C1:D`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
+    range: "bob!C1:D",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ''))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
     }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let asgardiannumber = args[1];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!C1:D${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[asgardiannumber]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#26ff00')
-	.setDescription("Attacking" + rows.join('\n').replace(/,/g, ''))
-	message.channel.send(exampleEmbed);
+  });
 }
 if (args[2] === "rain"){
-const mySpreadSheetId = '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE';
-const sheetName = "bob";
-sheets.spreadsheets.values.get(
-  {
-	spreadsheetId: mySpreadSheetId,
-    range: `${sheetName}!E1:F`
-  },
-  (err, res) => {
-    if (err) {
-      console.error(err);
-      return;
+	sheets.spreadsheets.values.get({
+    spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
+    range: "bob!E1:F",
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const rows = res.data.values;
+    if (rows.length) {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription(rows.join('\n').replace(/,/g, ''))
+	message.channel.send(exampleEmbed); 
+    } else {
+      console.log('No data found.');
     }
-    const data = res.data.values;
-    let i = 0;
-    for (i = 0; i < data.length; i++) {
-      if (!data[i][0]) break;
-    }
-	let asgardiannumber = args[1];
-    sheets.spreadsheets.values.update(
-      {
-		spreadsheetId: mySpreadSheetId,
-        range: `${sheetName}!E1:F${i + 1}`,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          majorDimension: "ROWS",
-          values: [[asgardiannumber]],
-        }
-      },
-      (err, resp) => {
-        if (err) {
-          console.log("Data Error :", err);
-          reject(err);
-        }
-      }
-    );
-  }
-);
-const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#26ff00')
-	.setDescription("Attacking" + rows.join('\n').replace(/,/g, ''))
-	message.channel.send(exampleEmbed);
+  });
+
+
 }
-
-
 }
 
 if(command === 'helpme'){
@@ -194,6 +116,7 @@ let page = 1;
 
 
 }
+
 });
 
 
