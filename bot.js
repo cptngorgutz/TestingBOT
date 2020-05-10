@@ -32,7 +32,7 @@ if (args[0] === "stats"){
 if (args[1] === "gadd"){
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
-    range: "bob!C1:D",
+    range: "bob!C1:D3",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
@@ -49,7 +49,7 @@ if (args[1] === "gadd"){
 if (args[1] === "rain"){
 	sheets.spreadsheets.values.get({
     spreadsheetId: '1mI3JdojX53nstJ85kz80ruXczKNq9-BKo9UQQE9HKQE',
-    range: "bob!E1:F",
+    range: "bob!E1:F3",
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     const rows = res.data.values;
