@@ -71,7 +71,7 @@ if (args[1] === "rain"){
 
 if(command === 'helpme'){
 	
-let pages = ['**Asgardians!** \n<:thor:663750798014021632> THOR! \n<:loki:663750495139266591> LOKI! \n<:hela:663749986290368512> HELA! \n<:heimdall:663750299575517195> HEIMDALL \n<:sif:663750798311948299>  SIF!', '**Page two!** \n', '**Page three!** \n'];
+let pages = [`<:cmd:709397091461496833> __**General Commands**__ \n**❗commands** \n<:BUTTON:709399446126985258> Provides a commands list \n**❗away [reason]** \n<:BUTTON:709399446126985258> Send a message to the captains saying you'll be away \n**❗uniques** \n<:BUTTON:709399446126985258> Sends an infographic of unique gear required for characters \n**❗blitz** \n<:BUTTON:709399446126985258> Send an infographic of current blitz predictions \n**❗event [charactername]** \n<:BUTTON:709399446126985258> Send an infographic of required toons for the event`, '__**General Commands 2**__ \n**❗bug [reason]** \n<:BUTTON:709399446126985258> Send a bug report to admin-logs for something to get fixed on the bot \n**❗request [reason]** \n<:BUTTON:709399446126985258> Send a request to admin-logs for something to be added to the bot \n**❗notifications** \n<:BUTTON:709399446126985258> Join the role to be notified of important announcements \n**❗charactername** \n<:BUTTON:709399446126985258> Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use'];
 let page = 1; 
 
     const embed = new Discord.RichEmbed() // Define a new embed
