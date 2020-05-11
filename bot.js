@@ -88,14 +88,14 @@ let page = 1;
         const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
         const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
 
-        const backwards = msg.createReactionCollector(backwardsFilter, {time: 180000});
-        const forwards = msg.createReactionCollector(forwardsFilter, {time: 180000});
+        const backwards = msg.createReactionCollector(backwardsFilter, {time: 300000});
+        const forwards = msg.createReactionCollector(forwardsFilter, {time: 300000});
 
         backwards.on('collect', r => {
             if (page === 1) return;
             page--;
             embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length}`);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
@@ -104,7 +104,7 @@ let page = 1;
             if (page === pages.length) return;
             page++;
             embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length}`);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
