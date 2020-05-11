@@ -139,8 +139,6 @@ message.channel.send("You submitted correctly.");
 });
 
 
-let x = parseInt(args[0]);
-let y = parseInt(args[2]);
 
 
 
