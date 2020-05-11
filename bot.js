@@ -76,7 +76,7 @@ let page = 1;
 
     const embed = new Discord.RichEmbed() // Define a new embed
     .setColor('#0099ff') // Set the color
-    .setFooter(`Page ${page} of ${pages.length}`)
+    .setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`)
     .setDescription(pages[page-1])
 
     message.channel.send(embed).then(msg => {
