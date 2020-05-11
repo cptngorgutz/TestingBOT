@@ -119,6 +119,14 @@ let page = 1;
 
 }
 
+if(command === 'add' && args[0] === "teamlist"){
+	let Embed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setDescription("Available Teamlist: \n AIM | AIMtron | Asgardians | Avengers | BH | BKT | Brawlers | CM | Coulson | Defenders | F4 | GotG | Hydra | Inhumans | KreeRonan | KreeUltimus | Marauders | Maraudertron | ogBH | PA | S6 | Shield | Supernaturals | Symbiotes | Ultitron | Ultron | Wakanda | Xmen");	
+	message.channel.send(Embed);
+}
+
+
 });
 
 
