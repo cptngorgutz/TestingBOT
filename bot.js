@@ -128,7 +128,7 @@ if(command === 'add' && args[0] === "teamlist"){
 
 if(command === 'test'){
 if (args[0] === "alpha" && args[2] === "bravo"){
-if(isNaN(args[1]) || isNaN(args[3])) {
+if(isNaN(args[0]) || isNaN(args[2])) {
 message.channel.send("Please use [teamname] [number] [teamname] [number]");
 } else if(!isNaN(args[1]) || !isNaN(args[3])) {
 message.channel.send("You submitted correctly.");
