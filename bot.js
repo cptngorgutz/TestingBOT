@@ -127,8 +127,10 @@ if(command === 'add' && args[0] === "teamlist"){
 }
 
 if(command === 'testme'){
+let args[1] = parseInt(args[1]);
+let args[3] = parseInt(args[3]);
 if (args[0] === "aim" && args[2] === "asgard"){
-if(!isNaN(args[1])) {
+if(!isNaN(args[1]) || !isNaN(args[3]) ) {
 message.channel.send("Please add in the following order: [teamname] [number] [teamname] [number]");
 } else {
 message.channel.send("Well done, you submitted correctly.");
