@@ -133,7 +133,7 @@ message.channel.send("Please use [teamname] [number] [teamname] [number]");
 message.channel.send("You submitted correctly.");
 }
 }
-}
+
 
 
 });
