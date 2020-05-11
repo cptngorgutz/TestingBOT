@@ -71,11 +71,11 @@ if (args[1] === "rain"){
 
 if(command === 'helpme'){
 	
-let pages = [`<:cmd:709397091461496833> __**General Commands**__ \n**❗commands** \n<:BUTTON:709399446126985258> Provides a commands list \n**❗away [reason]** \n<:BUTTON:709399446126985258> Send a message to the captains saying you'll be away \n**❗uniques** \n<:BUTTON:709399446126985258> Sends an infographic of unique gear required for characters \n**❗blitz** \n<:BUTTON:709399446126985258> Send an infographic of current blitz predictions \n**❗event [charactername]** \n<:BUTTON:709399446126985258> Send an infographic of required toons for the event`, '__**General Commands 2**__ \n**❗bug [reason]** \n<:BUTTON:709399446126985258> Send a bug report to admin-logs for something to get fixed on the bot \n**❗request [reason]** \n<:BUTTON:709399446126985258> Send a request to admin-logs for something to be added to the bot \n**❗notifications** \n<:BUTTON:709399446126985258> Join the role to be notified of important announcements \n**❗charactername** \n<:BUTTON:709399446126985258> Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use'];
+let pages = [`<:cmd:709397091461496833> __**General Commands**__ \n \n❗commands \n**Provides a commands list** \n❗away [reason] \n**Send a message to the captains saying you'll be away** \n❗uniques \n**Sends an infographic of unique gear required for characters** \n❗blitz \n**Send an infographic of current blitz predictions** \n❗event [charactername] \n**Send an infographic of required toons for the event**`, '<:cmd:709397091461496833> __**General Commands 2**__ \n\n❗bug [reason] \n**Send a bug report to admin-logs for something to get fixed on the bot** \n❗request [reason] \n**Send a request to admin-logs for something to be added to the bot** \n❗notifications \n**Join the role to be notified of important announcements** \n❗charactername \n**Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use**'];
 let page = 1; 
 
     const embed = new Discord.RichEmbed() // Define a new embed
-    .setColor(0xffffff) // Set the color
+    .setColor('#0099ff') // Set the color
     .setFooter(`Page ${page} of ${pages.length}`)
     .setDescription(pages[page-1])
 
