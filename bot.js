@@ -124,7 +124,7 @@ let page = 1;
         collector.on('collect', message => {
 			if (page === 1){
             if (message.content == "1") {
-			message.channel.bulkDelete(2)
+			message.channel.bulkDelete(1)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
 			message.channel.bulkDelete(2)
@@ -149,6 +149,9 @@ let page = 1;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
 		} //this is if on page1
@@ -161,7 +164,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
-			message.channel.bulkDelete(2)
+			message.channel.bulkDelete(1)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
 			message.channel.bulkDelete(2)
@@ -177,6 +180,9 @@ let page = 1;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
 		} //this is if on page2
@@ -197,7 +203,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
-			message.channel.bulkDelete(2)
+			message.channel.bulkDelete(1)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
 			message.channel.bulkDelete(2)
@@ -205,6 +211,9 @@ let page = 1;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
 		} //this is if on page2
@@ -234,6 +243,9 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
+			message.channel.bulkDelete(1)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
