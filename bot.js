@@ -117,23 +117,12 @@ let page = 1;
 		})
 		
 		menu.on('collect', r => {
+		if (page === pages.length) return;
 		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands\n\nOr type `cancel` to cancel")
-		if (page === 1) {
-		if(message.content.startsWith('1')) {
-			//do nothing
-		} else if(message.content.startsWith('2')) {
-		page++;
-		} else if(message.content.startsWith('3')) {
-		page++;
-		page++;
-		page++;
-		} else if(message.content.startsWith('4')) {
-		page++;
-		page++;
-		page++;
-		page++;
-		}}
-		
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
 		
