@@ -136,7 +136,6 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
 		}
-		}
         })
 		
     })
