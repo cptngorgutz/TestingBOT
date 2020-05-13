@@ -122,10 +122,29 @@ let page = 1;
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         console.log(collector)
         collector.on('collect', message => {
-            if (message.content == "See") {
-                message.channel.send("You Want To See Someones Spec OK!");
-            } else if (message.content == "Change") {
-                message.channel.send("You Want To Change Your Spec OK!");
+            if (message.content == "1") {
+            message.channel.send("You are on page 1");
+            } else if (message.content == "2") {
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+            page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+            page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
             }
         })
 		
