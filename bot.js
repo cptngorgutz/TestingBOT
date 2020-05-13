@@ -71,7 +71,7 @@ if (args[1] === "rain"){
 
 if(command === 'commands'){
 	
-let pages = [`<:cmd:709397091461496833> __**General Commands**__ \n \n<:__:709403821901611019>commands \n**Provides a commands list** \n\n<:__:709403821901611019>away [reason] \n**Send a message to the captains saying you'll be away** \n\n<:__:709403821901611019>uniques \n**Sends an infographic of unique gear required for characters** \n\n<:__:709403821901611019>blitz \n**Send an infographic of current blitz predictions** \n\n<:__:709403821901611019>event [charactername] \n**Send an infographic of required toons for the event**`, '<:cmd:709397091461496833> __**General Commands 2**__ \n\n<:__:709403821901611019>bug [reason] \n**Send a bug report to admin-logs for something to get fixed on the bot** \n\n<:__:709403821901611019>request [reason] \n**Send a request to admin-logs for something to be added to the bot** \n\n<:__:709403821901611019>notifications \n**Join the role to be notified of important announcements** \n\n<:__:709403821901611019>charactername \n**Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use**', '<:cmd:709397091461496833> __**War Commands**__ \n \n', '<:cmd:709397091461496833> __**PVP Commands**__ \n \n'];
+let pages = [`<:cmd:709397091461496833> __**Commands Menu**__ \n \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- War commands 2\nPage 5 - PVP`,`<:cmd:709397091461496833> __**General Commands**__ \n \n<:__:709403821901611019>commands \n**Provides a commands list** \n\n<:__:709403821901611019>away [reason] \n**Send a message to the captains saying you'll be away** \n\n<:__:709403821901611019>uniques \n**Sends an infographic of unique gear required for characters** \n\n<:__:709403821901611019>blitz \n**Send an infographic of current blitz predictions**\n(ex. !blitz / !blitz2) \n\n<:__:709403821901611019>event [charactername] \n**Send an infographic of required toons for the event**\n(ex. !ultron)`, '<:cmd:709397091461496833> __**General Commands 2**__ \n\n<:__:709403821901611019>bug [reason] \n**Send a bug report to admin-logs for something to get fixed on the bot** \n\n<:__:709403821901611019>request [reason] \n**Send a request to admin-logs for something to be added to the bot** \n\n<:__:709403821901611019>notifications \n**Join the role to be notified of important announcements** \n\n<:__:709403821901611019>charactername \n**Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use**', `<:cmd:709397091461496833> __**War Counters**__ \n \n<:__:709403821901611019>counter [teamname]  \n\n**Sends an image of the recommended teams countering your requested team**\n(ex. !counter aim -> Counter graphic + stats) \n\n<:__:709403821901611019>counter [teamname]+ \n**Sends a counter graphic + stats + guide(if available)\n(ex. !counter aim+** \n\n<:__:709403821901611019>counter [teamname] stats \n**Sends ONLY the war stats of the chosen team**`, '<:cmd:709397091461496833> __**War - Adding Stats**__ \n\n<:__:709403821901611019>add [offenseteamname] [number] [defenseteamname] [number] \n**Adds successful war match to the database. Offense -> Defense** \n(Number rounded to nearest thousand, ex. !add aim 200 wakanda 285) \n\n<:__:709403821901611019>add teamlist \n**Shows currently available teams to add to the database** \n\n<:__:709403821901611019>% [offense] [defense]\n**Calculates the % between two numbers off -> def** \n(ex. [!% 200 285] = 42.5% punch up)', '<:cmd:709397091461496833> __**PVP Commands**__ \n \n'];
 let page = 1; 
 
     const embed = new Discord.RichEmbed() // Define a new embed
@@ -117,7 +117,7 @@ let page = 1;
 		})
 		
 		menu.on('collect', r => {
-		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands\n\nOr type `cancel` to cancel");
+		message.channel.send("**Please type a page number** \nPage 1 - Commands Menu\nPage 2 - General Commands\nPage 3 - General commands 2\nPage 4 - War Commands\nPage 5 - War commands 2\nPage 6 - PVP\n\nOr type `cancel` to cancel");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         //console.log(collector)
         collector.on('collect', message => {
@@ -149,7 +149,28 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
+            } else if (message.content == "5") {
+			message.channel.bulkDelete(1)
+            page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+			message.channel.bulkDelete(1)
+            page++;
+			page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            }else if (message.content == "cancel") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
@@ -175,6 +196,25 @@ let page = 1;
             } else if (message.content == "4") {
 			message.channel.bulkDelete(1)
             page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+			message.channel.bulkDelete(1)
+            page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+			message.channel.bulkDelete(1)
+            page++;
+			page++;
+			page++;
 			page++;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
@@ -207,6 +247,23 @@ let page = 1;
             } else if (message.content == "4") {
 			message.channel.bulkDelete(1)
             page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+			message.channel.bulkDelete(2)
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+			message.channel.bulkDelete(2)
+			page++;
+			page++;
+			page++;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
@@ -244,12 +301,69 @@ let page = 1;
             } else if (message.content == "4") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+			message.channel.bulkDelete(2)
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+			message.channel.bulkDelete(2)
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "cancel") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
 		} //this is if on page2
-		
+		if (page === 5){
+            if (message.content == "1") {
+            message.channel.bulkDelete(2)
+            page--;
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "2") {
+			message.channel.bulkDelete(2)
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+			message.channel.bulkDelete(2)
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+			message.channel.bulkDelete(2)
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+			message.channel.bulkDelete(2)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			message.channel.bulkDelete(2)
+			r.remove(r.users.filter(u => !u.bot).first());
+            }
+		} //this is if on page2
 		
 		
 		
