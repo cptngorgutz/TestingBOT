@@ -121,9 +121,8 @@ let page = 1;
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         //console.log(collector)
         collector.on('collect', message => {
-			if (page === 1){
             if (message.content == "1") {
-			message.channel.bulkDelete(2)
+			if (page === 1) return;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
 			message.channel.bulkDelete(2)
@@ -184,7 +183,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
-			message.channel.bulkDelete(2)
+			if (page === 2) return;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
 			message.channel.bulkDelete(2)
@@ -242,7 +241,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
-			message.channel.bulkDelete(2)
+			if (page === 3) return;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
             page++;
@@ -298,7 +297,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
-			message.channel.bulkDelete(2)
+			if (page === 4) return;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "5") {
 			message.channel.bulkDelete(2)
@@ -356,7 +355,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "5") {
-			message.channel.bulkDelete(2)
+			if (page === 5) return;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "6") {
 			message.channel.bulkDelete(2)
@@ -417,7 +416,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "6") {
-			message.channel.bulkDelete(2)
+			if (page === 6) return;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "cancel") {
 			message.channel.bulkDelete(2)
