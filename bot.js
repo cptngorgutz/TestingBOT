@@ -117,7 +117,6 @@ let page = 1;
 		})
 		
 		menu.on('collect', r => {
-		if (page === pages.length) return;
 		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands\n\nOr type `cancel` to cancel");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         //console.log(collector)
@@ -157,7 +156,7 @@ let page = 1;
 		} //this is if on page1
 		if (page === 2){
             if (message.content == "1") {
-            message.channel.bulkDelete(1)
+            message.channel.bulkDelete(2)
             page--;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
