@@ -117,6 +117,7 @@ let page = 1;
 		})
 		
 		menu.on('collect', r => {
+		let page = 1; 
 		if (page === pages.length) return;
 		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands\n\nOr type `cancel` to cancel")
         if (page === 1) { 
