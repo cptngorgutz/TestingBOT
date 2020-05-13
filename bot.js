@@ -117,7 +117,7 @@ let page = 1;
 		})
 		
 		menu.on('collect', r => {
-        message.author.send("See or Change?");
+        message.channel.send("p1menu \np2general commands");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
 		if (page === 1){
         collector.on('collect', message => {
@@ -128,6 +128,19 @@ let page = 1;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            }
+        })
+	}
+		if (page === 2){
+        collector.on('collect', message => {
+            if (message.content == "1") {
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+            r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "2") {
 			r.remove(r.users.filter(u => !u.bot).first());
             }
         })
