@@ -125,7 +125,6 @@ let page = 1;
 			if (page === 1){
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
-            message.channel.send("You are already on page 1");
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
 			message.channel.bulkDelete(2)
@@ -163,7 +162,6 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
 			message.channel.bulkDelete(2)
-			message.channel.send("You are already on page 2");
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
 			message.channel.bulkDelete(2)
@@ -200,7 +198,6 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
 			message.channel.bulkDelete(2)
-			message.channel.send("You are already on page 2");
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
 			message.channel.bulkDelete(2)
@@ -238,7 +235,6 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
 			message.channel.bulkDelete(2)
-			message.channel.send("You are already on page 4");
 			r.remove(r.users.filter(u => !u.bot).first());
             }
 		} //this is if on page2
