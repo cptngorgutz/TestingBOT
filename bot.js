@@ -119,30 +119,19 @@ let page = 1;
 		menu.on('collect', r => {
 		if (page === pages.length) return;
 		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands\n\nOr type `cancel` to cancel");
-		const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+        const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         console.log(collector)
         collector.on('collect', message => {
-            if (message.content == "1") {
-            console.log("do nothing");
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-            page++;
-			msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-            page++;
-			page++;
-			msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-            page++;
-			page++;
-			page++;
-			msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
+            if (message.content == "See") {
+                message.channel.send("You Want To See Someones Spec OK!");
+            } else if (message.content == "Change") {
+                message.channel.send("You Want To Change Your Spec OK!");
             }
         })
-        })
+		
+		})
+		
+		
 		
     })
 })
