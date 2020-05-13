@@ -121,6 +121,7 @@ let page = 1;
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         //console.log(collector)
         collector.on('collect', message => {
+			if (page === 1){
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
