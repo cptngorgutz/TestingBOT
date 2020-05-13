@@ -124,18 +124,22 @@ let page = 1;
         collector.on('collect', message => {
             if (message.content == "1") {
             console.log("do nothing");
+			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
             page++;
 			msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
             page++;
 			page++;
 			msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
             page++;
 			page++;
 			page++;
 			msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
             }
         })
         })
