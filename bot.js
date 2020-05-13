@@ -187,7 +187,7 @@ let page = 1;
 		} //this is if on page2
 		if (page === 3){
             if (message.content == "1") {
-            message.channel.bulkDelete(1)
+            message.channel.bulkDelete(2)
             page--;
 			page--;
             embed.setDescription(pages[page-1]);
@@ -195,7 +195,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
-			message.channel.bulkDelete(1)
+			message.channel.bulkDelete(2)
 			page--;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
@@ -218,7 +218,7 @@ let page = 1;
 		} //this is if on page2
 		if (page === 4){
             if (message.content == "1") {
-            message.channel.bulkDelete(1)
+            message.channel.bulkDelete(2)
             page--;
 			page--;
 			page--;
@@ -227,7 +227,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
-			message.channel.bulkDelete(1)
+			message.channel.bulkDelete(2)
 			page--;
 			page--;
             embed.setDescription(pages[page-1]);
@@ -235,7 +235,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "3") {
-			message.channel.bulkDelete(1)
+			message.channel.bulkDelete(2)
 			page--;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
