@@ -119,6 +119,12 @@ let page = 1;
 		menu.on('collect', r => {
             if (page === pages.length) return;
 		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands")
+		if message.content.startsWith("1"){
+		page-----;
+		} else if message.content.startsWith("4"){
+		page+++++;
+		}
+		
 			r.remove(r.users.filter(u => !u.bot).first());
         })
 		
