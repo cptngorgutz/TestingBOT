@@ -122,6 +122,7 @@ let page = 1;
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         //console.log(collector)
         collector.on('collect', message => {
+			if (page === 1){
             if (message.content == "1") {
             message.channel.send("You are already on page 1");
             } else if (message.content == "2") {
@@ -149,6 +150,7 @@ let page = 1;
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
+		} //this is if on page1
         })
 		
 		})
