@@ -210,7 +210,7 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
+            } else if (message.content == "6") {
 			message.channel.bulkDelete(2)
             page++;
 			page++;
@@ -357,6 +357,13 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "5") {
 			message.channel.bulkDelete(2)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+			message.channel.bulkDelete(2)
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "cancel") {
 			message.channel.bulkDelete(2)
