@@ -245,7 +245,6 @@ let page = 1;
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "4") {
-			message.channel.bulkDelete(1)
             page++;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
