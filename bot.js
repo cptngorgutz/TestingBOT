@@ -433,9 +433,6 @@ let page = 1;
 		
         })
 		
-		collecter.on('end', r => {
-		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
-		})
 		})
 		
 		
