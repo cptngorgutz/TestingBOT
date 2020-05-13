@@ -433,11 +433,12 @@ let page = 1;
 		
         })
 		
-		})
-		
-		menu.on('end', r => {
+		collecter.on('end', r => {
 		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
 		})
+		})
+		
+		
 		
     })
 })
