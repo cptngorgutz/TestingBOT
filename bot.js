@@ -126,13 +126,16 @@ let page = 1;
             console.log("do nothing");
             } else if (message.content == "2") {
             page++;
+			msg.edit(embed)
             } else if (message.content == "3") {
             page++;
 			page++;
+			msg.edit(embed)
             } else if (message.content == "4") {
             page++;
 			page++;
 			page++;
+			msg.edit(embed)
             }
         })
         })
