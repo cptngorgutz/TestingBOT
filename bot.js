@@ -121,7 +121,7 @@ let page = 1;
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         //console.log(collector)
         collector.on('collect', message => {
-			if (page === 1){
+		if (page === 1){
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
@@ -371,7 +371,7 @@ let page = 1;
             }
 		} //this is if on page2
 		if (page === 6){
-            if (message.content == "1") {
+        if (message.content == "1") {
             message.channel.bulkDelete(2)
             page--;
 			page--;
@@ -424,18 +424,13 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
             }
 		} //this is if on page2
-		
-		
-		
-		
-		
-		
-		
         })
 		
+		collector.on('end', message => {
+		console.log('Collector has been stopped');
 		})
 		
-		
+		})
 		
     })
 })
