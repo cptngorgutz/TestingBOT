@@ -116,8 +116,7 @@ let page = 1;
 		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
 		})
 		
-		menu.on('collect', r => {
-		let page = 1; 
+		menu.on('collect', r => { 
 		if (page === pages.length) return;
 		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands\n\nOr type `cancel` to cancel")
         if (page === 1) { 
@@ -200,14 +199,6 @@ let page = 1;
 
 
 });
-
-if (page === 4) {
-page--
-embed03.setDescription(pages[page-1])
-embed03.setFooter(`Page ${page} of ${pages.length}`)
-msg.edit(embed03)
-}
-
 
 
 
