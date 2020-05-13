@@ -71,7 +71,7 @@ if (args[1] === "rain"){
 
 if(command === 'commands'){
 	
-let pages = [`<:cmd:709397091461496833> __**General Commands**__ \n \n<:__:709403821901611019>commands \n**Provides a commands list** \n\n<:__:709403821901611019>away [reason] \n**Send a message to the captains saying you'll be away** \n\n<:__:709403821901611019>uniques \n**Sends an infographic of unique gear required for characters** \n\n<:__:709403821901611019>blitz \n**Send an infographic of current blitz predictions** \n\n<:__:709403821901611019>event [charactername] \n**Send an infographic of required toons for the event**`, '<:cmd:709397091461496833> __**General Commands 2**__ \n\n<:__:709403821901611019>bug [reason] \n**Send a bug report to admin-logs for something to get fixed on the bot** \n\n<:__:709403821901611019>request [reason] \n**Send a request to admin-logs for something to be added to the bot** \n\n<:__:709403821901611019>notifications \n**Join the role to be notified of important announcements** \n\n<:__:709403821901611019>charactername \n**Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use**'];
+let pages = [`<:cmd:709397091461496833> __**General Commands**__ \n \n<:__:709403821901611019>commands \n**Provides a commands list** \n\n<:__:709403821901611019>away [reason] \n**Send a message to the captains saying you'll be away** \n\n<:__:709403821901611019>uniques \n**Sends an infographic of unique gear required for characters** \n\n<:__:709403821901611019>blitz \n**Send an infographic of current blitz predictions** \n\n<:__:709403821901611019>event [charactername] \n**Send an infographic of required toons for the event**`, '<:cmd:709397091461496833> __**General Commands 2**__ \n\n<:__:709403821901611019>bug [reason] \n**Send a bug report to admin-logs for something to get fixed on the bot** \n\n<:__:709403821901611019>request [reason] \n**Send a request to admin-logs for something to be added to the bot** \n\n<:__:709403821901611019>notifications \n**Join the role to be notified of important announcements** \n\n<:__:709403821901611019>charactername \n**Character graphics are a work-in-progress and will be added to the #bot-changelog channel when they are available to use**', '<:cmd:709397091461496833> __**War Commands**__ \n \n', '<:cmd:709397091461496833> __**PVP Commands**__ \n \n'];
 let page = 1; 
 
     const embed = new Discord.RichEmbed() // Define a new embed
@@ -118,7 +118,7 @@ let page = 1;
 		
 		menu.on('collect', r => {
             if (page === pages.length) return;
-		message.channel.send("**Please type a page number** \n\nPage 1 - General Commands\nPage 2 - War commands\nPage 3 - PVP Commands")
+		message.channel.send("**Please type a page number** \nPage 1 - General Commands\nPage 2 - General commands 2\nPage 3 - War Commands\nPage 4- PVP Commands")
 			r.remove(r.users.filter(u => !u.bot).first());
         })
 		
