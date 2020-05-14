@@ -108,7 +108,6 @@ let page = 1;
         })
 
         forwards.on('collect', r => {
-            if (page === pages.length) return;
             page++;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
