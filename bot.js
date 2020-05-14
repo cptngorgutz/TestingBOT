@@ -121,18 +121,22 @@ let page = 1;
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
 	if (page === pages.length) return;
 	if (page === 1){
-        collector.on('collect', message => {
-            if (message.content == "1") {
+			if (message.content == "1") {
+			collector.on('collect', message => {
 			message.channel.bulkDelete(2)
             r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
+            })
+			} else if (message.content == "2") {
+			collector.on('collect', message => {
 			message.channel.bulkDelete(2)
             page++;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
+            })
+			} else if (message.content == "3") {
+			collector.on('collect', message => {
             message.channel.bulkDelete(2)
 			page++;
 			page++;
@@ -140,7 +144,9 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
+            })
+			} else if (message.content == "4") {
+			collector.on('collect', message => {
             message.channel.bulkDelete(2)
 			page++;
 			page++;
@@ -149,19 +155,10 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
+            })
+			} else if (message.content == "5") {
+			collector.on('collect', message => {
             message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-            message.channel.bulkDelete(2)
-			page++;
 			page++;
 			page++;
 			page++;
@@ -170,12 +167,28 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
+            })
+			} else if (message.content == "6") {
+			collector.on('collect', message => {
+            message.channel.bulkDelete(2)
+			page++;
+			page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            })
+			} else if (message.content == "cancel") {
+			collector.on('collect', message => {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
-            }
-        })
-	}
+            })
+			}
+		} // if page 1
+		
 	if (page === 2){
     collector.on('collect', message => {
             if (message.content == "1") {
