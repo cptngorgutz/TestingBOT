@@ -81,7 +81,11 @@ let page = 1;
 
     message.channel.send(embed).then(msg => {
 	msg.react('1️⃣').then( r => {
-    msg.react('2️⃣').then(() => message.react('👎')).then(() => message.react('👎'))msg.react('3️⃣').then(() => message.react('👎'))msg.react('4️⃣').then(() => message.react('👎'))msg.react('5️⃣').then(() => message.react('👎')).then(() => message.react('👎'))msg.react('6️⃣');
+    msg.react('2️⃣')
+    msg.react('3️⃣')
+	msg.react('4️⃣')
+	msg.react('5️⃣')
+	msg.react('6️⃣')
 	
 
         // Filters
