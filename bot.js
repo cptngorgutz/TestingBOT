@@ -81,9 +81,10 @@ let page = 1;
 
     message.channel.send(embed).then(msg => {
 
-    msg.react('◀️').then( r => {
-	msg.react('⬅️')
-	
+    
+	msg.react('⬅️').then( r => {
+	msg.react('➡️')
+   
 
         // Filters
 		const startFilter = (reaction, user) => reaction.emoji.name === '◀️' && user.id === message.author.id;
@@ -118,10 +119,7 @@ let page = 1;
 		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
 		})
 	
-	msg.react('➡️').then( z => {
-    msg.react('▶️')
-	
-		start.on('collect', z => {
+		start.on('collect', r => {
 		if (page === 1){
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -172,7 +170,7 @@ let page = 1;
         }
 		})
 
-		ending.on('collect', z => {
+		ending.on('collect', r => {
 		if (page === 1){
 		page++;
 		page++;
@@ -224,7 +222,7 @@ let page = 1;
 		})
          
 		 
-})
+  
 })
 })
 }
