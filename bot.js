@@ -81,11 +81,10 @@ let page = 1;
 
     message.channel.send(embed).then(msg => {
 
-    
 	msg.react('⬅️').then( r => {
 	msg.react('➡️')
-   
-
+    msg.react('▶️')
+	msg.react('◀️')
         // Filters
 		const startFilter = (reaction, user) => reaction.emoji.name === '◀️' && user.id === message.author.id;
         const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
