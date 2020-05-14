@@ -80,57 +80,41 @@ let page = 1;
     .setDescription(pages[page-1])
 
     message.channel.send(embed).then(msg => {
-	msg.react('◀️').then( r => {
-    msg.react('⬅')
-    msg.react('➡')
-	msg.react('▶️')
+	msg.react(':one:').then( r => {
+    msg.react(':two:')
+    msg.react(':three:')
+	msg.react(':four:')
+	msg.react(':five:')
+	msg.react(':six:')
+	
 
         // Filters
-        const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
-        const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
-		const beginFilter = (reaction, user) => reaction.emoji.name === '◀️' && user.id === message.author.id;
-		const finaleFilter = (reaction, user) => reaction.emoji.name === '▶️' && user.id === message.author.id;
+		const oneFilter = (reaction, user) => reaction.emoji.name === ':one:' && user.id === message.author.id;
+		const twoFilter = (reaction, user) => reaction.emoji.name === ':two:' && user.id === message.author.id;
+		const threeFilter = (reaction, user) => reaction.emoji.name === ':three:' && user.id === message.author.id;
+		const fourFilter = (reaction, user) => reaction.emoji.name === ':four:' && user.id === message.author.id;
+		const fiveFilter = (reaction, user) => reaction.emoji.name === ':five:' && user.id === message.author.id;
+		const sixFilter = (reaction, user) => reaction.emoji.name === ':six:' && user.id === message.author.id;
 
+        const one = msg.createReactionCollector(oneFilter, {time: 300000});
+		const two = msg.createReactionCollector(twoFilter, {time: 300000});
+		const three = msg.createReactionCollector(threeFilter, {time: 300000});
+		const four = msg.createReactionCollector(fourFilter, {time: 300000});
+		const five = msg.createReactionCollector(fiveFilter, {time: 300000});
+		const six = msg.createReactionCollector(sixFilter, {time: 300000});
 
-        const backwards = msg.createReactionCollector(backwardsFilter, {time: 300000});
-        const forwards = msg.createReactionCollector(forwardsFilter, {time: 300000});
-		const beginning = msg.createReactionCollector(beginFilter, {time: 300000});
-		const finale = msg.createReactionCollector(finaleFilter, {time: 300000});
-
-        backwards.on('collect', r => {
-            if (page === 1) return;
-            page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-        })
-
-        forwards.on('collect', r => {
-            if (page === pages.length) return;
-            page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-        })
-		
-		forwards.on('end', r => {
-		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
-		})
-		
-		beginning.on('collect', r => {
+        one.on('collect', r => {
             if (page === 1) {
 			r.remove(r.users.filter(u => !u.bot).first());
 			}
-			 if (page === 2) {
+			if (page === 2) {
             page--;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
 			}
-			 if (page === 3) {
+			if (page === 3) {
             page--;
 			page--;
             embed.setDescription(pages[page-1]);
@@ -158,7 +142,7 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
 			}
 			if (page === 6) {
-			page--;
+            page--;
 			page--;
 			page--;
 			page--;
@@ -169,8 +153,192 @@ let page = 1;
 			r.remove(r.users.filter(u => !u.bot).first());
 			}
         })
+
+		two.on('collect', r => {
+			if (page === 1) {
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 2) {
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 3) {
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 4) {
+            page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 5) {
+            page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 6) {
+            page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+		})
 		
-		finale.on('collect', r => {
+		three.on('collect', r => {
+		if (page === 1) {
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 2) {
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 3) {
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 4) {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 5) {
+            page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 6) {
+            page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+		})
+		
+		four.on('collect', r => {
+		if (page === 1) {
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 2) {
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 3) {
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 4) {
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 5) {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 6) {
+            page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+		})
+		
+		five.on('collect', r => {
+		if (page === 1) {
+			page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 2) {
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 3) {
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 4) {
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 5) {
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+			if (page === 6) {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+			}
+		})		
+		
+		six.on('collect', r => {
             if (page === 1) {
             page++;
 			page++;
