@@ -80,21 +80,21 @@ let page = 1;
     .setDescription(pages[page-1])
 
     message.channel.send(embed).then(msg => {
-	msg.react(':one:').then( r => {
-    msg.react(':two:')
-    msg.react(':three:')
-	msg.react(':four:')
-	msg.react(':five:')
-	msg.react(':six:')
+	msg.react('1️⃣').then( r => {
+    msg.react('2️⃣')
+    msg.react('3️⃣')
+	msg.react('4️⃣')
+	msg.react('5️⃣')
+	msg.react('6️⃣')
 	
 
         // Filters
-		const oneFilter = (reaction, user) => reaction.emoji.name === ':one:' && user.id === message.author.id;
-		const twoFilter = (reaction, user) => reaction.emoji.name === ':two:' && user.id === message.author.id;
-		const threeFilter = (reaction, user) => reaction.emoji.name === ':three:' && user.id === message.author.id;
-		const fourFilter = (reaction, user) => reaction.emoji.name === ':four:' && user.id === message.author.id;
-		const fiveFilter = (reaction, user) => reaction.emoji.name === ':five:' && user.id === message.author.id;
-		const sixFilter = (reaction, user) => reaction.emoji.name === ':six:' && user.id === message.author.id;
+		const oneFilter = (reaction, user) => reaction.emoji.name === '1️⃣' && user.id === message.author.id;
+		const twoFilter = (reaction, user) => reaction.emoji.name === '2️⃣' && user.id === message.author.id;
+		const threeFilter = (reaction, user) => reaction.emoji.name === '3️⃣' && user.id === message.author.id;
+		const fourFilter = (reaction, user) => reaction.emoji.name === '4️⃣' && user.id === message.author.id;
+		const fiveFilter = (reaction, user) => reaction.emoji.name === '5️⃣' && user.id === message.author.id;
+		const sixFilter = (reaction, user) => reaction.emoji.name === '6️⃣' && user.id === message.author.id;
 
         const one = msg.createReactionCollector(oneFilter, {time: 300000});
 		const two = msg.createReactionCollector(twoFilter, {time: 300000});
