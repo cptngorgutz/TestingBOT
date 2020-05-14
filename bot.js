@@ -81,18 +81,22 @@ let page = 1;
 
     message.channel.send(embed).then(msg => {
 
-    msg.react('⬅')
-	msg.react('➡').then( r => {
-    msg.react('🔢')
+    msg.react('◀️')
+	msg.react('⬅️')
+	msg.react('➡️').then( r => {
+    msg.react('▶️')
 
         // Filters
+		const startFilter = (reaction, user) => reaction.emoji.name === '◀️' && user.id === message.author.id;
         const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
         const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
-		const menuFilter = (reaction, user) => reaction.emoji.name === '🔢' && user.id === message.author.id;
+		const endFilter = (reaction, user) => reaction.emoji.name === '▶️' && user.id === message.author.id;
 
+		const start = msg.createReactionCollector(startFilter, {time: 300000});
         const backwards = msg.createReactionCollector(backwardsFilter, {time: 300000});
         const forwards = msg.createReactionCollector(forwardsFilter, {time: 300000});
-		const menu = msg.createReactionCollector(menuFilter, {time: 300000});
+		const ending = msg.createReactionCollector(endFilter, {time: 300000});
+		
 
         backwards.on('collect', r => {
             if (page === 1) return;
@@ -116,316 +120,111 @@ let page = 1;
 		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
 		})
 		
-		menu.on('collect', r => {
-		message.channel.send("**Please type a page number** \nPage 1 - Commands Menu\nPage 2 - General Commands\nPage 3 - General commands 2\nPage 4 - War Commands\nPage 5 - War commands 2\nPage 6 - PVP\n\nOr type `cancel` to cancel");
-        const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
-	if (page === pages.length) return;
-	collector.on('collect', message => {
-	if (page === 1){
-            if (message.content == "1") {
-			message.channel.bulkDelete(2)
-            r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-			message.channel.bulkDelete(2)
-            page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            }
-	}
-	if (page === 2){
-            if (message.content == "1") {
-			message.channel.bulkDelete(2)
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-            r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-			message.channel.bulkDelete(2)
-            page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            }
-	}
-	if (page === 3){
-            if (message.content == "1") {
-			message.channel.bulkDelete(2)
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-            r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-            message.channel.bulkDelete(2)
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-            message.channel.bulkDelete(2)
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
-			message.channel.bulkDelete(2)
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            }
-	}
-	if (page === 4){
-            if (message.content == "1") {
-			message.channel.bulkDelete(2)
-			page--;
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-            r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-            message.channel.bulkDelete(2)
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-            message.channel.bulkDelete(2)
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
-            message.channel.bulkDelete(2)
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-            message.channel.bulkDelete(2)
-			page++;
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            }
-	}
-	if (page === 5){
-            if (message.content == "1") {
-			message.channel.bulkDelete(2)
-			page--;
-			page--;
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-            r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-            message.channel.bulkDelete(2)
-			page--;
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-            message.channel.bulkDelete(2)
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-            message.channel.bulkDelete(2)
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-            message.channel.bulkDelete(2)
-			page++;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
-			r.remove(r.users.filter(u => !u.bot).first());
-            }
-	}
-	if (page === 6){
-            if (message.content == "1") {
-			message.channel.bulkDelete(2)
-			page--;
-			page--;
-			page--;
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-            r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "2") {
-            message.channel.bulkDelete(2)
-			page--;
-			page--;
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "3") {
-			message.channel.bulkDelete(2)
-			page--;
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "4") {
-			message.channel.bulkDelete(2)
-			page--;
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "5") {
-            message.channel.bulkDelete(2)
-			page--;
-            embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
-            msg.edit(embed)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "6") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            } else if (message.content == "cancel") {
-			message.channel.bulkDelete(2)
-			r.remove(r.users.filter(u => !u.bot).first());
-            }
-	}
-})
-})
+		start.on('collect', r => {
+        if (page === pages.length) return;
+		if (page === 1){
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 2){
+        page--;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 3){
+        page--;
+		page--;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 4){
+        page--;
+		page--;
+		page--;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 5){
+        page--;
+		page--;
+		page--;
+		page--;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 6){
+        page--;
+		page--;
+		page--;
+		page--;
+		page--;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		})
+           
+		ending.on('collect', r => {
+        if (page === pages.length) return;
+		if (page === 1){
+		page++;
+		page++;
+		page++;
+		page++;
+		page++;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 2){
+		page++;
+		page++;
+		page++;
+		page++;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 3){
+        page++;
+		page++;
+		page++;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 4){
+        page++;
+		page++;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 5){
+        page++;
+        embed.setDescription(pages[page-1]);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        msg.edit(embed)
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		if (page === 6){
+		r.remove(r.users.filter(u => !u.bot).first());
+        }
+		})
+          
+  
 })
 })
 }
