@@ -76,7 +76,7 @@ let page = 1;
 
     const embed = new Discord.RichEmbed() // Define a new embed
     .setColor('#0099ff') // Set the color
-    .setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`)
+    .setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`)
     .setDescription(pages[page-1])
 
     message.channel.send(embed).then(msg => {
@@ -102,7 +102,7 @@ let page = 1;
             if (page === 1) return;
             page--;
             embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
@@ -110,7 +110,7 @@ let page = 1;
         forwards.on('collect', r => {
             page++;
             embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
@@ -126,7 +126,7 @@ let page = 1;
 		if (page === 2){
         page--;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -134,7 +134,7 @@ let page = 1;
         page--;
 		page--;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -143,7 +143,7 @@ let page = 1;
 		page--;
 		page--;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -153,7 +153,7 @@ let page = 1;
 		page--;
 		page--;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -164,7 +164,7 @@ let page = 1;
 		page--;
 		page--;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -178,7 +178,7 @@ let page = 1;
 		page++;
 		page++;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -188,7 +188,7 @@ let page = 1;
 		page++;
 		page++;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -197,7 +197,7 @@ let page = 1;
 		page++;
 		page++;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -205,14 +205,14 @@ let page = 1;
         page++;
 		page++;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
 		if (page === 5){
         page++;
         embed.setDescription(pages[page-1]);
-        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+        embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
         msg.edit(embed)
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -252,7 +252,7 @@ let page = 1;
             if (page === 1) return;
             page--;
             embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
@@ -261,7 +261,7 @@ let page = 1;
             if (page === pages.length) return;
             page++;
             embed.setDescription(pages[page-1]);
-            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the start/previous/next/end pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
         })
