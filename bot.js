@@ -82,8 +82,8 @@ let page = 1;
     message.channel.send(embed).then(msg => {
 
     msg.react('◀️')
-	msg.react('⬅️')
-	msg.react('➡️').then( r => {
+	msg.react('⬅️').then( r => {
+	msg.react('➡️')
     msg.react('▶️')
 
         // Filters
