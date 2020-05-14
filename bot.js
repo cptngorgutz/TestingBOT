@@ -121,7 +121,6 @@ let page = 1;
 		})
 		
 		start.on('collect', r => {
-        if (page === pages.length) return;
 		if (page === 1){
 		r.remove(r.users.filter(u => !u.bot).first());
         }
@@ -173,7 +172,6 @@ let page = 1;
 		})
            
 		ending.on('collect', r => {
-        if (page === pages.length) return;
 		if (page === 1){
 		page++;
 		page++;
