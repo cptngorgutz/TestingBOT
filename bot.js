@@ -119,6 +119,7 @@ let page = 1;
 		menu.on('collect', r => {
 		message.channel.send("**Please type a page number** \nPage 1 - Commands Menu\nPage 2 - General Commands\nPage 3 - General commands 2\nPage 4 - War Commands\nPage 5 - War commands 2\nPage 6 - PVP\n\nOr type `cancel` to cancel");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+	if (page === pages.length) return;
 	if (page === 1){
         collector.on('collect', message => {
             if (message.content == "1") {
