@@ -117,9 +117,9 @@ let page = 1;
 		})
 		
 		menu.on('collect', r => {
-        message.channel.send("p1menu \np2general commands");
+		message.channel.send("**Please type a page number** \nPage 1 - Commands Menu\nPage 2 - General Commands\nPage 3 - General commands 2\nPage 4 - War Commands\nPage 5 - War commands 2\nPage 6 - PVP\n\nOr type `cancel` to cancel");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
-		if (page === 1){
+	if (page === 1){
         collector.on('collect', message => {
             if (message.content == "1") {
             r.remove(r.users.filter(u => !u.bot).first());
@@ -129,11 +129,47 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+            page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+            page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+            page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+            page++;
+			page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			r.remove(r.users.filter(u => !u.bot).first());
             }
         })
 	}
-		if (page === 2){
-        collector.on('collect', message => {
+	if (page === 2){
+    collector.on('collect', message => {
             if (message.content == "1") {
 			page--;
             embed.setDescription(pages[page-1]);
@@ -142,8 +178,220 @@ let page = 1;
             r.remove(r.users.filter(u => !u.bot).first());
             } else if (message.content == "2") {
 			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+            page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+            page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+            page++;
+			page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			r.remove(r.users.filter(u => !u.bot).first());
             }
         })
+	}
+	if (page === 3){
+    collector.on('collect', message => {
+            if (message.content == "1") {
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+            r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "2") {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+            page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+            page++;
+			page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            }
+        })
+	}
+	if (page === 4){
+    collector.on('collect', message => {
+            if (message.content == "1") {
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+            r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "2") {
+            page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+            page++;
+			page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            }
+        })  
+	}
+	if (page === 5){
+     collector.on('collect', message => {
+            if (message.content == "1") {
+			page--;
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+            r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "2") {
+            page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+            page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+            page++;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            }
+        }) 
+	}
+	if (page === 6){
+     collector.on('collect', message => {
+            if (message.content == "1") {
+			page--;
+			page--;
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+            r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "2") {
+            page--;
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "3") {
+			page--;
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "4") {
+			page--;
+			page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "5") {
+            page--;
+            embed.setDescription(pages[page-1]);
+            embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
+            msg.edit(embed)
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "6") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            } else if (message.content == "cancel") {
+			r.remove(r.users.filter(u => !u.bot).first());
+            }
+        }) 
 	}
 })
 
