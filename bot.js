@@ -120,23 +120,19 @@ let page = 1;
 		message.channel.send("**Please type a page number** \nPage 1 - Commands Menu\nPage 2 - General Commands\nPage 3 - General commands 2\nPage 4 - War Commands\nPage 5 - War commands 2\nPage 6 - PVP\n\nOr type `cancel` to cancel");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
 	if (page === pages.length) return;
+	collector.on('collect', message => {
 	if (page === 1){
-			if (message.content == "1") {
-			collector.on('collect', message => {
+            if (message.content == "1") {
 			message.channel.bulkDelete(2)
             r.remove(r.users.filter(u => !u.bot).first());
-            })
-			} else if (message.content == "2") {
-			collector.on('collect', message => {
+            } else if (message.content == "2") {
 			message.channel.bulkDelete(2)
             page++;
             embed.setDescription(pages[page-1]);
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            })
-			} else if (message.content == "3") {
-			collector.on('collect', message => {
+            } else if (message.content == "3") {
             message.channel.bulkDelete(2)
 			page++;
 			page++;
@@ -144,9 +140,7 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            })
-			} else if (message.content == "4") {
-			collector.on('collect', message => {
+            } else if (message.content == "4") {
             message.channel.bulkDelete(2)
 			page++;
 			page++;
@@ -155,9 +149,7 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            })
-			} else if (message.content == "5") {
-			collector.on('collect', message => {
+            } else if (message.content == "5") {
             message.channel.bulkDelete(2)
 			page++;
 			page++;
@@ -167,9 +159,7 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            })
-			} else if (message.content == "6") {
-			collector.on('collect', message => {
+            } else if (message.content == "6") {
             message.channel.bulkDelete(2)
 			page++;
 			page++;
@@ -180,17 +170,12 @@ let page = 1;
             embed.setFooter(`Page ${page} of ${pages.length} - Use reaction below to navigate to the previous/next pages`);
             msg.edit(embed)
 			r.remove(r.users.filter(u => !u.bot).first());
-            })
-			} else if (message.content == "cancel") {
-			collector.on('collect', message => {
+            } else if (message.content == "cancel") {
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
-            })
-			}
-		} // if page 1
-		
+            }
+	}
 	if (page === 2){
-    collector.on('collect', message => {
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			page--;
@@ -239,10 +224,8 @@ let page = 1;
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
-        })
 	}
 	if (page === 3){
-    collector.on('collect', message => {
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			page--;
@@ -289,10 +272,8 @@ let page = 1;
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
-        })
 	}
 	if (page === 4){
-    collector.on('collect', message => {
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			page--;
@@ -339,10 +320,8 @@ let page = 1;
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
-        })  
 	}
 	if (page === 5){
-     collector.on('collect', message => {
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			page--;
@@ -390,10 +369,8 @@ let page = 1;
             } else if (message.content == "cancel") {
 			r.remove(r.users.filter(u => !u.bot).first());
             }
-        }) 
 	}
 	if (page === 6){
-     collector.on('collect', message => {
             if (message.content == "1") {
 			message.channel.bulkDelete(2)
 			page--;
@@ -446,14 +423,11 @@ let page = 1;
 			message.channel.bulkDelete(2)
 			r.remove(r.users.filter(u => !u.bot).first());
             }
-        }) 
 	}
 })
-
 })
-
 })
-
+})
 }
 
 if(command === 'warcommands'){
