@@ -82,8 +82,8 @@ let page = 1;
     message.channel.send(embed).then(msg => {
 
     msg.react('◀️')
-	msg.react('⬅️').then( r => {
-	msg.react('➡️')
+	msg.react('⬅️')
+	msg.react('➡️').then( r => {
     msg.react('▶️')
 
         // Filters
@@ -169,7 +169,11 @@ let page = 1;
 		r.remove(r.users.filter(u => !u.bot).first());
         }
 		})
-           
+       
+		start.on('end', r => {
+		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
+		})
+	   
 		ending.on('collect', r => {
 		if (page === 1){
 		page++;
@@ -220,7 +224,10 @@ let page = 1;
 		r.remove(r.users.filter(u => !u.bot).first());
         }
 		})
-          
+         
+		ending.on('end', r => {
+		msg.clearReactions().catch(error => console.error('Failed to clear reactions: ', error));
+		})
   
 })
 })
