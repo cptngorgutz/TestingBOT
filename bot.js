@@ -89,7 +89,7 @@ const TB2Role = message.guild.roles.find(r => r.name === 'TB2');
 // overwrites 'SEND_MESSAGES' role, only on this specific channel
 channel.overwritePermissions([
 {
-id: TB2Role.id,
+id: TB2Role,
 deny: ['VIEW_CHANNEL'],
 },
 ], 'Lockdown');
