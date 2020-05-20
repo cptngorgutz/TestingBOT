@@ -91,7 +91,7 @@ channel.overwritePermissions(message.member, {
 message.channel.send('Alha hidden from user.');
 
 }
-
+}
 
 
 });
