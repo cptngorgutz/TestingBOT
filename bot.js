@@ -83,10 +83,9 @@ const command = args.shift().toLowerCase();
 if(command === 'hide') {
 if(args[0] === "alpha"){
 function closeDownChannel(message) {
-	let guild = message.guild;
+	let guild = message.guilds.get(message.guild.id).id
+	//let guild = message.guild;
     let channel = message.guild.channels.get('712643585408761938');
-    let roles = message.guild.roles; // collection
-
     // find specific role - enter name of a role you create here
     let testRole = roles.find('name', 'TB2');
 
