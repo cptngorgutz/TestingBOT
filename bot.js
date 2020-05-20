@@ -83,7 +83,6 @@ const command = args.shift().toLowerCase();
 if(command === 'hide') {
 if(args[0] === "alpha"){
 	function closeDownAlpha(message) {
-	const guild = message.guild.id;
 	const channel = message.guild.channels.find(c => c.name === 'alpha-raid')
 
     // find specific role - enter name of a role you create here
