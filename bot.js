@@ -83,11 +83,10 @@ const command = args.shift().toLowerCase();
 if(command === 'hide') {
 if(args[0] === "alpha"){
 const TB2 = message.guild.roles.find(r => r.name === 'TB2');
+const channel1 = message.guild.channels.find(c => c.name === 'alpha-raid');
 
-message.guild.channels.find('name', 'alpha-raid')
-TB2.overwritePermissions(UserResolvable, { // Pass 'UserResolvable' type thing as described in Wiki!
-  VIEW_CHANNEL: false,
-  SEND_MESSAGES: false
+channel1.overwritePermissions(message.guild.roles.find('name', '@TB2'), { // Disallow Everyone to see, join, invite, or speak
+'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB2.');
 
