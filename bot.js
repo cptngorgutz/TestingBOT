@@ -86,7 +86,8 @@ function closeDownChannel(message) {
 	
     let channel = client.channels.get('712643585408761938');
     // find specific role - enter name of a role you create here
-    let testRole = roles.find('name', 'TB2');
+    let testRole = client.roles.find('name', 'TB2');
+	//const testRole = guild.roles.find("name", "Your_role_name");
 
     // overwrites 'VIEW_CHANNEL' role, only on this specific channel
     channel.overwritePermissions(
