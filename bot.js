@@ -87,7 +87,7 @@ let channel = client.channels.get('712643585408761938');
 const TB2Role = message.guild.roles.find(r => r.name === 'TB2');
 
 // overwrites 'SEND_MESSAGES' role, only on this specific channel
-channel.overwritePermissions([
+channel.permissionOverwrites([
 {
 id: TB2Role.id,
 deny: ['VIEW_CHANNEL'],
