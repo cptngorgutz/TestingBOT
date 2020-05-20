@@ -70,6 +70,16 @@ if (args[1] === "rain"){
 }
 }
 
+
+
+
+});
+
+client.on("message", message => {
+if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+
 if(command === 'hide') {
 if(args[0] === "alpha"){
 	function closeDownAlpha(message) {
@@ -89,18 +99,15 @@ if(args[0] === "alpha"){
     .catch(console.log);
 	message.channel.send("Alpha channel now hidden")
 }
-closeDownAlpha();
 
 }
 
 
 }
+
 
 
 });
-
-
-
 
 
 client.login(process.env.TOKEN);
