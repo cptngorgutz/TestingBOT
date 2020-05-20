@@ -84,10 +84,10 @@ if(command === 'hide') {
 if(args[0] === "alpha"){
 	function HideAlpha(message) {
 	let guild = message.guild;
-	const channel = message.guild.channels.find(c => c.name === 'alpha')
+	const channel = message.guild.channels.find(c => c.name === 'alpha-raid')
 
     // find specific role - enter name of a role you create here
-	const testRole = message.guild.roles.find(role => role.name === 'testrole');
+	const testRole = message.guild.roles.find(role => role.name === 'TB2');
     channel.overwritePermissions(
         testRole,
         { 'VIEW_CHANNEL': false },
