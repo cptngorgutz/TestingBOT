@@ -82,14 +82,11 @@ const command = args.shift().toLowerCase();
 
 if(command === 'hide') {
 if(args[0] === "alpha"){
-const TB2Role = message.guild.roles.find(r => r.name === 'TB2');
-
+const TB2 = message.guild.roles.find(r => r.name === 'TB2');
 const channel = message.guild.channels.find('alpha-raid', `${message.author.username}-oda`);
-channel.overwritePermissions(TB2role, {
-                VIEW_CHANNEL: false
-            });
-message.channel.send('Alpha hidden from user.');
-
+channel.overwritePermissions(TB2role, { VIEW_CHANNEL: false });
+channel.updateOverwrite(channel.guild.roles.TB2, { VIEW_CHANNEL: false });
+message.channel.send('Alpha hidden from TB2.');
 }
 }
 
