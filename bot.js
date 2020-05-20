@@ -99,6 +99,7 @@ if(args[0] === "alpha"){
     .catch(console.log);
 	message.channel.send("Alpha channel now hidden")
 }
+closeDownAlpha();
 
 }
 
