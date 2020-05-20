@@ -94,9 +94,6 @@ function closeDownChannel(message) {
      deny: ['VIEW_CHANNEL'],
 	},
 	], 'Lockdown');
-        // handle responses / errors
-        .then(console.log)
-        .catch(console.log);
 
 }
 closeDownChannel();
