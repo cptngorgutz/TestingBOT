@@ -83,7 +83,7 @@ const command = args.shift().toLowerCase();
 if(command === 'hide') {
 if(args[0] === "alpha"){
 	function HideAlpha(message) {
-	const guild = message.guild.get('123');
+	let guild = message.guild;
 	const channel = message.guild.channels.find(c => c.name === 'alpha')
 
     // find specific role - enter name of a role you create here
