@@ -92,6 +92,18 @@ message.channel.send('Alpha hidden from TB2.');
 }
 }
 
+if(command === 'show') {
+if(args[0] === "alpha"){
+const channel1 = message.guild.channels.find(c => c.name === 'alpha-raid');
+
+channel1.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see, join, invite, or speak
+'VIEW_CHANNEL': true,
+});
+message.channel.send('Alpha shown to TB2.');
+
+}
+}
+
 
 });
 
