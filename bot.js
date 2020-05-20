@@ -83,22 +83,21 @@ const command = args.shift().toLowerCase();
 if(command === 'hide') {
 if(args[0] === "alpha"){
 function closeDownChannel(message) {
-	
-    let channel = client.channels.get('712643585408761938');
-    // find specific role - enter name of a role you create here
-    let testRole = client.roles.find('name', 'TB2');
-	//const testRole = guild.roles.find("name", "Your_role_name");
+	let channel = message.channel;
+    let roles = message.guild.roles; // collection
+    const TB2Role = message.guild.roles.cache.find(r => r.name === 'TB2');
 
-    // overwrites 'VIEW_CHANNEL' role, only on this specific channel
-    channel.overwritePermissions(
-        testRole,
-        { 'VIEW_CHANNEL': false },
-        // optional 'reason' for permission overwrite
-        'closing up shop'
-    )
-    // handle responses / errors
-    .then(console.log)
-    .catch(console.log);
+    // overwrites 'SEND_MESSAGES' role, only on this specific channel
+	channel.overwritePermissions([
+	{
+     id: TB2Role.id,
+     deny: ['VIEW_CHANNEL'],
+	},
+	], 'Lockdown');
+        // handle responses / errors
+        .then(console.log)
+        .catch(console.log);
+
 }
 closeDownChannel();
 
