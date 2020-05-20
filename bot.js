@@ -82,20 +82,13 @@ const command = args.shift().toLowerCase();
 
 if(command === 'hide') {
 if(args[0] === "alpha"){
-let guild = client.guilds.get("617707484626288670");
-let channel = client.channels.get('712643585408761938');
 const TB2Role = message.guild.roles.find(r => r.name === 'TB2');
 
-// overwrites 'SEND_MESSAGES' role, only on this specific channel
-channel.overwritePermissions([
-{
-id: TB2Role,
-deny: ['VIEW_CHANNEL'],
-},
-], 'Lockdown');
-
-}
-
+const channel = message.guild.channels.find('alpha-raid', `${message.author.username}-oda`);
+channel.overwritePermissions(message.member, {
+                VIEW_CHANNEL: false
+            });
+message.channel.send('Alha hidden from user.');
 
 }
 
