@@ -72,6 +72,7 @@ if (args[1] === "rain"){
 
 if(command === 'hide') {
 if(args[0] === "alpha"){
+	const guild = client.guilds.get('617707484626288670');
 	function closeDownAlpha(message) {
     let channel = message.guild.channels.find(c => c.name === 'alpha-raid')
     let roles = message.guild.roles; // collection
