@@ -84,14 +84,14 @@ if(command === 'hide') {
 if(args[0] === "alpha"){
 function closeDownChannel(message) {
 	
-    let channel = message.guild.channels.get('712643585408761938');
+    let channel = client.channels.get('712643585408761938');
     // find specific role - enter name of a role you create here
     let testRole = roles.find('name', 'TB2');
 
-    // overwrites 'SEND_MESSAGES' role, only on this specific channel
+    // overwrites 'VIEW_CHANNEL' role, only on this specific channel
     channel.overwritePermissions(
         testRole,
-        { 'SEND_MESSAGES': false },
+        { 'VIEW_CHANNEL': false },
         // optional 'reason' for permission overwrite
         'closing up shop'
     )
