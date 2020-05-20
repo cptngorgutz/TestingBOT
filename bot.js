@@ -73,13 +73,10 @@ if (args[1] === "rain"){
 if(command === 'hide') {
 if(args[0] === "alpha"){
 	function closeDownAlpha(message) {
-	let guild = client.guilds.get('617707484626288670');
-    let channel = message.guild.channels.find(c => c.name === 'alpha-raid')
-    let roles = message.guild.roles; // collection
+	const channel = message.guild.channels.find(c => c.name === 'alpha-raid')
 
     // find specific role - enter name of a role you create here
-    let testRole = message.guild.roles.find(r => r.name === "TB2");
-	
+	const testRole = message.guild.roles.find(role => role.name === 'TB2');
     // overwrites 'SEND_MESSAGES' role, only on this specific channel
     channel.overwritePermissions(
         testRole,
