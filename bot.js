@@ -87,7 +87,7 @@ if(command === 'hide') {
 if(args[0] === "alpha"){
 
 if(message.guild.channels.find(c => c.name.toLowerCase() === "alpha-raid") && message.channel.id === '712643585408761938') {
-if(message.member.roles.has(TB2captains.id)) {
+if(message.member.roles.has(TB1captains.id)) {
 const channel3 = client.channels.get("712643585408761938");
 channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
