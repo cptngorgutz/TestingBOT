@@ -79,18 +79,47 @@ client.on("message", message => {
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
+const TB1captains = message.guild.roles.find(role => role.name === 'TB1 Captain');
+const TB2captains = message.guild.roles.find(role => role.name === 'TB2 Captain');
+const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain');
 
 if(command === 'hide') {
 if(args[0] === "alpha"){
-const channel1 = message.guild.channels.find(c => c.name === 'alpha-raid');
 
-channel1.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see, join, invite, or speak
+if(message.member.roles.has(TB1captains.id)) {
+const channel1 = message.guild.channels.find(c => c.name === 'alpha-raid');
+if (message.channel.id === '712643585408761938'){ //TEST1
+channel1.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), { // Disallow Everyone to see, join, invite, or speak
+'VIEW_CHANNEL': false,
+});
+message.channel.send('Alpha hidden from TB1');
+} else {
+}
+} else if(message.member.roles.has(TB2captains.id)) {
+const channel2 = message.guild.channels.find(c => c.name === 'alpha-raid');
+if (message.channel.id === '712816284835774534'){ //TEST2
+channel2.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see, join, invite, or speak
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB2.');
+} else {
+}
+} else if(message.member.roles.has(TB3captains.id)) {
+const channel3 = message.guild.channels.find(c => c.name === 'alpha-raid');
+if (message.channel.id === '712828921783255202'){ //TEST3
+channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see, join, invite, or speak
+'VIEW_CHANNEL': false,
+});
+message.channel.send('Alpha hidden from TB3.');
+} else {
+}
 
 }
+
+
+
 }
+
 
 if(command === 'show') {
 if(args[0] === "alpha"){
