@@ -108,7 +108,7 @@ message.channel.send('Alpha hidden from TB2.');
 }
 }
 
-if(message.guild.channels.find(c => c.name.toLowerCase() === alpha-raid) && message.channel.id === '712828921783255202') {
+if(message.guild.channels.find(c => c.name.toLowerCase() === "alpha-raid") && message.channel.id === '712828921783255202') {
 //if (message.channel.id === '712828921783255202'){ //TEST3
 if(message.member.roles.has(TB3captains.id)) {
 const channel3 = client.channels.get("712828921783255202");
