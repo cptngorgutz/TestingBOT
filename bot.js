@@ -95,7 +95,9 @@ channel1.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), {
 message.channel.send('Alpha hidden from TB1');
 } else {
 }
-} else if (message.channel.id === '712816284835774534'){ //TEST2
+}
+
+if (message.channel.id === '712816284835774534'){ //TEST2
 if(message.member.roles.has(TB2captains.id)) {
 const channel2 = message.guild.channels.find(c => c.name === 'alpha-raid');
 channel2.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see, join, invite, or speak
@@ -104,7 +106,9 @@ channel2.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), {
 message.channel.send('Alpha hidden from TB2.');
 } else {
 }
-} else if (message.channel.id === '712828921783255202'){ //TEST3
+}
+
+if (message.channel.id === '712828921783255202'){ //TEST3
 if(message.member.roles.has(TB3captains.id)) {
 const channel3 = message.guild.channels.find(c => c.name === 'alpha-raid');
 channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see, join, invite, or speak
@@ -114,6 +118,9 @@ message.channel.send('Alpha hidden from TB3.');
 } else {
 }
 }
+
+
+
 }
 
 
