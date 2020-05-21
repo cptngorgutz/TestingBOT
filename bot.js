@@ -86,21 +86,22 @@ const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain'
 if(command === 'hide') {
 if(args[0] === "alpha"){
 
-if (message.channel.id === '712643585408761938'){ //TEST1
-if(message.member.roles.has(TB1captains.id)) {
-const channel1 = message.guild.channels.find(c => c.name === 'alpha-raid');
-channel1.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), { // Disallow Everyone to see, join, invite, or speak
+if(message.guild.channels.find(c => c.name.toLowerCase() === "alpha-raid") && message.channel.id === '712643585408761938') {
+if(message.member.roles.has(TB2captains.id)) {
+const channel3 = client.channels.get("712643585408761938");
+channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
-message.channel.send('Alpha hidden from TB1');
+message.channel.send('Alpha hidden from TB1.');
 } else {
 }
 }
 
-if (message.channel.id === '712816284835774534'){ //TEST2
+if(message.guild.channels.find(c => c.name.toLowerCase() === "alpha-raid") && message.channel.id === '712816284835774534') {
+//if (message.channel.id === '712816284835774534'){ //TEST3
 if(message.member.roles.has(TB2captains.id)) {
-const channel2 = message.guild.channels.find(c => c.name === 'alpha-raid');
-channel2.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see, join, invite, or speak
+const channel3 = client.channels.get("712816284835774534");
+channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB2.');
