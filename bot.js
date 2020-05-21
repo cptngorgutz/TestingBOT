@@ -113,7 +113,7 @@ channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), {
 message.channel.send('Alpha hidden from TB3.');
 } else {
 }
-
+}
 }
 
 
