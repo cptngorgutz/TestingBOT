@@ -110,9 +110,9 @@ message.channel.send('Alpha hidden from TB2.');
 
 if(message.guild.channels.find(c => c.name.toLowerCase() === alpha-raid) && message.channel.id === '712828921783255202') {
 //if (message.channel.id === '712828921783255202'){ //TEST3
-//const channel3 = client.channels.get("712828921783255202");
 if(message.member.roles.has(TB3captains.id)) {
-.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see
+const channel3 = client.channels.get("712828921783255202");
+channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB3.');
