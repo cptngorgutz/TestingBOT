@@ -96,7 +96,7 @@ message.channel.send('Alpha hidden from TB1.');
 
 
 if(message.member.roles.has(TB2captains.id)) {
-const ALPHARAIDTB2 = message.guild.channels.find(c => c.name === 'alpha-raid-tb2')
+const ALPHARAIDTB2 = message.guild.channels.find(c => c.name === 'alpha-raid-tb2');
 ALPHARAIDTB2.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
@@ -106,14 +106,14 @@ message.channel.send('Alpha hidden from TB2.');
 
 
 if(message.member.roles.has(TB3captains.id)) {
-const ALPHARAIDTB3 = message.guild.channels.find(c => c.name === 'alpha-raid-tb3'){
+const ALPHARAIDTB3 = message.guild.channels.find(c => c.name === 'alpha-raid-tb3');
 ALPHARAIDTB3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB3.');
 } else {
 }
-}
+
 
 }
 }
