@@ -85,44 +85,38 @@ const TB3captains = message.guild.roles.find(role => role.name === 'TB3 Captain'
 
 if(command === 'hide') {
 if(args[0] === "alpha"){
-	
-
-message.guild.channels.find(c => c.name === 'alpha-raid').then(() => if(message.channel.id === '712643585408761938') {
+const ALPHARAIDTB1 = message.guild.channels.find(c => c.name === 'alpha-raid-tb1'){
 if(message.member.roles.has(TB1captains.id)) {
-const channel3 = client.channels.get("712643585408761938");
-channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), { // Disallow Everyone to see
+ALPHARAIDTB1.overwritePermissions(message.guild.roles.find(r => r.name === 'TB1'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB1.');
 } else {
 }
-} else if(message.channel.id === '712816284835774534') {
+}
+
+const ALPHARAIDTB2 = message.guild.channels.find(c => c.name === 'alpha-raid-tb2'){
 if(message.member.roles.has(TB2captains.id)) {
-const channel3 = client.channels.get("712816284835774534");
-channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see
+ALPHARAIDTB2.overwritePermissions(message.guild.roles.find(r => r.name === 'TB2'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB2.');
 } else {
 }
-} else if(message.channel.id === '712828921783255202') {
-//if (message.channel.id === '712828921783255202'){ //TEST3
+}
+
+const ALPHARAIDTB3 = message.guild.channels.find(c => c.name === 'alpha-raid-tb3'){
 if(message.member.roles.has(TB3captains.id)) {
-const channel3 = client.channels.get("712828921783255202");
-channel3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see
+ALPHARAIDTB3.overwritePermissions(message.guild.roles.find(r => r.name === 'TB3'), { // Disallow Everyone to see
 'VIEW_CHANNEL': false,
 });
 message.channel.send('Alpha hidden from TB3.');
 } else {
 }
 }
-)
-}
-
 
 }
-
-
+}
 
 if(command === 'show') {
 if(args[0] === "alpha"){
