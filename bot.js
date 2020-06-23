@@ -276,6 +276,18 @@ if(akit === "kit" || akit === "k"){
 	.setColor('#0099ff')
 	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nA.I.M., Blaster, Global, Minion, Tech, Villain.")  
 	message.channel.send(speedEmbed); 
+} else if(args[1] === "unique") {
+	const uniqueEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setThumbnail('https://i.imgur.com/tkhO9FI.png')
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nExtremis")  
+	message.channel.send(uniqueEmbed); 
+} else if(args[1] === "mini" || args[1] === "mini" && args[2] === "unique" || args[1] === "miniunique") {
+	const uniqueEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setThumbnail('https://i.imgur.com/PWRhCgq.png')
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nMini Uniques: \n\nOmnium ore <:GOLDore:712321731892740126> **x30** \nTachyon conductor <:GOLDtachyon:712322007341203538> **x75** \nNanites <:GOLDnanites:712322085489475585> **x75**")  
+	message.channel.send(uniqueEmbed); 
 } else {
 	message.channel.send({ files:[('.C:\Users\User\discord-greeter-bot', './Character Tiers/AIMassaulter.png')] });
 	function functionultron (){
@@ -337,6 +349,18 @@ if(akit === "kit" || akit === "k"){
 	.setColor('#0099ff')
 	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim,Bio,Controller,Global,Minion,Villain")  
 	message.channel.send(speedEmbed); 
+} else if(args[1] === "unique") {
+	const uniqueEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setThumbnail('https://i.imgur.com/tkhO9FI.png')
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nExtremis")  
+	message.channel.send(uniqueEmbed); 
+} else if(args[1] === "mini" || args[1] === "mini" && args[2] === "unique" || args[1] === "miniunique") {
+	const uniqueEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setThumbnail('https://i.imgur.com/q5z1OVY.png')
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nMini Uniques: \n\nOmnium ore <:GOLDore:712321731892740126> **x30** \nTachyon conductor <:GOLDtachyon:712322007341203538> **x75** \nNanites <:GOLDnanites:712322085489475585> **x75**")  
+	message.channel.send(uniqueEmbed); 
 } else {
 	message.channel.send({ files:[('.C:\Users\User\discord-greeter-bot', './Character Tiers/AIMinfector.png')] });
 	function functionultron (){
