@@ -269,7 +269,7 @@ if(akit === "kit" || akit === "k"){
 }  else if(aunlock == "unlock" || aunlock == "unl" || aunlock == "u" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n**Heroes: Node 5-3** \n \nOrbs: Premium,Milestones,Alpha raid orb.")
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \nAim Assaulter is farmable in: \n\n**Heroes: Node 5-3** \n \n**Orbs: Premium,Milestones,Alpha raid orb**")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -280,7 +280,7 @@ if(akit === "kit" || akit === "k"){
 	const uniqueEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setThumbnail('https://i.imgur.com/PWRhCgq.png')
-	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**Unique:** Extremis <:Extremis:725369885881794641> \n\n**Mini Uniques:** \nOmnium ore <:GOLDore:712321731892740126> **x18** \nTachyon conductor <:GOLDtachyon:712322007341203538> **x45** \nNanites <:GOLDnanites:712322085489475585> **x45**")  
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n\n**Unique:** Extremis <:Extremis:725369885881794641> \n\n**Mini Uniques:** \n<:GOLDore:712321731892740126> **x18** Omnium ore \n<:GOLDtachyon:712322007341203538> **x45** Tachyon conductor \n<:GOLDnanites:712322085489475585> **x45** Nanites ")  
 	message.channel.send(uniqueEmbed); 
 } else {
 	message.channel.send({ files:[('.C:\Users\User\discord-greeter-bot', './Character Tiers/AIMassaulter.png')] });
