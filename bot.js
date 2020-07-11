@@ -4327,7 +4327,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:jessicajones:663750493540974612> **Jessica Jones** \nJessica Jones is farmable in: \n**Villains - Node 2-9** \n \nOrbs:\n**Premium,Legacy,Milestones**")
+	.setDescription("<:jessicajones:663750493540974612> **Jessica Jones** \nJessica Jones is farmable in: \n\nCampaign:\n**Villains - Node 2-9** \n \nOrbs:\n**Premium,Legacy,Milestones**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
