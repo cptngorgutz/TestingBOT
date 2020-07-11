@@ -4401,7 +4401,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:juggernaut:663750495558696970> **Juggernaut** \nJuggernaut is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Alpha raid orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:juggernaut:663750495558696970> **Juggernaut** \nJuggernaut is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Alpha raid orb** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
