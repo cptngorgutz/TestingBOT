@@ -630,7 +630,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 }
 }
 
-if(command === 'ant' ||  args[0] === "man" || command === 'scott' || command === 'lang' || command === 'am') {
+if(command === 'ant' || command === 'ant' && args[0] === "man" || command === 'scott' || command === 'lang' || command === 'am') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -2551,7 +2551,7 @@ if(command === 'emma' || command === 'frost' || command === 'emm' || command ===
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:emmafrost:733674969980207176>	**Emma Frost (Basic)** \n \n**Fashionable Strike • T4 Upgrade** \n \nAttack primary target for **230% -> 290%** damage + flip 2 positive effects to a negative effects.\n\nIf Charged, attack primary target for **280% -> 340%** damage + clear 2 positive effects instead.\nCheck the "flip" command for information on which abilities change to which.")
+	.setDescription("<:emmafrost:733674969980207176>	**Emma Frost (Basic)** \n \n**Fashionable Strike • T4 Upgrade** \n \nAttack primary target for **230% -> 290%** damage + flip 2 positive effects to a negative effects.\n\nIf Charged, attack primary target for **280% -> 340%** damage + clear 2 positive effects instead.")
 	.setThumbnail('https://cdn.discordapp.com/attachments/650952078767947779/732735521478148126/Icon_Ability_EmmaFrost_Basic.png') 
 	message.channel.send(exampleEmbed);
 	const exampleEmbed2 = new Discord.RichEmbed()
@@ -2572,7 +2572,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(abasic === "basic" || abasic === "bas" || abasic === "b" || basic === "basic" || basic === "bas" || basic === "b") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:emmafrost:733674969980207176>	**Emma Frost (Basic)** \n \n**Fashionable Strike • T4 Upgrade** \n \nAttack primary target for **230% -> 290%** damage + flip 2 positive effects to a negative effects.\n\nIf Charged, attack primary target for **280% -> 340%** damage + clear 2 positive effects instead.\nCheck the "flip" command for information on which abilities change to which.")
+	.setDescription("<:emmafrost:733674969980207176>	**Emma Frost (Basic)** \n \n**Fashionable Strike • T4 Upgrade** \n \nAttack primary target for **230% -> 290%** damage + flip 2 positive effects to a negative effects.\n\nIf Charged, attack primary target for **280% -> 340%** damage + clear 2 positive effects instead.")
 	.setThumbnail('https://cdn.discordapp.com/attachments/650952078767947779/732735521478148126/Icon_Ability_EmmaFrost_Basic.png') 
 	message.channel.send(exampleEmbed);
 } else if(aspecial === "special" || aspecial === "spec" || aspecial === "spe" || special === "special" || special === "spec" || special === "spe" || special === "s") {
