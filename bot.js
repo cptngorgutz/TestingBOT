@@ -287,7 +287,7 @@ if(akit === "kit" || akit === "k"){
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:aimassault:663749974869147648> **Aim Assaulter** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -354,7 +354,7 @@ if(akit === "kit" || akit === "k"){
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -623,7 +623,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k"){
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:americachavez:663749979394801686> **America Chavez** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:americachavez:663749979394801686> **America Chavez** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -696,7 +696,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:antman:663749977469878273> **Ant Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:antman:663749977469878273> **Ant Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -769,7 +769,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:beast:663749980434989076> **Beast** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:beast:663749980434989076> **Beast** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -842,7 +842,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -916,7 +916,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:blackpanther:663749966212104233> **Black Panther** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -990,7 +990,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:blackwidow:663749977637519370> **Black Widow** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1064,7 +1064,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blob:684029278366597127> **Blob** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:blob:684029278366597127> **Blob** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1138,7 +1138,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:bullseye:663749972939767828> **Bullseye** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:bullseye:663749972939767828> **Bullseye** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock/farm")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1212,7 +1212,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:cable:663749981290758154> **Cable** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:cable:663749981290758154> **Cable** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1286,7 +1286,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:captainamerica:663749981299015701> **Captain America** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:captainamerica:663749981299015701> **Captain America** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1357,7 +1357,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1436,7 +1436,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:carnage:663749984843202570> **Carnage** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:carnage:663749984843202570> **Carnage** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1510,7 +1510,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:colossus:663749981559062528> **Colossus** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:colossus:663749981559062528> **Colossus** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1583,7 +1583,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:corvusglaive:724627008692158465> **Corvus Glaive** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:corvusglaive:724627008692158465> **Corvus Glaive** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1656,7 +1656,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:coulson:663749981605199912> **Coulson** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:coulson:663749981605199912> **Coulson** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1729,7 +1729,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:crossbones:663749981177511937> **Crossbones** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1802,7 +1802,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:CRYSTAL:724630964646445117> **Crystal** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:CRYSTAL:724630964646445117> **Crystal** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1876,7 +1876,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:CULL:724634635513888870> **Cull Obsidian** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:CULL:724634635513888870> **Cull Obsidian** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -1949,7 +1949,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:cyclops:663749981387358230> **Cyclops** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2023,7 +2023,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2097,7 +2097,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2171,7 +2171,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drax:663749981496279062> **Drax** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:drax:663749981496279062> **Drax** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2245,7 +2245,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:drstrange:663749984990265364> **Doctor Strange** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2319,7 +2319,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:domino:725112080801333323> **Domino** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:domino:725112080801333323> **Domino** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2392,7 +2392,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ebonymaw:724635997312385155> **Ebony Maw** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ebonymaw:724635997312385155> **Ebony Maw** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2465,7 +2465,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:elektra:663749981940875265> **Elektra** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:elektra:663749981940875265> **Elektra** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2539,7 +2539,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:elsa:663749985460027402> **Elsa Bloodstone** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:elsa:663749985460027402> **Elsa Bloodstone** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2613,7 +2613,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:emmafrost:733674969980207176> **Emma Frost** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:emmafrost:733674969980207176> **Emma Frost** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2686,7 +2686,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:falcon:663749983551488063> **Falcon** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:falcon:663749983551488063> **Falcon** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2760,7 +2760,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:gamora:663749983815860234> **Gamora** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:gamora:663749983815860234> **Gamora** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2834,7 +2834,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ghostrider:663749984662847489> **Ghost Rider** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2908,7 +2908,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:goblin:663749986160476171> **Green Goblin** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:goblin:663749986160476171> **Green Goblin** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -2982,7 +2982,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:graviton:663749985417953300> **Graviton** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:graviton:663749985417953300> **Graviton** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3115,7 +3115,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:groot:663749986218934282> **groot** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:groot:663749986218934282> **groot** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3178,7 +3178,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3241,7 +3241,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:handassassin:663749983413075969> **Hand Assassin** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3304,7 +3304,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:handblademaster:663749983945752586> **Hand Blademaster** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3367,7 +3367,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:handsentry:663749985027883019> **Hand Sentry** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3430,7 +3430,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription(" \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription(" \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3504,7 +3504,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hawkeye:663749985267089428> **Hawkeye** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3578,7 +3578,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:heimdall:663750299575517195> **Heimdall** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3652,7 +3652,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hela:663749986290368512> **Hela** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hela:663749986290368512> **Hela** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3726,7 +3726,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hulk:663749985594245130> **Hulk** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hulk:663749985594245130> **Hulk** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3800,7 +3800,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:johnnystorm:663750493478322186> **Human Torch** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:johnnystorm:663750493478322186> **Human Torch** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3863,7 +3863,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3926,7 +3926,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -3989,7 +3989,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<<:hydrascientist:663749986013413386> **Hydra Scientist** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<<:hydrascientist:663749986013413386> **Hydra Scientist** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4052,7 +4052,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hydrasniper:663749986336374811> **Hydra Sniper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4115,7 +4115,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4189,7 +4189,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:invisiblewoman:663752234126934016> **Invisible Woman** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4263,7 +4263,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ironfist:663751749454004254> **Iron Fist** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4337,7 +4337,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Ironheart:684029278425579566> **Ironheart** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:Ironheart:684029278425579566> **Ironheart** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4411,7 +4411,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ironman:663751735591960577> **Iron Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ironman:663751735591960577> **Iron Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4485,7 +4485,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:jessicajones:663750493540974612> **Jessica Jones** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:jessicajones:663750493540974612> **Jessica Jones** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4559,7 +4559,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:juggernaut:663750495558696970> **Juggernaut** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:juggernaut:663750495558696970> **Juggernaut** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4633,7 +4633,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:KARNAK:724993243334443049> **Karnak** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:KARNAK:724993243334443049> **Karnak** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4706,7 +4706,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:killmonger:663750495608897566> **Killmonger** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:killmonger:663750495608897566> **Killmonger** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4780,7 +4780,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kingpin:663750493612539904> **Kingpin** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:kingpin:663750493612539904> **Kingpin** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4854,7 +4854,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:korath:663750493331521547> **Korath the Pursuer** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:korath:663750493331521547> **Korath the Pursuer** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4917,7 +4917,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreecyborg:663750490512687116> **Kree Cyborg** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:kreecyborg:663750490512687116> **Kree Cyborg** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -4980,7 +4980,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeguard:663750493398368276> **Kree Royal Guard** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:kreeguard:663750493398368276> **Kree Royal Guard** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -5043,7 +5043,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreenoble:663750496569524255> **Kree Noble** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:kreenoble:663750496569524255> **Kree Noble** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -5106,7 +5106,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeoracle:663750494795202562> **Kree Oracle** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:kreeoracle:663750494795202562> **Kree Oracle** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -5169,7 +5169,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreereaper:663750487346118676> **Kree Reaper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:kreereaper:663750487346118676> **Kree Reaper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -5245,7 +5245,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:loki:663750495139266591> **Loki** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:loki:663750495139266591> **Loki** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -5319,7 +5319,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:lukecage:663750493172006936>	**Luke Cage** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:lukecage:663750493172006936>	**Luke Cage** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5393,7 +5393,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:magneto:663750493419339810>	**Magneto** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:magneto:663750493419339810>	**Magneto** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5467,7 +5467,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mantis:663750493583179808>	**Mantis** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mantis:663750493583179808>	**Mantis** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5541,7 +5541,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mbaku:663750495621480449>	**M'Baku** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mbaku:663750495621480449>	**M'Baku** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5605,7 +5605,7 @@ if(args[1] === "kit" || args[1] === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercsoldier:663750491758657546> **Mercenary Soldier** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mercsoldier:663750491758657546> **Mercenary Soldier** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5666,7 +5666,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mercsniper:663750493750820864>	**Mercenary Sniper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5728,7 +5728,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5789,7 +5789,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mercleuitenant:663750495462227978>	**Mercenary Lieutenant** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5863,7 +5863,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:miles:663750496015876096> **Miles Morales** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:miles:663750496015876096> **Miles Morales** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -5937,7 +5937,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:minnerva:663750495751634954>	**Minnerva** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:minnerva:663750495751634954>	**Minnerva** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6011,7 +6011,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6085,7 +6085,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mordo:663750495562629161>	**Mordo** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mordo:663750495562629161>	**Mordo** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6163,7 +6163,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6237,7 +6237,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6313,7 +6313,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<mysterio:663750495734726656>	**Mysterio** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<mysterio:663750495734726656>	**Mysterio** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6387,7 +6387,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mystique:663750495697109002>	**Mystique** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:mystique:663750495697109002>	**Mystique** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6461,7 +6461,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:namor:663750493709008919>	**Namor** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:namor:663750493709008919>	**Namor** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6535,7 +6535,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nebula:663750493033594890>	**Nebula** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:nebula:663750493033594890>	**Nebula** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6609,7 +6609,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:negasonic:725114435236003951> **Negasonic** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:negasonic:725114435236003951> **Negasonic** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6682,7 +6682,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nickfury:663750493687775236>	**Nick Fury** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:nickfury:663750493687775236>	**Nick Fury** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6756,7 +6756,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:nightnurse:663750495873007627>	**Night Nurse** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6830,7 +6830,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:NOBU:725015766528950364> **Nobu** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:NOBU:725015766528950364> **Nobu** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6903,7 +6903,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:okeye:663750495860686848>	**Okoye** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:okeye:663750495860686848>	**Okoye** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -6977,7 +6977,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:Phoenix:663750496829308958> **Dark Phoenix** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7050,7 +7050,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:Phoenix:663750496829308958> **Phoenix** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7123,7 +7123,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:proxima:725034331369898055> **Proxima Midnight** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:proxima:725034331369898055> **Proxima Midnight** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7196,7 +7196,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:psylocke:663750496837828608>	**Psylocke** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:psylocke:663750496837828608>	**Psylocke** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7272,7 +7272,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:punisher:663750495982190620>	**Punisher** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:punisher:663750495982190620>	**Punisher** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7346,7 +7346,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:pyro:663750496346963968>	**Pyro** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:pyro:663750496346963968>	**Pyro** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7420,7 +7420,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:quake:663750496024133632>	**Quake** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:quake:663750496024133632>	**Quake** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7483,7 +7483,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7546,7 +7546,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ravagerbruiser:663750495839584267>	**Ravager Bruiser** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7609,7 +7609,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7688,7 +7688,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:redskull:663750496959594531>	**Red Skull** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:redskull:663750496959594531>	**Red Skull** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7762,7 +7762,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rescue:663750496057819147>	**Rescue** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:rescue:663750496057819147>	**Rescue** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7836,7 +7836,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rhino:663750497328693261>	**Rhino** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:rhino:663750497328693261>	**Rhino** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7909,7 +7909,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -7983,7 +7983,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ronan:663752093135274014>	**Ronan** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ronan:663752093135274014>	**Ronan** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8057,7 +8057,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8131,7 +8131,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8205,7 +8205,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:scientistsupreme:663751613256826910>	**Scientist Supreme** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8268,7 +8268,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shieldassault:663750496670187521>	**S.H.I.E.L.D. Assault** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8331,7 +8331,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shieldmedic:663750794700390421>	**S.H.I.E.L.D. Medic** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8394,7 +8394,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shieldoperative:663750789021564938>	**S.H.I.E.L.D. Operative** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8457,7 +8457,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shieldsecurity:663750788891541504>	**S.H.I.E.L.D. Security** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8520,7 +8520,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shieldtrooper:663750790791561219>	**S.H.I.E.L.D. Trooper** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8594,7 +8594,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shocker:663750794142679041>	**Shocker** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shocker:663750794142679041>	**Shocker** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8668,7 +8668,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:shuri:663750793765060629>	**Shuri** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:shuri:663750793765060629>	**Shuri** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8742,7 +8742,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sif:663750798311948299>	**Sif** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:sif:663750798311948299>	**Sif** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8816,7 +8816,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:spiderman:663750794092216361>	**Spider-Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:spiderman:663750794092216361>	**Spider-Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -8890,7 +8890,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:squirrelgirl:733691315182764102> **Squirrel Girl** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:squirrelgirl:733691315182764102> **Squirrel Girl** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed); 
 	}
 	setTimeout(functionultron, 2000);
@@ -8963,7 +8963,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:starlord:663750797447921705>	**Star Lord** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:starlord:663750797447921705>	**Star Lord** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9037,7 +9037,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:storm:663750791110197249>	**Storm** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:storm:663750791110197249>	**Storm** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9111,7 +9111,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:stryfe:663750797871546368>	**Stryfe** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:stryfe:663750797871546368>	**Stryfe** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9185,7 +9185,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:SSM:725091265452179649> **Symbiote Spider-Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:SSM:725091265452179649> **Symbiote Spider-Man** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9258,7 +9258,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:TASKMASTER:725096656856547429> **Taskmaster** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:TASKMASTER:725096656856547429> **Taskmaster** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9331,7 +9331,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thanos:663750798324400128> **Thanos** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:thanos:663750798324400128> **Thanos** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9405,7 +9405,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:EMPOWEREDTHANOS:724286776478531665> **Empowered Thanos** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:EMPOWEREDTHANOS:724286776478531665> **Empowered Thanos** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9479,7 +9479,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thing:663750797791592478>	**The Thing** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:thing:663750797791592478>	**The Thing** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9553,7 +9553,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thor:663750798014021632>	**Thor** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:thor:663750798014021632>	**Thor** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9627,7 +9627,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:toad:684029278425579556>	**Toad** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:toad:684029278425579556>	**Toad** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9701,7 +9701,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultimus:663750798039056384>	**Ultimus** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ultimus:663750798039056384>	**Ultimus** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9775,7 +9775,7 @@ const speedEmbed = new Discord.RichEmbed()
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultron:663750798202634250>	**Ultron** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ultron:663750798202634250>	**Ultron** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -9836,7 +9836,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronaccelerator:663753510210240525>	**Accelerator** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ultronaccelerator:663753510210240525>	**Accelerator** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 }
 
@@ -9895,7 +9895,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ultronfabricator:663753510268960788>	**Fabricator** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 }
 
@@ -9954,7 +9954,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else {
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock | uniques")
+	.setDescription("<:ultronincinerator:663753510080217119>	**Incinerator** \n**For more character info, try a valid phrase:** \nbasic | special | passive | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 }
 
@@ -10026,7 +10026,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:venom:663750908668018710>	**Venom** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:venom:663750908668018710>	**Venom** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10100,7 +10100,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vision:663750896835887110>	**Vision** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:vision:663750896835887110>	**Vision** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10174,7 +10174,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vulture:663750909653811221>	**Vulture** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:vulture:663750909653811221>	**Vulture** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10248,7 +10248,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<warmachine:663750909146300441>	**War Machine** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<warmachine:663750909146300441>	**War Machine** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10322,7 +10322,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wasp:663750911088394280>	**Wasp** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:wasp:663750911088394280>	**Wasp** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10396,7 +10396,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:wintersoldier:663750908940779560>	**Winter Soldier** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10470,7 +10470,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wolverine:663750909062414356>	**Wolverine** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:wolverine:663750909062414356>	**Wolverine** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10544,7 +10544,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:x23:725110299396407297> **X-23** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:x23:725110299396407297> **X-23** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10619,7 +10619,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:yondu:663750908957556785>	**Yondu** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:yondu:663750908957556785>	**Yondu** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
@@ -10693,7 +10693,7 @@ message.channel.send(speedEmbed);
 	function functionultron (){
 	const embedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock | uniques")
+	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo** \n**For more character info, try a valid phrase:** \nbasic | special | passive | ultimate | kit | speed | trait | unlock")
 	message.channel.send(embedEmbed);
 	}
 	setTimeout(functionultron, 2000);
