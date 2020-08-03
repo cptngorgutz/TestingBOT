@@ -5570,7 +5570,7 @@ if(args[1] === "kit" || args[1] === "k") {
 	const exampleEmbed4 = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:mercsoldier:663750491758657546>	**Mercenary Soldier (Passive)** \n \n**Tactical Loadout • T4 Upgrade** \n \nGain **15% -> 20%** Damage and 15% Health.")
-	.setThumbnail('444') 
+	.setThumbnail('https://i.imgur.com/BkDMTC1.png') 
 	message.channel.send(exampleEmbed4);
 } else if(args[1] === "speed" || args[1] === "spee" || args[1] === "spe") {
 	const speedEmbed = new Discord.RichEmbed()
