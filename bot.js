@@ -336,7 +336,7 @@ if(akit === "kit" || akit === "k"){
 } else if(aunlock == "unlock" || aunlock == "unl" || aunlock == "u" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:aiminfector:663749979441070090> **Aim Infector** \nAim Infector is farmable in: \n\nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -403,7 +403,7 @@ if(akit === "kit" || akit === "k"){
 } else if(aunlock == "unlock" || afarm == "farm") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:aimmonstrosity:663749978639827004> **Aim Monstrosity** \nAim Monstrosity is farmable in: \n\nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait == "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -684,7 +684,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const unlockEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable in: \nOrbs:\n**Premium,Legacy,Mega,Milestones,Beta raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:antman:663749977469878273> **Ant Man** \nAnt Man is farmable in: \n\nOrbs:\n**Premium,Legacy,Mega,Milestones,Beta raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(unlockEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -830,7 +830,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack Bolt is farmable in:\nLegendary Event, **requiring x5 Asgardians**")
+	.setDescription("<:blackbolt:663749971971014698> **Black Bolt** \nBlack Bolt is farmable in:\n\nLegendary Event, **requiring x5 Asgardians**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1052,7 +1052,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:blob:684029278366597127> **Blob** \nBlob is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**") 
+	.setDescription("<:blob:684029278366597127> **Blob** \nBlob is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**") 
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1345,7 +1345,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \nCaptain Marvel is farmable in: \nOrbs:\n**Milestones**")
+	.setDescription("<:captainmarvel:663749985459896340> **Captain Marvel** \nCaptain Marvel is farmable in: \n\nOrbs:\n**Milestones**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1424,7 +1424,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:carnage:663749984843202570> **Carnage** \nCarnage is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb** \n \nStore:\n**War Store**")
+	.setDescription("<:carnage:663749984843202570> **Carnage** \nCarnage is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb** \n \nStore:\n**War Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1571,7 +1571,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:corvusglaive:724627008692158465> **Corvus Glaive** \nCorvus Glaive is farmable in: \nOrbs:\n**Premium,Mega**")
+	.setDescription("<:corvusglaive:724627008692158465> **Corvus Glaive** \nCorvus Glaive is farmable in: \n\nOrbs:\n**Premium,Mega**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1644,7 +1644,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:coulson:663749981605199912> **Coulson** \nCoulson is farmable in: \nOrbs:\n**Milestones**")
+	.setDescription("<:coulson:663749981605199912> **Coulson** \nCoulson is farmable in: \n\nOrbs:\n**Milestones**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1717,7 +1717,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:crossbones:663749981177511937> **Crossbones** \nCrossbones is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:crossbones:663749981177511937> **Crossbones** \nCrossbones is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1790,7 +1790,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:CRYSTAL:724630964646445117> **Crystal** \nCrystal is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**")
+	.setDescription("<:CRYSTAL:724630964646445117> **Crystal** \nCrystal is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1864,7 +1864,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:CULL:724634635513888870> **Cull Obsidian** \nCull Obsidian is farmable in: \nOrbs:\n**Premium,Mega**")
+	.setDescription("<:CULL:724634635513888870> **Cull Obsidian** \nCull Obsidian is farmable in: \n\nOrbs:\n**Premium,Mega**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -1937,7 +1937,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:cyclops:663749981387358230> **Cyclops** \nCyclops is farmable in: \nOrbs:\n**Basic,Premium,Mega,Ultimus**")
+	.setDescription("<:cyclops:663749981387358230> **Cyclops** \nCyclops is farmable in: \n\nOrbs:\n**Basic,Premium,Mega,Ultimus**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -2011,7 +2011,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,Gamma raid orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:daredevil:663749979994587156> **Daredevil** \nDaredevil is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,Gamma raid orb** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -2085,7 +2085,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,Beta raid orb,** \n \nStore:\n**Arena Store**")
+	.setDescription("<:Deadpool:663749981705994251> **Deadpool** \nDeadpool is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,Beta raid orb,** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -2159,7 +2159,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:drax:663749981496279062> **Drax** \nDrax is farmable in: \nOrbs:\n**Premium,Legacy,Milestones** \n \nStore:\n**Arena Store**")
+	.setDescription("<:drax:663749981496279062> **Drax** \nDrax is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -2748,7 +2748,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:gamora:663749983815860234> **Gamora** \nGamora is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -2970,7 +2970,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**War Store**") 
+	.setDescription("<:graviton:663749985417953300> **Graviton** \nGraviton is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**War Store**") 
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -3167,7 +3167,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \nHand Archer is farmable in: \nOrbs:\n**Premium,Milestones** \n \nStore:\n**Arena Store**")
+	.setDescription("<:handarcher:663749985258569769> **Hand Archer** \nHand Archer is farmable in: \n\nOrbs:\n**Premium,Milestones** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -3566,7 +3566,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**")
+	.setDescription("<:heimdall:663750299575517195> **Heimdall** \nHeimdall is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -3788,7 +3788,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:johnnystorm:663750493478322186> **Human Torch** \nHuman Torch is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**")
+	.setDescription("<:johnnystorm:663750493478322186> **Human Torch** \nHuman Torch is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -3852,7 +3852,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nHydra Grenadier is farmable in: \nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:hydragrenadier:663749985669611540> **Hydra Grenadier** \nHydra Grenadier is farmable in: \n\nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -3913,7 +3913,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nHydra Armored Guard is farmable in: \nOrbs:\n**Premium,Milestones** \n \nStore:\n**Arena Store**")
+	.setDescription("<:hydraguard:663749985321353218> **Hydra Armored Guard** \nHydra Armored Guard is farmable in: \n\nOrbs:\n**Premium,Milestones** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -3974,7 +3974,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \nHydra Scientist is farmable in: \nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:hydrascientist:663749986013413386> **Hydra Scientist** \nHydra Scientist is farmable in: \n\nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -4096,7 +4096,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nHydra Rifle Trooper is farmable in: \nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:hydratrooper:663752253215342603> **Hydra Rifle Trooper** \nHydra Rifle Trooper is farmable in: \n\nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -4687,7 +4687,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:killmonger:663750495608897566> **Killmonger** \nKillmonger is farmable in: \nOrbs:\n**Premium,Mega,Milestones,raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:killmonger:663750495608897566> **Killmonger** \nKillmonger is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -4960,7 +4960,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeguard:663750493398368276> **Kree Royal Guard** \nKree Royal Guard is farmable in: \nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:kreeguard:663750493398368276> **Kree Royal Guard** \nKree Royal Guard is farmable in: \n\nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5082,7 +5082,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:kreeoracle:663750494795202562> **Kree Oracle** \nKree Oracle is farmable in: \nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:kreeoracle:663750494795202562> **Kree Oracle** \nKree Oracle is farmable in: \n\nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5442,7 +5442,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mantis:663750493583179808>	**Mantis** \nMantis is farmable in: \nOrbs:\n**Premium,Mega,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:mantis:663750493583179808>	**Mantis** \nMantis is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5516,7 +5516,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mbaku:663750495621480449>	**M'Baku** \nM'Baku is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Beta raid orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:mbaku:663750495621480449>	**M'Baku** \nM'Baku is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Beta raid orb** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5580,7 +5580,7 @@ if(args[1] === "kit" || args[1] === "k") {
 } else if(args[1] === "unlock" || args[1] === "unl" || args[1] === "u") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercsoldier:663750491758657546> **Mercenary Soldier** \nMercenary Soldier is farmable in: \nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:mercsoldier:663750491758657546> **Mercenary Soldier** \nMercenary Soldier is farmable in: \n\nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(args[1] === "trait" || args[1] === "tra" || args[1] === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5703,7 +5703,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(args[1] === "unlock" || args[1] === "u") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard** \nMercenary Riot Guard is farmable in: \nOrbs:\n**Premium,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:mercriotguard:663750491431370776>	**Mercenary Riot Guard** \nMercenary Riot Guard is farmable in: \n\nOrbs:\n**Premium,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(args[1] === "trait" || args[1] === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5838,7 +5838,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:miles:663750496015876096> **Miles Morales** \n \nMiles Morales is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:miles:663750496015876096> **Miles Morales** \n \nMiles Morales is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5912,7 +5912,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:minnerva:663750495751634954>	**Minnerva** \n is farmable in: \nOrbs:\n**Premium**")
+	.setDescription("<:minnerva:663750495751634954>	**Minnerva** \nMinnerva is farmable in: \n\nOrbs:\n**Premium**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -5986,7 +5986,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic** \n is farmable in: \n\nCampaign:\n**Nexus - Node 5-9** \n \nOrbs:\n**Premium,Mega**")
+	.setDescription("<:mrfantastic:663750493746495488>	**Mister Fantastic** \nMister Fantastic is farmable in: \n\nCampaign:\n**Nexus - Node 5-9** \n \nOrbs:\n**Premium,Mega**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -6060,7 +6060,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mordo:663750495562629161>	**Mordo** \n is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,Alpha raid orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:mordo:663750495562629161>	**Mordo** \nMordo is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,Alpha raid orb** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -6138,7 +6138,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister** \n is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**War Store**")
+	.setDescription("<:mrsinister:663750495839453185>	**Mister Sinister** \nMister Sinister is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**War Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -6212,7 +6212,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel** \n is farmable in: \n\nCampaign:\n**Mystic - Node 2-6** \n \nOrbs:\n**Premium,Legacy,Milestones,Gamma raid orb**")
+	.setDescription("<:msmarvel:663750496355483679>	**Ms. Marvel** \nMs. Marvel is farmable in: \n\nCampaign:\n**Mystic - Node 2-6** \n \nOrbs:\n**Premium,Legacy,Milestones,Gamma raid orb**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -6288,7 +6288,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<mysterio:663750495734726656>	**Mysterio** \n is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<mysterio:663750495734726656>	**Mysterio** \nMysterio is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -6362,7 +6362,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:mystique:663750495697109002>	**Mystique** \n is farmable in: \n\nCampaign:\n**Villains - Node 5-6** \n \nOrbs:\n**Premium,Mega,Milestones**")
+	.setDescription("<:mystique:663750495697109002>	**Mystique** \nMystique is farmable in: \n\nCampaign:\n**Villains - Node 5-6** \n \nOrbs:\n**Premium,Mega,Milestones**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -6436,7 +6436,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:namor:663750493709008919>	**Namor** \nNamor is farmable in: \nOrbs:\n**Premium,Mega,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:namor:663750493709008919>	**Namor** \nNamor is farmable in: \n\nOrbs:\n**Premium,Mega,Raid orb** \n \nStore:\n**Raid Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7098,7 +7098,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:proxima:725034331369898055> **Proxima Midnight** \nProxima Midnight is farmable in: \nOrbs:\n**Premium,Milestones**")
+	.setDescription("<:proxima:725034331369898055> **Proxima Midnight** \nProxima Midnight is farmable in: \n\nOrbs:\n**Premium,Milestones**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7395,7 +7395,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:quake:663750496024133632>	**Quake** \nQuake is farmable in: \nOrbs:\n**Premium,Milestones,Beta raid orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:quake:663750496024133632>	**Quake** \nQuake is farmable in: \n\nOrbs:\n**Premium,Milestones,Beta raid orb** \n \nStore:\n**Arena Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7459,7 +7459,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer** \nRavager Boomer is farmable in: \nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:ravagerboomer:663750496099500032>	**Ravager Boomer** \nRavager Boomer is farmable in: \n\nOrbs:\n**Premium,Milestones,blitz orb** \n \nStore:\n**Blitz Store**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7583,7 +7583,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher** \nRavager Stitcher is farmable in: \nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:ravagerstitcher:663750496338837504>	**Ravager Stitcher** \nRavager Stitcher is farmable in: \n\nOrbs:\n**Premium,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7663,7 +7663,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:redskull:663750496959594531>	**Red Skull** \nRed Skull is farmable in: \nOrbs:\n**Basic,Premium,Mega,Ultimus**")
+	.setDescription("<:redskull:663750496959594531>	**Red Skull** \nRed Skull is farmable in: \n\nOrbs:\n**Basic,Premium,Mega,Ultimus**")
 	message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7811,7 +7811,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rhino:663750497328693261>	**Rhino** \nRhino is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:rhino:663750497328693261>	**Rhino** \nRhino is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7884,7 +7884,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon** \nRocket Raccoon is farmable in: \nOrbs:\n**Premium,Legacy,Mega,Milestones,Raid orb,blitz orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:rocketraccoon:663750494908579851>	**Rocket Raccoon** \nRocket Raccoon is farmable in: \n\nOrbs:\n**Premium,Legacy,Mega,Milestones,Raid orb,blitz orb** \n \nStore:\n**Raid Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -7958,7 +7958,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ronan:663752093135274014>	**Ronan** \nRonan is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,Alpha raid orb,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:ronan:663752093135274014>	**Ronan** \nRonan is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,Alpha raid orb,Raid orb** \n \nStore:\n**Raid Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -8032,7 +8032,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth** \nSabretooth is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Raid orb,blitz orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:sabretooth:663752081659789312>	**Sabretooth** \nSabretooth is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Raid orb,blitz orb** \n \nStore:\n**Raid Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -8106,7 +8106,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch** \nScarlet Witch is farmable in: \nOrbs:\n**Premium,Legacy,Mega,Milestones,blitz orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:scarletwitch:663751626665885707>	**Scarlet Witch** \nScarlet Witch is farmable in: \n\nOrbs:\n**Premium,Legacy,Mega,Milestones,blitz orb** \n \nStore:\n**Arena Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -8715,7 +8715,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:sif:663750798311948299>	**Sif** \nSif is farmable in: \nOrbs:\n**Premium,Mega** \nStore:\n**War Store**")
+	.setDescription("<:sif:663750798311948299>	**Sif** \nSif is farmable in: \n\nOrbs:\n**Premium,Mega** \nStore:\n**War Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -8789,7 +8789,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:spiderman:663750794092216361>	**Spider-Man** \nSpider-Man is farmable in: \nOrbs:\n**Premium,Legacy,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:spiderman:663750794092216361>	**Spider-Man** \nSpider-Man is farmable in: \n\nOrbs:\n**Premium,Legacy,Milestones,Gamma raid orb,blitz orb** \n \nStore:\n**Blitz Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9084,7 +9084,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:stryfe:663750797871546368>	**Stryfe** \nStryfe is farmable in: \nOrbs:\n**Premium,Mega,blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:stryfe:663750797871546368>	**Stryfe** \nStryfe is farmable in: \n\nOrbs:\n**Premium,Mega,blitz orb** \n \nStore:\n**Blitz Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9231,7 +9231,7 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:TASKMASTER:725096656856547429> **Taskmaster** \nTaskmaster is farmable in: \nOrbs:\n**Premium,Mega**")
+	.setDescription("<:TASKMASTER:725096656856547429> **Taskmaster** \nTaskmaster is farmable in: \n\nOrbs:\n**Premium,Mega**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9452,7 +9452,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thing:663750797791592478>	**The Thing** \nThe Thing is farmable in: \nOrbs:\n**Premium,Mega,Blitz orb** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:thing:663750797791592478>	**The Thing** \nThe Thing is farmable in: \n\nOrbs:\n**Premium,Mega,Blitz orb** \n \nStore:\n**Blitz Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9526,7 +9526,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:thor:663750798014021632>	**Thor** \nThor is farmable in: \nOrbs:\n**Legacy,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<:thor:663750798014021632>	**Thor** \nThor is farmable in: \n\nOrbs:\n**Legacy,Milestones,Raid orb** \n \nStore:\n**Raid Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9600,7 +9600,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:toad:684029278425579556>	**Toad** \nToad is farmable in: \nOrbs:\n**Premium,Mega** \n \nStore:\n**Blitz Store**")
+	.setDescription("<:toad:684029278425579556>	**Toad** \nToad is farmable in: \n\nOrbs:\n**Premium,Mega** \n \nStore:\n**Blitz Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9620,7 +9620,7 @@ message.channel.send(speedEmbed);
 
 }
 
-if(command === 'ultimus' || command === 'ultimu' || command === 'ulti' || command === 'ult') {
+if(command === 'ultimus' || command === 'ultimu' || command === 'ulti') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -9674,7 +9674,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:ultimus:663750798039056384>	**Ultimus** \nUltimus is farmable in: \nOrbs:\n**Ultimus Orbs via the Ultimus store**")
+	.setDescription("<:ultimus:663750798039056384>	**Ultimus** \nUltimus is farmable in: \n\nOrbs:\n**Ultimus Orbs via the Ultimus store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -9694,7 +9694,7 @@ message.channel.send(speedEmbed);
 
 }
 
-if(command === 'ultron' || command === 'ul' || command === 'ultr' || command === 'ultro') {
+if(command === 'ultron' || command === 'ultr' || command === 'ultro') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -10147,7 +10147,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:vulture:663750909653811221>	**Vulture** \nVulture is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb** \n \nStore:\n**Arena Store**")
+	.setDescription("<:vulture:663750909653811221>	**Vulture** \nVulture is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Gamma raid orb** \n \nStore:\n**Arena Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -10221,7 +10221,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<warmachine:663750909146300441>	**War Machine** \nWar Machine is farmable in: \nOrbs:\n**Premium,Mega,Milestones,Beta raid orb,Raid orb** \n \nStore:\n**Raid Store**")
+	.setDescription("<warmachine:663750909146300441>	**War Machine** \nWar Machine is farmable in: \n\nOrbs:\n**Premium,Mega,Milestones,Beta raid orb,Raid orb** \n \nStore:\n**Raid Store**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -10443,7 +10443,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:wolverine:663750909062414356>	**Wolverine** \nWolverine is farmable in: \nOrbs:\n**Premium** \n \nObjectives:\n**Daily Objectives**")
+	.setDescription("<:wolverine:663750909062414356>	**Wolverine** \nWolverine is farmable in: \n\nOrbs:\n**Premium** \n \nObjectives:\n**Daily Objectives**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
@@ -10666,7 +10666,7 @@ const speedEmbed = new Discord.RichEmbed()
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo** \nYo-yo is farmable in: \nOrbs:\n**Premium**")
+	.setDescription("<:YOYO:663750909582508053>	**Yo-Yo** \nYo-yo is farmable in: \n\nOrbs:\n**Premium**")
 message.channel.send(speedEmbed); 
 } else if(atrait === "trait" || atrait === "traits" || atrait === "trai" || atrait === "tra" || atrait === "t" || trait === "trait" || trait === "traits" || trait === "trai" || trait === "tra" || trait === "t") {
 	const traitEmbed = new Discord.RichEmbed()
