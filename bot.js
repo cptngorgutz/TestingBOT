@@ -9694,7 +9694,7 @@ message.channel.send(speedEmbed);
 
 }
 
-if(command === 'ultron' || command === 'ul' || command === 'ult' || command === 'ultro') {
+if(command === 'ultron' || command === 'ul' || command === 'ultr' || command === 'ultro') {
 if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
