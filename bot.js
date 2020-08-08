@@ -2,6 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+client.on('ready', () => {
+  client.user.setActivity('use !commands for help', { type: 'WATCHING' });
+})
+
 //*********TRAITS***********
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
@@ -198,7 +202,7 @@ message.channel.send(exampleEmbed);
 });
 
 
-//*********CHARACTERS + TEAMS*********** (NOT FINISHED)
+//*********CHARACTERS + TEAMS*********** (FINISHED)
 //example: !ironman speed || !asgardians)
 client.on("message", async message => {
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
@@ -223,8 +227,8 @@ let aunlock = args[1];
 let atrait = args[1];
 let afarm = args[1];
 
-//EVERY CHARACTER
-if (message.channel.id === '699707863148265512' || message.channel.id === '666305824813219870' || message.channel.id === '661221254958940220') { //bot spam channel
+//						Beyonders Bot-Spam Channel 
+if (message.channel.id === '673261006918516741' || message.channel.id === '699707863148265512' || message.channel.id === '666305824813219870' || message.channel.id === '661221254958940220') { //bot spam channel
 if(command === 'aim' || command === 'ai') {
 if(args[0] === "assaulter" || args[0] === "assault" || args[0] === "ass" || args[0] === "assau" || args[0] === "assa"){
 if(akit === "kit" || akit === "k"){
@@ -2597,7 +2601,6 @@ if(akit === "kit" || akit === "k" || kit === "kit" || kit === "k") {
 	const speedEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription("<:emmafrost:733674969980207176> **Emma Frost** \nEmma Frost's speed is: **111**")
-	.setThumbnail('https://cdn.discordapp.com/attachments/650952078767947779/732735521478148126/Icon_Ability_EmmaFrost_Basic.png')
 	message.channel.send(speedEmbed);
 } else if(aunlock === "unlock" || aunlock === "unlo" || aunlock === "u" || aunlock === "unl" || afarm === "farm" || afarm === "far" || afarm === "f" || unlock === "unlock" || unlock === "unlo" || unlock === "u" || unlock === "unl" || farm === "farm" || farm === "far" || farm === "f") {
 	const speedEmbed = new Discord.RichEmbed()
@@ -10687,16 +10690,6 @@ message.channel.send(speedEmbed);
 
 }
 
-
-
-//TEAMS
-if (message.content === '!asgardians') {
-	message.channel.bulkDelete(1)
-	const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setDescription("**ASGARDIANS** \n<:heimdall:661370019325935666> **Heimdall** \nHeimdall's speed is: **100** \n \n<:hela:661370019317284880> **Hela** \nHela's base speed is: **110**, but her effective turn 1 speed is \n121.11 with Loki. \n \n<:loki:661370019145449473> **Loki** \nLoki's base speed is: **115**, but his effective turn 1 speed is \n133.75 \n \n<:sif:661370019300638737> **Sif** \nSif's speed is: **108** \n \n<:thor:661370019279667248> **Thor** \nThor's base speed is: **90**, but with Black Widow using her \nturn 1 special, his effective turn 1 speed is 102.27. \n \n<:greg:661392103900839936> **Undead Asgardian** \nUndead Asgardian's base speed is: **105**, but his effective \nturn 1 speed is 130.")
-	message.channel.send(exampleEmbed);
-}
 }
 });
 
