@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 
 client.on('ready', () => {
-  client.user.setActivity('use !commands for help', { type: 'WATCHING' });
+  client.user.setStatus('online', 'use !commands') ;
 })
 
 //*********TRAITS***********
