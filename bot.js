@@ -2,10 +2,16 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
-client.on('ready', () => {
-  client.user.setStatus('online', 'use !commands') ;
-})
-
+client.on("ready", () =>{
+    client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "!commands for help",  //The message shown
+            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
+ 
 //*********TRAITS***********
 client.on("message", message => {
 const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
